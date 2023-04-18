@@ -5,5 +5,6 @@ Notes:
 2. any css,js, images to be placed under the folder Assets and respective Folder.
 3. If you are using Image try to create  folder inside the images with page name and use, developers will take those and replace path's and use, this is to avoid lot of images getting placed inside main folder.
 4. On CSS, if you are building a genric theme CSS have that and page specific any CSS required, you can add the css file with pageName.css and store inside css folder and point that to your html, this will help to minimize the theme file over all.
-5. Make sure the Web page is responsive on Desktop/Tab/Mobile and all latest browsers version+ last 2 versions's always.
-6. You can test the webpages on https://responsivetesttool.com/ website with the url https://testbmui.brainmeasures.com/<PageName.html>
+5. All Latest CSS, Js, Fonts to be used as CDN reference instead of legacy version is a must to maintain platform at latest with no vulnerability issues.
+6. Make sure the Web page is responsive on Desktop/Tab/Mobile and all latest browsers version+ last 2 versions's always.
+7. You can test the webpages on https://responsivetesttool.com/ website with the url https://testbmui.brainmeasures.com/<PageName.html>
