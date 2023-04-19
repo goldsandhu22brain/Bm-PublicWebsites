@@ -102,6 +102,9 @@ header .dropdown-menu{
 		margin-top: 20px;
 		
 	}
+	.CourseList .cbox{
+		min-height: 320px;
+	}
 }
 
 
