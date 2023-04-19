@@ -63,6 +63,16 @@ header .dropdown-menu{
 
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+	.main-banner1 .display-4 {
+		margin-top: 5px;
+		font-size: 36px;
+	}
+	
+	.btn-group-lg>.btn, .btn-lg {
+		font-size: 1rem;
+	}
+}
 
 @media (max-width: 767px) {
 	.main-banner1{
