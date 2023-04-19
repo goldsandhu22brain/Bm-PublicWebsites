@@ -1,107 +1,98 @@
 
-/*R.S. 18-Apr-2023*/
-@media (max-width:991.98px) { 
-	.navbar-right {
-		float: left!important;
-	}
-    .navbar-header {
-        float: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in{
-       display:block !important;
-    }
+header .dropdown-item.active,
+header .dropdown-item:active{
+	background-color: #e9ecef;
 }
-.d-none {
-    display: none !important;
+header #navl li:not(:last-child){
+	outline: none;
+    border-bottom: 1px solid #ffc443;
+    border-radius: 0;
+	margin-left: 0;
+	width: 100%;
 }
-@media (min-width: 992px){
-	.d-md-block {
-		display: block !important;
-	}
-	.d-md-none {
-		display: none !important;
-	}
+header #navl li a {
+    outline: none;
+}
+header .dropdown-menu{
+	font-size: 12px;
 }
 
-@media screen and (max-width:1399px) {
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px){
 	
-}
-
-@media screen and (max-width:1199px) {
-	.nav>li>a{
-		padding: 10px 12px!important;
+	header .navbar .navbar-nav .nav-item {
+		margin-left: 8px;
 	}
-	.cat_name{
-		    font-size: 14px;
-	}
-	div.ftl-vertical-tab-menu div.list-group .list-group-item{
-		padding: 8px;
-	}
-	.cor_cat .course_cat .list-group-item img {
-		width: 40px;
-	}
-	.cbox a.enroll{
+	header .navbar-dark .navbar-nav .nav-link{
 		font-size: 13px;
-		padding: 4px 5px;
-	}
-	.vbox{
-		min-height: 325px!important;
-	}
-}
-@media screen and (max-width:991px) {
-	#intro{
-		height: auto!important;
-		padding-bottom: 30px;
-	}
-	#intro .intro-info {
-		text-align:center;
-	}
-	#intro .intro-info h2{
-		font-size: 30px!important;
 	}
 	
-}
-@media screen and (max-width:767px) {
 	
-	.cat_name{
-		    font-size: 18px;
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px){
+	
+	.navbar-toggler:focus{
+		box-shadow: none;
 	}
-	div.ftl-vertical-tab-menu div.list-group .list-group-item{
-		padding: 10px 15px;
+	header .navbar .navbar-nav .nav-item {
+		margin-left: 30px;
 	}
-	.course_cat .list-group-item img {
-		width: 60px;
-	}
-	.vbox {
-		min-height: 510px!important;
-	}
-	.cbox a.enroll{
+	header .navbar-dark .navbar-nav .nav-link{
 		font-size: 14px;
-		padding: 4px 10px;
 	}
+	header .dropdown-menu{
+		background-color: transparent;
+		border: 0;
+		color: #FFF;
+		font-size: 14px;
+	}
+	header .dropdown-menu#navl li a {
+		color: #FFF !important;
+	}
+	header #navl li:not(:last-child){
+		width: calc(100% - 30px);
+	}
+
+	.CourseList .cbox{
+		min-height: 280px;
+	}
+
+
 }
-@media (max-width: 575.98px) {
-	#intro .intro-info h2{
-		margin: 20px 0!important;
+
+
+@media (max-width: 767px) {
+	.main-banner1{
+		text-align: center;
 	}
-	.vbox {
-		min-height: 418px!important;
+	.main-banner1 .main-banner1-img .img-fluid{
+		height: 350px;
+	}
+	.main-banner1 .display-4 {
+		margin-top: 5px;
+		font-size: 22px;
 	}
 	
+	.btn-group-lg>.btn, .btn-lg {
+		font-size: 1rem;
+	}
+	.lead1{
+		font-size: 30px;
+		margin-top: 30px;
+	}
 }
-/*R.S. 18-Apr-2023*/
+
+
+@media (max-width: 575.98px){
+	
+	.main-banner1 .display-4 {
+		margin-top: 20px;
+		
+	}
+}
+
 
 
