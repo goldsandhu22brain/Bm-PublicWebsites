@@ -103,7 +103,13 @@ header .dropdown-menu{
 		
 	}
 	.CourseList .cbox{
-		min-height: 320px;
+		min-height: 380px;
+	}
+}
+
+@media (max-width: 400px){
+	.CourseList .cbox{
+		min-height: 280px;
 	}
 }
 
