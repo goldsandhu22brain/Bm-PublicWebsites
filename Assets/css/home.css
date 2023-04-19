@@ -1,0 +1,70 @@
+﻿/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px){
+	
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px){
+	.home-banner{
+		padding-bottom: 30px;
+	}
+	.home-individual h5{
+		font-size: 14px;
+	}
+	.home-service-box h2{
+		font-size: 22px;
+	}
+	.home-video-course-cat-box table tr td:first-child{
+		width: 80px;
+	}
+	.home-video-course-cat-box table tr td a{
+		font-size: 11px;
+	}
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px){
+	.d-nav {
+		background: #600dff !important;
+	}
+	.home-banner{
+		text-align: center;
+	}
+	.home-video-course-cat-box table tr td a{
+		font-size: 14px;
+	}
+	.feature-box-2{
+		min-height: 387px;
+	}
+	.scorer-box {
+		width: 90%;
+		margin: 15px auto;
+	}
+	
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px){
+	
+	.home-individual{
+		padding: 20px 0;
+	}
+	.home-individual h5{
+		font-size: 13px;
+	}
+	
+	.feature-box-2{
+		min-height: auto;
+	}
+	
+}
+
+@media (max-width: 575.98px){
+	
+}
+
+@media (max-width: 440px){
+	
+}
+
+
