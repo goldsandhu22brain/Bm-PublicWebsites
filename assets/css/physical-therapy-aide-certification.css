@@ -1,7 +1,7 @@
 ﻿.navbar{
 	display: flex;
     align-items: center;
-	position: fixed;
+	/*position: fixed;*/
     z-index: 9999;
     width: 100%;
 	min-height: 80px;
@@ -10,15 +10,10 @@
 .navbar-brand>img{
 	height: 40px;
 }
-.CourseList.notm{
-	margin-top: 100px!important;
-}
-.CourseList .twhite h4{
-	font-size: 18px;
-}
 .navbar-default .navbar-collapse{
 	margin-left: auto;
 }
+
 
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
@@ -52,37 +47,41 @@
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px){
-	.newfooterbottom,
-	.fottpay{
-		text-align: center;
-	}
+	
 	.navbar .container{
 		display: block;
 	}
 	.nav>li>a{
 		padding: 10px 15px;
 	}
+	.newfooterbottom,
+	.fottpay{
+		text-align: center;
+	}
+	.vbox {
+		min-height: 450px!important;
+	}
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px){
-	
+	#canvas-holder canvas{
+		width: 100%!important;
+		height: auto!important;
+	}
 	.vbox {
-		min-height: 550px!important;
+		min-height: 580px!important;
 	}
 	
 }
 @media (max-width: 575.98px){
 	.vbox {
-		min-height: 400px!important;
-	}
-	.cbox p{
-		font-size: 14px;
+		min-height: 480px!important;
 	}
 }
 @media (max-width: 440px){
 	.vbox {
-		min-height: 350px!important;
+		min-height: 400px!important;
 	}
 }
 
