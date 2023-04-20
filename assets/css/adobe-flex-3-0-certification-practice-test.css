@@ -1,94 +1,114 @@
-﻿
-header .dropdown-item.active,
-header .dropdown-item:active{
-	background-color: #e9ecef;
-}
-header #navl li:not(:last-child){
-	outline: none;
-    border-bottom: 1px solid #efefef;
-    border-radius: 0;
-	margin-left: 0;
-	width: 100%;
-}
-header #navl li a {
-    outline: none;
-}
-header .dropdown-menu{
-	font-size: 12px;
-}
-.CourseList .courses .search .form-control.price-type{
-	border-radius: 0 20px 20px 0;
+﻿.navbar{
+	display: flex;
+    align-items: center;
+	position: fixed;
+    z-index: 9999;
+    width: 100%;
+	min-height: 80px;
 }
 
-@media screen and (max-width:1199px) {
-	#ulCourseGrp li a{
-		padding: 0;
-	}
-	h4.cat_name {
-		font-size: 14px!important;
-		margin-bottom:0;
-	}
-	.box-body #ulCourseGrp .list-group-item img{
-		width: 40px;
-		margin-right: 6px;
-	}
-	.list-group-item{
-		padding: 0.5rem;
-	}
+.navbar-brand>img{
+	height: 40px;
 }
-@media screen and (max-width:991px) {
-	#ulCourseGrp li a{
-		padding: 0;
-	}
-	h4.cat_name {
-		font-size: 12px!important;
-		margin-bottom:0;
-	}
-	.box-body #ulCourseGrp .list-group-item img{
-		width: 40px;
-		margin-right: 6px;
-	}
-	.list-group-item{
-		padding: 0.5rem;
-	}
-	.CourseList .courses .search .form-control,
-	.CourseList .courses .search .form-control::placeholder,
-	.CourseList .courses .search .box-header .form-control{
-		font-size: 14px;
-	}
+.CourseList.notm{
+	margin-top: 100px!important;
+}
+.CourseList .twhite h4{
+	font-size: 18px;
+}
+.navbar-default .navbar-collapse{
+	margin-left: auto;
+}
 
-}
-@media screen and (max-width:767px) {
-	.lead1{
-		font-size: 36px;
-		margin-top: 60px;
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px){
+	
+	.navbar .container{
+		display: flex;
+		align-items: center;
 	}
-	.video-course .CourseList{
-		margin-top: 0;
+	.navbar .navbar-header{
+		padding: 15px 0;
 	}
-	.lead{
-		font-size: 1.15rem;
+	.navbar .navbar-brand{
+		padding: 0 15px;
+	}
+	.nav>li>a{
+		padding: 10px 7px;
+	}
+	.navbar {
+		font-size: 12px;
 	}
 	
-	h4.cat_name {
-		font-size: 14px!important;
-	}
-	.cpull-right{
-		margin-bottom: 10px;
-	}
-	.CourseList .courses .search .form-control,
-	.CourseList .courses .search .form-control::placeholder{
-		font-size: 14px;
-	}
-	.CourseList .courses .search .box-header .form-control{
-		font-size: 14px;
-		border-radius: 20px;
-	}
-	.box-header .pull-right{
-		float: unset;
-	}
-	.course-price{
-		width: 100%;
-	}
+}
 
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px){
+	
+	
+	
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px){
+	.newfooterbottom,
+	.fottpay{
+		text-align: center;
+	}
+	.navbar .container{
+		display: block;
+	}
+	.nav>li>a{
+		padding: 10px 15px;
+	}
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px){
+	
+	.vbox {
+		min-height: 550px!important;
+	}
+	
+}
+@media (max-width: 575.98px){
+	.vbox {
+		min-height: 400px!important;
+	}
+	.cbox p{
+		font-size: 14px;
+	}
+}
+@media (max-width: 440px){
+	.vbox {
+		min-height: 350px!important;
+	}
+}
+
+
+@media (max-width:991.98px) {  
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+       display:block !important;
+    }
 }
