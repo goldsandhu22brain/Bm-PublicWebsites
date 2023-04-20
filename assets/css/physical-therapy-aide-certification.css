@@ -1,0 +1,114 @@
+﻿.navbar{
+	display: flex;
+    align-items: center;
+	position: fixed;
+    z-index: 9999;
+    width: 100%;
+	min-height: 80px;
+}
+
+.navbar-brand>img{
+	height: 40px;
+}
+.CourseList.notm{
+	margin-top: 100px!important;
+}
+.CourseList .twhite h4{
+	font-size: 18px;
+}
+.navbar-default .navbar-collapse{
+	margin-left: auto;
+}
+
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px){
+	
+	.navbar .container{
+		display: flex;
+		align-items: center;
+	}
+	.navbar .navbar-header{
+		padding: 15px 0;
+	}
+	.navbar .navbar-brand{
+		padding: 0 15px;
+	}
+	.nav>li>a{
+		padding: 10px 7px;
+	}
+	.navbar {
+		font-size: 12px;
+	}
+	
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px){
+	
+	
+	
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px){
+	.newfooterbottom,
+	.fottpay{
+		text-align: center;
+	}
+	.navbar .container{
+		display: block;
+	}
+	.nav>li>a{
+		padding: 10px 15px;
+	}
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px){
+	
+	.vbox {
+		min-height: 550px!important;
+	}
+	
+}
+@media (max-width: 575.98px){
+	.vbox {
+		min-height: 400px!important;
+	}
+	.cbox p{
+		font-size: 14px;
+	}
+}
+@media (max-width: 440px){
+	.vbox {
+		min-height: 350px!important;
+	}
+}
+
+
+@media (max-width:991.98px) {  
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+       display:block !important;
+    }
+}
