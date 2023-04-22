@@ -1,0 +1,165 @@
+.internal-banner {
+    padding: 220px 0 50px;
+    background-image: url(../images/internal-banner-img1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include md-max {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .internal-banner-content {
+        margin: 0 auto;
+        max-width: 1050px;
+
+        .h4 {
+            @include font-weight(800);
+        }
+
+        p {
+            padding-left: 100px;
+            padding-right: 100px;
+            font-size: 20px;
+            line-height: 34px;
+
+            @include md-max {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+    }
+
+    &.background-list-bg {
+        background-image: url(../images/list-img-bg-banner.png);
+        color: $white;
+        padding-bottom: 130px;
+        background-size: cover;
+        padding-top: 240px;
+
+        .search-box {
+            margin-top: 35px;
+
+            @include md-max {
+                margin-top: 20px;
+            }
+        }
+
+        @include md-max {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+    }
+
+    &.listing-page-details {
+        background-image: url(../images/listing-bg.png);
+        color: $white;
+        padding-bottom: 90px;
+        background-size: cover;
+        padding-top: 190px;
+
+        @include md-max {
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        &.new-new-list {
+            background-image: linear-gradient(180deg, #C7EDFD 0%, #CEDBFE 100%);
+
+            .internal-banner-content {
+                padding-right: 50px;
+
+                @include md-max {
+                    padding-right: 0px;
+                    text-align: center;
+                }
+
+                .h2 {
+                    margin-bottom: 40px;
+                }
+
+                h5 {
+                    line-height: 30px;
+                }
+
+                table {
+                    width: 100%;
+                    color: $black;
+                    margin-top: 35px;
+                    margin-bottom: 35px;
+                    max-width: 400px;
+
+                    @include md-max {
+                        margin: 0 auto;
+                        margin-top: 25px;
+                        margin-bottom: 25px;
+                    }
+
+                    tr {
+                        td {
+                            b {
+                                font-size: 22px;
+                                line-height: 22px;
+                            }
+
+                            .small-text {
+                                font-size: 10px;
+                                line-height: 10px;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .img {
+                max-width: 550px;
+
+                @include md-max {
+                    margin: 0 auto;
+                }
+            }
+
+        }
+
+
+    }
+
+    &.list-bg-2-banner {
+        background-image: linear-gradient(235.81deg, #FFC1F1 9.77%, #CDE1FF 65.34%);
+        padding-top: 0px;
+        padding-bottom: 0;
+
+        .search-box {
+            .input-group {
+                margin-top: 20px;
+
+                input {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .row {
+            align-items: flex-end;
+        }
+
+        .p-left {
+            padding: 200px 0 110px;
+            @include md-max{
+                padding: 70px 0 30px;
+                text-align: center;
+            }
+        }
+
+        .b-l-image {
+            max-width: 550px;
+            margin: 0 auto;
+            margin-bottom: -7px;
+
+        }
+    }
+
+}
