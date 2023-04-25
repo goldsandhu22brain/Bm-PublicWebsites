@@ -67,8 +67,8 @@
 	.internal-banner.list-bg-2-banner .search-box .input-group1 input{
 		margin-bottom: 20px;
 	}
-	
 }
+
 @media screen and (max-width:767px) {
 	.popup2 .modal-body .tabs li{
 		padding-left: 5px;
