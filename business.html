@@ -1,0 +1,2311 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Brainmeasures - Online Courses</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&amp;display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+	
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="https://business.brainmeasures.com/megamenu/public/css/reset.min.css">
+	<link rel="stylesheet" type="text/css" href="https://business.brainmeasures.com/megamenu/public/css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="https://business.brainmeasures.com/megamenu/public/css/ionicon.min.css">
+		<link rel="stylesheet" type="text/css" href="https://business.brainmeasures.com/megamenu/public/css/style.css">
+    <!-- Libraries Stylesheet -->
+    <link href="https://business.brainmeasures.com/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="https://business.brainmeasures.com/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="https://business.brainmeasures.com/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="https://business.brainmeasures.com/css/style.css" rel="stylesheet">
+	
+	<link href="assets/css/business.css" rel="stylesheet">
+	
+  <style type="text/css">body.swal2-shown:not(.swal2-no-backdrop) {
+  overflow-y: hidden; }
+
+body.swal2-toast-shown {
+  overflow-y: auto; }
+  body.swal2-toast-shown.swal2-has-input > .swal2-container > .swal2-toast {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    body.swal2-toast-shown.swal2-has-input > .swal2-container > .swal2-toast .swal2-icon {
+      margin: 0 0 15px; }
+    body.swal2-toast-shown.swal2-has-input > .swal2-container > .swal2-toast .swal2-buttonswrapper {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+    body.swal2-toast-shown.swal2-has-input > .swal2-container > .swal2-toast .swal2-loading {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    body.swal2-toast-shown.swal2-has-input > .swal2-container > .swal2-toast .swal2-input {
+      height: 32px;
+      font-size: 14px;
+      margin: 5px auto; }
+  body.swal2-toast-shown > .swal2-container {
+    position: fixed;
+    background-color: transparent; }
+    body.swal2-toast-shown > .swal2-container.swal2-shown {
+      background-color: transparent; }
+    body.swal2-toast-shown > .swal2-container.swal2-top {
+      top: 0;
+      left: 50%;
+      bottom: auto;
+      right: auto;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+    body.swal2-toast-shown > .swal2-container.swal2-top-right {
+      top: 0;
+      left: auto;
+      bottom: auto;
+      right: 0; }
+    body.swal2-toast-shown > .swal2-container.swal2-top-left {
+      top: 0;
+      left: 0;
+      bottom: auto;
+      right: auto; }
+    body.swal2-toast-shown > .swal2-container.swal2-center-left {
+      top: 50%;
+      left: 0;
+      bottom: auto;
+      right: auto;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    body.swal2-toast-shown > .swal2-container.swal2-center {
+      top: 50%;
+      left: 50%;
+      bottom: auto;
+      right: auto;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+    body.swal2-toast-shown > .swal2-container.swal2-center-right {
+      top: 50%;
+      left: auto;
+      bottom: auto;
+      right: 0;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    body.swal2-toast-shown > .swal2-container.swal2-bottom-left {
+      top: auto;
+      left: 0;
+      bottom: 0;
+      right: auto; }
+    body.swal2-toast-shown > .swal2-container.swal2-bottom {
+      top: auto;
+      left: 50%;
+      bottom: 0;
+      right: auto;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+    body.swal2-toast-shown > .swal2-container.swal2-bottom-right {
+      top: auto;
+      left: auto;
+      bottom: 0;
+      right: 0; }
+
+body.swal2-iosfix {
+  position: fixed;
+  left: 0;
+  right: 0; }
+
+body.swal2-no-backdrop > .swal2-shown {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  background-color: transparent; }
+  body.swal2-no-backdrop > .swal2-shown > .swal2-modal {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+  body.swal2-no-backdrop > .swal2-shown.swal2-top {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  body.swal2-no-backdrop > .swal2-shown.swal2-top-left {
+    top: 0;
+    left: 0; }
+  body.swal2-no-backdrop > .swal2-shown.swal2-top-right {
+    top: 0;
+    right: 0; }
+  body.swal2-no-backdrop > .swal2-shown.swal2-center {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  body.swal2-no-backdrop > .swal2-shown.swal2-center-left {
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  body.swal2-no-backdrop > .swal2-shown.swal2-center-right {
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  body.swal2-no-backdrop > .swal2-shown.swal2-bottom {
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  body.swal2-no-backdrop > .swal2-shown.swal2-bottom-left {
+    bottom: 0;
+    left: 0; }
+  body.swal2-no-backdrop > .swal2-shown.swal2-bottom-right {
+    bottom: 0;
+    right: 0; }
+
+.swal2-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  z-index: 1060; }
+  .swal2-container.swal2-top {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .swal2-container.swal2-top-left {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .swal2-container.swal2-top-right {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .swal2-container.swal2-center {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .swal2-container.swal2-center-left {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .swal2-container.swal2-center-right {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .swal2-container.swal2-bottom {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+  .swal2-container.swal2-bottom-left {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .swal2-container.swal2-bottom-right {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .swal2-container.swal2-grow-fullscreen > .swal2-modal {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-item-align: stretch;
+        align-self: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .swal2-container.swal2-grow-row > .swal2-modal {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .swal2-container.swal2-grow-column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .swal2-container.swal2-grow-column.swal2-top, .swal2-container.swal2-grow-column.swal2-center, .swal2-container.swal2-grow-column.swal2-bottom {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .swal2-container.swal2-grow-column.swal2-top-left, .swal2-container.swal2-grow-column.swal2-center-left, .swal2-container.swal2-grow-column.swal2-bottom-left {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+    .swal2-container.swal2-grow-column.swal2-top-right, .swal2-container.swal2-grow-column.swal2-center-right, .swal2-container.swal2-grow-column.swal2-bottom-right {
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+    .swal2-container.swal2-grow-column > .swal2-modal {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+  .swal2-container:not(.swal2-top):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-left):not(.swal2-bottom-right) > .swal2-modal {
+    margin: auto; }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .swal2-container .swal2-modal {
+      margin: 0 !important; } }
+  .swal2-container.swal2-fade {
+    -webkit-transition: background-color .1s;
+    transition: background-color .1s; }
+  .swal2-container.swal2-shown {
+    background-color: rgba(0, 0, 0, 0.4); }
+
+.swal2-popup {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: none;
+  position: relative;
+  max-width: 100%; }
+  .swal2-popup.swal2-toast {
+    width: 300px;
+    padding: 0 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-y: hidden;
+    -webkit-box-shadow: 0 0 10px #d9d9d9;
+            box-shadow: 0 0 10px #d9d9d9; }
+    .swal2-popup.swal2-toast .swal2-title {
+      max-width: 300px;
+      font-size: 16px;
+      text-align: left; }
+    .swal2-popup.swal2-toast .swal2-content {
+      font-size: 14px;
+      text-align: left; }
+    .swal2-popup.swal2-toast .swal2-icon {
+      width: 32px;
+      height: 32px;
+      margin: 0 15px 0 0; }
+      .swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring {
+        width: 32px;
+        height: 32px; }
+      .swal2-popup.swal2-toast .swal2-icon.swal2-info, .swal2-popup.swal2-toast .swal2-icon.swal2-warning, .swal2-popup.swal2-toast .swal2-icon.swal2-question {
+        font-size: 26px;
+        line-height: 32px; }
+      .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^='swal2-x-mark-line'] {
+        top: 14px;
+        width: 22px; }
+        .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^='swal2-x-mark-line'][class$='left'] {
+          left: 5px; }
+        .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^='swal2-x-mark-line'][class$='right'] {
+          right: 5px; }
+    .swal2-popup.swal2-toast .swal2-buttonswrapper {
+      margin: 0 0 0 5px; }
+    .swal2-popup.swal2-toast .swal2-styled {
+      margin: 0 0 0 5px;
+      padding: 5px 10px; }
+      .swal2-popup.swal2-toast .swal2-styled:focus {
+        -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 2px rgba(50, 100, 150, 0.4);
+                box-shadow: 0 0 0 1px #fff, 0 0 0 2px rgba(50, 100, 150, 0.4); }
+    .swal2-popup.swal2-toast .swal2-validationerror {
+      width: 100%;
+      margin: 5px -20px; }
+    .swal2-popup.swal2-toast .swal2-success {
+      border-color: #a5dc86; }
+      .swal2-popup.swal2-toast .swal2-success [class^='swal2-success-circular-line'] {
+        border-radius: 50%;
+        position: absolute;
+        width: 32px;
+        height: 64px;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg); }
+        .swal2-popup.swal2-toast .swal2-success [class^='swal2-success-circular-line'][class$='left'] {
+          border-radius: 64px 0 0 64px;
+          top: -4px;
+          left: -15px;
+          -webkit-transform: rotate(-45deg);
+                  transform: rotate(-45deg);
+          -webkit-transform-origin: 32px 32px;
+                  transform-origin: 32px 32px; }
+        .swal2-popup.swal2-toast .swal2-success [class^='swal2-success-circular-line'][class$='right'] {
+          border-radius: 0 64px 64px 0;
+          top: -5px;
+          left: 14px;
+          -webkit-transform-origin: 0 32px;
+                  transform-origin: 0 32px; }
+      .swal2-popup.swal2-toast .swal2-success .swal2-success-ring {
+        width: 32px;
+        height: 32px; }
+      .swal2-popup.swal2-toast .swal2-success .swal2-success-fix {
+        width: 7px;
+        height: 90px;
+        left: 28px;
+        top: 8px; }
+      .swal2-popup.swal2-toast .swal2-success [class^='swal2-success-line'] {
+        height: 5px; }
+        .swal2-popup.swal2-toast .swal2-success [class^='swal2-success-line'][class$='tip'] {
+          width: 12px;
+          left: 3px;
+          top: 18px; }
+        .swal2-popup.swal2-toast .swal2-success [class^='swal2-success-line'][class$='long'] {
+          width: 22px;
+          right: 3px;
+          top: 15px; }
+    .swal2-popup.swal2-toast .swal2-animate-success-line-tip {
+      -webkit-animation: animate-toast-success-tip .75s;
+              animation: animate-toast-success-tip .75s; }
+    .swal2-popup.swal2-toast .swal2-animate-success-line-long {
+      -webkit-animation: animate-toast-success-long .75s;
+              animation: animate-toast-success-long .75s; }
+  .swal2-popup:focus {
+    outline: none; }
+  .swal2-popup.swal2-loading {
+    overflow-y: hidden; }
+  .swal2-popup .swal2-title {
+    color: #595959;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: none;
+    position: relative;
+    margin: 0 0 .4em;
+    padding: 0;
+    display: block;
+    word-wrap: break-word; }
+  .swal2-popup .swal2-buttonswrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 15px; }
+    .swal2-popup .swal2-buttonswrapper:not(.swal2-loading) .swal2-styled[disabled] {
+      opacity: .4;
+      cursor: no-drop; }
+    .swal2-popup .swal2-buttonswrapper.swal2-loading .swal2-styled.swal2-confirm {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border: 4px solid transparent;
+      border-color: transparent;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      margin: 7.5px;
+      vertical-align: top;
+      background-color: transparent !important;
+      color: transparent;
+      cursor: default;
+      border-radius: 100%;
+      -webkit-animation: rotate-loading 1.5s linear 0s infinite normal;
+              animation: rotate-loading 1.5s linear 0s infinite normal;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none; }
+    .swal2-popup .swal2-buttonswrapper.swal2-loading .swal2-styled.swal2-cancel {
+      margin-left: 30px;
+      margin-right: 30px; }
+    .swal2-popup .swal2-buttonswrapper.swal2-loading :not(.swal2-styled).swal2-confirm::after {
+      display: inline-block;
+      content: '';
+      margin-left: 5px;
+      vertical-align: -1px;
+      height: 15px;
+      width: 15px;
+      border: 3px solid #999999;
+      -webkit-box-shadow: 1px 1px 1px #fff;
+              box-shadow: 1px 1px 1px #fff;
+      border-right-color: transparent;
+      border-radius: 50%;
+      -webkit-animation: rotate-loading 1.5s linear 0s infinite normal;
+              animation: rotate-loading 1.5s linear 0s infinite normal; }
+  .swal2-popup .swal2-styled {
+    border: 0;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 15px 5px 0;
+    padding: 10px 32px; }
+    .swal2-popup .swal2-styled:focus {
+      outline: none;
+      -webkit-box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgba(50, 100, 150, 0.4);
+              box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgba(50, 100, 150, 0.4); }
+  .swal2-popup .swal2-image {
+    margin: 20px auto;
+    max-width: 100%; }
+  .swal2-popup .swal2-close {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 38px;
+    height: 40px;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: serif;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    cursor: pointer;
+    color: #cccccc;
+    -webkit-transition: color .1s ease;
+    transition: color .1s ease; }
+    .swal2-popup .swal2-close:hover {
+      color: #d55; }
+  .swal2-popup > .swal2-input,
+  .swal2-popup > .swal2-file,
+  .swal2-popup > .swal2-textarea,
+  .swal2-popup > .swal2-select,
+  .swal2-popup > .swal2-radio,
+  .swal2-popup > .swal2-checkbox {
+    display: none; }
+  .swal2-popup .swal2-content {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    float: none;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    color: #545454;
+    word-wrap: break-word; }
+  .swal2-popup .swal2-input,
+  .swal2-popup .swal2-file,
+  .swal2-popup .swal2-textarea,
+  .swal2-popup .swal2-select,
+  .swal2-popup .swal2-radio,
+  .swal2-popup .swal2-checkbox {
+    margin: 20px auto; }
+  .swal2-popup .swal2-input,
+  .swal2-popup .swal2-file,
+  .swal2-popup .swal2-textarea {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px solid #d9d9d9;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06);
+    -webkit-transition: border-color .3s, -webkit-box-shadow .3s;
+    transition: border-color .3s, -webkit-box-shadow .3s;
+    transition: border-color .3s, box-shadow .3s;
+    transition: border-color .3s, box-shadow .3s, -webkit-box-shadow .3s; }
+    .swal2-popup .swal2-input.swal2-inputerror,
+    .swal2-popup .swal2-file.swal2-inputerror,
+    .swal2-popup .swal2-textarea.swal2-inputerror {
+      border-color: #f27474 !important;
+      -webkit-box-shadow: 0 0 2px #f27474 !important;
+              box-shadow: 0 0 2px #f27474 !important; }
+    .swal2-popup .swal2-input:focus,
+    .swal2-popup .swal2-file:focus,
+    .swal2-popup .swal2-textarea:focus {
+      outline: none;
+      border: 1px solid #b4dbed;
+      -webkit-box-shadow: 0 0 3px #c4e6f5;
+              box-shadow: 0 0 3px #c4e6f5; }
+    .swal2-popup .swal2-input::-webkit-input-placeholder,
+    .swal2-popup .swal2-file::-webkit-input-placeholder,
+    .swal2-popup .swal2-textarea::-webkit-input-placeholder {
+      color: #cccccc; }
+    .swal2-popup .swal2-input:-ms-input-placeholder,
+    .swal2-popup .swal2-file:-ms-input-placeholder,
+    .swal2-popup .swal2-textarea:-ms-input-placeholder {
+      color: #cccccc; }
+    .swal2-popup .swal2-input::-ms-input-placeholder,
+    .swal2-popup .swal2-file::-ms-input-placeholder,
+    .swal2-popup .swal2-textarea::-ms-input-placeholder {
+      color: #cccccc; }
+    .swal2-popup .swal2-input::placeholder,
+    .swal2-popup .swal2-file::placeholder,
+    .swal2-popup .swal2-textarea::placeholder {
+      color: #cccccc; }
+  .swal2-popup .swal2-range input {
+    float: left;
+    width: 80%; }
+  .swal2-popup .swal2-range output {
+    float: right;
+    width: 20%;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center; }
+  .swal2-popup .swal2-range input,
+  .swal2-popup .swal2-range output {
+    height: 43px;
+    line-height: 43px;
+    vertical-align: middle;
+    margin: 20px auto;
+    padding: 0; }
+  .swal2-popup .swal2-input {
+    height: 43px;
+    padding: 0 12px; }
+    .swal2-popup .swal2-input[type='number'] {
+      max-width: 150px; }
+  .swal2-popup .swal2-file {
+    font-size: 20px; }
+  .swal2-popup .swal2-textarea {
+    height: 108px;
+    padding: 12px; }
+  .swal2-popup .swal2-select {
+    color: #545454;
+    font-size: inherit;
+    padding: 5px 10px;
+    min-width: 40%;
+    max-width: 100%; }
+  .swal2-popup .swal2-radio {
+    border: 0; }
+    .swal2-popup .swal2-radio label:not(:first-child) {
+      margin-left: 20px; }
+    .swal2-popup .swal2-radio input,
+    .swal2-popup .swal2-radio span {
+      vertical-align: middle; }
+    .swal2-popup .swal2-radio input {
+      margin: 0 3px 0 0; }
+  .swal2-popup .swal2-checkbox {
+    color: #545454; }
+    .swal2-popup .swal2-checkbox input,
+    .swal2-popup .swal2-checkbox span {
+      vertical-align: middle; }
+  .swal2-popup .swal2-validationerror {
+    background-color: #f0f0f0;
+    margin: 0 -20px;
+    overflow: hidden;
+    padding: 10px;
+    color: gray;
+    font-size: 16px;
+    font-weight: 300;
+    display: none; }
+    .swal2-popup .swal2-validationerror::before {
+      content: '!';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: #ea7d7d;
+      color: #fff;
+      line-height: 24px;
+      text-align: center;
+      margin-right: 10px; }
+
+@supports (-ms-accelerator: true) {
+  .swal2-range input {
+    width: 100% !important; }
+  .swal2-range output {
+    display: none; } }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .swal2-range input {
+    width: 100% !important; }
+  .swal2-range output {
+    display: none; } }
+
+.swal2-icon {
+  width: 80px;
+  height: 80px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  margin: 20px auto 30px;
+  padding: 0;
+  position: relative;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .swal2-icon.swal2-error {
+    border-color: #f27474; }
+    .swal2-icon.swal2-error .swal2-x-mark {
+      position: relative;
+      display: block; }
+    .swal2-icon.swal2-error [class^='swal2-x-mark-line'] {
+      position: absolute;
+      height: 5px;
+      width: 47px;
+      background-color: #f27474;
+      display: block;
+      top: 37px;
+      border-radius: 2px; }
+      .swal2-icon.swal2-error [class^='swal2-x-mark-line'][class$='left'] {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        left: 17px; }
+      .swal2-icon.swal2-error [class^='swal2-x-mark-line'][class$='right'] {
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        right: 16px; }
+  .swal2-icon.swal2-warning {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #f8bb86;
+    border-color: #facea8;
+    font-size: 60px;
+    line-height: 80px;
+    text-align: center; }
+  .swal2-icon.swal2-info {
+    font-family: 'Open Sans', sans-serif;
+    color: #3fc3ee;
+    border-color: #9de0f6;
+    font-size: 60px;
+    line-height: 80px;
+    text-align: center; }
+  .swal2-icon.swal2-question {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #87adbd;
+    border-color: #c9dae1;
+    font-size: 60px;
+    line-height: 80px;
+    text-align: center; }
+  .swal2-icon.swal2-success {
+    border-color: #a5dc86; }
+    .swal2-icon.swal2-success [class^='swal2-success-circular-line'] {
+      border-radius: 50%;
+      position: absolute;
+      width: 60px;
+      height: 120px;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+      .swal2-icon.swal2-success [class^='swal2-success-circular-line'][class$='left'] {
+        border-radius: 120px 0 0 120px;
+        top: -7px;
+        left: -33px;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        -webkit-transform-origin: 60px 60px;
+                transform-origin: 60px 60px; }
+      .swal2-icon.swal2-success [class^='swal2-success-circular-line'][class$='right'] {
+        border-radius: 0 120px 120px 0;
+        top: -11px;
+        left: 30px;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        -webkit-transform-origin: 0 60px;
+                transform-origin: 0 60px; }
+    .swal2-icon.swal2-success .swal2-success-ring {
+      width: 80px;
+      height: 80px;
+      border: 4px solid rgba(165, 220, 134, 0.2);
+      border-radius: 50%;
+      -webkit-box-sizing: content-box;
+              box-sizing: content-box;
+      position: absolute;
+      left: -4px;
+      top: -4px;
+      z-index: 2; }
+    .swal2-icon.swal2-success .swal2-success-fix {
+      width: 7px;
+      height: 90px;
+      position: absolute;
+      left: 28px;
+      top: 8px;
+      z-index: 1;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+    .swal2-icon.swal2-success [class^='swal2-success-line'] {
+      height: 5px;
+      background-color: #a5dc86;
+      display: block;
+      border-radius: 2px;
+      position: absolute;
+      z-index: 2; }
+      .swal2-icon.swal2-success [class^='swal2-success-line'][class$='tip'] {
+        width: 25px;
+        left: 14px;
+        top: 46px;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg); }
+      .swal2-icon.swal2-success [class^='swal2-success-line'][class$='long'] {
+        width: 47px;
+        right: 8px;
+        top: 38px;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+
+.swal2-progresssteps {
+  font-weight: 600;
+  margin: 0 0 20px;
+  padding: 0; }
+  .swal2-progresssteps li {
+    display: inline-block;
+    position: relative; }
+  .swal2-progresssteps .swal2-progresscircle {
+    background: #3085d6;
+    border-radius: 2em;
+    color: #fff;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    width: 2em;
+    z-index: 20; }
+    .swal2-progresssteps .swal2-progresscircle:first-child {
+      margin-left: 0; }
+    .swal2-progresssteps .swal2-progresscircle:last-child {
+      margin-right: 0; }
+    .swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep {
+      background: #3085d6; }
+      .swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep ~ .swal2-progresscircle {
+        background: #add8e6; }
+      .swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep ~ .swal2-progressline {
+        background: #add8e6; }
+  .swal2-progresssteps .swal2-progressline {
+    background: #3085d6;
+    height: .4em;
+    margin: 0 -1px;
+    z-index: 10; }
+
+[class^='swal2'] {
+  -webkit-tap-highlight-color: transparent; }
+
+@-webkit-keyframes showSweetToast {
+  0% {
+    -webkit-transform: translateY(-10px) rotateZ(2deg);
+            transform: translateY(-10px) rotateZ(2deg);
+    opacity: 0; }
+  33% {
+    -webkit-transform: translateY(0) rotateZ(-2deg);
+            transform: translateY(0) rotateZ(-2deg);
+    opacity: .5; }
+  66% {
+    -webkit-transform: translateY(5px) rotateZ(2deg);
+            transform: translateY(5px) rotateZ(2deg);
+    opacity: .7; }
+  100% {
+    -webkit-transform: translateY(0) rotateZ(0);
+            transform: translateY(0) rotateZ(0);
+    opacity: 1; } }
+
+@keyframes showSweetToast {
+  0% {
+    -webkit-transform: translateY(-10px) rotateZ(2deg);
+            transform: translateY(-10px) rotateZ(2deg);
+    opacity: 0; }
+  33% {
+    -webkit-transform: translateY(0) rotateZ(-2deg);
+            transform: translateY(0) rotateZ(-2deg);
+    opacity: .5; }
+  66% {
+    -webkit-transform: translateY(5px) rotateZ(2deg);
+            transform: translateY(5px) rotateZ(2deg);
+    opacity: .7; }
+  100% {
+    -webkit-transform: translateY(0) rotateZ(0);
+            transform: translateY(0) rotateZ(0);
+    opacity: 1; } }
+
+@-webkit-keyframes hideSweetToast {
+  0% {
+    opacity: 1; }
+  33% {
+    opacity: .5; }
+  100% {
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
+    opacity: 0; } }
+
+@keyframes hideSweetToast {
+  0% {
+    opacity: 1; }
+  33% {
+    opacity: .5; }
+  100% {
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
+    opacity: 0; } }
+
+@-webkit-keyframes showSweetAlert {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7); }
+  45% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+  80% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes showSweetAlert {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7); }
+  45% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+  80% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-webkit-keyframes hideSweetAlert {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0; } }
+
+@keyframes hideSweetAlert {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0; } }
+
+.swal2-show {
+  -webkit-animation: showSweetAlert .3s;
+          animation: showSweetAlert .3s; }
+  .swal2-show.swal2-toast {
+    -webkit-animation: showSweetToast .5s;
+            animation: showSweetToast .5s; }
+  .swal2-show.swal2-noanimation {
+    -webkit-animation: none;
+            animation: none; }
+
+.swal2-hide {
+  -webkit-animation: hideSweetAlert .15s forwards;
+          animation: hideSweetAlert .15s forwards; }
+  .swal2-hide.swal2-toast {
+    -webkit-animation: hideSweetToast .2s forwards;
+            animation: hideSweetToast .2s forwards; }
+  .swal2-hide.swal2-noanimation {
+    -webkit-animation: none;
+            animation: none; }
+
+@-webkit-keyframes animate-success-tip {
+  0% {
+    width: 0;
+    left: 1px;
+    top: 19px; }
+  54% {
+    width: 0;
+    left: 1px;
+    top: 19px; }
+  70% {
+    width: 50px;
+    left: -8px;
+    top: 37px; }
+  84% {
+    width: 17px;
+    left: 21px;
+    top: 48px; }
+  100% {
+    width: 25px;
+    left: 14px;
+    top: 45px; } }
+
+@keyframes animate-success-tip {
+  0% {
+    width: 0;
+    left: 1px;
+    top: 19px; }
+  54% {
+    width: 0;
+    left: 1px;
+    top: 19px; }
+  70% {
+    width: 50px;
+    left: -8px;
+    top: 37px; }
+  84% {
+    width: 17px;
+    left: 21px;
+    top: 48px; }
+  100% {
+    width: 25px;
+    left: 14px;
+    top: 45px; } }
+
+@-webkit-keyframes animate-success-long {
+  0% {
+    width: 0;
+    right: 46px;
+    top: 54px; }
+  65% {
+    width: 0;
+    right: 46px;
+    top: 54px; }
+  84% {
+    width: 55px;
+    right: 0;
+    top: 35px; }
+  100% {
+    width: 47px;
+    right: 8px;
+    top: 38px; } }
+
+@keyframes animate-success-long {
+  0% {
+    width: 0;
+    right: 46px;
+    top: 54px; }
+  65% {
+    width: 0;
+    right: 46px;
+    top: 54px; }
+  84% {
+    width: 55px;
+    right: 0;
+    top: 35px; }
+  100% {
+    width: 47px;
+    right: 8px;
+    top: 38px; } }
+
+@-webkit-keyframes animate-toast-success-tip {
+  0% {
+    width: 0;
+    left: 1px;
+    top: 9px; }
+  54% {
+    width: 0;
+    left: 1px;
+    top: 9px; }
+  70% {
+    width: 24px;
+    left: -4px;
+    top: 17px; }
+  84% {
+    width: 8px;
+    left: 10px;
+    top: 20px; }
+  100% {
+    width: 12px;
+    left: 3px;
+    top: 18px; } }
+
+@keyframes animate-toast-success-tip {
+  0% {
+    width: 0;
+    left: 1px;
+    top: 9px; }
+  54% {
+    width: 0;
+    left: 1px;
+    top: 9px; }
+  70% {
+    width: 24px;
+    left: -4px;
+    top: 17px; }
+  84% {
+    width: 8px;
+    left: 10px;
+    top: 20px; }
+  100% {
+    width: 12px;
+    left: 3px;
+    top: 18px; } }
+
+@-webkit-keyframes animate-toast-success-long {
+  0% {
+    width: 0;
+    right: 22px;
+    top: 26px; }
+  65% {
+    width: 0;
+    right: 22px;
+    top: 26px; }
+  84% {
+    width: 26px;
+    right: 0;
+    top: 15px; }
+  100% {
+    width: 22px;
+    right: 3px;
+    top: 15px; } }
+
+@keyframes animate-toast-success-long {
+  0% {
+    width: 0;
+    right: 22px;
+    top: 26px; }
+  65% {
+    width: 0;
+    right: 22px;
+    top: 26px; }
+  84% {
+    width: 26px;
+    right: 0;
+    top: 15px; }
+  100% {
+    width: 22px;
+    right: 3px;
+    top: 15px; } }
+
+@-webkit-keyframes rotatePlaceholder {
+  0% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  5% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  12% {
+    -webkit-transform: rotate(-405deg);
+            transform: rotate(-405deg); }
+  100% {
+    -webkit-transform: rotate(-405deg);
+            transform: rotate(-405deg); } }
+
+@keyframes rotatePlaceholder {
+  0% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  5% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  12% {
+    -webkit-transform: rotate(-405deg);
+            transform: rotate(-405deg); }
+  100% {
+    -webkit-transform: rotate(-405deg);
+            transform: rotate(-405deg); } }
+
+.swal2-animate-success-line-tip {
+  -webkit-animation: animate-success-tip .75s;
+          animation: animate-success-tip .75s; }
+
+.swal2-animate-success-line-long {
+  -webkit-animation: animate-success-long .75s;
+          animation: animate-success-long .75s; }
+
+.swal2-success.swal2-animate-success-icon .swal2-success-circular-line-right {
+  -webkit-animation: rotatePlaceholder 4.25s ease-in;
+          animation: rotatePlaceholder 4.25s ease-in; }
+
+@-webkit-keyframes animate-error-icon {
+  0% {
+    -webkit-transform: rotateX(100deg);
+            transform: rotateX(100deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    opacity: 1; } }
+
+@keyframes animate-error-icon {
+  0% {
+    -webkit-transform: rotateX(100deg);
+            transform: rotateX(100deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    opacity: 1; } }
+
+.swal2-animate-error-icon {
+  -webkit-animation: animate-error-icon .5s;
+          animation: animate-error-icon .5s; }
+
+@-webkit-keyframes animate-x-mark {
+  0% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    margin-top: 26px;
+    opacity: 0; }
+  50% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    margin-top: 26px;
+    opacity: 0; }
+  80% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    margin-top: -6px; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    margin-top: 0;
+    opacity: 1; } }
+
+@keyframes animate-x-mark {
+  0% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    margin-top: 26px;
+    opacity: 0; }
+  50% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    margin-top: 26px;
+    opacity: 0; }
+  80% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    margin-top: -6px; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    margin-top: 0;
+    opacity: 1; } }
+
+.swal2-animate-x-mark {
+  -webkit-animation: animate-x-mark .5s;
+          animation: animate-x-mark .5s; }
+
+@-webkit-keyframes rotate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+</style><style type="text/css">
+@font-face {
+  font-weight: 400;
+  font-style:  normal;
+  font-family: circular;
+
+  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-style:  normal;
+  font-family: circular;
+
+  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style:  normal;
+  font-family: circular;
+
+  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 900;
+  font-style:  normal;
+  font-family: circular;
+
+  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Black.woff2') format('woff2');
+}</style></head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+  <header class="header">
+		<div class="container">
+			<section class="wrapper">
+				<div class="header-item-left">
+					<a href="./index.html" class="brand"><img src="https://business.brainmeasures.com/img/logo.png" alt="" class="img-fluid"></a>
+				</div>
+				<!-- Navbar Section -->
+				<div class="header-item-center">
+					<div class="overlay"></div>
+					<nav class="menu" id="menu">
+						<div class="menu-mobile-header">
+							<button type="button" class="menu-mobile-arrow"><i class="ion ion-ios-arrow-back"></i></button>
+							<div class="menu-mobile-title"></div>
+							<button type="button" class="menu-mobile-close"><i class="ion ion-ios-close"></i></button>
+						</div>
+						<ul class="menu-section">
+						
+						<li class="menu-item-has-children">
+								<a href="#">Why Brainmeasures? <i class="ion ion-ios-arrow-down"></i></a>
+								<div class="menu-subs menu-mega menu-column-4">
+								
+									<div class="list-item">
+										<a href="./brainmeasures-learning&amp;development.html"><img src="https://business.brainmeasures.com/megamenu/assets/bm.png" alt="" style="width:40%"></a>
+									 <a href="./brainmeasures-learning&amp;development.html"><h4 class="title"> Why Brainmeasures?</h4></a>
+										<ul>
+											<li><a href="./brainmeasures-learning&amp;development.html">Discover the benefits of our market place model</a></li>
+											
+										</ul>
+										<a href="./dedicated-customer-success.html"><img src="https://business.brainmeasures.com/megamenu/assets/customer.png" alt="" style="width:40%"></a>
+										<a href="./dedicated-customer-success.html"><h4 class="title">Dedicated Customer Success Team</h4></a>
+										<ul>
+											<li><a href="./dedicated-customer-success.html">Partner with us to achieve your business goals through learning</a></li>
+											
+										</ul>
+										<a href="./enterprise-grad-platform.html"><img src="https://business.brainmeasures.com/megamenu/assets/platform.png" alt="" style="width:40%"></a>
+										<a href="./enterprise-grad-platform.html"><h4 class="title">Enterprise Grade Platform</h4></a>
+										<ul>
+											<li><a href="./enterprise-grad-platform.html">Scaling learning across your organisation</a></li>
+											
+										</ul>
+										
+									</div>
+									<div class="list-item">
+									<a href="./On-Demand-Learning.html"><img src="https://business.brainmeasures.com/megamenu/assets/online.png" alt="" style="width:40%"></a>
+										<a href="./On-Demand-Learning.html"><h4 class="title">On-Demand learning</h4></a>
+										<ul>
+											<li><a href="./On-Demand-Learning.html">Get access to thousands of constantly updated courses</a></li>
+											
+										</ul>
+										
+										
+										<a href="./personalised-learning.html"><img src="https://business.brainmeasures.com/megamenu/assets/personnel.png" alt="" style="width:40%"></a>
+										<a href="./personalised-learning.html"><h4 class="title">Personalized learning</h4></a>
+										<ul>
+											<li><a href="./personalised-learning.html">Drive engagement with customised learning</a></li>
+											</ul>
+											<a href="./seamless-integration.html"><img src="https://business.brainmeasures.com/megamenu/assets/Integrations.png" alt="" style="width:40%"></a>
+										<a href="./seamless-integration.html"><h4 class="title">Seamless integrations</h4></a>
+										<ul>
+											<li><a href="./seamless-integration.html">Be more efficient, productive, and agile</a></li>
+											
+										</ul>
+										
+									
+									</div>
+									<div class="list-item">
+									
+									
+										<a href="./analytics&amp;insights.html"><img src="https://business.brainmeasures.com/megamenu/assets/Analytics.png" alt="" style="width:40%"></a>
+										<a href="./analytics&amp;insights.html"><h4 class="title">Analytics &amp; insights</h4></a>
+										<ul>
+											<li><a href="./analytics&amp;insights.html">Gain visibility into how your org learning</a></li>
+										</ul>
+										<a href="./flexible-user-management.html"><img src="https://business.brainmeasures.com/megamenu/assets/User-Management.png" alt="" style="width:40%"></a>
+										<a href="./flexible-user-management.html"><h4 class="title">Flexible user management</h4></a>
+										<ul>
+											<li><a href="./flexible-user-management.html">Enable admins to guide their teams' learning</a></li>
+											
+										</ul>
+										
+									</div>
+									<div class="list-item">
+										<img src="https://business.brainmeasures.com/megamenu/assets/coding.png" loading="lazy" alt="Product Images">
+										</div>
+									
+								</div>
+							</li>
+							<li class="menu-item"><a href="https://www.brainmeasures.com/VideoCourses.aspx" target="_blank">20k+ Video Courses</a></li>
+							<li class="menu-item"><a href="./analytics&amp;insights.html">In-depth Reporting &amp; Analytics</a></li>
+						
+							
+							<li class="menu-item"><a href="./plans.html">Plans</a></li>
+							<li class="menu-item-has-children">
+								<a href="#">More <i class="ion ion-ios-arrow-down"></i></a>
+								<div class="menu-subs menu-column-1">
+									<ul>
+										<li><a href="https://www.brainmeasures.com/VideoCourses.aspx"><i class="fas fa-play" style="font-size:20px;color:#f45e29"></i>  20k+ Video Courses</a></li>
+										<li><a href="https://www.brainmeasures.com/Tests.aspx" target="_blank"><i class="fa fa-sticky-note" style="font-size:20px;color:#f45e29"></i>  7000+ Tests</a></li>
+										<li><a href="https://www.brainmeasures.com/Courses.aspx" target="_blank"><i class="fa fa-book" style="font-size:20px;color:#f45e29"></i>  6000+E-Book  Courses</a></li>
+										<li><a href="https://www.brainmeasures.com/Proctor.aspx" target="_blank"><i class="far fa-file-alt" style="font-size:20px;color:#f45e29"></i>  Proctored Exam</a></li>
+										<li><a href="https://www.brainmeasures.com/employee-testing.aspx" target="_blank"><i class="far fa-edit" style="font-size:20px;color:#f45e29"></i>  Employee Testing</a></li>
+										<li><a href="https://business.brainmeasures.com/On-Demand-Learning.html" target="_blank"><i class="far fa-newspaper" style="font-size:20px;color:#f45e29"></i>  Customized Content</a></li>
+										<li><a href="https://business.brainmeasures.com/On-Demand-Learning.html"><i class="fas fa-play" style="font-size:20px;color:#f45e29"></i>  On-Demand Courses</a></li>
+									</ul>
+								</div>
+							</li>
+							
+							
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header-item-right">
+				
+				
+					<a href="./demo.html" class="btn btn-primary5">Get Started<i class="fa fa-arrow-right ms-3"></i></a>
+		
+					
+					<button type="button" class="menu-mobile-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</section>
+		</div>
+	</header>
+    <!-- Navbar End -->
+	 <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="col-lg-6 intro-info order-lg-first order-last">
+          <h2>World #1 Site <br>Learning &amp; Development, Employee Hiring and Certification Program.</h2>
+ 
+ <h3 class="mb-4">
+            #Up-Skill your Teams</h3>
+			<h3 class="mb-4">Train your employees, keep your workforce Up-to-date and gain Competitive Leverage</h3>
+			
+			
+          <div>
+             <a class="btn btn-primary py-3 px-5 mt-3" href="./brainmeasures-learning&amp;development.html">Explore Now <i class="fa fa-arrow-right ms-3"></i></a>
+          </div>
+        </div>
+  
+        <div class="col-lg-6 intro-img order-lg-last order-first">
+          <img src="https://business.brainmeasures.com/img/man.png" alt="" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+   
+    <!-- Header Start -->
+    <div class="container-fluid bg-dark p-0 mb-5">
+      <div class="row g-0 flex-column-reverse flex-lg-row">
+        <div class="col-lg-6 p-0 wow fadeIn" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+          <div class="header-bg h-100 d-flex flex-column justify-content-center p-5">
+            <h1 class="display-4 text-dark mb-5">
+             Proud to be associated with 1000+ Big Corporates
+            </h1>
+            <div class="d-flex align-items-center pt-4 animated slideInDown">
+              <a href="./demo.html" class="btn btn-primary py-sm-3 px-3 px-sm-5 me-5">Get Started <i class="fa fa-arrow-right ms-3"></i></a>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+          <div class="owl-carousel header-carousel owl-loaded owl-drag">
+            
+           
+          <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1349px, 0px, 0px); transition: all 0s ease 0s; width: 3373px;"><div class="owl-item cloned" style="width: 674.5px;"><div class="owl-carousel-item">
+              <img class="img-fluid" src="https://business.brainmeasures.com/img/carousel-3.png" alt="">
+            </div></div><div class="owl-item cloned" style="width: 674.5px;"><div class="owl-carousel-item">
+              <img class="img-fluid" src="https://business.brainmeasures.com/img/carousel-3.png" alt="">
+            </div></div><div class="owl-item active" style="width: 674.5px;"><div class="owl-carousel-item">
+              <img class="img-fluid" src="https://business.brainmeasures.com/img/carousel-3.png" alt="">
+            </div></div><div class="owl-item cloned" style="width: 674.5px;"><div class="owl-carousel-item">
+              <img class="img-fluid" src="https://business.brainmeasures.com/img/carousel-3.png" alt="">
+            </div></div><div class="owl-item cloned" style="width: 674.5px;"><div class="owl-carousel-item">
+              <img class="img-fluid" src="https://business.brainmeasures.com/img/carousel-3.png" alt="">
+            </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev"><i class="bi bi-chevron-left"></i></div><div class="owl-next"><i class="bi bi-chevron-right"></i></div></div><div class="owl-dots disabled"><div class="owl-dot active"><span></span></div></div></div>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+  
+	
+	
+<h2 class="display-7 text-center mb-4">
+              Grow Your<br>
+              <span class="text-primary1">Business Exponentially – Up-Skill your employees</span>
+            </h2>
+            <p class=" text-center mb-4">
+              Learning and development is an integral part of organizational growth – partner with Brainmeasures
+Business.
+
+            </p>
+			
+			
+			 <!--==========================
+      Features Section
+    ============================-->
+	
+    <section id="features">
+      <div class="container">
+
+        <div class="row feature-item">
+		<div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0 order-lg-first order-last" style="visibility: hidden; animation-name: none;">
+            <h4>Hack the learning Curve - Help your employees acquire new skills</h4>
+			 <div class="quick-contact-icons d-flex">
+              <div class="icon align-self-start">
+               <i class="far fa-check-circle text-primary1 me-3"></i>
+              </div>
+              <div class="text">
+                <p>Keep your teams updated with latest skills</p>
+              </div>
+            </div>	
+			 <div class="quick-contact-icons d-flex">
+              <div class="icon align-self-start">
+               <i class="far fa-check-circle text-primary1 me-3"></i>
+              </div>
+              <div class="text">
+                <p>Well trained employees bring in positive business outcomes</p>
+              </div>
+            </div>	
+			 <div class="quick-contact-icons d-flex">
+              <div class="icon align-self-start">
+               <i class="far fa-check-circle text-primary1 me-3"></i>
+              </div>
+              <div class="text">
+                <p>Keep pace with digital transformation</p>
+              </div>
+            </div>	
+            
+            <a class="btn btn-primary1 py-3 px-5 mt-3" href="./brainmeasures-learning&amp;development.html">Get Started <i class="fa fa-arrow-right ms-3"></i></a>
+          </div>
+          <div class="col-lg-6 wow fadeInUp order-lg-last order-first" style="visibility: hidden; animation-name: none;">
+            <img src="https://business.brainmeasures.com/img/skills-gaps.png" class="img-fluid" alt="">
+          </div>
+          
+        </div>
+		  <div class="row feature-item">
+          <div class="col-lg-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+            <img src="https://business.brainmeasures.com/img/onboard.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0" style="visibility: hidden; animation-name: none;">
+            <h4>Employee Management Skills</h4>
+			 <div class="quick-contact-icons d-flex">
+              <div class="icon align-self-start">
+               <i class="far fa-check-circle text-primary1 me-3"></i>
+              </div>
+              <div class="text">
+                <p>Harness Best talent and engage and retain it.</p>
+              </div>
+            </div>	
+			 <div class="quick-contact-icons d-flex">
+              <div class="icon align-self-start">
+               <i class="far fa-check-circle text-primary1 me-3"></i>
+              </div>
+              <div class="text">
+                <p>Up-Skill your teams to get better business results.</p>
+              </div>
+            </div>	
+			 <div class="quick-contact-icons d-flex">
+              <div class="icon align-self-start">
+               <i class="far fa-check-circle text-primary1 me-3"></i>
+              </div>
+              <div class="text">
+                <p>Make continuous learning ongoing organizational goal.</p>
+              </div>
+            </div>	
+			
+           
+			<a class="btn btn-primary1 py-3 px-5 mt-3" href="./dedicated-customer-success.html">Learn More <i class="fa fa-arrow-right ms-3"></i></a>
+          </div>
+      
+
+        <div class="row feature-item mt-5 pt-5">
+          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2" style="visibility: hidden; animation-name: none;">
+            <img src="https://business.brainmeasures.com/img/learning-solutions.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" style="visibility: hidden; animation-name: none;">
+            <h4>Customized Learning and Development platform</h4>
+			
+			 <div class="quick-contact-icons d-flex">
+              <div class="icon align-self-start">
+               <i class="far fa-check-circle text-primary1 me-3"></i>
+              </div>
+              <div class="text">
+                <p>Track the progress of your learning and development program.</p>
+              </div>
+            </div>	
+			 <div class="quick-contact-icons d-flex">
+              <div class="icon align-self-start">
+               <i class="far fa-check-circle text-primary1 me-3"></i>
+              </div>
+              <div class="text">
+                <p>Check how your team is performing using in-built tools to give you deep insights.</p>
+              </div>
+            </div>	
+			 <div class="quick-contact-icons d-flex">
+              <div class="icon align-self-start">
+               <i class="far fa-check-circle text-primary1 me-3"></i>
+              </div>
+              <div class="text">
+                <p>Customize the platform to meet your specific learning needs.</p>
+              </div>
+            </div>	
+            
+			<a class="btn btn-primary1 py-3 px-5 mt-3" href="./enterprise-grad-platform.html">Learn More <i class="fa fa-arrow-right ms-3"></i></a>
+       
+          </div>
+          
+        </div>
+ 
+      </div>
+    </div></section><!-- #about -->
+			
+	 <section class="home-individual">
+    <div class="container">
+      <div class="row mb-5">
+		<div class="col-lg-12 text-center order-lg-first order-first">
+          <a href="https://www.brainmeasures.com/Tests.aspx" target="_blank"><h1><span class="underline-d">Certification</span> Programs</h1></a>
+        </div>
+        <div class="col-lg-6 mt-4 order-lg-second order-last">
+          <h2 class="title-style-2 mb-2">Individual <span class="underline-d">Certification</span></h2>
+          <p><strong>Riveting Learning Experience, Get Ahead with Brainmeasures Certification Programs</strong></p>
+          <p class="font-14 mb-3">Brainmeasures Skill Certifications are industry-recognized credentialing programs developed by experts. Brainmeasures is the largest professional certification body offering huge skill development resources.</p>
+          <a href="" class="mt-3"><h5><i class="fa fa-check text-primary1 me-3"></i>20k+ Video Certification Courses</h5></a>
+          <a href="" class="mt-3"><h5><i class="fa fa-check text-primary1 me-3"></i>6k+ E-Book Certification Courses</h5></a>
+          <a href="" class="mt-3"><h5><i class="fa fa-check text-primary1 me-3"></i>7k+ Skill Tests and Certifications</h5></a>
+          <a href="" class="mt-3"><h5><i class="fa fa-check text-primary1 me-3"></i>Hard Copy Certificate</h5></a>
+          <a href="" class="mt-3"><h5><i class="fa fa-check text-primary1 me-3"></i>Authentic Industry Recognized Certificates</h5></a>
+        </div>
+        <div class="col-lg-6 order-lg-last order-second">
+          <img src="https://business.brainmeasures.com/img/certificate.png" class="image-max-full">
+        </div>
+      </div>
+      <div class="row">
+       
+       
+        <div class="col-sm-12 text-center mt-5">
+          <a href="https://www.brainmeasures.com/Login.aspx" target="_blank" class="btn btn-outline-dark px-4 mt-3"><i class="bi bi-box-arrow-in-right me-2"></i>Login From Here</a>
+          <a href="https://www.brainmeasures.com/Tests.aspx" target="_blank" class="btn btn-outline-dark px-4 mt-3"><i class="bi bi-arrow-up-right-square me-2"></i>Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+	 <section class="white-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <a href="https://www.brainmeasures.com/VideoCourses.aspx" target="_blank"><h1><span class="underline-d">20K +</span> Training Oriented Video Courses</h1></a>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mt-5 order-lg-first order-last">
+          <h3 class="title-style-3">HQ Recorded Video Courses</h3>
+          <h6 class="sub-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>4.7 Average Rattings. (1,42,983)</h6>
+          <div class="row mt-4">
+            <div class="col-sm-6">
+              <div class="col-12 home-video-course-cat-box">
+                <table>
+                  <tbody><tr>
+                    <td>
+                      <img src="https://business.brainmeasures.com/img/icon-01.png">
+                    </td>
+                    <td>
+                      <h6>Programming Languages</h6>
+                     <a href="https://www.brainmeasures.com/VideoCourses.aspx" target="_blank" class="mt-3">Explore Courses</a>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="col-12 home-video-course-cat-box">
+                <table>
+                  <tbody><tr>
+                    <td>
+                      <img src="https://business.brainmeasures.com/img/icon-02.png">
+                    </td>
+                    <td>
+                      <h6>Personal Development</h6>
+                       <a href="https://www.brainmeasures.com/VideoCourses.aspx" target="_blank" class="mt-3">Explore Courses</a>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="col-12 home-video-course-cat-box">
+                <table>
+                  <tbody><tr>
+                    <td>
+                      <img src="https://business.brainmeasures.com/img/icon-03.png">
+                    </td>
+                    <td>
+                      <h6>Finanacial Courses</h6>
+                       <a href="https://www.brainmeasures.com/VideoCourses.aspx" target="_blank" class="mt-3">Explore Courses</a>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="col-12 home-video-course-cat-box">
+                <table>
+                  <tbody><tr>
+                    <td>
+                      <img src="https://business.brainmeasures.com/img/icon-04.png">
+                    </td>
+                    <td>
+                      <h6>Digital Pro Marketing</h6>
+                       <a href="https://www.brainmeasures.com/VideoCourses.aspx" target="_blank" class="mt-3">Explore Courses</a>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-last order-first">
+          <img src="https://business.brainmeasures.com/img/video-courses.png" class="image-max-full mt-5">
+        </div>
+      </div>
+      <div class="row">
+       
+      </div>
+    </div>
+  </section>
+  <section class="gray-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <a href="https://www.brainmeasures.com/Courses.aspx" target="_blank"><h1><span class="underline-d">6000+</span>Advanced E-Book Courses</h1></a>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="https://business.brainmeasures.com/img/ebook-courses.png" class="image-max-full mt-1">
+        </div>
+        <div class="col-lg-6 mt-5">
+          <h3 class="title-style-3 mt-4">Develop Skills for Real Career Growth</h3>
+          <h6 class="sub-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>4.7 Average Rattings. (1,42,983)</h6>
+          <div class="row mt-4">
+            <div class="col-sm-6">
+              <div class="col-12 home-video-course-cat-box-2">
+                <table>
+                  <tbody><tr>
+                    <td>
+                      <img src="https://business.brainmeasures.com/img/icon-05.png">
+                    </td>
+                    <td>
+                      <h6>Business Certification</h6>
+                      <a href="https://www.brainmeasures.com/Courses.aspx" target="_blank" class="mt-3">Explore Courses</a>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="col-12 home-video-course-cat-box-2">
+                <table>
+                  <tbody><tr>
+                    <td>
+                      <img src="https://business.brainmeasures.com/img/icon-06.png">
+                    </td>
+                    <td>
+                      <h6>Management Courses</h6>
+                      <a href="https://www.brainmeasures.com/Courses.aspx" target="_blank" class="mt-3">Explore Courses</a>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+  <section class="home-tests-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <a href="https://www.brainmeasures.com/Tests.aspx" target="_blank"><h1><span class="underline-d">7000+ </span> Practice Skill tests</h1></a>
+         
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 mt-5">
+          <h3 class="title-style-3 mt-4">Build Career and Achieve Big</h3>
+          <h6 class="sub-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>4.7 Average Rattings. (1,42,983)</h6>
+          <div class="row mt-4">
+            <div class="col-sm-6">
+              <div class="col-12 home-video-course-cat-box">
+                <table>
+                  <tbody><tr>
+                    <td>
+                      <img src="https://business.brainmeasures.com/img/icon-07.png">
+                    </td>
+                    <td>
+                      <h6>Languages</h6>
+                      <a href="https://www.brainmeasures.com/Tests.aspx" target="_blank" class="mt-3">Explore Tests</a>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="col-12 home-video-course-cat-box">
+                <table>
+                  <tbody><tr>
+                    <td>
+                      <img src="https://business.brainmeasures.com/img/icon-08.png">
+                    </td>
+                    <td>
+                      <h6>Technology Tests</h6>
+                      <a href="https://www.brainmeasures.com/Tests.aspx" target="_blank" class="mt-3">Explore Tests</a>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="col-12 home-video-course-cat-box">
+                <table>
+                  <tbody><tr>
+                    <td>
+                      <img src="https://business.brainmeasures.com/img/icon-09.png">
+                    </td>
+                    <td>
+                      <h6>Web Designing</h6>
+                      <a href="https://www.brainmeasures.com/Tests.aspx" target="_blank" class="mt-3">Explore Tests</a>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="col-12 home-video-course-cat-box">
+                <table>
+                  <tbody><tr>
+                    <td>
+                      <img src="https://business.brainmeasures.com/img/icon-10.png">
+                    </td>
+                    <td>
+                      <h6>3D &amp; Animation</h6>
+                      <a href="https://www.brainmeasures.com/Tests.aspx" target="_blank" class="mt-3">Explore Tests</a>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mt-5">
+          <img src="https://business.brainmeasures.com/img/test-courses.png" class="image-max-full mt-1">
+        </div>
+      </div>
+     
+    </div>
+  </section>
+  
+    <!-- Facts Start -->
+	<h2 class="display-5 text-center mb-4">
+              Unlock 
+              <span class="text-primary1">20,000+ </span> <br>Learning and Development Courses
+            </h2>
+    <div class="container-xxl bg-primary facts my-5 py-5 wow fadeInUp" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+           <img class="img-fluid" src="https://business.brainmeasures.com/img/bizskill.png" alt="">
+            
+            <p class="text-black mb-0">Business-Skills</p>
+			 <a href="https://www.brainmeasures.com/VideoCourses.aspx" target="_blank" class="btn btn-secondary1">View Courses<i class="fa fa-arrow-right ms-3"></i></a>
+          </div>
+		   <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+           <img class="img-fluid" src="https://business.brainmeasures.com/img/tech-skills.png" alt="">
+            
+            <p class="text-black mb-0">Tech-Skills</p>
+			 <a href="https://www.brainmeasures.com/VideoCourses.aspx" target="_blank" class="btn btn-secondary1">View Courses<i class="fa fa-arrow-right ms-3"></i></a>
+          </div>
+		   <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+           <img class="img-fluid" src="https://business.brainmeasures.com/img/leadership.png" alt="">
+            
+            <p class="text-black mb-0">Communication</p>
+			 <a href="https://www.brainmeasures.com/VideoCourses.aspx" target="_blank" class="btn btn-secondary1">View Courses<i class="fa fa-arrow-right ms-3"></i></a>
+          </div>
+		   <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+           <img class="img-fluid" src="https://business.brainmeasures.com/img/well.png" alt="">
+            
+            <p class="text-black mb-0">Management</p>
+			 <a href="https://www.brainmeasures.com/VideoCourses.aspx" target="_blank" class="btn btn-secondary1">View Courses<i class="fa fa-arrow-right ms-3"></i></a>
+          </div>
+		  
+          
+        </div>
+		
+      </div>
+	  <h1 class="display-5 text-center mb-4">
+              <a class="btn btn-primary py-3 px-5 mt-3" href="https://www.brainmeasures.com/VideoCourses.aspx" target="_blank">Explore Course - Collections <i class="fa fa-arrow-right ms-3"></i></a>
+            </h1>
+			
+			 <!-- Membership Start -->
+			 
+			 
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5 mb-5 align-items-end wow fadeInUp" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+          <div class="col-lg-6">
+            
+            <h2 class="display-5 mb-0">
+              What they 
+              <span class="text-primary1">saying?</span>
+            </h2>
+          </div>
+		  </div>
+		  </div>
+         <div class="demo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <span class="top-icon"><i class="fa fa-quote-left"></i></span>
+                <div id="testimonial-slider" class="owl-carousel owl-loaded owl-drag">
+                    
+ 
+                    
+                <div class="owl-stage-outer"><div class="owl-stage" style="transition: all 0s ease 0s; width: 4416px; transform: translate3d(-1472px, 0px, 0px);"><div class="owl-item cloned" style="width: 736px;"><div class="testimonial">
+                        <div class="pic">
+                            <img src="https://business.brainmeasures.com/img/testimonial-2.jpg" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3 class="testimonial-title">Williamson -CEO</h3>
+                            <p class="description">
+                              Being in IT space it’s very important to understand the importance of keeping pace with fast
+changing technology, being a team player it’s crucial for me to be surrounded by employees who are
+highly skilled and agile to learn and unlearn. We at edios have been using Brainmeasures L&amp;D
+services from three years and I am very happy with my decision as their courses are Up-to-date and
+cover all subjects technical and non-technical both.
+                            </p>
+                        </div>
+                    </div></div><div class="owl-item cloned" style="width: 736px;"><div class="testimonial">
+                        <div class="pic">
+                            <img src="https://business.brainmeasures.com/img/testimonial-1.jpg" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3 class="testimonial-title">Kristiana - CTO</h3>
+                            <p class="description">
+                                Was looking for a learning and development platform to up-skill my team, I had mix requirements of
+technical and soft-skills and wanted content that is developed keeping in mind working
+professionals. Brainmeasures business content was perfect fit and they offered amazing services and
+took care of our current and future needs.</p>
+                        </div>
+                    </div></div><div class="owl-item active center" style="width: 736px;"><div class="testimonial">
+                        <div class="pic">
+                            <img src="https://business.brainmeasures.com/img/testimonial-2.jpg" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3 class="testimonial-title">Williamson -CEO</h3>
+                            <p class="description">
+                              Being in IT space it’s very important to understand the importance of keeping pace with fast
+changing technology, being a team player it’s crucial for me to be surrounded by employees who are
+highly skilled and agile to learn and unlearn. We at edios have been using Brainmeasures L&amp;D
+services from three years and I am very happy with my decision as their courses are Up-to-date and
+cover all subjects technical and non-technical both.
+                            </p>
+                        </div>
+                    </div></div><div class="owl-item" style="width: 736px;"><div class="testimonial">
+                        <div class="pic">
+                            <img src="https://business.brainmeasures.com/img/testimonial-1.jpg" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3 class="testimonial-title">Kristiana - CTO</h3>
+                            <p class="description">
+                                Was looking for a learning and development platform to up-skill my team, I had mix requirements of
+technical and soft-skills and wanted content that is developed keeping in mind working
+professionals. Brainmeasures business content was perfect fit and they offered amazing services and
+took care of our current and future needs.</p>
+                        </div>
+                    </div></div><div class="owl-item cloned" style="width: 736px;"><div class="testimonial">
+                        <div class="pic">
+                            <img src="https://business.brainmeasures.com/img/testimonial-2.jpg" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3 class="testimonial-title">Williamson -CEO</h3>
+                            <p class="description">
+                              Being in IT space it’s very important to understand the importance of keeping pace with fast
+changing technology, being a team player it’s crucial for me to be surrounded by employees who are
+highly skilled and agile to learn and unlearn. We at edios have been using Brainmeasures L&amp;D
+services from three years and I am very happy with my decision as their courses are Up-to-date and
+cover all subjects technical and non-technical both.
+                            </p>
+                        </div>
+                    </div></div><div class="owl-item cloned" style="width: 736px;"><div class="testimonial">
+                        <div class="pic">
+                            <img src="https://business.brainmeasures.com/img/testimonial-1.jpg" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3 class="testimonial-title">Kristiana - CTO</h3>
+                            <p class="description">
+                                Was looking for a learning and development platform to up-skill my team, I had mix requirements of
+technical and soft-skills and wanted content that is developed keeping in mind working
+professionals. Brainmeasures business content was perfect fit and they offered amazing services and
+took care of our current and future needs.</p>
+                        </div>
+                    </div></div></div></div><div class="owl-nav"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots disabled"></div></div>
+                <span class="bottom-icon"><i class="fa fa-quote-right"></i></span>
+            </div>
+        </div>
+    
+
+    </div>
+		  
+        </div>
+       
+      </div>
+    </div>
+	 
+	 
+    
+
+		<div class="footer-main">
+		  <div class="container">
+			  <div class="row pb-3">
+            <div class="kidLhs-main">
+			  <div class="row">
+			   <div class="col-12 col-md-6 position-relative">
+				  <div class="kidLhs">
+					<h1 class="whiteHeader">Book a free Demo Session</h1>
+					
+					<div class="description">
+						Have any question? Book a free demo session and our experienced Customer Service Manager will give you a free demo of our learning and development platform and answer all your queries related to your organizations learning and development needs.
+					</div>
+					<div class="buttonWrapper">
+						<a href="/demo">
+						<div class="getSubscription">
+							<div class="getSubscriptionWrapper">
+							<span>book demo</span>
+							<span>
+							<svg height="10" viewBox="0 0 27 13" width="23" xmlns="">
+							<path d="m113.23125 6.796875 4.025-3.9375-1.00625-.984375-5.75 5.625 5.75 5.625 1.00625-.984375-4.025-3.9375h23.14375v-1.40625z" fill="#fff" fill-rule="evenodd" transform="matrix(-1 0 0 1 136.875 -1)"></path>
+							</svg>
+							</span>
+							</div>
+						</div>
+						</a>
+						
+					</div>
+				</div>
+			  </div>
+			  
+			    <div class="col-12 col-md-6 position-relative">
+				<img class="img-fluid" src="https://business.brainmeasures.com/img/start.png" alt="">
+				</div>
+			  </div>
+			  </div>
+			  <div class="col-12 col-md-6 mb-5 pb-4 position-relative">
+				  <div class="statsLhs">
+					<h1 class="statsHeader">Organizations love using Brainmeasures</h1>
+					<div class="studentCount">
+						15,000
+						</div>
+						<div class="description">
+						<span class="textGradient">Happy Clients</span>
+					</div>
+				</div>
+				
+				</div>
+				<div class="col-12 col-md-6 mb-5 pb-4 position-relative">
+				<div class="statsRhs">
+					<div class="statsListItem">
+						<img class="img-fluid" src="https://business.brainmeasures.com/img/attempted-question.png" alt="">
+						<div>
+						<div class="value">93,242,098</div>
+						<div class="label">Training Delivered</div>
+						</div>
+					</div>
+					<div class="statsListItem">
+						<img class="img-fluid" src="https://business.brainmeasures.com/img/doubts-answered.png" alt="">
+						<div>
+						<div class="value">11,768,328</div>
+						<div class="label">Tests Taken</div>
+						</div>
+					</div>
+					<div class="statsListItem">
+						<img class="img-fluid" src="https://business.brainmeasures.com/img/doubts-done.png" alt="">
+						<div>
+						<div class="value">10,043,965</div>
+						<div class="label">Certified Professionals</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			  	<div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
+				<div class="featureItem">
+				  <div class="value classesGradient">
+					<a href="https://www.brainmeasures.com/video/639/aws-certification-course-videocourses.aspx" target="_blank"><span class="quantity"><img class="img-fluid" src="https://business.brainmeasures.com/img/4.png" alt=""></span></a>
+					<a href="https://www.brainmeasures.com/video/639/aws-certification-course-videocourses.aspx" target="_blank"><span>AWS</span></a>
+					</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
+				<div class="featureItem">
+				  <div class="value classesGradient">
+				  <a href="https://www.brainmeasures.com/video/270/machine-learning-certification-videocourses.aspx" target="_blank"><span class="quantity"><img class="img-fluid" src="https://business.brainmeasures.com/img/ML.png" alt=""></span></a>
+					<a href="https://www.brainmeasures.com/video/270/machine-learning-certification-videocourses.aspx" target="_blank"><span>Machine Learning</span></a>
+					
+					</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
+				<div class="featureItem">
+				  <div class="value classesGradient">
+					<a href="https://www.brainmeasures.com/video/233/artificial-intelligence-course-videocourses.aspx" target="_blank"><span class="quantity"><img class="img-fluid" src="https://business.brainmeasures.com/img/ai.png" alt=""></span></a>
+					<a href="https://www.brainmeasures.com/video/233/artificial-intelligence-course-videocourses.aspx" target="_blank"><span class="unit">Artificial Intelligence</span></a>
+					</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
+				<div class="featureItem">
+				  <div class="value classesGradient">
+					<a href="https://www.brainmeasures.com/video/245/devops-course-videocourses.aspx" target="_blank"><span class="quantity"><img class="img-fluid" src="https://business.brainmeasures.com/img/dops.png" alt=""></span></a>
+					<a href="https://www.brainmeasures.com/video/245/devops-course-videocourses.aspx" target="_blank"><span class="unit">DeVops</span></a>
+					</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
+				<div class="featureItem">
+				  <div class="value classesGradient">
+					<a href="https://www.brainmeasures.com/video/1624/a-to-z-microsoft-azure-certification-course-videocourses.aspx" target="_blank"><span class="quantity"><img class="img-fluid" src="https://business.brainmeasures.com/img/ma.png" alt=""></span></a>
+					<a href="https://www.brainmeasures.com/video/1624/a-to-z-microsoft-azure-certification-course-videocourses.aspx" target="_blank"><span class="unit">Micrsoft Azure</span></a>
+					</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
+				<div class="featureItem">
+				  <div class="value classesGradient">
+					<a href="https://www.brainmeasures.com/video/137/python-programming-certification-videocourses.aspx" target="_blank"><span class="quantity"><img class="img-fluid" src="https://business.brainmeasures.com/img/p.png" alt=""></span></a>
+					<a href="https://www.brainmeasures.com/video/137/python-programming-certification-videocourses.aspx" target="_blank"><span class="unit">Python</span></a>
+					</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
+				<div class="featureItem">
+					<div class="value boardsGradient">
+						<a href="https://www.brainmeasures.com/video/519/java-engineer-course-videocourses.aspx" target="_blank"><span class="quantity"><img class="img-fluid" src="https://business.brainmeasures.com/img/java.png" alt=""></span></a>
+						<a href="https://www.brainmeasures.com/video/519/java-engineer-course-videocourses.aspx" target="_blank"><span class="unit">Java</span></a>
+					</div>
+				</div>
+				</div>
+				
+				<div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
+				<div class="featureItem">
+					<div class="value examsGradient">
+						<a href="https://www.brainmeasures.com/video/267/data-science-course-videocourses.aspx" target="_blank"><span class="quantity"><img class="img-fluid" src="https://business.brainmeasures.com/img/ds.png" alt=""></span></a>
+						<a href="https://www.brainmeasures.com/video/267/data-science-course-videocourses.aspx" target="_blank"><span class="unit">Data Science</span></a>
+					</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
+				<div class="featureItem">
+					<div class="value examsGradient">
+						<a href="https://www.brainmeasures.com/video/236/big-data-hadoop-certification-videocourses.aspx" target="_blank"><span class="quantity"><img class="img-fluid" src="https://business.brainmeasures.com/img/bd.png" alt=""></span></a>
+						<a href="https://www.brainmeasures.com/video/236/big-data-hadoop-certification-videocourses.aspx" target="_blank"><span class="unit">Big Data</span></a>
+					</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
+				<div class="featureItem">
+					<div class="value examsGradient">
+						<a href="https://www.brainmeasures.com/video/894/a-to-z-blockchain-course-videocourses.aspx" target="_blank"><span class="quantity"><img class="img-fluid" src="https://business.brainmeasures.com/img/bc.png" alt=""></span></a>
+						<a href="https://www.brainmeasures.com/video/894/a-to-z-blockchain-course-videocourses.aspx" target="_blank"><span class="unit">Block Chain</span></a>
+					</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
+				<div class="featureItem">
+					<div class="value examsGradient">
+						<a href="https://www.brainmeasures.com/video/245/devops-course-videocourses.aspx" target="_blank"><span class="quantity"><img class="img-fluid" src="img/ls.png" alt=""></span></a>
+						<a href="https://www.brainmeasures.com/video/245/devops-course-videocourses.aspx" target="_blank"><span class="unit">Leadership</span></a>
+					</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
+				<div class="featureItem">
+					<div class="value examsGradient">
+						<a href="https://www.brainmeasures.com/video/768/communications-skills-course-videocourses.aspx" target="_blank"><span class="quantity"><img class="img-fluid" src="https://business.brainmeasures.com/img/cs.png" alt=""></span></a>
+						<a href="https://www.brainmeasures.com/video/768/communications-skills-course-videocourses.aspx" target="_blank"><span class="unit">Communication Skills</span></a>
+					</div>
+					</div>
+				</div>
+				
+				<div class="col-12 col-md-4 mb-5 mb-md-0 position-relative">
+				<div class="featureItem">
+					<div class="value examsGradient">
+						<a href="https://www.brainmeasures.com/VideoCourses.aspx" target="_blank"><span class="quantity"><img class="img-fluid" src="https://business.brainmeasures.com/img/more.png" alt=""></span></a>
+						 <a href="https://www.brainmeasures.com/VideoCourses.aspx" target="_blank"><span>View More</span></a>
+					</div>
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				
+				
+		<footer class="footer-main">
+		  <div class="container">
+			  <div class="row">
+				<div class="col-12 col-md-12 divider"></div>
+				<!--end of col-->
+			   <div class="col-12 col-md-3">
+					<div class="wiedget-title">OFFICE</div>
+					<p>Brainmeasures Solutions,<br> 5715 Will Clayton,<br> #8121 Humble,<br> TX 77338, USA <br> <abbr title="Phone Number"><strong>TollFree:</strong></abbr> +1 888 556 0061 (USA/CANADA)<br> </p>
+					   <!-- Social Media Button -->
+						<div class="mt-4">
+						 <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-outline-light btn-social" href="https://www.brainmeasures.com/feedback.aspx"><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+              <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+						</div>
+			   </div>
+			   <div class="col-12 col-md-2">
+					<div class="wiedget-title">QUICK LINKS</div>
+					<ul> 
+						<li><a href="https://www.brainmeasures.com/Affiliate_Program.aspx" target="_blank">Be an Affiliate</a></li> 
+						<li><a href="https://www.brainmeasures.com/Privacy_policy.aspx" target="_blank">Privacy Policy</a></li>
+						<li><a href="https://www.brainmeasures.com/faqs.aspx" target="_blank">FAQs</a></li>
+						<li><a href="https://www.brainmeasures.com/ContactUs.aspx" target="_blank">Report Bug</a></li>
+						<li><a href="https://www.brainmeasures.com/Sitemap.aspx" target="_blank">Sitemap</a></li>
+					</ul>
+			   </div>
+			   <div class="col-12 col-md-2">
+					<div class="wiedget-title">QUICK LINKS</div>
+					<ul> 
+						<li><a href="https://www.brainmeasures.com/OurStory.aspx" target="_blank">Our Story</a></li>
+						<li><a href="https://www.brainmeasures.com/Reviews.aspx" target="_blank">Reviews</a></li>
+						<li><a href="#">Feed backs</a></li>
+						<li><a href="https://www.brainmeasures.com/issuelist.aspx?id=5" target="_blank">Support</a></li>
+						<li><a href="https://www.brainmeasures.com/ContactUs.aspx" target="_blank">Contact us</a></li>
+					</ul>
+			   </div>
+			   <div class="col-12 col-md-5">
+					<div class="row"> 
+						<div class="col-md-6"> 
+							<div class="counter counter-small">
+							<span>1565421</span>
+							</div>
+						<h5 class="wiedget-title">Total User</h5> 
+						</div>
+						<div class="col-md-6"> 
+							<div class="counter counter-small"><span>2642</span>
+							</div>
+						<h5 class="wiedget-title">Total Courses</h5> 
+						</div>
+						<p>Subscribe to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</p>
+						     <h5 class="wiedget-title">Subscribe</h5>
+							<p>Get some offers, news, or update features of application</p>
+							<form method="POST">
+							  <div class="input-group">
+								<input type="text" class="form-control" placeholder="Your email..">
+								<div class="input-group-append">
+								  <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+								</div>
+							  </div>
+							</form>
+						</div>
+				   </div>
+			  </div>
+			  </div>
+			  <div id="copyrights"> 
+				  <div class="container">  
+					  <div class="row">
+						  <div class="col-12 col-md-6"> <p><span>Brainmeasures</span> Copyright © 2022. All Rights Reserved</p></div>
+						  <div class="col-12 col-md-6 col_last tright"> 
+							  <div class="copyright-links">
+							  <a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a>
+							  </div>
+						  </div>
+					  </div>
+				</div>
+			  </div>
+			 
+		  </footer>
+    <!-- Button trigger modal -->
+ <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+	    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://business.brainmeasures.com/lib/wow/wow.min.js"></script>
+    <script src="https://business.brainmeasures.com/lib/easing/easing.min.js"></script>
+    <script src="https://business.brainmeasures.com/lib/waypoints/waypoints.min.js"></script>
+    <script src="https://business.brainmeasures.com/lib/counterup/counterup.min.js"></script>
+    <script src="https://business.brainmeasures.com/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://business.brainmeasures.com/lib/lightbox/js/lightbox.min.js"></script>
+
+<script defer="" src="https://business.brainmeasures.com//megamenu/public/js/script.js"></script>
+ 
+    <!-- Template Javascript -->
+    <script src="https://business.brainmeasures.com/js/main.js"></script>
+  
+
+<div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div>
+<div id="lightbox" class="lightbox" style="display: none;">
+	<div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div>
+</div>
+<div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb"><section id="shadow-host-companion"></section></div></body></html>

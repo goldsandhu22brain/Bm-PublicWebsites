@@ -64,6 +64,9 @@
 	.popup2 .modal-body .tabs li a {
 		font-size: 13px;
 	}
+	.filter-box-row {
+		display: block;
+	}
 	
 	
 }
