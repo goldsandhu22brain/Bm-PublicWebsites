@@ -55,6 +55,13 @@
 	.emp-banner{
 		padding-top: 60px;
 	}
+	.filter-box-row .filter-box{
+		margin: 0 0 20px;
+	}
+	.input-group {
+		max-width: 100%;
+	}
+	
 }
 @media screen and (max-width:767px) {
 	.popup2 .modal-body .tabs li{
@@ -68,6 +75,12 @@
 		display: block;
 	}
 	
+	.filter-box-row .listing_border{
+		margin: 20px 0;
+	}
+	.filter-box-row .filter-box-row-downs .radio-div {
+		width: 50%;
+	}
 	
 }
 @media (max-width: 575.98px) {
@@ -89,6 +102,9 @@
 	.description-section .description-section-content p {
 		font-size: 16px;
 		line-height: 28px;
+	}
+	.filter-box-row .filter-box-row-downs .radio-div {
+		width: 100%;
 	}
 	
 }
