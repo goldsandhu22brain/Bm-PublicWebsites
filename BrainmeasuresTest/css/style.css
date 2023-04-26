@@ -49,6 +49,12 @@
 .filter-box-row .form-floating:hover .form-select:not(:checked){
 	color: #FFFFFF;
 }
+.content-module-4 {
+    padding: 90px 0;
+}
+.brands-section.details-page-brand-slider{
+	padding: 55px 0;
+}
 
 
 @media screen and (max-width:991px) {
