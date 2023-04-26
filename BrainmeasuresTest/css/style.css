@@ -33,6 +33,24 @@
 	left: 50%;
     transform: translate(-50%, 0%);
 }
+.filter-box-row .form-floating .form-select{
+	border-color: transparent;
+	background-color: transparent;
+}
+.filter-box-row .form-floating .form-select:focus{
+	box-shadow: none;
+}
+.filter-box-row .filter-box.form-floating>label{
+	padding-left: 50px;
+}
+.filter-box-row .form-floating .form-select option{
+  color: #000000;
+}
+.filter-box-row .form-floating:hover .form-select:not(:checked){
+	color: #FFFFFF;
+}
+
+
 @media screen and (max-width:991px) {
 	.add-section-top.add-section-down .add-section-flex{
 		text-align: center;
