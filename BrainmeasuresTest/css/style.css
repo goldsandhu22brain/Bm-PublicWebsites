@@ -3,6 +3,10 @@
 
 
 
+
+
+
+
 .best-courses-border{
 	border-bottom-width: 9px!important;
 }
@@ -50,17 +54,107 @@
 	color: #FFFFFF;
 }
 .content-module-4 {
-    padding: 90px 0;
+    padding: 80px 0;
 }
 .brands-section.details-page-brand-slider{
 	padding: 55px 0;
 }
 .bough-list-section{
-	padding: 0;
+	padding: 60px 0;
+}
+.bough-list-section .bough-list-module{
+	padding: 60px 100px 40px;
+}
+.internal-page-tab{
+	padding: 80px 0;
+}
+.video-page-content-box-section{
+	padding-bottom: 80px !important;
+}
+.video-off-section {
+    padding-top: 80px;
+}
+.internal-page-testimonial{
+	padding: 80px 0 0!important;
+}
+.frequently-asked-questions-video-page{
+	padding: 80px 0;
+}
+.content-module-1{
+	padding: 80px 0;
+}
+.brands-section{
+	padding: 80px 0;
+}
+.content-module-2,
+.content-module-5{
+	padding-top: 90px;
+}
+.content-module-6{
+	padding-bottom: 80px;
+}
+.content-module-9 .tab-section-bottom-section{
+	padding-bottom: 90px;
 }
 
+.emp-module-4{
+	padding: 100px 0;
+}
+.emp-module-7{
+	padding: 80px 0 100px;
+}
+.emp-module-3,
+.emp-module-5,
+.emp-module-9,
+.emp-section-12-new{
+	padding: 80px 0;
+}
+.emp-module-13{
+	padding-top: 80px;
+}
+.emp-module-17{
+	padding: 80px 0;
+}
+.emp-module-18{
+	padding: 80px 0;
+}
+.emp-module-19{
+	padding: 80px 0;
+}
+.emp-module-20 {
+    padding-bottom: 100px;
+}
+.content-module-8{
+	padding-top: 80px;
+}
+.emp-module-8,
+.emp-module-24{
+	padding: 80px 0;
+}
+.add-section-top{
+	padding-bottom: 0;
+}
+.brainmeasures-details-content-3{
+	padding-bottom: 100px;
+}
+.description-section{
+	padding: 80px 0;
+}
+.content-module-15,
+.syllabus-section{
+	padding: 100px 0;
+}
 
+@media screen and (max-width:1199px) {
+	
+}
 @media screen and (max-width:991px) {
+	header{
+		padding: 5px 0;
+	}
+	header .logo img {
+		max-width: 180px;
+	}
 	.add-section-top.add-section-down .add-section-flex{
 		text-align: center;
 	}
@@ -81,6 +175,7 @@
 	}
 	.emp-banner{
 		padding-top: 60px;
+		padding-bottom: 180px;
 	}
 	.filter-box-row .filter-box{
 		margin: 0 0 20px;
@@ -94,9 +189,36 @@
 	.internal-banner.list-bg-2-banner .search-box .input-group1 input{
 		margin-bottom: 20px;
 	}
+	.bough-list-section .bough-list-module{
+		padding: 50px 20px 0;
+	}
+	.content-module-4 {
+		padding: 60px 0;
+	}
+	.listing-page-content.details-page-list .listing-all-courses-heading-para{
+		margin-bottom: 30px;
+	}
+	
+	.content-module-11{
+		padding-bottom: 0;
+	}
+	.emp-module-30 .add-section-flex{
+		padding: 60px 70px;
+	}
+	.emp-module-30 .add-section-flex img {
+		max-width: 250px;
+		margin-top: 0;
+	}
+	.description-section,
+	.brainmeasures-details-content-3,
+	.brainmeasures-details-content-2-box{
+		text-align: center;
+	}
+	
 }
 
 @media screen and (max-width:767px) {
+	
 	.popup2 .modal-body .tabs li{
 		padding-left: 5px;
 		padding-right: 5px;
@@ -114,6 +236,15 @@
 	.filter-box-row .filter-box-row-downs .radio-div {
 		width: 50%;
 	}
+	.testimonials-slider .item .testimonials-text p{
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.description-section .description-section-content p {
+		font-size: 16px;
+		line-height: 28px;
+	}
+	
 	
 }
 @media (max-width: 575.98px) {
@@ -132,10 +263,7 @@
 	.content-module-14 .module-content .btn{
 		padding: 13px 24px;
 	}
-	.description-section .description-section-content p {
-		font-size: 16px;
-		line-height: 28px;
-	}
+	
 	.filter-box-row .filter-box-row-downs .radio-div {
 		width: 100%;
 	}
