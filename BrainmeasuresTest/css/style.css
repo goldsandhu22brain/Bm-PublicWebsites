@@ -55,6 +55,9 @@
 .brands-section.details-page-brand-slider{
 	padding: 55px 0;
 }
+.bough-list-section{
+	padding: 0;
+}
 
 
 @media screen and (max-width:991px) {
