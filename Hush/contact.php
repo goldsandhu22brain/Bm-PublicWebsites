@@ -116,9 +116,9 @@
 				
 				<p class="text-center mb-4"><?php echo $_SESSION['sess_msg=']; $_SESSION['sess_msg=']='';?></p>
 				
-				<form class="row g-3" action="contact-form.php">
+				<form method="post" class="row g-3" action="contact-form.php">
 					<div class="col-sm-6">
-						<label class="form-label">First Name</label>
+						<label class="form-label">2First Name</label>
 						<input type="text" name="first_name" class="form-control" placeholder="First Name" />
 					</div>
 					<div class="col-sm-6">
