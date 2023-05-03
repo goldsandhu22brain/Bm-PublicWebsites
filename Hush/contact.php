@@ -1,4 +1,4 @@
-
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -113,6 +113,9 @@
 			<div class="wrap">
 				<h3 class="text-center mb-2">Contact Us</h3>
 				<p class="text-center mb-4">For any query please fill below form or mail us on <a href="mailto:contactus@hush.ac">contactus@hush.ac,</a> Thanks!</p>
+				
+				<p class="text-center mb-4"><?php echo $_SESSION['sess_msg=']; $_SESSION['sess_msg=']='';?></p>
+				
 				<form class="row g-3" action="contact-form.php">
 					<div class="col-sm-6">
 						<label class="form-label">First Name</label>
