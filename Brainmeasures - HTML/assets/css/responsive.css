@@ -1,0 +1,499 @@
+@media screen and (max-width:1580px) {
+    
+}
+@media screen and (max-width:1399px) {
+	.assessment-section li{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.brainmeasures-psychometric .psy-testing-section .psy-testing-img .img-wrap{
+		width: 70%;
+	}
+}
+@media screen and (max-width:1199px) {
+	.banner-section{
+		background: linear-gradient(305.84deg, #5A19D7 9.58%, #7122AE 99.05%);
+		text-align: center;
+		padding: 0 0 30px;
+		height: auto;
+	}
+	.banner-section .wrap{
+		margin: 0px auto;
+	}
+	.employee-section .wrap{
+		min-height: 306px;
+	}
+	.offers-section .wrap {
+		min-height: 150px;
+		padding: 10px 8px;
+	}
+	.offers-section .wrap p{
+		font-size: 13px;
+		line-height: 20px;
+		bottom: 10px
+	}
+	
+	.brainmeasures-psychometric .banner-section{
+		text-align: left;
+	}
+	.brainmeasures-psychometric .test-type-section .left-wrap{
+		padding: 30px 0;
+	}
+	.brainmeasures-psychometric .test-type-section .right-wrap{
+		padding: 20px 20px;
+	}
+	.brainmeasures-psychometric .what-get-section .wrap{
+		padding: 10px 20px;
+	}
+	.brainmeasures-psychometric .what-get-section .wrap h5 {
+		margin: 10px 0 6px;
+	}
+	.brainmeasures-psychometric .info-report-section .wrap{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .industry-section h3 {
+		line-height: 40px;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.brainmeasures-psychometric .industry-section .block{
+		height: auto;
+	}
+	.brainmeasures-psychometric .hire-right-section .wrap{
+		padding: 16px 20px;
+	}
+	.brainmeasures-psychometric .hire-right-section .wrap{
+		height: 290px;
+	}
+	
+	.contact-page .banner-section{
+		padding-bottom: 30px;
+	}
+	.contact-page .banner-section .banner-img{
+		position: relative;
+	}
+	.contact-page .contact-form{
+		margin-left: -148px;
+	}
+	.contact-page .banner-section .wrap{
+		text-align: center;
+		max-width: 900px;
+	}
+	.contact-page .contact-info .right-wrap{
+		padding: 30px 10px 30px 60px;
+	}
+	.register-page .left-wrap {
+		padding: 60px 16px 16px;
+	}
+}
+@media screen and (max-width:1024px) {
+	
+	
+}
+@media screen and (max-width:991px) {
+	.banner-section{
+		margin-top: 80px;
+	}
+	.banner-section .caption h1{
+		line-height: 50px;
+	}
+	.offers-section .wrap {
+		min-height: 175px;
+		padding: 10px 8px;
+	}
+	.offers-section .text-wrap h1{
+		line-height: 40px;
+	}
+	.offers-section .text-wrap p{
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.professionals-section{
+		text-align: center;
+	}
+	.corporates-section{
+		text-align: center;
+	}
+	.trust-us-section{
+		text-align: center;
+	}
+	.trust-us-section h1{
+		line-height: 60px;
+	}
+	.trust-us-section .left-wrap p{
+		margin: 0px auto 20px;
+	}
+	.trust-us-section h1{
+		margin-bottom: 0;
+	}
+	.developed-section .nav-pills .nav-link {
+		font-size: 16px;
+		line-height: 40px;
+		padding-right: 24px;
+	}
+	
+	.brainmeasures-psychometric .banner-section .banner-img{
+		position: relative;
+		margin-bottom: 30px;
+	}
+	.brainmeasures-psychometric .banner-section,
+	.brainmeasures-psychometric .banner-section .banner-img img,
+	.brainmeasures-psychometric .banner-section .wrap{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .banner-section .caption h4{
+		line-height: 30px;
+	}
+	.brainmeasures-psychometric .banner-section .caption p{
+		margin: 0px auto;
+	}
+	.brainmeasures-psychometric .hero-section p{
+		font-size: 16px;
+		line-height: 24px;
+		padding-bottom: 16px;
+	}
+	.brainmeasures-psychometric .hero-section .hero-img,
+	.test-format-section,
+	.industries-section,
+	.test-uses-section,
+	.brainmeasures-psychometric .test-type-section .right-wrap h3,
+	.preparing-test-section,
+	.what-get-section,
+	.hire-right-section{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .psy-testing-section h1{
+		max-width: 100%;
+		text-align: center;
+	}
+	.brainmeasures-psychometric .psychometric-section .tab-content .wrap h3 {
+		line-height: 40px;
+	}
+	.brainmeasures-psychometric .industries-section .text-wrap p{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.brainmeasures-psychometric .tests-measure-section{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .tests-measure-section .tests-measure-img{
+		position: unset;
+		margin-bottom: 30px;	
+	}
+	.brainmeasures-psychometric .preparing-test-section .left-wrap{
+		padding: 0 20px;
+	}
+	.brainmeasures-psychometric .test-type-section .left-wrap .text-wrap{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .preparing-test-section p{
+		padding: 20px 0;
+	}
+	.brainmeasures-psychometric .preparing-test-section .right-wrap{
+		padding: 20px;
+	}
+	.brainmeasures-psychometric .cheating-section p{
+		font-size: 16px;
+		line-height: 24px;
+		padding: 20px 0;
+	}
+	.brainmeasures-psychometric .personality-test-section li{
+		font-size: 14px;
+		line-height: 20px;
+		margin-top: 20px;
+		height: 80px;
+	}
+	.brainmeasures-psychometric .what-learn-section li{
+		font-size: 14px;
+		line-height: 20px;
+		margin-top: 16px;
+	}
+	.brainmeasures-psychometric .enjoy-test-section h4{
+		line-height: 38px;
+	}
+	.brainmeasures-psychometric .why-choose-section .tab-content{
+		margin-top: 30px;
+		padding: 20px;
+	}
+	.brainmeasures-psychometric .psy-testing-section{
+		padding: 50px 0;
+	}
+	.brainmeasures-psychometric .psy-testing-section .psy-testing-img{
+		position: unset;
+	}
+	.brainmeasures-psychometric .psy-testing-section .psy-testing-img .img-wrap{
+		width: 100%;
+	}
+	.brainmeasures-psychometric .what-get-section .wrap{
+		height: auto;
+		padding: 30px;
+	}
+	
+	.brainmeasures-psychometric .hire-right-section .wrap.wrap-1,
+	.brainmeasures-psychometric .hire-right-section .wrap.wrap-3{
+		margin-bottom: 30px;
+	}
+	.brainmeasures-psychometric .hire-right-section .hire-right-img{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .testimonials-section h3{
+		font-size: 20px;
+		line-height: 36px;
+	}
+	.brainmeasures-psychometric .testimonials-section h5{
+		font-size: 16px;
+	}
+	.brainmeasures-psychometric .testimonials-section .slick-slider .slick-next{
+		right: 44%;
+	}
+	.brainmeasures-psychometric .testimonials-section .slick-slider .slick-prev {
+		left: 44%;
+	}
+	.brainmeasures-psychometric .practice-tests-section{
+		padding-bottom: 40px;
+		text-align: center;
+	}
+	.brainmeasures-psychometric .industry-wrap {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.brainmeasures-psychometric .industry-section .wrap h1{
+		line-height: 40px;
+	}
+	.brainmeasures-psychometric .industry-section .wrap p{
+		font-size: 18px;
+		line-height: 26px;
+		margin: 0px auto;
+	}
+	.brainmeasures-psychometric .faq-section h1{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .our-focus-section .wrap{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .our-focus-section h5{
+		margin: 0px auto 30px;
+	}
+	.brainmeasures-psychometric .hire-right-section .wrap{
+		height: 270px;
+	}
+	.brainmeasures-psychometric .build-team-section .row::after{
+		display: none;
+	}
+	.brainmeasures-psychometric .build-team-section .text-wrap h1 {
+		line-height: 40px;
+	}
+	.contact-page .banner-section .caption h1 {
+		line-height: 40px;
+	}
+	
+	
+	
+	.contact-page .contact-form{
+		padding: 16px;
+		margin-left: -84px;
+	}
+	.contact-page .contact-form h4{
+		margin-bottom: 14px;
+	}
+	.contact-page .contact-form .form-control{
+		font-size: 12px;
+		line-height: 20px;
+		height: auto;
+	}
+	.contact-page .contact-form .btn{
+		padding: 9px;
+	}
+	.contact-page .contact-info .right-wrap .call-us {
+		top: 0;
+		right: 0;
+		left: unset;
+	}
+
+	.contact-page .our-location p {
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.login-page{
+		padding: 20px 0;
+	}
+	.register-page .left-wrap {
+		padding: 60px 70px 0 110px;
+	}
+	.login-page .login-section .right-wrap,
+	.login-page .login-section .left-wrap{
+		min-height: 650px;
+	}
+	.login-page .login-section .left-wrap .wrap {
+		padding: 120px 30px 0;
+	}
+	.login-page .login-section .right-wrap{
+		padding: 16px;
+	}
+	
+}
+@media screen and (max-width:767px) {
+	
+	.hero-section .text-wrap{
+		padding: 30px 0;
+	}
+	.hero-section .wrap p{
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.assessment-section ol {
+		margin-top: 28px;
+	}
+	.assessment-section li{
+		font-size: 14px;
+		line-height: 22px;
+	}
+	.developed-section .nav-pills .nav-link{
+		font-size: 12px;
+		line-height: 40px;
+		padding-right: 18px;
+	}
+	.professionals-section .skill-wrap a{
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.employee-section .text-wrap {
+		margin-bottom: 30px;
+	}
+	.developed-section .wrap{
+		padding: 0 10px;
+		margin: 0px auto;
+	}
+	.corporates-section .wrap h3{
+		line-height: 40px;
+	}
+	.corporates-section .wrap h4{
+		line-height: 38px;
+	}
+	.enquiry-section form{
+		margin: 20px auto 0;
+	}
+	
+	.offers-section .wrap {
+		min-height: 150px;
+		padding: 10px 8px;
+	}
+	
+	.brainmeasures-psychometric .psychometric-section .nav-pills {
+		margin: 30px 0;
+	}
+	.brainmeasures-psychometric .psychometric-section .nav-pills .nav-link{
+		font-size: 16px;
+		width: 248px;
+		padding: 4px;
+	}
+	.brainmeasures-psychometric .psychometric-section .tab-content{
+		padding: 30px;
+	}
+	.brainmeasures-psychometric .why-choose-section .text-wrap{
+		padding: 30px 0;
+	}
+	.brainmeasures-psychometric .why-choose-section .nav-pills .nav-link{
+		font-size: 14px;
+		line-height: 30px;
+	}
+	
+	.brainmeasures-psychometric .what-get-section .wrap{
+		height: auto;
+		padding: 30px;
+	}
+	.brainmeasures-psychometric .hire-right-section .wrap{
+		height: auto;
+		margin-bottom: 30px;
+	}
+	
+	.contact-page .contact-form{
+		margin-left: -62px;
+	}
+	
+	
+	.login-page .login-section .left-wrap{
+		min-height: 520px;
+		border-radius: 20px;
+		margin-bottom: 20px;
+	}
+	.login-page .login-section .left-wrap .wrap {
+		padding: 90px 35px 0;
+	}
+	.login-page .login-section .right-wrap{
+		min-height: 520px;
+		border-radius: 20px;
+	}
+}
+@media screen and (max-width:600px) {
+	
+}
+@media (max-width: 575.98px) {
+	.developed-section .nav-pills .nav-link{
+		font-size: 9px;
+		line-height: 40px;
+		padding-right: 8px;
+	}
+	.employee-section .wrap{
+		padding: 20px 30px;
+		min-height: auto;
+	}
+	.brainmeasures-psychometric .psychometric-section .nav-pills .nav-link{
+		font-size: 13px;
+		width: 204px;
+		padding: 4px;
+	}
+	.brainmeasures-psychometric .psychometric-section .nav-pills .nav-item:first-child {
+		margin-right: 8px;
+	}
+	
+	.contact-page .contact-form{
+		margin-left: -67px;
+	}
+	.register-page .left-wrap {
+		padding: 60px 8px 0;
+	}
+	
+}
+@media (max-width: 440px){
+	.banner-section .caption h4{
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.brainmeasures-psychometric .psychometric-section .nav-pills .nav-link{
+		font-size: 11px;
+		width: 170px;
+		padding: 4px;
+	}
+	.brainmeasures-psychometric .testimonials-section .slick-slider .slick-next{
+		right: 40%;
+	}
+	.brainmeasures-psychometric .testimonials-section .slick-slider .slick-prev {
+		left: 40%;
+	}
+	.brainmeasures-psychometric .psychometric-section .btn-default {
+		margin-right: 5px;
+	}
+	.offers-section .btn.btn-outline {
+		margin-left: 5px;
+	}
+	.brainmeasures-psychometric .test-type-section .btn-wrap .btn.btn-default {
+		margin-right: 5px;
+	}
+	.brainmeasures-psychometric .build-team-section .btn {
+		font-size: 13px;
+		width: 114px;
+	}
+	.contact-page .contact-form{
+		margin-left: -44px;
+	}
+	
+	.login-page .login-section .right-wrap{
+		padding: 15px;
+	}
+	.register-page .left-wrap h3{
+		font-size: 24px;
+	}
+}
+
+

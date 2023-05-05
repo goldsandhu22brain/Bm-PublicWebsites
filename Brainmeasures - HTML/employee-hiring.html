@@ -1,0 +1,939 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Employee Hiring | Brainmeasures</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--Bootstrap 5 css -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+	<!-- Style css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style-header.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style-footer.css">
+
+</head>
+<body>
+
+<header>
+
+	<nav class="navbar navbar-expand-lg fixed-top" id="header">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="assets/images/footer-logo.png" class="logo white-logo" alt="Logo" />
+				<img src="assets/images/logo.png" class="logo active-logo" alt="Logo" />
+			</a>
+
+			<button class="navbar-toggler navbar-toggler-right collapsed" id="toggleBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">				
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse flex-lg-column" id="navbarCollapse">
+				<ul class="navbar-nav ms-auto justify-content-end align-items-center d-none d-lg-flex">
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>20K+ Video Courses</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>6K+ E-Books</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>7K+ Skill Tests</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>L & D Program</span></a>
+					</li>
+					<li class="nav-item dropdown z-index-9">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="javascript:void(0);"><span>More</span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="javascript:void(0);">Employee Testing</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Our Story</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Success Story</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Reviews</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Score Board</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">FAQs</a></li>
+						</ul>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link login-link" href="javascript:void(0);"><span>Login</span></a>
+					</li>
+					<li>
+						<a class="btn btn-default" href="contact.html">Get Started</a>
+					</li>
+				</ul>
+				
+				<div class="nav-mb d-lg-none">
+					<div class="px-3 pb-4 d-flex align-items-center justify-content-between">
+						<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="logo" alt="Logo" /></a>
+						<button class="navbar-toggler navbar-toggler-right collapsed" id="toggleBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="close"><img src="assets/images/icons/close.png" alt="Close" /></span>							
+						</button>
+					</div>
+					
+					<ul class="navbar-nav ms-auto justify-content-end px-3">
+						<li class="nav-item z-index-9">
+							<a class="nav-link" href="javascript:void(0);"><span>20K+ Video Courses</span></a>
+						</li>
+						<li class="nav-item z-index-9">
+							<a class="nav-link" href="javascript:void(0);"><span>6K+ E-Books</span></a>
+						</li>
+						<li class="nav-item z-index-9">
+							<a class="nav-link" href="javascript:void(0);"><span>7K+ Skill Tests</span></a>
+						</li>
+						<li class="nav-item z-index-9">
+							<a class="nav-link" href="javascript:void(0);"><span>L & D Program</span></a>
+						</li>
+						<li class="nav-item dropdown z-index-9">
+							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="javascript:void(0);"><span>More</span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="javascript:void(0);">Employee Testing</a></li>
+								<li><a class="dropdown-item" href="javascript:void(0);">Our Story</a></li>
+								<li><a class="dropdown-item" href="javascript:void(0);">Success Story</a></li>
+								<li><a class="dropdown-item" href="javascript:void(0);">Reviews</a></li>
+								<li><a class="dropdown-item" href="javascript:void(0);">Score Board</a></li>
+								<li><a class="dropdown-item" href="javascript:void(0);">FAQs</a></li>
+							</ul>
+						</li>
+						<li class="nav-item z-index-9">
+							<a class="nav-link login-link" href="javascript:void(0);"><span>Login</span></a>
+						</li>
+						<li>
+							<a class="btn btn-default w-100" href="contact.html">Get Started</a>
+						</li>					
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- /*Main Navigation -->
+
+</header>
+<!-- /*Header -->
+
+<main>
+
+	<section class="banner-section">
+		<div class="container">	
+			<div class="wrap">
+				<div class="d-xl-none">
+					<img src="assets/images/banner-bg-mb.png" alt="" class="img-wrap" />
+				</div>
+				<div class="caption">
+					<h4>We guarantee that we are the only company in the world to provide the</h4>
+					<h1>High - Quality Tests to Hire Right Employees</h1>
+					<a class="btn btn-default" href="#">Enquire Now !</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /*Banner Section -->
+	
+	<section class="hero-section">
+		<div class="container">	
+			<div class="wrap text-center">
+				<div class="text-wrap">
+					<h1>We Guarantee</h1>
+					<p>First, we will make any number of Sample Question and We are Confident when you choose our tests to hire employees you will choose the best and Invoice only sent when your hiring process is complete. Before that, we won’t ask you to pay anything in advance.</p>
+				</div>
+				<a href="#Assessment"><img src="assets/images/icons/mouse-scroll-down.png" alt="" class="scroll-down" /></a>
+			</div>
+		</div>
+	</section>
+	<!-- /*Hero Section -->
+
+	<section class="assessment-section seperator" id="Assessment">
+		<div class="container">
+			<div class="row g-4 align-items-center">
+				<div class="col-xl-6 d-xl-none text-center">
+					<img src="assets/images/assessment-img.png" alt="" class="img-wrap" />
+				</div>
+				<div class="col-xl-6">
+					<div class="wrap">
+						<h1>Best Assessment Platform to Recruit and Retain</h1>
+						<ol class="custom-counter">
+							<li>Request Sample MCQ’s and Coding Problems</li>
+							<li>BM Provides Sample MCQ’s and Coding Problems</li>
+							<li>You Access Sample MCQ’s and Coding Problems</li>
+							<li>Request Final MCQ’s and Coding Problems for Testing</li>
+							<li>BM Provides Requested skill Tests and Coding Problems</li>
+							<li>You Start Your Hiring Process</li>
+							<li>Hire Best Talent for your Origination</li>
+							<li>Invoice Raised</li>
+						</ol>
+					</div>
+				</div>
+				<div class="col-xl-6 d-none d-xl-block">
+					<img src="assets/images/assessment-img.png" alt="" class="img-wrap" />
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /*Assessment Section -->
+	
+	<section class="offers-section seperator">
+		<div class="container">
+			<div class="text-wrap text-center">
+				<h1> Brainmeasures offers huge battery of 42 types of Testing Questions </h1>
+				<p>Which will empower you to select best talent for your organization.</p>
+			</div>
+			
+			<div class="block">
+				 <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">
+					<div class="col">
+						<div class="wrap active">
+							<img src="assets/images/offer-img-1.png" alt="" class="img-wrap" />
+							<p>MCQs</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-2.png" alt="" class="img-wrap" />
+							<p>Multiple Response</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-3.png" alt="" class="img-wrap" />
+							<p>True or False</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-4.png" alt="" class="img-wrap" />
+							<p>Short Answers</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-5.png" alt="" class="img-wrap" />
+							<p>Fill in the blank</p>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-6.png" alt="" class="img-wrap" />
+							<p>Matching</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-7.png" alt="" class="img-wrap" />
+							<p>Sequence</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-8.png" alt="" class="img-wrap" />
+							<p>Numeric</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-9.png" alt="" class="img-wrap" />
+							<p>Likert Scale</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-10.png" alt="" class="img-wrap" />
+							<p>Subjective</p>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-11.png" alt="" class="img-wrap" />
+							<p>One Word</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-12.png" alt="" class="img-wrap" />
+							<p>Approximate Solution</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-13.png" alt="" class="img-wrap" />
+							<p>Diagram</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-14.png" alt="" class="img-wrap" />
+							<p>Sentence Completion</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-15.png" alt="" class="img-wrap" />
+							<p>Complete and Balance the Equation</p>
+						</div>
+					</div>
+					
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-16.png" alt="" class="img-wrap" />
+							<p>Paragraph Based Questions</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-17.png" alt="" class="img-wrap" />
+							<p>Write and Balance the Equation</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-18.png" alt="" class="img-wrap" />
+							<p>Write Chemical Reaction</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-19.png" alt="" class="img-wrap" />
+							<p>Name the Following</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-20.png" alt="" class="img-wrap" />
+							<p>File Upload</p>
+						</div>
+					</div>
+					
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-21.png" alt="" class="img-wrap" />
+							<p>Whiteboard</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-22.png" alt="" class="img-wrap" />
+							<p>Golf</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-23.png" alt="" class="img-wrap" />
+							<p>File</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-24.png" alt="" class="img-wrap" />
+							<p>Video Based Questions</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-25.png" alt="" class="img-wrap" />
+							<p>Image Based Questions</p>
+						</div>
+					</div>
+					
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-26.png" alt="" class="img-wrap" />
+							<p>Audio Based Questions</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-27.png" alt="" class="img-wrap" />
+							<p>Deveops</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-28.png" alt="" class="img-wrap" />
+							<p>Gaming Assessment Test Questions</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-29.png" alt="" class="img-wrap" />
+							<p>Data Science</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-30.png" alt="" class="img-wrap" />
+							<p>Code Review</p>
+						</div>
+					</div>
+					
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-31.png" alt="" class="img-wrap" />
+							<p>Coding Question</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-32.png" alt="" class="img-wrap" />
+							<p>Front end Developer</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-33.png" alt="" class="img-wrap" />
+							<p>HTML/CSSs/ JavaScript</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-34.png" alt="" class="img-wrap" />
+							<p>Back end Developer</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-35.png" alt="" class="img-wrap" />
+							<p>Full Stack Developer</p>
+						</div>
+					</div>
+					
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-36.png" alt="" class="img-wrap" />
+							<p>Database Engineer</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-37.png" alt="" class="img-wrap" />
+							<p>Java Project</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-38.png" alt="" class="img-wrap" />
+							<p>Programming</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-39.png" alt="" class="img-wrap" />
+							<p>Machine Learning</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="wrap">
+							<img src="assets/images/offer-img-40.png" alt="" class="img-wrap" />
+							<p>Project Questions</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="btn-wrap text-center">
+				<a class="btn btn-default" href="#">Learn More</a>
+				<a class="btn btn-outline" href="#">Contact Us</a>
+			</div>
+			
+		</div>
+	</section>
+	<!-- /*Offers Section -->
+
+	<section class="professionals-section seperator">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<img src="assets/images/professionals-img.png" alt="" class="img-wrap" />
+				</div>
+				<div class="col-lg-6">
+					<div class="wrap">
+						<p>We have a team of over</p>
+						<h1>300 highly experienced and qualified professionals</h1>
+						<p>We can develop the customized tests on any given topic or you can choose tests from</p>
+						<div class="skill-wrap"><a href="#">Our library of 5000 skill tests</a></div>
+						<a class="btn btn-default" href="#">SEND REQUEST</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /*Professionals Section -->
+	
+	<section class="employee-section seperator">
+		<div class="container">
+			<div class="text-wrap">
+				<h3>We Help You To Hire Right Employee</h3>
+			</div>
+			<div class="row g-3">
+				<div class="col-xl-3 col-md-6">
+					<div class="wrap wrap1">
+						<img src="assets/images/help-img-1.png" alt="" class="img-wrap" />
+						<div class="details">
+							<h6>Hire The Best</h6>
+							<p>Our primary focus is to develop the tests in such a way the company can easily choose the best person</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-md-6">
+					<div class="wrap wrap2">
+						<img src="assets/images/help-img-2.png" alt="" class="img-wrap" />
+						<div class="details">
+							<h6>Experience Of 3,5 Or 10</h6>
+							<p>We can develop the test according to the companies need such as, if they want the test to be designed to check people with three-year experience or 5 or 10</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-md-6">
+					<div class="wrap wrap3">
+						<img src="assets/images/help-img-3.png" alt="" class="img-wrap" />
+						<div class="details">
+							<h6>Quality Of Tests</h6>
+							<p>Our top most priority is quality of Tests</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-md-6">
+					<div class="wrap wrap4">
+						<img src="assets/images/help-img-4.png" alt="" class="img-wrap" />
+						<div class="details">
+							<h6>Practical Approach</h6>
+							<p>Tests developed with a practical approach and to check if the person has in-depth knowledge and can practically implement it, or is capable of working on live projects or he just has theoretical knowledge</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /*Right Employee Section -->
+	
+	<section class="company-section seperator">
+		<div class="container">
+			<div class="text-wrap">
+				<h1>We Are Developing Tests For Big Companies Since 2007</h1>
+			</div>
+			<div class="row">
+				<div class="col-lg-5 d-lg-none text-center">
+					<img src="assets/images/company-img.png" alt="" class="img-wrap" />
+				</div>
+				<div class="col-lg-7">
+					<div class="row g-4">
+						<div class="col-sm-6">
+							<div class="wrap">
+								<img src="assets/images/comp-1.png" alt="" class="img-comp" />
+								<p>Now, we have launched our platform for companies who want to hire a right Employee which is hassle-free and convenient to use</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="wrap">
+								<img src="assets/images/comp-2.png" alt="" class="img-comp" />
+								<p>We give you 100 percent customized tests, and we will send you to sample MCQ’s specifically designed to meet your requirements, only when you approve of them we will take your order</p>
+							</div>
+						</div>
+						
+						<div class="col-sm-6">
+							<div class="wrap">
+								<img src="assets/images/comp-3.png" alt="" class="img-comp" />
+								<p>We offer unlimited revisions, but we are sure it is not gonna happen because we know our trade well. Testing candidates is what we are expert at</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="wrap">
+								<img src="assets/images/comp-4.png" alt="" class="img-comp" />
+								<p>Tests will be multiple choice questions</p>
+							</div>
+						</div>
+						
+						<div class="col-sm-6">
+							<div class="wrap">
+								<img src="assets/images/comp-5.png" alt="" class="img-comp" />
+								<p>We have a team of over 300 highly experienced and qualified professionals</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="wrap">
+								<img src="assets/images/comp-6.png" alt="" class="img-comp" />
+								<p>We are 100 percent sure that you will approve in the first attempt as there will be no grammatical mistake, no question framing issues, questions strictly based on provided topics with 100 percent original content</p>
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="col-lg-5 d-none d-lg-block">
+					<img src="assets/images/company-img.png" alt="" class="img-wrap" />
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /*Companies Section -->
+	
+	<section class="developed-section seperator">
+		<div class="container">
+			<div class="text-wrap text-center">
+				<h1>How Brainmeasures Test Are Developed</h1>
+			</div>
+			<ul class="nav nav-pills" id="pills-tab" role="tablist">
+				<li class="nav-item" role="presentation">
+					<button class="nav-link active" id="pills-stage-1-tab" data-bs-toggle="pill" data-bs-target="#pills-stage-1" type="button" role="tab" aria-controls="pills-stage-1" aria-selected="true">Stage 1</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="pills-stage-2-tab" data-bs-toggle="pill" data-bs-target="#pills-stage-2" type="button" role="tab" aria-controls="pills-stage-2" aria-selected="false">Stage 2</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="pills-stage-3-tab" data-bs-toggle="pill" data-bs-target="#pills-stage-3" type="button" role="tab" aria-controls="pills-stage-3" aria-selected="false">Stage 3</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="pills-stage-4-tab" data-bs-toggle="pill" data-bs-target="#pills-stage-4" type="button" role="tab" aria-controls="pills-stage-4" aria-selected="false">Stage 4</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="pills-stage-5-tab" data-bs-toggle="pill" data-bs-target="#pills-stage-5" type="button" role="tab" aria-controls="pills-stage-5" aria-selected="false">Stage 5</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="pills-stage-6-tab" data-bs-toggle="pill" data-bs-target="#pills-stage-6" type="button" role="tab" aria-controls="pills-stage-6" aria-selected="false">Stage 6</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="pills-stage-7-tab" data-bs-toggle="pill" data-bs-target="#pills-stage-7" type="button" role="tab" aria-controls="pills-stage-7" aria-selected="false">Stage 7</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="pills-stage-8-tab" data-bs-toggle="pill" data-bs-target="#pills-stage-8" type="button" role="tab" aria-controls="pills-stage-8" aria-selected="false">Stage 8</button>
+				</li>
+			</ul>
+			<div class="tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-stage-1" role="tabpanel" aria-labelledby="pills-stage-1-tab" tabindex="0">
+					<div class="row align-items-center">
+						<div class="col-md-6 text-center">
+							<img src="assets/images/developed-1.png" alt="" class="img-wrap" />
+						</div>
+						<div class="col-md-6">
+							<div class="wrap">
+								<div class="title">Stage -1</div>
+								<h4>Scope/ Definition/Discussion</h4>
+								<p>panel of subject matter experts is formed who are professionals and have the exact knowledge and experience to write, review and edit test articles. They decide the most relevant and essential topics that need to be examined and tested so that every candidate is equally assessed on a common set of knowledge, skills and aptitudes.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-stage-2" role="tabpanel" aria-labelledby="pills-stage-2-tab" tabindex="0">
+					<div class="row align-items-center">
+						<div class="col-md-6 text-center">
+							<img src="assets/images/developed-1.png" alt="" class="img-wrap" />
+						</div>
+						<div class="col-md-6">
+							<div class="wrap">
+								<div class="title">Stage -2</div>
+								<h4>Job Analysis/Curriculum Design</h4>
+								<p>The subject matter experts perform brainstorming sessions of various comprehensive topics in which test questions have to be developed in order to collectively select the most significant topics that are appropriate in relation to the test taker’s job and deeply helps to assess the knowledge and performance of the test taker.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-stage-3" role="tabpanel" aria-labelledby="pills-stage-3-tab" tabindex="0">
+					<div class="row align-items-center">
+						<div class="col-md-6 text-center">
+							<img src="assets/images/developed-1.png" alt="" class="img-wrap" />
+						</div>
+						<div class="col-md-6">
+							<div class="wrap">
+								<div class="title">Stage -3</div>
+								<h4>Test Specifications / Development</h4>
+								<p>The questions selected in the test are based on a job analysis and the entire test is developed in such a way that it enables to check the knowledge of the candidate from the job perspective. Tests designed keeping the job perspective in mind leads to more effective screening of the knowledge and expertise of the test taker.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-stage-4" role="tabpanel" aria-labelledby="pills-stage-4-tab" tabindex="0">
+					<div class="row align-items-center">
+						<div class="col-md-6 text-center">
+							<img src="assets/images/developed-1.png" alt="" class="img-wrap" />
+						</div>
+						<div class="col-md-6">
+							<div class="wrap">
+								<div class="title">Stage -4</div>
+								<h4>Technical Review</h4>
+								<p>After the tests are developed, they are sent for a technical review within our organization. At this stage, our team of experienced and qualified faculty members examine the suitability and correctness of the test and help identify for any discrepancies. Technical reviews are extremely beneficial since they provide a significant number of views and recommendations for improved testing.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-stage-5" role="tabpanel" aria-labelledby="pills-stage-5-tab" tabindex="0">
+					<div class="row align-items-center">
+						<div class="col-md-6 text-center">
+							<img src="assets/images/developed-1.png" alt="" class="img-wrap" />
+						</div>
+						<div class="col-md-6">
+							<div class="wrap">
+								<div class="title">Stage -5</div>
+								<h4>Pilot Testing</h4>
+								<p>Brainmeasures strongly relies on in-house testing. The final tests are then sent for in-house testing where the tests are passed on to various candidates who take the test and check it’s usability and accuracy. This helps in providing us with honest feedback’s and suggestions in designing enhanced tests.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-stage-6" role="tabpanel" aria-labelledby="pills-stage-6-tab" tabindex="0">
+					<div class="row align-items-center">
+						<div class="col-md-6 text-center">
+							<img src="assets/images/developed-1.png" alt="" class="img-wrap" />
+						</div>
+						<div class="col-md-6">
+							<div class="wrap">
+								<div class="title">Stage -6</div>
+								<h4>Feedback</h4>
+								<p>Once we have acquired the feedback from all the candidates, a collective feedback is given to the subject matter expert’s panel and the important aspects of the feedback are discussed and taken into consideration by them.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-stage-7" role="tabpanel" aria-labelledby="pills-stage-7-tab" tabindex="0">
+					<div class="row align-items-center">
+						<div class="col-md-6 text-center">
+							<img src="assets/images/developed-1.png" alt="" class="img-wrap" />
+						</div>
+						<div class="col-md-6">
+							<div class="wrap">
+								<div class="title">Stage -7</div>
+								<h4>Final Review</h4>
+								<p>After receiving the feedbacks, the subject matter experts make the necessary changes for improved and advanced test for the test takers.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-stage-8" role="tabpanel" aria-labelledby="pills-stage-8-tab" tabindex="0">
+					<div class="row align-items-center">
+						<div class="col-md-6 text-center">
+							<img src="assets/images/developed-1.png" alt="" class="img-wrap" />
+						</div>
+						<div class="col-md-6">
+							<div class="wrap">
+								<div class="title">Stage -8</div>
+								<h4>Final Launch</h4>
+								<p>Once the test has been tested, transformed and improved, it reaches its concluding stage and is finally launched.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /*Developed Section -->
+	
+	<section class="corporates-section seperator">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-5 d-lg-none">
+					<img src="assets/images/corporates.png" alt="" class="img-wrap" />
+				</div>
+				<div class="col-lg-7">
+					<div class="wrap">
+						<h3>Big corporates, 500 fortunes companies, Job web portals or other big companies that conduct Test challenges to select the best talent, Before they start employee hiring process, they include us in developing Test.</h3>
+						<h4>We never disappoint, this is the reason we are working with more than 200 companies and in business since 2007</h4>
+					</div>
+				</div>
+				<div class="col-lg-5 d-none d-lg-block">
+					<div class="right-wrap"><img src="assets/images/corporates.png" alt="" class="img-wrap" /></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /*Corporates Section -->
+	
+	<section class="enquiry-section seperator">
+		<div class="container">
+			<div class="text-wrap text-center">
+				<h1>Make An Enquiry Now !</h1>
+			</div>
+			<form class="enquiry-from row g-4">
+				<div class="col-md-6">
+					<input type="text" class="form-control" placeholder="Your Name" />
+				</div>
+				<div class="col-md-6">
+					<input type="text" class="form-control" placeholder="Company Name" />
+				</div>
+				<div class="col-md-6">
+					<input type="text" class="form-control" placeholder="Your Designation" />
+				</div>
+				<div class="col-md-6">
+					<input type="email" class="form-control" placeholder="Your Email" />
+				</div>
+				<div class="col-md-6">
+					<input type="text" class="form-control" placeholder="Your Phone" />
+				</div>
+				<div class="col-md-6">
+					<input type="text" class="form-control" placeholder="Official Website" />
+				</div>
+				<div class="col-md-6">
+					<input type="text" class="form-control" placeholder="City/State" />
+				</div>
+				<div class="col-md-6">
+					<input type="text" class="form-control" placeholder="Country" />
+				</div>
+				<div class="col-md-12">
+					<textarea class="form-control" rows="6" placeholder="Messages"></textarea>
+				</div>
+				<div class="col-12 text-center">
+					<button type="submit" class="btn btn-default">SEND REQUEST</button>
+				</div>
+			</form>
+		</div>
+	</section>
+	<!-- /*Enquiry Section -->
+	
+	<section class="trust-us-section seperator">
+		<div class="container">
+			<div class="text-wrap text-center">
+				<h1>The Best in the Business Trust Us</h1>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="left-wrap">
+						<p>“We choose Brainmeasures because their product is far better than the products and services currently on the market. They also bring a lot of talents and unique ideas to the table.”</p>
+						<img src="assets/images/capgemini.png" alt="" class="capgemini-wrap" />
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="right-wrap">
+						<div class="row g-4">
+							<div class="col-md-4 col-sm-6">
+								<div class="wrap">
+									<img src="assets/images/b-1.png" alt="" class="img-wrap" />
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="wrap">
+									<img src="assets/images/b-2.png" alt="" class="img-wrap" />
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="wrap">
+									<img src="assets/images/b-3.png" alt="" class="img-wrap" />
+								</div>
+							</div>
+							
+							<div class="col-md-4 col-sm-6">
+								<div class="wrap">
+									<img src="assets/images/b-4.png" alt="" class="img-wrap" />
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="wrap">
+									<img src="assets/images/b-5.png" alt="" class="img-wrap" />
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="wrap">
+									<img src="assets/images/b-6.png" alt="" class="img-wrap" />
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /*Business Trust Section -->
+
+</main>
+
+<!--Start: Footer-->
+<footer>
+	<div class="container">
+		<div class="row g-3">
+			<div class="col-lg-5 col-md-12">
+				<a href="index.html"><img src="assets/images/footer-logo.png" class="footer-logo" alt="Logo" /></a>
+				<ul class="contact">
+					<li><a href="mailto:info@brainmeasures.com">info@brainmeasures.com</a> <a href="mailto:contact@brainmeasures.com">contact@brainmeasures.com</a></li>
+					<h5>+1 888 556 0061 <span>TOLL FREE (USA/CANADA)</span></h5>
+				</ul>
+				<div class="row g-3 align-items-center">
+					<div class="col-6">
+						<h5>BM Mobile App</h5>
+						<a href="#"><img src="assets/images/playstore.png" class="" alt="" /></a>
+					</div>
+					<div class="col-6">
+						<div class="row">
+							<div class="col-6">
+								<a href="#"><img src="assets/images/forbes-1.jpg" class="forbes-img" alt="" /></a>
+							</div>
+							<div class="col-6">
+								<a href="#"><img src="assets/images/forbes-2.jpg" class="forbes-img" alt="" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-7 col-md-12">
+				<div class="row g-3">
+					<div class="col-lg-4 col-sm-4">
+						<h6>Important Links</h6>
+						<ul class="imp-links">
+							<li><a href="#">BM Home</a></li>
+							<li><a href="#">All Video Courses</a></li>
+							<li><a href="#">All Courses</a></li>
+							<li><a href="#">All Skill Tests</a></li>
+							<li><a href="#">Custom Tests</a></li>
+							<li><a href="#">Code Compiler</a></li>
+							<li><a href="#">Proctor Testing</a></li>
+							<li><a href="#">API Integration</a></li>
+							<li><a href="#">Psychometric Test</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-sm-4">
+						<h6>Important Links</h6>
+						<ul class="imp-links">
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Terms and Conditons</a></li>
+							<li><a href="#">Refund/Cancellation Policy</a></li>
+							<li><a href="#">Site Map</a></li>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Score Board</a></li>
+							<li><a href="#">Free Quizzes</a></li>
+							<li><a href="#">Job Search</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-sm-4">
+						<h6>Important Links</h6>
+						<ul class="imp-links">
+							<li><a href="#">Knowledgebase</a></li>
+							<li><a href="#">Report an Issue</a></li>
+							<li><a href="#">Ask Question</a></li>
+							<li><a href="#">Feedback</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Reviews</a></li>
+							<li><a href="#">Affiliate</a></li>
+							<li><a href="#">VProctor FAQs</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="footer-bottom">
+			<p>&copy; copyright 2007-2023 Brainmeasures.</p>
+			<p>Brainmeasures is one of few skill testing and online certification company which is ISO 9001-2015 certified. Brainmeasures respects the privacy of each individual who registers for our services, we uphold and comply with strict truste program requirements, putting us in league of big names such as yahoo, AOL, Facebook, PayPal, IBM when it comes to internet privacy, safety and trust</p>
+		</div>
+	</div>
+</footer>
+<!--End: Footer-->
+
+	<!-- scroll to top button 
+	<button type="button" id="scrollTop"><i class="fa fa-angle-up"></i></button>
+	-->
+</body>
+
+	<!-- Bootstrap 5 js -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	
+	<!-- Custom js -->
+	<script src="assets/js/custom.js"></script>
+	
+	
+</html>

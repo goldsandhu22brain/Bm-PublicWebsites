@@ -1,0 +1,293 @@
+/*--------------------------------------*/
+
+/* Header
+/*--------------------------------------*/
+#header.fixed-top{
+	height: 80px;
+	background: linear-gradient(201deg, #5A19D7 9.58%, #7122AE 99.05%);
+	z-index: 999;
+}
+header .navbar-brand .logo{
+	height: 69px;
+}
+header .navbar-brand .active-logo{
+	display: none;
+}
+header .navbar .navbar-nav .nav-item:not(:first-child){
+	padding-left: 30px;
+}
+header .navbar .navbar-nav .nav-item .nav-link{
+	font-size: 16px;
+	color: #FFFFFF;
+	padding: 0;
+	transition: 0.2s all ease-in-out;
+}
+header .navbar .navbar-nav .nav-item .nav-link.active,
+header .navbar .navbar-nav .nav-item .nav-link:hover{
+	color: #F33558;
+}
+header .navbar-nav .nav-item .nav-link.login-link{
+	border-left: 1px solid #BFCBDF;
+	padding-left: 30px;
+}
+header .navbar-nav .btn.btn-default{
+	margin-left: 48px;
+	width: 140px;
+	padding: 13px;
+}
+/*--------------------------------------*/
+
+/* Dropdown Menu
+/*--------------------------------------*/
+header .navbar .dropdown .dropdown-menu{
+	width: 240px;
+	margin-top: 0;
+	top: 36px;
+	left: unset;
+	background: #FFFFFF;
+	-webkit-box-shadow: 0px 5px 15px 0px rgba(0, 33, 85, 0.1);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0, 33, 85, 0.1);
+    box-shadow: 0px 5px 15px 0px rgba(0, 33, 85, 0.1);
+	overflow: hidden;
+	transform-origin: top center;
+	transform: scale(1,0);
+	display: block;
+	opacity: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	transition: 0.6s all ease-in-out;
+}
+header .navbar .dropdown:hover .dropdown-menu{
+	transform: scale(1,1);
+	opacity: 1;
+}
+
+header .navbar .dropdown .dropdown-toggle::after{
+	content: url('../images/icons/dropdown-toggle-white.png');
+	width: 7px;
+	height: 11px;
+	border: 0;
+	vertical-align: 0;
+	transition: 0.6s all ease-in-out;
+}
+header .navbar .dropdown .dropdown-toggle:hover::after,
+header .navbar .active.dropdown .dropdown-toggle::after,
+header .navbar .dropdown .dropdown-toggle.active::after{
+	content: url('../images/icons/dropdown-toggle-active.png');
+}
+header .navbar .dropdown .dropdown-toggle.dropdown-toggle-none::after{
+	content: '';
+	width: 8px;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item{
+	font-size: 16px;
+	line-height: 19px;
+	color: #1E1E1E;
+	padding: 10px 15px;
+	position: relative;
+}
+.navbar .navbar-nav .dropdown-menu li:not(:last-child){
+	border-bottom: 1px solid #f7f8f9;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar .navbar-nav .dropdown-menu .dropdown-item.active{
+	color: #F33558;
+	background: none;
+}
+/*--------------------------------------*/
+
+/* Header Active
+/*--------------------------------------*/
+#header.fixed-top.active{
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+	margin-top: 0;
+	height: 80px;
+	background: #FFFFFF!important;
+}
+#header.fixed-top.active .white-logo{
+	display: none;
+}
+#header.fixed-top.active .active-logo{
+	display: block;
+}
+#header.fixed-top.active .navbar-nav .nav-item .nav-link{
+	color: #1E1E1E;
+}
+#header.fixed-top.active .navbar-nav .nav-item .nav-link:hover,
+#header.fixed-top.active .navbar-nav .nav-item .nav-link.active{
+	color: #F33558;
+}
+#header.fixed-top.active .dropdown .dropdown-toggle::after{
+	content: url('../images/icons/dropdown-toggle-mb.png');
+}
+#header.fixed-top.active .dropdown .dropdown-toggle:hover::after,
+#header.fixed-top.active .active.dropdown .dropdown-toggle::after,
+#header.fixed-top.active .dropdown .dropdown-toggle.active::after{
+	content: url('../images/icons/dropdown-toggle-active.png');
+}
+/*--------------------------------------*/
+
+/* Header Responsive
+/*--------------------------------------*/
+header .navbar-toggler-icon {
+	background-image: url("../images/icons/burger-menu.png");
+	width: 18px;
+}
+header .navbar-toggler:focus{
+	box-shadow: none;
+}
+
+@media (max-width: 1399.98px){
+	header .navbar .navbar-nav1 .nav-item:not(:first-child) {
+		padding-left: 12px;
+	}
+}
+
+@media (max-width: 1199.98px){
+	
+	header .navbar-brand .logo {
+		height: 45px;
+	}
+	header .navbar .navbar-nav .nav-item:not(:first-child),
+	header .navbar-nav .nav-item .nav-link.login-link{
+		padding-left: 18px;
+	}
+		header .navbar-nav .btn.btn-default{
+			margin-left: 18px;
+		}
+	header .navbar .navbar-nav .nav-item .nav-link{
+		font-size: 13px;
+	}
+	header .navbar-nav .btn {
+		margin-left: 6px;
+		padding: 10px 16px;
+	}
+}
+
+@media (max-width: 991.98px){
+	#header.fixed-top{
+		height: 79px;
+	}
+	header .navbar-brand .logo {
+		height: 38px;
+	}
+	
+	header .navbar .navbar-toggler{
+		/*background-color: #E7E1D8;*/
+		border-radius: 8px;
+		border: 0;
+		width: 56px;
+		height: 56px;
+	}
+	header .navbar .navbar-collapse{
+		position: absolute;
+		top: 0; /* adjust to height of navbar */
+		left: 0;
+        width:87%;
+		padding-top: 8px;
+		height: 100vh;
+		z-index: 999;
+	}
+	header .navbar .navbar-collapse.collapsing{
+        left: -100%;
+        transition: height 0s ease;
+		background: #F3F0EB;
+		box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+    }
+    header .navbar .navbar-collapse.show {
+        transition: left 500ms ease-in-out;
+		background: #F3F0EB;
+		box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+    }
+    header .navbar .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+	header .navbar .navbar-collapse.show .navbar-toggler1{
+		background: rgba(35, 31, 32, 0.2);
+	}
+	header .navbar .navbar-nav .nav-item:not(:last-child) {
+		padding-left: 0;
+	}
+	header .navbar .dropdown .dropdown-toggle::after{
+		content: url('../images/icons/dropdown-toggle-mb.png');
+	}
+	header .navbar .dropdown a[aria-expanded="true"]:hover::after{
+		content: url('../images/icons/dropdown-toggle-active.png');
+	}
+	
+	header .navbar .navbar-nav .nav-item{
+		margin-bottom: 16px;
+	}
+	header .navbar .navbar-nav .nav-item .nav-link{
+		color: #1E1E1E;
+	}
+	header .navbar .dropdown .dropdown-menu{
+		background: transparent;
+		transform: unset;
+		display: none;
+		opacity: unset;
+		transition: 0.6s all ease-in-out;
+	}
+	header .navbar .dropdown:hover .dropdown-menu {
+		transform: unset;
+		opacity: unset;
+	}
+	header .navbar .dropdown .dropdown-menu.show {
+		display: block;
+	}
+	.navbar .navbar-nav .dropdown-menu li{
+		margin-top: 0;
+	}
+	.navbar .navbar-nav .dropdown-menu .dropdown-item{
+		font-size: 13px;
+		line-height: 15px;
+	}
+	header .navbar .navbar-nav .btn{
+		margin-left: 0;
+	}
+	header .navbar-nav .nav-item .nav-link.login-link{
+		padding-left: 0;
+		border-left: 0;
+	}
+	
+}
+
+@media (max-width: 767.98px){
+	
+}
+
+@media (max-width: 575.98px){
+	
+	
+}
+
+@media (max-width: 374px){
+	header .navbar-brand .logo1{
+		width: 207px;
+		margin-left: 10px;
+	}
+}
+/*--------------------------------------*/
+
+/* Brainmeasures Psychometric Page
+/*--------------------------------------*/
+.white-nav#header.fixed-top{
+	background: #FFFFFF;
+}
+.white-nav#header.fixed-top .navbar-nav .nav-item .nav-link {
+    color: #1E1E1E;
+}
+.white-nav#header.fixed-top .navbar-nav .nav-item .nav-link:hover,
+.white-nav#header.fixed-top .navbar-nav .nav-item .nav-link.active{
+	color: #F33558;
+}
+.white-nav#header.fixed-top .dropdown .dropdown-toggle::after {
+    content: url(../images/icons/dropdown-toggle-mb.png);
+}
+.white-nav#header.fixed-top .dropdown .dropdown-toggle:hover::after,
+.white-nav#header.fixed-top .active.dropdown .dropdown-toggle::after,
+.white-nav#header.fixed-top .dropdown .dropdown-toggle.active::after{
+	    content: url(../images/icons/dropdown-toggle-active.png);
+}
+/*--------------------------------------*/
