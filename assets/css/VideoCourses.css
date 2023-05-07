@@ -501,25 +501,30 @@ a.sefixed2 {
 /*End: Inline CSS*/
 
 
-
-#ulCourseGrp.active {
+#sidebarCollapse{
   display: none;
 }
 
-#contentmain.active{
-	width: 100%;
-}
-
 @media (max-width: 768px) {
-  #ulCourseGrp {
-    display: none;
-  }
-  #ulCourseGrp.active {
-    display: block;
-  }
-  #sidebarCollapse span {
-    display: none;
-  }
+	#ulCourseGrp {
+		display: block;
+	}
+	#ulCourseGrp.active {
+		display: none;
+		
+	}
+	#sidebarCollapse{
+		display: block;
+	}
+	#sidebarCollapse span {
+		display: none;
+	}
+	#contentmain{
+		display: none;
+	}
+	#contentmain.active{
+		display: block;
+	}
 }
 
 /*R.S. 18-Apr-2023*/
