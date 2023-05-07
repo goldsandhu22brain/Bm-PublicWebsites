@@ -519,9 +519,6 @@ a.sefixed2 {
 	#sidebarCollapse span {
 		display: none;
 	}
-	#contentmain{
-		display: none;
-	}
 	#contentmain.active{
 		display: block;
 	}
