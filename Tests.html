@@ -10,7 +10,8 @@
 
     <!-- All CSS Files -->
     <!-- Bootstrap fremwork main css -->
-    <link rel="stylesheet" href="https://www.brainmeasures.com/Content/ebrain/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+	
     <!-- Theme main style -->
     <link rel="stylesheet" href="https://www.brainmeasures.com/Content/ebrain/style.css">
     <!-- Responsive css -->
@@ -84,9 +85,12 @@ function __doPostBack(eventTarget, eventArgument) {
 
 
                     <a class="navbar-brand" href="/Default.aspx"><img src="https://www.brainmeasures.com/Content/ebrain/images/logo.png" alt="" class="img-fluid"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                   
+					<button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="close">x</span>	
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					
                     <div class="collapse navbar-collapse" id="navbarScroll">
                         <ul class="navbar-nav m-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
                             
@@ -311,8 +315,9 @@ function __doPostBack(eventTarget, eventArgument) {
         <script src="https://www.brainmeasures.com/plugins/jQueryUI/jquery-ui.min.js"></script>
         <script src="https://use.fontawesome.com/4d2bbf9ddf.js"></script>
        
-        <script src="https://www.brainmeasures.com/Content/ebrain/js/bootstrap.bundle.min.js"></script>
-         <script src="https://www.brainmeasures.com/plugins/tools.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+		
+        <script src="https://www.brainmeasures.com/plugins/tools.js"></script>
         <script>
             /* Sticky Header */
             $(window).scroll(function () {
@@ -330,19 +335,7 @@ function __doPostBack(eventTarget, eventArgument) {
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <style>
-        .ui-autocomplete {
-            max-height: 300px;
-            overflow-y: auto;
-            /* prevent horizontal scrollbar */
-            overflow-x: hidden;
-            /* add padding to account for vertical scrollbar */
-            padding-right: 20px;
-        }
-
-        .ui-menu .ui-menu-item {
-            margin: 5px !important;
-        }
-        .cbox{position:relative}
+        
     </style>
 
 

@@ -1,3 +1,17 @@
+.navbar-toggler{
+	border: 0;
+}
+.navbar-toggler:focus{
+	box-shadow: none;
+}
+.navbar-toggler.collapsed>.close,
+.navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display: none;
+}
+.navbar-toggler>.close{
+	font-weight: 500;
+	font-size: 24px;
+}
 
 header .dropdown-item.active,
 header .dropdown-item:active{
@@ -17,6 +31,22 @@ header .dropdown-menu{
 	font-size: 12px;
 }
 
+
+/*Start: Inline Css*/
+.ui-autocomplete {
+	max-height: 300px;
+	overflow-y: auto;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+	/* add padding to account for vertical scrollbar */
+	padding-right: 20px;
+}
+
+.ui-menu .ui-menu-item {
+	margin: 5px !important;
+}
+.cbox{position:relative}
+/*End: Inline Css*/
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px){

@@ -1,4 +1,43 @@
 ﻿
+
+/* ---------Fonts css start------------  */
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('../fonts/MyriadProRegular.eot');
+    src: url('../fonts/MyriadProRegular.eot') format('embedded-opentype'),
+         url('../fonts/MyriadProRegular.woff2') format('woff2'),
+         url('../fonts/MyriadProRegular.woff') format('woff'),
+         url('../fonts/MyriadProRegular.ttf') format('truetype'),
+         url('../fonts/MyriadProRegular.svg#MyriadProRegular') format('svg');
+}
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url('../fonts/MyriadProBold.eot');
+    src: url('../fonts/MyriadProBold.eot') format('embedded-opentype'),
+         url('../fonts/MyriadProBold.woff2') format('woff2'),
+         url('../fonts/MyriadProBold.woff') format('woff'),
+         url('../fonts/MyriadProBold.ttf') format('truetype'),
+         url('../fonts/MyriadProBold.svg#MyriadProBold') format('svg');
+}
+
+
+/* ---------Fonts css End------------  */
+
+.navbar-toggler{
+	border: 0;
+}
+.navbar-toggler:focus{
+	box-shadow: none;
+}
+.navbar-toggler.collapsed>.close,
+.navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display: none;
+}
+.navbar-toggler>.close{
+	font-weight: 500;
+	font-size: 24px;
+}
+
 header .dropdown-item.active,
 header .dropdown-item:active{
 	background-color: #e9ecef;
@@ -19,6 +58,209 @@ header .dropdown-menu{
 .CourseList .courses .search .form-control.price-type{
 	border-radius: 0 20px 20px 0;
 }
+
+
+
+/*Start: Inline CSS*/
+#pageloaddiv {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	background: url('images/loading.gif') no-repeat center center;
+	display: none!important;
+}
+
+
+.popover-content {
+	min-height: 200px !important;
+	max-height: 350px !important;
+	overflow-y: auto;
+	white-space: pre-wrap;
+}
+
+.popover {
+	position: absolute !important;
+}
+
+.vidduration {
+	font-size: 11px;
+}
+
+.bodytext {
+	font-size: 12px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.popover-title {
+	color: #333;
+	background-color: #fff;
+	margin: 0px !important;
+	cursor: pointer;
+}
+
+.popover-footer {
+	padding: 4px;
+	background-color: #fbfbfb;
+	text-align: right;
+	border-top: 1px solid #ebebeb;
+	border-radius: 0 0 5px 5px;
+}
+
+.bodytext ul {
+	font-size: 11px;
+	list-style: none;
+	margin: 0px;
+	padding: 2px;
+}
+
+.bodytext li {
+	line-height: 21px;
+}
+
+	.bodytext li i {
+		padding-right: 4px;
+	}
+
+.glyphicon-heart {
+	font-size: 28px;
+}
+
+.bodytext p {
+	font-size: 12px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.hrefVideoTitle {
+	cursor: pointer;
+}
+
+.rat {
+	cursor: pointer;
+	margin: 15px;
+	color: orange;
+}
+/* 1-5-2021 Course Modal - DK */
+.CourseList .courses .course h3 {
+	font-size: 15px;
+	line-height: 1.4;
+}
+
+.vidduration span {
+	display: inline-block;
+	width: 49%;
+	float: left;
+}
+
+.vidduration span i {
+	margin-right: 4px;
+}
+
+.vidduration span.enroled {
+	text-align: right
+}
+
+.popover-footer {
+padding: 10px 0px 0px 0px;
+}
+
+.popover-footer .btn-success {
+background: linear-gradient(45deg, #32106d, #4543bf);
+border: none;
+font-size: 13px;
+box-shadow: 0px 0px 7px #ddd;
+width: 70%;
+border-radius: 100px;
+}
+
+.popover-footer .btn-success:hover {
+opacity: 0.8;
+}
+
+.popover-wishlist {
+display: inline-block;
+width: 30px;
+height: 30px;
+text-align: center;
+line-height: 30px;
+font-size: 16px;
+border: 1px solid #999;
+border-radius: 100px;
+text-decoration: none;
+color: #999;
+}
+
+.popover-wishlist i {
+font-size: 14px;
+left: 1.5px;
+top: 2.5px
+}
+
+.popover-wishlist .glyphicon-heart {
+font-size: unset
+}
+
+.popover-wishlist:hover, .popover-wishlist.active {
+color: #db0f2b;
+text-decoration: none;
+}
+
+.popover {
+	position: relative;
+	width: 34rem !important;
+	background-color: #fff;
+	border: 1px solid #d1d7dc;
+	/* border-radius: 4px; */
+	/* box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%); */
+	color: #1c1d1f;
+}
+
+.popover {
+	z-index: 999999 !important
+}
+
+.cbox {
+	 position: relative; 
+   
+}
+.list-group-item.active {
+    z-index: 2;
+    color: #000;
+    background-color: #f4b837;
+    border-color: #f4b837;
+}
+#ulCourseGrp li a {color:#000!important}
+#ulCourseGrp .list-group-item img {
+    width: 60px;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.cat_name{font-size:18px!important}
+
+
+.ui-autocomplete {
+	max-height: 300px;
+	overflow-y: auto;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+	/* add padding to account for vertical scrollbar */
+	padding-right: 20px;
+}
+
+.ui-menu .ui-menu-item {
+	margin: 5px !important;
+}
+
+.nav-pills .nav-link {
+	text-align: left !important
+}
+/*End: Inline Css*/
+
 
 @media screen and (max-width:1199px) {
 	#ulCourseGrp li a{
@@ -44,6 +286,9 @@ header .dropdown-menu{
 		font-size: 12px!important;
 		margin-bottom:0;
 	}
+	.box.box-solid{
+		margin-bottom: 30px;
+	}
 	.box-body #ulCourseGrp .list-group-item img{
 		width: 40px;
 		margin-right: 6px;
@@ -56,6 +301,7 @@ header .dropdown-menu{
 	.CourseList .courses .search .box-header .form-control{
 		font-size: 14px;
 	}
+	
 
 }
 @media screen and (max-width:767px) {
@@ -91,4 +337,16 @@ header .dropdown-menu{
 		width: 100%;
 	}
 
+}
+
+@media (max-width: 575.98px){
+	.cbox {
+		height: 380px;
+	}
+}
+
+@media (max-width: 440px){
+	.cbox {
+		height: auto;
+	}
 }

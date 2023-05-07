@@ -1,4 +1,13 @@
-﻿.navbar{
+﻿.navbar-toggle.collapsed .close,
+.navbar-toggle:not(.collapsed)>.icon-bar {
+    display: none;
+}
+.navbar-toggle>.close{
+	font-weight: 500;
+	font-size: 24px;
+}
+
+.navbar{
 	display: flex;
     align-items: center;
 	position: fixed;
@@ -19,6 +28,359 @@
 .navbar-default .navbar-collapse{
 	margin-left: auto;
 }
+
+/*Start: Inline Css*/
+a.sefixed {
+	position: fixed;
+	right: -10px;
+	top: 30%;
+	z-index: 1000;
+	transition: 0.4s;
+}
+
+	a.sefixed:hover, a.sefixed2:hover {
+		right: 0px;
+		transition: 0.4s;
+	}
+
+a.sefixed2 {
+	position: fixed;
+	right: -10px;
+	top: 40%;
+	z-index: 1000;
+	transition: 0.4s;
+}
+
+.seshow {
+	position: fixed;
+	right: 0px;
+	top: 18%;
+	z-index: 1002;
+	display: none;
+	background: #fff;
+	padding: 0 0 0 30px;
+}
+
+.seshow2 {
+	position: fixed;
+	right: 0px;
+	top: 39%;
+	z-index: 1001;
+	display: none;
+	background: #fff;
+	padding: 30px 5px 30px 30px;
+}
+
+.courses {
+	background: #c6e6ff !important;
+	border: none;
+}
+
+
+.cbox a.enroll {
+	font-family: Dnormal;
+	color: #2a3941;
+	font-size: 15px;
+	margin: 0;
+	float: left;
+	padding: 4px 4px !important;
+	background: Orange;
+	color: #fff;
+}
+
+.cbox p {
+	float: left !important;
+}
+
+.cbox .cboxfoot {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 6px !important;
+}
+
+.cbox .cboxfoot {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 6px;
+}
+
+.rat {
+	cursor: pointer;
+	margin: 15px;
+	color: orange!important;
+}
+
+.Test-modal {
+	padding: 20px 0px !important;
+	background: rgba(63, 63, 68, 0.93);
+	border-radius: 10px;
+}
+
+.T-title {
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+	.T-title h1 {
+		font-family: Dbold;
+		color: #fbff27;
+		font-size: 45px;
+		text-shadow: 3px 3px 1px #252121;
+		margin: 0px;
+		text-transform: uppercase;
+	}
+
+.T-part2 {
+}
+
+	.T-part2 h2 {
+		font-size: 30px;
+		font-weight: 900;
+		color: #f3ed21;
+		text-align: center;
+		margin: 0px 0px 30px 0px;
+	}
+
+		.T-part2 h2 span {
+			font-weight: 300;
+			font-size: 20px;
+		}
+
+	.T-part2 p {
+		font-size: 19px;
+		color: #fff;
+		text-align: center;
+		text-shadow: 1px 1px 2px #000000;
+		font-family: Dnormal;
+	}
+
+.T-part3 {
+	margin-top: 100px;
+	border-top: 2px solid #69b3d8;
+	text-align: center;
+	background: url(../dist/img/T-wave.png) no-repeat bottom center #323237;
+	background-size: 100%;
+	padding-bottom: 26px;
+}
+
+	.T-part3 img {
+		margin-top: -150px;
+		max-width: 100%;
+	}
+
+.T-part4 {
+	text-align: center;
+	margin-top: 30px;
+}
+
+	.T-part4 p {
+		color: #fff;
+		font-size: 20px;
+		font-family: Dnormal;
+		text-shadow: 1px 1px 2px #000000;
+	}
+
+		.T-part4 p span {
+			color: #f3ed21;
+			font-size: 20px;
+			font-family: Dnormal;
+			text-shadow: 1px 1px 2px #000000;
+		}
+
+.T-part5 {
+	margin-top: 40px;
+	text-align: center;
+}
+
+a.T-btn-fill {
+	display: inline-block;
+	padding: 10px 30px;
+	background: #f3ed21;
+	color: #000000;
+	font-family: Dbold;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 17px;
+}
+
+a.T-btn-link {
+	display: inline-block;
+	padding: 10px;
+	color: #fff;
+	font-size: 17px;
+}
+
+h1.s-title {
+	color: #ef5800;
+	font-family: Dbold;
+	font-size: 40px;
+	text-shadow: 2px 2px 1px #000000;
+	text-align: center;
+	margin: 0px 0px 30px 0px;
+}
+
+	h1.s-title span {
+		color: #fff;
+		font-family: Dnormal;
+		font-size: 26px;
+		text-shadow: 2px 2px 1px #000000;
+	}
+
+.s-tabmain {
+	background: #313136 !important;
+	padding: 15px !important;
+	box-shadow: 1px 1px 17px rgba(0, 0, 0, 0.7) !important;
+	text-align: center !important;
+	font-family: Dnormal !important;
+	font-size: 16px !important;
+	min-height: 420px !important;
+	color: #fff !important;
+}
+
+.s-tabmainimg {
+	margin: 10px 0px 26px 0px !important;
+	width: auto !important;
+	border: none !important;
+}
+
+.s-tabmain .nav-tabs > li > a {
+	color: #fff !important;
+	font-family: Dnormal !important;
+	font-size: 15px !important;
+	background: none !important;
+	padding: 11px 15px !important;
+}
+
+	.s-tabmain .nav-tabs > li > a:hover {
+		color: #000000 !important;
+		font-family: Dnormal !important;
+		font-size: 15px !important;
+		background: #f7f7f7 !important;
+	}
+
+.s-tabmain .nav-tabs > li.active > a, .s-tabmain .nav-tabs > li.active > a:hover, .s-tabmain .nav-tabs > li.active > a:focus {
+	color: #000000 !important;
+	cursor: default !important;
+	background-color: #e7e123 !important;
+	border: 1px solid #ada91c !important;
+	border-bottom-color: transparent !important;
+	font-family: Dbold !important;
+	padding: 10px 25px !important;
+}
+
+.s-tabmain h3 {
+	font-family: Dbold !important;
+	color: #f3ed21 !important;
+	text-transform: uppercase !important;
+	text-shadow: 1px 1px 2px #000000 !important;
+}
+
+.s-tabmain img {
+	margin: 10px 0px 26px 0px !important;
+	width: auto !important;
+	border: none !important;
+}
+
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+.impbtnimg {
+	position: absolute;
+	top: 5px;
+	right: -11px;
+	transition: 0.2s;
+}
+
+	.impbtnimg:hover {
+		transition: 0.2s;
+		right: -9px;
+	}
+
+a:focus {
+	outline: none;
+}
+
+.imppopup h1 {
+	color: #fff;
+	text-shadow: 2px 2px 1px #000000;
+	margin: 0px 0px 10px 0px;
+	font-size: 30px;
+	letter-spacing: 1px;
+}
+
+.imppopup h2 {
+	margin: 0px 0px 20px 0px;
+	font-family: Dbold;
+	color: #ef5800;
+	line-height: 35px;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 1px #000000;
+	font-size: 40px;
+}
+
+	.imppopup h2 span {
+		font-family: Dnormal;
+		color: #fff;
+		font-size: 20px;
+	}
+
+.imppopup p {
+	font-family: Dnormal;
+	color: #fff;
+	font-size: 18px;
+}
+
+.imppopup h3 {
+	font-family: Dbold;
+	color: #f1f700;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-top: 0px;
+	font-weight: normal;
+	text-shadow: 1px 1px 2px #000000;
+}
+
+.imppopup h4 {
+	font-family: Dnormal;
+	color: #fff;
+	font-size: 18px;
+}
+
+.imppopup img:hover {
+	opacity: 0.7;
+	transition: 0.4s;
+}
+
+.imppopup a.impbtn {
+	display: inline-block;
+	background: #2196f3;
+	color: #fff;
+	width: 100%;
+	padding: 10px;
+	box-shadow: 1px 1px 1px #111;
+	text-align: center;
+	font-family: Dbold;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px #111;
+	border-radius: 4px;
+	transition: 0.4s;
+	margin-bottom: 10px;
+}
+
+	.imppopup a.impbtn:hover {
+		text-decoration: none;
+		border-radius: 0px;
+		transition: 0.4s;
+	}
+
+.cbox p span {
+	text-decoration: none !important
+}
+/*End: Inline Css*/
 
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
@@ -68,7 +430,7 @@
 @media (max-width: 767.98px){
 	
 	.vbox {
-		min-height: 550px!important;
+		min-height: 560px!important;
 	}
 	
 }

@@ -1,1 +1,11 @@
-All common JSwill bein other files(example, back to top, modal popup, anythign this page level, should be placed in this file example(on click show details on tile card , etc)
+/* Start: Fix Header */
+	$(window).scroll(function() {     
+		var scroll = $(window).scrollTop();
+		if (scroll > 10) {
+			$("#header").addClass("active");
+		}
+		else {
+			$("#header").removeClass("active");
+		}
+	});
+/* End: Fix Header */
