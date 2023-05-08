@@ -138,9 +138,11 @@ h6{
 .btn.btn-default{
 	background-color: #FF0000;
 }
-.btn.btn-default:hover{
+.btn.btn-default:hover,
+.btn.btn-primary:hover,
+.btn.btn-warning:hover{
+	background-color: #000000;
 	color: #FFFFFF;
-	background-color: #000000; 
 }
 .btn.btn-outline{
 	background-color: #FFFFFF;
@@ -161,11 +163,9 @@ h6{
 }
 .btn.btn-primary{
 	background: #6967FF;
-	border: 1px solid #6967FF;
 }
-.btn.btn-primary:hover{
-	color: #FFFFFF;
-	background-color: #000000; 
+.btn.btn-warning{
+	background: #FFBB00;
 }
 /*--------------------------------------*/
 

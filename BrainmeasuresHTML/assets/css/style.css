@@ -1466,27 +1466,97 @@
 .brainmeasures-certification .hero-section .right-wrap p{
 	line-height: 27px;
 }
-.cert-imp-section{
+.brainmeasures-certification .cert-imp-section{
 	background-color: rgba(244, 247, 253, 0.8);
+	padding-bottom: 316px;
 }
-.cert-imp-section h1,
-.cert-imp-section h4{
+.brainmeasures-certification .cert-imp-section h1,
+.brainmeasures-certification .cert-imp-section h4{
 	font-weight: 700;
 }
-.cert-imp-section .text-wrap p{
+.brainmeasures-certification .cert-imp-section .text-wrap p{
 	line-height: 27px;
 	padding: 25px 0;
 	max-width: 1099px;
 }
-.cert-imp-section .wrap{
+.brainmeasures-certification .cert-imp-section .wrap{
 	max-width: 539px;
 }
-.cert-imp-section .wrap h4{
+.brainmeasures-certification .cert-imp-section .wrap h4{
 	line-height: 45px;
 }
-.cert-imp-section .wrap p{
+.brainmeasures-certification .cert-imp-section .wrap p{
 	line-height: 27px;
 	padding-top: 10px;
+}
+.brainmeasures-certification .cert-imp-section h3{
+	font-weight: 700;
+	line-height: 45px;
+	max-width: 810px;
+	margin-bottom: 30px;
+}
+.heading-wrap{
+	background-color: #6967FF;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+    padding: 15px 29px;
+    color: #FFFFFF;
+    position: relative;
+	max-width: 397px;
+}
+.heading-wrap::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 27.8px solid rgba(0,0,0,0);
+    border-left: 0px solid;
+    border-right: 20px solid rgba(244, 247, 253, 1);
+}
+
+.brainmeasures-certification .your-goal-section{
+	margin-top: -216px;
+}
+.brainmeasures-certification .your-goal-section .block{
+	background-image: url('../images/bg/goal-bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 433px;
+	color: #FFFFFF;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.brainmeasures-certification .your-goal-section .block h4{
+	font-weight: 700;
+	line-height: 45px;
+	max-width: 784px;
+}
+.brainmeasures-certification .your-goal-section .text-wrap{
+	text-align: center;
+	max-width: 1138px;
+	margin: 0px auto;
+}
+.brainmeasures-certification .your-goal-section .text-wrap p{
+	line-height: 27px;
+	padding: 20px 0;
+	max-width: 855px;
+	margin: 0px auto;
+}
+.imp-click{
+	background-image: url('../images/bg/imp-click-bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #FFFFFF;
+	min-height: 240px;
+	display: flex;
+    align-items: center;
 }
 /*--------------------------------------*/
 
