@@ -166,9 +166,6 @@ header .navbar-toggler:focus{
 }
 
 @media (max-width: 991.98px){
-	#header.fixed-top{
-		height: 79px;
-	}
 	header .navbar-brand .logo {
 		height: 38px;
 	}

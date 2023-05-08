@@ -254,6 +254,14 @@ h6{
 /*--------------------------------------*/
 
 @media screen and (max-width:1199px){
+	h1 {
+		font-size: 36px;
+		line-height: 48px;
+	}
+	h4 {
+		font-size: 26px;
+		line-height: 38px;
+	}
 	h5 {
 		font-size: 22px;
 		line-height: 30px;
@@ -265,18 +273,12 @@ h6{
     	height: 40px;
 		font-size: 26px;
 	}
-	h1 {
-		font-size: 30px;
-		line-height: 40px;
-	}
+	
 	h3 {
 		font-size: 28px;
 		line-height: 40px;
 	}
-	h4 {
-		font-size: 26px;
-		line-height: 38px;
-	}
+	
 	
 	.seperator {
 		padding: 50px 0;
@@ -289,7 +291,10 @@ h6{
 	
 }
 @media screen and (max-width:767px){
-	
+	h1 {
+		font-size: 30px;
+		line-height: 40px;
+	}
 }
 
 @media (max-width: 575.98px){

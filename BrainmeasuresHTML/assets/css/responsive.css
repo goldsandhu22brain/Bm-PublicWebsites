@@ -11,14 +11,8 @@
 	}
 }
 @media screen and (max-width:1199px) {
-	.banner-section{
-		background: linear-gradient(305.84deg, #5A19D7 9.58%, #7122AE 99.05%);
-		text-align: center;
-		padding: 0 0 30px;
-		height: auto;
-	}
-	.banner-section .wrap{
-		margin: 0px auto;
+	.banner-section .wrap {
+		max-width: 450px;
 	}
 	.employee-section .wrap{
 		min-height: 306px;
@@ -92,17 +86,17 @@
 }
 @media screen and (max-width:991px) {
 	.banner-section{
-		margin-top: 80px;
+		background: linear-gradient(305.84deg, #5A19D7 9.58%, #7122AE 99.05%);
+		text-align: center;
+		padding: 0 0 30px;
+		height: auto;
 	}
-	.banner-section .caption h1{
-		line-height: 50px;
+	.banner-section .wrap{
+		margin: 0px auto;
 	}
 	.offers-section .wrap {
 		min-height: 175px;
 		padding: 10px 8px;
-	}
-	.offers-section .text-wrap h1{
-		line-height: 40px;
 	}
 	.offers-section .text-wrap p{
 		font-size: 18px;
@@ -116,9 +110,6 @@
 	}
 	.trust-us-section{
 		text-align: center;
-	}
-	.trust-us-section h1{
-		line-height: 60px;
 	}
 	.trust-us-section .left-wrap p{
 		margin: 0px auto 20px;
@@ -257,9 +248,6 @@
 		margin-bottom: 40px;
 		text-align: center;
 	}
-	.brainmeasures-psychometric .industry-section .wrap h1{
-		line-height: 40px;
-	}
 	.brainmeasures-psychometric .industry-section .wrap p{
 		font-size: 18px;
 		line-height: 26px;
@@ -280,14 +268,6 @@
 	.brainmeasures-psychometric .build-team-section .row::after{
 		display: none;
 	}
-	.brainmeasures-psychometric .build-team-section .text-wrap h1 {
-		line-height: 40px;
-	}
-	.contact-page .banner-section .caption h1 {
-		line-height: 40px;
-	}
-	
-	
 	
 	.contact-page .contact-form{
 		padding: 16px;

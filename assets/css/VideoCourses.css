@@ -516,12 +516,40 @@ a.sefixed2 {
 	#sidebarCollapse{
 		display: block;
 	}
-	#sidebarCollapse span {
-		display: none;
-	}
 	#contentmain.active{
 		display: block;
 	}
+}
+
+.course_cat{
+	/*height: 2005px;*/
+    overflow: auto;
+	height: 100vh;
+}
+div.ftl-vertical-tab-menu{
+	/*height: 1965px;*/
+    overflow: auto;
+	height: 100vh;
+}
+
+/* width */
+#ulCourseGrp::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+#ulCourseGrp::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+#ulCourseGrp::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+#ulCourseGrp::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 /*R.S. 18-Apr-2023*/

@@ -7,7 +7,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 100% 100%;
-	height: 545px;
+	height: calc(100vh - 80px);
 	position:relative;
 	margin-top: 80px;
 	color: #FFF7F7;
@@ -19,11 +19,7 @@
 }
 .banner-section .caption h4{
 	font-weight: 500;
-	line-height: 35px;
 	margin: 0 0 10px;
-}
-.banner-section .caption h1{
-	line-height: 65px;
 }
 .banner-section .caption .btn.btn-default{
 	margin-top: 30px;
@@ -105,7 +101,6 @@
 	margin: 0px auto 59px;
 }
 .offers-section .text-wrap h1{
-	line-height: 65px;
 	margin-bottom: 21px;
 }
 .offers-section .text-wrap p{
@@ -308,7 +303,6 @@
 }
 .developed-section .wrap p{
 	font-size: 14px;
-	line-height: 24px;
 }
 /*--------------------------------------*/
 
@@ -350,7 +344,6 @@
 /* 11. Business Trust Section
 /*--------------------------------------*/
 .trust-us-section h1{
-	line-height: 35px;
 	margin-bottom: 86px;
 }
 .trust-us-section .left-wrap p{
@@ -662,9 +655,6 @@
 .brainmeasures-psychometric .personality-test-section .text-wrap{
 	max-width: 950px;
 	margin: 0px auto;
-}
-.brainmeasures-psychometric .personality-test-section .text-wrap h1{
-	line-height: 65px;
 }
 .brainmeasures-psychometric .personality-test-section .text-wrap p{
 	font-size: 20px;
@@ -1019,9 +1009,6 @@
 .brainmeasures-psychometric .industry-wrap{
 	margin-bottom: 120px;
 }
-.brainmeasures-psychometric .industry-section .wrap h1{
-	line-height: 65px;
-}
 .brainmeasures-psychometric .industry-section .wrap p{
 	font-size: 24px;
 	line-height: 45px;
@@ -1122,9 +1109,6 @@
 
 .brainmeasures-psychometric .build-team-section{
 	text-align: center;
-}
-.brainmeasures-psychometric .build-team-section .text-wrap h1{
-	line-height: 65px;
 }
 .brainmeasures-psychometric .build-team-section .text-wrap p{
 	font-family: 'Inter', sans-serif;
@@ -1275,6 +1259,8 @@
 }
 /*--------------------------------------*/
 
+/* 14. Login Page
+/*--------------------------------------*/
 .login-page{
 	background: #EFF3FB;
 	padding: 40px 0 110px;
@@ -1414,6 +1400,10 @@
 }
 /*Login Form */
 
+/*--------------------------------------*/
+
+/* 15. Registration Page
+/*--------------------------------------*/
 .register-page .left-wrap{
 	padding: 60px 70px 0 110px;
 }
@@ -1447,5 +1437,57 @@
     right: unset;
 	left: 0;
 }
+/*--------------------------------------*/
+
+/* 16. Certification Page
+/*--------------------------------------*/
+.brainmeasures-certification .banner-section{
+	background: linear-gradient(301.18deg, #5A19D7 17.79%, #202DEB 96.93%);
+}
+.brainmeasures-certification .banner-section .caption h5{
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.brainmeasures-certification .banner-section .banner-img {
+    position: absolute;
+    bottom: 0;
+}
+.brainmeasures-certification .hero-section .wrap p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    margin-top: 40px;
+}
+.brainmeasures-certification .hero-section .right-wrap h5{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.brainmeasures-certification .hero-section .right-wrap p{
+	line-height: 27px;
+}
+.cert-imp-section{
+	background-color: rgba(244, 247, 253, 0.8);
+}
+.cert-imp-section h1,
+.cert-imp-section h4{
+	font-weight: 700;
+}
+.cert-imp-section .text-wrap p{
+	line-height: 27px;
+	padding: 25px 0;
+	max-width: 1099px;
+}
+.cert-imp-section .wrap{
+	max-width: 539px;
+}
+.cert-imp-section .wrap h4{
+	line-height: 45px;
+}
+.cert-imp-section .wrap p{
+	line-height: 27px;
+	padding-top: 10px;
+}
+/*--------------------------------------*/
 
 

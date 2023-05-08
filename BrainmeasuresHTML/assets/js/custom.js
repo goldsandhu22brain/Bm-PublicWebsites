@@ -33,3 +33,61 @@
 /*End: Tab as select option */
 
 
+$(document).ready(function () {
+	$(".testimonials-slider").slick({
+		centerMode: true,
+		centerPadding: '0px',
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,	
+		autoplaySpeed: 5000,	
+		dots: false,
+		pauseOnHover: false,
+		arrows: true,
+	});
+});
+
+
+$(document).ready(function () {
+	$(".trusted-slider").slick({
+		centerMode: true,
+		centerPadding: '0px',
+		slidesToShow: 7,
+		slidesToScroll: 1,
+		autoplay: true,	
+		autoplaySpeed: 3000,	
+		dots: false,
+		pauseOnHover: false,
+		arrows: false,
+		
+		responsive: [
+		{
+		  breakpoint: 1199,
+		  settings: {
+			slidesToShow: 5,
+		  }
+		},
+		{
+		  breakpoint: 991,
+		  settings: {
+			slidesToShow: 4,
+		  }
+		},
+		{
+		  breakpoint: 767,
+		  settings: {
+			slidesToShow: 3,
+		  }
+		},
+		{
+		  breakpoint: 480,
+		  settings: {
+			slidesToShow: 2,
+		  }
+		}
+	  ]
+		
+	});
+});
+
+
