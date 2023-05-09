@@ -1477,10 +1477,10 @@
 .brainmeasures-certification .cert-imp-section .text-wrap p{
 	line-height: 27px;
 	padding: 25px 0;
-	max-width: 1099px;
+	/*max-width: 1099px;*/
 }
 .brainmeasures-certification .cert-imp-section .wrap{
-	max-width: 539px;
+	/*max-width: 539px;*/
 }
 .brainmeasures-certification .cert-imp-section .wrap h4{
 	line-height: 45px;
@@ -1492,29 +1492,25 @@
 .brainmeasures-certification .cert-imp-section h3{
 	font-weight: 700;
 	line-height: 45px;
-	max-width: 810px;
+	/*max-width: 810px;*/
 	margin-bottom: 30px;
 }
-.heading-wrap{
-	background-color: #6967FF;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 500;
-	font-size: 20px;
-    padding: 15px 29px;
-    color: #FFFFFF;
-    position: relative;
-	max-width: 397px;
+.brainmeasures-certification .cert-imp-section .img-wrap{
+	text-align: right;
 }
-.heading-wrap::before {
-    position: absolute;
-    content: "";
-    right: 0;
-    top: 0;
-    width: 0;
-    height: 0;
-    border: 27.8px solid rgba(0,0,0,0);
-    border-left: 0px solid;
-    border-right: 20px solid rgba(244, 247, 253, 1);
+
+
+.heading-wrap1{
+	font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding-left: 17px;
+    background-image: url(../images/title-2.png);
+    background-repeat: no-repeat;
+	height: 54px;
+	display: flex;
+	align-items: center;
 }
 
 .brainmeasures-certification .your-goal-section{
@@ -1531,6 +1527,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border-radius: 80px;
 }
 .brainmeasures-certification .your-goal-section .block h4{
 	font-weight: 700;
@@ -1548,7 +1545,7 @@
 	max-width: 855px;
 	margin: 0px auto;
 }
-.imp-click{
+.brainmeasures-certification .imp-click{
 	background-image: url('../images/bg/imp-click-bg.png');
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1557,6 +1554,219 @@
 	min-height: 240px;
 	display: flex;
     align-items: center;
+}
+.brainmeasures-certification .cert-help-section{
+	background: #FFF9EF;
+	padding-bottom: 230px;
+}
+.brainmeasures-certification .cert-help-section .wrap p{
+	line-height: 27px;
+	padding: 26px 0;
+}
+.brainmeasures-certification .cert-help-section .wrap h5{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+
+.brainmeasures-certification .cert-resume-section{
+	margin-top: -110px;
+}
+.brainmeasures-certification .cert-resume-section .block{
+	background: #FFFFFF;
+	border: 1px solid #C2ACFF;
+	box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.07);
+	border-radius: 30px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*min-height: 270px;*/
+	padding: 67px 0;
+}
+.brainmeasures-certification .cert-resume-section .block h4{
+	font-weight: 500;
+	line-height: 45px;
+	max-width: 974px;
+}
+.brainmeasures-certification .cert-resume-section .block h4 span{
+	font-weight: 800;
+	color: #6967FF;
+}
+.brainmeasures-certification .cert-resume-section .wrap p{
+	line-height: 27px;
+	padding: 26px 0 0;
+}
+.brainmeasures-certification .cert-resume-section .wrap h3{
+	font-weight: 600;
+	line-height: 45px;
+}
+.brainmeasures-certification .cert-resume-section .seperator{
+	position: relative;
+}
+.brainmeasures-certification .cert-resume-section .seperator::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 329px;
+    background-image: url(../images/bg/mask-3.png);
+	background-repeat: no-repeat;
+    top: -140px;
+    left: 0;
+    z-index: -1;
+}
+
+.brainmeasures-certification .offers-section{
+	background-color: rgba(237, 242, 251, 0.8);
+	text-align: center;
+}
+.brainmeasures-certification .offers-section .offers-section-wrap{
+	max-width: 1016px;
+	margin: 0px auto;
+}
+.brainmeasures-certification .offers-section h1{
+	margin-bottom: 40px;
+}
+.brainmeasures-certification .offers-section .wrap{
+	margin-bottom: 0;
+}
+.brainmeasures-certification .offers-section .wrap p{
+	width: calc(100% - 47px);
+}
+.brainmeasures-certification .prof-cert-section .img-wrap{
+	text-align: right;
+}
+.brainmeasures-certification .prof-cert-section .wrap{
+	/*max-width: 351px;*/
+}
+.brainmeasures-certification .prof-cert-section .wrap h6{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	margin: 16px 0 9px;
+}
+.brainmeasures-certification .prof-cert-section .wrap p{
+	font-size: 14px;
+	line-height: 22px;
+}
+.brainmeasures-certification .prof-cert-section .prof-cert-block{
+	margin-top: 80px;
+	position: relative;
+}
+.brainmeasures-certification .prof-cert-section .prof-cert-block::before{
+	content: '';
+    position: absolute;
+    width: 100%;
+    height: 341px;
+    background-image: url(../images/bg/prof-cert-bg.png);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.brainmeasures-certification .prof-cert-section .prof-cert-block h5{
+	font-weight: 600;
+	line-height: 45px;
+}
+
+.brainmeasures-certification .summary-report-section{
+	background-color: rgba(237, 242, 251, 0.8);
+}
+.brainmeasures-certification .summary-report-section h1{
+	margin-bottom: 30px;
+}
+.brainmeasures-certification .summary-report-section p{
+	font-size: 20px;
+	line-height: 35px;
+	padding-bottom: 30px;
+}
+.brainmeasures-certification .summary-report-section h3{
+	line-height: 45px;
+	margin-bottom: 23px;
+	text-align: left;
+}
+
+.brainmeasures-certification .summary-report-section .right-wrap{
+	background: #FFFFFF;
+	padding: 60px;
+}
+.brainmeasures-certification .summary-report-section .right-wrap.offers-section p{
+	font-size: 16px;
+	line-height: 24px;
+	padding-bottom: 0;
+}
+.brainmeasures-certification .summary-report-section .right-wrap.offers-section .wrap{
+	border-width: 4px!important;
+}
+
+.brainmeasures-certification .category-section .text-heading{
+	margin-bottom: 66px;
+}
+.brainmeasures-certification .category-section .wrap{
+	border: 1px solid #D9D9D9;
+	padding: 20px;
+	min-height: 530px;
+}
+.brainmeasures-certification .category-section .wrap .img-wrap{
+	min-height: 130px;
+}
+.brainmeasures-certification .category-section .wrap h5{
+	line-height: 35px;
+	margin: 0 0 18px;
+}
+.brainmeasures-certification .category-section .wrap p{
+	line-height: 27px;
+}
+.brainmeasures-certification .category-section .wrap p span{
+	font-weight: 700;
+	color: #6967FF;
+}
+
+.brainmeasures-certification .category-section .work-level h3{
+	line-height: 45px;
+}
+.brainmeasures-certification .category-section .work-level h4{
+	font-weight: 500;
+	line-height: 50px;
+}
+.brainmeasures-certification .category-section .work-level li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+	line-height: 36px;
+    margin-top: 16px;
+    display: flex;
+    position: relative;
+    padding-left: 50px;
+    text-align: left;
+}
+.brainmeasures-certification .category-section .work-level li::before {
+    content: url(../images/icons/check.png);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+}
+.brainmeasures-certification .brain-cert-section{
+	background-image: url('../images/bg/cert-bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #FFFFFF;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.brainmeasures-certification .brain-cert-section h4{
+	font-weight: 400;
+	line-height: 45px;
+	max-width: 982px;
+	margin: 0 auto;
+	position: relative;
+    bottom: -60px;
+}
+.brainmeasures-certification .brain-cert-section h4 span{
+	font-weight: 700;
 }
 /*--------------------------------------*/
 

@@ -120,6 +120,28 @@ h6{
 	 font-size: 16px;
 	line-height: 24px;
 }
+
+.heading-wrap{
+	background-color: #6967FF;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+    padding: 15px 29px;
+    color: #FFFFFF;
+    position: relative;
+	max-width: 397px;
+}
+.heading-wrap::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 27.8px solid rgba(0,0,0,0);
+    border-left: 0px solid;
+    border-right: 20px solid rgba(244, 247, 253, 1);
+}
 /*--------------------------------------*/
 
 /*Button
@@ -197,6 +219,9 @@ h6{
 }
 .border-yellow{
 	border: 2px solid #FFBB00!important;
+}
+.border-green{
+	border: 2px solid #3ABE73!important;
 }
 .border-light-blue{
 	border: 2px solid #C2ACFF!important;
@@ -302,7 +327,9 @@ h6{
 }
 
 @media (max-width: 440px){
-	
+	.heading-wrap{
+		font-size: 16px;
+	}
 }
 
 
