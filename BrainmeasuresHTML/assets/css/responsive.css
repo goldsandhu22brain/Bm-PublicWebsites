@@ -82,6 +82,13 @@
 	.brainmeasures-certification .category-section .wrap{
 		min-height: 418px;
 	}
+	.case-studies-listing .listing-section .wrap,
+	.case-studies-listing .listing-section .wrap.wrap-4{
+		padding: 20px 35px;
+	}
+	.case-studies-listing .listing-section .wrap.wrap-9{
+		padding-left: 200px;
+	}
 }
 @media screen and (max-width:1024px) {
 	
@@ -96,6 +103,7 @@
 	}
 	.banner-section .wrap{
 		margin: 0px auto;
+		max-width: 100%;
 	}
 	.offers-section .wrap {
 		min-height: 175px;
@@ -126,7 +134,7 @@
 		padding-right: 24px;
 	}
 	
-	.brainmeasures-psychometric .banner-section .banner-img{
+	.inner-banner .banner-img{
 		position: relative;
 		margin-bottom: 30px;
 	}
@@ -314,10 +322,6 @@
 		padding: 16px;
 	}
 	
-	.brainmeasures-certification .banner-section .banner-img {
-		position: relative;
-		margin-bottom: 30px;
-	}
 	.brainmeasures-certification .imp-click{
 		text-align: center;
 		padding: 0 0 30px;
@@ -345,7 +349,18 @@
 	.brainmeasures-certification .prof-cert-section .img-wrap {
 		text-align: center;
 	}
-	
+	.case-studies-listing .listing-section .wrap.wrap-4 p{
+		padding-left: 0;
+	}
+	.case-studies-listing .listing-section .wrap{
+		padding: 34px 49px 20px
+	}
+	.case-studies-listing .listing-section .wrap.wrap-4{
+		padding-left: 196px;
+	}
+	.case-studies-listing .listing-section .wrap.wrap-9{
+		padding-left: 220px;
+	}
 }
 @media screen and (max-width:767px) {
 	
@@ -443,6 +458,8 @@
 	.brainmeasures-certification .category-section .wrap{
 		min-height: auto;
 	}
+	
+	
 }
 @media screen and (max-width:600px) {
 	
@@ -471,6 +488,21 @@
 	}
 	.register-page .left-wrap {
 		padding: 60px 8px 0;
+	}
+	.case-studies-listing .get-started-section .subscribe{
+		display: block;
+	}
+	.case-studies-listing .get-started-section .form-control{
+		margin: 0 0 10px 0;
+		width: 100%;
+	}
+	.case-studies-listing .get-started-section .btn.btn-warning{
+		width: 100%;
+	}
+	.case-studies-listing .listing-section .wrap,
+	.case-studies-listing .listing-section .wrap.wrap-4,
+	.case-studies-listing .listing-section .wrap.wrap-9{
+		padding: 20px 35px;
 	}
 	
 }
