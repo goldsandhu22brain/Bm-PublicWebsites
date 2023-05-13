@@ -1716,14 +1716,22 @@
 	color: #6967FF;
 }
 
-.brainmeasures-certification .category-section .work-level h3{
+.brainmeasures-certification .sample-report{
+	background: #EDF2FB;
+	text-align: center;
+}
+.brainmeasures-certification .sample-report .img-wrap{
+	margin: 35px 0 20px;
+}
+
+.brainmeasures-certification .work-level h3{
 	line-height: 45px;
 }
-.brainmeasures-certification .category-section .work-level h4{
+.brainmeasures-certification .work-level h4{
 	font-weight: 500;
 	line-height: 50px;
 }
-.brainmeasures-certification .category-section .work-level li {
+.brainmeasures-certification .work-level li {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
 	line-height: 36px;
@@ -1733,7 +1741,7 @@
     padding-left: 50px;
     text-align: left;
 }
-.brainmeasures-certification .category-section .work-level li::before {
+.brainmeasures-certification .work-level li::before {
     content: url(../images/icons/check.png);
     width: 30px;
     height: 30px;
