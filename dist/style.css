@@ -3,62 +3,94 @@
 	position: relative;
 	height: 100vh;
 }
-.peer-tile {
-    padding: 0 10px;
+.conference .peer-tile{
+    padding: 0;
 }
-.peer-video,
-.peer-video-tile{
+.conference .peer-video,
+.conference .peer-video-tile{
 	width: 100%;
 }
-.shape-circle {
+.conference .shape-circle{
     border-radius: 10px;
 }
-.messages{
+.conference .messages{
 	height:200px;
 	max-height:200px;
 	white-space:pre-wrap;
 	overflow:scroll;
 	overflow-x:hidden;
 }
-.offcanvas{
-	background-color: #263238;
-	box-shadow: -15px 0px 17px -7px rgba(0,0,0,0.75);
-}
-#controls{
+.conference #controls{
 	position: absolute;
 	bottom: 20px;
 	left: 35%;
 }
-.offcanvas-header .btn-close{
+.conference .sidebar{
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+	box-shadow: -15px 0px 17px -7px rgba(0,0,0,0.75);
+	width: 300px;
+	position: fixed;
+    z-index: 1;
+    overflow: auto;
+	background-color: #263238;
+	display:none;
+	right: 0;
+	top: 0;
+    height: 250px;
+	padding: 10px;
+}
+.conference .sidebar.chat-box{
+	top: 280px;
+	height: 330px;
+}
+.conference .btn-close{
 	background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
 	opacity: 1;
 }
-.offcanvas-backdrop{
-	width: auto;
-}
-.btn.btn-primary{
+.conference .icon{
 	float: right;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	padding: 10px;
+	background-color: #263238;
+	transition: 0.3s all ease-in-out;
+	position: absolute;
+    right: 0;
+	top:0;
 }
+.conference .icon:hover{
+	color: #e91e63;
+	border: 1px solid #e91e63;
+}
+.conference .icon svg{
+	width: 30px;
+    height: 30px;
+}
+.conference .icon.icon-chat{
+	top: 260px;
+}
+
+
 /* width */
-::-webkit-scrollbar {
+.conference ::-webkit-scrollbar {
   width: 3px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+.conference ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
   border-radius: 10px;
 }
  
 /* Handle */
-::-webkit-scrollbar-thumb {
-  background: #000000; 
+.conference ::-webkit-scrollbar-thumb {
+  background: #e91e63; 
   border-radius: 10px;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #000000;
+.conference ::-webkit-scrollbar-thumb:hover {
+  background: #e91e63;
 }
 
 
