@@ -218,6 +218,10 @@ h6{
 	top: 18px;
 	z-index: 1;
 }
+
+.row-eq-height{
+    display: flow-root;
+}
 /*--------------------------------------*/
 
 /*Button

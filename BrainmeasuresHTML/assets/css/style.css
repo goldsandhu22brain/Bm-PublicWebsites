@@ -1288,10 +1288,16 @@
 .brainmeasures-psychometric .personality-traits h1{
 	margin-bottom: 40px;
 }
+.brainmeasures-psychometric .personality-traits .traits-header,
+.brainmeasures-psychometric .personality-traits .traits-body{
+	width: 760px;
+	margin-left: auto;
+}
 .brainmeasures-psychometric .personality-traits .traits-header{
 	font-size: 14px;
 	text-transform: capitalize;
-	padding: 23px 80px 23px 21px;
+	padding: 11px 80px 11px 21px;
+    height: 70px;
 }
 .brainmeasures-psychometric .personality-traits .traits-body{
 	font-weight: 600;
@@ -1300,7 +1306,8 @@
 	background: #6967FF;
 	border-radius: 20px;
 	margin-bottom: 10px;
-	padding: 23px 80px 23px 21px;
+	padding: 11px 80px 11px 21px;
+    height: 70px;
 }
 .brainmeasures-psychometric .personality-traits .traits-body .circle{
 	position: relative;
@@ -1379,6 +1386,7 @@
 .brainmeasures-psychometric .trusted-section{
 	background: #EDF2FB;
 }
+
 /*--------------------------------------*/
 
 /* 13. Contact Page
