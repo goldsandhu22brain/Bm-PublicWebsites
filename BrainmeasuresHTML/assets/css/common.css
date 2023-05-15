@@ -176,6 +176,48 @@ h6{
     border-right: 0px solid;
     border-left: 12px solid #7A34D2;
 }
+
+.card-price {
+	display: inline-block;
+	width: auto;
+	height: 40px;
+	background-color: #FFBB00;
+	border-radius: 5px 0 0 5px;
+	border-left: 1px solid #FFBB00;
+	position: relative;
+	font-size: 15px;
+	line-height: 35px;
+	padding: 3px 18px 0 10px;
+	color: #000000;
+	white-space: nowrap;
+}
+.card-price span{
+	font-weight: 700;
+}
+.card-price:after {
+	content: "";
+	position: absolute;
+	display: block;
+	right: -14.5px;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-left: 15px solid #FFBB00;
+}
+.card-price:before {
+	content: "";
+	background-color: #000000;
+	border-radius: 50%;
+	width: 5px;
+	height: 5px;
+	display: block;
+	position: absolute;
+	right: -6px;
+	top: 18px;
+	z-index: 1;
+}
 /*--------------------------------------*/
 
 /*Button

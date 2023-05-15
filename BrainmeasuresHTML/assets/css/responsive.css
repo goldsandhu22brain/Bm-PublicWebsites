@@ -89,6 +89,15 @@
 	.case-studies-listing .listing-section .wrap.wrap-9{
 		padding-left: 200px;
 	}
+	.brainmeasures-certification .work-level h4 {
+		line-height: 38px;
+	}
+	.brainmeasures-psychometric .aptitude-tests-section .wrap{
+		padding: 20px;
+	}
+	.brainmeasures-psychometric .offers-section .offers-details .img-wrap{
+		text-align: center;
+	}
 }
 @media screen and (max-width:1024px) {
 	
@@ -279,6 +288,51 @@
 	.brainmeasures-psychometric .build-team-section .row::after{
 		display: none;
 	}
+	.brainmeasures-psychometric .offers-details h3 {
+		line-height: 40px;
+	}
+	.brainmeasures-psychometric .psychometric-testing h3 {
+		margin-bottom: 0;
+	}
+	.brainmeasures-psychometric .aptitude-tests-section .wrap{
+		min-height: 160px;
+		text-align: center;
+	}
+	.brainmeasures-psychometric .practice-section .wrap {
+		margin-left: 0;
+		text-align: center;
+	}
+	.brainmeasures-psychometric .practice-section .practice-img{
+		height: 260px;
+		background-size: contain;
+	}
+	.brainmeasures-psychometric .personality-questionnaires .cell p{
+		font-size: 13px;
+		line-height: 18px;
+	}
+	.brainmeasures-psychometric .examine-section .wrap{
+		min-height: auto;
+	}
+	.brainmeasures-psychometric .personality-traits .wrap{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .personality-traits h1 {
+		margin-bottom: 20px;
+	}
+	.brainmeasures-psychometric .speed-power-test{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .speed-power-test .wrap p{
+		margin: 0px auto;
+	}
+	.brainmeasures-psychometric .practice-section .wrap p{
+		max-width: 100%;
+	}
+	.brainmeasures-psychometric .practice-section .practice-img{
+		background-position: center;
+	}
+	
+	
 	
 	.contact-page .contact-form{
 		padding: 16px;
@@ -361,6 +415,7 @@
 	.case-studies-listing .listing-section .wrap.wrap-9{
 		padding-left: 220px;
 	}
+	
 }
 @media screen and (max-width:767px) {
 	
@@ -457,6 +512,9 @@
 	
 	.brainmeasures-certification .category-section .wrap{
 		min-height: auto;
+	}
+	.brainmeasures-psychometric .aptitude-tests-section .wrap{
+		min-height: auto
 	}
 	
 	
