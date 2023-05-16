@@ -1708,6 +1708,11 @@
 .brainmeasures-certification .hero-section .right-wrap p{
 	line-height: 27px;
 }
+.brainmeasures-certification .hero-section .right-wrap .btn.btn-default{
+	width: 260px;
+	margin-top: 20px;
+}
+
 .brainmeasures-certification .cert-imp-section{
 	background-color: rgba(244, 247, 253, 0.8);
 	padding-bottom: 316px;
