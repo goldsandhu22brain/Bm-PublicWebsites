@@ -1386,7 +1386,9 @@
 .brainmeasures-psychometric .trusted-section{
 	background: #EDF2FB;
 }
-
+#samplereport .modal-content1{
+	border: 0;
+}
 /*--------------------------------------*/
 
 /* 13. Contact Page
