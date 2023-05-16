@@ -158,8 +158,14 @@
 			<div class="row g-4 align-items-center seperator pt-0">
 				<div class="col-lg-6">
 					<div class="img-wrap">
-						<a href="#" data-bs-toggle="modal" data-bs-target="#certificate"><img src="assets/images/certificate-img.png" alt="" class="img-fluid" /></a>
-						<h5 class="d-none">Sample Certificate</h5>
+						<a class="spotlight" data-page="false" data-animation="fade" data-control="zoom,fullscreen,close" data-theme="white" data-autohide=false href="assets/images/sample-certificate.jpg">
+							<img src="assets/images/certificate-img.png" alt="" class="img-fluid" />
+							<h5 class="">Click To View Sample Certificate</h5>
+						</a>
+						<a href="#" data-bs-toggle="modal" data-bs-target="#certificate" class="d-none">
+							<img src="assets/images/certificate-img.png" alt="" class="img-fluid" />
+							<h5 class="">Click To View Sample Certificate</h5>
+						</a>
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -548,7 +554,9 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body text-center">
-        <img src="assets/images/sample-certificate.jpg" alt="" class="img-wrap w-100" />
+        <a class="spotlight" data-page="false" data-animation="fade" data-control="zoom,fullscreen,close" data-theme="white" data-autohide=false href="assets/images/sample-certificate.jpg">
+			<img src="assets/images/sample-certificate.jpg" alt="" class="img-wrap w-100" />
+		</a>
       </div>
 	  <div class="modal-footer">
         <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
@@ -670,9 +678,9 @@
 	
 	<!-- Custom js -->
 	<script src="assets/js/custom.js"></script>
-	
+	<script src="assets/js/spotlight.bundle.js"></script>
 	<script type="text/javascript">
-		
+	
 	</script>
 
 </html>
