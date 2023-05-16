@@ -1400,7 +1400,10 @@
 		max-width: 608px;
 	}
 }
-
+.brainmeasures-certification .spl-pane{
+	border-top: 50px solid #000;
+	border-bottom: 50px solid #000;
+}
 /*--------------------------------------*/
 
 /* 13. Contact Page
