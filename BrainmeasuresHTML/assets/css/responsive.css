@@ -95,9 +95,11 @@
 	.brainmeasures-psychometric .aptitude-tests-section .wrap{
 		padding: 20px;
 	}
-	.brainmeasures-psychometric .offers-section .offers-details .img-wrap{
+	.brainmeasures-psychometric .offers-section .offers-details .img-wrap,
+	.brainmeasures-certification .summary-report-section .img-wrap{
 		text-align: center;
 	}
+	
 }
 @media screen and (max-width:1024px) {
 	
