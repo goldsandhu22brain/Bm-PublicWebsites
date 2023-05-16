@@ -18,7 +18,7 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <!----OWL SLIDER  --->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./Brainmeasures.com - Individual_files/nav.css" rel="stylesheet">
     <link href="./Brainmeasures.com - Individual_files/clndr.css" rel="stylesheet">
     <link href="./Brainmeasures.com - Individual_files/style(1).css" rel="stylesheet">
@@ -69,14 +69,14 @@
                 },
                 {
                     value: data[1],
-                    color: "#00a65a",
-                    highlight: "#00a65a",
+                    color: "#6967FF",
+                    highlight: "#6967FF",
                     label: "proficiency in Expert Level"
                 },
                 {
                     value: data[2],
-                    color: "#f39c12",
-                    highlight: "#f39c12",
+                    color: "#FFBB00",
+                    highlight: "#FFBB00",
                     label: "proficiency in Good Level"
                 },
                 {
@@ -122,14 +122,14 @@
             var PieData = [
                 {
                     value: data[0],
-                    color: "#00c0ef",
-                    highlight: "#00c0ef",
+                    color: "#29B2FF",
+                    highlight: "#29B2FF",
                     label: "Accurate"
                 },
                 {
                     value: data[1],
-                    color: "#d2d6de",
-                    highlight: "#d2d6de",
+                    color: "#5C678D",
+                    highlight: "#5C678D",
                     label: "incorrect"
                 }
             ];
@@ -165,14 +165,17 @@
         function ConstructOverAllChart(data) {
             var salesChartCanvas = $("#overall").get(0).getContext("2d");
             var salesChart = new Chart(salesChartCanvas);
+			var gradient = salesChartCanvas.createLinearGradient(0, 0, 0, 560);
+            gradient.addColorStop(1, '#5316A0');
+			gradient.addColorStop(0.1, '#D02B49');
 
             var salesChartData = {
                 labels: ["", "Subject Analysis", "Subject Coverage", "Accuracy", "Speed Analysis"],
                 datasets: [
                     {
                         label: "Overall Performance",
-                        fillColor: "rgba(60,141,188,0.9)",
-                        strokeColor: "rgba(60,141,188,0.8)",
+                        fillColor: gradient,
+                        /*strokeColor: "rgba(60,141,188,0.8)",*/
                         pointColor: "#3b8bba",
                         pointStrokeColor: "rgba(60,141,188,1)",
                         pointHighlightFill: "#fff",
@@ -765,7 +768,7 @@
                     </div>
                     <div class="award">
                         <h2>YOU WON</h2>
-                        <img src="img/price.png" id="imgTrophy" class="big">
+                        <img src="img/AwardSilver.png" id="imgTrophy" class="big">
                         <h3>
                             Silver Trophy
                         </h3>
@@ -777,7 +780,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="clear"></div>
+                <div class="clear">eee</div>
 
                 <div class="row" style="padding: 15px;" id="divScoreccd">
 
@@ -1014,10 +1017,10 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <ul class="chart-legend clearfix">
-                                                    <li><i class="far fa-square text-green"></i> Expert</li>
-                                                    <li><i class="far fa-square text-yellow"></i> Good</li>
-                                                    <li><i class="far fa-square text-aqua"></i> Average</li>
-                                                    <li><i class="far fa-square text-red"></i> Weak</li>
+                                                    <li><i class="fas fa-square text-aqua"></i> Expert</li>
+                                                    <li><i class="fas fa-square text-yellow"></i> Good</li>
+                                                    <li><i class="fas fa-square text-green"></i> Average</li>
+                                                    <li><i class="fas fa-square text-red"></i> Weak</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1056,8 +1059,8 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <ul class="chart-legend clearfix">
-                                                    <li><i class="far fa-square text-aqua"></i> Accurate</li>
-                                                    <li><i class="far fa-square text-grey"></i> Incorrect</li>
+                                                    <li><i class="fas fa-square text-acu"></i> Accurate</li>
+                                                    <li><i class="fas fa-square text-grey"></i> Incorrect</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1637,21 +1640,22 @@
         }
 
         var doughnutData = [
-            {
-                value: $("#pc").text().trim(),
-                color: "#E64C65"
-            },
-            {
-                value: $("#ic").text().trim(),
-                color: "#11A8AB"
-            },
+            
             {
                 value: $("#as").text().replace("%", "").trim(),
-                color: "#4FC4F6"
+                color: "#6967FF"
             },
             {
                 value: $("#tt").text().trim(),
-                color: "#FCB150"
+                color: "#FFBB00"
+            },
+			{
+                value: $("#pc").text().trim(),
+                color: "#F33558"
+            },
+            {
+                value: $("#ic").text().trim(),
+                color: "#FFBB00"
             },
 
         ];
@@ -1707,69 +1711,7 @@
 
 
     <style type="text/css">
-        .graph_list {
-            color: #fff;
-        }
-
-        .chart {
-            color: #fff;
-        }
-
-        .box-title {
-            margin-bottom: 10px;
-            font-size: 18px !important;
-            text-align: center
-        }
-
-        .box-body {
-            font-size: 14px !important
-        }
-
-        .modal-lg {
-            width: 600px;
-        }
-
-        .profile_details img {
-            height: 69px !important;
-        }
-
-        .profile_details {
-            background: none !important
-        }
-
-        .description-block {
-            text-align: center;
-        }
-
-        .progress-group b {
-            color: rgba(105, 103, 255, 1);
-            font-weight: bold;
-        }
-
-        p>b {
-            color: rgba(105, 103, 255, 1);
-            font-weight: bold;
-        }
-
-        .progress-group .progress-number {
-            float: right;
-        }
-
-        .text-green {
-            color: #00a65a !important;
-        }
-
-        .text-yellow {
-            color: #f39c12 !important;
-        }
-
-        .text-aqua {
-            color: #00c0ef !important;
-        }
-
-        .text-red {
-            color: #dd4b39 !important;
-        }
+        
     </style>
 
 

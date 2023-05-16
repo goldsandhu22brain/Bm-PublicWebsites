@@ -583,3 +583,77 @@ a:focus {
 		font-size: 9px;
 	}
 }
+
+
+
+
+.graph_list {
+            color: #fff;
+        }
+
+        .chart {
+            color: #fff;
+        }
+
+        .box-title {
+            margin-bottom: 10px;
+            font-size: 18px !important;
+            text-align: center
+        }
+
+        .box-body {
+            font-size: 14px !important
+        }
+
+        .modal-lg {
+            width: 600px;
+        }
+
+        .profile_details img {
+            height: 69px !important;
+        }
+
+        .profile_details {
+            background: none !important
+        }
+
+        .description-block {
+            text-align: center;
+        }
+
+        .progress-group b {
+            color: rgba(105, 103, 255, 1);
+            font-weight: bold;
+        }
+
+        p>b {
+            color: rgba(105, 103, 255, 1);
+            font-weight: bold;
+        }
+
+        .progress-group .progress-number {
+            float: right;
+        }
+
+        .text-green {
+            color: #46C56A !important;
+        }
+		
+		.text-grey {
+            color: #5C678D !important;
+        }
+
+        .text-yellow {
+            color: #FFBB00 !important;
+        }
+
+        .text-aqua {
+            color: #6967FF !important;
+        }
+		.text-acu {
+            color: #29B2FF !important;
+        }
+
+        .text-red {
+            color: #F33558 !important;
+        }

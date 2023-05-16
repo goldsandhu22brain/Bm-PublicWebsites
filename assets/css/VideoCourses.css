@@ -523,7 +523,7 @@ a.sefixed2 {
 
 .course_cat{
 	/*height: 2005px;*/
-    overflow: auto;
+    /*overflow: auto;*/
 	height: 100vh;
 }
 div.ftl-vertical-tab-menu{

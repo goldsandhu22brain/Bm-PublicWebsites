@@ -457,16 +457,16 @@ fieldset#body {
 	border-right:none; 
 }
 .chart_list li a.red{
-	border-top:5px solid #e64c65;
+	border-top:5px solid #F33558;
 }
 .chart_list li a.purple{
-	border-top:5px solid #11a8ab;
+	border-top:5px solid #49BFAA;
 }
 .chart_list li a.yellow{
-	border-top:5px solid #fcb150;
+	border-top:5px solid #FFBB00;
 }
 .chart_list li a.blue {
-	border-top: 5px solid #4fc4f6;
+	border-top: 5px solid #6967FF;
 }
 .chart_list p{
 	font-size:1.5em;
