@@ -145,6 +145,23 @@
 	padding: 100px 0;
 }
 
+.imp-clicks{
+	position: relative;
+}
+.imp-clicks::before{
+	content: '';
+    position: absolute;
+    width: 258px;
+    height: 166px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -85px;
+    right: 24px;
+    transform: rotate(160deg);
+	
+}
+
 @media screen and (max-width:1199px) {
 	
 }
