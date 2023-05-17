@@ -385,6 +385,10 @@
 	max-width: 430px;
 	margin-top: 30px;
 }
+.brainmeasures-psychometric .banner-section .btn.btn-warning {
+    width: auto;
+    margin-top: 30px;
+}
 .inner-banner .banner-img{
 	position: absolute;
 	bottom: 0;
@@ -1724,7 +1728,7 @@
 	line-height: 27px;
 }
 .brainmeasures-certification .hero-section .right-wrap .btn.btn-default{
-	width: 260px;
+	width: auto;
 	margin-top: 20px;
 }
 
@@ -1997,8 +2001,20 @@
     height: 695px;
     overflow: auto;
     position: relative;
-	
 }
+
+.containerdiv {
+  border: 0;
+  float: left;
+  position: relative;
+} 
+.cornerimage {
+  border: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+ } 
+
 .brainmeasures-certification .sample-report .sample-wrap{
 	width: 890px;
 	height: 581px;

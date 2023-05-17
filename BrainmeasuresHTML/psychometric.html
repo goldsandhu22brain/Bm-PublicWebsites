@@ -131,8 +131,9 @@
 					<div class="wrap">
 						<div class="caption">
 							<h1>Online Psychometric Aptitude and Personality Assessment Platform</h1>
-							<p>Hire candidates with Skill fit, Job fit and Company fitRecruit and Retain candidates with ability to fit required vacancy.</p>
+							<p>Hire candidates with skill fit, job fit and company fit. Recruit and Retain candidates with ability to fit required vacancy.</p>
 							<a class="btn btn-default" href="#">Browse All Tests</a>
+							<a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#analysisreport">Sample Analysis Test Report</a>
 						</div>
 					</div>
 				</div>
@@ -230,12 +231,18 @@
 	<section class="offers-section seperator">
 		<div class="container">
 			<div class="text-wrap text-center">
-				<h1>Aptitude Test Practice</h1>
+				<h1>Aptitude Practice Test</h1>
 			</div>
 			
 			<div class="block">
 				 <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">
 					<div class="col">
+						<div class="wrap active">
+							<img src="assets/images/test-img-111.png" alt="" class="img-wrap" />
+							<p>Data Interpretation Tests</p>
+						</div>
+					</div>
+					<div class="col d-none">
 						<div class="wrap active">
 							<img src="assets/images/test-img-1.png" alt="" class="img-wrap" />
 							<p>SHL Tests</p>
@@ -917,12 +924,7 @@
 						</div>
 					</div>
 					
-					<div class="col">
-						<div class="wrap">
-							<img src="assets/images/test-img-111.png" alt="" class="img-wrap" />
-							<p>Data Interpretation Tests</p>
-						</div>
-					</div>
+					
 					
 				</div>
 			</div>
@@ -956,7 +958,7 @@
 						<h1>Brainmeasures Analysis and Test Summary Report</h1>
 						<p>When a candidate appears for Brainmeasures test an analysis and test summary report will be prepared and provided to you each time a test is submitted if you've opted to use one of our aptitude or skills tests as a requirement for pre-employment testing.</p>
 						<p>The report gives a broad summary of the test results for the job applicant, including data on the overall score, the weighted score, the number of questions answered correctly, time taken to finish the exam, Accuracy vs Speed, subject analysis, coverage and accuracy.</p>
-						<a href="#" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#samplereport">Sample Report</a>
+						<a href="#" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#analysisreport">Sample Report</a>
 					</div>
 					<div class="col-xl-6 order-xl-second order-first">
 						<div class="img-wrap"><img src="assets/images/report-2.png" alt="" class="img-fluid" /></div>
@@ -2720,8 +2722,21 @@
 
 </main>
 
-
 <div class="modal fade" id="samplereport" tabindex="-1" aria-labelledby="samplereportLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="assets/images/sample-report.jpg" alt="" class="img-wrap" />
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /*Sample Report Modal -->
+
+<div class="modal fade" id="analysisreport" tabindex="-1" aria-labelledby="analysisreportLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-xl">
     <div class="modal-content">
       <div class="modal-header border-0">
@@ -2733,7 +2748,7 @@
     </div>
   </div>
 </div>
-<!-- /*Sample Report Modal -->
+<!-- /*Analysis Report Modal -->
 
 <!--Start: Footer-->
 <footer>
