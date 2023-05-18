@@ -157,12 +157,15 @@
     background-repeat: no-repeat;
     background-position: center;
     top: -85px;
-    right: 24px;
+    right: 12px;
     transform: rotate(160deg);
 	animation: blinker 1s linear infinite;
 	
 }
-
+.imp-clicks .btn.btn-primary{
+	background-color: #cc1e1d;
+	border: 1px solid #cc1e1d;
+}
 .imp-clicks .btn.btn-primary span{
   animation: blinker 1s linear infinite;
 }
