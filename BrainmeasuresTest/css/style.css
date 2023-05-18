@@ -159,7 +159,18 @@
     top: -85px;
     right: 24px;
     transform: rotate(160deg);
+	animation: blinker 1s linear infinite;
 	
+}
+
+.imp-clicks .btn.btn-primary span{
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width:1199px) {
