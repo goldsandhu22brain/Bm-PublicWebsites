@@ -9,6 +9,7 @@
 .conference .peer-video,
 .conference .peer-video-tile{
 	width: 100%;
+	border-radius: 10px;
 }
 .conference .shape-circle{
     border-radius: 10px;
