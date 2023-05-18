@@ -145,6 +145,15 @@
 	padding: 100px 0;
 }
 
+.btn.btn-primary2{
+	background-color: #cc1e1d;
+	border: 1px solid #cc1e1d;
+}
+.btn.btn-primary2:hover{
+	color: #000;
+	background-color: #fb0;
+	border: 1px solid #fb0;
+}
 .imp-clicks{
 	position: relative;
 }
@@ -162,10 +171,6 @@
 	animation: blinker 1s linear infinite;
 	
 }
-.imp-clicks .btn.btn-primary{
-	background-color: #cc1e1d;
-	border: 1px solid #cc1e1d;
-}
 .imp-clicks .btn.btn-primary span{
   animation: blinker 1s linear infinite;
 }
@@ -174,6 +179,9 @@
   50% {
     opacity: 0;
   }
+}
+.samplereport .modal-dialog {
+    max-width: 1000px;
 }
 
 @media screen and (max-width:1199px) {
