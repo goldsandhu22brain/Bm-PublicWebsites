@@ -1,3 +1,6 @@
+.candidate-conference .test-header-react{
+	padding: 10px!important;
+}
 .candidate-conference .icon{
 	position: fixed;
 	top: 60px;
