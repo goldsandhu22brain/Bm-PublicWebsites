@@ -40762,7 +40762,7 @@ function GetToolTipConnection(value) {
   return connectionTooltip[value];
 }
 function GetColor(position, connectionScore) {
-  var defaultColor = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '#FFFFFF61';
+  var defaultColor = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '#FFFFFF';
   var shouldBeColored = position <= connectionScore;
   if (!shouldBeColored) {
     return defaultColor;
