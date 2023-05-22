@@ -2276,4 +2276,169 @@
 }
 /*--------------------------------------*/
 
+/* 18. Case Studies Page
+/*--------------------------------------*/
+.case-studies-page .banner-section{
+	background-image: url('../images/bg/cs-bg.png'), linear-gradient(285.43deg, #4E11C2 39.33%, #7122AE 144.39%);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+	z-index: -1;
+}
+.case-studies-page .banner-section .banner-img{
+	text-align: right;
+}
+.case-studies-page .banner-section .heading-wrap{
+	font-size: 14px;
+	color: #000000;
+	background-color: #FFBB00;
+	padding: 2px 10px;
+	max-width: 126px;
+	height: 28px;
+	margin-bottom: 9px;
+}
+.case-studies-page .banner-section .heading-wrap::before{
+	border: 13.8px solid rgba(0,0,0,0);
+	border-right: 7px solid rgba(113, 34, 174, 1);
+}
+
+.case-studies-page .hero-section .cell-1 .cell-wrap{
+	border-left: 1px solid #6967FF;
+	padding-top: 15px;
+	background-color: #FFFFFF;
+}
+.case-studies-page .hero-section .cell-1 .cognizant-img{
+	background: linear-gradient(97.94deg, #E4EFFF 18%, #F2E3F2 42.44%, rgba(237, 255, 246, 0.93) 70.13%, rgba(255, 255, 255, 0) 97.3%);
+	padding: 15px 54px;
+}
+.case-studies-page .hero-section .cell-wrap p{
+	font-size: 20px;
+	line-height: 35px;
+	padding: 38px 50px;
+}
+.case-studies-page .hero-section .cell-1 .cell-bottom{
+	background-color: #132730;
+	color: #FFFFFF;
+	padding: 60px 58px;
+}
+.case-studies-page .hero-section .cell-1 .cell-bottom h4{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+.case-studies-page .hero-section .cell-1 .cell-bottom .btn.btn-default{
+	width: auto;
+	margin-top: 19px;
+}
+.case-studies-page .hero-section .cell h3{
+	line-height: 40px;
+}
+.case-studies-page .hero-section .cell-1,
+.case-studies-page .hero-section .cell-2{
+	margin-top: -50px;
+}
+.case-studies-page .hero-section .cell-2 .cell-wrap{
+	background-color: #FFBB00;
+	padding: 50px;
+}
+.case-studies-page .hero-section .cell-2 .cell-bottom{
+	background-color: #6967FF;
+	padding: 50px;
+	color: #FFFFFF;
+}
+.case-studies-page .hero-section .cell-2 p{
+	font-size: 20px;
+	line-height: 26px;
+	padding: 30px 0 16px;
+}
+.case-studies-page .hero-section .cell-3{
+	background-color: #3ABE73;
+	color: #FFFFFF;
+	padding: 50px;
+	margin-top: 126px;
+}
+.case-studies-page .hero-section .cell-3 p{
+	font-size: 20px;
+	line-height: 26px;
+	padding: 20px 0 16px;
+}
+.case-studies-page .hero-section .cell-4{
+	background-color: #E66852;
+	color: #FFFFFF;
+	padding: 20px 40px;
+}
+.case-studies-page .hero-section .cell-4 p{
+	font-size: 20px;
+	line-height: 26px;
+	padding: 16px 0 8px;
+}
+.case-studies-page .hero-section .cell-5{
+	background-color: rgba(255, 219, 193, 0.6);
+	padding: 50px 24px;
+	display: flex;
+	align-items: center;
+}
+.case-studies-page .hero-section .cell-5 p{
+	font-size: 24px;
+	line-height: 35px;
+}
+.case-studies-page .pre-emp-section{
+	background-color: rgba(237, 242, 251, 0.8);
+}
+.case-studies-page .pre-emp-section p{
+	line-height: 27px;
+	padding-top: 18px;
+}
+.case-studies-page .objective-section .wrap{
+	max-width: 499px;
+}
+.case-studies-page .objective-section p{
+	line-height: 27px;
+	padding-top: 18px;
+}
+.case-studies-page .challenge-section{
+	background-color: #6967FF;
+	color: #FFFFFF;
+	position: relative;
+}
+.case-studies-page .challenge-section p{
+	padding: 8px 0 14px;
+}
+.case-studies-page .challenge-section li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    padding-left: 50px;
+    text-align: left;
+	max-width: 599px;
+}
+.case-studies-page .challenge-section li::before {
+    content: url(../images/icons/check.png);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+}
+.case-studies-page .challenge-section .img-wrap{
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+}
+.case-studies-page .solution-section h5{
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	border: 1px solid #6967FF;
+	border-radius: 40px;
+	padding: 0 24px;
+	text-align: center;
+	height: 144px;
+	display: flex;
+    align-items: center;
+}
+/*--------------------------------------*/
+
 
