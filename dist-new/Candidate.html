@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quickstart JS</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./common.f6d4af82.css">
+    <link rel="stylesheet" href="./style.07bf1e75.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header class="d-none">
+        <button id="leave-btn" class="btn-danger hide">Leave Room</button>
+    </header>
+    <section class="conference candidate-conference">
+        <button class="icon" id="openvideo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"></path></svg>
+        </button>
+        <button class="icon icon-chat" id="openchat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16"><path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"></path></svg>
+        </button>
+
+        <div class="container-fluid p-0">
+            <div class="screen-share-container video-section-border">
+                <h2 class="screen-share-status test-header-react mb-0"></h2>
+				<div class="system-check">
+					<div class="container">
+						<div class="rounded shadow divs p-3 bg-light">
+							<div class="bg-blue rounded p-3">
+								<div class="case">
+									<div class="row">
+										<h3 class="fw-bold text-dark text-center mb-5">System Check</h3>
+										<div class="col-lg-2">
+											<div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
+												<img src="https://cdn.brainmeasures.com/Interview/img/icons/camera.png" class="img-fluid" alt="Basic">
+												<h5 class="fw-bold text-dark mt-3">Camera</h5>
+												<ul class="list-inline mt-3 mb-0">
+													<li class="list-inline-item bg-danger d-none" id="cam-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
+													<li class="list-inline-item bg-success" id="cam-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-lg-2">
+											<div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
+												<img src="https://cdn.brainmeasures.com/Interview/img/icons/audio.png" class="img-fluid" alt="Basic">
+												<h5 class="fw-bold text-dark mt-3">Audio (Mic)</h5>
+												<ul class="list-inline mt-3 mb-0">
+													<li class="list-inline-item bg-danger d-none" id="mic-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
+													<li class="list-inline-item bg-success" id="mic-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-lg-2">
+											<div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
+												<img src="https://cdn.brainmeasures.com/Interview/img/icons/speaker.png" class="img-fluid" alt="Basic">
+												<h5 class="fw-bold text-dark mt-3">Speaker</h5>
+												<ul class="list-inline mt-3 mb-0">
+													<li class="list-inline-item bg-danger" id="speaker-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
+													<li class="list-inline-item bg-success d-none" id="speaker-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-lg-2">
+											<div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
+												<img src="https://cdn.brainmeasures.com/Interview/img/icons/browser.png" class="img-fluid" alt="Basic">
+												<h5 class="fw-bold text-dark mt-3">Browser</h5>
+												<ul class="list-inline mt-3 mb-0">
+													<li class="list-inline-item bg-danger d-none" id="browser-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
+													<li class="list-inline-item bg-success" id="browser-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-lg-2">
+											<div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
+												<img src="https://cdn.brainmeasures.com/Interview/img/icons/browser.png" class="img-fluid" alt="Basic">
+												<h5 class="fw-bold text-dark mt-3">Internet Speed</h5>
+												<ul class="list-inline mt-3 mb-0">
+													<li class="list-inline-item bg-danger d-none" id="speed-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
+													<li class="list-inline-item bg-success" id="speed-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-lg-2">
+											<div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
+												<img src="https://cdn.brainmeasures.com/Interview/img/icons/browser.png" class="img-fluid" alt="Basic">
+												<h5 class="fw-bold text-dark mt-3">OS</h5>
+												<ul class="list-inline mt-3 mb-0">
+													<li class="list-inline-item bg-danger d-none" id="os-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
+													<li class="list-inline-item bg-success" id="os-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<div class="text-center">
+												<button type="button" class="btn btn-warning" id="btnRefresh">Refresh</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div id="InjectTest"> </div>
+            </div>
+            <div class="timer"></div>
+            <div id="controls" class="presenter-controller text-center">
+                <button id="mute-aud" class="btn-control btn-mute-audio btn-left-rounded hide">Mute</button>
+                <button id="mute-vid" class="btn-control btn-hide-video hide">Hide</button>
+                <button id="screen-share" class="btn-control btn-share-screen btn-left-rounded hide">ScreenShare</button>                
+                <button id="load-test" class="btn-control btn-start-test btn-left-rounded">Start Quiz</button>
+                <button id="full-screen" class="btn-control btn-full-screen">Full Screen</button>
+            </div>
+
+            <div class="sidebar video-box visible" id="video">
+                <button id="closevideo" class="btn-close d-none"></button>
+                <div class="peers-container"></div>
+            </div>
+
+            <div class="sidebar chat-box" id="chat">
+
+                <div class="open-chat-message">
+                    <div class="d-flex align-items-center justify-content-center"> <button id="closechat" class="btn-close"></button><h5 class="mb-0">Messages</h5></div>
+                    <div id="messages" class="messages"></div>
+                    <input id="msgInput" placeholder="type your message...">
+                </div>
+            </div>
+        </div>
+        <div id="toastMessage"></div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="./candidate.80887bcb.js"></script>
+</body>
+</html>

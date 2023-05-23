@@ -90,3 +90,51 @@ $(document).ready(function () {
 	});
 });
 
+$(document).ready(function () {
+	$(".global-brands-slider").slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		autoplay: true,	
+		autoplaySpeed: 5000,	
+		dots: false,
+		pauseOnHover: false,
+		arrows: true,
+		infinite: false,
+		loop: false,
+	});
+});
+
+$(document).ready(function () {
+	$(".cs-testimonials").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,	
+		autoplaySpeed: 5000,	
+		dots: false,
+		pauseOnHover: false,
+		arrows: true,
+		infinite: false,
+		loop: false,
+	});
+});
+
+$(document).ready(function () {
+	$(".experts-talk-slider").slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		autoplay: true,	
+		autoplaySpeed: 5000,	
+		dots: true,
+		pauseOnHover: false,
+		arrows: false,
+		responsive: [
+		{
+		  breakpoint: 991,
+		  settings: {
+			slidesToShow: 1,
+		  }
+		},
+	  ]
+	});
+});
+

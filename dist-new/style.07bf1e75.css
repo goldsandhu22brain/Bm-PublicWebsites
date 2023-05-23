@@ -1,3 +1,6 @@
+.candidate-conference1 #controls{
+	left: 20%;
+}
 .candidate-conference .test-header-react{
 	padding: 10px!important;
 }
@@ -72,4 +75,9 @@
     border-radius: 0px;
 }
 
+.candidate-conference .test-right{
+	top: 320px;
+}
 
+
+/*# sourceMappingURL=/style.07bf1e75.css.map */

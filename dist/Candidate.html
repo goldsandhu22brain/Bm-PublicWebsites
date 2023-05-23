@@ -34,18 +34,17 @@
             <div id="controls" class="presenter-controller text-center">
                 <button id="mute-aud" class="btn-control btn-mute-audio hide">Mute</button>
                 <button id="mute-vid" class="btn-control btn-hide-video hide">Hide</button>
-                <button id="screen-share" class="btn-control btn-share-screen">ScreenShare</button>
-                <button id="load-test" class="btn-control btn-start-test">Start Quiz</button>
+                <button id="screen-share" class="btn-control btn-share-screen btn-left-rounded">ScreenShare</button>
+                <button id="load-test" class="btn-control btn-start-test btn-no-rounded">Start Quiz</button>
                 <button id="full-screen" class="btn-control btn-full-screen">Full Screen</button>
             </div>
 
-            <div class="sidebar video-box" id="video">
+            <div class="sidebar video-box visible" id="video">
                 <button id="closevideo" class="btn-close d-none"></button>
                 <div class="peers-container"></div>
             </div>
 
             <div class="sidebar chat-box" id="chat">
-               
                 <div class="open-chat-message">
                     <div class="d-flex align-items-center justify-content-center"> <button id="closechat" class="btn-close"></button><h5 class="mb-0">Messages</h5></div>
                     <div id="messages" class="messages"></div>

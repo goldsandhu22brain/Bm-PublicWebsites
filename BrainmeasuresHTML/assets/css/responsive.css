@@ -99,7 +99,15 @@
 	.brainmeasures-certification .summary-report-section .img-wrap{
 		text-align: center;
 	}
-	
+	.case-studies-page .experts-talk-section .wrap{
+		padding: 20px 10px;
+	}
+	.case-studies-page .solution-section h5{
+		line-height: 26px;
+	}
+	.case-studies-page .solution-section .heading1::before{
+		height: 70px;
+	}
 }
 @media screen and (max-width:1024px) {
 	
@@ -417,6 +425,43 @@
 	.case-studies-listing .listing-section .wrap.wrap-9{
 		padding-left: 220px;
 	}
+	.case-studies-page .banner-section{
+		padding: 40px 0;
+	}
+	.case-studies-page .banner-section .heading-wrap{
+		margin: 0px auto;
+	}
+	.case-studies-page .hero-section .cell-2,
+	.case-studies-page .hero-section .cell-3,
+	.case-studies-page .hero-section .cell-5{
+		margin-top: 20px;
+	}
+	.case-studies-page .hero-section .cell-5{
+		display: block;
+	}
+	.case-studies-page .online-solutions-section .text-wrap h4{
+		line-height: 38px;
+	}
+	.case-studies-page .online-solutions-section .text-wrap h1{
+		margin: 20px 0;
+	}
+	.case-studies-page .challenge-section{
+		padding-bottom: 50px;
+	}
+	.case-studies-page .solution-section h5{
+		height: auto;
+		padding: 10px;
+		display: block;
+	}
+	.case-studies-page .solution-section .img-wrap{
+		margin-top: 0;
+	}
+	.case-studies-page .solution-section .heading1::before{
+		height: auto;
+	}
+	.case-studies-page .challenge-section .img-wrap {
+		text-align: left;
+	}
 	
 }
 @media screen and (max-width:767px) {
@@ -518,6 +563,24 @@
 	.brainmeasures-psychometric .aptitude-tests-section .wrap{
 		min-height: auto
 	}
+	.case-studies-page .experts-talk-section .wrap{
+		height: auto;
+		padding: 20px 10px;
+	}
+	.case-studies-page .outcome-section li,
+	.case-studies-page .outcome-section li p{
+		display: block;
+	}
+	.case-studies-page .global-brands-section .slick-slider .slick-next {
+		right: 80%;
+	}
+	.case-studies-page .testimonials-section .slick-slider .slick-prev,
+	.case-studies-page .testimonials-section .slick-slider .slick-next{
+		top: 120%;
+	}
+	.case-studies-page .testimonials-section .slick-slider .slick-next{
+		right: 60%;
+	}
 	
 	
 }
@@ -564,6 +627,7 @@
 	.case-studies-listing .listing-section .wrap.wrap-9{
 		padding: 20px 35px;
 	}
+	
 	
 }
 @media (max-width: 440px){
