@@ -1573,7 +1573,7 @@
 	background: #FFFFFF;
 	border-radius: 0 20px 20px 0;
 	min-height: 750px;
-	padding: 45px 67px 0;
+	padding: 45px 58px 0;
 	position: relative;
 	z-index: 9;
 }
@@ -1648,6 +1648,10 @@
 .login-form .forgot a{
 	font-weight: 600;
 	text-decoration: underline;
+	padding: 0 8px;
+}
+.login-form .forgot a:hover{
+	text-decoration: none;
 }
 .login-form .btn{
 	font-weight: 500;
@@ -2175,7 +2179,12 @@
 .case-studies-listing .listing-section .wrap.wrap-11{
 	background: linear-gradient(107.25deg, #7B0553 6.08%, #460647 36.58%, #050040 92.49%);
 }
-
+.case-studies-listing .listing-section .wrap.wrap-12{
+	background-image: url(../images/listing-12.png);
+}
+.case-studies-listing .listing-section .wrap.wrap-12 .img-wrap img{
+	height: 98px;
+}
 
 /*
 .case-studies-listing .listing-section .wrap{
@@ -2283,6 +2292,7 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: right;
+	background-size: cover;
 	z-index: -1;
 }
 .case-studies-page .banner-section .banner-img{
@@ -2306,10 +2316,17 @@
 	border-left: 1px solid #6967FF;
 	padding-top: 15px;
 	background-color: #FFFFFF;
+	height: 460px;
 }
 .case-studies-page .hero-section .cell-1 .cognizant-img{
 	background: linear-gradient(97.94deg, #E4EFFF 18%, #F2E3F2 42.44%, rgba(237, 255, 246, 0.93) 70.13%, rgba(255, 255, 255, 0) 97.3%);
 	padding: 15px 54px;
+	font-size: 20px;
+	font-weight: 600;
+}
+.case-studies-page .hero-section .cell-1 .cognizant-img img{
+	height: 54px;
+	padding-right: 10px;
 }
 .case-studies-page .hero-section .cell-wrap p{
 	font-size: 20px;
@@ -2320,6 +2337,7 @@
 	background-color: #132730;
 	color: #FFFFFF;
 	padding: 60px 58px;
+	height: 275px;
 }
 .case-studies-page .hero-section .cell-1 .cell-bottom h4{
 	font-family: 'Poppins', sans-serif;
@@ -2339,11 +2357,13 @@
 .case-studies-page .hero-section .cell-2 .cell-wrap{
 	background-color: #FFBB00;
 	padding: 50px;
+	height: 290px;
 }
 .case-studies-page .hero-section .cell-2 .cell-bottom{
 	background-color: #6967FF;
-	padding: 50px;
+	padding: 50px 35px;
 	color: #FFFFFF;
+	height: 290px;
 }
 .case-studies-page .hero-section .cell-2 p{
 	font-size: 20px;
@@ -2353,8 +2373,9 @@
 .case-studies-page .hero-section .cell-3{
 	background-color: #3ABE73;
 	color: #FFFFFF;
-	padding: 50px;
+	padding: 50px 35px;
 	margin-top: 126px;
+	height: 290px;
 }
 .case-studies-page .hero-section .cell-3 p{
 	font-size: 20px;
@@ -2364,7 +2385,8 @@
 .case-studies-page .hero-section .cell-4{
 	background-color: #E66852;
 	color: #FFFFFF;
-	padding: 20px 40px;
+	padding: 20px 38px;
+	height: 290px;
 }
 .case-studies-page .hero-section .cell-4 p{
 	font-size: 20px;
@@ -2376,11 +2398,24 @@
 	padding: 50px 24px;
 	display: flex;
 	align-items: center;
+	height: 274px;
+	position: relative;
 }
 .case-studies-page .hero-section .cell-5 p{
 	font-size: 24px;
 	line-height: 35px;
 }
+.case-studies-page .hero-section .cell-5 h5{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	color: #D40000;
+    transform: rotate(-32deg);
+    position: absolute;
+    top: 120px;
+    left: 340px;
+    
+}
+
 .case-studies-page .pre-emp-section{
 	background-color: rgba(237, 242, 251, 0.8);
 }
@@ -2562,6 +2597,9 @@
 .case-studies-page .online-solutions-section .wrap4{
 	border-bottom: 5px solid #6967FF;
 }
+.case-studies-page .online-solutions-section .wrap5{
+	border-bottom: 5px solid #3ABE73;
+}
 .case-studies-page .global-brands-section{
 	background-color: #6967FF;
 }
@@ -2737,6 +2775,28 @@
 	color: #F33558;
 	opacity: 1;
 	font-size: 14px;
+}
+.case-studies-page .trends-section ul{
+	margin-top: 50px;
+}
+.case-studies-page .trends-section .countries h5{
+	width: 430px;
+}
+.case-studies-page .banner-section .acer-img{
+	width: 290px;
+}
+.case-studies-page .trends-section .metros h5{
+    width: 490px;
+}
+/*--------------------------------------*/
+
+/* 19. Forgot Password Page
+/*--------------------------------------*/
+.forgot-pass .login-section .right-wrap{
+	border-radius: 20px 0px 0px 20px;
+}
+.forgot-pass .login-section .left-wrap{
+	border-radius: 0 20px 20px 0;
 }
 /*--------------------------------------*/
 

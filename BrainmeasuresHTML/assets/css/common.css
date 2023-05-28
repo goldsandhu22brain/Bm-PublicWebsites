@@ -302,6 +302,53 @@ h6{
 	top: 0;
     left: 0;
 }
+
+#moving_bg {
+    -webkit-animation: backgroundmove 30s infinite 0s linear normal;
+    -moz-animation: backgroundmove 30s infinite 0s linear normal;
+    -ms-animation: backgroundmove 30s infinite 0s linear normal;
+    -o-animation: backgroundmove 30s infinite 0s linear normal;
+    animation: backgroundmove 30s infinite 0s linear normal;
+}
+@-webkit-keyframes backgroundmove {
+    100% {
+        background-position: 50% 0
+    }
+
+    0% {
+        background-position: 50% 100%
+    }
+}
+
+@-moz-keyframes backgroundmove {
+    100% {
+        background-position: 50% 0
+    }
+
+    0% {
+        background-position: 50% 100%
+    }
+}
+
+@-ms-keyframes backgroundmove {
+    100% {
+        background-position: 50% 0
+    }
+
+    0% {
+        background-position: 50% 100%
+    }
+}
+
+@keyframes backgroundmove {
+    100% {
+        background-position: 50% 0
+    }
+
+    0% {
+        background-position: 50% 100%
+    }
+}
 /*--------------------------------------*/
 
 /*Button

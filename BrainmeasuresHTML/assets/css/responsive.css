@@ -108,6 +108,10 @@
 	.case-studies-page .solution-section .heading1::before{
 		height: 70px;
 	}
+	.case-studies-page .hero-section .cell h3{
+		font-size: 25px;
+		line-height: 35px;
+	}
 }
 @media screen and (max-width:1024px) {
 	
@@ -431,13 +435,17 @@
 	.case-studies-page .banner-section .heading-wrap{
 		margin: 0px auto;
 	}
-	.case-studies-page .hero-section .cell-2,
+	.case-studies-page .hero-section .cell-1 .cell-wrap{
+		height: auto;
+	}
 	.case-studies-page .hero-section .cell-3,
+	.case-studies-page .hero-section .cell-4,
 	.case-studies-page .hero-section .cell-5{
 		margin-top: 20px;
 	}
 	.case-studies-page .hero-section .cell-5{
 		display: block;
+		height: auto;
 	}
 	.case-studies-page .online-solutions-section .text-wrap h4{
 		line-height: 38px;
@@ -462,6 +470,11 @@
 	.case-studies-page .challenge-section .img-wrap {
 		text-align: left;
 	}
+	
+	.case-studies-page .trends-section ul {
+		margin-top: 0;
+	}
+	
 	
 }
 @media screen and (max-width:767px) {
@@ -581,6 +594,12 @@
 	.case-studies-page .testimonials-section .slick-slider .slick-next{
 		right: 60%;
 	}
+	.case-studies-page .hero-section .cell-2 .cell-wrap,
+	.case-studies-page .hero-section .cell-2 .cell-bottom,
+	.case-studies-page .hero-section .cell-3,
+	.case-studies-page .hero-section .cell-4{
+		height: auto;
+	}
 	
 	
 }
@@ -627,9 +646,18 @@
 	.case-studies-listing .listing-section .wrap.wrap-9{
 		padding: 20px 35px;
 	}
-	
+	.case-studies-page .trends-section .metros h5{
+		width: auto;
+	}
 	
 }
+
+@media (max-width: 480px){
+	.case-studies-page .trends-section .countries h5 {
+		width: auto;
+	}
+}
+
 @media (max-width: 440px){
 	.banner-section .caption h4{
 		font-size: 20px;
@@ -669,6 +697,7 @@
 	.register-page .left-wrap h3{
 		font-size: 24px;
 	}
+	
 }
 
 
