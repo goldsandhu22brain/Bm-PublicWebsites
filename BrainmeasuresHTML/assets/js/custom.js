@@ -120,6 +120,67 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 	$(".experts-talk-slider").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		infinite: true,
+		autoplaySpeed: 5000,	
+		dots: true,
+		pauseOnHover: false,
+		arrows: false,
+		centerMode: true,
+		centerPadding: "340px",
+		adaptiveHeight: true,
+		
+		responsive: [
+		{
+		  breakpoint: 1199,
+		  settings: {
+			centerPadding: "140px",
+		  }
+		},
+	
+		{
+		  breakpoint: 767,
+		  settings: {
+			centerPadding: "0",
+		  }
+		},
+	  ]
+		
+	});
+});
+
+$(document).ready(function () {
+	$(".acc-global-brands-slider").slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,	
+		autoplaySpeed: 5000,	
+		dots: false,
+		pauseOnHover: false,
+		arrows: true,
+		infinite: false,
+		loop: false,
+		responsive: [
+		{
+		  breakpoint: 767,
+		  settings: {
+			slidesToShow: 2,
+		  }
+		},
+		{
+		  breakpoint: 480,
+		  settings: {
+			slidesToShow: 1,
+		  }
+		},
+	  ]
+	});
+});
+
+$(document).ready(function () {
+	$(".acc-experts-talk-slider").slick({
 		slidesToShow: 2,
 		slidesToScroll: 1,
 		autoplay: true,	
@@ -137,4 +198,3 @@ $(document).ready(function () {
 	  ]
 	});
 });
-

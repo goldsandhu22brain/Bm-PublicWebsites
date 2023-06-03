@@ -9,6 +9,7 @@
 	.brainmeasures-psychometric .psy-testing-section .psy-testing-img .img-wrap{
 		width: 70%;
 	}
+	
 }
 @media screen and (max-width:1199px) {
 	.banner-section .wrap {
@@ -99,9 +100,7 @@
 	.brainmeasures-certification .summary-report-section .img-wrap{
 		text-align: center;
 	}
-	.case-studies-page .experts-talk-section .wrap{
-		padding: 20px 10px;
-	}
+	
 	.case-studies-page .solution-section h5{
 		line-height: 26px;
 	}
@@ -111,6 +110,12 @@
 	.case-studies-page .hero-section .cell h3{
 		font-size: 25px;
 		line-height: 35px;
+	}
+	.case-studies-page .online-solutions-section .wrap{
+		padding: 40px 20px;
+	}
+	.accenture-case-studies-page .experts-talk-section .wrap{
+		height: 390px;
 	}
 }
 @media screen and (max-width:1024px) {
@@ -474,7 +479,68 @@
 	.case-studies-page .trends-section ul {
 		margin-top: 0;
 	}
-	
+	.case-studies-page .glimpses-section{
+		padding-bottom: 50px;
+	}
+	.case-studies-page .global-brands-section .even-block{
+		margin-top: 0;
+	}
+	.case-studies-page .global-brands-section .block{
+		text-align: center;
+	}
+	.case-studies-page .super-admin-section::before{
+		right: 0;
+		left: unset;
+	}
+	.case-studies-page .need-section{
+		text-align: center;
+	}
+	.case-studies-page .super-admin-section .wrap{
+		padding: 20px 20px 0;
+	}
+	.case-studies-page .students-testimonials{
+		padding: 50px 0 100px;
+	}
+	.case-studies-page .experts-talk-section .block {
+		height: 560px;
+	}
+	.case-studies-page .experts-talk-section .wrap{
+		padding: 20px;
+		height: 450px;
+	}
+	.case-studies-page .students-testimonials .slick-slider .slick-next {
+		right: 45%;
+	}
+	.case-studies-page .students-testimonials .slick-slider .slick-prev {
+		left: 45%;
+	}
+	.accenture-case-studies-page .banner-section{
+		background: radial-gradient(34.4% 79.39% at 59.2% 100%, #3B0066 0%, #7122AE 100%);
+		padding-top: 0;
+	}
+	.accenture-case-studies-page .banner-section .caption1{
+		padding: 20px 0;
+	}
+	.accenture-case-studies-page .hero-section {
+		padding: 50px;
+	}
+	.accenture-case-studies-page .pre-emp-section .img-wrap,
+	.accenture-case-studies-page .challenge-section .img-wrap,
+	.accenture-case-studies-page .outcome-section  .img-wrap{
+		text-align: center;
+	}
+	.accenture-case-studies-page .online-solutions-section h1{
+		max-width: 100%;
+	}
+	.accenture-case-studies-page .experts-talk-section .wrap{
+		height: auto;
+	}
+	.accenture-case-studies-page .global-brands-section .slick-slider .slick-prev{
+		left: 40%;
+	}
+	.accenture-case-studies-page .global-brands-section .slick-slider .slick-next{
+		right: 50%;
+	}
 	
 }
 @media screen and (max-width:767px) {
@@ -576,10 +642,8 @@
 	.brainmeasures-psychometric .aptitude-tests-section .wrap{
 		min-height: auto
 	}
-	.case-studies-page .experts-talk-section .wrap{
-		height: auto;
-		padding: 20px 10px;
-	}
+	
+
 	.case-studies-page .outcome-section li,
 	.case-studies-page .outcome-section li p{
 		display: block;
@@ -601,6 +665,27 @@
 		height: auto;
 	}
 	
+	.case-studies-page .online-solutions-section .wrap{
+		text-align: center;
+	}
+	.case-studies-page .students-testimonials .block{
+		padding: 20px;
+	}
+	.case-studies-page .experts-talk-section .block {
+		height: 510px;
+	}
+	.case-studies-page .students-testimonials .slick-slider .slick-next {
+		right: 42%;
+	}
+	.case-studies-page .students-testimonials .slick-slider .slick-prev {
+		left: 42%;
+	}
+	.accenture-case-studies-page .global-brands-section .slick-slider .slick-prev{
+		left: 30%;
+	}
+	.accenture-case-studies-page .global-brands-section .slick-slider .slick-next{
+		right: 50%;
+	}
 	
 }
 @media screen and (max-width:600px) {
@@ -649,6 +734,14 @@
 	.case-studies-page .trends-section .metros h5{
 		width: auto;
 	}
+	.case-studies-page .online-solutions-section .wrap{
+		height: auto;
+		text-align: center;
+	}
+	.accenture-case-studies-page .global-brands-section::before{
+		left: unset;
+		right: 0;
+	}
 	
 }
 
@@ -656,6 +749,11 @@
 	.case-studies-page .trends-section .countries h5 {
 		width: auto;
 	}
+	.case-studies-page .experts-talk-section .wrap h6 {
+		font-size: 20px;
+		line-height: 27px;
+	}
+	
 }
 
 @media (max-width: 440px){

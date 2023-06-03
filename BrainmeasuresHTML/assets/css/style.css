@@ -2559,60 +2559,76 @@
     width: 785px;
     height: 729px;
     background-image: url(../images/bg/mask-1.png);
-    top: 160px;
+    top: 260px;
     right: 0;
     z-index: -1;
 }
 .case-studies-page .online-solutions-section .text-wrap h4{
 	font-weight: 500;
-	line-height: 60px;
+	line-height: 50px;
 }
 .case-studies-page .online-solutions-section .text-wrap h1{
-	margin: 130px 0 94px;
+	max-width: 960px;
+	margin: 122px auto 52px;
+	text-align: center;
 }
 .case-studies-page .online-solutions-section .wrap{
 	background: #FFFFFF;
 	box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
-	padding: 44px 30px 60px;
-	border-radius: 20px 20px 10px 10px;
+	padding: 40px 53px;
+	border-radius: 20px;
 	height: 258px;
 }
 .case-studies-page .online-solutions-section .wrap h4{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
-	margin: 35px 0 4px;
+	margin: 28px 0 4px;
 }
 .case-studies-page .online-solutions-section .wrap p{
 	font-size: 15px;
 }
 .case-studies-page .online-solutions-section .wrap1{
-	border-bottom: 5px solid #FFBB00;
+	border: 5px solid #FFBB00;
 }
 .case-studies-page .online-solutions-section .wrap2{
-	border-bottom: 5px solid #C2ACFF;
+	border: 5px solid #C2ACFF;
 }
 .case-studies-page .online-solutions-section .wrap3{
-	border-bottom: 5px solid #67E9D9;
+	border: 5px solid #67E9D9;
 }
 .case-studies-page .online-solutions-section .wrap4{
-	border-bottom: 5px solid #6967FF;
+	border: 5px solid #6967FF;
 }
 .case-studies-page .online-solutions-section .wrap5{
-	border-bottom: 5px solid #3ABE73;
+	border: 5px solid #3ABE73;
+}
+.case-studies-page .online-solutions-section .wrap6{
+	border: 5px solid #F33558;
 }
 .case-studies-page .global-brands-section{
 	background-color: #6967FF;
+	background-image: url(../images/bg/global-brands-mask.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+.case-studies-page .global-brands-section .text-wrap{
+	text-align: center;
 }
 .case-studies-page .global-brands-section .text-wrap h1{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
 	color: #FFFFFF;
-	margin-bottom: 30px;
+	margin-bottom: 4px;
 }
 .case-studies-page .global-brands-section .text-wrap h5{
 	font-weight: 500;
 	font-size: 20px;
 	color: #FFFFFF;
+	max-width: 630px;
+	margin: 0px auto 30px;
+}
+.case-studies-page .global-brands-section .even-block{
+	margin-top: 36px;
 }
 	.case-studies-page .global-brands-section .slick-slide{
 		margin-top: 30px;
@@ -2645,6 +2661,86 @@
 	.case-studies-page .global-brands-section  .slick-slider .slick-arrow:before{
 		content: url('../images/icons/next-1.png');
 	}
+
+
+.case-studies-page .students-testimonials{
+	background: #6967FF;
+	background-image: url('../images/bg/students-test-bg.png');
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	padding: 150px 0;
+}
+.case-studies-page .students-testimonials .text-wrap h1{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	margin-bottom: 42px;
+	color: #FFFFFF;
+	text-align: center;
+}
+.case-studies-page .students-testimonials .block{
+	max-width: 740px;
+	margin: 0px auto;
+	background: #FFFFFF;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 52px;
+	padding: 38px 98px 67px;
+	text-align: center;
+}
+.case-studies-page .students-testimonials .rating-wrap h4{
+	line-height: 70px;
+	color: #6967FF;
+	background-color: #EDF2FB;
+	max-width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin: 0px auto 20px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.case-studies-page .students-testimonials .star-rating .fa-star{
+	font-size: 26px;
+	color: #F5B417;
+}
+.case-studies-page .students-testimonials .cell h5{
+	font-weight: 400;
+	line-height: 44px;
+	margin: 30px 0;
+}
+.case-studies-page .students-testimonials .cell .name h5{
+	font-weight: 700;
+	line-height: 27px;
+	margin-bottom: 0;
+}
+.case-studies-page .students-testimonials .cell .name p{
+	font-family: 'Inter', sans-serif;
+}
+	.case-studies-page .students-testimonials .slick-slider .slick-prev,
+	.case-studies-page .students-testimonials .slick-slider .slick-next{
+		width: 20px;
+		height: 20px;
+		z-index: 1;
+		top: 110%;
+	}
+	.case-studies-page .students-testimonials .slick-next:before,
+	.case-studies-page .students-testimonials .slick-prev:before{
+		opacity: 1;
+	}
+	.case-studies-page .students-testimonials .slick-next.slick-disabled:before,
+	.case-studies-page .students-testimonials .slick-prev.slick-disabled:before{
+		opacity: .25;
+	}
+	.case-studies-page .students-testimonials .slick-slider .slick-prev{
+		left: 47%;
+		transform: translate(0, -50%) rotate(-180deg);
+	}
+	.case-studies-page .students-testimonials .slick-slider .slick-next{
+		right: 47%;
+	}
+	.case-studies-page .students-testimonials .slick-slider .slick-arrow:before{
+		content: url('../images/icons/next.png');
+	}
+
 
 .case-studies-page .testimonials-section{
 	background: #1D1D48;
@@ -2715,28 +2811,35 @@
 	text-align: center;
 	margin-bottom: 48px;
 }
+.case-studies-page .experts-talk-section .block{
+	height: 480px;
+}
 .case-studies-page .experts-talk-section .wrap{
-	background: #FFFFFF;
-	border-radius: 10px;
-	padding: 65px 55px;
+	background: linear-gradient(108.02deg, #D02B49 -10.15%, #5316A0 81.37%);
+	border-radius: 40px;
+	padding: 80px 65px;
+	color: #FFFFFF;
 	text-align: center;
-	height: 342px;
-	-webkit-box-shadow: 0px 50px 40px 0px rgba(193,200,213,0.3);
-	-moz-box-shadow: 0px 50px 40px 0px rgba(193,200,213,0.3);
-	box-shadow: 0px 50px 40px 0px rgba(193,200,213,0.3);
+	height: 419px;
+	position: relative;
 }
 .case-studies-page .experts-talk-section .wrap h6{
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 30px;
-	margin-bottom: 36px;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 40px;
 }
 .case-studies-page .experts-talk-section .name h5{
 	font-weight: 700;
+	margin: 46px 0 5px;
 }
 .case-studies-page .experts-talk-section .name p{
 	font-family: 'Inter', sans-serif;
-	color: #767676;
+}
+.case-studies-page .experts-talk-section .wrap .experts-avtar{
+	position: absolute;
+	bottom: -120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .case-studies-page .experts-talk-section .wrap1{
 	border: 1px solid #FFBB00;
@@ -2760,6 +2863,10 @@
 }
 .case-studies-page .experts-talk-section .slick-slide{
 	margin: 0 25px;
+	opacity: 0.1;
+}
+.case-studies-page .experts-talk-section .slick-slide.slick-active{
+	opacity: 1;
 }
 .case-studies-page .experts-talk-section .slick-dotted .slick-dots{
 	bottom: -60px;
@@ -2788,9 +2895,277 @@
 .case-studies-page .trends-section .metros h5{
     width: 490px;
 }
+.case-studies-page .up-skill-section{
+	background-color: #8B61C5;
+	color: #FFFFFF;
+	padding-bottom: 280px;
+}
+.case-studies-page .up-skill-section h1{
+	margin-bottom: 39px;
+}
+.case-studies-page .up-skill-section p{
+	line-height: 27px;
+	padding-bottom: 20px;
+}
+.case-studies-page .need-section{
+	margin-top: -170px;
+	padding-bottom: 106px;
+}
+.case-studies-page .need-section .wrap{
+	background: #FFFFFF;
+	box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.07);
+	border-radius: 30px;
+	padding: 45px 50px;
+}
+.case-studies-page .need-section .wrap h3{
+	font-weight: 700;
+}
+.case-studies-page .need-section .wrap h5{
+	font-weight: 500;
+	line-height: 32px;
+}
+
+.case-studies-page .super-admin-section{
+	position: relative;
+}
+.case-studies-page .super-admin-section::before {
+    content: '';
+    position: absolute;
+    width: 859px;
+    height: 329px;
+    background-image: url(../images/bg/mask-5.png);
+    top: -230px;
+    left: 0;
+    z-index: -1;
+}
+.case-studies-page .super-admin-section .wrap{
+	background: #FAFAFA;
+	border: 20px solid #FFBB00;
+	border-radius: 40px;
+	padding: 90px 98px 0;
+	text-align: center;
+}
+.case-studies-page .super-admin-section .wrap p{
+	font-family: 'Inter', sans-serif;
+	font-size: 18px;
+	padding-top: 20px;
+}
+.case-studies-page .metrics-help-section p{
+	line-height: 27px;
+	padding: 25px 0;
+}
+.case-studies-page .metrics-help-section h5{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 35px;
+}
+.case-studies-page .metrics-help-section .img-wrap{
+	text-align: right;
+}
+
 /*--------------------------------------*/
 
-/* 19. Forgot Password Page
+/* 19. Accenture Case Studies Page
+/*--------------------------------------*/
+.accenture-case-studies-page .banner-section{
+	background-image: url('../images/bg/accenture-bg.png'), radial-gradient(34.4% 79.39% at 59.2% 100%, #3B0066 0%, #7122AE 100%);
+}
+.accenture-case-studies-page .hero-section{
+	padding: 50px 0 145px;
+}
+.accenture-case-studies-page .hero-section .cell p{
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 30px;
+	padding-top: 20px;
+	max-width: 460px;
+}
+.accenture-case-studies-page .hero-section .cell-pdf{
+	border: 1px solid #6967FF;
+	padding: 65px 38px;
+}
+.accenture-case-studies-page .hero-section .cell-pdf h4{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	margin-bottom: 19px;
+}
+.accenture-case-studies-page .hero-section .cell-pdf .btn.btn-default{
+	font-size: 15px;
+	line-height: 18px;
+	padding: 15px;
+}
+.accenture-case-studies-page .hero-section .cell-last{
+	background-color: rgba(228, 239, 255, 0.6);
+	display: flex;
+	padding: 48px 24px 48px 42px;
+}
+.accenture-case-studies-page .hero-section .cell-last p{
+	font-size: 24px;
+	line-height: 35px;
+}
+.accenture-case-studies-page .hero-section .hero-section-wrap{
+	margin-top: 50px;
+}
+.accenture-case-studies-page .hero-section .hero-section-wrap .block{
+	height: 290px;
+	color: #FFFFFF;
+	padding-top: 50px;
+	padding-left: 50px;
+}
+.accenture-case-studies-page .hero-section .hero-section-wrap .block p{
+	font-size: 20px;
+	line-height: 26px;
+	padding: 19px 0 0;
+}
+.accenture-case-studies-page .hero-section .hero-section-wrap .block-1{
+	background: #FFBB00;
+	color: #000000;
+}
+.accenture-case-studies-page .hero-section .hero-section-wrap .block-2{
+	background: #6967FF;
+}
+.accenture-case-studies-page .hero-section .hero-section-wrap .block-3{
+	background: #3ABE73;
+}
+.accenture-case-studies-page .hero-section .hero-section-wrap .block-4{
+	background: #E66852;
+	padding-top: 20px;
+	padding-left: 40px;
+}
+.accenture-case-studies-page .hero-section .hero-section-wrap .block-4 h3{
+	line-height: 40px;
+}
+.accenture-case-studies-page .pre-emp-section{
+	background-color: rgba(249, 238, 255, 0.8);
+}
+.accenture-case-studies-page .challenge-section{
+	background-color: rgba(228, 239, 255, 0.5);
+	color: #000000;
+	padding: 50px 0 70px;
+}
+.accenture-case-studies-page .solution-section{
+	background: -webkit-linear-gradient(right, #7741BB 50%, #CC00FF 50%);
+    background: -o-linear-gradient(right, #7741BB 50%, #CC00FF 50%);
+    background: -moz-linear-gradient(right, #7741BB 50%, #CC00FF 50%);
+    background: linear-gradient(to right, #7741BB 50%, #CC00FF 50%);
+	color: #FFFFFF;
+}
+.accenture-case-studies-page .solution-section .heading1 span{
+	background: #A300FF;
+	border-radius: 40px;
+	padding: 40px 96px;
+	width: 400px;
+}
+.accenture-case-studies-page .solution-section .heading1::before{
+	border: 1px solid #FFFFFF;
+	border-bottom: 0;
+}
+.accenture-case-studies-page .solution-section h5{
+	border: 0;
+	text-align: left;
+	font-weight: 700;
+	font-size: 24px;
+}
+.accenture-case-studies-page .solution-section li{
+	font-weight: 400;
+}
+.accenture-case-studies-page .solution-section .custom-warning li::before{
+	content: url(../images/icons/check-2.png);
+	width: 40px;
+    height: 40px;
+}
+.accenture-case-studies-page .outcome-section{
+	background-color: rgba(255, 255, 255, 0.6);
+}
+.accenture-case-studies-page .trends-section{
+	background-color: #F6F3FF;
+}
+.accenture-case-studies-page .glimpses-section{
+	background: #6967FF;
+	color: #FFFFFF;
+	padding: 50px 0 20px;
+}
+.accenture-case-studies-page .online-solutions-section::before{
+	top: 113px;
+}
+.accenture-case-studies-page .online-solutions-section h1{
+	max-width: 460px;
+}
+.accenture-case-studies-page .online-solutions-section .wrap1{
+	border: 0;
+	border-bottom: 5px solid #FFBB00;
+}
+.accenture-case-studies-page .online-solutions-section .wrap2{
+	border: 0;
+	border-bottom: 5px solid #C2ACFF;
+}
+.accenture-case-studies-page .online-solutions-section .wrap3{
+	border: 0;
+	border-bottom: 5px solid #67E9D9;
+}
+.accenture-case-studies-page .online-solutions-section .wrap4{
+	border: 0;
+	border-bottom: 5px solid #6967FF;
+}
+.accenture-case-studies-page .global-brands-section .text-wrap h5{
+	max-width: 100%;
+}
+.accenture-case-studies-page .global-brands-section{
+	background: #F2E3F2;
+	text-align: center;
+	position: relative;
+}
+.accenture-case-studies-page .global-brands-section::before{
+	content: '';
+    position: absolute;
+    width: 555px;
+    height: 106px;
+    background-image: url(../images/bg/mask-4.png);
+    bottom: 0;
+    left: 0;
+}
+.accenture-case-studies-page .global-brands-section .text-wrap h1,
+.accenture-case-studies-page .global-brands-section .text-wrap h5{
+	color: #000000;
+}
+.accenture-case-studies-page .global-brands-section .slick-slide{
+	margin-top: 0;
+}
+.accenture-case-studies-page .global-brands-section .slick-slider .slick-next{
+	right: 47%;
+}
+.accenture-case-studies-page .global-brands-section .slick-slider .slick-prev{
+	left: 47%;
+}
+
+
+.accenture-case-studies-page .experts-talk-section .wrap{
+	background: #FFFFFF;
+	border-radius: 10px;
+	padding: 65px 39px;
+	text-align: center;
+	height: 342px;
+	-webkit-box-shadow: 0px 50px 40px 0px rgba(193,200,213,0.3);
+	-moz-box-shadow: 0px 50px 40px 0px rgba(193,200,213,0.3);
+	box-shadow: 0px 50px 40px 0px rgba(193,200,213,0.3);
+	color: #000000;
+}
+.accenture-case-studies-page .experts-talk-section .wrap h6{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	margin-bottom: 32px;
+}
+.case-studies-page .experts-talk-section .name h5{
+	margin: 0;
+}
+.accenture-case-studies-page .experts-talk-section .name p{
+	color: #767676;
+}
+/*--------------------------------------*/
+
+/* 20. Forgot Password Page
 /*--------------------------------------*/
 .forgot-pass .login-section .right-wrap{
 	border-radius: 20px 0px 0px 20px;
