@@ -6,8 +6,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/newproctor/dist/common.d2741823.css">
-    <link rel="stylesheet" href="/newproctor/dist/style.74219eb6.css">
+    <link rel="stylesheet" href="./common.d2741823.css">
+    <link rel="stylesheet" href="./style.74219eb6.css">
     <meta charset="UTF-8">
 </head>
 
@@ -27,83 +27,85 @@
             <div class="screen-share-container video-section-border">
                 <h2 class="screen-share-status test-header-react mb-0"></h2>
                 <div class="system-check">
-                    <div class="container">
-                        <div class="rounded shadow divs p-3 bg-light">
-                            <div class="bg-blue rounded p-3">
-                                <div class="case">
-                                    <div class="row">
-                                        <h3 class="fw-bold text-dark text-center mb-5">System Check</h3>
-                                        <div class="col-lg-2">
-                                            <div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
-                                                <img src="https://cdn.brainmeasures.com/Interview/img/icons/camera.png" class="img-fluid" alt="Basic">
-                                                <h5 class="fw-bold text-dark mt-3">Camera</h5>
-                                                <ul class="list-inline mt-3 mb-0">
-                                                    <li class="list-inline-item bg-danger d-none" id="cam-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
-                                                    <li class="list-inline-item bg-success" id="cam-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
-                                                <img src="https://cdn.brainmeasures.com/Interview/img/icons/audio.png" class="img-fluid" alt="Basic">
-                                                <h5 class="fw-bold text-dark mt-3">Audio (Mic)</h5>
-                                                <ul class="list-inline mt-3 mb-0">
-                                                    <li class="list-inline-item bg-danger d-none" id="mic-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
-                                                    <li class="list-inline-item bg-success" id="mic-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
-                                                <img src="https://cdn.brainmeasures.com/Interview/img/icons/speaker.png" class="img-fluid" alt="Basic">
-                                                <h5 class="fw-bold text-dark mt-3">Speaker</h5>
-                                                <ul class="list-inline mt-3 mb-0">
-                                                    <li class="list-inline-item bg-danger" id="speaker-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
-                                                    <li class="list-inline-item bg-success d-none" id="speaker-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
-                                                <img src="https://cdn.brainmeasures.com/Interview/img/icons/browser.png" class="img-fluid" alt="Basic">
-                                                <h5 class="fw-bold text-dark mt-3">Browser</h5>
-                                                <ul class="list-inline mt-3 mb-0">
-                                                    <li class="list-inline-item bg-danger d-none" id="browser-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
-                                                    <li class="list-inline-item bg-success" id="browser-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
-                                                <img src="https://cdn.brainmeasures.com/Interview/img/icons/browser.png" class="img-fluid" alt="Basic">
-                                                <h5 class="fw-bold text-dark mt-3">Internet Speed</h5>
-                                                <ul class="list-inline mt-3 mb-0">
-                                                    <li class="list-inline-item bg-danger d-none" id="speed-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
-                                                    <li class="list-inline-item bg-success" id="speed-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
-                                                <img src="https://cdn.brainmeasures.com/Interview/img/icons/browser.png" class="img-fluid" alt="Basic">
-                                                <h5 class="fw-bold text-dark mt-3">OS</h5>
-                                                <ul class="list-inline mt-3 mb-0">
-                                                    <li class="list-inline-item bg-danger d-none" id="os-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
-                                                    <li class="list-inline-item bg-success" id="os-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-warning" id="btnRefresh">Refresh</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <div class="row">
+						<div class="col-lg-10">
+							<div class="rounded shadow divs p-3 bg-light">
+								<div class="bg-blue rounded p-3">
+									<div class="case">
+										<div class="row">
+											<h3 class="fw-bold text-dark text-center mb-5">System Check</h3>
+											<div class="col-lg-2">
+												<div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
+													<img src="https://cdn.brainmeasures.com/Interview/img/icons/camera.png" class="img-fluid" alt="Basic">
+													<h5 class="fw-bold text-dark mt-3">Camera</h5>
+													<ul class="list-inline mt-3 mb-0">
+														<li class="list-inline-item bg-danger d-none" id="cam-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
+														<li class="list-inline-item bg-success" id="cam-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-lg-2">
+												<div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
+													<img src="https://cdn.brainmeasures.com/Interview/img/icons/audio.png" class="img-fluid" alt="Basic">
+													<h5 class="fw-bold text-dark mt-3">Audio (Mic)</h5>
+													<ul class="list-inline mt-3 mb-0">
+														<li class="list-inline-item bg-danger d-none" id="mic-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
+														<li class="list-inline-item bg-success" id="mic-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-lg-2">
+												<div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
+													<img src="https://cdn.brainmeasures.com/Interview/img/icons/speaker.png" class="img-fluid" alt="Basic">
+													<h5 class="fw-bold text-dark mt-3">Speaker</h5>
+													<ul class="list-inline mt-3 mb-0">
+														<li class="list-inline-item bg-danger" id="speaker-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
+														<li class="list-inline-item bg-success d-none" id="speaker-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-lg-2">
+												<div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
+													<img src="https://cdn.brainmeasures.com/Interview/img/icons/browser.png" class="img-fluid" alt="Basic">
+													<h5 class="fw-bold text-dark mt-3">Browser</h5>
+													<ul class="list-inline mt-3 mb-0">
+														<li class="list-inline-item bg-danger d-none" id="browser-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
+														<li class="list-inline-item bg-success" id="browser-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-lg-2">
+												<div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
+													<img src="https://cdn.brainmeasures.com/Interview/img/icons/browser.png" class="img-fluid" alt="Basic">
+													<h5 class="fw-bold text-dark mt-3">Internet Speed</h5>
+													<ul class="list-inline mt-3 mb-0">
+														<li class="list-inline-item bg-danger d-none" id="speed-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
+														<li class="list-inline-item bg-success" id="speed-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-lg-2">
+												<div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
+													<img src="https://cdn.brainmeasures.com/Interview/img/icons/browser.png" class="img-fluid" alt="Basic">
+													<h5 class="fw-bold text-dark mt-3">OS</h5>
+													<ul class="list-inline mt-3 mb-0">
+														<li class="list-inline-item bg-danger d-none" id="os-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
+														<li class="list-inline-item bg-success" id="os-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-lg-12">
+												<div class="text-center">
+													<button type="button" class="btn btn-warning" id="btnRefresh">Refresh</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
                 <div id="InjectTest"> </div>
             </div>
             <div class="timer"></div>
@@ -124,9 +126,9 @@
             <div class="sidebar chat-box" id="chat">
 
                 <div class="open-chat-message">
-                    <div class="d-flex align-items-center justify-content-center"> <button id="closechat" class="btn-close"></button><h5 class="mb-0">Messages</h5></div>
+                    <div class="all-center"> <button id="closechat" class="btn-close"></button><h5 class="mb-0">Messages</h5></div>
                     <div id="messages" class="messages"></div>
-                    <input id="msgInput" placeholder="type your message...">
+                    <input id="msgInput" placeholder="Type your message...">
                 </div>
             </div>
         </div>
@@ -143,6 +145,6 @@ function UpdateGlobalVariable(scopeData) {
   GlobalObj.IsProctorLive = scopeData.TestType == "20";
 }</script>
     <!-- JS -->
-    <script src="/newproctor/dist/candidate.4a1177a2.js"></script>
+    <script src="./candidate.4a1177a2.js"></script>
 </body>
 </html>

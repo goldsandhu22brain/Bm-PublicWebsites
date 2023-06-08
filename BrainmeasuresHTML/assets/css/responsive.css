@@ -541,6 +541,44 @@
 	.accenture-case-studies-page .global-brands-section .slick-slider .slick-next{
 		right: 50%;
 	}
+	.capgemini-case-studies-page .banner-section{
+		background-image: radial-gradient(22.53% 40.96% at 59.2% 100%, #2B0B3D 0%, #2B0B3D 100%);
+	}
+	.acer-case-studies-page .banner-section{
+		background-image: radial-gradient(50.13% 91.14% at 59.2% 75.76%, #0D1438 0%, #0B3D3D 100%);
+	}
+	.cocacola-case-studies-page .banner-section{
+		background-image: unset;
+	}
+	.genpact-case-studies-page .banner-section{
+		background-image: unset;
+		padding: 0;
+	}
+	.genpact-case-studies-page .hero-section .cell-1,
+	.genpact-case-studies-page .hero-section .cell-2 {
+		margin-top: 0;
+	}
+	.genpact-case-studies-page .banner-section .wrap{
+		padding: 40px 0;
+	}
+	.mphasis-case-studies-page .banner-section{
+		background-image: linear-gradient(125.52deg, #E2F7BE 0%, #B9EFDE 100%);
+	}
+	.aegis-case-studies-page .banner-section{
+		background-image: linear-gradient(150.37deg, #EE2D24 0%, #F47B20 81.87%);
+	}
+	.amex-case-studies-page .banner-section{
+		background-image: linear-gradient(286.82deg, #004D91 23.8%, #0069B5 97.95%);
+	}
+	.toyota-case-studies-page .banner-section{
+		background-image: linear-gradient(102.17deg, #1C0853 0%, #1E1A36 96.03%);
+	}
+	.hcl-case-studies-page .banner-section{
+		background-image: linear-gradient(102.17deg, #1C0853 0%, #1E1A36 96.03%);
+	}
+	.tcs-case-studies-page .banner-section{
+		background-image: unset;
+	}
 	
 }
 @media screen and (max-width:767px) {
@@ -795,7 +833,9 @@
 	.register-page .left-wrap h3{
 		font-size: 24px;
 	}
-	
+	.case-studies-page .hero-section .cell-1 .cognizant-img img{
+		padding-right: 8px;
+	}
 }
 
 

@@ -3138,8 +3138,6 @@
 .accenture-case-studies-page .global-brands-section .slick-slider .slick-prev{
 	left: 47%;
 }
-
-
 .accenture-case-studies-page .experts-talk-section .wrap{
 	background: #FFFFFF;
 	border-radius: 10px;
@@ -3157,7 +3155,7 @@
 	line-height: 30px;
 	margin-bottom: 32px;
 }
-.case-studies-page .experts-talk-section .name h5{
+.accenture-case-studies-page .experts-talk-section .name h5{
 	margin: 0;
 }
 .accenture-case-studies-page .experts-talk-section .name p{
@@ -3165,7 +3163,60 @@
 }
 /*--------------------------------------*/
 
-/* 20. Forgot Password Page
+/* 20. Capgemini Case Studies Page
+/*--------------------------------------*/
+.capgemini-case-studies-page .banner-section{
+	background-image: url('../images/bg/capgemini-bg.png'), radial-gradient(22.53% 40.96% at 59.2% 100%, #2B0B3D 0%, #2B0B3D 100%);
+}
+.acer-case-studies-page .banner-section{
+	background-image: url('../images/bg/acer-bg.png'), radial-gradient(50.13% 91.14% at 59.2% 75.76%, #0D1438 0%, #0B3D3D 100%);
+}
+.acer-case-studies-page .banner-section .wrap{
+    max-width: 495px;
+}
+.cocacola-case-studies-page .banner-section{
+	background-image: url('../images/bg/cocacola-bg.png');
+	background-color: #120F10;
+}
+.cocacola-case-studies-page .banner-section .wrap{
+    max-width: 430px;
+}
+.genpact-case-studies-page .banner-section{
+	background-image: url('../images/bg/genpact-bg.png');
+	background-color: #1E2C4C;
+}
+.mphasis-case-studies-page .banner-section{
+	background-image: url('../images/bg/mphasis-bg.png'), linear-gradient(125.52deg, #E2F7BE 0%, #B9EFDE 100%);
+	color: #000000;
+}
+.mphasis-case-studies-page .banner-section .wrap{
+    max-width: 498px;
+}
+.aegis-case-studies-page .banner-section{
+	background-image: url('../images/bg/aegis-bg.png'), linear-gradient(150.37deg, #EE2D24 0%, #F47B20 81.87%);
+}
+.amex-case-studies-page .banner-section{
+	background-image: url('../images/bg/amex-bg.png'), linear-gradient(286.82deg, #004D91 23.8%, #0069B5 97.95%);
+}
+.amex-case-studies-page .banner-section .wrap{
+    max-width: 500px;
+}
+.toyota-case-studies-page .banner-section{
+	background-image: url('../images/bg/toyota-bg.png'), linear-gradient(102.17deg, #1C0853 0%, #1E1A36 96.03%);
+}
+.toyota-case-studies-page .banner-section .wrap{
+    max-width: 500px;
+}
+.hcl-case-studies-page .banner-section{
+	background-image: url('../images/bg/hcl-bg.png'), linear-gradient(102.17deg, #1C0853 0%, #1E1A36 96.03%);
+}
+.tcs-case-studies-page .banner-section{
+	background-image: url('../images/bg/tcs-bg.png');
+	background-color: #000000;
+}
+/*--------------------------------------*/
+
+/* 21. Forgot Password Page
 /*--------------------------------------*/
 .forgot-pass .login-section .right-wrap{
 	border-radius: 20px 0px 0px 20px;

@@ -15,10 +15,10 @@
 	position: fixed;
 	top: 60px;
 }
-	.candidate-conference .icon.icon-chat {
-		top: unset;
-		bottom: 10px;
-	}
+.candidate-conference .icon.icon-chat {
+	top: unset;
+	bottom: 10px;
+}
 .candidate-conference .sidebar {
 	top: 60px;
 	padding: 0;
@@ -31,7 +31,7 @@
 }
 .candidate-conference .shape-circle {
 	aspect-ratio: 1/1;
-	height: 220px;
+	height: 250px;
 	width: 100%;
 }
 .candidate-conference .sidebar.chat-box {
@@ -64,7 +64,7 @@
 	background-color: transparent;
 }
 
-.btn-control {
+#controls .btn-control {
 	display: inline-block;
 	background: #f30446;
 	color: #fff;
@@ -72,24 +72,53 @@
 	padding: 10px 10px;
 	margin: 5px;
 	border-radius: 0px 100px 100px 0px;
-	width: 130px;
+	width: 158px;
 	text-align: center;
 	transition: 0.4s;
 	border: 0;
 }
 
-.btn-left-rounded {
+#controls .btn-left-rounded {
 	border-radius: 100px 0px 0px 100px;
 }
 
-.btn-control:hover,
-.btn-no-rounded {
+#controls .btn-control:hover,
+#controls .btn-no-rounded {
 	border-radius: 0px;
 }
 
 .test-right {
 	top: 320px;
 }
-
-
+.all-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 /*# sourceMappingURL=/style.74219eb6.css.map */
+
+
+/*Admin*/
+.admin-conference .btn-close {
+	position: absolute;
+	left: 10px;
+	width: 12px;
+	height: 12px;
+	border: 0;
+}
+.admin-conference header{
+	background: #3f51b5 !important;
+}
+.admin-conference .screen-share-status{
+	background: #3f51b5 !important;
+	padding-bottom: 10px;
+}
+.admin-conference .peer-network{
+	right: 5px;
+}
+.admin-conference .shape-circle {
+	height: 500px;
+}
+.admin-conference .video-box{
+	width: 500px;
+}
