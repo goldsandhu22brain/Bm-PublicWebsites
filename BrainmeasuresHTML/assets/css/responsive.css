@@ -117,6 +117,9 @@
 	.accenture-case-studies-page .experts-talk-section .wrap{
 		height: 390px;
 	}
+	.case-studies-page .challenge-section .wrap{
+		padding-bottom: 30px;
+	}
 }
 @media screen and (max-width:1024px) {
 	
@@ -437,6 +440,10 @@
 	.case-studies-page .banner-section{
 		padding: 40px 0;
 	}
+	.case-studies-page .banner-section .wrap .cs-title{
+		padding-left: 0;
+		background-position: center;
+	}
 	.case-studies-page .banner-section .heading-wrap{
 		margin: 0px auto;
 	}
@@ -578,6 +585,9 @@
 	}
 	.tcs-case-studies-page .banner-section{
 		background-image: unset;
+	}
+	.case-studies-page .challenge-section .wrap{
+		padding-bottom: 0;
 	}
 	
 }

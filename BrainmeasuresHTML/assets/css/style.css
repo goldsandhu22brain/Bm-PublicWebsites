@@ -2295,6 +2295,15 @@
 	background-size: cover;
 	z-index: -1;
 }
+.case-studies-page .banner-section .wrap .cs-title{
+	font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+    padding-left: 15px;
+    background-image: url(../images/cs-title.png);
+    background-repeat: no-repeat;
+}
 .case-studies-page .banner-section .banner-img{
 	text-align: right;
 }
@@ -2437,6 +2446,9 @@
 }
 .case-studies-page .challenge-section p{
 	padding: 8px 0 14px;
+}
+.case-studies-page .challenge-section .wrap{
+	padding-bottom: 100px;
 }
 .case-studies-page .challenge-section li{
 	max-width: 599px;
