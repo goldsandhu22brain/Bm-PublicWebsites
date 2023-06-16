@@ -178,6 +178,74 @@
 	bottom: 30px;
 }
 
+.content-module-4 .best-courses-slider-items .best-courses-slider-items-react-icon1 i{
+	color: #000000;
+}
+.content-module-4 .best-courses-slider-items .best-courses-slider-items-react-icon:hover i,
+.content-module-4 .best-courses-slider-items .best-courses-slider-items-react-icon.active i{
+    color: #f33558;
+	cursor: pointer;
+}
+
+.related-course-tab .related-course-related-tab-content .love-icon:hover i,
+.related-course-tab .related-course-related-tab-content .love-icon.active i {
+    cursor: pointer;
+	color: #f33558;
+}
+
+.box-detals .list-item .best-courses-slider-items-react-icon i {
+	cursor: pointer;
+    color: #f33558;
+}
+.listing-page-content.details-page-list .list-wrapper .list-item .best-courses-slider-items-react-icon i{
+	cursor: pointer;
+}
+.ques-ans-section .tab-pane .ques-ans-option .btn{
+	width: 100%;
+    display: flex;
+    align-items: center;
+}
+.ques-ans-section .tab-pane .btn-check:active+.btn,
+.ques-ans-section .tab-pane .btn-check:checked+.btn,
+.ques-ans-section .tab-pane .btn.active,
+.ques-ans-section .tab-pane .btn.show,
+.ques-ans-section .tab-pane .btn:active{
+	background-color: #f33558;
+}
+
+.ques-ans-section .tab-pane [type=radio]:checked+label:before,
+.ques-ans-section .tab-pane [type=radio]:not(:checked)+label:before,
+.ques-ans-section .tab-pane [type=radio]:checked+label:after,
+.ques-ans-section .tab-pane [type=radio]:not(:checked)+label:after{
+	display: none;
+}
+.ques-ans-section .tab-pane .btn-check:checked+.btn .number {
+    background-color: #870c50;
+}
+.ques-ans-section .tab-pane .ques-ans-option p{
+	width: auto;
+}
+.emp-module-32 .module_content a:hover img{
+	opacity: 0.7;
+}
+.details-page-course-slider1 .brands-section-slider .owl-nav button:hover{
+	border: 1px solid #000;
+}
+.details-page-course-slider .brands-section-slider .owl-nav button:hover i {
+    color: #000;
+}
+.top-catagories .bough-list-module .bough-list-box .bough-list:hover,
+.top-catagories .bough-list-module .bough-list-box .bough-list.active{
+    background: linear-gradient(151.28deg, #A739CE -9.77%, #B80058 66.82%);
+    color: #fff;
+}
+.top-catagories .bough-list-module .bough-list-box .bough-list:hover p,
+.top-catagories .bough-list-module .bough-list-box .bough-list.active p{
+	color: #fff;
+}
+
+
+
 @keyframes blinker {
   50% {
     opacity: 0;
@@ -310,6 +378,12 @@
 		width: 100%;
 	}
 	
+}
+
+@media (max-width: 440px) {
+	.ques-ans-section .tab-pane .ques-ans-option p{
+		font-size: 12px;
+	}
 }
 
 

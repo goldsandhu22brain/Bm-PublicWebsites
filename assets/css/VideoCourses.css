@@ -1,3 +1,20 @@
+.navbar-default .navbar-nav>li>a:hover {
+    opacity: 0.7;
+}
+.newfsupprt h2 a{
+	color: #fcff04;
+}
+.newfsupprt h2 a:focus{
+	text-decoration: none;
+}
+.newfsupprt h2 a:hover{
+	text-decoration: none;
+	opacity: 0.9;
+}
+.newfsupprt h5 a{
+	color: #FFF;
+}
+
 
 /*Start: Inline CSS*/
 
@@ -348,6 +365,10 @@ border-color: #024b76!important;
     background: #ff0000;
     border-color: #ff0000;
     border-radius: 50px;
+}
+.btn.btn-primary:hover{
+	background-color: #204d74;
+    border-color: #122b40;
 }
 .py-3 {
     padding-top: 16px !important;

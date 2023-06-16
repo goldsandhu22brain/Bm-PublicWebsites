@@ -2180,7 +2180,8 @@
 	background: linear-gradient(107.25deg, #7B0553 6.08%, #460647 36.58%, #050040 92.49%);
 }
 .case-studies-listing .listing-section .wrap.wrap-12{
-	background-image: url(../images/listing-12.png);
+	/*background-image: url(../images/listing-12.png);*/
+	background-image: url(../images/bg/cs-bg.png), linear-gradient(285.43deg, #4E11C2 39.33%, #7122AE 144.39%);
 }
 .case-studies-listing .listing-section .wrap.wrap-12 .img-wrap img{
 	height: 98px;

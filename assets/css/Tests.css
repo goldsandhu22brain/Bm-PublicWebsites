@@ -1,3 +1,16 @@
+header.fixed-top.sticky .navbar-dark .navbar-nav .nav-link:hover{
+	opacity: 0.7;
+}
+.newfsupprt h2 a{
+	color: #fcff04;
+}
+.newfsupprt h2 a:hover{
+	opacity: 0.9;
+}
+.newfsupprt h5 a{
+	color: #FFF;
+}
+
 .navbar-toggler{
 	border: 0;
 }

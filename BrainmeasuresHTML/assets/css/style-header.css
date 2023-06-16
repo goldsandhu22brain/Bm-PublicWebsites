@@ -29,6 +29,10 @@ header .navbar .navbar-nav .nav-item .nav-link:hover{
 header .navbar-nav .nav-item .nav-link.login-link{
 	border-left: 1px solid #BFCBDF;
 	padding-left: 30px;
+	color: #F33558;
+}
+header .navbar-nav .nav-item .nav-link.login-link:hover{
+	text-decoration: underline;
 }
 header .navbar-nav .btn.btn-default{
 	margin-left: 48px;

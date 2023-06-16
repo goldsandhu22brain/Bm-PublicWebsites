@@ -20,6 +20,16 @@
 .home-icon-bar{
 	margin-top: 0;
 }
+.footer-links li a:hover {
+    opacity: 1;
+	color: #ffca00;
+}
+.footer-brand h3 a{
+    color: #ffca00;
+}
+.footer-brand h3 a:hover{
+	opacity: 0.9;
+}
 
 
 
