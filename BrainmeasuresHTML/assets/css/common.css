@@ -238,6 +238,10 @@ h6{
 	padding: 3px 18px 0 10px;
 	color: #000000;
 	white-space: nowrap;
+	cursor: pointer;
+}
+.card-price:hover{
+	opacity: 0.8;
 }
 .card-price span{
 	font-weight: 700;

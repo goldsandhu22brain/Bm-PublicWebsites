@@ -1,4 +1,21 @@
-﻿.navbar-toggle.collapsed .close,
+﻿.vbox {
+    min-height: 465px!important;
+}
+.newfsupprt h2 a{
+	color: #fcff04;
+}
+.newfsupprt h2 a:hover{
+	opacity: 0.9;
+	text-decoration: none;
+}
+.newfsupprt h5 a{
+	color: #FFF;
+}
+.bs-example-modal-lgvideo{
+	margin-top: 70px;
+}
+
+.navbar-toggle.collapsed .close,
 .navbar-toggle:not(.collapsed)>.icon-bar {
     display: none;
 }

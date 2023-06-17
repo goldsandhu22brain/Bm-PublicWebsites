@@ -29,6 +29,22 @@
 	margin-left: auto;
 }
 
+.testright .btn:hover,
+.btn:hover{
+	background: #000!important;
+	border-color: #000;
+}
+.newfsupprt h2 a{
+	color: #fcff04;
+}
+.newfsupprt h2 a:hover{
+	opacity: 0.9;
+	text-decoration: none;
+}
+.newfsupprt h5 a{
+	color: #FFF;
+}
+
 /*Start: Inline Css*/
 a.sefixed {
 	position: fixed;
