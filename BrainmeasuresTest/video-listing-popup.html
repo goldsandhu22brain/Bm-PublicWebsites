@@ -2053,6 +2053,17 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/custrom.js"></script>
+	
+	<script>
+      var box = document.querySelector('.dropdown-selected-box1');
+    
+      //Remove the 'inner' class when users click outside the box
+      document.addEventListener('click', function (event) {
+         if (event.target !== box)
+         box.classList.remove('d-flex');
+      });
+   </script>
+	
 </body>
 
 </html>
