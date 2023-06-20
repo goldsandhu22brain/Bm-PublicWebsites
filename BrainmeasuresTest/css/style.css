@@ -247,7 +247,9 @@
 	transform: rotate(180deg);
 	top: unset;
 }
-
+.dropdown-categary .dropdown-selected-box{
+	top: 162px;
+}
 
 @keyframes blinker {
   50% {
