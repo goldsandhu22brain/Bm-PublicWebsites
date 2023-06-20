@@ -130,7 +130,7 @@
                                                 </span>AWS <span class="right-arrow"> <i
                                                         class="far fa-angle-right"></i></button>
 
-                                            <button class="nav-link" id="v-Artificial-settings-tab"
+                                            <button class="nav-link nav-sm-link" id="v-Artificial-settings-tab"
                                                 data-bs-toggle="pill" data-bs-target="#v-Artificial-settings"
                                                 type="button" role="tab" aria-controls="v-Artificial-settings"
                                                 aria-selected="false"><span class="dropdown-list-icon">
@@ -357,11 +357,15 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3">
-                        <div class="filter-box">
-                            <div class="filter-box-text"> <span class="smal-text">Short by</span>
-                                Highest Rated</div>
-                            <span class="down-arrrow"><i class="far fa-chevron-down"></i></span>
-                        </div>
+                       <div class="form-floating filter-box">
+							<select class="form-select">
+								<option class="selected">Highest Rated</option>
+								<option class="custom-option" value="1">Medium Rated</option>
+								<option value="2">Average Rated</option>
+								<option value="3">Lowest Rated</option>
+							</select>
+							<label>Short by</label>
+						</div>
                     </div>
                     <div class="col-lg-6 col-md-6">
 

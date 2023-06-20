@@ -1,4 +1,7 @@
-﻿.vbox {
+﻿.courseHead a:hover{
+	background: unset;
+}
+.vbox {
     min-height: 465px!important;
 }
 .newfsupprt h2 a{

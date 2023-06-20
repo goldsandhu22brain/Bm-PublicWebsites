@@ -563,6 +563,13 @@ a:focus {
     border-radius: 0 0 20px 0;
 }
 
+.column_left .social_networks li a:hover span{
+	text-decoration: underline;
+}
+.chart_list li{
+	width: 25%;
+}
+
 @media (max-width: 991px) {
     .b-banner {
         padding-top: 50px;

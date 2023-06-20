@@ -36,6 +36,9 @@ header .navbar-dark .navbar-nav .nav-link:hover{
 .newfsupprt h5 a{
 	color: #FFF;
 }
+.newfsupprt h5 a:hover{
+	text-decoration: underline;
+}
 
 .navbar-toggler{
 	border: 0;
@@ -73,7 +76,13 @@ header .dropdown-menu{
 	border-radius: 0 20px 20px 0;
 }
 
-
+.dropdown-toggle.show::after{
+	/*border-bottom: 0.3em solid;*/
+    /*border-left: 0.3em solid transparent;*/
+    /*border-top: 0;*/
+    /*border-right: 0.3em solid transparent;*/
+	transform: rotate(180deg);
+}
 
 /*Start: Inline CSS*/
 #pageloaddiv {

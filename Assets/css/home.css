@@ -31,7 +31,13 @@
 	opacity: 0.9;
 }
 
-
+.dropdown-toggle.show::after{
+	/*border-bottom: 0.3em solid;*/
+    /*border-left: 0.3em solid transparent;*/
+    /*border-top: 0;*/
+    /*border-right: 0.3em solid transparent;*/
+	transform: rotate(180deg);
+}
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px){

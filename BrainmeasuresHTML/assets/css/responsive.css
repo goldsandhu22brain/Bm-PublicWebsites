@@ -543,10 +543,10 @@
 		height: auto;
 	}
 	.accenture-case-studies-page .global-brands-section .slick-slider .slick-prev{
-		left: 40%;
+		left: 45%;
 	}
 	.accenture-case-studies-page .global-brands-section .slick-slider .slick-next{
-		right: 50%;
+		right: 45%;
 	}
 	.capgemini-case-studies-page .banner-section{
 		background-image: radial-gradient(22.53% 40.96% at 59.2% 100%, #2B0B3D 0%, #2B0B3D 100%);
@@ -703,8 +703,11 @@
 	.case-studies-page .testimonials-section .slick-slider .slick-next{
 		top: 120%;
 	}
+	.case-studies-page .testimonials-section .slick-slider .slick-prev{
+		left: 40%;
+	}
 	.case-studies-page .testimonials-section .slick-slider .slick-next{
-		right: 60%;
+		right: 40%;
 	}
 	.case-studies-page .hero-section .cell-2 .cell-wrap,
 	.case-studies-page .hero-section .cell-2 .cell-bottom,
@@ -729,10 +732,10 @@
 		left: 42%;
 	}
 	.accenture-case-studies-page .global-brands-section .slick-slider .slick-prev{
-		left: 30%;
+		left: 40%;
 	}
 	.accenture-case-studies-page .global-brands-section .slick-slider .slick-next{
-		right: 50%;
+		right: 40%;
 	}
 	
 }
@@ -789,6 +792,16 @@
 	.accenture-case-studies-page .global-brands-section::before{
 		left: unset;
 		right: 0;
+	}
+	.accenture-case-studies-page .hero-section {
+		padding: 16px;
+	}
+	.accenture-case-studies-page .hero-section .cell-last{
+		padding: 20px;
+	}
+	.accenture-case-studies-page .hero-section .cell-pdf{
+		padding: 30px;
+		margin-top: 20px;
 	}
 	
 }

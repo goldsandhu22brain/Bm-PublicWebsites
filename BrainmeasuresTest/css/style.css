@@ -243,7 +243,10 @@
 .top-catagories .bough-list-module .bough-list-box .bough-list.active p{
 	color: #fff;
 }
-
+.dropdown-selected.clickitem-box .down-arrrow{
+	transform: rotate(180deg);
+	top: unset;
+}
 
 
 @keyframes blinker {
@@ -379,10 +382,20 @@
 	}
 	
 }
-
+@media (max-width: 480px) {
+	.dropdown-categary .dropdown-selected-box .nav-link.nav-sm-link{
+		font-size: 13px;
+	}
+}
 @media (max-width: 440px) {
 	.ques-ans-section .tab-pane .ques-ans-option p{
 		font-size: 12px;
+	}
+	.dropdown-categary .dropdown-selected-box .nav-link.nav-sm-link{
+		font-size: 10px;
+	}
+	.listing-page-content.listing-all-courses .best-courses-total-hours img{
+		margin-left: 3px;
 	}
 }
 

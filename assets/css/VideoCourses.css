@@ -1,3 +1,8 @@
+
+.dropdown.open .caret{
+	transform: rotate(180deg);
+}
+
 .navbar-default .navbar-nav>li>a:hover {
     opacity: 0.7;
 }
@@ -15,6 +20,9 @@
 	color: #FFF;
 }
 
+.chat.widget{
+	bottom: 36px !important;
+}
 
 /*Start: Inline CSS*/
 
@@ -354,6 +362,9 @@ border-color: #024b76!important;
 	#intro {
 		 margin-top: 0px !important;
 	}
+	.navbar-nav .open .dropdown-menu{
+		background-color: #fff;
+	}
 }
 
 @media (min-width: 768px)
@@ -673,6 +684,10 @@ div.ftl-vertical-tab-menu{
 	}
 	.vbox {
 		min-height: 418px!important;
+	}
+	.sefixed img,
+	.sefixed2 img{
+		width: 40px;
 	}
 	
 }
