@@ -251,6 +251,16 @@
 	top: 162px;
 }
 
+header .header-right .header-menu-right a.header-login-link:hover{
+	color: #fb0;
+}
+footer .footer-left-column .footer-email a:hover{
+	text-decoration: underline;
+}
+footer .footer-left-column .footer-number p a:hover{
+	opacity: 0.9;
+}
+
 @keyframes blinker {
   50% {
     opacity: 0;
