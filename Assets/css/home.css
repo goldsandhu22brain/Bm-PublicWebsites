@@ -30,6 +30,9 @@
 .footer-brand h3 a:hover{
 	opacity: 0.9;
 }
+.footer-brand-a:hover{
+	color: #ffca00;
+}
 
 .dropdown-toggle.show::after{
 	/*border-bottom: 0.3em solid;*/

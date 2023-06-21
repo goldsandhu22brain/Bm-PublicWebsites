@@ -14,6 +14,10 @@
 .newfsupprt h5 a{
 	color: #FFF;
 }
+.newfsupprt h5 a:hover{
+	color: #fcff04;
+	text-decoration: none;
+}
 .bs-example-modal-lgvideo{
 	margin-top: 70px;
 }

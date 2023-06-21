@@ -19,6 +19,10 @@
 .newfsupprt h5 a{
 	color: #FFF;
 }
+.newfsupprt h5 a:hover{
+	color: #fcff04;
+	text-decoration: none;
+}
 
 .chat.widget{
 	bottom: 36px !important;
