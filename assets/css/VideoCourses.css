@@ -24,8 +24,8 @@
 	text-decoration: none;
 }
 
-.chat.widget{
-	bottom: 36px !important;
+.widget-hidden iframe{
+	bottom: 32px !important;
 }
 
 /*Start: Inline CSS*/

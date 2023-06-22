@@ -261,6 +261,10 @@ footer .footer-left-column .footer-number p a:hover{
 	opacity: 0.9;
 }
 
+header .navbar-nav .dropdown .dropdown-menu .dropdown-item{
+	font-size: 15px;
+}
+
 @keyframes blinker {
   50% {
     opacity: 0;
@@ -279,6 +283,20 @@ footer .footer-left-column .footer-number p a:hover{
 	}
 	header .logo img {
 		max-width: 180px;
+	}
+	header .navbar-nav .dropdown .dropdown-menu {
+		background: transparent;
+		padding: 0;
+	}
+	header .navbar-nav .dropdown .dropdown-menu .dropdown-item{
+		font-size: 13px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.nav .navbar-nav .nav-item .nav-link {
+		margin-bottom: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 	.add-section-top.add-section-down .add-section-flex{
 		text-align: center;
@@ -369,7 +387,9 @@ footer .footer-left-column .footer-number p a:hover{
 		font-size: 16px;
 		line-height: 28px;
 	}
-	
+	.dropdown-categary .dropdown-selected-box {
+		max-width: 540px;
+	}
 	
 }
 @media (max-width: 575.98px) {
@@ -392,22 +412,28 @@ footer .footer-left-column .footer-number p a:hover{
 	.filter-box-row .filter-box-row-downs .radio-div {
 		width: 100%;
 	}
+	.dropdown-categary .dropdown-selected-box {
+		max-width: 418px;
+	}
 	
 }
 @media (max-width: 480px) {
 	.dropdown-categary .dropdown-selected-box .nav-link.nav-sm-link{
 		font-size: 13px;
+		line-height: 18px;
+		padding-left: 7px;
+		text-align: left;
 	}
 }
 @media (max-width: 440px) {
 	.ques-ans-section .tab-pane .ques-ans-option p{
 		font-size: 12px;
 	}
-	.dropdown-categary .dropdown-selected-box .nav-link.nav-sm-link{
-		font-size: 10px;
-	}
 	.listing-page-content.listing-all-courses .best-courses-total-hours img{
 		margin-left: 3px;
+	}
+	.dropdown-categary .dropdown-selected-box {
+		max-width: 340px;
 	}
 }
 
