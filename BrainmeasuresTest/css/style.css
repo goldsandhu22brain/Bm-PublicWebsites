@@ -305,6 +305,10 @@ header .navbar-nav .dropdown .dropdown-menu .dropdown-item{
 }
 
 
+.internal-page-testimonial {
+    background-image: url(../images/inter-page-testi.png) !important;
+}
+
 @media screen and (max-width:1199px) {
 	
 }

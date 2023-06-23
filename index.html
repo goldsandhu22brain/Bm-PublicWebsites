@@ -288,7 +288,7 @@
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6">
-				<a href="#" class="SampleCertificate">
+				<a href="#" class="SampleCertificate" data-bs-toggle="modal" data-bs-target="#SampleCertificateModal">
 					<div class="home-service-box">
 						<img loading="lazy" src='https://cdn.brainmeasures.com/Images/Home/icon-500.png' />
 						<h2>Hard Copy</h2>
@@ -348,23 +348,20 @@
 		</lord-icon>
 	</div>
 </section>
-<div class="modal fade" id="SampleCertificateModal" tabindex="0" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-	<div class="modal-dialog modal-dialog" role="document">
+
+
+<!-- Modal -->
+<div class="modal fade contact-modal" id="SampleCertificateModal" tabindex="-1" aria-labelledby="SampleCertificateModal" aria-hidden="true">
+	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-body" style="padding:0px!important">
 				<img src="https://cdn.brainmeasures.com/Images/certificate/SampleCertificate.jpg" class="img-responsive ModalImg" />
 			</div>
-
 		</div>
 	</div>
 </div>
-<script>
-	$(document).ready(function () {
-		$(".SampleCertificate").click(function () {
-			$("#SampleCertificateModal").modal('show');
-		});
-	});
-</script>
+
+
 
 <section class="home-individual" id="certificationLogoSection">
     <div class="container">
@@ -1654,7 +1651,7 @@
 		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		
-<script src="https://www.brainmeasures.com/MvcScriptsAndStyles/js/Custom.js"></script>
+
 
 <script src="Assets/js/Test.js"></script>
 
