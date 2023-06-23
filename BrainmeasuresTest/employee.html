@@ -827,7 +827,7 @@
             </div>
             <div class="text-center btn-div">
                 <a href="#" class="btn btn-primary">Learn More</a>
-                <a href="#" class="btn btn-outline">Contact Us</a>
+                <a href="#" class="btn btn-outline" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</a>
             </div>
         </div>
     </section>
@@ -2671,6 +2671,52 @@
             </div>
         </div>
     </section>
+	
+<!-- Modal -->
+<div class="modal fade contact-modal" id="contactModal" tabindex="-1" aria-labelledby="contactModal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="contactModal">Make An Enquiry Now!</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form class="row g-3">
+					<div class="col-12">
+						<input type="text" class="form-control" placeholder="First Name" />
+					</div>
+					<div class="col-12">
+						<input type="text" class="form-control" placeholder="Last Name" />
+					</div>
+					<div class="col-12">
+						<input type="email" class="form-control" placeholder="Your Email" />
+					</div>
+					<div class="col-12">
+						<input type="text" class="form-control" placeholder="Contact No." />
+					</div>
+					<div class="col-12">
+						<input type="text" class="form-control" placeholder="Company Name" />
+					</div>
+					<div class="col-12">
+						<input type="text" class="form-control" placeholder="Official Website" />
+					</div>
+					<div class="col-12">
+						<input type="text" class="form-control" placeholder="City / State" />
+					</div>
+					<div class="col-12">
+						<input type="text" class="form-control" placeholder="Country" />
+					</div>
+					<div class="col-12">
+						<textarea class="form-control" rows="4" placeholder="Your Enquiry"></textarea>
+					</div>
+					<div class="col-12">
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
 
 
     <footer class="footer">
