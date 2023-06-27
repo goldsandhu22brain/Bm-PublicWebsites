@@ -1,0 +1,14 @@
+﻿@model BM.Models.TestSystem.Mcq
+
+@Html.Partial("InterviewTest/Components/_QuestionInRichText", @Model.QuestionInRichText)
+
+<div class="col-sm-12 mt-40 mb-40">
+	@foreach (var eachOption in Model.Option)
+	{
+		var id = "imageCheck" + eachOption.Id.ToString();
+		<label>
+			<input type="checkbox" name="imageCheck" value="small" id="@id" value="@eachOption.Id.ToString()" class="image-select" data-option-id="@eachOption.Id.ToString()">
+			<img onerror="this.src='https://cdn.brainmeasures.com/Interview/OptionImageNotFound.jpg';" src="@eachOption.Display" width="100px">
+		</label>
+	}
+</div>

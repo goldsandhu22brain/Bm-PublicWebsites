@@ -5,10 +5,12 @@
     <title>Quickstart JS</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./common.d2741823.css">
-	<link rel="stylesheet" href="./style.74219eb6.css">
-	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/common.0f87f4df.css">
+    <link rel="stylesheet" href="/style.13b0a558.css">
     <meta charset="UTF-8">
 </head>
 
@@ -17,7 +19,7 @@
         <img class="logo" src="https://www.100ms.live/assets/logo.svg">
         <button id="leave-btn" class="btn-danger hide">Leave Room</button>
         <button id="end-room-button" class="btn-danger">End Room</button>
-        
+
     </header>
 
     <section class="conference candidate-conference">
@@ -36,10 +38,12 @@
             <div id="controls" class="presenter-controller text-center">
                 <button id="mute-aud" class="btn-control btn-mute-audio btn-left-rounded">Mute</button>
                 <button id="mute-vid" class="btn-control btn-hide-video hide">Hide</button>
-                <button id="chat-message" class="btn-control btn-chat-message btn-no-rounded">Chat</button>
+                <button id="chat-message" class="btn-control btn-chat-message btn-no-rounded hide">Chat</button>
+                <button id="view-proof" class="btn-control interview-extra-btn btn-no-rounded">View Proof</button>
+                <button id="request-proof" class="btn-control interview-extra-btn btn-no-rounded">Request Proof</button>
+                <button id="view-new-proof" class="btn-control interview-extra-btn btn-no-rounded" disabled="disabled">View New Proof</button>
                 <button id="load-test" class="btn-control btn-enable-start-test">Enable Start Quiz</button>
                 <button id="screen-share" class="btn-control btn-share-screen btn-left-rounded hide">ScreenShare</button>
-
             </div>
 
             <div class="sidebar video-box" id="video">
@@ -49,7 +53,7 @@
 
             <div class="sidebar chat-box" id="chat">
                 <div class="open-chat-message">
-					<div class="all-center"><button id="closechat" class="btn-close"></button><h3  class="mb-0">Messages</h3></div>
+                    <div class="all-center"><button id="closechat" class="btn-close"></button><h3 class="mb-0">Messages</h3></div>
                     <div id="messages" class="messages"></div>
                     <input id="msgInput" placeholder="Type your message...">
                     <button id="msg-cand" class="btn-control">Send to Candidate</button>
@@ -57,13 +61,35 @@
                 </div>
             </div>
 
-          
+
         </div>
         <div id="toastMessage"></div>
     </section>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I5" crossorigin="anonymous"></script>
+    <script>var GlobalObj = {
+  IsProctorLive: true
+};
+function UpdateGlobalVariable(scopeData) {
+  GlobalObj = scopeData;
+  GlobalObj.IsProctorLive = scopeData.TestType == "20";
+}</script>
+    <script src="/admin.221fa65a.js"></script>
 
-    <script src="./admin.04f3934b.js"></script>
+    <div class="modal" id="test-myModal" role="dialog">
+        <div class="modal-dialog modal-fullscreen">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="color:green;"><span class="glyphicon glyphicon-lock"></span>User Activity Alert</h4>
+                    <button type="button" class="close" data-dismiss="modal" onclick="javascript:{ $('#test-myModal').hide(); }">&times;</button>
+                </div>
+                <div class="modal-body" id="Inject-UAA">
+
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

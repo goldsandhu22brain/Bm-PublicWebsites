@@ -1,0 +1,18 @@
+﻿@model BM.Models.TestSystem.Mcq
+@{
+
+}
+@Html.Partial("InterviewTest/_McqDisplayQuestionSection", @Model.QuestionInRichText)
+<div class="col-sm-12 mt-40 mb-40">
+    <div class="checkbox">
+        @foreach (var eachOption in Model.Option)
+        {
+            var id = "checkbox" + eachOption.Id.ToString();
+            <label class="checkbox-dk" for="@id">
+                @Html.Raw(@eachOption.Display)
+                <input type="checkbox" checked="@eachOption.IsChecked" name="checkbox" value="@eachOption.OptionNo" id="@id" data-option-id="@eachOption.Id.ToString()">
+                <span class="checkmark-2"></span>
+            </label>
+        }
+    </div>
+</div>

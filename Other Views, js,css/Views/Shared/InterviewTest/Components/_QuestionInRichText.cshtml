@@ -1,0 +1,13 @@
+﻿@using BM.Shared.Helper
+@model String
+@if (ImageHelper.IsImageOnly(Model))
+{
+    var domainUri = @HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Authority) + "/ExamMedias/";
+    var imgUrl = domainUri + Model;
+
+    <img src='https://cdn.brainmeasures.com/Interview/QuestionImageBlank.jpg' data-lazysrc1="@imgUrl" class="image-max-full" onerror="this.src='https://cdn.brainmeasures.com/Interview/QuestionImageNotFound.jpg';">
+}
+else
+{
+    <h6 class="text-justify">@Html.Raw(Model)</h6>
+}

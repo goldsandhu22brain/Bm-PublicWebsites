@@ -1,0 +1,51 @@
+﻿@using BM.Models.TestSystem;
+@using System.Linq;
+@using System.Diagnostics;
+@model BM.Models.TestSystem.Mcq
+
+@{
+    var testTopic = ViewBag.TestTopic != null ? ViewBag.TestTopic as TestTopic : new TestTopic();
+
+    var totalExamTime = testTopic == null || testTopic.DurationMinutes == 0 ? 30 : testTopic.DurationMinutes;
+    TimeSpan ts = TimeSpan.FromMinutes(totalExamTime);
+    var totalTime = string.Format("{0}:{1}", ts.TotalMinutes, ts.Seconds.ToString("00"));
+    var isProctorLiveActive = ViewBag.TestType != null ? ViewBag.TestType == BM.Models.Enum.Test.TestType.ProctorLive : false;
+    var isProctorActive = ViewBag.TestType != null ? ViewBag.TestType == BM.Models.Enum.Test.TestType.Proctor : false;
+}
+<script src="~/MvcScriptsAndStyles/js/Interview/jquery-3.4.1.min.js"></script>
+<script src="~/MvcScriptsAndStyles/js/Test/Layout.js"></script>
+<script src="~/MvcScriptsAndStyles/js/Test/McqTest.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Include this 'test.css' style sheet in the project where you use this test page -->
+<link href="~/MvcScriptsAndStyles/css/Test/McqTest.css" rel="stylesheet" />
+@Html.Partial("_Loader")
+@*<section class="test-header">
+        <div class="container">
+            @Html.Partial("InterviewTest/_McqTestHeader", testTopic.TestName)
+        </div>
+    </section>*@
+
+@Html.Partial("InterviewTest/_McqCommonComponent", Model)
+<div class="modal fade bs-example-modal-lg" id="test-confiramtion" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h1>"Yet some questions need to be answered, Do you want to submit the test anyway?"</h1>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-primary" id="SubmitYes">Yes</button>
+                <button type="button" class="btn btn-default  btn-danger" id="testclose">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var totalMcqTime = @totalExamTime;
+    var maxMcqTime = '@totalTime';
+    var isProctor = '@isProctorActive';
+</script>
+<script>
+    StartTimer();
+    ReLoadImages();
+</script>

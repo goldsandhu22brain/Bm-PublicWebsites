@@ -1,0 +1,86 @@
+﻿.test-pause {
+    pointer-events: none !important;
+}
+#chat-span {
+    vertical-align: middle;
+}
+#other-videos video {
+    width: 10%;
+    height: 100%;
+    /*margin: 2px;*/
+    /*border: 3px solid #0d6efd;*/
+    /*padding: 1px;   */
+    /*border-radius: 5px;*/
+    /*vertical-align: middle*/
+}
+#key-press {
+    text-align: right;
+    display: none;
+    font-size: 11px;
+}
+
+/*.checkmark {
+    display: none;
+    width: 15px;
+    vertical-align: middle;
+}*/
+.full-height {
+    min-height: 100vh;
+}
+.interview-video-container {
+    min-height: calc(100vh - 120px);
+}
+
+#code-test {
+    display: none;
+}
+
+#quiz-test {
+    display: none;
+}
+
+#onEmployerJoinedStatus {
+    text-align: center;
+}
+
+#onUserStatusChanged {
+    text-align: left;
+}
+
+*:fullscreen, *:-webkit-full-screen, *:-moz-full-screen {
+    background-color: rgba(255,255,255,0) !important;
+    padding: 20px;
+}
+
+::backdrop {
+    background-color: white;
+}
+.interview-chat {
+    width: 100%;
+    /*height: 15%;*/
+    position: unset;
+    background-color: #3c4852;
+}
+
+/*.interview-chat-input {
+position:unset;
+}*/
+.interview-chat-box {
+    height: calc(70% - 5px);
+    overflow: auto;
+}
+.interview-chat-input-textarea {
+    background: white !important;
+    border: groove; 
+    color: #0e101a;
+    border-color: black !important;
+}
+.text-danger {
+color:red !important;
+}
+.interview-chat-input-send {
+    margin: 0px 10px;
+}
+.emojionearea.interview-chat-input-textarea {
+    margin-top: -4px;
+}

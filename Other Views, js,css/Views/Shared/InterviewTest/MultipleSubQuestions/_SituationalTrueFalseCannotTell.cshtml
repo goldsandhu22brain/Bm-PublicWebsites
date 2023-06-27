@@ -1,0 +1,48 @@
+﻿@model BM.Models.TestSystem.Mcq
+@{
+	int cnt = 1;
+}
+@Html.Partial("InterviewTest/_McqDisplayQuestionSection", @Model.QuestionTitleInRichText)
+@Html.Partial("InterviewTest/Components/_QuestionInRichText", @Model.QuestionInRichText)
+<br />
+<br />
+
+<div class="col-sm-12 mt-40 mb-40">
+	<table class="table table-bordered question-group-table">
+		<thead>
+			<tr>
+				<th colspan="2">Question</th>
+				@foreach (var option in Model.Option.Take(3))
+				{
+					<th>@Html.Raw(@option.Display)</th>
+				}
+			</tr>
+		</thead>
+		@foreach (var subQuestion in Model.MultiQuestion)
+		{
+			<tr>
+				<td colspan="2">
+					<p class="font-500 mb-0">@cnt.  @subQuestion.QuestionTitleInRichText</p>
+				</td>
+				@foreach (var subQuestionOption in Model.Option.Take(3))
+				{
+					var id = "subQuestionRadio" + subQuestionOption.Id.ToString();
+					var name = "radio" + cnt;
+					var isChecked = false;
+					if (subQuestion.UserAnswers != null && subQuestion.UserAnswers.Count > 0 && subQuestion.UserAnswers[0] != null)
+					{
+						isChecked = subQuestion.UserAnswers[0].Id == subQuestionOption.Id;
+					}
+					<td>
+						<label class="radio-dk">
+							<input type="radio" name="@name" id="@id" value="@subQuestionOption.OptionNo" data-option-id="@subQuestionOption.Id.ToString()" data-subquestion-id="@subQuestion.Id.ToString()" checked="@isChecked">
+							<span class="checkmark"></span>
+						</label>
+					</td>
+				}
+			</tr>
+			cnt = cnt + 1;//INcremental to show question No in the Table
+
+		}
+	</table>
+</div>

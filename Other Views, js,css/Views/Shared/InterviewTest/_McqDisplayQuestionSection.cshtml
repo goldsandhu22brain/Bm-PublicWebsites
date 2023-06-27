@@ -1,0 +1,3 @@
+﻿@using BM.Models.TestSystem
+@model string
+<h3 class="text-justify question-title">@Html.Raw(Html.Encode(Model).Replace("\r\n", "<br />"))</h3>

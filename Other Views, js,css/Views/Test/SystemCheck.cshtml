@@ -1,0 +1,105 @@
+﻿@{
+    Layout = null;
+}
+
+<div class="system-check">
+    <div class="row">
+        <div class="col-lg-10">
+            <div class="rounded shadow divs p-3 bg-light">
+                <div class="bg-blue rounded p-3">
+                    <div class="case">
+                        <div class="row">
+                            <h3 class="fw-bold text-dark text-center mb-5">System Check</h3>
+                            <div class="col-lg-2">
+                                <div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
+                                    <img src="https://cdn.brainmeasures.com/Interview/img/icons/camera.png" class="img-fluid" alt="Basic">
+                                    <h5 class="fw-bold text-dark mt-3">Camera</h5>
+                                    <ul class="list-inline mt-3 mb-0">
+                                        <li class="list-inline-item bg-danger d-none" id="cam-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
+                                        <li class="list-inline-item bg-success" id="cam-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
+                                    <img src="https://cdn.brainmeasures.com/Interview/img/icons/audio.png" class="img-fluid" alt="Basic">
+                                    <h5 class="fw-bold text-dark mt-3">Audio (Mic)</h5>
+                                    <ul class="list-inline mt-3 mb-0">
+                                        <li class="list-inline-item bg-danger d-none" id="mic-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
+                                        <li class="list-inline-item bg-success" id="mic-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
+                                    <img src="https://cdn.brainmeasures.com/Interview/img/icons/speaker.png" class="img-fluid" alt="Basic">
+                                    <h5 class="fw-bold text-dark mt-3">Speaker</h5>
+                                    <ul class="list-inline mt-3 mb-0">
+                                        <li class="list-inline-item bg-danger" id="speaker-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
+                                        <li class="list-inline-item bg-success d-none" id="speaker-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
+                                    <img src="https://cdn.brainmeasures.com/Interview/img/icons/browser.png" class="img-fluid" alt="Basic">
+                                    <h5 class="fw-bold text-dark mt-3">Browser</h5>
+                                    <ul class="list-inline mt-3 mb-0">
+                                        <li class="list-inline-item bg-danger d-none" id="browser-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
+                                        <li class="list-inline-item bg-success" id="browser-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
+                                    <img src="https://cdn.brainmeasures.com/Interview/img/icons/browser.png" class="img-fluid" alt="Basic">
+                                    <h5 class="fw-bold text-dark mt-3">Internet Speed</h5>
+                                    <ul class="list-inline mt-3 mb-0">
+                                        <li class="list-inline-item bg-danger d-none" id="speed-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
+                                        <li class="list-inline-item bg-success" id="speed-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="meeticon text-center bg-blue rounded py-5 shadow mb-2">
+                                    <img src="https://cdn.brainmeasures.com/Interview/img/icons/browser.png" class="img-fluid" alt="Basic">
+                                    <h5 class="fw-bold text-dark mt-3">OS</h5>
+                                    <ul class="list-inline mt-3 mb-0">
+                                        <li class="list-inline-item bg-danger d-none" id="os-error"> <i class="fa fa-times text-white" aria-hidden="true"></i></li>
+                                        <li class="list-inline-item bg-success" id="os-success"><i class="fa fa-check text-white" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-warning" id="btnRefresh">Refresh</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<button class="step-next-3" onclick="javascript:change_tab('screenshare')">Next</button>
+
+<script src="https://cdn.webrtc-experiment.com/syntax/sh_main.min.js" type="text/javascript"></script>
+<script src="https://cdn.webrtc-experiment.com/syntax/sh_javascript.min.js" type="text/javascript"></script>
+<script src="https://cdn.webrtc-experiment.com/syntax/sh_html.min.js" type="text/javascript"></script>
+<link href="https://cdn.webrtc-experiment.com/syntax/sh_style.css" type="text/css" rel="stylesheet">
+<script src="~/MvcScriptsAndStyles/js/Proctor/SystemCheck.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        setTimeout(function () {
+            $('body').addClass('loaded');
+        }, 2600);
+
+        // sh_highlightDocument();
+
+        $('#btnRefresh').click(function () {
+            $("#load-system-check").click();
+        });
+    });
+</script>

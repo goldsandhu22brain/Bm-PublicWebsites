@@ -1,0 +1,103 @@
+﻿@using System
+@using BM.Shared.Helper
+@{
+    Layout = null;
+
+    //var localRefreshUrl = "https://" + @Request.Url.Host + "/Tracker/RefreshSession";
+    //var isFree = ViewBag.IsFree != null ? (string)ViewBag.IsFree : string.Empty;
+    //var IsProctor = ViewBag.TestType != null ? ViewBag.TestType == BM.Models.Enum.Test.TestType.Proctor : false;
+    //var IsProctorLive = ViewBag.TestType != null ? ViewBag.TestType == BM.Models.Enum.Test.TestType.ProctorLive : false;
+    //var systemCheck = isFree.Equals("false") && (IsProctor || IsProctorLive);
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quickstart JS</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/MvcScriptsAndStyles/Proctor/common.css">
+    <link rel="stylesheet" href="~/MvcScriptsAndStyles/Proctor/style.css">
+    <meta charset="UTF-8">
+</head>
+
+<body class="admin-conference">
+    <header>
+        <img class="logo" src="https://www.100ms.live/assets/logo.svg">
+        <button id="leave-btn" class="btn-danger hide">Leave Room</button>
+        <button id="end-room-button" class="btn-danger">End Room</button>
+
+    </header>
+
+    <section class="conference candidate-conference">
+        <button class="icon" id="openvideo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"></path></svg>
+        </button>
+        <button class="icon icon-chat" id="openchat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16"><path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"></path></svg>
+        </button>
+
+        <div class="container-fluid">
+            <div class="screen-share-container video-section-border">
+                <h2 class="screen-share-status"></h2>
+                <video class="screen-share-video"
+                       autoplay="true"
+                       muted="true"
+                       playsinline="true"></video>
+            </div>
+            <div id="controls" class="presenter-controller text-center">
+                <button id="mute-aud" class="btn-control btn-mute-audio btn-left-rounded">Mute</button>
+                <button id="mute-vid" class="btn-control btn-hide-video hide">Hide</button>
+                <button id="chat-message" class="btn-control btn-chat-message btn-no-rounded hide">Chat</button>
+                <button id="view-proof" class="btn-control interview-extra-btn btn-no-rounded">View Proof</button>
+                <button id="request-proof" class="btn-control interview-extra-btn btn-no-rounded">Request Proof</button>
+                <button id="view-new-proof" class="btn-control interview-extra-btn btn-no-rounded" disabled="disabled">View New Proof</button>
+                <button id="load-test" class="btn-control btn-enable-start-test">Enable Start Quiz</button>
+                <button id="screen-share" class="btn-control btn-share-screen btn-left-rounded hide">ScreenShare</button>
+            </div>
+
+            <div class="sidebar video-box" id="video">
+                <button id="closevideo" class="btn-close"></button>
+                <div class="peers-container"></div>
+            </div>
+
+            <div class="sidebar chat-box" id="chat">
+                <div class="open-chat-message">
+                    <div class="all-center"><button id="closechat" class="btn-close"></button><h3 class="mb-0">Messages</h3></div>
+                    <div id="messages" class="messages"></div>
+                    <input id="msgInput" placeholder="Type your message...">
+                    <button id="msg-cand" class="btn-control">Send to Candidate</button>
+                    <button id="msg-panel" class="btn-control">Send to Panel/Admin</button>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="toastMessage"></div>
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I5" crossorigin="anonymous"></script>
+    <script src="~/MvcScriptsAndStyles/Proctor/admin.js"></script>
+    @*<script src="./src/admin.js"></script>*@
+
+    <div class="modal" id="test-myModal" role="dialog">
+        <div class="modal-dialog modal-fullscreen">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="color:green;"><span class="glyphicon glyphicon-lock"></span>User Activity Alert</h4>
+                    <button type="button" class="close" data-dismiss="modal" onclick="javascript:{ $('#test-myModal').hide(); }">&times;</button>
+                </div>
+                <div class="modal-body" id="Inject-UAA">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

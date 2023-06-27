@@ -1,0 +1,12 @@
+﻿<p class="test-small-text d-none">    
+    <strong class="timer-warning text-danger">User Activity Alerts:-</strong>  <button type="button" class="btn warning-display" data-toggle="tooltip" data-html="true" title=''>  
+    <i class="bi bi-balloon"></i>
+</button>
+</p>
+<script type="text/javascript">   
+    $(document).ready(function () {
+        setTimeout(() => {
+            $('.warning-display').tooltip({html: true, placement: "bottom" });
+          }, 5000);
+    });
+</script>

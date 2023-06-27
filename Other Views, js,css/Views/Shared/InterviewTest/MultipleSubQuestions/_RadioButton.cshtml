@@ -1,0 +1,65 @@
+﻿@using System.Linq
+@using BM.Shared.Helper
+@model BM.Models.TestSystem.Mcq
+@{
+	int cnt = 1;
+	int grpId = 0;
+	var domainUri = @HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Authority) + "/ExamMedias/";
+}
+@Html.Partial("InterviewTest/_McqDisplayQuestionSection", @Model.QuestionTitleInRichText)
+
+@Html.Partial("InterviewTest/Components/_QuestionInRichText", @Model.QuestionInRichText)
+@foreach (var subQuestion in Model.MultiQuestion)
+{
+	cnt = 0;
+	var name = "radio" + grpId;
+	grpId = grpId + 1;
+	<div class="col-sm-12 mt-40 mb-40">
+		<table class="table table-bordered question-group-table">
+			<thead>
+				<tr>
+					<th colspan="3">Sub Question No.&nbsp;@subQuestion.QuestionId:-&nbsp;@subQuestion.QuestionTitleInRichText</th>
+				</tr>
+			</thead>
+			@if (subQuestion.QuestionType == BM.Models.Enum.QuestionType.RadioButtonWithImageOnlyQuestion)
+			{
+				<tr>
+					<td colspan="2">
+						<p class="font-500 mb-0"><img onerror="this.src='https://cdn.brainmeasures.com/Interview/QuestionImageNotFound.jpg';" src='https://cdn.brainmeasures.com/Interview/OptionBlank.jpg' data-lazysrc1="@domainUri@subQuestion.QuestionInRichText" class="image-max-full"></p>
+
+					</td>
+				</tr>
+			}
+
+			@foreach (var subQuestionOption in subQuestion.Option)
+			{
+				var id = "subQuestionRadio" + subQuestionOption.Id.ToString();
+
+				var optionStatus = Model.UserAnswers != null && Model.UserAnswers.Count > 0 && Model.UserAnswers[grpId - 1] != null;
+				var isChecked = ProctorOptionsHelper.IsChecked(false, subQuestionOption.Id, Model.UserAnswers, subQuestion.UserAnswers);
+
+				cnt = cnt + 1;
+				<tr>
+					@*<td class="">@cnt</td>*@
+					<td>
+						@if (ImageHelper.IsImageOnly(subQuestionOption.Display))
+						{
+							<p class="font-500 mb-0"><img onerror="this.src='https://cdn.brainmeasures.com/Interview/OptionImageNotFound.jpg';" src='https://cdn.brainmeasures.com/Interview/OptionBlank.jpg' data-lazysrc1="@domainUri@subQuestionOption.Display" class="image-max-full"></p>
+						}
+						else
+						{
+							<p class="font-500 mb-0">@subQuestionOption.Display</p>
+						}
+					</td>
+					<td>
+						<label class="radio-dk">
+							<input type="radio" name="@name" id="@id" value="@subQuestionOption.OptionNo" data-option-id="@subQuestionOption.Id.ToString()" checked="@isChecked">
+							<span class="checkmark"></span>
+						</label>
+					</td>
+
+				</tr>
+			}
+		</table>
+	</div>
+}

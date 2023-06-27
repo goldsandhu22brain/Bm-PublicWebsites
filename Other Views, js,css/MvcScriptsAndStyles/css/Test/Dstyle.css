@@ -1,0 +1,727 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        .interview-my-cam background: rgba(0, 0, 0, 0.5);
+    }
+
+a {
+    text-decoration: none;
+}
+
+.image-full {
+    width: 100%;
+}
+
+.image-max-full {
+    max-width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mt-90 {
+    margin-top: 90px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.mb-70 {
+    margin-bottom: 70px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mb-90 {
+    margin-bottom: 90px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.pt-70 {
+    padding-top: 70px;
+}
+
+.pt-80 {
+    padding-top: 80px;
+}
+
+.pt-90 {
+    padding-top: 90px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.p2-10 {
+    padding-bottom: 10px;
+}
+
+.p2-20 {
+    padding-bottom: 20px;
+}
+
+.p2-30 {
+    padding-bottom: 30px;
+}
+
+.p2-40 {
+    padding-bottom: 40px;
+}
+
+.p2-50 {
+    padding-bottom: 50px;
+}
+
+.p2-60 {
+    padding-bottom: 60px;
+}
+
+.p2-70 {
+    padding-bottom: 70px;
+}
+
+.p2-80 {
+    padding-bottom: 80px;
+}
+
+.p2-90 {
+    padding-bottom: 90px;
+}
+
+.p2-100 {
+    padding-bottom: 100px;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.color-black {
+    color: #000000;
+}
+
+.color-green {
+    color: #1f9754;
+}
+
+.color-red {
+    color: #ef165c;
+}
+
+.color-blue {
+    color: #3f51b5;
+}
+
+.color-orange {
+    color: #ff8100;
+}
+
+.color-yellow {
+    color: #ffc107;
+}
+
+.color-light-gray {
+    color: #b4b7bb;
+}
+
+.color-dark-gray {
+    color: #838383;
+}
+
+.font-11 {
+    font-size: 11px;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.font-13 {
+    font-size: 13px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.interview-main-wrap {
+    min-height: 100vh;
+    background: linear-gradient(45deg, #2debcf, #6f0eb9, #2196f3, #8500ff, #1af3e3);
+}
+
+.interview-rightbar {
+    min-height: 100vh;
+    padding: 15px;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.interview-mainbar {
+    padding: 0vh !important;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.interview-top-thumbs {
+    height: 102px;
+    padding: 5px 15px;
+    position: relative;
+}
+
+.interview-top-thumb-box {
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+    .interview-top-thumb-box img {
+        height: 100%;
+    }
+
+    .interview-top-thumb-box p {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        font-size: 12px;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.4);
+        margin: 0px;
+    }
+
+.interview-video-container {
+    background: #fff;
+    background-size: 100%;
+    min-height: calc(100vh - 110px);
+    position: relative;
+}
+
+.interview-barndbar {
+    position: absolute;
+    width: 96%;
+    top: 2%;
+    left: 2%;
+    padding: 7px 30px !important;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+    .interview-barndbar h2 {
+        font-weight: 700;
+        color: #3f51b5;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .interview-barndbar p {
+        font-weight: 500;
+        color: #000000;
+        font-size: 11px;
+        margin: 0;
+    }
+
+    .interview-barndbar h3 {
+        margin: 0px;
+        font-size: 13px;
+        color: #fff;
+    }
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.interview-barndbar h3 span {
+    color: #3f51b5;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+    .interview-barndbar h3 span i {
+        margin-right: 5px;
+    }
+
+.interview-actionbar {
+    position: absolute;
+    width: 96%;
+    bottom: 0%;
+    left: 2%;
+    padding: 10px 30px !important;
+    text-align: center;
+}
+
+.interview-end-btn {
+    display: inline-block;
+    color: #fff;
+    background: #ef0a3f;
+    padding: 10px 25px;
+    border-radius: 100px;
+    margin: 0px 0px;
+    font-size: 14px;
+}
+
+    .interview-end-btn i {
+        margin-right: 5px;
+    }
+
+    .interview-end-btn:hover {
+        cursor: pointer;
+        background: #ef0a5f;
+        color: #fff;
+    }
+
+.interview-action-btn {
+    display: inline-block;
+    background: #3f51b5;
+    width: 42px;
+    height: 42px;
+    line-height: 33px;
+    font-size: 17px;
+    border-radius: 100px;
+    margin: 0 5px;
+    color: #ffffff;
+    border: 5px solid rgb(255 255 255 / 11%);
+    outline: 4px solid rgb(255 255 255 / 30%);
+    transition: 0.4s ease;
+    text-align: center;
+    position: relative;
+    top: -6px
+}
+
+    .interview-action-btn:hover {
+        color: #fff;
+        outline: 4px solid rgb(255 255 255 / 90%);
+        transition: 0.4s ease;
+    }
+
+.interview-details {
+    padding: 0px;
+}
+
+    .interview-details h2 {
+        font-size: 17px;
+        color: #fff;
+        font-weight: 600;
+        margin-top: 0px;
+    }
+
+    .interview-details p {
+        font-size: 12px;
+        color: #fff;
+        font-weight: 400;
+        margin: 0px;
+    }
+
+.interview-attendees {
+    padding: 15px 0px;
+}
+
+    .interview-attendees h4 {
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .interview-attendees a.attendees-thumb {
+        display: inline-block;
+        margin: 5px 5px 0px 0px;
+        text-align: center;
+    }
+
+        .interview-attendees a.attendees-thumb img {
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            border: 4px solid rgb(255 255 255 / 10%);
+            margin-bottom: 2px;
+            transition: 0.4s ease;
+        }
+
+        .interview-attendees a.attendees-thumb span {
+            display: block;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .interview-attendees a.attendees-thumb:hover img {
+            transform: rotate(360deg);
+            transition: 0.4s ease;
+        }
+
+.interview-time-counter {
+    position: absolute;
+    left: 1%;
+    bottom: 1.8%;
+    background: rgb(0 0 0 / 29%);
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 15px;
+    border-radius: 100px;
+}
+
+.interview-chat {
+    height: 45%;
+    position: absolute;
+    bottom: 1vh;
+    left: 15px;
+    width: 91%;
+    border-radius: 10px;
+}
+
+.interview-chat-input {
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+    border-radius: 0px 0px 7px 7px;
+}
+
+.interview-chat-input-textarea {
+    width: 100%;
+    resize: none;
+    background: hsl(0deg 0% 0% / 22%);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+    .interview-chat-input-textarea:focus {
+        outline: none;
+    }
+
+.interview-chat-input-send {
+    background: #4caf50;
+    display: inline-block;
+    color: #fff;
+    float: right;
+    font-size: 14px;
+    padding: 2px 15px;
+    border-radius: 3px;
+    margin-top: 5px
+}
+
+    .interview-chat-input-send:hover {
+        color: #fff;
+        background: #218525;
+    }
+
+.interview-chat-message-left {
+    margin-bottom: 20px;
+}
+
+    .interview-chat-message-left p {
+        display: inline-block;
+        background: rgb(0 0 0 / 32%);
+        color: #fff;
+        border-radius: 7px 7px 7px 0px;
+        font-size: 13px;
+        padding: 4px 10px;
+        margin-bottom: 3px;
+    }
+
+.interview-chat-message-right {
+    margin-bottom: 20px;
+    padding-right: 15px;
+}
+
+    .interview-chat-message-right p {
+        display: inline-block;
+        background: rgb(0 0 0 / 32%);
+        color: #fff;
+        border-radius: 7px 7px 0px 7px;
+        font-size: 13px;
+        padding: 4px 10px;
+        margin-bottom: 3px;
+    }
+
+    .interview-chat-message-left h6, .interview-chat-message-right h6 {
+        color: #fff;
+        font-size: 12px;
+        margin: 0px;
+    }
+
+.interview-chat-box {
+    height: calc(100% - 70px);
+    overflow: auto;
+}
+
+.interview-attendees-box {
+    height: 155px;
+    overflow: auto;
+}
+
+.owl-nav {
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    background: rgb(0 0 0 / 39%) !important;
+    width: 30px !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    position: absolute !important;
+    left: -5px !important;
+    bottom: 0 !important;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    background: rgb(0 0 0 / 39%) !important;
+    width: 30px !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    position: absolute !important;
+    right: -15px !important;
+    bottom: 0 !important;
+}
+
+.interview-my-cam {
+    width: 100%;
+    text-align: center;
+    background: rgb(255 255 255 / 19%);
+}
+
+    .interview-my-cam img {
+        height: 100%;
+    }
+
+.interview-extra-btn {
+    display: inline-block;
+    color: #fff;
+    background: #4caf50;
+    padding: 10px 25px;
+    border-radius: 100px;
+    margin: 0px 2px;
+    font-size: 13px;
+}
+
+    .interview-extra-btn:hover {
+        cursor:pointer;
+        color: #fff;
+        background: #1f2e85;
+    }
+
+.text-right {
+    text-align: right;
+}
+
+.top-thumb-box-toggle {
+    display: inline-block;
+    background: #ef0a3f;
+    color: #fff;
+    font-size: 22px;
+    width: 26px;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+.rightbar-toggle {
+    display: inline-block;
+    background: #ef0a3f;
+    color: #fff;
+    font-size: 22px;
+    width: 22px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px 0px 0px 4px;
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+
+    .rightbar-toggle:hover, .top-thumb-box-toggle:hover {
+        opacity: 0.8;
+        color: #fff;
+    }
+
+.full-height {
+    min-height: 100vh;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.interview-rightbar-toggle {
+    margin-right: -26%;
+    transition: 0.4s ease;
+}
+
+/* 30April2022 DK */
+.status-sm-2 {
+    font-size: 13px !important;
+    padding: 10px 0px
+}
+
+.mt-15 {
+    margin-top: 15px !important
+}
+
+.float-left-dk {
+    float: left !important;
+}
+
+.right-bar-close-i {
+    position: relative;
+    top: 4px;
+}
+
+.bottom-button-i {
+    position: relative;
+    top: 8px
+}
+
+.dk-table tr td {
+    vertical-align: middle;
+}
+
+    .dk-table tr td:last-child {
+        text-align: right;
+    }
+
+.interview-alert-btn {    
+    display: inline-block;
+    color: black !important;
+    background: #ffc107 !important;
+    padding: 10px 25px;
+    border-radius: 100px;
+    margin: 0px 2px;
+    font-size: 13px;
+}
+    .interview-alert-btn:hover {
+        cursor: pointer;      
+    }

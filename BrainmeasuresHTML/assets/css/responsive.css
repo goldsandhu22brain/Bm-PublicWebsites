@@ -589,6 +589,12 @@
 	.case-studies-page .challenge-section .wrap{
 		padding-bottom: 0;
 	}
+	.case-studies-page .testimonials-section .slick-slider .slick-prev{
+		left: 40%;
+	}
+	.case-studies-page .testimonials-section .slick-slider .slick-next{
+		right: 40%;
+	}
 	
 }
 @media screen and (max-width:767px) {
@@ -703,12 +709,7 @@
 	.case-studies-page .testimonials-section .slick-slider .slick-next{
 		top: 120%;
 	}
-	.case-studies-page .testimonials-section .slick-slider .slick-prev{
-		left: 40%;
-	}
-	.case-studies-page .testimonials-section .slick-slider .slick-next{
-		right: 40%;
-	}
+	
 	.case-studies-page .hero-section .cell-2 .cell-wrap,
 	.case-studies-page .hero-section .cell-2 .cell-bottom,
 	.case-studies-page .hero-section .cell-3,

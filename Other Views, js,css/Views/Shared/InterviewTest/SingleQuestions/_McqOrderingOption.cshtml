@@ -1,0 +1,33 @@
+﻿@model BM.Models.TestSystem.Mcq
+@{
+
+}
+@Html.Partial("InterviewTest/_McqDisplayQuestionSection", @Model.QuestionInRichText)
+<div class="col-sm-12 mt-40 mb-40">
+    <div class="row">
+        <div class="col-sm-12">
+            <table class="match-question-table">
+                @foreach (var subQuestion in Model.MultiQuestion)
+                {
+                    <tr>
+                        <td><h2>@subQuestion.QuestionInRichText</h2></td>
+                        <td><img src="images/arrow.png"></td>
+                        <td><span class="dropzone"><span class="word-empty"></span></span></td>
+                    </tr>
+                }
+            </table>
+        </div>
+        <div class="col-sm-12 match-bottom-bar mt-30">
+            <p class="mb-0">Select the answers from these options</p>
+            <ul class="answers match-answer-bottom">
+                @int index=0;
+                @foreach (var eachOption in Model.Option)
+                {
+                    var id = "ordering" + @eachOption.Id.ToString();
+                    <li class="dropzone"><span class="btn btn-outline-dark word-fill match-answer" data="@index" draggable="true" data-option-id="@eachOption.Id.ToString()">@eachOption.Display</span></li>
+                    { index = index + 1; }
+                }
+            </ul>
+        </div>
+    </div>
+</div>

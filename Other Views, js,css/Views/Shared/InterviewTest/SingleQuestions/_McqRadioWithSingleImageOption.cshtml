@@ -1,0 +1,28 @@
+﻿@using ProctorPlatform.Helpers
+@using BM.Shared.Helper
+@model BM.Models.TestSystem.Mcq
+@{
+    var imgUrl = @HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Authority) + "/ExamMedias/" + Model.QuestionInRichText;
+}
+@Html.Partial("InterviewTest/_McqDisplayQuestionSection", @Model.QuestionTitleInRichText)
+<div class="col-sm-12 mb-40">
+    <div class="row">
+		<div class="col-sm-12 question-image-resizing">
+			<img onerror="this.src='https://cdn.brainmeasures.com/Interview/QuestionImageNotFound.jpg';" src='https://cdn.brainmeasures.com/Interview/QuestionImageBlank.jpg' data-lazysrc1="@imgUrl" class="image-max-full">
+
+		</div>
+        <div class="col-sm-4">
+            <ul class="radio-link-btn">
+                @foreach (var eachOption in Model.Option)
+                {
+                    var id = "imageRadio" + eachOption.Id.ToString();
+                    <li>
+                        <input type="radio" id="@id" name="dia-option" value="@eachOption.OptionNo" checked="@eachOption.IsChecked"
+                               data-option-id="@eachOption.Id.ToString()" />
+                        <label for="@id">@eachOption.Display</label>
+                    </li>
+                }
+            </ul>
+       </div>     
+    </div>
+</div>

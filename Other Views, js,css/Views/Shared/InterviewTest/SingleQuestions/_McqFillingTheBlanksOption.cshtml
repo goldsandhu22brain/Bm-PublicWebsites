@@ -1,0 +1,27 @@
+﻿@model Shared.Models.Exam.Mcq
+@{
+    var searchWord = "$space$";
+    var replaceHtmlText = "<div class=\"droppable\" ondrop=\"drop(event)\" ondragover=\"allowDrop(event)\"></div>";
+    var DisplayContent = Model.QuestionInRichText.Replace(searchWord, replaceHtmlText);
+    
+}
+<div class="tab reading">
+    <h4>
+        <div class="drop-area">
+          @Html.Raw(DisplayContent)
+        </div>
+    </h4>
+    <ol class="btn-group list-group list-group-numbered toolbox" role="group" aria-label="Basic checkbox toggle button group">
+        @if (Model.Option != null) 
+        { 
+            foreach (var eachOption in Model.Option)
+            {
+                var id = "drag" + eachOption.Id.ToString();
+                <li class="draggable list-group-item  border-0 py-1" id="@id" draggable="true" value="@eachOption.Id.ToString()" ondragstart="drag(event)" data-option-id="@eachOption.Id.ToString()">
+                    @eachOption.Display
+                    <i class="fa fa-times cancel" aria-hidden="true"></i>
+                </li>
+            }
+        }
+    </ol>
+</div>

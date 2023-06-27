@@ -1,0 +1,119 @@
+﻿@using ProctorPlatform.Helpers
+@using BM.Website.Helper
+@using System;
+@using BM.Models.TestSystem;
+@model BM.Models.TestSystem.Mcq
+@{
+
+    int loopCounter = 2;
+    bool hasPreviousAnswers = (Model.UserAnswers != null);
+    UserAnswer userAns = null;
+    List<string> imageUrls = new List<string>();
+}
+<style>
+    [type=radio] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+        [type=radio] + img {
+            width: 35px;
+            margin-bottom: 10px;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+
+            [type=radio] + img:hover {
+                transform: scale(1.1);
+                transition: 0.4s;
+            }
+        /* CHECKED STYLES */
+        [type=radio]:checked + img {
+            cursor: pointer;
+            transform: scale(1.2);
+            background: #ffd93b;
+            padding: 5px;
+            border-radius: 4px;
+        }
+</style>
+@Html.Partial("InterviewTest/_McqDisplayQuestionSection", @Model.QuestionTitleInRichText)
+<br />
+@Html.Partial("InterviewTest/Components/_QuestionInRichText", @Model.QuestionInRichText)
+<br />
+<div class="col-sm-12 mt-10 mb-30">
+    <table class="table table-bordered question-group-table">
+        <thead>
+            <tr>
+                <th>Option</th>
+                @if (Model.QuestionType == BM.Models.Enum.QuestionType.SituationalMostLeast)
+                {
+                    <th>Most Appropriate</th>
+                    <th>Least Appropriate</th>
+                    loopCounter = 2;
+                    //This is to set no of loop to Run,  also we need to handle the JS switch to read values area also somehow based on this type. so we can use 1 cshtml to cover all situational question logic
+                }
+                else if (Model.QuestionType == BM.Models.Enum.QuestionType.SituationalTrueFalseCannotTell)
+                {
+                    <th>True</th>
+                    <th>False</th>
+                    <th>Cannot Tell</th>
+                    loopCounter = 3;
+                }
+                else if (Model.QuestionType == BM.Models.Enum.QuestionType.SituationalAgreeDisAgree5Options)
+                {
+                    <th>Strongly Agree</th>
+                    <th>Somewhat Agree</th>
+                    <th>Neither Agree Nor Disagree</th>
+                    <th>Somewhat Disagree</th>
+                    <th>Strongly Disagree</th>
+                    loopCounter = 5;
+
+                    imageUrls.Add(Helper.GetCdnUrl("/Psychometric/TestImage/5-agree.png"));
+                    imageUrls.Add(Helper.GetCdnUrl("/Psychometric/TestImage/4-slightly-agree.png"));
+                    imageUrls.Add(Helper.GetCdnUrl("/Psychometric/TestImage/3-neutral.png"));
+                    imageUrls.Add(Helper.GetCdnUrl("/Psychometric/TestImage/2-slightly-disagree.png"));
+                    imageUrls.Add(Helper.GetCdnUrl("/Psychometric/TestImage/1-disagree.png"));
+                }
+            </tr>
+        </thead>
+        @foreach (BM.Models.TestSystem.Option option in Model.Option)
+        {
+            <tr>
+                <td>@Html.Raw(option.Display)</td>
+
+                @for (int i = 0; i < loopCounter; i++)
+                {
+                    string rName = "s" + i;
+                    var optId = i + 1;
+                    bool isChecked = false;
+                    var optionId = option.Id.ToString() + "_" + optId.ToString();
+                    if (hasPreviousAnswers && Model.UserAnswers.Count() > i)
+                    {
+                        userAns = Model.UserAnswers[i];
+                        var answerId = userAns.Id.ToString() + "_" + userAns.OptionNo[0];
+                        if (optionId == answerId)
+                        {
+                            isChecked = true;
+                        }
+                    }
+                    <td>
+                        <label class="radio-dk">
+                            <input type="radio" name="@rName" id="@option.Id" value="@optId" data-option-id="@optionId" checked="@isChecked">
+
+                            @if (loopCounter == 5)
+                            {
+                                <img src="@imageUrls.ElementAt(i)" /><br>
+                            }
+                            else
+                            {
+                                <span class="checkmark"></span>
+                            }
+                        </label>
+                    </td>
+                }
+            </tr>
+        }
+    </table>
+</div>

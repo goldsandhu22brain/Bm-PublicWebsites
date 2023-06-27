@@ -1,0 +1,122 @@
+﻿/*.csTooltip {
+        height: 163px !important;
+        padding: 40px 30px 10px 30px ;
+        width: 310px !important;
+        font-size: 11px !important;
+    }*/
+/*a:hover {
+        width: 350px !important;
+         height: 100px !important;
+    }*/
+.select2-results__option {
+    padding: 0 6px 0 6px;
+}
+.tserach {
+    margin-right: 200px !important;
+}
+#pageloaddiv {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: url('https://cdn.brainmeasures.com/Images/Candidate/loading.gif') no-repeat center center;
+    display: none;
+}
+@font-face {
+    font-family: Dnormal;
+    src: url(../fonts/GOTHIC.TTF);
+}
+
+.Chrmodal {
+    background-color: rgba(88, 88, 88, 0.95) !important;
+    text-align: center;
+    padding: 1% !important;
+    border: 1px solid rgba(39, 39, 39, 0.47);
+    border-radius: 15px;
+}
+
+    .Chrmodal h1 {
+        font-family: Dnormal;
+        color: #fff;
+        text-shadow: 2px 2px #000000;
+    }
+
+        .Chrmodal h1 span {
+            font-family: Dbold;
+            font-size: 50px;
+        }
+
+    .Chrmodal h3 {
+        font-family: Dnormal;
+        color: #deec14;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-top: 55px;
+    }
+
+        .Chrmodal h3 span {
+            font-family: Dnormal;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-top: 55px;
+        }
+
+    .Chrmodal p {
+        font-family: Dnormal;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    .Chrmodal .btn {
+        background: #deec14;
+        color: #000000;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-family: Dbold;
+    }
+
+.cart {
+    cursor: pointer !important
+}
+
+.wish {
+    cursor: pointer !important
+}
+
+.Chrmodal h3 span {
+    font-family: Dnormal;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 55px;
+}
+
+.Chrmodal p {
+    font-family: Dnormal;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.Chrmodal .btn {
+    background: #deec14;
+    color: #000000;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: Dbold;
+}
+
+.ui-autocomplete {
+    max-height: 300px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding to account for vertical scrollbar */
+    padding-right: 20px;
+}
+
+.ui-menu .ui-menu-item {
+    margin: 5px !important;
+}

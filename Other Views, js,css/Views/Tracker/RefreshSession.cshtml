@@ -1,0 +1,12 @@
+﻿
+@{
+	Layout = null;	
+}
+<head>
+	<meta http-equiv="refresh" content="30" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+</head>
+@Html.Raw(DateTime.Now)
+<iframe src='@ViewBag.PublicWebsiteDomain' height="0" width="0" hidden="hidden" />

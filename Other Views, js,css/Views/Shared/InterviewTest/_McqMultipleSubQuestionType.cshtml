@@ -1,0 +1,34 @@
+﻿@using BM.Models.Enum;
+@model BM.Models.TestSystem.Mcq
+@{
+//MultipleQuestion means = 700
+}
+
+@switch (Model.MultiQuestion.FirstOrDefault().QuestionType)
+{
+	case QuestionType.RadioButton:
+	case QuestionType.RadioButtonWithImageOnlyQuestion:
+		@Html.Partial("InterviewTest/MultipleSubQuestions/_RadioButton", Model);
+		break;
+	case QuestionType.ImageRadioButtonWithImageOnlyQuestion:
+		@Html.Partial("InterviewTest/MultipleSubQuestions/_ImageRadioWithImageOption", Model);
+		break;
+	case QuestionType.CheckBox:
+		@Html.Partial("InterviewTest/MultipleSubQuestions/_CheckBox", Model);
+		break;
+	case QuestionType.SituationalMostLeast:
+		@Html.Partial("InterviewTest/MultipleSubQuestions/_SituationalMostLeast", Model);
+		break;
+
+	case QuestionType.SituationalAgreeDisAgree5Options:
+		@Html.Partial("InterviewTest/MultipleSubQuestions/_SituationalAgreeDisAgree5Options", Model);
+		break;
+
+	case QuestionType.SituationalTrueFalseCannotTell:
+		@Html.Partial("InterviewTest/MultipleSubQuestions/_SituationalTrueFalseCannotTell", Model);
+		break;
+
+
+
+		//TODO: Add other types also
+}

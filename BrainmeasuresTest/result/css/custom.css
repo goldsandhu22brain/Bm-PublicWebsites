@@ -379,7 +379,7 @@ a:focus {
 .table-edite-class {
     margin-top: 40px;
 }
-
+.overall-score-div
 .table-edite-class .table-dark th {
     background-color: #000;
     font-size: 16px;
@@ -581,6 +581,9 @@ a:focus {
     .award img.big{
 		max-width: 250px;
     }
+	.overall-score-div {
+		padding: 20px!important;
+	}
 }
 @media (max-width: 575.98px) {
 	.chart_list li a{

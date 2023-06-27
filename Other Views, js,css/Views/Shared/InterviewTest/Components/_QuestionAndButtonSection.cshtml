@@ -1,0 +1,50 @@
+﻿@using BM.Models.TestSystem;
+@using System.Linq;
+@using System.Diagnostics;
+@model BM.Models.TestSystem.Mcq
+
+@{
+	var examTestProperties = ViewBag.ExamTestProperties != null ? ViewBag.ExamTestProperties as ExamTestProperties : new ExamTestProperties();
+	var testTopic = ViewBag.TestTopic != null ? ViewBag.TestTopic as TestTopic : new TestTopic();
+
+	var McqCollectionIds = ViewBag.QuestionIds as List<TestRecordStatus>;
+
+	var defaultQuestion = Model != null ? Model : new Mcq();
+
+	var questionNo = defaultQuestion.QuestionId;
+	var totalQuestions = testTopic == null || testTopic.NoOfQuestion == 0 ? McqCollectionIds.Count() : testTopic.NoOfQuestion;
+			
+	var totalExamTime = testTopic == null || testTopic.DurationMinutes == 0 ? 30 : testTopic.DurationMinutes;
+	
+	var subQuestionType = defaultQuestion.MultiQuestion != null && defaultQuestion.MultiQuestion.Any() ? defaultQuestion.MultiQuestion.FirstOrDefault().QuestionType.ToString() : string.Empty;
+	var allQuestionsAnswered = !(McqCollectionIds.Take(McqCollectionIds.Count - 1).Any(x => x.HasAnswered == false));
+
+}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+<div class="col-sm-9 test-question-container" id="testDiv">
+	<h3 class="question-title">Question @questionNo</h3>
+	@Html.Partial("InterviewTest/_McqTestQuestionsType", defaultQuestion)
+	<div class="col-sm-12 text-buttons pt-5!important mt-5!important">
+		@if (examTestProperties.AllowedToGoBack && questionNo > 1)//we dont show previous for 1st Question
+		{
+			var beforeQtnNo = questionNo - 2;
+			<a class="text-previous-btn" data-question-id="@McqCollectionIds[beforeQtnNo].Id.ToString()" data-current-questionType="@defaultQuestion.QuestionType" data-sub-questionType="@subQuestionType" data-current-question="@defaultQuestion.Id" id="prevBtn" onclick="nextPrev(this)">
+				<i class="bi bi-chevron-left"></i>Previous
+			</a>
+		}
+		@if (questionNo == totalQuestions)//we dont show next for Last Question
+		{
+			<a class="text-next-btn" data-current-question="@defaultQuestion.Id" data-current-questionType="@defaultQuestion.QuestionType" data-sub-questionType="@subQuestionType" id="submitBtn" data-allquestion-answered="@allQuestionsAnswered" onclick="submitTest(this)">
+				Submit<i class="bi bi-chevron-right"></i>
+			</a>
+		}
+		else if (questionNo != totalQuestions && examTestProperties.CanSkip)
+		{
+			<a class="text-next-btn" data-current-question="@defaultQuestion.Id" data-current-questionType="@defaultQuestion.QuestionType" data-sub-questionType="@subQuestionType" data-question-id="@McqCollectionIds[questionNo].Id.ToString()" id="nextBtn" onclick="nextQuestion(this)">
+				Next<i class="bi bi-chevron-right"></i>
+			</a>
+		}
+	</div>
+</div>
