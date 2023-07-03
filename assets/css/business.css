@@ -1,4 +1,11 @@
-﻿.gray-section .home-video-course-cat-box-2 img{
+﻿#intro {
+  background: #024b76;
+}
+.home-individual{
+	background: #f7f7f7;
+}
+
+.gray-section .home-video-course-cat-box-2 img{
 	margin: 0px auto;
 }
 
