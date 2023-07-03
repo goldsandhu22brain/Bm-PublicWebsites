@@ -1,4 +1,46 @@
-﻿.navbar-toggle.collapsed .close,
+﻿@font-face {
+    font-family: Dnormal;
+    src: url(../fonts/GOTHIC.TTF)
+}
+
+@font-face {
+    font-family: Dbold;
+    src: url(../fonts/GOTHICB.TTF)
+}
+
+@font-face {
+    font-family: DNewnormal;
+    src: url(../fonts/NewNormal.otf)
+}
+
+@font-face {
+    font-family: DNewbold;
+    src: url(../fonts/NewBold.otf)
+}
+
+@font-face {
+    font-family: DGotham;
+    src: url(../fonts/GothamLight.ttf)
+}
+
+@font-face {
+    font-family: DGothamBold;
+    src: url(../fonts/Gotham.ttf)
+}
+
+@font-face {
+    font-family: DboldG;
+    src: url(../fonts/GOTHICB.TTF)
+}
+
+@font-face {
+    font-family: DnormalG;
+    src: url(../fonts/GOTHIC.TTF)
+}
+
+
+
+.navbar-toggle.collapsed .close,
 .navbar-toggle:not(.collapsed)>.icon-bar {
     display: none;
 }
