@@ -38,6 +38,23 @@
     font-family: DnormalG;
     src: url(https://testbmui.brainmeasures.com/Assets/fonts/GOTHIC.TTF);
 }
+
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/MyriadProBold.woff2);
+}
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/MyriadProBold.woff);
+}
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/MyriadProBold.ttf);
+}
+
+
+
+
 /* ---------Fonts css start------------  */
 @font-face {
     font-family: 'MyriadProRegular';
