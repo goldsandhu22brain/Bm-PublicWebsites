@@ -118,6 +118,12 @@ function onDetectRTCLoaded() {
     else {
         Isvalid = false;
     }
+    if ($(".bg-danger.d-none")?.length == 6) {
+        $(".step-next-3")?.show();
+    }
+    else {
+        $(".step-next-3")?.hide();
+    }
 }
 
 function reloadDetectRTC() {

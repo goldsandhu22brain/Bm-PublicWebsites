@@ -9,16 +9,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/common.0f87f4df.css">
-    <link rel="stylesheet" href="/style.13b0a558.css">
+    <link rel="stylesheet" href="./common.13a32fe2.css">
+    <link rel="stylesheet" href="./style.737eeddc.css">
     <meta charset="UTF-8">
 </head>
 
 <body class="admin-conference">
     <header>
-        <img class="logo" src="https://www.100ms.live/assets/logo.svg">
-        <button id="leave-btn" class="btn-danger hide">Leave Room</button>
-        <button id="end-room-button" class="btn-danger">End Room</button>
+        <h2 class="screen-share-status text-center"></h2>
+        <span class="recording-icon hide"><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.992 20.59c4.706 0 8.591-3.885 8.591-8.583s-3.893-8.583-8.6-8.583c-4.698 0-8.574 3.885-8.574 8.583s3.884 8.583 8.583 8.583Zm0-1.71a6.84 6.84 0 0 1-6.857-6.873 6.832 6.832 0 0 1 6.848-6.865 6.86 6.86 0 0 1 6.882 6.865 6.85 6.85 0 0 1-6.873 6.873ZM12 15.26A3.25 3.25 0 0 0 15.254 12 3.254 3.254 0 0 0 12 8.745a3.256 3.256 0 0 0-3.262 3.254A3.252 3.252 0 0 0 12 15.26Z" fill="#F00"></path></svg></span>
 
     </header>
 
@@ -32,7 +31,6 @@
 
         <div class="container-fluid">
             <div class="screen-share-container video-section-border">
-                <h2 class="screen-share-status"></h2>
                 <video class="screen-share-video" autoplay="true" muted="true" playsinline="true"></video>
             </div>
             <div id="controls" class="presenter-controller text-center">
@@ -43,7 +41,9 @@
                 <button id="request-proof" class="btn-control interview-extra-btn btn-no-rounded">Request Proof</button>
                 <button id="view-new-proof" class="btn-control interview-extra-btn btn-no-rounded" disabled="disabled">View New Proof</button>
                 <button id="load-test" class="btn-control btn-enable-start-test">Enable Start Quiz</button>
-                <button id="screen-share" class="btn-control btn-share-screen btn-left-rounded hide">ScreenShare</button>
+                <button id="screen-share" class="btn-control btn-share-screen btn-no-rounded hide">ScreenShare</button>
+                <button id="leave-btn" class="btn-control btn-no-rounded hide">Leave Room</button>
+                <button id="end-room-button" class="btn-control">End Room</button>
             </div>
 
             <div class="sidebar video-box" id="video">
@@ -53,7 +53,7 @@
 
             <div class="sidebar chat-box" id="chat">
                 <div class="open-chat-message">
-                    <div class="all-center"><button id="closechat" class="btn-close"></button><h3 class="mb-0">Messages</h3></div>
+                    <div class="all-center"><button id="closechat" class="btn-close"></button><h4 class="mb-0">Messages</h4></div>
                     <div id="messages" class="messages"></div>
                     <input id="msgInput" placeholder="Type your message...">
                     <button id="msg-cand" class="btn-control">Send to Candidate</button>
@@ -74,7 +74,18 @@ function UpdateGlobalVariable(scopeData) {
   GlobalObj = scopeData;
   GlobalObj.IsProctorLive = scopeData.TestType == "20";
 }</script>
-    <script src="/admin.221fa65a.js"></script>
+
+<script>
+$('.btn-loader').on('click', function() {
+    var $this = $(this);
+  $this.button('loading');
+    setTimeout(function() {
+       $this.button('reset');
+   }, 5000);
+});
+</script>
+
+    <script src="./admin.6c51945d.js"></script>
 
     <div class="modal" id="test-myModal" role="dialog">
         <div class="modal-dialog modal-fullscreen">

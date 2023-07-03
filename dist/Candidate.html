@@ -9,8 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./common.0f87f4df.css">
-    <link rel="stylesheet" href="./style.13b0a558.css">
+    <link rel="stylesheet" href="./common.13a32fe2.css">
+    <link rel="stylesheet" href="./style.737eeddc.css">
     <meta charset="UTF-8">
     <script src="https://cdn.WebRTC-Experiment.com/DetectRTC.js"></script>
     <script src="https://cdn.webrtc-experiment.com/screenshot.js"></script>
@@ -18,10 +18,21 @@
 </head>
 
 <body class="candidate-page">
-    <header class="d-none">
-        <button id="leave-btn" class="btn-danger">Leave Room</button>
+    <header class="">
+          
+        <div class="screen-share-status test-header-react mb-0">
+            <div class="col-sm-4">
+                <h4>Brainmeasures Test Platform</h4>
+            </div>
+            <div class="col-sm-5 text-right">
+                <h5 class="screen-share-status-text"></h5>
+            </div>
+        </div>
+
+        <button id="leave-btn" class="btn-danger d-none">Leave Room</button>
+        <span class="recording-icon hide"><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.992 20.59c4.706 0 8.591-3.885 8.591-8.583s-3.893-8.583-8.6-8.583c-4.698 0-8.574 3.885-8.574 8.583s3.884 8.583 8.583 8.583Zm0-1.71a6.84 6.84 0 0 1-6.857-6.873 6.832 6.832 0 0 1 6.848-6.865 6.86 6.86 0 0 1 6.882 6.865 6.85 6.85 0 0 1-6.873 6.873ZM12 15.26A3.25 3.25 0 0 0 15.254 12 3.254 3.254 0 0 0 12 8.745a3.256 3.256 0 0 0-3.262 3.254A3.252 3.252 0 0 0 12 15.26Z" fill="#F00"></path></svg></span>
     </header>
-    <ul class="nav nav-pills mb-3 d-none1" id="pills-tab" role="tablist">
+    <ul class="nav nav-pills mb-3 d-none" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link" id="pills-browser-check-tab" data-bs-toggle="pill" data-bs-target="#pills-browser-check" type="button" role="tab" aria-controls="pills-browser-check" aria-selected="true">Browser Check</button>
         </li>
@@ -48,21 +59,20 @@
         <!--Step 1 Start Browser Check-->
         <div class="tab-pane show" id="pills-browser-check" role="tabpanel" aria-labelledby="pills-browser-check-tab">
             <div class="box-body table-responsive overlowVisible">
-                <div class="col-md-12 stepcontent stepone">
+                <div class="col-md-12 stepcontent stepone text-center">
                     <h1>You Must have to give this test in <span>Google Chrome</span> Browser</h1>
                     <p>The very first step is to use Google chrome browser to give Brainmeasures Test, Other browsers like Mozilla, safari, etc do not supports with our Proctor system, So you must have to use Chrome browser. If you are not having chrome then you can download it from given below Link.</p>
                     <div class="text-center">
-						<img src="./chrome.23928897.png">
-						<div>
-							<a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank" class="stepbtn">Download Google Chrome</a>
-						</div>
-						<div id="controls">
-							<button class="step-next-1 btn-control btn-rounded" onclick="javascript:change_tab('technical-config')">Next</button>
-						</div>
-					</div>
+                        <img src="./chrome.23928897.png">
+                        <div>
+                            <a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank" class="stepbtn">Download Google Chrome</a>
+                        </div>
+                        <div id="controls">
+                            <button class="step-next-1 btn-control btn-rounded" onclick="javascript:change_tab('technical-config')">Next</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
 
         </div>
         <!--Step 1 End-->
@@ -70,9 +80,11 @@
         <div class="tab-pane" id="pills-technical-config" role="tabpanel" aria-labelledby="pills-technical-config-tab">
             <div class="box-body table-responsive overlowVisible">
                 <div class="col-md-12 stepcontent stepone">
-                    <h1>Your system must have fullfil this Technical Requirements for Proctor testing</h1>
-                    <p>Given below the Minimum and recommended Technical Requirements for Proctor Testing, Please check twice before go ahead.</p>
-                   
+                    <div class="text-center">
+                        <h2>Your system must have fullfil this Technical Requirements for Proctor testing</h2>
+                        <p>Given below the Minimum and recommended Technical Requirements for Proctor Testing, Please check twice before go ahead.</p>
+                    </div>
+                    <hr style="display:none;">
                     <table class="table table-bordered table-responsive steptble">
                         <thead>
                             <tr>
@@ -152,20 +164,19 @@
                     <p class="stepnote"><span>NOTE:</span> At this time we do not support the Google Chromebook, Andorid Tablets, iPad, Linux OS, Microsoft Surface, etc. however, we are working on solutions to accommodate every platform.</p>
                 </div>
             </div>
-			<div id="controls" class="text-center">
-				<button class="step-next-2 btn-control btn-rounded" id="load-system-check">Next</button>
-			</div>
-            
+            <div id="controls" class="text-center">
+                <button class="step-next-2 btn-control btn-rounded" id="load-system-check">Next</button>
+            </div>
         </div>
         <!--Step 2 End-->
         <!--Step 3 Start System Check-->
         <div class="tab-pane" id="pills-system-check" role="tabpanel" aria-labelledby="pills-system-check-tab">
-         
+
         </div>
         <!--Step 3 End System Check-->
         <!--Step 4 Start ScreenShare-->
         <div class="tab-pane" id="pills-screenshare" role="tabpanel" aria-labelledby="pills-screenshare-tab">
-            <div class="col-md-12 stepcontent stepone">
+            <div class="col-md-12 stepcontent stepone text-center">
                 <h2 style="font-weight: bold; text-transform: uppercase; font-size: 30px">
                     <span style="color: #777; font-weight: normal">In order to move ahead,</span><br>
                     you must have to share your screen via Brainmeasures's Screen Sharing Extension,<br>
@@ -178,46 +189,49 @@
                 </div>
                 <div class="col-md-4 col-md-offset-4">
                     <!--<a id="screen-share" class="stepfaq" style="width: 100%; cursor: pointer">SHARE YOUR SCREEN</a>-->
-					<div id="controls" class="text-center">
-						 <button id="screen-share" class="btn-control btn-share-screen btn-rounded">SHARE YOUR SCREEN</button>
-					</div>
+                    <div id="controls" class="text-center">
+                       <!-- <button type="button" id="screen-share" class="btn-control btn-share-screen btn-rounded btn-loader">SHARE YOUR SCREEN</button>-->
+						<input type="submit" id="screen-share" data-loading-text="Loading..." class="btn-control btn-share-screen btn-rounded btn-loading" value="SHARE YOUR SCREEN" />
+                    </div>
                 </div>
             </div>
-			<div id="controls" class="text-center">
-				<button class="step-next-4 btn-control btn-rounded" onclick="javascript:change_tab('authentication')">Next</button>
-			</div>
+            <div id="controls" class="text-center">
+                <button class="step-next-4 btn-control btn-rounded" onclick="javascript:change_tab('authentication')">Next</button>
+            </div>
         </div>
         <!--Step 4 End ScreenShare-->
         <!--Step 5 Start Candidate Authentication-->
         <div class="tab-pane" id="pills-authentication" role="tabpanel" aria-labelledby="pills-authentication-tab">
 
             <div class="col-md-12 stepcontent stepone">
-                <h1><span>Candidate</span> Authentication</h1>
+                <div class="text-center">
+                    <h1><span>Candidate</span> Authentication</h1>
 
-                <!--<div>
-                <img id="imgProfile" src="../UserImages/Indv/Images/1299.jpg" style="width:220px;">
-            </div>-->
-                <h2 style="color: #707070">
-                    Hello! <b><span id="lblUserName">jasdeep</span></b>. We wish you All the very Best, you are about to give the Brainmeasures' Test.<br>
-                    In order to go ahead please insert your registered Email Id and Mobile Number in given below fields. In the Next step you will be asked the Security questions which you have answered at Sign Up Time. and yes also make ready your Identity Card and Qualification Certificate, These will be needed when the Proctor Screening will get started. Thanks !
-                </h2>
+                    <!--<div>
+                        <img id="imgProfile" src="../UserImages/Indv/Images/1299.jpg" style="width:220px;">
+                    </div>-->
+                    <h2 style="color: #707070">
+                        Hello! <b><span id="lblUserName">jasdeep</span></b>. We wish you All the very Best, you are about to give the Brainmeasures' Test.<br>
+                        In order to go ahead please insert your registered Email Id and Mobile Number in given below fields. In the Next step you will be asked the Security questions which you have answered at Sign Up Time. and yes also make ready your Identity Card and Qualification Certificate, These will be needed when the Proctor Screening will get started. Thanks !
+                    </h2>
+                </div>
                 <hr>
                 <div class="col-md-6 col-md-offset-3">
-					<form class="requires-validation" novalidate>
-						<div class="mb-3">
-							<input name="ctl00$cntCartMaster$txtEmail" type="email" id="txtEmail" class="authtxt" placeholder="Registered Email" required />
-							<div class="valid-feedback">Email field is valid!</div>
+                    <div class="proctor-form requires-validation" novalidate="">
+                        <div class="mb-3">
+                            <input name="ctl00$cntCartMaster$txtEmail" type="email" id="txtEmail" class="authtxt" placeholder="Registered Email" required="">
+                            <div class="valid-feedback">Email field is valid!</div>
                             <div class="invalid-feedback">Email field cannot be blank!</div>
-						</div>
-						<div class="mb-3">
-							<input name="ctl00$cntCartMaster$txtMobile" type="number" id="txtMobile" class="authtxt" placeholder="Mobile Number" required />
-							<div class="valid-feedback">Mobile Number is valid!</div>
-							<div class="invalid-feedback">Mobile Number cannot be blank!</div>
-						</div>
-						<div id="controls">
-							<button class="step-next-5 btn-control btn-rounded" id="authenticateSubmit">Submit</button>
-						</div>
-					</form>
+                        </div>
+                        <div class="mb-3">
+                            <input name="ctl00$cntCartMaster$txtMobile" type="number" id="txtMobile" class="authtxt" placeholder="Mobile Number" required="">
+                            <div class="valid-feedback">Mobile Number is valid!</div>
+                            <div class="invalid-feedback">Mobile Number cannot be blank!</div>
+                        </div>
+                        <div id="controls">
+                            <button class="step-next-5 btn-control btn-rounded" id="authenticateSubmit">Submit</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -240,7 +254,7 @@
 
                 <div class="container-fluid">
                     <div class="screen-share-container video-section-border">
-                        <h2 class="screen-share-status test-header-react mb-0"></h2>                                                                      
+                     
                         <div id="InjectTest"> </div>
                     </div>
                     <div class="timer"></div>
@@ -248,7 +262,10 @@
                         <button id="mute-aud" class="btn-control btn-mute-audio btn-left-rounded hide">Mute</button>
                         <button id="mute-vid" class="btn-control btn-hide-video hide">Hide</button>
                         <!--<button id="screen-share" class="btn-control btn-share-screen btn-left-rounded hide">ScreenShare</button>-->
-                        <button id="load-test" class="btn-control btn-start-test btn-left-rounded">Start Quiz</button>
+                        <!--<button id="load-test" class="btn-control btn-start-test btn-left-rounded">Start Quiz</button>-->
+						
+						<input type="submit" id="load-test" data-loading-text="Loading..." class="btn-control btn-start-test btn-left-rounded" value="Start Quiz" />
+						
                         <button id="proof-test" class="btn-control btn-start-test btn-left-rounded hide" onclick="NewProofUpload()">Upload Proof</button>
                         <button id="start-test" class="btn-control btn-start-test btn-left-rounded">Start Test</button>
                         <button id="full-screen" class="btn-control btn-full-screen hide">Full Screen</button>
@@ -275,9 +292,29 @@
         </div>
         <!--Step 7 End Load Test-->
     </div>
-  
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	
+	
+<script>
+$('#screen-share').click(function() {
+  var btn = $(this);
+  btn.val(btn.data("loading-text")); setTimeout(function() {
+	  btn.val('SHARE YOUR SCREEN');
+	}, 2000);
+  });
+</script>
+
+<script>
+$('#load-test').click(function() {
+  var btn = $(this);
+  btn.val(btn.data("loading-text")); setTimeout(function() {
+	  btn.val('Start Quiz');
+	}, 2000);
+  });
+</script>
+	
     <script>var GlobalObj = {
   IsProctorLive: true
 };
@@ -296,26 +333,9 @@ function UpdateGlobalVariable(scopeData) {
 }</script>
 
 
-<script>
-(function () {
-'use strict'
-const forms = document.querySelectorAll('.requires-validation')
-Array.from(forms)
-  .forEach(function (form) {
-    form.addEventListener('submit', function (event) {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
 
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
-
-</script>
     <!-- JS -->
-    <script src="./candidate.2ea2c2ad.js"></script>
+    <script src="./candidate.1b889879.js"></script>
 
 
 

@@ -39,9 +39,9 @@ header {
     display: none !important;
 }
 
-form {
+.proctor-form {
     max-width: 450px;
-    margin: 30px auto;
+    /*margin: 30px auto;*/
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     padding: 20px;
@@ -468,6 +468,8 @@ form h2,
         font-size: 15px;
         font-weight: 500;
     }
+.w-100 {
+    width: 100% !important;
+}
 
-
-/*# sourceMappingURL=/common.0f87f4df.css.map */
+/*# sourceMappingURL=/common.13a32fe2.css.map */

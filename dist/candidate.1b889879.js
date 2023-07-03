@@ -40455,6 +40455,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.CameraCaptureCallBack = CameraCaptureCallBack;
 exports.CaptureUserPhoto = CaptureUserPhoto;
+exports.DisableActivities = DisableActivities;
 exports.Events = Events;
 exports.GetResolution = GetResolution;
 exports.GoInFullscreen = GoInFullscreen;
@@ -40493,12 +40494,7 @@ function Events() {
   openchat.onclick = fn_openchat;
   closechat.onclick = fn_closechat;
   closevideo.onclick = fn_closevideo;
-  //setTimeout(() => {
-  //	if (!IsFullScreenCurrently())
-  //		GoInFullscreen(document.documentElement);
-  //}, 5000);
 }
-
 var canDisplayAlert = false;
 function PushTracking(activityId) {
   var questionNo = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "";
@@ -40601,6 +40597,10 @@ function NotificationCall(hmsNotifications, HMSNotificationTypes, CallBack) {
         CallBack(notification);
         break;
       case HMSNotificationTypes.TRACK_REMOVED:
+        ToastMessage("Track removed - ".concat(notification.data));
+        CallBack(notification);
+        break;
+      case HMSNotificationTypes.TRACK_MUTED:
         ToastMessage("Track removed - ".concat(notification.data));
         CallBack(notification);
         break;
@@ -40724,6 +40724,11 @@ function CameraCaptureCallBack(response) {
     ToastMessage("".concat(type, " - ").concat(msg));
   }
 }
+function DisableActivities() {
+  //  Disable_Keys();
+  //  DisableMouseRightClick();
+  //   DisableCutCopyPaste();
+}
 function EmptyStream(blob, Type) {
   var IsEmpty = blob == null || blob.size == 0;
   if (IsEmpty) {
@@ -40768,29 +40773,15 @@ function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _ty
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-function setRecordingState(state) {
-  var prop = "recordingStarted";
-  var data = hmsStore.getState((0, _hmsVideoStore.selectAppData)(prop));
-  hmsActions.setAppData(prop, state);
-}
-function GetRecordingUrl() {
-  var prop = "recordingUrl";
-  var data = hmsStore.getState((0, _hmsVideoStore.selectAppData)(prop));
-  return data;
-}
-
 // Initialize HMS Store
 var hmsManager = new _hmsVideoStore.HMSReactiveStore();
 hmsManager.triggerOnSubscribe();
 var hmsStore = hmsManager.getStore();
 var hmsActions = hmsManager.getActions();
 var hmsNotifications = hmsManager.getNotifications();
-var hmsStats = hmsManager.getStats();
 var currPeerId = '..';
 console.log('all speakers', hmsStore.getState(_hmsVideoStore.selectSpeakers));
 var scopeData;
-//screensharing roles
-//const roles = ["presenter", "guest"];
 var ProofAdminPeerId = "";
 function NotificationCallBack(Notify) {
   var dataProp = Notify != null && Notify.data;
@@ -40827,10 +40818,9 @@ function NotificationCallBack(Notify) {
           show(startTestButton);
         }
         if (localLatestMetadata["NewProof"]) {
-          if (confirm("Admin asking to upload the proof")) {
-            (0, _jquery.default)('#proof-test').removeClass('hide');
-            ProofAdminPeerId = peer.id;
-          }
+          (0, _jquery.default)('#proof-test').removeClass('hide');
+          ProofAdminPeerId = peer.id;
+          localLatestMetadata["NewProof"] = false;
         }
         hmsActions.changeMetadata(localLatestMetadata);
       }
@@ -40847,7 +40837,7 @@ var peersContainer = document.querySelector(".peers-container");
 var leaveBtn = document.getElementById("leave-btn");
 var screenShareVideo = document.querySelector(".screen-share-video");
 var screenShareBtn = document.querySelector(".btn-share-screen");
-var screenShareStatus = document.querySelector(".screen-share-status");
+var screenShareStatus = document.querySelector(".screen-share-status-text");
 var presenterController = document.querySelector(".presenter-controller");
 var startTestButton = document.getElementById("load-test");
 var startButton = document.getElementById("start-test");
@@ -40860,7 +40850,6 @@ var params = new Proxy(new URLSearchParams(window.location.search), {
 });
 var msgInputElement = document.getElementById("msgInput");
 var msgsElement = document.getElementById("messages");
-var refreshPage = document.querySelector("#btnRefresh");
 var newProofUpload = document.getElementById("proof-test");
 
 // store peer IDs already rendered to avoid re-render on mute/unmute
@@ -40883,13 +40872,13 @@ window.pauseAll = false;
 var UserAlertTrigger = function UserAlertTrigger() {};
 var SendButtonClick = null;
 window.stopRecordingForce = {
-  camera: false,
-  screen: false,
+  //  camera: false,
+  //  screen: false,
   photo: false
 };
 window.CompletedRecording = isProctorLive == true || isProctor == true ? {
-  camera: false,
-  screen: false,
+  // camera: false,
+  // screen: false,
   photo: false
 } : null;
 var PhotoCaptureTimer = 5;
@@ -40943,11 +40932,6 @@ function LoadQuestion() {
   var isExists = document.getElementById('InjectTest');
   var testingId = null;
   if (isExists != null) {
-    //PushTracking(200);
-    // $("#fullScreenElement").hide();
-    // var fullScreen = GetDisplayAlert("fullScreen");
-    // var mouseActivity = GetDisplayAlert("mouseActivity");
-    // var debuggerCheck = GetDisplayAlert("debuggerCheck");
     var url = getBaseUrl() + "/LoadTest?Id=" + (testingId !== null && testingId !== void 0 ? testingId : params.OfferingId);
     console.log(url);
     _jquery.default.ajax({
@@ -40966,12 +40950,10 @@ function LoadQuestion() {
           (0, _common.PushTracking)(70);
           (0, _jquery.default)('#InjectTest').replaceWith(result);
           InitiatingTimer();
+          hide(presenterController);
         };
         HeaderText(callBack);
-        //  Timer();
-        //  Disable_Keys();
-        //  DisableMouseRightClick();
-        //   DisableCutCopyPaste();
+        //DisableActivities();
       },
 
       complete: function complete() {
@@ -41010,10 +40992,7 @@ function _HeaderText() {
               var result = response;
               (0, _jquery.default)(".screen-share-status").html(result);
               callBack();
-              //  Timer();
-              //  Disable_Keys();
-              //  DisableMouseRightClick();
-              //   DisableCutCopyPaste();
+              //DisableActivities();
             },
 
             complete: function complete() {
@@ -41040,14 +41019,14 @@ function _GetRoomCode() {
     return _regeneratorRuntime().wrap(function _callee2$(_context2) {
       while (1) switch (_context2.prev = _context2.next) {
         case 0:
-          url = getBaseUrl() + "/GetRoomCodeByRedemptionId";
+          url = getBaseUrl() + "/GetRoomCodeByRedemptionId"; // fullScreenEnable();
           _jquery.default.ajax({
             url: url,
             type: 'GET',
             dataType: 'json',
             data: {
               redemptionId: _redemptionId,
-              role: "broadcaster"
+              role: "candidate"
             },
             crossDomain: true,
             cache: false,
@@ -41099,11 +41078,7 @@ function _InitialLoad() {
               scopeData = GlobalObj; //assigning the global variable in NodeScope
 
               GetRoomCode(GlobalObj.RedemptionId);
-              //JoinRoom(params.Name, "aai-jjfw-quy"); // candidate
-              //  Timer();
-              //  Disable_Keys();
-              //  DisableMouseRightClick();
-              //   DisableCutCopyPaste();
+              //DisableActivities();
             },
 
             complete: function complete() {
@@ -41266,26 +41241,14 @@ function _startRecording() {
     return _regeneratorRuntime().wrap(function _callee7$(_context7) {
       while (1) switch (_context7.prev = _context7.next) {
         case 0:
-          //var url = "https://kgetechnologies-livestream-1056.app.100ms.live/preview/ivn-wwwk-jnx/broadcaster?skip_preview=true&name=recorder&skip_preview_headful=true"
-          ////https://<domain>.app.100ms.live/preview/<room_id>/<role>?skip_preview=true
-          //const params = {
-          //    meetingURL: url || GetRecordingUrl() || window.location.href,
-          //    //rtmpURLs: [""],
-          //    resolution: GetResolution(RTMP_RECORD_DEFAULT_RESOLUTION),
-          //    record: true
-          //};
-          //try {
-          //    setRecordingState(true);
-          //    var recordObj = await hmsActions.startRTMPOrRecording(params);
-          //} catch (err) {
-          //    console.error("failed to start RTMP/recording", err);
-          //}
           url = getBaseUrl() + "/StartRecording";
           _jquery.default.ajax({
             url: url,
             type: 'GET',
             dataType: 'json',
-            data: {},
+            data: {
+              redemptionId: scopeData.RedemptionId
+            },
             crossDomain: true,
             cache: false,
             beforeSend: function beforeSend() {
@@ -41293,11 +41256,14 @@ function _startRecording() {
             },
             success: function success(response) {
               var result = response;
+              (0, _jquery.default)(".recording-icon").removeClass("hide");
+              RecordingIconDisplay(true);
             },
             complete: function complete() {
               (0, _jquery.default)('.ajax-loader').css("visibility", "hidden");
             },
             error: function error() {
+              (0, _common.ToastMessage)("Screen Recorder failed to Initiate", true);
               //    WarningSection(fullScreen, mouseActivity, debuggerCheck);
             }
           });
@@ -41311,25 +41277,21 @@ function _startRecording() {
 }
 function stopRecording() {
   return _stopRecording.apply(this, arguments);
-}
+} // Joining the room
 function _stopRecording() {
   _stopRecording = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee8() {
     var url;
     return _regeneratorRuntime().wrap(function _callee8$(_context8) {
       while (1) switch (_context8.prev = _context8.next) {
         case 0:
-          //try {
-          //    setRecordingState(false);
-          //    await hmsActions.stopRTMPAndRecording();
-          //} catch (err) {
-          //    console.error("failed to stop RTMP/recording", err);
-          //}
           url = getBaseUrl() + "/StopRecording";
           _jquery.default.ajax({
             url: url,
             type: 'GET',
             dataType: 'json',
-            data: {},
+            data: {
+              redemptionId: scopeData.RedemptionId
+            },
             crossDomain: true,
             cache: false,
             beforeSend: function beforeSend() {
@@ -41337,11 +41299,14 @@ function _stopRecording() {
             },
             success: function success(response) {
               var result = response;
+              (0, _jquery.default)(".recording-icon").removeClass("hide").addClass("hide");
+              RecordingIconDisplay(false);
             },
             complete: function complete() {
               (0, _jquery.default)('.ajax-loader').css("visibility", "hidden");
             },
             error: function error() {
+              (0, _common.ToastMessage)("Screen Recorder failed to Stop", true);
               //    WarningSection(fullScreen, mouseActivity, debuggerCheck);
             }
           });
@@ -41353,84 +41318,21 @@ function _stopRecording() {
   }));
   return _stopRecording.apply(this, arguments);
 }
-function startHLSWithoutPrams() {
-  return _startHLSWithoutPrams.apply(this, arguments);
-}
-function _startHLSWithoutPrams() {
-  _startHLSWithoutPrams = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee9() {
-    return _regeneratorRuntime().wrap(function _callee9$(_context9) {
-      while (1) switch (_context9.prev = _context9.next) {
-        case 0:
-          _context9.prev = 0;
-          _context9.next = 3;
-          return hmsActions.startHLSStreaming();
-        case 3:
-          _context9.next = 8;
-          break;
-        case 5:
-          _context9.prev = 5;
-          _context9.t0 = _context9["catch"](0);
-          console.error("failed to start hls", _context9.t0);
-        case 8:
-        case "end":
-          return _context9.stop();
-      }
-    }, _callee9, null, [[0, 5]]);
-  }));
-  return _startHLSWithoutPrams.apply(this, arguments);
-}
-function startHLS() {
-  return _startHLS.apply(this, arguments);
-} // Joining the room
-function _startHLS() {
-  _startHLS = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee10() {
-    var params;
-    return _regeneratorRuntime().wrap(function _callee10$(_context10) {
-      while (1) switch (_context10.prev = _context10.next) {
-        case 0:
-          params = {
-            variants: [{
-              meetingURL: "",
-              metadata: "landscape"
-            }]
-          };
-          params.recording = {
-            singleFilePerLayer: true,
-            hlsVod: false
-          }; // to enable recording
-          _context10.prev = 2;
-          _context10.next = 5;
-          return hmsActions.startHLSStreaming(params);
-        case 5:
-          _context10.next = 10;
-          break;
-        case 7:
-          _context10.prev = 7;
-          _context10.t0 = _context10["catch"](2);
-          console.error("failed to start hls", _context10.t0);
-        case 10:
-        case "end":
-          return _context10.stop();
-      }
-    }, _callee10, null, [[2, 7]]);
-  }));
-  return _startHLS.apply(this, arguments);
-}
 function JoinRoom(_x3, _x4) {
   return _JoinRoom.apply(this, arguments);
 }
 function _JoinRoom() {
-  _JoinRoom = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee11(userName, roomCode) {
+  _JoinRoom = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee9(userName, roomCode) {
     var authToken, joining;
-    return _regeneratorRuntime().wrap(function _callee11$(_context11) {
-      while (1) switch (_context11.prev = _context11.next) {
+    return _regeneratorRuntime().wrap(function _callee9$(_context9) {
+      while (1) switch (_context9.prev = _context9.next) {
         case 0:
-          _context11.next = 2;
+          _context9.next = 2;
           return hmsActions.getAuthTokenByRoomCode({
             roomCode: roomCode
           });
         case 2:
-          authToken = _context11.sent;
+          authToken = _context9.sent;
           // join room using username and auth token
           joining = hmsActions.join({
             userName: userName,
@@ -41452,9 +41354,9 @@ function _JoinRoom() {
           (0, _common.Events)();
         case 5:
         case "end":
-          return _context11.stop();
+          return _context9.stop();
       }
-    }, _callee11);
+    }, _callee9);
   }));
   return _JoinRoom.apply(this, arguments);
 }
@@ -41485,9 +41387,6 @@ function renderPeer(peer) {
         if (connectionQuality.downlinkQuality >= 3.0) {
           (0, _jquery.default)('#speed-error').addClass('d-none');
           (0, _jquery.default)('#speed-success').removeClass('d-none');
-          //if (Isvalid) {
-          //    $('#go-button').removeAttr('disabled');
-          //}
         } else {
           (0, _jquery.default)('#speed-error').removeClass('d-none');
           (0, _jquery.default)('#speed-success').addClass('d-none');
@@ -41520,6 +41419,19 @@ function renderPeer(peer) {
       };
     }
   }, (0, _hmsVideoStore.selectVideoTrackByID)(peer.videoTrack));
+  hmsStore.subscribe(function (track) {
+    if (!track) {
+      return;
+    }
+    console.log(track);
+  }, (0, _hmsVideoStore.selectPeerAudioByID)(peer.id)); //get the audio track
+  hmsStore.subscribe(function (track) {
+    if (!track) {
+      return;
+    }
+    console.log(track);
+  }, _hmsVideoStore.selectDominantSpeaker); // get the current Speaker
+  //hmsStore.subscribe(activeSpeaker, selectDominantSpeaker);
   peerTileDiv.append(videoElement);
   peerTileDiv.append(nonVideoElement);
   peerTileDiv.append(peerTileName);
@@ -41551,7 +41463,7 @@ function renderPeers() {
             var camVideo = document.getElementsByClassName("peer-video");
             camVideo = camVideo.length > 0 ? camVideo[0] : camVideo;
             camVideo.pause();
-            wndow.CompletedRecording.photo = true;
+            window.CompletedRecording.photo = true;
           };
           render.deferred && render.deferred(callBack);
         }
@@ -41566,9 +41478,11 @@ function show(el) {
   el.style.display = "";
 }
 function handleLeave() {
+  var callBack = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
   stopRecording().then(function (values) {
     hmsActions.leave();
     peersContainer.innerHTML = "";
+    callBack && callBack();
   });
 }
 function fullScreenEnable() {
@@ -41593,13 +41507,6 @@ function TriggerFSEvents() {
     document.addEventListener('webkitfullscreenchange', exitHandler, false);
   }
 }
-
-//document.onkeydown = function (ev) {
-//    //console.log(ev.keyCode);
-//    if (ev.keyCode === 27 || ev.keyCode === 122) {
-//        DisplayAlert("fullScreen");
-//    }
-//}
 
 // *************************
 // Change screen based on connected to room or not
@@ -41627,13 +41534,13 @@ function handleScreenShare() {
   return _handleScreenShare.apply(this, arguments);
 }
 function _handleScreenShare() {
-  _handleScreenShare = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee12() {
+  _handleScreenShare = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee10() {
     var screenShareOn;
-    return _regeneratorRuntime().wrap(function _callee12$(_context12) {
-      while (1) switch (_context12.prev = _context12.next) {
+    return _regeneratorRuntime().wrap(function _callee10$(_context10) {
+      while (1) switch (_context10.prev = _context10.next) {
         case 0:
           screenShareOn = !hmsStore.getState(_hmsVideoStore.selectIsSomeoneScreenSharing);
-          _context12.next = 3;
+          _context10.next = 3;
           return hmsActions.setScreenShareEnabled(screenShareOn);
         case 3:
           //screenShareBtn.textContent = screenShareOn ? "Stop" : "Share";
@@ -41643,9 +41550,9 @@ function _handleScreenShare() {
           showScreenShareVideo();
         case 5:
         case "end":
-          return _context12.stop();
+          return _context10.stop();
       }
-    }, _callee12);
+    }, _callee10);
   }));
   return _handleScreenShare.apply(this, arguments);
 }
@@ -41653,48 +41560,49 @@ function showScreenShareVideo() {
   return _showScreenShareVideo.apply(this, arguments);
 }
 function _showScreenShareVideo() {
-  _showScreenShareVideo = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee13() {
+  _showScreenShareVideo = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee11() {
     var screenShareOn, amIScreenSharing, presenter, screenShareVideoTrack;
-    return _regeneratorRuntime().wrap(function _callee13$(_context13) {
-      while (1) switch (_context13.prev = _context13.next) {
+    return _regeneratorRuntime().wrap(function _callee11$(_context11) {
+      while (1) switch (_context11.prev = _context11.next) {
         case 0:
           screenShareOn = hmsStore.getState(_hmsVideoStore.selectIsSomeoneScreenSharing);
           if (!screenShareOn) {
-            _context13.next = 16;
+            _context11.next = 17;
             break;
           }
           amIScreenSharing = hmsStore.getState(_hmsVideoStore.selectIsLocalScreenShared);
           presenter = hmsStore.getState(_hmsVideoStore.selectPeerScreenSharing);
           screenShareVideoTrack = hmsStore.getState((0, _hmsVideoStore.selectScreenShareByPeerID)(presenter === null || presenter === void 0 ? void 0 : presenter.id));
           if (!amIScreenSharing) {
-            _context13.next = 11;
+            _context11.next = 12;
             break;
           }
+          fullScreenEnable();
           screenShareStatus.textContent = "Preparing to start test!!!";
           if (!scopeData.IsProctorLive) {
             startTestButton.style.display = "";
           }
           (0, _common.PushTracking)(71); //start the sharing
-          _context13.next = 14;
+          _context11.next = 15;
           break;
-        case 11:
+        case 12:
           hide(screenShareStatus);
           //show(screenShareVideo);          
-          _context13.next = 14;
+          _context11.next = 15;
           return hmsActions.attachVideo(screenShareVideoTrack === null || screenShareVideoTrack === void 0 ? void 0 : screenShareVideoTrack.id, screenShareVideo);
-        case 14:
-          _context13.next = 19;
+        case 15:
+          _context11.next = 19;
           break;
-        case 16:
+        case 17:
           (0, _common.PushTracking)(72); //stopped the sharing
           screenShareStatus.textContent = "Preparing to start test!!!";
           //hide(screenShareVideo);
-          show(screenShareStatus);
+          //show(screenShareStatus);
         case 19:
         case "end":
-          return _context13.stop();
+          return _context11.stop();
       }
-    }, _callee13);
+    }, _callee11);
   }));
   return _showScreenShareVideo.apply(this, arguments);
 }
@@ -41725,9 +41633,13 @@ function sendMessage() {
   }
 }
 function AfterSubmitTest(response) {
-  (0, _jquery.default)('.conference.candidate-conference').empty();
-  (0, _jquery.default)('.conference.candidate-conference').html(response);
+  var callBack = function callBack() {
+    (0, _jquery.default)('.conference.candidate-conference').empty();
+    (0, _jquery.default)('.conference.candidate-conference').html(response);
+  };
+  handleLeave(callBack);
 }
+window.AfterSubmitTest = AfterSubmitTest;
 function InitiatingTimer() {
   //for timer
   var timer;
@@ -41759,12 +41671,25 @@ function InitiatingTimer() {
     }
   }
 }
-var UserNewProofTrigger = function UserNewProofTrigger(proof, UrlId) {
-  //  connection.send({ ViewNewProof: proof, Id: UrlId });
-
-  //const presenter = hmsStore.getState(selectPeerScreenSharing);
+var RecordingIconDisplay = function RecordingIconDisplay(isRecording) {
   var localPeerId = hmsStore.getState(_hmsVideoStore.selectLocalPeerID); //candidate peer
-  //var localPeerId = localPeerId?.id;
+
+  console.log("candidate peerid" + localPeerId);
+  if (localPeerId) {
+    var local_metadata = hmsStore.getState((0, _hmsVideoStore.selectPeerMetadata)(localPeerId));
+    var newLocalMetadata = _objectSpread(_objectSpread({}, local_metadata), {}, {
+      IsRecording: isRecording
+    });
+    var obj = {};
+    obj[localPeerId] = newLocalMetadata;
+    hmsActions.changeMetadata(obj);
+    var oldLocalMetadata = _objectSpread({}, local_metadata);
+    // update the old Metadata
+    hmsActions.changeMetadata(oldLocalMetadata);
+  }
+};
+var UserNewProofTrigger = function UserNewProofTrigger(proof, UrlId) {
+  var localPeerId = hmsStore.getState(_hmsVideoStore.selectLocalPeerID); //candidate peer
   console.log("ProofAdminPeerId peerid>>" + ProofAdminPeerId);
   console.log("candidate peerid" + localPeerId);
   if (localPeerId) {
@@ -41843,7 +41768,7 @@ leaveBtn.onclick = handleLeave;
 startTestButton.onclick = LoadQuestion;
 newProofUpload.onclick = NewProofUpload;
 startButton.onclick = function () {
-  fullScreenEnable();
+  // fullScreenEnable();
   SystemCheck();
   if (scopeData.IsProctorLive) {
     screenShareStatus.textContent = "Please wait for Admin !!!";
@@ -41858,9 +41783,6 @@ fullScreen.onclick = function () {
 
 // Cleanup if user refreshes the tab or navigates away
 window.onunload = window.onbeforeunload = handleLeave;
-refreshPage.onclick = function () {
-  window.location.reload();
-};
 msgInputElement.onkeypress = function (e) {
   if (e.keyCode === 13) {
     sendMessage();
@@ -41880,13 +41802,7 @@ hmsStore.subscribe(showScreenShareVideo, _hmsVideoStore.selectPeers);
 // Reactive state - renderPeers is called whenever there is a change in the peer-list
 hmsStore.subscribe(renderPeers, _hmsVideoStore.selectPeers);
 hmsStore.subscribe(renderMessageList, _hmsVideoStore.selectHMSMessages);
-
+hide(screenShareStatus);
 //Bind Events - End
-
-hmsStore.subscribe(updateAudioLevel, (0, _hmsVideoStore.selectPeerAudioByID)(currPeerId));
-hmsStore.subscribe(activeSpeaker, _hmsVideoStore.selectDominantSpeaker);
-//candidate screenshare
-//handleScreenShare();
-//InitialLoad(); // intial load candidate
 },{"../node_modules/@100mslive/hms-video-store":"j5Na","./common":"LDbG","../node_modules/jquery":"HlZQ"}]},{},["De0C"], null)
-//# sourceMappingURL=/candidate.2ea2c2ad.js.map
+//# sourceMappingURL=/candidate.1b889879.js.map

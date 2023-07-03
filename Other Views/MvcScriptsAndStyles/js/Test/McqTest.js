@@ -375,6 +375,7 @@ function SubmitTestAutomatically(callBack = null) {
 		screen: true,
 		photo: true
 	};
+	window.stopRecordingForce = stopRecordingForce;
 	var url = getBaseUrl() + "/SubmitTest";
 	PushTracking(270);
 	$.ajax({
@@ -402,7 +403,7 @@ function SubmitTestAutomatically(callBack = null) {
 			CompletedRecording = CompletedRecording ?? window.CompletedRecording;
 			if (CompletedRecording != null) {
 				var stopinterval = setInterval(() => {
-					if (CompletedRecording.screen && CompletedRecording.photo && CompletedRecording.camera) {
+					if (CompletedRecording.photo) {
 						clearInterval(stopinterval);
 						fn(callBack);
 					}
@@ -423,13 +424,14 @@ function SubmitTestAutomatically(callBack = null) {
 
 window.SubmitTestAutomatically = SubmitTestAutomatically;
 
-function callSubmit(input) {
+function callSubmit(input, callBack = null) {
 	stopRecordingForce = stopRecordingForce ?? window.stopRecordingForce;
 	stopRecordingForce = {
 		camera: true,
 		screen: true,
 		photo: true
 	};
+	window.stopRecordingForce = stopRecordingForce; // nodejs 
 	var currentQuestionId = $(input).attr('data-current-question');
 	var currentQuestionType = $(input).attr('data-current-questionType');
 	var subQuestionType = $(input).attr('data-sub-questionType');
@@ -449,23 +451,28 @@ function callSubmit(input) {
 		},
 		success: function (response) {
 			var result = response;
-			var fn = function () {
-				$('.ajax-loader').css("visibility", "hidden");
-				$('#testDiv').replaceWith(result);
-				ReStartTimer();
-				//clearInterval(timerExamInterval);
-				WarningSection(fullScreen, mouseActivity, debuggerCheck);
+			var fn = function (callbackFn) {
+				if (callbackFn) {
+					callbackFn(result);
+				}
+				else {
+					$('.ajax-loader').css("visibility", "hidden");
+					$('#testDiv').replaceWith(result);
+					ReStartTimer();
+					//clearInterval(timerExamInterval);
+					WarningSection(fullScreen, mouseActivity, debuggerCheck);
+				}
 			}
 			if (CompletedRecording != null) {
 				var stopinterval = setInterval(() => {
-					if (CompletedRecording.screen && CompletedRecording.photo && CompletedRecording.camera) {
+					if (CompletedRecording.photo) {
 						clearInterval(stopinterval);						
-						fn();
+						fn(callBack);
 					}
 				}, 1000);
 			}
 			else {				
-				fn();
+				fn(callBack);
 			}
 		},
 		complete: function () {
@@ -479,14 +486,15 @@ function callSubmit(input) {
 }
 //submitting test
 function submitTest(input) {
+	var testCallBack = window.AfterSubmitTest;
 	var allAnswered = $(input).attr('data-allquestion-answered');
 	if (allAnswered == true || allAnswered == 'true' || allAnswered == 'True') {
-		callSubmit(input);
+		callSubmit(input, testCallBack);
 	}
 	else {
 		$('#test-confiramtion').modal("show");
-		$('#SubmitYes').unbind('click', () => { callSubmit(input); });
-		$('#SubmitYes').bind('click', () => { callSubmit(input); $("#test-confiramtion").modal("hide"); });
+		$('#SubmitYes').unbind('click', () => { callSubmit(input, testCallBack); });
+		$('#SubmitYes').bind('click', () => { callSubmit(input, testCallBack); $("#test-confiramtion").modal("hide"); });
 		$('#testclose').unbind('click', () => { $("#test-confiramtion").modal("hide"); });
 		$('#testclose').bind('click', () => { $("#test-confiramtion").modal("hide"); });
 

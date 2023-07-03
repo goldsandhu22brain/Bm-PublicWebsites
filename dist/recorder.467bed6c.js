@@ -40447,325 +40447,15 @@ if ( typeof noGlobal === "undefined" ) {
 return jQuery;
 } );
 
-},{"process":"g5IB"}],"LDbG":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.CameraCaptureCallBack = CameraCaptureCallBack;
-exports.CaptureUserPhoto = CaptureUserPhoto;
-exports.Events = Events;
-exports.GetResolution = GetResolution;
-exports.GoInFullscreen = GoInFullscreen;
-exports.IsFullScreenCurrently = IsFullScreenCurrently;
-exports.NotificationCall = NotificationCall;
-exports.PushTracking = PushTracking;
-exports.RTMP_RECORD_DEFAULT_RESOLUTION = void 0;
-exports.ScreenSharedType = ScreenSharedType;
-exports.ToastMessage = ToastMessage;
-exports.dataURItoBlob = dataURItoBlob;
-var _jquery = _interopRequireDefault(require("../node_modules/jquery"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator.return && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, catch: function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-var START_TEST = 'START_TEST';
-function Events() {
-  var openvideo = document.getElementById("openvideo");
-  var openchat = document.getElementById("openchat");
-  var closechat = document.getElementById("closechat");
-  var closevideo = document.getElementById("closevideo");
-  function fn_openvideo() {
-    document.getElementById("video").style.visibility = "inherit";
-  }
-  function fn_closevideo() {
-    document.getElementById("video").style.visibility = "hidden";
-  }
-  function fn_openchat() {
-    document.getElementById("chat").style.visibility = "inherit";
-  }
-  function fn_closechat() {
-    document.getElementById("chat").style.visibility = "hidden";
-  }
-  openvideo.onclick = fn_openvideo;
-  openchat.onclick = fn_openchat;
-  closechat.onclick = fn_closechat;
-  closevideo.onclick = fn_closevideo;
-  //setTimeout(() => {
-  //	if (!IsFullScreenCurrently())
-  //		GoInFullscreen(document.documentElement);
-  //}, 5000);
-}
-
-var canDisplayAlert = false;
-function PushTracking(activityId) {
-  var questionNo = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "";
-  _jquery.default.ajax({
-    url: '/Tracker/ReportActions',
-    type: 'POST',
-    data: {
-      ActivityType: activityId,
-      Details: questionNo
-    },
-    success: function success(response) {
-      //if (isProctorLive) {
-      //UserAlertTrigger();				
-      //}
-    },
-    error: function error() {}
-  });
-}
-///* Get into full screen */
-function GoInFullscreen(element) {
-  if (element.requestFullscreen) element.requestFullscreen();else if (element.mozRequestFullScreen) element.mozRequestFullScreen();else if (element.webkitRequestFullscreen) element.webkitRequestFullscreen();else if (element.msRequestFullscreen) element.msRequestFullscreen();
-}
-
-///* Is currently in full screen or not */
-function IsFullScreenCurrently() {
-  var full_screen_element = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement || null;
-
-  // If no element is in full-screen
-  if (full_screen_element === null) return false;else return true;
-}
-function GetResolution(recordingResolution) {
-  var resolution = {};
-  if (recordingResolution.width) {
-    resolution.width = recordingResolution.width;
-  }
-  if (recordingResolution.height) {
-    resolution.height = recordingResolution.height;
-  }
-  if (Object.keys(resolution).length > 0) {
-    return resolution;
-  }
-}
-var RTMP_RECORD_DEFAULT_RESOLUTION = {
-  width: 1280,
-  height: 720
-};
-exports.RTMP_RECORD_DEFAULT_RESOLUTION = RTMP_RECORD_DEFAULT_RESOLUTION;
-function NotificationCall(hmsNotifications, HMSNotificationTypes, CallBack) {
-  var DisplayAlert = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : true;
-  canDisplayAlert = DisplayAlert;
-  var unsubscribe = hmsNotifications.onNotification(function (notification) {
-    // you can use the following to show appropriate toast notifications for eg.
-
-    switch (notification.type) {
-      case HMSNotificationTypes.PEER_LIST:
-        ToastMessage("".concat(notification.data, " are the peers in the room")); // received right after join
-        break;
-      case HMSNotificationTypes.PEER_JOINED:
-        ToastMessage("".concat(notification.data.name, " joined"));
-        break;
-      case HMSNotificationTypes.PEER_LEFT:
-        ToastMessage("".concat(notification.data.name, " left"));
-        break;
-      case HMSNotificationTypes.NEW_MESSAGE:
-        ToastMessage("".concat(notification.data.message, " received from ").concat(notification.data.senderName));
-        break;
-      case HMSNotificationTypes.ERROR:
-        ToastMessage("[Error] ".concat(notification.data.message, ", [Error Code] ").concat(notification.data.code));
-        break;
-      case HMSNotificationTypes.RECONNECTING:
-        ToastMessage('[Reconnecting]', notification.data);
-        break;
-      case HMSNotificationTypes.RECONNECTED:
-        ToastMessage('[Reconnected]');
-        break;
-      case HMSNotificationTypes.NAME_UPDATED:
-      case HMSNotificationTypes.ROLE_UPDATED:
-        ToastMessage("peer updated(".concat(notification.type, "), new peer="), notification.data);
-        break;
-      case HMSNotificationTypes.METADATA_UPDATED:
-        CallBack(notification);
-        break;
-      case HMSNotificationTypes.TRACK_DEGRADED:
-        ToastMessage("track - ".concat(notification.data, " degraded due to poor network"));
-        break;
-      case HMSNotificationTypes.TRACK_RESTORED:
-        ToastMessage("track - ".concat(notification.data, " recovered"));
-        break;
-      case HMSNotificationTypes.ROOM_ENDED:
-        ToastMessage("room ended, reason - ".concat(notification.data.reason));
-        break;
-      case HMSNotificationTypes.REMOVED_FROM_ROOM:
-        ToastMessage("removed from room, reason - ".concat(notification.data.reason));
-        break;
-      case HMSNotificationTypes.DEVICE_CHANGE_UPDATE:
-        ToastMessage("device changed - ".concat(notification.data));
-        break;
-      case HMSNotificationTypes.TRACK_ADDED:
-        ToastMessage("Track added - ".concat(notification.data));
-        CallBack(notification);
-        break;
-      case HMSNotificationTypes.TRACK_REMOVED:
-        ToastMessage("Track removed - ".concat(notification.data));
-        CallBack(notification);
-        break;
-      default:
-        break;
-    }
-  });
-}
-function ScreenSharedType(_x, _x2) {
-  return _ScreenSharedType.apply(this, arguments);
-}
-function _ScreenSharedType() {
-  _ScreenSharedType = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(data, prefix) {
-    return _regeneratorRuntime().wrap(function _callee$(_context) {
-      while (1) switch (_context.prev = _context.next) {
-        case 0:
-          _context.t0 = data.displaySurface;
-          _context.next = _context.t0 === "monitor" ? 3 : _context.t0 === "entire" ? 3 : _context.t0 === "window" ? 5 : _context.t0 === "appl" ? 5 : _context.t0 === "browser" ? 7 : _context.t0 === "tab" ? 7 : 9;
-          break;
-        case 3:
-          PushTracking(prefix + 1);
-          return _context.abrupt("break", 9);
-        case 5:
-          PushTracking(prefix + 2);
-          return _context.abrupt("break", 9);
-        case 7:
-          PushTracking(prefix + 3);
-          return _context.abrupt("break", 9);
-        case 9:
-        case "end":
-          return _context.stop();
-      }
-    }, _callee);
-  }));
-  return _ScreenSharedType.apply(this, arguments);
-}
-function ToastMessage(msg) {
-  var display = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-  if (canDisplayAlert || display) {
-    // Get the snackbar DIV
-    var x = document.getElementById("toastMessage");
-    x.innerHTML = msg;
-    // Add the "show" class to DIV
-    x.className = "show";
-
-    // After 3 seconds, remove the show class from DIV
-    setTimeout(function () {
-      x.className = x.className.replace("show", "");
-      x.innerHTML = "";
-    }, 3000);
-  }
-}
-function dataURItoBlob(dataURI) {
-  // convert base64/URLEncoded data component to raw binary data held in a string
-  var byteString;
-  if (dataURI.split(',')[0].indexOf('base64') >= 0) byteString = atob(dataURI.split(',')[1]);else byteString = unescape(dataURI.split(',')[1]);
-  // separate out the mime component
-  var mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
-  // write the bytes of the string to a typed array
-  var ia = new Uint8Array(byteString.length);
-  for (var i = 0; i < byteString.length; i++) {
-    ia[i] = byteString.charCodeAt(i);
-  }
-  return ia;
-}
-function CaptureUserPhoto(video, callBack) {
-  try {
-    if (video == "undefined") {
-      PushTracking("514");
-      console.log("Due to no camera unable to capture photo");
-      return;
-    }
-    //Extra start
-    if (document.getElementById('canvas_photo') == null) {
-      var c = document.createElement('canvas');
-      c.setAttribute("id", "canvas_photo");
-      c.style.display = "none";
-      (document.body || document.documentElement).appendChild(c);
-    }
-    var canvas = document.getElementById('canvas_photo'); //document.getElementById('canvas');//
-
-    canvas.setAttribute("width", "480"); //480
-    canvas.setAttribute("height", "350"); //350
-    var ctx = canvas.getContext("2d");
-    ctx.drawImage(video, 0, 0, 480, 350);
-    var image = canvas.toDataURL("image/png");
-    var blob = dataURItoBlob(image);
-    if (!EmptyStream(blob, "426")) {
-      // we need to upload "File" --- not "Blob"
-      var fileObject = new File([blob], "test.png", {
-        type: 'image/png'
-      });
-      var formData = new FormData();
-
-      // recorded data
-      formData.append('File', fileObject);
-      formData.append('RecorderType', "Photo");
-      //// upload using jQuery
-      //UploadRecorder("425", formData, callBack);
-    }
-  } catch (e) {
-    PushTracking("515");
-    console.log("Error in save capture : " + e);
-  }
-}
-function CameraCaptureCallBack(response) {
-  var msg = "";
-  var type = "";
-  if (response.ActivityTypeCode == 1) {
-    msg = "User Face Not Deducted";
-    type = "NoFaceDetection";
-  } else if (response.ActivityTypeCode == 2) {
-    msg = "Multipe Faces Detected";
-    type = "MultiFaceDetection", "FaceDetectionError";
-  } else if (response.ActivityTypeCode == 4) {
-    msg = "Error Occured at Detecting Face";
-    type = "FaceDetectionError";
-  }
-  if (msg != "" && type != "") {
-    //DisplayAlert(type, msg);
-    ToastMessage("".concat(type, " - ").concat(msg));
-  }
-}
-function EmptyStream(blob, Type) {
-  var IsEmpty = blob == null || blob.size == 0;
-  if (IsEmpty) {
-    PushTracking(Type);
-  }
-  return IsEmpty;
-}
-function UploadRecorder(Type, FormData) {
-  var callbackFn = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
-  _jquery.default.ajax({
-    url: '/Tracker/UploadRecorder',
-    type: 'POST',
-    data: FormData,
-    cache: false,
-    async: false,
-    contentType: false,
-    processData: false,
-    success: function success(response) {
-      callbackFn && callbackFn(response);
-      console.log("screen recording uploaded successfully");
-    },
-    error: function error() {
-      PushTracking(Type);
-      console.log("screen recording couldnt be uploaded");
-    }
-  });
-}
-},{"../node_modules/jquery":"HlZQ"}],"ddGe":[function(require,module,exports) {
+},{"process":"g5IB"}],"DcFx":[function(require,module,exports) {
 var define;
 "use strict";
 
 var _hmsVideoStore = require("../node_modules/@100mslive/hms-video-store");
 var _jquery = _interopRequireDefault(require("../node_modules/jquery"));
-var _common = require("./common");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator.return && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, catch: function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 // Initialize HMS Store
@@ -40773,102 +40463,17 @@ var hmsManager = new _hmsVideoStore.HMSReactiveStore();
 hmsManager.triggerOnSubscribe();
 var hmsStore = hmsManager.getStore();
 var hmsActions = hmsManager.getActions();
-var hmsNotifications = hmsManager.getNotifications();
-var hmsStats = hmsManager.getStats();
-//screensharing roles
-var role = "panel";
-function NotificationCallBack(Notify) {
-  var dataProp = Notify != null && Notify.data;
-  switch (Notify.type) {
-    case _hmsVideoStore.HMSNotificationTypes.METADATA_UPDATED:
-      var peer = dataProp;
-      var PeerMetdataData = hmsStore.getState((0, _hmsVideoStore.selectPeerMetadata)(peer.id));
-      var localPeerId = hmsStore.getState(_hmsVideoStore.selectLocalPeerID);
-      var localLatestMetadata = PeerMetdataData[localPeerId];
-      if (localLatestMetadata) {
-        if (localLatestMetadata["ViewNewProof"] == true) {
-          NewProofId = localLatestMetadata["UrlId"];
-          document.getElementById("view-new-proof").removeAttribute('disabled');
-        } else if (localLatestMetadata["ViewNewProof"] == false) {
-          NewProofId = "";
-          document.getElementById("view-new-proof").removeAttribute('disabled').setAttribute('disabled', 'disabled');
-        }
-        if (localLatestMetadata["NewProof"]) {
-          if (confirm("Admin asking to upload the proof")) {
-            (0, _jquery.default)('#proof-test').removeClass('hide');
-            ProofAdminPeerId = peer.id;
-          }
-        }
-        hmsActions.changeMetadata(localLatestMetadata);
-      }
-      break;
-  }
-}
-;
-
-//Notification Element
-(0, _common.NotificationCall)(hmsNotifications, _hmsVideoStore.HMSNotificationTypes, NotificationCallBack);
 
 // HTML elements
 var conference = document.querySelector(".conference");
-var peersContainer = document.querySelector(".peers-container");
-var leaveBtn = document.getElementById("leave-btn");
 var screenShareVideo = document.querySelector(".screen-share-video");
-var muteAudioBtn = document.querySelector(".btn-mute-audio");
-var screenShareStatus = document.querySelector(".screen-share-status");
-var presenterController = document.querySelector(".presenter-controller");
-var enableStartbutton = document.querySelector(".btn-enable-start-test");
-var viewProof = document.querySelector("#view-proof");
-var reqProof = document.querySelector("#request-proof");
-var viewNewProof = document.querySelector("#view-new-proof");
 var params = new Proxy(new URLSearchParams(window.location.search), {
   get: function get(searchParams, prop) {
     return searchParams.get(prop);
   }
 });
-var msgInputElement = document.getElementById("msgInput");
-var msgsElement = document.getElementById("messages");
-// store peer IDs already rendered to avoid re-render on mute/unmute
-var renderedPeerIDs = new Set();
-var connectionTooltip = {
-  0: "Reconnecting",
-  1: "Very Bad Connection",
-  2: "Bad Connection",
-  3: "Moderate Connection",
-  4: "Good Connection",
-  5: "Excellent Connection"
-};
-connectionTooltip[-1] = "Network Unknown";
-var sendToCandidate = document.getElementById("msg-cand");
-var sendToPanel = document.getElementById("msg-panel");
 
 //Functions -Start
-function GetToolTipConnection(value) {
-  return connectionTooltip[value];
-}
-function GetColor(position, connectionScore) {
-  var defaultColor = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '#FFFFFF61';
-  var shouldBeColored = position <= connectionScore;
-  if (!shouldBeColored) {
-    return defaultColor;
-  }
-  if (connectionScore >= 4) {
-    return "#37F28D";
-  } else if (connectionScore >= 3) {
-    return "#FAC919";
-  } else if (connectionScore >= 1) {
-    return "#ED4C5A";
-  }
-  return defaultColor;
-}
-;
-function ConnectivitySVG(quality) {
-  if (quality == 0) {
-    return '<span title="' + GetToolTipConnection(quality) + '"><svg class="connection-network" width="12" height="12" viewBox="2 0 20 20" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;"><path d="M3.046 3.046a.75.75 0 0 0 0 1.06l16.847 16.848a.75.75 0 1 0 1.06-1.06L4.108 3.045a.75.75 0 0 0-1.06 0Zm.256 6.303a13.888 13.888 0 0 1 2.175-1.432l1.356 1.356c-.847.401-1.65.902-2.391 1.497a.91.91 0 0 1-1.14-1.42Zm2.066 3.625A9.79 9.79 0 0 1 8.57 11.01l1.451 1.451a7.969 7.969 0 0 0-3.42 1.854.91.91 0 1 1-1.233-1.34Zm7.503-2.543 2.563 2.563a7.968 7.968 0 0 1 1.927 1.297.91.91 0 1 0 1.227-1.346 9.79 9.79 0 0 0-5.717-2.514Zm2.391 7.271L12.05 14.49h-.057a5.698 5.698 0 0 0-1.752.277c-.852.276-1.63.75-2.267 1.386a.91.91 0 1 0 1.286 1.29 3.878 3.878 0 0 1 3.66-1.019c.683.17 1.308.521 1.807 1.019.15.15.34.236.535.259ZM9.048 6.608l1.582 1.583a12.07 12.07 0 0 1 8.928 2.584.91.91 0 0 0 1.14-1.42 13.89 13.89 0 0 0-11.65-2.747Z" fill="#FFFFFF61" transform="translate(-.333)"></path></svg></span>';
-  }
-  return '<span title="' + GetToolTipConnection(quality) + '"><svg class="connection-network" width="12" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;"><path d="M6.875 0c2.549.035 4.679.902 6.445 2.648.366.362.45.796.216 1.096-.239.306-.714.34-1.142.072a2.28 2.28 0 0 1-.341-.271C9.24.862 4.924.775 1.992 3.346c-.284.249-.594.419-.983.393-.272-.019-.49-.135-.613-.388-.125-.261-.05-.498.114-.713.073-.092.156-.177.245-.254C2.516.804 4.591.039 6.875 0Z" fill="' + GetColor(4, quality) + '" transform="translate(-.333)"></path><path d="M7.056 2.964c1.756.035 3.208.7 4.499 1.763.162.134.277.315.354.512.098.251.114.503-.075.72-.193.222-.452.259-.725.198-.293-.066-.518-.247-.738-.443a4.859 4.859 0 0 0-6.198-.26c-.166.127-.318.271-.475.409-.242.211-.513.343-.843.317-.43-.034-.679-.397-.561-.81.062-.211.181-.4.345-.546 1.265-1.162 2.733-1.836 4.417-1.86Z" fill="' + GetColor(3, quality) + '" transform="translate(-.333)"></path><path d="M7.384,6.052C8.293,6.068 9.157,6.449 9.783,7.108C10.005,7.339 10.157,7.6 10.07,7.942C9.959,8.377 9.435,8.581 9.071,8.243C7.935,7.191 6.356,7.183 5.152,8.183C4.816,8.462 4.6,8.485 4.332,8.27C4.063,8.055 3.998,7.691 4.177,7.358C4.273,7.179 4.414,7.038 4.57,6.911C5.26,6.349 6.149,6.05 7.384,6.052L7.384,6.052Z" fill="' + GetColor(2, quality) + '"></path><path d="M8.214,9.941C8.214,10.234 8.097,10.515 7.888,10.721C7.68,10.928 7.398,11.042 7.104,11.039C6.471,11.036 5.982,10.541 5.993,9.912C6.004,9.259 6.499,8.766 7.133,8.779C7.744,8.791 8.22,9.301 8.214,9.941Z" fill="' + GetColor(1, quality) + '"></path></svg></span>';
-}
-
 // Joining the room
 function JoinRoom(_x, _x2) {
   return _JoinRoom.apply(this, arguments);
@@ -40890,16 +40495,14 @@ function _JoinRoom() {
             userName: userName,
             authToken: authToken,
             metaData: {
-              userType: "admin"
+              userType: "recorder"
             },
             settings: {
               isAudioMuted: false,
-              isVideoMuted: true
+              isVideoMuted: false
             }
           });
-          (0, _common.ToastMessage)("Admin " + userName + " Joined");
-          (0, _common.Events)();
-        case 6:
+        case 4:
         case "end":
           return _context.stop();
       }
@@ -40907,121 +40510,11 @@ function _JoinRoom() {
   }));
   return _JoinRoom.apply(this, arguments);
 }
-;
-function renderMessageList(messages) {
-  if (messages.length === 0) {
-    return;
-  }
-  var text = "";
-  messages.forEach(function (msg) {
-    text += "\n".concat(msg.senderName, ": ").concat(msg.message);
-  });
-  console.log("new messages - ", text);
-  var elem = msgsElement;
-  if (elem) {
-    elem.textContent = text;
-  }
-}
-function sendMessageToBroadCast(e) {
-  if (!hmsStore.getState(_hmsVideoStore.selectIsConnectedToRoom)) {
-    console.warn("can't send message when not conneted to room");
-    return;
-  }
-  var msg = msgInputElement.value;
-  if (msg && msg.trim() !== "") {
-    hmsActions.sendBroadcastMessage(msg);
-    msgInputElement.value = "";
-  } else {
-    console.warn("Invalid message");
-  }
-}
-function SendMessageToPanel(e) {
-  if (!hmsStore.getState(_hmsVideoStore.selectIsConnectedToRoom)) {
-    console.warn("can't send message when not conneted to room");
-    return;
-  }
-  var msg = msgInputElement.value;
-  if (msg && msg.trim() !== "") {
-    hmsActions.sendGroupMessage(msg, [role]);
-    msgInputElement.value = "";
-  } else {
-    console.warn("Invalid message");
-  }
-}
-;
-
-// Helper function to create html elements
-function createElementWithClass(tag, className) {
-  var newElement = document.createElement(tag);
-  newElement.className = className;
-  return newElement;
-}
-
-// Render a single peer
-function renderPeer(peer) {
-  var peerTileDiv = createElementWithClass("div", "peer-tile");
-  var videoElement = createElementWithClass("video", "peer-video");
-  var nonVideoElement = createElementWithClass("div", "peer-video-tile");
-  var peerNetwork = createElementWithClass("div", "peer-network");
-  var peerTileName = createElementWithClass("div", "peer-name");
-  videoElement.autoplay = true;
-  videoElement.muted = true;
-  videoElement.playsinline = true;
-  peerTileName.textContent = peer.name;
-  hmsStore.subscribe(function (connectionQuality) {
-    if (connectionQuality) {
-      peerNetwork.innerHTML = ConnectivitySVG(connectionQuality.downlinkQuality);
-    }
-  }, (0, _hmsVideoStore.selectConnectionQualityByPeerID)(peer.id));
-  var profileIcon = '<div data-testid="preview_avatar_tile" class="tile-short shape-circle shape-color">' + peer.name.substr(0, 2).toUpperCase() + '</div>';
-  nonVideoElement.innerHTML = profileIcon;
-  //track the camera Screen
-  hmsStore.subscribe(function (track) {
-    if (!track) {
-      return;
-    }
-    if (track.enabled) {
-      hmsActions.attachVideo(track.id, videoElement);
-      videoElement.style.display = "";
-      nonVideoElement.style.display = "none";
-    } else {
-      hmsActions.detachVideo(track.id, videoElement);
-      videoElement.style.display = "none";
-      nonVideoElement.style.display = "";
-    }
-  }, (0, _hmsVideoStore.selectVideoTrackByID)(peer.videoTrack));
-  peerTileDiv.append(videoElement);
-  peerTileDiv.append(nonVideoElement);
-  peerTileDiv.append(peerTileName);
-  peerTileDiv.append(peerNetwork);
-  renderedPeerIDs.add(peer.id);
-  return peerTileDiv;
-}
-
-// display a tile for each peer in the peer list
-function renderPeers() {
-  var peers = hmsStore.getState(_hmsVideoStore.selectPeers);
-  peers.forEach(function (peer) {
-    //if (peer?.isLocal) {
-    //    hmsActions.changeRoleOfPeer(peer.id, role, true);
-    //}        
-    if (!renderedPeerIDs.has(peer.id) && peer !== null && peer !== void 0 && peer.videoTrack && !(peer !== null && peer !== void 0 && peer.isLocal)) {
-      peersContainer.append(renderPeer(peer));
-    }
-  });
-}
 function hide(el) {
   el.style.display = "none";
 }
 function show(el) {
   el.style.display = "";
-}
-function handleLeave() {
-  hmsActions.leave();
-  peersContainer.innerHTML = "";
-}
-function isStreaming() {
-  return params.Name == "candidate";
 }
 
 // *************************
@@ -41030,39 +40523,12 @@ function isStreaming() {
 
 // Showing the required elements on connection/disconnection
 function onConnectionVideo(isConnected) {
-  if (isConnected) {
-    // hide(form);
-    show(conference);
-    show(leaveBtn);
-    show(presenterController);
-  } else {
-    //show(form);
-    hide(conference);
-    hide(leaveBtn);
-    hide(presenterController);
-  }
-}
-
-// *************************
-// Mute/Unmute video/audio
-// *************************
-
-function handlePresenterAudio() {
-  var audioEnabled = !hmsStore.getState(_hmsVideoStore.selectIsLocalAudioEnabled);
-  hmsActions.setLocalAudioEnabled(audioEnabled);
-  muteAudioBtn.textContent = audioEnabled ? "Mute" : "Unmute";
+  show(conference);
 }
 
 // *************************
 // Share screen
 // *************************
-
-//async function handleScreenShare() {
-//    const screenShareOn = !hmsStore.getState(selectIsSomeoneScreenSharing);
-//    await hmsActions.setScreenShareEnabled(screenShareOn);
-//    screenShareBtn.textContent = screenShareOn ? "Stop" : "Share";
-//    showScreenShareVideo();
-//}
 function showScreenShareVideo() {
   return _showScreenShareVideo.apply(this, arguments);
 }
@@ -41074,32 +40540,28 @@ function _showScreenShareVideo() {
         case 0:
           screenShareOn = hmsStore.getState(_hmsVideoStore.selectIsSomeoneScreenSharing);
           if (!screenShareOn) {
-            _context2.next = 15;
+            _context2.next = 13;
             break;
           }
           amIScreenSharing = hmsStore.getState(_hmsVideoStore.selectIsLocalScreenShared);
           presenter = hmsStore.getState(_hmsVideoStore.selectPeerScreenSharing);
           screenShareVideoTrack = hmsStore.getState((0, _hmsVideoStore.selectScreenShareByPeerID)(presenter === null || presenter === void 0 ? void 0 : presenter.id));
           if (!amIScreenSharing) {
-            _context2.next = 9;
+            _context2.next = 8;
             break;
           }
-          screenShareStatus.textContent = "Screen share started!!!";
-          _context2.next = 13;
+          _context2.next = 11;
           break;
-        case 9:
-          hide(screenShareStatus);
+        case 8:
           show(screenShareVideo);
-          _context2.next = 13;
+          _context2.next = 11;
           return hmsActions.attachVideo(screenShareVideoTrack === null || screenShareVideoTrack === void 0 ? void 0 : screenShareVideoTrack.id, screenShareVideo);
-        case 13:
-          _context2.next = 18;
+        case 11:
+          _context2.next = 14;
           break;
-        case 15:
-          screenShareStatus.textContent = "Welcome! Sit back and relax till streaming start.";
+        case 13:
           hide(screenShareVideo);
-          show(screenShareStatus);
-        case 18:
+        case 14:
         case "end":
           return _context2.stop();
       }
@@ -41107,155 +40569,14 @@ function _showScreenShareVideo() {
   }));
   return _showScreenShareVideo.apply(this, arguments);
 }
-function renderEndRoomButton(_x3) {
-  return _renderEndRoomButton.apply(this, arguments);
-}
-function _renderEndRoomButton() {
-  _renderEndRoomButton = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(permissions) {
-    var endRoomButton;
-    return _regeneratorRuntime().wrap(function _callee3$(_context3) {
-      while (1) switch (_context3.prev = _context3.next) {
-        case 0:
-          endRoomButton = document.getElementById('end-room-button');
-          if (permissions.endRoom) {
-            endRoomButton.addEventListener('click', function () {
-              try {
-                var lock = false; // set to true to disallow rejoins
-                var reason = 'Test is over';
-                hmsActions.endRoom(lock, reason);
-              } catch (error) {
-                // Permission denied or not connected to room
-                console.error(error);
-              }
-            });
-            endRoomButton.style.display = 'inline-block';
-          } else {
-            endRoomButton.style.display = 'none';
-          }
-        case 2:
-        case "end":
-          return _context3.stop();
-      }
-    }, _callee3);
-  }));
-  return _renderEndRoomButton.apply(this, arguments);
-}
-function TriggerEnableStartButton() {
-  var presenter = hmsStore.getState(_hmsVideoStore.selectPeerScreenSharing);
-  var localPeerId = hmsStore.getState(_hmsVideoStore.selectLocalPeerID);
-  var presenterId = presenter === null || presenter === void 0 ? void 0 : presenter.id;
-  console.log("presenter peerid>>" + (presenter === null || presenter === void 0 ? void 0 : presenter.id));
-  console.log("Local peerid" + localPeerId);
-  if (presenterId) {
-    var presenter_metadata = hmsStore.getState((0, _hmsVideoStore.selectPeerMetadata)(presenterId));
-    var newPresenterMetadata = _objectSpread(_objectSpread({}, presenter_metadata), {}, {
-      StartQuiz: true
-    });
-    var local_metadata = hmsStore.getState((0, _hmsVideoStore.selectPeerMetadata)(localPeerId));
-    var obj = {};
-    obj[presenterId] = newPresenterMetadata;
-    hmsActions.changeMetadata(obj);
-    var newLocalMetadata = _objectSpread({}, local_metadata);
-    // update the old Metadata
-    hmsActions.changeMetadata(newLocalMetadata);
-  }
-}
-function TriggerNewProofButton() {
-  if (confirm("Want to Send the request alert to Candidate!")) {
-    var presenter = hmsStore.getState(_hmsVideoStore.selectPeerScreenSharing);
-    var localPeerId = hmsStore.getState(_hmsVideoStore.selectLocalPeerID);
-    var presenterId = presenter === null || presenter === void 0 ? void 0 : presenter.id;
-    console.log("presenter peerid>>" + (presenter === null || presenter === void 0 ? void 0 : presenter.id));
-    console.log("Local peerid" + localPeerId);
-    if (presenterId) {
-      var presenter_metadata = hmsStore.getState((0, _hmsVideoStore.selectPeerMetadata)(presenterId));
-      var newPresenterMetadata = _objectSpread(_objectSpread({}, presenter_metadata), {}, {
-        NewProof: true
-      });
-      var local_metadata = hmsStore.getState((0, _hmsVideoStore.selectPeerMetadata)(localPeerId));
-      var obj = {};
-      obj[presenterId] = newPresenterMetadata;
-      hmsActions.changeMetadata(obj);
-      var newLocalMetadata = _objectSpread({}, local_metadata);
-      // update the old Metadata
-      hmsActions.changeMetadata(newLocalMetadata);
-    }
-  }
-}
-function ViewProof() {
-  _jquery.default.ajax({
-    url: '/Proof/ViewOldProof',
-    type: 'GET',
-    dataType: 'json',
-    data: {},
-    cache: false,
-    async: false,
-    success: function success(response) {
-      (0, _jquery.default)("#Inject-UAA").html("");
-      (0, _jquery.default)("#Inject-UAA").html("<img class='w-100' src='" + response.responseText + "'/>");
-      (0, _jquery.default)('#test-myModal').show();
-      return true;
-    },
-    error: function error(response) {
-      (0, _jquery.default)("#Inject-UAA").html(response.responseText);
-      (0, _jquery.default)('#test-myModal').show();
-      return true;
-    }
-  });
-}
-var NewProofId = "";
-function ViewNewProof() {
-  _jquery.default.ajax({
-    url: '/Proof/AdminView',
-    type: 'GET',
-    dataType: 'json',
-    data: {
-      filePath: NewProofId
-    },
-    cache: false,
-    async: false,
-    success: function success(response) {
-      (0, _jquery.default)("#Inject-UAA").html("");
-      (0, _jquery.default)("#Inject-UAA").html("<img class='w-100' src='" + response.responseText + "'/>");
-      (0, _jquery.default)('#test-myModal').show();
-      return true;
-    },
-    error: function error(response) {
-      (0, _jquery.default)("#Inject-UAA").html("<img class='w-100' src='" + response.responseText + "'/>");
-      (0, _jquery.default)('#test-myModal').show();
-      return true;
-    }
-  });
-}
-function UserAlertTest() {
-  (0, _jquery.default)(".interview-alert-btn").removeClass("glow");
-  _jquery.default.ajax({
-    url: '/Tracker/GetActivities',
-    type: 'GET',
-    dataType: 'json',
-    data: {},
-    cache: false,
-    async: false,
-    success: function success(response) {
-      (0, _jquery.default)("#Inject-UAA").html(response);
-      (0, _jquery.default)('#test-myModal').show();
-      return true;
-    },
-    error: function error(response) {
-      (0, _jquery.default)("#Inject-UAA").html(response.responseText);
-      (0, _jquery.default)('#test-myModal').show();
-      return true;
-    }
-  });
-}
-function GetRoomCode(_x4) {
+function GetRoomCode(_x3) {
   return _GetRoomCode.apply(this, arguments);
 }
 function _GetRoomCode() {
-  _GetRoomCode = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(_redemptionId) {
+  _GetRoomCode = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(_redemptionId) {
     var url;
-    return _regeneratorRuntime().wrap(function _callee4$(_context4) {
-      while (1) switch (_context4.prev = _context4.next) {
+    return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+      while (1) switch (_context3.prev = _context3.next) {
         case 0:
           url = getBaseUrl() + "/GetRoomCodeByRedemptionId";
           _jquery.default.ajax({
@@ -41264,7 +40585,7 @@ function _GetRoomCode() {
             dataType: 'json',
             data: {
               redemptionId: _redemptionId,
-              role: "broadcaster"
+              role: "recorder"
             },
             crossDomain: true,
             cache: false,
@@ -41284,9 +40605,9 @@ function _GetRoomCode() {
           });
         case 2:
         case "end":
-          return _context4.stop();
+          return _context3.stop();
       }
-    }, _callee4);
+    }, _callee3);
   }));
   return _GetRoomCode.apply(this, arguments);
 }
@@ -41297,11 +40618,12 @@ function InitialLoad() {
   return _InitialLoad.apply(this, arguments);
 } //Functions - End
 //Bind Events - Start
+// Listen to the connection state
 function _InitialLoad() {
-  _InitialLoad = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
+  _InitialLoad = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
     var url;
-    return _regeneratorRuntime().wrap(function _callee5$(_context5) {
-      while (1) switch (_context5.prev = _context5.next) {
+    return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+      while (1) switch (_context4.prev = _context4.next) {
         case 0:
           url = getBaseUrl() + "/InitialLoad";
           _jquery.default.ajax({
@@ -41320,13 +40642,7 @@ function _InitialLoad() {
               scopeData = GlobalObj; //assigning the global variable in NodeScope
 
               GetRoomCode(GlobalObj.RedemptionId);
-              //JoinRoom(params.Name, "aai-jjfw-quy"); // candidate
-              //  Timer();
-              //  Disable_Keys();
-              //  DisableMouseRightClick();
-              //   DisableCutCopyPaste();
             },
-
             complete: function complete() {
               (0, _jquery.default)('.ajax-loader').css("visibility", "hidden");
             },
@@ -41336,42 +40652,19 @@ function _InitialLoad() {
           });
         case 2:
         case "end":
-          return _context5.stop();
+          return _context4.stop();
       }
-    }, _callee5);
+    }, _callee4);
   }));
   return _InitialLoad.apply(this, arguments);
 }
-leaveBtn.onclick = handleLeave;
-sendToCandidate.onclick = sendMessageToBroadCast;
-viewProof.onclick = ViewProof;
-reqProof.onclick = TriggerNewProofButton;
-viewNewProof.onclick = ViewNewProof;
-sendToPanel.onclick = SendMessageToPanel;
-//muteVideoBtn.onclick = handlePresenterVideo;
-muteAudioBtn.onclick = handlePresenterAudio;
-//screenShareBtn.onclick = handleScreenShare;
-enableStartbutton.onclick = TriggerEnableStartButton;
-// Cleanup if user refreshes the tab or navigates away
-window.onunload = window.onbeforeunload = handleLeave;
-
-// Listen to the connection state
 hmsStore.subscribe(onConnectionVideo, _hmsVideoStore.selectIsConnectedToRoom);
-
-// subscribe to the peers, so render is called whenever there is a change like peer join and leave
-//hmsStore.subscribe(renderVideoPeers, selectPeers);
 
 // subscribe to the peers, so showScreenShareVideo is called whenever there is a change like peer join and leave
 hmsStore.subscribe(showScreenShareVideo, _hmsVideoStore.selectPeers);
-
-// Reactive state - renderPeers is called whenever there is a change in the peer-list
-hmsStore.subscribe(renderPeers, _hmsVideoStore.selectPeers);
-hmsStore.subscribe(renderMessageList, _hmsVideoStore.selectHMSMessages);
-hmsStore.subscribe(renderEndRoomButton, _hmsVideoStore.selectPermissions);
 //Bind Events - End
 
 //trigger Join
 InitialLoad();
-//JoinRoom(params.Name, "ivn-wwwk-jnx"); // panel
-},{"../node_modules/@100mslive/hms-video-store":"j5Na","../node_modules/jquery":"HlZQ","./common":"LDbG"}]},{},["ddGe"], null)
-//# sourceMappingURL=/admin.221fa65a.js.map
+},{"../node_modules/@100mslive/hms-video-store":"j5Na","../node_modules/jquery":"HlZQ"}]},{},["DcFx"], null)
+//# sourceMappingURL=/recorder.467bed6c.js.map
