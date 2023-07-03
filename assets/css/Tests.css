@@ -1,3 +1,56 @@
+@font-face {
+    font-family: Dnormal;
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/GOTHIC.TTF);
+}
+
+@font-face {
+    font-family: Dbold;
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/GOTHICB.TTF);
+}
+
+@font-face {
+    font-family: DNewnormal;
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/NewNormal.otf);
+}
+
+@font-face {
+    font-family: DNewbold;
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/NewBold.otf);
+}
+
+@font-face {
+    font-family: DGotham;
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/GothamLight.ttf);
+}
+
+@font-face {
+    font-family: DGothamBold;
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/Gotham.ttf);
+}
+
+@font-face {
+    font-family: DboldG;
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/GOTHICB.TTF);
+}
+
+@font-face {
+    font-family: DnormalG;
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/GOTHIC.TTF);
+}
+
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/MyriadProBold.woff2);
+}
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/MyriadProBold.woff);
+}
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/MyriadProBold.ttf);
+}
+
 header.fixed-top.sticky .navbar-dark .navbar-nav .nav-link:hover{
 	opacity: 0.7;
 }
