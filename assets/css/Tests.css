@@ -123,6 +123,9 @@ header .dropdown-menu{
 .cbox{position:relative}
 /*End: Inline Css*/
 
+.testmodal{
+	background: #FFFFFF;
+}
 .testmodal .modal-body .btnSelectViewTest:hover{
 	text-decoration: underline;
 }
