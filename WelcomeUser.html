@@ -383,10 +383,10 @@ function __doPostBack(eventTarget, eventArgument) {
     <script src="https://www.brainmeasures.com/plugins/slimScroll/jquery.slimscroll.min.js"></script>
     <script src="https://www.brainmeasures.com/plugins/fastclick/fastclick.min.js"></script>
     <script src="https://www.brainmeasures.com/dist/js/app.js"></script>
-    <!-- <script src="https://www.brainmeasures.com/plugins/flot/jquery.flot.min.js"></script> -->
-    <!--<script src="https://www.brainmeasures.com/plugins/flot/jquery.flot.resize.min.js"></script> -->
-   <!-- <script src="https://www.brainmeasures.com/plugins/flot/jquery.flot.pie.min.js"></script> -->
-   <!-- <script src="https://www.brainmeasures.com/plugins/flot/jquery.flot.categories.min.js"></script> -->
+    <script src="https://www.brainmeasures.com/plugins/flot/jquery.flot.min.js"></script>
+    <script src="https://www.brainmeasures.com/plugins/flot/jquery.flot.resize.min.js"></script>
+    <script src="https://www.brainmeasures.com/plugins/flot/jquery.flot.pie.min.js"></script>
+    <script src="https://www.brainmeasures.com/plugins/flot/jquery.flot.categories.min.js"></script>
 
     <script src="https://www.brainmeasures.com/dist/js/modernizr-2.6.2.min.js"></script>
     
@@ -399,7 +399,89 @@ function __doPostBack(eventTarget, eventArgument) {
         });
     </script>
 
-    
+    <script>
+        $(document).ready(function () {
+
+            setTimeout(function () {
+                $('body').addClass('loaded');
+            }, 2000);
+            //Load time zone from common
+            //LoadTimeZone();
+        });
+        $(function () {
+            var data = [], totalPoints = 100;
+            function getRandomData() {
+
+                if (data.length > 0)
+                    data = data.slice(1);
+
+                while (data.length < totalPoints) {
+
+                    var prev = data.length > 0 ? data[data.length - 1] : 50,
+							y = prev + Math.random() * 10 - 5;
+
+                    if (y < 0) {
+                        y = 0;
+                    } else if (y > 100) {
+                        y = 100;
+                    }
+
+                    data.push(y);
+                }
+
+
+                var res = [];
+                for (var i = 0; i < data.length; ++i) {
+                    res.push([i, data[i]]);
+                }
+
+                return res;
+            }
+
+            var interactive_plot = $.plot("#interactive", [getRandomData()], {
+                grid: {
+                    borderColor: "#f3f3f3",
+                    borderWidth: 1,
+                    tickColor: "#f3f3f3"
+                },
+                series: {
+                    shadowSize: 0, // Drawing is faster without shadows
+                    color: "#3c8dbc"
+                },
+                lines: {
+                    fill: true, //Converts the line chart to area chart
+                    color: "#3c8dbc"
+                },
+                yaxis: {
+                    min: 0,
+                    max: 100,
+                    show: true
+                },
+                xaxis: {
+                    show: true
+                }
+            });
+
+            var updateInterval = 500; //Fetch data ever x milliseconds
+            var realtime = "on"; //If == to on then fetch data every x seconds. else stop fetching
+            function update() {
+
+                interactive_plot.setData([getRandomData()]);
+
+                // Since the axes don't change, we don't need to call plot.setupGrid()
+                interactive_plot.draw();
+                if (realtime === "on")
+                    setTimeout(update, updateInterval);
+            }
+
+            //INITIALIZE REALTIME DATA FETCHING
+            if (realtime === "on") {
+                update();
+            }
+
+        });        
+
+    </script>
     <!--Start of Zopim Live Chat Script-->
   <!--  <script src="//v2.zopim.com/?2YMhIJ46JFYuuChECGepCtOTddFUzEp5" charset="utf-8" type="text/javascript"></script>-->
     <!--End of Zopim Live Chat Script-->
