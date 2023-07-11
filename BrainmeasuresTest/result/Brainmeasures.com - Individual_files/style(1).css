@@ -23,7 +23,7 @@ img{max-width:100%;}
 /*end reset*/
 @font-face {
       font-family: 'ambleregular';
-      src: url(../fonts/Amble-Regular-webfont.ttf) format('truetype');
+      /*src: url(../fonts/Amble-Regular-webfont.ttf) format('truetype');*/
 }
 body{
 	font-family: 'ambleregular';
