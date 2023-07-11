@@ -438,29 +438,7 @@ function __doPostBack(eventTarget, eventArgument) {
                 return res;
             }
 
-            var interactive_plot = $.plot("#interactive", [getRandomData()], {
-                grid: {
-                    borderColor: "#f3f3f3",
-                    borderWidth: 1,
-                    tickColor: "#f3f3f3"
-                },
-                series: {
-                    shadowSize: 0, // Drawing is faster without shadows
-                    color: "#3c8dbc"
-                },
-                lines: {
-                    fill: true, //Converts the line chart to area chart
-                    color: "#3c8dbc"
-                },
-                yaxis: {
-                    min: 0,
-                    max: 100,
-                    show: true
-                },
-                xaxis: {
-                    show: true
-                }
-            });
+           
 
             var updateInterval = 500; //Fetch data ever x milliseconds
             var realtime = "on"; //If == to on then fetch data every x seconds. else stop fetching
