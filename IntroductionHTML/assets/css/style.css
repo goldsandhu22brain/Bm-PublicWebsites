@@ -18,6 +18,10 @@
 .introduction-details li{
 	margin: 0 0 8px;
 	display: list-item;
+	padding-left: 12px;
+}
+.introduction-details ol > li::marker {
+  font-weight: bold;
 }
 .introduction-details a{
 	font-weight: 700;
