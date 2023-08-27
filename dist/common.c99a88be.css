@@ -41,7 +41,7 @@ header {
 
 .proctor-form {
     max-width: 450px;
-    /*margin: 30px auto;*/
+    margin: 30px auto;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     padding: 20px;
@@ -112,12 +112,14 @@ form h2,
     object-fit: cover;
     margin-bottom: 10px;
 }
+
 .peer-video-tile {
     width: 250px;
     border-radius: 40%;
     object-fit: cover;
     margin-bottom: 10px;
 }
+
 .local.peer-video {
     transform: scaleX(-1);
 }
@@ -182,9 +184,11 @@ form h2,
     height: 80vh;
     object-fit: unset;
 }
+
 .video-section-border {
     border: 1px solid !important;
 }
+
 .connection-network {
     width: 20px !important;
     height: 28px !important;
@@ -194,12 +198,15 @@ form h2,
     background-color: black;
     border-radius: 50%;
 }
+
 .shape-circle {
     border-radius: 40%;
 }
+
 .shape-color {
     background-color: rgb(233, 30, 99);
 }
+
 .tile-short {
     display: flex;
     justify-content: center;
@@ -219,11 +226,13 @@ form h2,
     white-space: nowrap;
     min-width: 0;
 }
+
 .flexCenter {
     display: 'flex';
     justify-content: center;
     align-items: center;
 }
+
 .avatar-container {
     flex-direction: column;
     position: absolute;
@@ -245,6 +254,7 @@ form h2,
 .avatar-common-circle {
     border-radius: 50%;
 }
+
 .text-var-body2 {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -443,13 +453,14 @@ form h2,
 .peer-network {
     float: right;
 }
+
 .mt-24 {
     margin-top: 24px;
 }
 
 .test-header-react {
     background: #3f51b5 !important;
-    padding: 10px 0px !important;
+    padding: 0px 0px !important;
     /*position: fixed;*/
     top: 0;
     width: 100%;
@@ -468,8 +479,94 @@ form h2,
         font-size: 15px;
         font-weight: 500;
     }
+
 .w-100 {
     width: 100% !important;
 }
 
-/*# sourceMappingURL=/common.13a32fe2.css.map */
+.test-pause {
+    pointer-events: none !important;
+}
+
+.msg-badge {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+}
+
+/*User Activity button Glowing in admin panel start*/
+@keyframes glowing {
+    0% {
+        border-style: solid;
+        border-color: blue;
+        box-shadow: 0 0 5px #052aa8;
+    }
+
+    50% {
+        border-style: solid;
+        border-color: blue;
+        box-shadow: 0 0 20px #191be8;
+    }
+
+    100% {
+        border-style: solid;
+        border-color: blue;
+        box-shadow: 0 0 5px #1d05a8;
+    }
+}
+
+.glow {
+    animation: glowing 1300ms infinite;
+    color: yellow !important;
+}
+/*User Activity button Glowing in admin panel end*/
+
+div.dataTables_filter label {
+    color: black !important;
+}
+
+div.dataTables_length label {
+    color: black !important;
+}
+
+div.dataTables_filter input {
+    background-color: white;
+}
+
+.custom-modal-css {
+    max-width: 50%;
+    margin: 0;
+    height: 90% !important;
+    width: 100vw;
+    overflow: auto;
+}
+
+    .custom-modal-css .modal-body {
+        width: 100%;
+        overflow: auto;
+        height: 90%;
+    }
+
+/*# sourceMappingURL=/common.c99a88be.css.map */
+
+
+
+.documentTypeClass{
+	width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+	border-radius: 8px;
+}
+#newproof{
+	height: auto;
+}
+.close{
+	border: 0;
+    background: transparent;
+    font-size: 24px;
+    font-weight: 600;
+}

@@ -40486,6 +40486,7 @@ function Events() {
   }
   function fn_openchat() {
     document.getElementById("chat").style.visibility = "inherit";
+    (0, _jquery.default)(".msg-badge").html("");
   }
   function fn_closechat() {
     document.getElementById("chat").style.visibility = "hidden";
@@ -40501,14 +40502,17 @@ function PushTracking(activityId) {
   _jquery.default.ajax({
     url: '/Tracker/ReportActions',
     type: 'POST',
+    cache: false,
+    async: true,
     data: {
       ActivityType: activityId,
       Details: questionNo
     },
     success: function success(response) {
-      //if (isProctorLive) {
-      //UserAlertTrigger();				
-      //}
+      if (GlobalObj.IsProctorLive) {
+        //UserAlertTrigger();	
+        GlobalObj.ActivityCallBack();
+      }
     },
     error: function error() {}
   });
@@ -40699,7 +40703,7 @@ function CaptureUserPhoto(video, callBack) {
       formData.append('File', fileObject);
       formData.append('RecorderType', "Photo");
       //// upload using jQuery
-      //UploadRecorder("425", formData, callBack);
+      UploadRecorder("425", formData, callBack);
     }
   } catch (e) {
     PushTracking("515");
@@ -40720,14 +40724,74 @@ function CameraCaptureCallBack(response) {
     type = "FaceDetectionError";
   }
   if (msg != "" && type != "") {
-    //DisplayAlert(type, msg);
     ToastMessage("".concat(type, " - ").concat(msg));
   }
 }
 function DisableActivities() {
-  //  Disable_Keys();
-  //  DisableMouseRightClick();
-  //   DisableCutCopyPaste();
+  Disable_Keys();
+  DisableMouseRightClick();
+  DisableCutCopyPaste();
+}
+
+//Keyboard Keys Disable 
+function Disable_Keys() {
+  document.addEventListener("keydown", function (event) {
+    if (event.ctrlKey) {
+      ToastMessage("Ctrl is disabled.", true);
+      PushTracking(48);
+      return false;
+    }
+    if (event.altKey) {
+      ToastMessage("Alt is disabled.", true);
+      PushTracking(47);
+      return false;
+    }
+    if (event.keyCode === 44) {
+      //PrintScreen
+      ToastMessage("PrintScreen is disabled.", true);
+      PushTracking(44);
+      return false;
+    }
+    if (event.keyCode === 27 || event.keyCode === 122) {
+      //F11
+      ToastMessage("FullScreen always need to be enabled.", true);
+      PushTracking(122);
+      return false;
+    }
+    if (event.keyCode === 123) {
+      //F12
+      ToastMessage("Developer Tool is disabled.", true);
+      PushTracking(123);
+      return false;
+    }
+    if (event.keyCode === 116) {
+      //f5
+      ToastMessage("Refresh Page is disabled.", true);
+      PushTracking(116);
+      return false;
+    }
+  });
+}
+function DisableCutCopyPaste() {
+  //Disable cut copy paste
+  (0, _jquery.default)('body').bind('cut copy paste', function (e) {
+    //ToastMessage("cut copy paste functionalities are disabled.");		
+    PushTracking(49);
+    ToastMessage("Cut copy paste functionalities are disabled.", true);
+    //iscontext = false;
+    e.preventDefault();
+    return false;
+  });
+}
+function DisableMouseRightClick() {
+  document.oncontextmenu = null; // restrict the rightclick popup
+  window.oncontextmenu = function () {
+    //ToastMessage("right click is disabled for this page.");
+    PushTracking(50);
+    ToastMessage("Right click is disabled for this page.", true);
+    //iscontext = false;
+    return false;
+  };
 }
 function EmptyStream(blob, Type) {
   var IsEmpty = blob == null || blob.size == 0;
@@ -40743,7 +40807,7 @@ function UploadRecorder(Type, FormData) {
     type: 'POST',
     data: FormData,
     cache: false,
-    async: false,
+    async: true,
     contentType: false,
     processData: false,
     success: function success(response) {
@@ -40756,13 +40820,13 @@ function UploadRecorder(Type, FormData) {
     }
   });
 }
-},{"../node_modules/jquery":"HlZQ"}],"De0C":[function(require,module,exports) {
+},{"../node_modules/jquery":"HlZQ"}],"ddGe":[function(require,module,exports) {
 var define;
 "use strict";
 
 var _hmsVideoStore = require("../node_modules/@100mslive/hms-video-store");
-var _common = require("./common");
 var _jquery = _interopRequireDefault(require("../node_modules/jquery"));
+var _common = require("./common");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator.return && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, catch: function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
@@ -40779,70 +40843,69 @@ hmsManager.triggerOnSubscribe();
 var hmsStore = hmsManager.getStore();
 var hmsActions = hmsManager.getActions();
 var hmsNotifications = hmsManager.getNotifications();
-var currPeerId = '..';
-console.log('all speakers', hmsStore.getState(_hmsVideoStore.selectSpeakers));
-var scopeData;
-var ProofAdminPeerId = "";
+var hmsStats = hmsManager.getStats();
+//screensharing roles
+var role = "panel";
 function NotificationCallBack(Notify) {
   var dataProp = Notify != null && Notify.data;
   switch (Notify.type) {
-    case _hmsVideoStore.HMSNotificationTypes.TRACK_ADDED:
-      if (dataProp.displayEnabled && dataProp.source == "screen" && dataProp.type == "video") {
-        //screenshared
-        console.log("peerId>>" + dataProp.peerId);
-        if (dataProp.displaySurface) {
-          //track the activity
-          (0, _common.ScreenSharedType)(dataProp, "60");
-        }
-      }
-      break;
-    case _hmsVideoStore.HMSNotificationTypes.TRACK_REMOVED:
-      if (dataProp.displayEnabled && dataProp.source == "screen" && dataProp.type == "video") {
-        //screenshared
-        console.log("peerId>>" + dataProp.peerId);
-        if (dataProp.displaySurface) {
-          //track the activity
-          (0, _common.ScreenSharedType)(dataProp, "61");
-          // fullScreenEnable();//trigger full screen after screen shared
-        }
-      }
-
-      break;
     case _hmsVideoStore.HMSNotificationTypes.METADATA_UPDATED:
       var peer = dataProp;
       var PeerMetdataData = hmsStore.getState((0, _hmsVideoStore.selectPeerMetadata)(peer.id));
       var localPeerId = hmsStore.getState(_hmsVideoStore.selectLocalPeerID);
       var localLatestMetadata = PeerMetdataData[localPeerId];
+      var peerLatestMetadata = PeerMetdataData[peer.id];
       if (localLatestMetadata) {
-        if (localLatestMetadata["StartQuiz"]) {
-          show(startTestButton);
-        }
-        if (localLatestMetadata["NewProof"]) {
-          (0, _jquery.default)('#proof-test').removeClass('hide');
-          ProofAdminPeerId = peer.id;
-          localLatestMetadata["NewProof"] = false;
+        if (localLatestMetadata["ViewNewProof"] == true) {
+          NewProofId = localLatestMetadata["UrlId"];
+          NewProofImageId = localLatestMetadata["ImageId"];
+          NewProofDocumentName = localLatestMetadata["DocumentName"];
+          document.getElementById("view-new-proof").removeAttribute('disabled');
+        } else if (localLatestMetadata["ViewNewProof"] == false) {
+          NewProofId = "";
+          NewProofImageId = "";
+          NewProofDocumentName = "";
+          document.getElementById("view-new-proof").removeAttribute('disabled').setAttribute('disabled', 'disabled');
         }
         hmsActions.changeMetadata(localLatestMetadata);
+      } else if (peerLatestMetadata) {
+        if (peerLatestMetadata["IsRecording"] == true) {
+          (0, _jquery.default)(".recording-icon").removeClass("hide");
+          //ToastMessage("Screen Recorder Started", true);
+        } else if (peerLatestMetadata["IsRecording"] == false) {
+          (0, _jquery.default)(".recording-icon").removeClass("hide").addClass("hide");
+          //ToastMessage("Screen Recorder Stopped", true);
+        }
+
+        if (peerLatestMetadata["UserAlertActivity"] == true) {
+          (0, _jquery.default)(".interview-alert-btn").addClass("glow");
+          peerLatestMetadata["UserAlertActivity"] = false;
+        }
       }
       break;
   }
 }
 ;
+
 //Notification Element
-(0, _common.NotificationCall)(hmsNotifications, _hmsVideoStore.HMSNotificationTypes, NotificationCallBack, false);
+(0, _common.NotificationCall)(hmsNotifications, _hmsVideoStore.HMSNotificationTypes, NotificationCallBack);
 
 // HTML elements
 var conference = document.querySelector(".conference");
 var peersContainer = document.querySelector(".peers-container");
 var leaveBtn = document.getElementById("leave-btn");
 var screenShareVideo = document.querySelector(".screen-share-video");
-var screenShareBtn = document.querySelector(".btn-share-screen");
+var muteAudioBtn = document.querySelector(".btn-mute-audio");
 var screenShareStatus = document.querySelector(".screen-share-status-text");
 var presenterController = document.querySelector(".presenter-controller");
-var startTestButton = document.getElementById("load-test");
-var startButton = document.getElementById("start-test");
-var authenticateSubmit = document.getElementById("authenticateSubmit");
-var loadSystemCheck = document.getElementById("load-system-check");
+var enableStartbutton = document.querySelector(".btn-enable-start-test");
+var pauseTestButton = document.querySelector("#pause-test");
+var resumeTestButton = document.querySelector("#resume-test");
+var endTestButton = document.querySelector("#force-end-test");
+var viewProof = document.querySelector("#view-proof");
+var reqProof = document.querySelector("#request-proof");
+var viewNewProof = document.querySelector("#view-new-proof");
+var UserAlertTestButton = document.querySelector("#btn-user-alert-test");
 var params = new Proxy(new URLSearchParams(window.location.search), {
   get: function get(searchParams, prop) {
     return searchParams.get(prop);
@@ -40850,11 +40913,8 @@ var params = new Proxy(new URLSearchParams(window.location.search), {
 });
 var msgInputElement = document.getElementById("msgInput");
 var msgsElement = document.getElementById("messages");
-var newProofUpload = document.getElementById("proof-test");
-
 // store peer IDs already rendered to avoid re-render on mute/unmute
 var renderedPeerIDs = new Set();
-//connection network
 var connectionTooltip = {
   0: "Reconnecting",
   1: "Very Bad Connection",
@@ -40864,39 +40924,15 @@ var connectionTooltip = {
   5: "Excellent Connection"
 };
 connectionTooltip[-1] = "Network Unknown";
-var fullScreen = document.querySelector(".btn-full-screen");
-var initialTimer = true;
-var isProctorLive = true;
-var isProctor = true;
-window.pauseAll = false;
-var UserAlertTrigger = function UserAlertTrigger() {};
-var SendButtonClick = null;
-window.stopRecordingForce = {
-  //  camera: false,
-  //  screen: false,
-  photo: false
-};
-window.CompletedRecording = isProctorLive == true || isProctor == true ? {
-  // camera: false,
-  // screen: false,
-  photo: false
-} : null;
-var PhotoCaptureTimer = 5;
-var IsSystemCheck = true;
-//Functions -Start
+var sendToCandidate = document.getElementById("msg-cand");
+var sendToPanel = document.getElementById("msg-panel");
 
-function updateAudioLevel(audioLevel) {
-  console.log("audio level for peer - ".concat(currPeerId, " is ").concat(audioLevel));
-}
-function activeSpeaker(peer, prevPeer) {
-  console.log("previous active speaker - ".concat(prevPeer === null || prevPeer === void 0 ? void 0 : prevPeer.name, " with role - ").concat(prevPeer === null || prevPeer === void 0 ? void 0 : prevPeer.roleName));
-  console.log("current active speaker - ".concat(peer === null || peer === void 0 ? void 0 : peer.name, " with role - ").concat(peer === null || peer === void 0 ? void 0 : peer.roleName));
-}
+//Functions -Start
 function GetToolTipConnection(value) {
   return connectionTooltip[value];
 }
 function GetColor(position, connectionScore) {
-  var defaultColor = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '#FFFFFF';
+  var defaultColor = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '#FFFFFF61';
   var shouldBeColored = position <= connectionScore;
   if (!shouldBeColored) {
     return defaultColor;
@@ -40917,448 +40953,92 @@ function ConnectivitySVG(quality) {
   }
   return '<span title="' + GetToolTipConnection(quality) + '"><svg class="connection-network" width="12" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;"><path d="M6.875 0c2.549.035 4.679.902 6.445 2.648.366.362.45.796.216 1.096-.239.306-.714.34-1.142.072a2.28 2.28 0 0 1-.341-.271C9.24.862 4.924.775 1.992 3.346c-.284.249-.594.419-.983.393-.272-.019-.49-.135-.613-.388-.125-.261-.05-.498.114-.713.073-.092.156-.177.245-.254C2.516.804 4.591.039 6.875 0Z" fill="' + GetColor(4, quality) + '" transform="translate(-.333)"></path><path d="M7.056 2.964c1.756.035 3.208.7 4.499 1.763.162.134.277.315.354.512.098.251.114.503-.075.72-.193.222-.452.259-.725.198-.293-.066-.518-.247-.738-.443a4.859 4.859 0 0 0-6.198-.26c-.166.127-.318.271-.475.409-.242.211-.513.343-.843.317-.43-.034-.679-.397-.561-.81.062-.211.181-.4.345-.546 1.265-1.162 2.733-1.836 4.417-1.86Z" fill="' + GetColor(3, quality) + '" transform="translate(-.333)"></path><path d="M7.384,6.052C8.293,6.068 9.157,6.449 9.783,7.108C10.005,7.339 10.157,7.6 10.07,7.942C9.959,8.377 9.435,8.581 9.071,8.243C7.935,7.191 6.356,7.183 5.152,8.183C4.816,8.462 4.6,8.485 4.332,8.27C4.063,8.055 3.998,7.691 4.177,7.358C4.273,7.179 4.414,7.038 4.57,6.911C5.26,6.349 6.149,6.05 7.384,6.052L7.384,6.052Z" fill="' + GetColor(2, quality) + '"></path><path d="M8.214,9.941C8.214,10.234 8.097,10.515 7.888,10.721C7.68,10.928 7.398,11.042 7.104,11.039C6.471,11.036 5.982,10.541 5.993,9.912C6.004,9.259 6.499,8.766 7.133,8.779C7.744,8.791 8.22,9.301 8.214,9.941Z" fill="' + GetColor(1, quality) + '"></path></svg></span>';
 }
-function getBaseUrl() {
-  return "/Test";
-}
-function SystemCheck() {
-  //if (!$(".system-check").hasClass("d-none")) {
-  //    $(".system-check").addClass("d-none");
-  //}
-  if (!(0, _jquery.default)("div#video").hasClass("visible")) {
-    (0, _jquery.default)("div#video").addClass("visible");
-  }
-}
-function LoadQuestion() {
-  var isExists = document.getElementById('InjectTest');
-  var testingId = null;
-  if (isExists != null) {
-    var url = getBaseUrl() + "/LoadTest?Id=" + (testingId !== null && testingId !== void 0 ? testingId : params.OfferingId);
-    console.log(url);
-    _jquery.default.ajax({
-      url: url,
-      type: 'GET',
-      dataType: 'html',
-      data: {},
-      crossDomain: true,
-      cache: false,
-      beforeSend: function beforeSend() {
-        (0, _jquery.default)('.ajax-loader').css("visibility", "visible");
-      },
-      success: function success(response) {
-        var callBack = function callBack() {
-          var result = response;
-          (0, _common.PushTracking)(70);
-          (0, _jquery.default)('#InjectTest').replaceWith(result);
-          InitiatingTimer();
-          hide(presenterController);
-        };
-        HeaderText(callBack);
-        //DisableActivities();
-      },
 
-      complete: function complete() {
-        (0, _jquery.default)('.ajax-loader').css("visibility", "hidden");
-      },
-      error: function error() {
-        //    WarningSection(fullScreen, mouseActivity, debuggerCheck);
-      }
-    });
-    if (typeof syncChatMessage != 'undefined') {
-      syncChatMessage();
-    }
-  }
+// Joining the room
+function JoinRoom(_x, _x2) {
+  return _JoinRoom.apply(this, arguments);
 }
-function HeaderText(_x) {
-  return _HeaderText.apply(this, arguments);
-}
-function _HeaderText() {
-  _HeaderText = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(callBack) {
-    var url;
+function _JoinRoom() {
+  _JoinRoom = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(userName, roomCode) {
+    var authToken;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
-          url = getBaseUrl() + "/LoadTestHeader";
-          _jquery.default.ajax({
-            url: url,
-            type: 'GET',
-            dataType: 'html',
-            data: {},
-            crossDomain: true,
-            cache: false,
-            beforeSend: function beforeSend() {
-              (0, _jquery.default)('.ajax-loader').css("visibility", "visible");
-            },
-            success: function success(response) {
-              var result = response;
-              (0, _jquery.default)(".screen-share-status").html(result);
-              callBack();
-              //DisableActivities();
-            },
-
-            complete: function complete() {
-              (0, _jquery.default)('.ajax-loader').css("visibility", "hidden");
-            },
-            error: function error() {
-              //    WarningSection(fullScreen, mouseActivity, debuggerCheck);
-            }
+          _context.next = 2;
+          return hmsActions.getAuthTokenByRoomCode({
+            roomCode: roomCode
           });
         case 2:
+          authToken = _context.sent;
+          // join room using username and auth token
+          hmsActions.join({
+            userName: userName,
+            authToken: authToken,
+            metaData: {
+              userType: "admin"
+            },
+            settings: {
+              isAudioMuted: false,
+              isVideoMuted: true
+            }
+          });
+          (0, _common.ToastMessage)("Admin " + userName + " Joined");
+          (0, _common.Events)();
+        case 6:
         case "end":
           return _context.stop();
       }
     }, _callee);
   }));
-  return _HeaderText.apply(this, arguments);
-}
-function GetRoomCode(_x2) {
-  return _GetRoomCode.apply(this, arguments);
-}
-function _GetRoomCode() {
-  _GetRoomCode = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(_redemptionId) {
-    var url;
-    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
-      while (1) switch (_context2.prev = _context2.next) {
-        case 0:
-          url = getBaseUrl() + "/GetRoomCodeByRedemptionId"; // fullScreenEnable();
-          _jquery.default.ajax({
-            url: url,
-            type: 'GET',
-            dataType: 'json',
-            data: {
-              redemptionId: _redemptionId,
-              role: "candidate"
-            },
-            crossDomain: true,
-            cache: false,
-            beforeSend: function beforeSend() {
-              (0, _jquery.default)('.ajax-loader').css("visibility", "visible");
-            },
-            success: function success(response) {
-              var result = response;
-              JoinRoom(params.Name, result);
-            },
-            complete: function complete() {
-              (0, _jquery.default)('.ajax-loader').css("visibility", "hidden");
-            },
-            error: function error() {
-              //    WarningSection(fullScreen, mouseActivity, debuggerCheck);
-            }
-          });
-        case 2:
-        case "end":
-          return _context2.stop();
-      }
-    }, _callee2);
-  }));
-  return _GetRoomCode.apply(this, arguments);
-}
-function InitialLoad() {
-  return _InitialLoad.apply(this, arguments);
-}
-function _InitialLoad() {
-  _InitialLoad = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
-    var url;
-    return _regeneratorRuntime().wrap(function _callee3$(_context3) {
-      while (1) switch (_context3.prev = _context3.next) {
-        case 0:
-          url = getBaseUrl() + "/InitialLoad";
-          _jquery.default.ajax({
-            url: url,
-            type: 'GET',
-            dataType: 'json',
-            data: {},
-            crossDomain: true,
-            cache: false,
-            beforeSend: function beforeSend() {
-              (0, _jquery.default)('.ajax-loader').css("visibility", "visible");
-            },
-            success: function success(response) {
-              var result = response;
-              UpdateGlobalVariable(result); // updating the Global Variable
-              scopeData = GlobalObj; //assigning the global variable in NodeScope
-
-              GetRoomCode(GlobalObj.RedemptionId);
-              //DisableActivities();
-            },
-
-            complete: function complete() {
-              (0, _jquery.default)('.ajax-loader').css("visibility", "hidden");
-            },
-            error: function error() {
-              //    WarningSection(fullScreen, mouseActivity, debuggerCheck);
-            }
-          });
-        case 2:
-        case "end":
-          return _context3.stop();
-      }
-    }, _callee3);
-  }));
-  return _InitialLoad.apply(this, arguments);
-}
-function GetSecurityQuestion() {
-  return _GetSecurityQuestion.apply(this, arguments);
-}
-function _GetSecurityQuestion() {
-  _GetSecurityQuestion = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
-    var url;
-    return _regeneratorRuntime().wrap(function _callee4$(_context4) {
-      while (1) switch (_context4.prev = _context4.next) {
-        case 0:
-          url = getBaseUrl() + "/SecurityQuestions";
-          (0, _jquery.default)("#pills-security-questions").html();
-          _jquery.default.ajax({
-            url: url,
-            type: 'GET',
-            dataType: 'html',
-            data: {},
-            crossDomain: true,
-            cache: false,
-            beforeSend: function beforeSend() {
-              (0, _jquery.default)('.ajax-loader').css("visibility", "visible");
-            },
-            success: function success(response) {
-              var result = response;
-              window.SecQnsCallBack = function () {
-                change_tab('load-test');
-                (0, _jquery.default)(".candidate-conference").attr("class", "conference candidate-conference"); //clear classes
-                show(conference);
-                (0, _jquery.default)("#start-test").click();
-              };
-              if (result) {
-                (0, _jquery.default)("#pills-security-questions").html(result);
-                change_tab('security-questions');
-              }
-            },
-            complete: function complete() {
-              (0, _jquery.default)('.ajax-loader').css("visibility", "hidden");
-            },
-            error: function error() {
-              //    WarningSection(fullScreen, mouseActivity, debuggerCheck);
-            }
-          });
-        case 3:
-        case "end":
-          return _context4.stop();
-      }
-    }, _callee4);
-  }));
-  return _GetSecurityQuestion.apply(this, arguments);
-}
-function SystemCheckAPI() {
-  return _SystemCheckAPI.apply(this, arguments);
-}
-function _SystemCheckAPI() {
-  _SystemCheckAPI = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
-    var url;
-    return _regeneratorRuntime().wrap(function _callee5$(_context5) {
-      while (1) switch (_context5.prev = _context5.next) {
-        case 0:
-          url = getBaseUrl() + "/SystemCheck";
-          (0, _jquery.default)("#pills-system-check").html("");
-          _jquery.default.ajax({
-            url: url,
-            type: 'GET',
-            dataType: 'html',
-            data: {},
-            crossDomain: true,
-            cache: false,
-            beforeSend: function beforeSend() {
-              (0, _jquery.default)('.ajax-loader').css("visibility", "visible");
-            },
-            success: function success(response) {
-              var result = response;
-              if (result) {
-                (0, _jquery.default)("#pills-system-check").html(result);
-                change_tab('system-check');
-              }
-            },
-            complete: function complete() {
-              (0, _jquery.default)('.ajax-loader').css("visibility", "hidden");
-            },
-            error: function error() {
-              //    WarningSection(fullScreen, mouseActivity, debuggerCheck);
-            }
-          });
-        case 3:
-        case "end":
-          return _context5.stop();
-      }
-    }, _callee5);
-  }));
-  return _SystemCheckAPI.apply(this, arguments);
-}
-function AuthenticationSubmit() {
-  return _AuthenticationSubmit.apply(this, arguments);
-}
-function _AuthenticationSubmit() {
-  _AuthenticationSubmit = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
-    var url;
-    return _regeneratorRuntime().wrap(function _callee6$(_context6) {
-      while (1) switch (_context6.prev = _context6.next) {
-        case 0:
-          url = getBaseUrl() + "/AuthenticateCandidate";
-          _jquery.default.ajax({
-            url: url,
-            type: 'GET',
-            dataType: 'json',
-            data: {
-              EmailAddress: (0, _jquery.default)("#txtEmail").val(),
-              MobileNumber: (0, _jquery.default)("#txtMobile").val()
-            },
-            crossDomain: true,
-            cache: false,
-            beforeSend: function beforeSend() {
-              (0, _jquery.default)('.ajax-loader').css("visibility", "visible");
-            },
-            success: function success(response) {
-              var result = response;
-              if (result) {
-                GetSecurityQuestion();
-              }
-            },
-            complete: function complete() {
-              (0, _jquery.default)('.ajax-loader').css("visibility", "hidden");
-            },
-            error: function error() {
-              //    WarningSection(fullScreen, mouseActivity, debuggerCheck);
-            }
-          });
-        case 2:
-        case "end":
-          return _context6.stop();
-      }
-    }, _callee6);
-  }));
-  return _AuthenticationSubmit.apply(this, arguments);
-}
-function startRecording() {
-  return _startRecording.apply(this, arguments);
-}
-function _startRecording() {
-  _startRecording = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee7() {
-    var url;
-    return _regeneratorRuntime().wrap(function _callee7$(_context7) {
-      while (1) switch (_context7.prev = _context7.next) {
-        case 0:
-          url = getBaseUrl() + "/StartRecording";
-          _jquery.default.ajax({
-            url: url,
-            type: 'GET',
-            dataType: 'json',
-            data: {
-              redemptionId: scopeData.RedemptionId
-            },
-            crossDomain: true,
-            cache: false,
-            beforeSend: function beforeSend() {
-              (0, _jquery.default)('.ajax-loader').css("visibility", "visible");
-            },
-            success: function success(response) {
-              var result = response;
-              (0, _jquery.default)(".recording-icon").removeClass("hide");
-              RecordingIconDisplay(true);
-            },
-            complete: function complete() {
-              (0, _jquery.default)('.ajax-loader').css("visibility", "hidden");
-            },
-            error: function error() {
-              (0, _common.ToastMessage)("Screen Recorder failed to Initiate", true);
-              //    WarningSection(fullScreen, mouseActivity, debuggerCheck);
-            }
-          });
-        case 2:
-        case "end":
-          return _context7.stop();
-      }
-    }, _callee7);
-  }));
-  return _startRecording.apply(this, arguments);
-}
-function stopRecording() {
-  return _stopRecording.apply(this, arguments);
-} // Joining the room
-function _stopRecording() {
-  _stopRecording = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee8() {
-    var url;
-    return _regeneratorRuntime().wrap(function _callee8$(_context8) {
-      while (1) switch (_context8.prev = _context8.next) {
-        case 0:
-          url = getBaseUrl() + "/StopRecording";
-          _jquery.default.ajax({
-            url: url,
-            type: 'GET',
-            dataType: 'json',
-            data: {
-              redemptionId: scopeData.RedemptionId
-            },
-            crossDomain: true,
-            cache: false,
-            beforeSend: function beforeSend() {
-              (0, _jquery.default)('.ajax-loader').css("visibility", "visible");
-            },
-            success: function success(response) {
-              var result = response;
-              (0, _jquery.default)(".recording-icon").removeClass("hide").addClass("hide");
-              RecordingIconDisplay(false);
-            },
-            complete: function complete() {
-              (0, _jquery.default)('.ajax-loader').css("visibility", "hidden");
-            },
-            error: function error() {
-              (0, _common.ToastMessage)("Screen Recorder failed to Stop", true);
-              //    WarningSection(fullScreen, mouseActivity, debuggerCheck);
-            }
-          });
-        case 2:
-        case "end":
-          return _context8.stop();
-      }
-    }, _callee8);
-  }));
-  return _stopRecording.apply(this, arguments);
-}
-function JoinRoom(_x3, _x4) {
   return _JoinRoom.apply(this, arguments);
 }
-function _JoinRoom() {
-  _JoinRoom = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee9(userName, roomCode) {
-    var authToken, joining;
-    return _regeneratorRuntime().wrap(function _callee9$(_context9) {
-      while (1) switch (_context9.prev = _context9.next) {
-        case 0:
-          _context9.next = 2;
-          return hmsActions.getAuthTokenByRoomCode({
-            roomCode: roomCode
-          });
-        case 2:
-          authToken = _context9.sent;
-          // join room using username and auth token
-          joining = hmsActions.join({
-            userName: userName,
-            authToken: authToken,
-            metaData: {
-              userType: "candidate"
-            },
-            settings: {
-              isAudioMuted: false,
-              isVideoMuted: false,
-              captureNetworkQualityInPreview: true
-            }
-          }).then(function (values) {
-            //after joined the call
-            //fullScreenEnable();// enable full screen
-            startRecording();
-            handleScreenShare();
-          });
-          (0, _common.Events)();
-        case 5:
-        case "end":
-          return _context9.stop();
-      }
-    }, _callee9);
-  }));
-  return _JoinRoom.apply(this, arguments);
+;
+function renderMessageList(messages) {
+  if (messages.length === 0) {
+    return;
+  }
+  var text = "";
+  messages.forEach(function (msg) {
+    text += "\n".concat(msg.senderName, ": ").concat(msg.message);
+  });
+  console.log("new messages - ", text);
+  var elem = msgsElement;
+  if (elem) {
+    elem.textContent = text;
+  }
+}
+function UpdateUnreadMessageCount(messages) {
+  console.log(messages);
+  (0, _jquery.default)(".msg-badge").html("");
+  if (messages > 0) {
+    (0, _jquery.default)(".msg-badge").html(messages);
+  }
+}
+function sendMessageToBroadCast(e) {
+  if (!hmsStore.getState(_hmsVideoStore.selectIsConnectedToRoom)) {
+    console.warn("can't send message when not conneted to room");
+    return;
+  }
+  var msg = msgInputElement.value;
+  if (msg && msg.trim() !== "") {
+    hmsActions.sendBroadcastMessage(msg);
+    msgInputElement.value = "";
+  } else {
+    console.warn("Invalid message");
+  }
+}
+function SendMessageToPanel(e) {
+  if (!hmsStore.getState(_hmsVideoStore.selectIsConnectedToRoom)) {
+    console.warn("can't send message when not conneted to room");
+    return;
+  }
+  var msg = msgInputElement.value;
+  if (msg && msg.trim() !== "") {
+    hmsActions.sendGroupMessage(msg, [role]);
+    msgInputElement.value = "";
+  } else {
+    console.warn("Invalid message");
+  }
 }
 ;
 
@@ -41368,9 +41048,9 @@ function createElementWithClass(tag, className) {
   newElement.className = className;
   return newElement;
 }
+
 // Render a single peer
 function renderPeer(peer) {
-  var callback = null;
   var peerTileDiv = createElementWithClass("div", "peer-tile");
   var videoElement = createElementWithClass("video", "peer-video");
   var nonVideoElement = createElementWithClass("div", "peer-video-tile");
@@ -41383,15 +41063,6 @@ function renderPeer(peer) {
   hmsStore.subscribe(function (connectionQuality) {
     if (connectionQuality) {
       peerNetwork.innerHTML = ConnectivitySVG(connectionQuality.downlinkQuality);
-      if (IsSystemCheck) {
-        if (connectionQuality.downlinkQuality >= 3.0) {
-          (0, _jquery.default)('#speed-error').addClass('d-none');
-          (0, _jquery.default)('#speed-success').removeClass('d-none');
-        } else {
-          (0, _jquery.default)('#speed-error').removeClass('d-none');
-          (0, _jquery.default)('#speed-success').addClass('d-none');
-        }
-      }
     }
   }, (0, _hmsVideoStore.selectConnectionQualityByPeerID)(peer.id));
   var profileIcon = '<div data-testid="preview_avatar_tile" class="tile-short shape-circle shape-color">' + peer.name.substr(0, 2).toUpperCase() + '</div>';
@@ -41401,73 +41072,32 @@ function renderPeer(peer) {
     if (!track) {
       return;
     }
-    // console.log(track);
-    (0, _common.PushTracking)(track.enabled ? 73 : 520); //Camera Enabled or not
     if (track.enabled) {
       hmsActions.attachVideo(track.id, videoElement);
       videoElement.style.display = "";
       nonVideoElement.style.display = "none";
-      callback = function callback(def) {
-        (0, _common.CaptureUserPhoto)(videoElement, def);
-      };
     } else {
       hmsActions.detachVideo(track.id, videoElement);
       videoElement.style.display = "none";
       nonVideoElement.style.display = "";
-      callback = function callback(def) {
-        (0, _common.CaptureUserPhoto)("undefined", def);
-      };
     }
   }, (0, _hmsVideoStore.selectVideoTrackByID)(peer.videoTrack));
-  hmsStore.subscribe(function (track) {
-    if (!track) {
-      return;
-    }
-    console.log(track);
-  }, (0, _hmsVideoStore.selectPeerAudioByID)(peer.id)); //get the audio track
-  hmsStore.subscribe(function (track) {
-    if (!track) {
-      return;
-    }
-    console.log(track);
-  }, _hmsVideoStore.selectDominantSpeaker); // get the current Speaker
-  //hmsStore.subscribe(activeSpeaker, selectDominantSpeaker);
   peerTileDiv.append(videoElement);
   peerTileDiv.append(nonVideoElement);
   peerTileDiv.append(peerTileName);
   peerTileDiv.append(peerNetwork);
   renderedPeerIDs.add(peer.id);
-  return {
-    "elem": peerTileDiv,
-    "deferred": callback
-  };
+  return peerTileDiv;
 }
 
 // display a tile for each peer in the peer list
 function renderPeers() {
   var peers = hmsStore.getState(_hmsVideoStore.selectPeers);
   peers.forEach(function (peer) {
-    if (!renderedPeerIDs.has(peer.id) && peer !== null && peer !== void 0 && peer.videoTrack && peer !== null && peer !== void 0 && peer.isLocal) {
-      var render = renderPeer(peer);
-      peersContainer.append(render.elem);
-      render.deferred && render.deferred(_common.CameraCaptureCallBack); //trigger callback
-
-      var photoMilliSeconds = PhotoCaptureTimer * 1000;
-      var triggerTimeOut = setInterval(function () {
-        var stopRecordingForce = window.stopRecordingForce;
-        if (stopRecordingForce != null && stopRecordingForce.photo == false) {
-          render.deferred && render.deferred();
-        } else if (stopRecordingForce != null && stopRecordingForce.photo == true) {
-          clearInterval(triggerTimeOut);
-          var callBack = function callBack(response) {
-            var camVideo = document.getElementsByClassName("peer-video");
-            camVideo = camVideo.length > 0 ? camVideo[0] : camVideo;
-            camVideo.pause();
-            window.CompletedRecording.photo = true;
-          };
-          render.deferred && render.deferred(callBack);
-        }
-      }, photoMilliSeconds);
+    if (!renderedPeerIDs.has(peer.id) && peer !== null && peer !== void 0 && peer.videoTrack && !(peer !== null && peer !== void 0 && peer.isLocal)) {
+      peersContainer.append(renderPeer(peer));
+    } else {
+      // hmsStore.subscribe(UpdateUnreadMessageCount, selectMessagesUnreadCountByPeerID(peer.id));// unread message  count
     }
   });
 }
@@ -41478,36 +41108,46 @@ function show(el) {
   el.style.display = "";
 }
 function handleLeave() {
-  var callBack = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
-  stopRecording().then(function (values) {
-    hmsActions.leave();
-    peersContainer.innerHTML = "";
-    callBack && callBack();
-  });
+  hmsActions.leave();
+  peersContainer.innerHTML = "";
 }
-function fullScreenEnable() {
-  if (!(0, _common.IsFullScreenCurrently)()) (0, _common.GoInFullscreen)(document.documentElement);
-}
-function isStreaming() {
-  return params.Name == "candidate";
-}
-function exitHandler() {
-  if (!document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
-    (0, _common.ToastMessage)("Cant able to Cancel the FullScreen", true);
-    setTimeout(function () {
-      fullScreen.onclick();
-    }, 1000);
+function CandidateTest(property1, value1) {
+  var property2 = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "";
+  var value2 = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : "";
+  var presenter = hmsStore.getState(_hmsVideoStore.selectPeerScreenSharing);
+  var localPeerId = hmsStore.getState(_hmsVideoStore.selectLocalPeerID);
+  var presenterId = presenter === null || presenter === void 0 ? void 0 : presenter.id;
+  console.log("presenter peerid>>" + (presenter === null || presenter === void 0 ? void 0 : presenter.id));
+  console.log("Local peerid" + localPeerId);
+  if (presenterId) {
+    var presenter_metadata = hmsStore.getState((0, _hmsVideoStore.selectPeerMetadata)(presenterId));
+    var newPresenterMetadata = _objectSpread({}, presenter_metadata);
+    newPresenterMetadata[property1] = value1;
+    if (property2 != undefined && value2 != undefined) {
+      newPresenterMetadata[property2] = value2;
+    }
+    var local_metadata = hmsStore.getState((0, _hmsVideoStore.selectPeerMetadata)(localPeerId));
+    var obj = {};
+    obj[presenterId] = newPresenterMetadata;
+    hmsActions.changeMetadata(obj);
+    var newLocalMetadata = _objectSpread({}, local_metadata);
+    // update the old Metadata
+    hmsActions.changeMetadata(newLocalMetadata);
   }
 }
-function TriggerFSEvents() {
-  if (document.addEventListener) {
-    document.addEventListener('fullscreenchange', exitHandler, false);
-    document.addEventListener('mozfullscreenchange', exitHandler, false);
-    document.addEventListener('MSFullscreenChange', exitHandler, false);
-    document.addEventListener('webkitfullscreenchange', exitHandler, false);
-  }
+function PauseCandidateTest() {
+  CandidateTest("CandidatePauseTest", true, "CandidateResumeTest", false);
+  hide(pauseTestButton);
+  show(resumeTestButton);
 }
-
+function ResumeCandidateTest() {
+  CandidateTest("CandidateResumeTest", true, "CandidatePauseTest", false);
+  show(pauseTestButton);
+  hide(resumeTestButton);
+}
+function ForceCandidateTestEnd() {
+  CandidateTest("CandidateEndTest", true);
+}
 // *************************
 // Change screen based on connected to room or not
 // *************************
@@ -41528,267 +41168,348 @@ function onConnectionVideo(isConnected) {
 }
 
 // *************************
+// Mute/Unmute video/audio
+// *************************
+
+function handlePresenterAudio() {
+  var audioEnabled = !hmsStore.getState(_hmsVideoStore.selectIsLocalAudioEnabled);
+  hmsActions.setLocalAudioEnabled(audioEnabled);
+  muteAudioBtn.textContent = audioEnabled ? "Mute" : "Unmute";
+}
+
+// *************************
 // Share screen
 // *************************
-function handleScreenShare() {
-  return _handleScreenShare.apply(this, arguments);
-}
-function _handleScreenShare() {
-  _handleScreenShare = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee10() {
-    var screenShareOn;
-    return _regeneratorRuntime().wrap(function _callee10$(_context10) {
-      while (1) switch (_context10.prev = _context10.next) {
-        case 0:
-          screenShareOn = !hmsStore.getState(_hmsVideoStore.selectIsSomeoneScreenSharing);
-          _context10.next = 3;
-          return hmsActions.setScreenShareEnabled(screenShareOn);
-        case 3:
-          //screenShareBtn.textContent = screenShareOn ? "Stop" : "Share";
-          if (!scopeData.IsProctorLive) {
-            startTestButton.style.display = screenShareOn ? "" : "none";
-          }
-          showScreenShareVideo();
-        case 5:
-        case "end":
-          return _context10.stop();
-      }
-    }, _callee10);
-  }));
-  return _handleScreenShare.apply(this, arguments);
-}
 function showScreenShareVideo() {
   return _showScreenShareVideo.apply(this, arguments);
 }
 function _showScreenShareVideo() {
-  _showScreenShareVideo = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee11() {
+  _showScreenShareVideo = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
     var screenShareOn, amIScreenSharing, presenter, screenShareVideoTrack;
-    return _regeneratorRuntime().wrap(function _callee11$(_context11) {
-      while (1) switch (_context11.prev = _context11.next) {
+    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+      while (1) switch (_context2.prev = _context2.next) {
         case 0:
           screenShareOn = hmsStore.getState(_hmsVideoStore.selectIsSomeoneScreenSharing);
           if (!screenShareOn) {
-            _context11.next = 17;
+            _context2.next = 15;
             break;
           }
           amIScreenSharing = hmsStore.getState(_hmsVideoStore.selectIsLocalScreenShared);
           presenter = hmsStore.getState(_hmsVideoStore.selectPeerScreenSharing);
           screenShareVideoTrack = hmsStore.getState((0, _hmsVideoStore.selectScreenShareByPeerID)(presenter === null || presenter === void 0 ? void 0 : presenter.id));
           if (!amIScreenSharing) {
-            _context11.next = 12;
+            _context2.next = 9;
             break;
           }
-          fullScreenEnable();
-          screenShareStatus.textContent = "Preparing to start test!!!";
-          if (!scopeData.IsProctorLive) {
-            startTestButton.style.display = "";
-          }
-          (0, _common.PushTracking)(71); //start the sharing
-          _context11.next = 15;
+          screenShareStatus.textContent = "Screen share started!!!";
+          _context2.next = 13;
           break;
-        case 12:
+        case 9:
           hide(screenShareStatus);
-          //show(screenShareVideo);          
-          _context11.next = 15;
+          show(screenShareVideo);
+          _context2.next = 13;
           return hmsActions.attachVideo(screenShareVideoTrack === null || screenShareVideoTrack === void 0 ? void 0 : screenShareVideoTrack.id, screenShareVideo);
-        case 15:
-          _context11.next = 19;
+        case 13:
+          _context2.next = 18;
           break;
-        case 17:
-          (0, _common.PushTracking)(72); //stopped the sharing
-          screenShareStatus.textContent = "Preparing to start test!!!";
-          //hide(screenShareVideo);
-          //show(screenShareStatus);
-        case 19:
+        case 15:
+          screenShareStatus.textContent = "Welcome! Sit back and relax till streaming start.";
+          hide(screenShareVideo);
+          show(screenShareStatus);
+        case 18:
         case "end":
-          return _context11.stop();
+          return _context2.stop();
       }
-    }, _callee11);
+    }, _callee2);
   }));
   return _showScreenShareVideo.apply(this, arguments);
 }
-function renderMessageList(messages) {
-  if (messages.length === 0) {
-    return;
-  }
-  var text = "";
-  messages.forEach(function (msg) {
-    text += "\n".concat(msg.senderName, ": ").concat(msg.message);
-  });
-  // console.log("new messages - ", text);
-  var elem = msgsElement;
-  if (elem) {
-    elem.textContent = text;
+function EndRoomClick() {
+  try {
+    var lock = false; // set to true to disallow rejoins
+    var reason = 'Test is over';
+    hmsActions.endRoom(lock, reason);
+  } catch (error) {
+    // Permission denied or not connected to room
+    console.error(error);
   }
 }
-function sendMessage() {
-  if (!hmsStore.getState(_hmsVideoStore.selectIsConnectedToRoom)) {
-    console.warn("can't send message when not conneted to room");
-    return;
-  }
-  var msg = msgInputElement.value;
-  if (msg && msg.trim() !== "") {
-    hmsActions.sendBroadcastMessage(msg);
-  } else {
-    console.warn("Invalid message");
-  }
+function renderEndRoomButton(_x3) {
+  return _renderEndRoomButton.apply(this, arguments);
 }
-function AfterSubmitTest(response) {
-  var callBack = function callBack() {
-    (0, _jquery.default)('.conference.candidate-conference').empty();
-    (0, _jquery.default)('.conference.candidate-conference').html(response);
-  };
-  handleLeave(callBack);
-}
-window.AfterSubmitTest = AfterSubmitTest;
-function InitiatingTimer() {
-  //for timer
-  var timer;
-  var timerExamInterval;
-  if (document.getElementById("exam-timer") != null) {
-    var minutes, seconds;
-    timerExamInterval = setInterval(countExamTimer, 1000);
-    if (initialTimer && !window.pauseAll) {
-      var duration = 60 * totalMcqTime;
-      timer = duration, minutes, seconds;
-      initialTimer = false;
-    }
-    function countExamTimer() {
-      if (!window.pauseAll) {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-        if (document.getElementById("exam-timer") != null) {
-          document.getElementById("exam-timer").innerHTML = maxMcqTime + " / " + minutes + ":" + seconds;
-        }
-        if (--timer < 0) {
-          timer = duration;
-          if (window.SubmitTestAutomatically != null) {
-            window.SubmitTestAutomatically(AfterSubmitTest);
+function _renderEndRoomButton() {
+  _renderEndRoomButton = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(permissions) {
+    var endRoomButton;
+    return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+      while (1) switch (_context3.prev = _context3.next) {
+        case 0:
+          endRoomButton = document.getElementById('end-room-button');
+          if (permissions != null && permissions.endRoom) {
+            endRoomButton.onclick = EndRoomClick;
+            endRoomButton.style.display = 'inline-block';
+          } else {
+            endRoomButton.style.display = 'none';
           }
-        }
+        case 2:
+        case "end":
+          return _context3.stop();
       }
-    }
-  }
+    }, _callee3);
+  }));
+  return _renderEndRoomButton.apply(this, arguments);
 }
-var RecordingIconDisplay = function RecordingIconDisplay(isRecording) {
-  var localPeerId = hmsStore.getState(_hmsVideoStore.selectLocalPeerID); //candidate peer
-
-  console.log("candidate peerid" + localPeerId);
-  if (localPeerId) {
-    var local_metadata = hmsStore.getState((0, _hmsVideoStore.selectPeerMetadata)(localPeerId));
-    var newLocalMetadata = _objectSpread(_objectSpread({}, local_metadata), {}, {
-      IsRecording: isRecording
-    });
-    var obj = {};
-    obj[localPeerId] = newLocalMetadata;
-    hmsActions.changeMetadata(obj);
-    var oldLocalMetadata = _objectSpread({}, local_metadata);
-    // update the old Metadata
-    hmsActions.changeMetadata(oldLocalMetadata);
-  }
-};
-var UserNewProofTrigger = function UserNewProofTrigger(proof, UrlId) {
-  var localPeerId = hmsStore.getState(_hmsVideoStore.selectLocalPeerID); //candidate peer
-  console.log("ProofAdminPeerId peerid>>" + ProofAdminPeerId);
-  console.log("candidate peerid" + localPeerId);
-  if (localPeerId) {
-    var admin_metadata = hmsStore.getState((0, _hmsVideoStore.selectPeerMetadata)(ProofAdminPeerId));
-    var newAdminMetadata = _objectSpread(_objectSpread({}, admin_metadata), {}, {
-      ViewNewProof: proof,
-      UrlId: UrlId
+function TriggerEnableStartButton() {
+  var presenter = hmsStore.getState(_hmsVideoStore.selectPeerScreenSharing);
+  var localPeerId = hmsStore.getState(_hmsVideoStore.selectLocalPeerID);
+  var presenterId = presenter === null || presenter === void 0 ? void 0 : presenter.id;
+  console.log("presenter peerid>>" + (presenter === null || presenter === void 0 ? void 0 : presenter.id));
+  console.log("Local peerid" + localPeerId);
+  if (presenterId) {
+    var presenter_metadata = hmsStore.getState((0, _hmsVideoStore.selectPeerMetadata)(presenterId));
+    var newPresenterMetadata = _objectSpread(_objectSpread({}, presenter_metadata), {}, {
+      StartQuiz: true
     });
     var local_metadata = hmsStore.getState((0, _hmsVideoStore.selectPeerMetadata)(localPeerId));
     var obj = {};
-    obj[ProofAdminPeerId] = newAdminMetadata;
+    obj[presenterId] = newPresenterMetadata;
     hmsActions.changeMetadata(obj);
     var newLocalMetadata = _objectSpread({}, local_metadata);
     // update the old Metadata
     hmsActions.changeMetadata(newLocalMetadata);
+    hide(enableStartbutton);
+    show(pauseTestButton);
+    show(endTestButton);
+    (0, _jquery.default)(".interview-extra-btn").hide();
   }
-};
-function UploadProof() {
-  var fileInput = (0, _jquery.default)("#newproof");
-  if (fileInput && fileInput[0].files) {
-    var fileData = new FormData();
-    for (i = 0; i < fileInput[0].files.length; i++) {
-      //Appending each file to FormData object
-      fileData.append(fileInput[0].files[i].name, fileInput[0].files[i]);
+}
+function TriggerNewProofButton() {
+  if (confirm("Want to Send the request alert to Candidate!")) {
+    var presenter = hmsStore.getState(_hmsVideoStore.selectPeerScreenSharing);
+    var localPeerId = hmsStore.getState(_hmsVideoStore.selectLocalPeerID);
+    var presenterId = presenter === null || presenter === void 0 ? void 0 : presenter.id;
+    console.log("presenter peerid>>" + (presenter === null || presenter === void 0 ? void 0 : presenter.id));
+    console.log("Local peerid" + localPeerId);
+    if (presenterId) {
+      var presenter_metadata = hmsStore.getState((0, _hmsVideoStore.selectPeerMetadata)(presenterId));
+      var newPresenterMetadata = _objectSpread(_objectSpread({}, presenter_metadata), {}, {
+        NewProof: true
+      });
+      var local_metadata = hmsStore.getState((0, _hmsVideoStore.selectPeerMetadata)(localPeerId));
+      var obj = {};
+      obj[presenterId] = newPresenterMetadata;
+      hmsActions.changeMetadata(obj);
+      var newLocalMetadata = _objectSpread({}, local_metadata);
+      // update the old Metadata
+      hmsActions.changeMetadata(newLocalMetadata);
     }
-    // recorded data
-    //formData.append('File', input[0].files);
-    _jquery.default.ajax({
-      url: '/Proof/Upload',
-      type: 'POST',
-      data: fileData,
-      dataType: 'json',
-      cache: false,
-      async: false,
-      processData: false,
-      contentType: false,
-      success: function success(response) {
-        console.log("Proof Uploaded Successfully!!!");
-        (0, _jquery.default)('#candidate-myModal').hide();
-        UserNewProofTrigger(true, response.imageUrl);
-      },
-      error: function error(response) {
-        (0, _jquery.default)("#Inject-UAA").html(response.responseText);
-        UserNewProofTrigger(false, "");
-        (0, _jquery.default)('#Candidate-myModal').show();
-      }
-    });
   }
 }
-function NewProofUpload() {
-  (0, _jquery.default)("#Inject-UAA").html("");
-  (0, _jquery.default)("#Inject-UAA").html("<input type='file' id='newproof' /><img class='w-100' id='preview-newproof'></img><a id='uploadnewproof' class='btn btn-primary'>submit</a>");
-  (0, _jquery.default)('#candidate-myModal').show();
-  (0, _jquery.default)("#newproof").change(function () {
-    newproof(this);
+function ViewProof() {
+  _jquery.default.ajax({
+    url: '/Proof/ViewOldProof',
+    type: 'GET',
+    dataType: 'json',
+    data: {},
+    cache: false,
+    async: false,
+    success: function success(response) {
+      if (response != null && response.length > 0) {}
+      (0, _jquery.default)("#Inject-UAA").html("");
+      (0, _jquery.default)("#Inject-UAA").html("<img class='w-100' src='" + response + "'/>");
+      (0, _jquery.default)('#test-myModal').show();
+      return true;
+    },
+    error: function error(response) {
+      (0, _jquery.default)("#Inject-UAA").html("");
+      (0, _jquery.default)("#Inject-UAA").html(response.responseText);
+      (0, _jquery.default)('#test-myModal').show();
+      return true;
+    }
   });
-  (0, _jquery.default)("#uploadnewproof").click(UploadProof);
 }
-function newproof(input) {
-  if (input.files && input.files[0]) {
-    var reader3 = new FileReader();
-    reader3.onload = function (e) {
-      (0, _jquery.default)('#preview-newproof').attr('src', e.target.result);
-    };
-    reader3.readAsDataURL(input.files[0]);
+var NewProofId = "";
+var NewProofImageId = "";
+var NewProofDocumentName = "";
+function ViewNewProof() {
+  _jquery.default.ajax({
+    url: '/Proof/AdminView',
+    type: 'GET',
+    dataType: 'json',
+    data: {
+      filePath: NewProofId,
+      imageId: NewProofImageId
+    },
+    cache: false,
+    async: false,
+    success: function success(response) {
+      (0, _jquery.default)("#Inject-UAA").html("");
+      (0, _jquery.default)("#Inject-UAA").html("<h3>Uploaded Document:" + NewProofDocumentName + "</h3><img class='w-100' src='" + response.responseText + "'/>   <div id='controls' class='text-center'><button id = 'approveProof' class= 'btn-control btn-left-rounded'> Approve</button><button id = 'rejectProof' class= 'btn-control btn-left-rounded'> Reject</button> ");
+      (0, _jquery.default)("#newproof").change(function () {
+        newproof(this);
+      });
+      (0, _jquery.default)("#approveProof").click(UpdateProofStatus);
+      (0, _jquery.default)("#rejectProof").click(UpdateProofStatus);
+      (0, _jquery.default)('#test-myModal').show();
+      return true;
+    },
+    error: function error(response) {
+      (0, _jquery.default)("#Inject-UAA").html("");
+      (0, _jquery.default)("#Inject-UAA").html("<img class='w-100' src='" + response.responseText + "'/>");
+      (0, _jquery.default)('#test-myModal').show();
+      return true;
+    }
+  });
+}
+function UpdateProofStatus() {
+  if (NewProofImageId == null || NewProofImageId == "") {
+    (0, _common.ToastMessage)("Proof Id is Empty or Null", true);
+    return;
   }
+  _jquery.default.ajax({
+    url: '/Proof/UpdateProofDocumentStatus',
+    type: 'POST',
+    data: {
+      Id: NewProofImageId
+    },
+    dataType: 'json',
+    cache: false,
+    async: true,
+    processData: false,
+    contentType: false,
+    success: function success(response) {},
+    error: function error(response) {}
+  });
 }
-//Functions - End
-
+function UserAlertTest() {
+  (0, _jquery.default)(".interview-alert-btn").removeClass("glow");
+  _jquery.default.ajax({
+    url: '/Tracker/GetActivities',
+    type: 'GET',
+    dataType: 'json',
+    data: {},
+    cache: false,
+    async: false,
+    success: function success(response) {
+      (0, _jquery.default)("#Inject-UAA").html("");
+      (0, _jquery.default)("#Inject-UAA").html(response);
+      (0, _jquery.default)('#test-myModal').show();
+      return true;
+    },
+    error: function error(response) {
+      (0, _jquery.default)("#Inject-UAA").html("");
+      (0, _jquery.default)("#Inject-UAA").html(response.responseText);
+      (0, _jquery.default)('#test-myModal').show();
+      return true;
+    }
+  });
+}
+function GetRoomCode(_x4) {
+  return _GetRoomCode.apply(this, arguments);
+}
+function _GetRoomCode() {
+  _GetRoomCode = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(_redemptionId) {
+    var url;
+    return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+      while (1) switch (_context4.prev = _context4.next) {
+        case 0:
+          url = getBaseUrl() + "/GetRoomCodeByRedemptionId";
+          _jquery.default.ajax({
+            url: url,
+            type: 'GET',
+            dataType: 'json',
+            data: {
+              redemptionId: _redemptionId,
+              role: "panel"
+            },
+            crossDomain: true,
+            cache: false,
+            beforeSend: function beforeSend() {
+              (0, _jquery.default)('.ajax-loader').css("visibility", "visible");
+            },
+            success: function success(response) {
+              var result = response;
+              JoinRoom(params.Name, result);
+            },
+            complete: function complete() {
+              (0, _jquery.default)('.ajax-loader').css("visibility", "hidden");
+            },
+            error: function error() {
+              //    WarningSection(fullScreen, mouseActivity, debuggerCheck);
+            }
+          });
+        case 2:
+        case "end":
+          return _context4.stop();
+      }
+    }, _callee4);
+  }));
+  return _GetRoomCode.apply(this, arguments);
+}
+function getBaseUrl() {
+  return "/Admin";
+}
+function InitialLoad() {
+  return _InitialLoad.apply(this, arguments);
+} //Functions - End
 //Bind Events - Start
-loadSystemCheck.onclick = SystemCheckAPI;
-authenticateSubmit.onclick = AuthenticationSubmit;
-screenShareBtn.onclick = InitialLoad;
-hide(startTestButton);
-leaveBtn.onclick = handleLeave;
-startTestButton.onclick = LoadQuestion;
-newProofUpload.onclick = NewProofUpload;
-startButton.onclick = function () {
-  // fullScreenEnable();
-  SystemCheck();
-  if (scopeData.IsProctorLive) {
-    screenShareStatus.textContent = "Please wait for Admin !!!";
-    hide(startButton);
-  } else if (!scopeData.IsProctorLive) {
-    LoadQuestion();
-  }
-};
-fullScreen.onclick = function () {
-  fullScreenEnable();
-};
+function _InitialLoad() {
+  _InitialLoad = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
+    var url;
+    return _regeneratorRuntime().wrap(function _callee5$(_context5) {
+      while (1) switch (_context5.prev = _context5.next) {
+        case 0:
+          url = getBaseUrl() + "/InitialLoad";
+          _jquery.default.ajax({
+            url: url,
+            type: 'GET',
+            dataType: 'json',
+            data: {},
+            crossDomain: true,
+            cache: false,
+            beforeSend: function beforeSend() {
+              (0, _jquery.default)('.ajax-loader').css("visibility", "visible");
+            },
+            success: function success(response) {
+              var result = response;
+              UpdateGlobalVariable(result); // updating the Global Variable
+              scopeData = GlobalObj; //assigning the global variable in NodeScope
 
+              GetRoomCode(GlobalObj.RedemptionId);
+            },
+            complete: function complete() {
+              (0, _jquery.default)('.ajax-loader').css("visibility", "hidden");
+            },
+            error: function error() {
+              //    WarningSection(fullScreen, mouseActivity, debuggerCheck);
+            }
+          });
+        case 2:
+        case "end":
+          return _context5.stop();
+      }
+    }, _callee5);
+  }));
+  return _InitialLoad.apply(this, arguments);
+}
+hide(pauseTestButton);
+hide(resumeTestButton);
+hide(endTestButton);
+UserAlertTestButton.onclick = UserAlertTest;
+pauseTestButton.onclick = PauseCandidateTest;
+resumeTestButton.onclick = ResumeCandidateTest;
+endTestButton.onclick = ForceCandidateTestEnd;
+leaveBtn.onclick = handleLeave;
+sendToCandidate.onclick = sendMessageToBroadCast;
+viewProof.onclick = ViewProof;
+reqProof.onclick = TriggerNewProofButton;
+viewNewProof.onclick = ViewNewProof;
+sendToPanel.onclick = SendMessageToPanel;
+//muteVideoBtn.onclick = handlePresenterVideo;
+muteAudioBtn.onclick = handlePresenterAudio;
+//screenShareBtn.onclick = handleScreenShare;
+enableStartbutton.onclick = TriggerEnableStartButton;
 // Cleanup if user refreshes the tab or navigates away
 window.onunload = window.onbeforeunload = handleLeave;
-msgInputElement.onkeypress = function (e) {
-  if (e.keyCode === 13) {
-    sendMessage();
-    msgInputElement.value = "";
-  }
-};
 
 // Listen to the connection state
 hmsStore.subscribe(onConnectionVideo, _hmsVideoStore.selectIsConnectedToRoom);
@@ -41802,7 +41523,12 @@ hmsStore.subscribe(showScreenShareVideo, _hmsVideoStore.selectPeers);
 // Reactive state - renderPeers is called whenever there is a change in the peer-list
 hmsStore.subscribe(renderPeers, _hmsVideoStore.selectPeers);
 hmsStore.subscribe(renderMessageList, _hmsVideoStore.selectHMSMessages);
-hide(screenShareStatus);
+hmsStore.subscribe(UpdateUnreadMessageCount, _hmsVideoStore.selectUnreadHMSMessagesCount); // unread message  count
+hmsStore.subscribe(renderEndRoomButton, _hmsVideoStore.selectPermissions);
 //Bind Events - End
-},{"../node_modules/@100mslive/hms-video-store":"j5Na","./common":"LDbG","../node_modules/jquery":"HlZQ"}]},{},["De0C"], null)
-//# sourceMappingURL=/candidate.1b889879.js.map
+
+//trigger Join
+InitialLoad();
+//JoinRoom(params.Name, "ivn-wwwk-jnx"); // panel
+},{"../node_modules/@100mslive/hms-video-store":"j5Na","../node_modules/jquery":"HlZQ","./common":"LDbG"}]},{},["ddGe"], null)
+//# sourceMappingURL=/admin.34544c0b.js.map
