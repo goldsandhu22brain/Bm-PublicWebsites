@@ -596,6 +596,10 @@
 		right: 40%;
 	}
 	
+	.hnt-product .acuminate-section{
+		background-image: none;
+	}
+	
 }
 @media screen and (max-width:767px) {
 	
@@ -737,6 +741,110 @@
 	}
 	.accenture-case-studies-page .global-brands-section .slick-slider .slick-next{
 		right: 40%;
+	}
+	
+	.hnt-product .banner-section .caption h1 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.hnt-product .hero-section{
+		padding: 0 0 20px;
+		background-image: none;
+	}
+	.hnt-product .hero-section h1 {
+		line-height: 40px;
+	}
+	.hnt-product .coding-section .btn-wrap .btn-default {
+		margin-right: 6px;
+	}
+	.hnt-product .language-section .tab-pane ul{
+		display: block;
+	}
+	.hnt-product .language-section .tab-pane li{
+		margin: 32px 0 0;
+	}
+	.hnt-product .needs-section .wrap{
+		padding: 20px;
+		text-align: center;
+	}
+	.hnt-product .needs-section .wrap h6{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.hnt-product .needs-section .wrap .btn-wrap {
+		text-align: center;
+		margin-top: 20px;
+	}
+	.hnt-product .featured-services-section .right-wrap ul {
+		padding: 24px;
+	}
+	.hnt-product .hiring-section{
+		padding-top: 200px;
+	}
+	.hnt-product .hiring-section h1{
+		margin: 0px auto 40px;
+	}
+	.hnt-product .hiring-section .counter{
+		margin-right: 12px;
+		max-width: 50px;
+		height: 50px;
+		font-size: 26px;
+	}
+	.hnt-product .hiring-section .img-wrap{
+		margin-bottom: 40px;
+	}
+	.hnt-product .interview-section .interview-process h1 {
+		margin: 90px 0 30px;
+	}
+	.hnt-product .interview-section .interview-process .box{
+		min-height: auto;
+		margin: 0 0 20px;
+	}
+	.hnt-product .hiring-tool-section .wrap-body{
+		margin-left: 0;
+	}
+	.hnt-product .online-hackathons-section form{
+		padding: 20px;
+	}
+	.hnt-product .prize-section ul{
+		display: block;
+		padding: 20px;
+	}
+	.hnt-product .prize-section ul li{
+		font-size: 20px;
+		line-height: 30px;
+		margin: 20px 0;
+	}
+	.hnt-product .campus-ambassador{
+		padding-bottom: 50px;
+		margin-top: 40px;
+	}
+	.hnt-product .prize-section{
+		position: unset;
+		margin-top: 60px;
+	}
+	.hnt-product .leaderboard-section {
+		padding-top: 50px;
+	}
+	
+	.hnt-product .questions-type-section ul{
+		display: block;
+	}
+	.hnt-product .questions-type-section li{
+		margin: 0px auto 30px;
+	}
+	.hnt-product .questions-type-section li:not(:last-child){
+		margin-right: auto;
+	}
+	.hnt-product .type-test-section .accordion-button{
+		font-size: 18px;
+	}
+	.hnt-product .customized-solutions-section form{
+		min-height: auto;
+		padding: 20px;
+	}
+	.hnt-product .win-prizes-section{
+		background: linear-gradient(to bottom, #F9F9F9 0%, #F9F9F9 50%, #FFE08B 50%, #FFE08B 100%);
 	}
 	
 }

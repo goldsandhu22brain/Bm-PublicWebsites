@@ -3261,6 +3261,10 @@
 	background-repeat: no-repeat;
 	min-height: 479px;
 }
+.hnt-product .hero-section .block{
+	max-width: 390px;
+	margin-left: auto;
+}
 .hnt-product .hero-section h1{
 	line-height: 50px;
 	margin-bottom: 30px;
@@ -3270,6 +3274,9 @@
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+.hnt-product .hero-section .btn.btn-default{
+	width: 150px;
 }
 .hnt-product .hero-section p{
 	padding-right: 36px;
@@ -3601,10 +3608,11 @@
 	color: #C6C6C6;
 }
 .hnt-product .hiring-section .wrap{
-	display: -webkit-box; 
+	display: flex; 
 }
 .hnt-product .hiring-section .counter{
-	width: 70px;
+	width: 100%;
+	max-width: 70px;
 	height: 70px;
 	background-color: #144DF6;
 	color: #FFFFFF;
@@ -3852,7 +3860,8 @@
 	margin-bottom: 40px;
 }
 .hnt-product .hiring-tool-section .wrap{
-	display: -webkit-box;
+	display: flex;
+	flex-wrap: wrap;
 	margin-top: 30px;
 }
 .hnt-product .hiring-tool-section .wrap-body{
@@ -3966,7 +3975,7 @@
 	padding: 20px;
 	padding-left: 18px;
 	margin-bottom: 20px;
-	width: 375px;
+	max-width: 375px;
 }
 .hnt-product .online-hackathons-section li .counter{
 	max-width: 72px;
@@ -4150,7 +4159,7 @@
 .hnt-product .questions-type-section li{
 	font-weight: 600;
 	border-radius: 20px;
-	width: 227px;
+	max-width: 227px;
 	height: 120px;
 	position: relative;
     display: flex;
@@ -4269,7 +4278,7 @@
 	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.10);
 	padding: 70px 106px 70px 88px;
 	max-width: 676px;
-	height: 510px;	
+	min-height: 510px;	
 	margin-left: auto;
 }
 .hnt-product .customized-solutions-section form label{
