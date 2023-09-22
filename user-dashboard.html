@@ -1,0 +1,1083 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha512-Dop/vW3iOtayerlYAqCgkVr2aTr2ErwwTYOvRFUpzl2VhCMJyjQF0Q9TjUXIo6JhuM/3i0vVEt2e/7QQmnHQqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" integrity="sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha512-JApjWRnfonFeGBY7t4yq8SWr1A6xVYEJgO/UMIYONxaR3C9GETKUg0LharbJncEzJF5Nmiv+Pr5QNulr81LjGQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="assets/css/user-dashboard.css">
+
+<link rel="stylesheet" href="https://mediacdn.brainmeasures.com/dist/css/Dstyle.css">
+<link rel="stylesheet" href="https://mediacdn.brainmeasures.com/dist/css/main.css">
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+<link href="https://mediacdn.brainmeasures.com/dist/css/jquery.gritter.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://mediacdn.brainmeasures.com/MvcFramework/V2/userdashboardcss/Custom.css" />
+<link rel="stylesheet" href="https://mediacdn.brainmeasures.com/Plugins/select2/select2.css" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://mediacdn.brainmeasures.com/Plugins/gritter/jquery.gritter.js"></script>
+
+<script src="https://mediacdn.brainmeasures.com/Plugins/tools.js"></script>
+<script src="https://mediacdn.brainmeasures.com/Plugins/select2/select2.js"></script>
+
+
+<script src="https://mediacdn.brainmeasures.com/Plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="https://mediacdn.brainmeasures.com/Plugins/datatables/dataTables.bootstrap4.min.js"></script>
+<!-- Buttons examples -->
+<script src="https://mediacdn.brainmeasures.com/Plugins/datatables/dataTables.buttons.min.js"></script>
+<script src="https://mediacdn.brainmeasures.com/Plugins/datatables/buttons.bootstrap4.min.js"></script>
+<script src="https://mediacdn.brainmeasures.com/Plugins/datatables/jszip.min.js"></script>
+<script src="https://mediacdn.brainmeasures.com/Plugins/datatables/pdfmake.min.js"></script>
+<script src="https://mediacdn.brainmeasures.com/Plugins/datatables/vfs_fonts.js"></script>
+<script src="https://mediacdn.brainmeasures.com/Plugins/datatables/buttons.html5.min.js"></script>
+<script src="https://mediacdn.brainmeasures.com/Plugins/datatables/buttons.print.min.js"></script>
+<script src="https://mediacdn.brainmeasures.com/Plugins/datatables/buttons.colVis.min.js"></script>
+<!-- Responsive examples -->
+<script src="https://mediacdn.brainmeasures.com/Plugins/datatables/dataTables.responsive.min.js"></script>
+<script src="https://mediacdn.brainmeasures.com/Plugins/datatables/responsive.bootstrap4.min.js"></script>
+<script src="https://mediacdn.brainmeasures.com/AdminAssets/pages/jquery.datatable.init.js"></script>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Brainmeasures.com - Individual</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<script src="https://www.2checkout.com/static/checkout/javascript/direct.min.js"></script>
+	<script src="https://js.stripe.com/v3/"></script>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha512-qWVvreMuH9i0DrugcOtifxdtZVBBL0X75r9YweXsdCHtXUidlctw7NXg5KVP3ITPtqZ2S575A0wFkvgS2anqSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<![endif]-->
+
+<script src="https://testbm.brainmeasures.com/MvcScriptsAndStyles/js/Individual/bootstrap.js"></script>
+<script src="https://testbm.brainmeasures.com/MvcScriptsAndStyles/js/Individual/jquery.slimscroll.min.js"></script>
+<script src="https://testbm.brainmeasures.com/MvcScriptsAndStyles/js/Individual/fastclick.min.js"></script>
+<script src="https://testbm.brainmeasures.com/MvcScriptsAndStyles/js/Individual/app.js"></script>
+<script src="https://testbm.brainmeasures.com/MvcScriptsAndStyles/js/Individual/jquery.flot.min.js"></script>
+<script src="https://testbm.brainmeasures.com/MvcScriptsAndStyles/js/Individual/jquery.flot.resize.min.js"></script>
+<script src="https://testbm.brainmeasures.com/MvcScriptsAndStyles/js/Individual/jquery.flot.pie.min.js"></script>
+<script src="https://testbm.brainmeasures.com/MvcScriptsAndStyles/js/Individual/jquery.flot.categories.min.js"></script>
+<script src="https://testbm.brainmeasures.com/MvcScriptsAndStyles/js/Individual/modernizr-2.6.2.min.js"></script>
+<script src="https://testbm.brainmeasures.com/MvcScriptsAndStyles/js/Common/Common.js"></script>
+<script src="https://testbm.brainmeasures.com/MvcScriptsAndStyles/js/Common/commonservice.js"></script>
+
+	<link href="https://mediacdn.brainmeasures.com/MvcFramework/V2/userdashboardcss/dashboard.css" rel="stylesheet" />
+</head>
+<body class="hold-transition skin-blue layout-top-nav">
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+	</div>
+	<img class="AccTypeFixed" src='https://cdn.brainmeasures.com/Images/Unknown/SideLabel.png'>
+	<div class="wrapper">
+		
+
+<header class="main-header">
+	<nav id="ucTopNav" class="navbar navbar-static-top">
+
+		<div class="container">
+			<div class="navbar-header">
+				<a style="" href="/user/dashboard" class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Brainmeasures.com (Since 2017) - An ISO Certified Company"><b>Brainmeasures</b></a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+					<i class="fa fa-search"></i>
+				</button>
+			</div>
+			<div class="navbar-custom-menu">
+				<ul class="nav navbar-nav">
+
+											<li class="dropdown notifications-menu" data-toggle="tooltip" data-placement="bottom" title="Ticket">
+                            <a href="/support/ticket">  <!--class="dropdown-toggle" data-toggle="dropdown"-->
+                                <i class="glyphicon glyphicon-file"></i>
+                                <span class="label label-warning">
+                                    <span id="lblTicketCounter">14</span>
+                                </span>
+                            </a>
+						</li>
+						<li class="dropdown notifications-menu" data-toggle="tooltip" data-placement="bottom" title="Notifications">
+							<a href="/user/profile/Notification">
+								<i class="glyphicon glyphicon-bell"></i>
+								<span class="label label-warning">
+									<span id="lblNotifyCounter">0</span>
+								</span>
+							</a>
+
+						</li>
+						<li class="dropdown tasks-menu" data-toggle="tooltip" data-placement="bottom" title="Your Wishlist">
+                            <a id="wfor" href="/user/profile/mywishList">   <!--class="dropdown-toggle" data-toggle="dropdown"-->
+                                <i class="glyphicon glyphicon-heart"></i>
+                                <span id="spnShowWishListItems" class="label label-info">
+                                    <span id="lblShowWishlistCountTop">3</span>
+                                </span>
+                            </a>
+
+						</li>
+						<li class="dropdown tasks-menu" data-toggle="tooltip" data-placement="bottom" title="Cart">
+							<a href="/user/Individual/MyCart">
+								<i class="glyphicon glyphicon-shopping-cart"></i>
+								<span id="spnShowCartIcon" class="label label-danger">
+									<span id="lblCartCountTopHeader">1</span>
+								</span>
+							</a>
+
+						</li>
+
+					
+
+
+	<li class="dropdown HideSwitchSection">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Switch As <span class="caret"></span></a>
+		<ul class="dropdown-menu" role="menu">
+				<li class="switchView" data-type="Candidate" data-Id="00000000-0000-0000-0000-000000000000"><a>Individual User</a></li>
+								<li class="switchView" data-type="Corporate" data-Id="0652a162-ad10-416f-9029-bb3f7fdb7a88">
+						<a>jasdeep Company User</a>
+					</li>
+					</ul>
+	</li>
+	<script type="text/javascript">
+		function ViewSwitcher(e) {
+			var _this = e.currentTarget;
+			var UserRole = $(_this).attr("data-type");
+			//showLoading(true);
+			var cmpId = $(_this).attr("data-Id");
+
+			var jsonData = JSON.stringify({ 'UserRole': UserRole, 'cmpId': cmpId });
+			var apiurl = '/user/base/ViewSwitch';
+			$.ajax({
+				type: 'POST',
+				cache: false,
+				async: false,
+				contentType: 'application/json',
+				url: apiurl,
+				data: jsonData,
+				dataType: 'json',
+				success: function (response) {
+					if (response) {
+						window.location.href = '/User/Dashboard';
+					}
+				},
+				error: function (XMLHttpRequest, textStatus, errorThrown) {
+					console.log(XMLHttpRequest);
+				}
+			});
+		}
+
+		$(document).ready(function () {
+			$(".switchView").click((e) => {
+				ViewSwitcher(e);
+			});
+		});
+	</script>
+
+
+					<li class="dropdown user user-menu">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<img src='https://mediacdn.brainmeasures.com/images/UserPicture/Candidate.png' id="headerimgSmall" class="user-image" alt="User Image" />
+							<span class="hidden-xs">
+								<span id="lblUserName">jasdeep</span><span class="caret"></span>
+							</span>
+						</a>
+						<ul class="dropdown-menu">
+							<li class="user-header">
+								<img src='https://mediacdn.brainmeasures.com/images/UserPicture/Candidate.png' id="headerimgLarge" class="img-circle" alt="User Image" />
+								<p>
+									<span id="lblUserNameTitle">jasdeep</span>
+									<a href="/user/profile" class="editpftop" id="ahrefEditProfile" data-toggle="tooltip" data-placement="top" title="Edit Profile">
+										<i class="glyphicon glyphicon-pencil"></i>
+									</a>
+									<small>
+										<span id="lblCityCountry"></span>
+									</small>
+								</p>
+							</li>
+							<li class="user-footer">
+								<div class="pull-left">
+									<a class="btn btn-info btn-flat" href="/user/profile" data-toggle="tooltip" data-placement="left" id="lnkbtnSetting" title="Manage Notifications, Account Setting, Change Password, etc."><i class="glyphicon glyphicon-off"></i>Settings</a>
+								</div>
+								<div class="pull-right">
+									<a class="btn btn-danger btn-flat" href="/auth/logout" id="ahrefLogout" data-toggle="tooltip" data-placement="left" title="End your Current Session"><i class="glyphicon glyphicon-off"></i>Sign out</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+				<div class="collapse navbar-collapse pull-right" id="Div1">
+					<form class="navbar-form navbar-left" role="search">
+						<div style="display: none;" class="form-group">
+							<input type="text" class="form-control" id="Text1" placeholder="Search Course / Tests & Enter">
+						</div>
+					</form>
+				</div>
+				<div class="collapse navbar-collapse pull-right" id="navbar-collapse">
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+
+							<input type="text" class="form-control" onkeypress="search(this);" id="navbar-search-input"
+								   placeholder="Search Course / Tests & Enter">
+						</div>
+					</form>
+				</div>
+				<script type="text/javascript">
+
+					function search(srch) {
+						if (event.keyCode == 13) {
+							event.preventDefault();
+							if ($("#navbar-search-input").val() != "") {
+							var	value = $("#navbar-search-input").val();
+								event.preventDefault();
+								window.location.href = '/user/Individual/SearchTestsCourses?srchtxt=' + value;
+							}
+							else {
+								Warning("Search cannot be empty.");
+							}
+						}
+					}
+				</script>
+		</div>
+	</nav>
+</header>
+
+		
+
+
+		
+
+
+<div class="bottom-nav">
+	<nav class="navbar navbar-static-top">
+		<div class="container">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-bottom">
+				<i class="fa fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse pull-left" id="navbar-bottom">
+
+			</div>
+		</div>
+	</nav>
+</div>
+
+
+		<div class="content-wrapper">
+			<div class="container">
+
+
+				<section class="content no-padd">
+					<div class="row">
+						<div>
+							
+
+<div class="row">
+	<div class="col-md-3">
+		
+
+
+<div class="box no-border">
+	<div class="box-body box-profile">
+		<img src="https://mediacdn.brainmeasures.com/images/UserPicture/Candidate.png" id="imgProfile" class="profile-user-img img-responsive img-circle" alt="User profile picture" onerror="https://mediacdn.brainmeasures.com/images/UserPicture/Candidate.png">
+		<h3 class="profile-username color-black text-center">
+			<span id="lblUserName">jasdeep jasdeep</span>
+		</h3>
+		<p class="text-muted text-center">
+			<span id="lblCity"></span>,
+			<span id="lblCountry"></span>
+		</p>
+
+		<ul class="list-group list-group-unbordered">
+			<li class="list-group-item color-black" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fill some more Details and complete the Profile.">
+				<b>Profile Completed</b> <a class="pull-right red">
+					<span id="lblComplete">90%</span>
+				</a>
+			</li>
+		</ul>
+
+		<a href="/profile/index" class="btn btn-my btn-block" id="btnCompleteNow">
+			<b>
+				<span id="lblStatus">Completed</span>
+			</b>
+		</a>
+	</div>
+
+</div>
+		
+
+<div class="box box-widget widget-user-2">
+	<div class="vdocheader">
+		<h3>Verify Your Documents</h3>
+	</div>
+	<div class="box-footer no-padding">
+		<ul class="nav nav-stacked">
+			<li><a href="/user/profile/ManageDocument?ref=dashboard-verifyDocuments">-<span class="pull-right badge bg-green">Upload Now</span></a></li>
+		</ul>
+
+
+	</div>
+</div>
+
+		
+
+
+	</div>
+	<div>
+		<script src="https://mediacdn.brainmeasures.com/Plugins/chartjs/Chart.min.js"></script>
+		<div class="col-md-9 no-padding">
+			<div class="col-md-12">
+				<div id="tabs" class="nav-tabs-custom">
+					<ul class="nav nav-tabs">						
+						<li class="active firstTab" id="firstTab" attr-UserType="Individual"><a type="button" onclick="LoadTabs(250,0)" data-toggle="tab" aria-expanded="true">My Test</a></li>
+						<li><a type="button" onclick="LoadTabs(200,0)" data-toggle="tab" aria-expanded="true">My Video Courses</a></li>
+						<li><a type="button" onclick="LoadTabs(100,0)" data-toggle="tab" aria-expanded="true">My EBooks Courses</a></li>
+						<li><a type="button" onclick="LoadTabs(300,0)" data-toggle="tab" aria-expanded="true">My Psychometric Test</a></li>
+						<li><a type="button" onclick="LoadCart()">My Cart</a></li>
+
+					</ul>
+
+					
+					<div class="tab-content" id="tab-content">
+					</div>
+					<!-- /.tab-content -->
+				</div>
+				
+
+
+
+				
+<div class="col-md-3">
+	<div class="small-box  bg-aqua">
+		<div class="inner">
+			<h3>
+				<label id="lblShowTotalTests">1264</label>
+			</h3>
+			<p>Total Tests</p>
+		</div>
+		<div class="icon">
+			<i class="fa fa-file-text-o"></i>
+		</div>
+		<a href="/User/Individual/tests" class="small-box-footer">
+			Browse All Tests <i class="fa fa-arrow-circle-right"></i>
+		</a>
+	</div>
+</div>
+<div class="col-md-3">
+	<div class="small-box  bg-aqua">
+		<div class="inner">
+			<h3>
+				<label id="lblShowTotalTests">160</label>
+			</h3>
+			<p>Total Psychometric</p>
+		</div>
+		<div class="icon">
+			<i class="fa fa-file-text-o"></i>
+		</div>
+		<a href="/User/Individual/psychometric" class="small-box-footer">
+			Browse All Psychometric <i class="fa fa-arrow-circle-right"></i>
+		</a>
+	</div>
+</div>
+<div class="col-md-3">
+	<div class="small-box  bg-aqua">
+		<div class="inner">
+			<h3>
+				<label id="lblShowTotalTests">1207</label>
+			</h3>
+			<p>Total Courses</p>
+		</div>
+		<div class="icon">
+			<i class="fa fa-file-text-o"></i>
+		</div>
+		<a href="/User/Individual/Courses" class="small-box-footer">
+			Browse All Courses <i class="fa fa-arrow-circle-right"></i>
+		</a>
+	</div>
+</div>
+<div class="col-md-3">
+	<div class="small-box  bg-aqua">
+		<div class="inner">
+			<h3>
+				<label id="lblShowTotalTests">1723</label>
+			</h3>
+			<p>Total Video Course</p>
+		</div>
+		<div class="icon">
+			<i class="fa fa-file-text-o"></i>
+		</div>
+		<a href="/User/Individual/VideoCourses" class="small-box-footer">
+			Browse All Video Course <i class="fa fa-arrow-circle-right"></i>
+		</a>
+	</div>
+</div>
+
+				
+
+
+<div class="col-md-6">
+	<div class="box mybox">
+		<div class="box-header myheader">
+			<h3 class="box-title">My Recently Viewed Video Course</h3>
+		</div>
+
+
+		<div class="box-body">
+			<ul class="products-list product-list-in-box">
+						<li class="item">
+							<div class="product-img">
+								<img src="https://mediacdn.brainmeasures.com/dist/img/default-50x50.png" alt="Artificial Intelligence in Python Certification Course">
+							</div>
+							<div class="product-info">
+								<a href="/user/Individual/MyCart?offeringId=5c49c399-0835-4284-b13a-37ce7a5d7a1e&Count=1" class="product-title">Artificial Intelligence in Python Certification Course<span class="label label-success pull-right">Add to Cart</span></a>
+								<span class="product-description">
+									Price : <s class="red">
+											<span id="lblOnDiscountPrice">$ 69.00</span>
+									</s>
+									$<span id="lblDiscountedPrice">69.00</span>
+								</span>
+							</div>
+						</li>
+						<li class="item">
+							<div class="product-img">
+								<img src="https://mediacdn.brainmeasures.com/dist/img/default-50x50.png" alt="Data Analytics with Tableau Course">
+							</div>
+							<div class="product-info">
+								<a href="/user/Individual/MyCart?offeringId=37eeb0ba-a28a-40a6-a2cc-93b18dda3b7a&Count=1" class="product-title">Data Analytics with Tableau Course<span class="label label-success pull-right">Add to Cart</span></a>
+								<span class="product-description">
+									Price : <s class="red">
+											<span id="lblOnDiscountPrice">$ 69.00</span>
+									</s>
+									$<span id="lblDiscountedPrice">69.00</span>
+								</span>
+							</div>
+						</li>
+
+
+
+			</ul>
+		</div>
+		<div class="box-footer text-center">
+			<a href="/course/video/?Ref=DashboardRecent" class="uppercase">View All Video Course</a>
+		</div>
+
+	</div>
+</div>
+
+
+<div class="col-md-6">
+	<div class="box mybox">
+		<div class="box-header myheader">
+			<h3 class="box-title">My Recently Viewed Test Course</h3>
+		</div>
+
+
+		<div class="box-body">
+			<ul class="products-list product-list-in-box">
+						<li class="item">
+							<div class="product-img">
+								<img src="https://mediacdn.brainmeasures.com/dist/img/default-50x50.png" alt="ASP.NET(Hard Level)">
+							</div>
+							<div class="product-info">
+								<a href="/user/Individual/MyCart?offeringId=951bb056-5b05-4f20-9eb1-92d23d784e78&Count=1" class="product-title">ASP.NET(Hard Level)<span class="label label-success pull-right">Add to Cart</span></a>
+								<span class="product-description">
+									Price : <s class="red">
+									</s>
+									$<span id="lblDiscountedPrice">0.00</span>
+								</span>
+							</div>
+						</li>
+
+
+
+			</ul>
+		</div>
+		<div class="box-footer text-center">
+			<a href="/course/test/?Ref=DashboardRecent" class="uppercase">View All Test Course</a>
+		</div>
+
+	</div>
+</div>
+
+				
+
+
+<div class="col-md-6">
+	<div class="box mybox">
+		<div class="box-header myheader">
+			<h3 class="box-title">Deal of the Day!</h3>
+		</div>
+		<div class="box-body">
+			<ul class="products-list product-list-in-box">
+					<li class="item">
+						<div class="product-img">
+							No Recent Deals
+						</div>
+					</li>
+			</ul>
+		</div>
+		<div class="box-footer text-center">
+			<a href="/user/Individual/DealOfTheDay?Ref=DashboardRecent" class="uppercase">View All Deals</a>
+		</div>
+	</div>
+</div>
+				
+			</div>
+
+			
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				<h4 class="modal-title" id="gridSystemModalLabel">Imporve Performance</h4>
+			</div>
+			<div class="modal-body">
+				<div>
+					<ul>
+						<li>Dummy content .....If you want to purchase the hard copy certificate Click the link “BUY CERTIFICATE”</li>
+						<li>If you have purchased Test/Course you need not separately purchase Hard Copy Certificate, on passing the test your Laminated Hard Copy Certificate will be posted to you.</li>
+						<li>If you have taken Free Test you can purchase Hard Copy Certificate of your free test by paying $50, on passing the free test link for buying hard copy certificate will appear on "view test results" page.</li>
+						<li>If you are in a hurry to get your hard copy certificate, then you can order an "Express Delivery" (through Fedex) of your certificate by paying the fee ($85) for express delivery. Your certificate will reach you within 3-4 working days of your order.</li>
+						<li>THE HARD-COPY CERTIFICATE WILL ONLY BE SENT TO THOSE CANDIDATES WHO WILL SUCCESSFULLY CLEAR THE CERTIFICATION EXAM. AFTER PASSING THE CERTIFICATION TEST IF YOU DO NOT GET THE CERTIFICATE IN 3-4 WEEKS AND YOU DO NOT CLAIM IT WITHIN 35 DAYS OF YOUR SUCCESSFULLY CLEARING THE TEST THEN WE WILL NOT ENTERTAIN ANY SUCH REQUEST OF NOT GETTING THE HARD COPY CERTIFICATE.</li>
+						<li>(In case you have ordered a hard-copy certificate of free test then your 35 day period will start on the day you will make the payment)</li>
+					</ul>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-my" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+		</div>
+
+		<style>
+			.nav-tabs-custom > .nav-tabs > li.active:hover > a, .nav-tabs-custom > .nav-tabs > li.active > a {
+				background-color: red !important;
+				color: #2a3941;
+			}
+		</style>
+	</div>
+</div>
+<script src="https://testbm.brainmeasures.com/MvcScriptsAndStyles/js/Common/commonservice.js"></script>
+<script src="https://testbm.brainmeasures.com/MvcScriptsAndStyles/js/Dashboard/dashboard.js"></script>
+<script src="https://testbm.brainmeasures.com/MvcScriptsAndStyles/js/Individual/Individual.js"></script>
+<script src="https://testbm.brainmeasures.com/MvcScriptsAndStyles/js/Individual/MyCart.js"></script>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		
+<section class="footer-main footerchanges">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 footer-brand">
+
+                <div class="col-sm-12 ">
+                    <h1>Brainmeasures</h1>
+                        <h6 class="mb-2">ISO 9001-2015 Certified</h6>
+                        <p>Global leader in online certification and employment testing</p>
+                    <a href="#" class="footer-brand-a">info@brainmeasures.com</a>
+                    <a href="#" class="footer-brand-a">contact@brainmeasures.com</a>
+                    <h3 class="mt-2">+1 888 556 0061 <span>TOLL FREE (USA/CANADA)</span></h3>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h5 class="color-white mt-4">BM Mobile App</h5>
+                            <a href="#">
+                                <img loading="lazy" src='https://mediacdn.brainmeasures.com/images/Pages/Global/Footer/playstore.png' class="image-max-full" />
+                            </a>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <img loading="lazy" src='https://mediacdn.brainmeasures.com/images/Pages/Global/Footer/footer-1.jpg' class="image-max-full rounded">
+                                </div>
+                                <div class="col-6">
+                                    <img loading="lazy" src='https://mediacdn.brainmeasures.com/images/Pages/Global/Footer/footer-2.jpg' class="image-max-full rounded">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-sm-2">
+                    <div class="col-12 footer-links">
+                        <h3>Explore</h3>
+                        <ul>
+                                <li>
+                                    <a class="" target="" href="/user/individual/Tests">All Tests</a>
+                                </li>
+                                <li>
+                                    <a class="" target="" href="/user/individual/Courses">All Courses</a>
+                                </li>
+                                <li>
+                                    <a class="" target="" href="/user/individual/DealOfTheDay">Deal of the Day !</a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="col-12 footer-links">
+                        <h3>Account</h3>
+                        <ul>
+                                <li>
+                                    <a class="" target="" href="/profile/myaccount">My Account</a>
+                                </li>
+                                <li>
+                                    <a class="" target="" href="/profile/myWishList">My Wish List</a>
+                                </li>
+                                <li>
+                                    <a class="" target="" href="/user/Individual/MyCart">My Card</a>
+                                </li>
+                                <li>
+                                    <a class="" target="" href="/">My Recently</a>
+                                </li>
+                                <li>
+                                    <a class="" target="" href="/">Views</a>
+                                </li>
+                                <li>
+                                    <a class="" target="" href="/support/ticket">My Tickets</a>
+                                </li>
+                                <li>
+                                    <a class="" target="" href="/user/profile">Account Settings</a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="col-12 footer-links">
+                        <h3>Brainmeasures</h3>
+                        <ul>
+                                <li>
+                                    <a class="" target="" href="/OurStory">Our Story</a>
+                                </li>
+                                <li>
+                                    <a class="" target="" href="/SuccessStory">Success Story</a>
+                                </li>
+                                <li>
+                                    <a class="" target="" href="/reviews">Reviews</a>
+                                </li>
+                                <li>
+                                    <a class="" target="" href="/user/faq">FAQs</a>
+                                </li>
+                                <li>
+                                    <a class="" target="" href="/Contact">Contact Us</a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="col-12 footer-links">
+                        <h3>Important</h3>
+                        <ul>
+                                <li>
+                                    <a class="" target="" href="/Affiliate_Program">Be an Affiliate</a>
+                                </li>
+                                <li>
+                                    <a class="" target="" href="/user/Individual/ReferFriend">Refer and Earn</a>
+                                </li>
+                                <li>
+                                    <a class="" target="" href="/user/Individual/PrivacyPolicy">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a class="" target="" href="/sitemap">Sitemap</a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            <div class="col-sm-12  copyright-footer">
+            <p>© copyright 2017-2023 Brainmeasures.</p>
+                <p>Brainmeasures is one of few skill testing and online certification company which is ISO 9001-2015 certified. Brainmeasures respects the privacy of each individual who registers for our services, we uphold and comply with strict truste program requirements, putting us in league of big names such as yahoo, AOL, Facebook, PayPal, IBM when it comes to internet privacy, safety and trust</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<link rel="stylesheet" href="https://mediacdn.brainmeasures.com/MvcFramework/css/GobalComponents/FooterSectionOnly.css" />
+
+
+
+
+		
+
+<div class="myModal modal fade" id="modal-fullscreen-xs-down" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog  modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="nav-tabs-custom">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#vc" data-toggle="tab"> Video Courses</a></li>
+
+                        <li><a href="#Courses" data-toggle="tab">E-Book Courses</a></li>
+
+                    </ul>
+                    <div class="tab-content">
+
+                        <div class="tab-pane mytab " id="Courses">
+                            <div class="box mybox">
+                                <div class="box-body" id="boxBodyCourses" style="overflow-y:scroll; height:450px">
+                                </div>
+                                <div class="box-footer">
+                                    <div class="col-md-12">
+                                        <ul class="pagination pagination-sm no-margin pull-right" id="ulPagingCourses">
+                                        </ul>
+                                    </div>
+                                    <div style="text-align: center; font-size: x-large; display: none" id="emptysrchCourses">
+                                        Sorry, No result found for Course.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tab-pane mytab active" id="vc">
+                            <div class="box mybox">
+                                <div class="box-body" id="boxBodyvc" style="overflow-y:scroll; height:450px">
+                                </div>
+                                <div class="box-footer">
+                                    <div class="col-md-12">
+                                        <ul class="pagination pagination-sm no-margin pull-right" id="ulPagingCoursesvc">
+                                        </ul>
+                                    </div>
+                                    <div style="text-align: center; font-size: x-large; display: none" id="emptysrchCoursesvc">
+                                        Sorry, No result found for Course.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .vbox {
+        min-height: 400px !important;
+        margin-top: 10px !important;
+    }
+
+    .wish {
+        cursor: pointer !important
+    }
+
+    .rat {
+        cursor: pointer;
+        margin: 15px;
+        color: orange;
+    }
+
+    .cbox {
+        background: #fff !important;
+        min-height: 325px;
+        border: 1px solid #e9e9e9 !important;
+        margin-bottom: 30px;
+        padding: 0px;
+        transition: 0.5s;
+    }
+
+        .cbox img {
+            width: 100%;
+            margin-bottom: 2px;
+        }
+
+        .cbox p.Cenroll {
+            background: #fbfbfb !important;
+            color: #565656 !important;
+            margin-bottom: 10px !important;
+            padding: 5px 10px !important;
+            width: 100% !important;
+            float: none !important;
+            font-size: 12px !important;
+        }
+
+        .cbox p {
+            color: #2a3941 !important;
+            font-size: 18px !important;
+            margin: 0px;
+            float: right;
+        }
+
+    p.Cenroll i {
+        margin-right: 5px;
+    }
+
+    .cbox .cboxfoot {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .cbox a.enroll {
+        color: #2a3941 !important;
+        font-size: 15px !important;
+        margin: 0px;
+        float: left;
+        padding: 4px 10px;
+        background: Orange;
+        color: #fff !important;
+    }
+
+    a {
+        color: #3c8dbc;
+    }
+
+    .cbox h1 {
+        margin: 0px;
+        font-size: 16px !important;
+        padding: 5px 15px;
+        color: #000000 !important;
+        line-height: 22px;
+    }
+
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+
+
+    .popover-content {
+        min-height: 200px !important;
+        max-height: 350px !important;
+        overflow-y: auto;
+        white-space: pre-wrap;
+    }
+
+    .popover {
+        position: absolute !important;
+    }
+
+    .vidduration {
+        font-size: 11px;
+    }
+
+    .bodytext {
+        font-size: 12px;
+    }
+
+    .popover-title {
+        color: #333;
+        background-color: #fff;
+        margin: 0px !important;
+    }
+
+
+
+    .popover-footer {
+        padding: 4px;
+        background-color: #fbfbfb;
+        text-align: right;
+        border-top: 1px solid #ebebeb;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .popover {
+        position: relative;
+        width: 34rem !important;
+        background-color: #fff;
+        border: 1px solid #d1d7dc;
+        /* border-radius: 4px; */
+        /* box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%); */
+        color: #1c1d1f;
+    }
+
+    .popover {
+        z-index: 999999 !important
+    }
+
+    .popover-content {
+        min-height: 200px !important;
+        max-height: 350px !important;
+        overflow-y: auto;
+        white-space: pre-wrap
+    }
+
+    .popover {
+        position: absolute !important
+    }
+
+    .vidduration {
+        font-size: 11px
+    }
+
+    .bodytext {
+        font-size: 12px;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important
+    }
+
+    .popover-title {
+        color: #333;
+        background-color: #fff;
+        margin: 0 !important;
+        cursor: pointer
+    }
+
+    .popover-footer {
+        padding: 4px;
+        background-color: #fbfbfb;
+        text-align: right;
+        border-top: 1px solid #ebebeb;
+        border-radius: 0 0 5px 5px
+    }
+
+    .bodytext ul {
+        font-size: 11px;
+        list-style: none;
+        margin: 0;
+        padding: 2px
+    }
+
+    .bodytext li {
+        line-height: 21px
+    }
+
+        .bodytext li i {
+            padding-right: 4px
+        }
+
+    .glyphicon-heart {
+        font-size: 28px
+    }
+
+    .bodytext p {
+        font-size: 12px;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+        font-weight: 400;
+        margin-bottom: 20px
+    }
+
+    .hrefVideoTitle {
+        cursor: pointer
+    }
+
+    .rat {
+        cursor: pointer;
+        margin: 15px;
+        color: orange
+    }
+
+    .CourseList .courses .course h3 {
+        font-size: 15px;
+        line-height: 1.4
+    }
+
+    .vidduration span {
+        display: inline-block;
+        width: 49%;
+        float: left
+    }
+
+        .vidduration span i {
+            margin-right: 4px
+        }
+
+        .vidduration span.enroled {
+            text-align: right
+        }
+
+    .popover-footer {
+        padding: 10px 0 0 0
+    }
+
+        .popover-footer .btn-success {
+            background: linear-gradient(45deg,#32106d,#4543bf);
+            border: none;
+            font-size: 13px;
+            box-shadow: 0 0 7px #ddd;
+            width: 70%;
+            border-radius: 100px
+        }
+
+            .popover-footer .btn-success:hover {
+                opacity: .8
+            }
+
+    .popover-wishlist {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 16px;
+        border: 1px solid #999;
+        border-radius: 100px;
+        text-decoration: none;
+        color: #999
+    }
+
+        .popover-wishlist i {
+            font-size: 14px;
+            left: 1.5px;
+            top: 2.5px
+        }
+
+        .popover-wishlist .glyphicon-heart {
+            font-size: unset
+        }
+
+        .popover-wishlist.active, .popover-wishlist:hover {
+            color: #db0f2b;
+            text-decoration: none
+        }
+
+    .anchorClickUpper {
+        cursor: pointer
+    }
+
+    .ui-autocomplete {
+        max-height: 300px;
+        overflow-y: auto;
+        /* prevent horizontal scrollbar */
+        overflow-x: hidden;
+        /* add padding to account for vertical scrollbar */
+        padding-right: 20px;
+    }
+
+    .ui-menu .ui-menu-item {
+        margin: 5px !important;
+    }
+</style>
+
+	</div>
+<script type="text/javascript">
+	setTimeout(function () {
+	var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+	(function () {
+		var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+		s1.async = true;
+		s1.src = 'https://embed.tawk.to/5d57f12c77aa790be32f5b32/default';
+		s1.charset = 'UTF-8';
+		s1.setAttribute('crossorigin', '*');
+		s0.parentNode.insertBefore(s1, s0);
+		})();
+	}, 8000);
+</script>	<script src="https://testbm.brainmeasures.com/MvcScriptsAndStyles/js/Common/Search.js"></script>
+		<script src="https://testbm.brainmeasures.com/MvcScriptsAndStyles/js/Common/Wishlist.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js" integrity="sha512-fZy9udcMtCbrKvLIxWhOUaH6TZYddjizBEhESeTsv1lwzXgcR6ZalhWye+BlT/KQ0KIfyjiqwce7IKKtRH29hQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

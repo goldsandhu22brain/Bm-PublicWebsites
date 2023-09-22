@@ -198,3 +198,19 @@ $(document).ready(function () {
 	  ]
 	});
 });
+
+$(document).ready(function () {
+	$(".hnt-testimonials").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,	
+		autoplaySpeed: 5000,	
+		dots: true,
+		pauseOnHover: false,
+		arrows: false,
+		infinite: true,
+		loop: true,
+	});
+});
+
+
