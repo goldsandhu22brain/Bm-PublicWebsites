@@ -120,6 +120,33 @@
 	.case-studies-page .challenge-section .wrap{
 		padding-bottom: 30px;
 	}
+	.hnt-product .online-hackathons-section form{
+		padding: 20px;
+	}
+	.hnt-product .campus-ambassador .wrap{
+		padding: 20px;
+		height: 100%;
+	}
+	.hnt-product .customized-solutions-section li{
+		min-height: auto;
+		padding: 20px;
+	}
+	
+	.hnt-product .api-section .features ul {
+		padding: 20px;
+	}
+	.hnt-product .premium-test-section p{
+		max-width: 100%;
+	}
+	.hnt-product .premium-test-section .img-wrap{
+		text-align: center;
+	}
+	.hnt-product .pricing-section .wrap{
+		padding: 20px;
+	}
+	.hnt-product .proctoring-section .img-wrap{
+		text-align: center;
+	}
 }
 @media screen and (max-width:1024px) {
 	
@@ -639,6 +666,108 @@
 	.hnt-product .coding-section .img-wrap{
 		text-align: center;
 	}
+	.hnt-product .interview-section .wrap {
+		max-width: 100%;
+	}
+	.hnt-product .interview-section .img-wrap{
+		text-align: center;
+	}
+	.hnt-product .online-interview-section .platform {
+		max-width: 100%;
+	}
+	.hnt-product .hiring-tool-section {
+		padding: 50px 0;
+	}
+	.hnt-product .insights-interview-section .img-wrap{
+		text-align: center;
+	}
+	.hnt-product .hackathon-neeed-section .right-wrap {
+		max-width: 100%;
+	}
+	.hnt-product .hackathon-neeed-section .right-wrap p{
+		padding: 0 0 20px;
+	}
+	.hnt-product .business-section .left-wrap{
+		max-width: 100%;
+	}
+	.hnt-product .business-section .right-wrap{
+		text-align: center;
+	}
+	.hnt-product .campus-section .img-wrap{
+		text-align: center;
+	}
+	.hnt-product .online-hackathons-section{
+		padding: 50px 0;
+	}
+	.hnt-product .online-hackathons-section li{
+		max-width: 100%;
+	}
+	.hnt-product .leaderboard-section .table>thead{
+		font-size: 18px;
+	}
+	.hnt-product .assessment-section .wrap{
+		max-width: 100%;
+	}
+	.hnt-product .prize-section{
+		bottom: -70px;
+	}
+	.hnt-product .campus-ambassador{
+		padding-bottom: 150px;
+	}
+	.hnt-product .leaderboard-section {
+		padding-top: 150px;
+	}
+	.hnt-product .customized-solutions-section li{
+		max-width: 100%;
+	}
+	.hnt-product .customized-solutions-section form{
+		min-height: auto;
+		padding: 20px;
+	}
+	.hnt-product .customized-solutions-section form .form-control{
+		height: 50px;
+	}
+	.hnt-product .proctored-section{
+		position: unset;
+		margin-top: 60px;
+	}
+	.hnt-product .bm-proctored{
+		padding: 50px 0;
+	}
+	.hnt-product .test-proctored-section{
+		padding: 50px 0;
+	}
+	.hnt-product .test-proctored-section .img-wrap{
+		text-align: center;
+	}
+	.hnt-product .api-section{
+		padding: 50px 0;
+	}
+	.hnt-product .api-section .img-wrap{
+		text-align: center;
+	}
+	.hnt-product .win-prizes-section {
+		background: linear-gradient(to bottom, #F9F9F9 0%, #F9F9F9 50%, #FFE08B 50%, #FFE08B 100%);
+		padding: 50px 0;
+	}
+	.hnt-product .win-prizes-section .left-wrap,
+	.hnt-product .win-prizes-section .right-wrap{
+		padding: 0;
+	}
+	.hnt-product .analyze-section .wrap{
+		max-width: 100%;
+	}
+	.hnt-product .pricing-section .wrap{
+		min-height: auto;
+		margin-bottom: 20px;
+		margin-top: 40px;
+	}
+	.hnt-product .psychometric-tests-section{
+		background-position: 50% 80%;
+	}
+	.hnt-product .psychometric-tests-section .wrap h5{
+		margin: 0 0 20px;
+	}
 	
 }
 @media screen and (max-width:767px) {
@@ -853,13 +982,12 @@
 	.hnt-product .interview-section .interview-process .box{
 		min-height: auto;
 		margin: 0 0 20px;
+		height: 100%;
 	}
 	.hnt-product .hiring-tool-section .wrap-body{
 		margin-left: 0;
 	}
-	.hnt-product .online-hackathons-section form{
-		padding: 20px;
-	}
+	
 	.hnt-product .prize-section ul{
 		display: block;
 		padding: 20px;
@@ -868,6 +996,8 @@
 		font-size: 20px;
 		line-height: 30px;
 		margin: 20px 0;
+		max-width: 100%;
+		text-align: center;
 	}
 	.hnt-product .campus-ambassador{
 		padding-bottom: 50px;
@@ -893,16 +1023,17 @@
 	.hnt-product .type-test-section .accordion-button{
 		font-size: 18px;
 	}
-	.hnt-product .customized-solutions-section form{
-		min-height: auto;
-		padding: 20px;
-	}
+	
 	.hnt-product .win-prizes-section{
 		background: linear-gradient(to bottom, #F9F9F9 0%, #F9F9F9 50%, #FFE08B 50%, #FFE08B 100%);
 	}
 	.hnt-product .language-section .nav-tabs .nav-link{
 		font-size: 13px;
-		padding: 8px;
+		padding: 0;
+		width: auto;
+	}
+	.hnt-product .test-proctored-section .wrap{
+		max-width: 100%;
 	}
 	
 	

@@ -3299,6 +3299,7 @@
 }
 .hnt-product .product-tour-section .text-wrap p{
 	line-height: 27px;
+	margin: 20px 0;
 }
 .hnt-product .product-tour-section .product-tour-wrap{
 	position: relative;
@@ -3595,7 +3596,7 @@
 .hnt-product .hiring-section h1{
 	text-align: center;
 	max-width: 780px;
-	margin: 0px auto 90px;
+	margin: 0px auto;
 }
 .hnt-product .hiring-section h3{
 	font-family: 'Poppins', sans-serif;
@@ -3609,6 +3610,10 @@
 }
 .hnt-product .hiring-section .wrap{
 	display: flex; 
+	margin-top: 40px;
+}
+.hnt-product .hiring-section .wrap .img-wrap{
+	margin-top: 40px;
 }
 .hnt-product .hiring-section .counter{
 	width: 100%;
@@ -4258,8 +4263,8 @@
 .hnt-product .customized-solutions-section li{
 	border-radius: 30px;
 	background-color: #F3F8FF;
-	width: 340px;
-	height: 150px;
+	max-width: 340px;
+	min-height: 150px;
 	margin-bottom: 30px;
 	padding: 30px 100px 20px 50px;
 }
@@ -4474,6 +4479,7 @@
 	background: linear-gradient(342deg, #6800B9 27.48%, #9D1798 80.92%);
 	position: relative;
 	z-index: 9;
+	padding-bottom: 0;
 }
 .hnt-product .api-section::before {
 	content: '';
