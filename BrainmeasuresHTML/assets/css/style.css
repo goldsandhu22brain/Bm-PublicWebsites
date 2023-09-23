@@ -3539,9 +3539,11 @@
 	display: flex;
     align-items: center;
     justify-content: center;
+	flex-wrap: wrap;
 }
 .hnt-product .language-section .tab-pane li{
 	margin: 32px 20px 0 0;
+	
 }
 .hnt-product .language-section .tab-pane li a{
 	border-radius: 555px;

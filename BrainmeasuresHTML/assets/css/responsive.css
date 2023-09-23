@@ -940,11 +940,10 @@
 	.hnt-product .coding-section .btn-wrap .btn-default {
 		margin-right: 6px;
 	}
-	.hnt-product .language-section .tab-pane ul{
-		display: block;
-	}
+	
 	.hnt-product .language-section .tab-pane li{
-		margin: 32px 0 0;
+		width: 48%;
+		margin: 32px 4px 0;
 	}
 	.hnt-product .needs-section .wrap{
 		padding: 20px;
@@ -1103,6 +1102,7 @@
 		margin-top: 20px;
 	}
 	
+	
 }
 
 @media (max-width: 480px){
@@ -1112,6 +1112,10 @@
 	.case-studies-page .experts-talk-section .wrap h6 {
 		font-size: 20px;
 		line-height: 27px;
+	}
+	.hnt-product .language-section .tab-pane li{
+		width: 100%;
+		margin: 32px 0 0;
 	}
 	
 }
@@ -1158,6 +1162,7 @@
 	.case-studies-page .hero-section .cell-1 .cognizant-img img{
 		padding-right: 8px;
 	}
+	
 }
 
 
