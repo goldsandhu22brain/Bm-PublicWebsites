@@ -366,9 +366,7 @@ border-color: #024b76!important;
 	#intro {
 		 margin-top: 0px !important;
 	}
-	.navbar-nav .open .dropdown-menu{
-		background-color: #fff;
-	}
+	
 }
 
 @media (min-width: 768px)
