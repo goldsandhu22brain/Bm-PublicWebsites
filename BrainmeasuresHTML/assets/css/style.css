@@ -3249,9 +3249,19 @@
 }
 .hnt-product .banner-section .caption p{
 	max-width: 485px;
+	margin: 10px 0 20px;
 }
-.hnt-product .banner-section .btn{
-	margin-top: 30px;
+.hnt-product .banner-section .wrap{
+	margin-left: auto;
+}
+.hnt-product .banner-section1 .btn{
+	margin-top: 25px;
+}
+.hnt-product .banner-section .btn.btn-outline{
+	margin-left: 8px;
+}
+.hnt-product .banner-section .banner-img img{
+	height: 520px;
 }
 .hnt-product .hero-section{
 	color: #FFF;

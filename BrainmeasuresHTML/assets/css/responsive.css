@@ -624,7 +624,10 @@
 	}
 	
 	.hnt-product .banner-section .caption p{
-		margin: 20px auto 0;
+		margin: 10px auto 20px;
+	}
+	.hnt-product .banner-section .btn{
+		width: 150px;
 	}
 	.hnt-product .hero-section{
 		padding: 30px 0;
@@ -915,6 +918,9 @@
 	.hnt-product .banner-section .caption h1 {
 		font-size: 30px;
 		line-height: 40px;
+	}
+	.hnt-product .banner-section .banner-img img {
+		height: auto;
 	}
 	.hnt-product .hero-section{
 		padding: 0 0 20px;
