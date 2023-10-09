@@ -3353,6 +3353,7 @@
 }
 .hnt-product .featured-services-section .right-wrap .wrap{
 	display: -webkit-box;
+	padding-right: 60px;
 }
 .hnt-product .featured-services-section .right-wrap .text-wrap{
 	margin-left: 16px;
