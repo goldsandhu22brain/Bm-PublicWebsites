@@ -669,6 +669,9 @@
 	.hnt-product .coding-section .img-wrap{
 		text-align: center;
 	}
+	.hnt-product .interview-section{
+		background-image: none;
+	}
 	.hnt-product .interview-section .wrap {
 		max-width: 100%;
 	}
@@ -764,6 +767,9 @@
 		min-height: auto;
 		margin-bottom: 20px;
 		margin-top: 40px;
+	}
+	.hnt-product .pricing-section .wrap.custom{
+		min-height: 370px;
 	}
 	.hnt-product .psychometric-tests-section{
 		background-position: 50% 80%;
@@ -988,6 +994,9 @@
 		min-height: auto;
 		margin: 0 0 20px;
 		height: 100%;
+	}
+	.hnt-product .interview-section .interview-process .btn.btn-default{
+		margin-top: 30px;
 	}
 	.hnt-product .hiring-tool-section .wrap-body{
 		margin-left: 0;
