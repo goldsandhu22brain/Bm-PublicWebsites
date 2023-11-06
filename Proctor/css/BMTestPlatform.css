@@ -64,6 +64,7 @@
     position: relative;
     top: 0;
     left: 0;
+    width:100%
 }
 .info-image-wrapper .camera-icon{
     position: absolute;
