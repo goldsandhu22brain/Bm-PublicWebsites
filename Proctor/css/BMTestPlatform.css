@@ -26,7 +26,10 @@
 }
 .main-wrap{
     position: relative;
-    padding-top: 70px;
+    top: 50%;
+    left: 50%;
+    translate: transform(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .title h3{
     font-size: 40px;
@@ -81,7 +84,7 @@
     position: absolute;
     top: 50%;
     left: 20%;
-    transform: translate(-10%, -50%);
+    transform: translate(-12%, -50%);
 }
 .snapshot .title{
     font-size: 20px;
@@ -89,7 +92,6 @@
 }
 .snapshot .image-wrapper{
     height: 150px;
-    width: 220px;
     border: 1px dashed;
     position: relative;
     margin-top: 3rem;
