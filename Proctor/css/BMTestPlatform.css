@@ -8,8 +8,10 @@
 
 .upload-photo{
     /* background-color: #323263; */
-    background: url('../images/BMTestPlatoform/hnt-testimonial-bg.png');
-    background-size: cover;
+    background: url('../images/BMTestPlatoform/upload-photo-bg.png');
+    background-color: #2E2D5C;
+    background-blend-mode: multiply;
+    background-position: center;
     width: 100vw;
     height: 100vh;
 }
