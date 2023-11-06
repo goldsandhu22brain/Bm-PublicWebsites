@@ -76,6 +76,7 @@
     line-height: 30px;
 }
 
+
 .third-banner {
     background-color: #3189DA;
 }
@@ -97,6 +98,7 @@
     width: 624px;
     height: 617px;
 }
+
 
 .benefit h3{
     line-height: 60px;
@@ -155,6 +157,7 @@
     line-height: 27px;
 }
 
+
 .reasons{
     background-color: #F0F5FF;
 }
@@ -180,6 +183,22 @@ img.reason2{
 img.reason3{
     width: 455px;
     height: 305px;
+}
+
+
+.fourth-banner{
+    background-color: #1F249C;
+}
+.fourth-banner h2{
+    color: #fff;
+    line-height: 65px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.fourth-banner p{
+    font-size: 24px;
+    line-height: 35px;
+    color: #fff;
 }
 
 
