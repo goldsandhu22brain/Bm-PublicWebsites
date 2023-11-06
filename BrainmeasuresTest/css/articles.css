@@ -265,6 +265,10 @@ img.reason3{
     .reasons-wrapper p{
         font-size: 20px;
     }
+    .reasons .c-margin {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
     img.reason1{
         width: 348px;
         height: 348px;
