@@ -59,19 +59,23 @@
 .info .content{
     position: absolute;
     top: 50%;
-    left: 10%;
-    transform: translate(-6%, -50%);
+    left: 20%;
+    transform: translate(-12%, -50%);
+}
+.info-image-wrapper{
+    margin-top: 2rem;
 }
 .info-image-wrapper, .info-image-wrapper .main-image{
     position: relative;
     top: 0;
     left: 0;
-    width:100%
+    width:100%;
+    height: 150px;
 }
 .info-image-wrapper .camera-icon{
     position: absolute;
-    top: 150px;
-    left: 105px;
+    top: 125px;
+    left: 90px;
 }
 .content p{
     font-size: 20px;
@@ -97,7 +101,7 @@
     height: 150px;
     border: 1px dashed;
     position: relative;
-    margin-top: 3rem;
+    margin-top: 2rem;
     border-radius: 30px;
 }
 .snapshot img{
