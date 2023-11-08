@@ -76,6 +76,21 @@
     line-height: 30px;
 }
 
+.business{
+    background-color: #FCF7F7;
+}
+.business h6{
+    font-size: 30px;
+    line-height: 35px;
+}
+.business p{
+    font-size: 20px;
+    line-height: 35px;
+}
+.business .icon{
+    margin: auto;
+}
+
 
 .third-banner {
     background-color: #3189DA;
@@ -172,7 +187,7 @@
     font-size: 24px;
     line-height: 35px;
 }
-.img.reason1{
+img.reason1{
     width: 468px;
     height: 468px;
 }
@@ -212,6 +227,9 @@ img.reason3{
     .feature .feature3{
         margin-right: 0;
     }   
+    .business .icon{
+        padding: 0 50px 50px 50px;
+    }
     .reasons-wrapper{
         margin: 0;
         position: initial;
@@ -240,6 +258,10 @@ img.reason3{
     .banner-img img{
         width: 490px;
         height: 420px;
+    }
+    .business .icon{
+        margin-left:0.8rem;
+        margin-right:0.8rem;
     }
     .third-banner .banner-img img{
         width: 524px;
@@ -274,6 +296,10 @@ img.reason3{
         width: 490px;
         height: 420px;
     }
+    .business .icon{
+        margin-left:1rem;
+        margin-right:1rem;
+    }
     .third-banner .banner-img img{
         width: 524px;
         height: 517px;
@@ -302,7 +328,25 @@ img.reason3{
     }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .business .icon{
+        margin-left:1.4rem;
+        margin-right:1.4rem;
+    }
+    .benefit .col-lg-3{
+        width: 30%
+    }
+    .benefit1 {
+        margin-left:0;
+    }
+
+}
+
+@media only screen and (min-width: 1201px) {
+    .business .icon{
+        margin-left:1.5rem;
+        margin-right:1.5rem;
+    }
     .benefit .col-lg-3{
         width: 30%
     }
