@@ -217,6 +217,44 @@ img.reason3{
 }
 
 
+.recognition img{
+    height: 190px;
+    width: 190px;
+}
+.recognition .img-wrapper{
+    margin: auto;
+    padding: 50px;
+    border-radius: 50px;
+}
+.recognition .img-bg1{
+    border: 1px solid #FFF4CF;
+    background-color: #FFF4CF;
+}
+.recognition .img-bg2{
+    border: 1px solid #DEFFF3;
+    background-color: #DEFFF3;
+}
+.recognition .img-bg3{
+    border: 1px solid #CFF1FF;
+    background-color: #CFF1FF;
+}
+.recognition .content-wrapper {
+    padding: 50px 85px;
+}
+.recognition .content-wrapper-2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 160px;
+}
+.recognition h4{
+    font-weight:800
+}
+.recognition p{
+    font-size:20px;
+    line-height: 32px;
+}
+
+
 
 
 /* Mobile Devices */
@@ -292,6 +330,11 @@ img.reason3{
 
 /* Small screen and laptop */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    .c-margin {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
     .banner-img img{
         width: 490px;
         height: 420px;
@@ -309,10 +352,6 @@ img.reason3{
     }
     .reasons-wrapper p{
         font-size: 20px;
-    }
-    .reasons .c-margin {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
     }
     img.reason1{
         width: 348px;
