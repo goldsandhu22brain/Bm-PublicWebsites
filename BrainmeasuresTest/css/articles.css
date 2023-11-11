@@ -6,6 +6,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.py-90p{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
 
 .first-banner {
     background-color: #3A1C90;
@@ -76,7 +80,42 @@
     line-height: 30px;
 }
 
+
+
+.first-hr {
+    border: 10px solid #C9C8FF;
+    margin: 0;
+    position: relative;
+    z-index: -1;
+}
+.second-hr {
+    border: 10px solid #D988E7;
+    margin: 0;
+    position: relative;
+    z-index: -1;
+}
+
+
+
+.second-banner {
+    margin-bottom: -440px;
+    position: relative;
+}
+.second-banner .container {
+    border: 2px solid #FDECE5;
+    border-radius: 30px;
+    background-color: #fff;
+}
+.second-banner img{
+    border-radius: 28px;
+    height:100%;
+    width:100%;
+}
+
+
+
 .business{
+    padding-top: 400px;
     background-color: #FCF7F7;
 }
 .business h6{
@@ -378,6 +417,12 @@ img.reason3{
     .recognition .img-wrapper{
         margin-bottom: 30px;
     }
+    .second-banner {
+        margin-bottom: -200px;
+    }
+    .business{
+        padding-top: 150px;
+    }
 }
 
 /* Small screen and laptop */
@@ -440,6 +485,12 @@ img.reason3{
     .recognition .img-bg2 .globe {
         width: 50px;
         height: 50px;
+    }
+    .second-banner {
+        margin-bottom: -200px;
+    }
+    .business{
+        padding-top: 150px;
     }
 
 }
