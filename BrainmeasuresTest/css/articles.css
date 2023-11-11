@@ -215,6 +215,15 @@ img.reason3{
     line-height: 35px;
     color: #fff;
 }
+.fourth-banner .img-wrapper {
+    position: relative;
+}
+.fourth-banner .img-wrapper img{
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
 
 
 .recognition img{
@@ -233,10 +242,23 @@ img.reason3{
 .recognition .img-bg2{
     border: 1px solid #DEFFF3;
     background-color: #DEFFF3;
+    padding-top:90px;
+    position: relative;
 }
 .recognition .img-bg3{
     border: 1px solid #CFF1FF;
     background-color: #CFF1FF;
+}
+.recognition .img-bg2 .main-image {
+    width: 228px;
+    height: 180px;
+}
+.recognition .img-bg2 .globe {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top:30px;
+    right:30px;
 }
 .recognition .content-wrapper {
     padding: 50px 85px;
@@ -289,6 +311,15 @@ img.reason3{
         width: 285px;
         height: 205px;
     }
+    .recognition .content-wrapper {
+        padding: inherit;
+    }
+    .recognition .content-wrapper-2 {
+        padding: inherit;
+    }     
+    .recognition .img-wrapper{
+        margin-bottom: 30px;
+    }
 }
 
 /* Ipad and Tablets */
@@ -325,6 +356,27 @@ img.reason3{
     img.reason3{
         width: 285px;
         height: 205px;
+    }
+    .recognition .content-wrapper {
+        padding: inherit;
+    }
+    .recognition .content-wrapper-2 {
+        padding: inherit;
+    }    
+    .recognition img{
+        height: 140px;
+        width: 140px;
+    }
+    .recognition .img-bg2 .main-image {
+        width: 180px;
+        height: 140px;
+    }
+    .recognition .img-bg2 .globe {
+        width: 50px;
+        height: 50px;
+    }     
+    .recognition .img-wrapper{
+        margin-bottom: 30px;
     }
 }
 
@@ -365,6 +417,31 @@ img.reason3{
         width: 285px;
         height: 205px;
     }
+    .recognition .col-lg-8{
+        width: 58.33333333%;
+    }
+    .recognition .col-lg-4{
+        width: 41.66666667%;
+    }
+    .recognition .content-wrapper {
+        padding: 50px;
+    }
+    .recognition .content-wrapper-2 {
+        padding-right: 50px;
+    }
+    .recognition img{
+        height: 140px;
+        width: 140px;
+    }
+    .recognition .img-bg2 .main-image {
+        width: 180px;
+        height: 140px;
+    }
+    .recognition .img-bg2 .globe {
+        width: 50px;
+        height: 50px;
+    }
+
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
