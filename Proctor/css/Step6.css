@@ -1,3 +1,7 @@
+.fs-15p{
+    font-size: 15px;
+}
+
 .step6{
     background-color: #3C2E92;
     min-height: 100vh;
@@ -12,14 +16,13 @@
     text-align: center;
     margin: auto;
     width: 70%;
-    margin-bottom:40px;
 }
 .step6 .content {
     text-align: center;
     border: 1px solid #fff;
     border-radius: 50px;
     background-color: #fff;
-    padding: 50px;
+    padding: 30px;
     height: 520px;
     max-height: 550px;
     background: url('../images/Step6/step6-bg.png');
@@ -29,6 +32,26 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+.step6 h1{
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+}
+.step6 .share-btn{
+    font-weight: 500;
+    border: 1px solid #F33558;
+    background-color: #F33558;
+    padding: 10px 50px;
+}
+.step6 .next-btn {    
+    font-weight: 500;
+    border: 1px solid #FFBB00;
+    background-color: #FFBB00;
+    padding: 10px 50px;
+    color: #000;
+}
+
+/* Range slider and the bubble above the ranger */
 .range-input {
     -webkit-appearance: none;
     appearance: none; 
@@ -88,11 +111,10 @@ text-align: center;
 color: #333;
 border-radius: 10px;
 display: inline-block;
-font-size: 15px;
 font-weight: 500;
-top: 4%;
-left: 48%;
 padding: 4px 10px;
+bottom: 25px;
+right: 46.5%;
 }
 .range-bubble:after { 
 content: "";
