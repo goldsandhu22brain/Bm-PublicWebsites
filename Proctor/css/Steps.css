@@ -5,6 +5,9 @@
 .mt-80p{
     margin-top: 80px;
 }
+.h-90pr{
+    height: 90%;
+}
 .action-btn, .action-btn:hover, .action-btn:active, .action-btn:focus{
     font-weight: 500;
     border: 1px solid #F33558;
@@ -268,6 +271,32 @@ margin-top: -1px;
 } 
 
 
+/* STEPS 7 Secondary Page */
+.step7 .proof-sec-wrapper{
+    width: 410px;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 20px;
+    padding: 35px 60px;
+    background-color: #fff;
+}
+.step7 .img-icon-wrapper{
+    border: 1px dashed #6967FF;
+    border-radius: 10px;
+}
+.step7 .img-icon-wrapper span{
+    margin-left:20px;
+    color: #132730;
+    line-height: 27px;
+}
+.step7 .c-select{
+    color: #132730;
+}
+.step7 .c-select, .step7 .c-select:hover, .step7 .c-select:active, .step7 .c-select:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 
 /* STEP 8 */
 .step8{
@@ -300,6 +329,68 @@ margin-top: -1px;
 .step8 .range-bubble { 
     right: 33.5%;
 } 
+
+
+/* STEP 9 */
+
+.step9{
+    background-color: #F33557; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #F33557, #F335C9);
+    min-height: 100vh;
+}
+.step9 .content {
+    text-align: start;
+    border-radius: 50px;
+    background-color: #fff;
+    /* padding: 30px; */
+    height: 540px;
+    max-height: 550px;
+}
+.step9 .content-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.step9 h1{
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+}
+.step9 .proof-wrapper{
+    width: 410px;
+    text-align: center;
+    margin-top: 1rem;
+    border: 1px dashed #000;
+    border-radius: 20px;
+    padding: 35px 60px;
+    /* margin: auto; */
+    background-color: #fff;
+}
+.step9 .proof-wrapper img{
+    max-height: 132px;
+    max-width: 132px;
+}
+.step9 .img-wrapper {
+    text-align: end;
+    padding: 40px;
+}
+.step9 .img-wrapper img{
+    border-radius: 20px;
+}
+.step9 .range-input {
+    background:linear-gradient(to right, #333 75%, #ccc 75% );
+} 
+.step9 .range-bubble { 
+    right: 27%;
+} 
+.step9 .status-info{
+    height: 60px;
+    background-color: #6967FF;
+    border-radius: 50px 50px 0 0;
+    padding: 20px 30px 0 30px;
+    color: #fff;
+}
 
   
   
