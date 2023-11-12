@@ -42,6 +42,7 @@
     border: 1px solid #F33558;
     background-color: #F33558;
     padding: 10px 50px;
+    border-radius: 10px;
     outline: none !important;
     box-shadow: none !important;
 }
@@ -51,6 +52,7 @@
     background-color: #FFBB00;
     padding: 10px 50px;
     color: #000;
+    border-radius: 10px;
     outline: none !important;
     box-shadow: none !important;
 }
