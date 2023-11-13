@@ -240,6 +240,47 @@ img.reason3{
 }
 
 
+.example .example-container{
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    border-radius: 30px;
+    padding: 25px 17px 25px 35px;
+    position: relative;
+}
+.example .example-btop1{    
+    border-top: 45px solid #F39035;
+}
+.example .example-btop2{    
+    border-top: 45px solid #6967FF
+}
+.example .example-btop3{    
+    border-top: 45px solid #3ABE73;
+}
+.example .example-btop4{    
+    border-top: 45px solid #F87DD5;
+}
+.example p{
+    font-weight: 500;
+}
+.example .icon-container{
+    box-shadow: 0 -10px 20px rgb(0 0 0 / 15%);
+    display: inline-block;
+    padding: 15px 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: -65px;
+    left: 40px;
+    background-color: #fff;
+    height: 80px;
+    width: 80px;
+    margin: auto;
+    text-align: center;
+}
+.example .icon-container img{
+    height:45px;
+    width: 45px;
+}
+
+
 .fourth-banner{
     background-color: #1F249C;
 }
@@ -358,6 +399,9 @@ img.reason3{
     }     
     .recognition .img-wrapper{
         margin-bottom: 30px;
+    }
+    .example .sm-margin{
+        margin-top:3rem
     }
 }
 
