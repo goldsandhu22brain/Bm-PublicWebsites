@@ -131,6 +131,7 @@
 }
 
 
+
 .third-banner {
     background-color: #3189DA;
 }
@@ -154,13 +155,13 @@
 }
 
 
+
 .benefit h3{
     line-height: 60px;
 }
 .benefit h6{
     line-height: 30px;
 }
-
 .benefit-wrapper{
     border-radius: 20px;
 	/* padding: 30px 8px; */
@@ -212,6 +213,7 @@
 }
 
 
+
 .reasons{
     background-color: #F0F5FF;
 }
@@ -238,6 +240,7 @@ img.reason3{
     width: 455px;
     height: 305px;
 }
+
 
 
 .example .example-container{
@@ -281,8 +284,35 @@ img.reason3{
 }
 
 
+
+.overlay-banner {
+    margin-bottom: -120px;
+    position: relative;
+}
+.overlay-banner .container {
+    padding: 50px 30px;
+    background-color: #DE2336;
+}
+.overlay-banner img{
+    width: 253px;
+    height: 173px;
+}
+.overlay-banner .content{
+    margin: auto 0;
+}
+.overlay-banner h5{
+    color: #fff
+}
+.overlay-banner .c-text{
+    color: #FFDE06
+}
+
+
+
+
 .fourth-banner{
     background-color: #1F249C;
+    padding-top: 230px;
 }
 .fourth-banner h2{
     color: #fff;
@@ -304,6 +334,7 @@ img.reason3{
     left:50%;
     transform: translate(-50%, -50%);
 }
+
 
 
 .recognition img{
@@ -402,6 +433,10 @@ img.reason3{
     }
     .example .sm-margin{
         margin-top:3rem
+    }
+    .overlay-banner .content{
+        text-align: center;
+        margin-top: 20px;
     }
 }
 
