@@ -34,11 +34,6 @@
 }
 
 
-.feature h3{
-    font-size: 50px;
-    line-height: 60px;
-    font-weight: 700;
-}
 .feature .wrapper{
 	/* border: 1px solid #C2ACFF; */
 	border-radius: 20px;
@@ -48,7 +43,7 @@
 	height: 300px;
     line-height: 260px;
 	/* cursor: pointer; */
-	position: relative;
+	/* position: relative; */
     /* width: 510px; */
 }
 .feature .feature1{
@@ -83,13 +78,13 @@
 
 
 .first-hr {
-    border: 10px solid #C9C8FF;
+    border: 20px solid #C9C8FF;
     margin: 0;
     position: relative;
     z-index: -1;
 }
 .second-hr {
-    border: 10px solid #D988E7;
+    border: 20px solid #D988E7;
     margin: 0;
     position: relative;
     z-index: -1;
@@ -118,10 +113,10 @@
     padding-top: 400px;
     background-color: #FCF7F7;
 }
-.business h6{
+/* .business h6{
     font-size: 30px;
     line-height: 35px;
-}
+} */
 .business p{
     font-size: 20px;
     line-height: 35px;
@@ -134,12 +129,10 @@
 
 .third-banner {
     background-color: #3189DA;
+    background-image: linear-gradient(to right, #3189DA, #40159A);
 }
-.third-banner h3{
+.third-banner h2{
     color: #fff;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 65px;
     margin-bottom: 30px;
 }
 .third-banner p{
