@@ -11,11 +11,17 @@
 .mb-30p{
     margin-bottom:30px;
 }
+.mt-m45p{
+    margin-top:-45px;
+}
+.mt-50p{
+    margin-top: 50px;
+}
 
 h1{
     font-size: 36px;
     line-height: 45px;
-    font-weight: 800;
+    font-weight: 700;
 }
 .outline-btn{
     font-weight: 500;
@@ -184,6 +190,98 @@ margin-top: -1px;
 .step1 .range-bubble { 
     right: 79.5%;
 }  
+
+
+
+/* STEP 2*/
+.step2{
+    background-color: #1D7DD6; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #43D99A, #1D7DD6);
+    min-height: 100vh;
+}
+.step2 .wrapper{
+    width: 75%;
+}
+.step2 .content {
+    text-align: center;
+    /* border: 1px solid #fff;
+    border-radius: 60px;
+    background-color: #fff;
+    padding: 30px; */
+    height: 530px;
+    max-height: 550px;
+    padding:10px;
+}
+.step2 .range-input {
+    background:linear-gradient(to right, #333 18%, #ccc 18% );
+}
+.step2 .main{
+    width: 33px;
+    height: 33px;
+}
+.step2 .range-bubble { 
+    right: 72.7%;
+}
+.step2 .list-icon{
+    width: 22px;
+    height: 22px;    
+    margin-right: 0.75rem;
+} 
+.step2 .icon-wrapper{
+    border: 1px solid #FFBB00;
+    background-color: #FFBB00;
+    border-radius: 50%;
+    padding: 15px;
+    display: inline-block;
+}
+.step2 .info{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+.step2 .list-item{
+    background-color: #323263;
+    color: #fff;
+    text-align: left;
+    border-radius: 20px;
+}
+.step2 .list-item li{
+    padding: 12px 20px;
+    border-bottom: 1px solid #EAEAEA;
+    height: 50px;
+}
+.step2 .list-item li:last-child{
+    border-bottom: 0;
+}
+.step2 .list-info{
+    text-align: left;
+    background-color: #fff;
+    color: #383838;
+    border-radius: 20px;
+}
+.step2 .list-info li{
+    padding: 12px 20px;
+    border-bottom: 1px solid #EAEAEA;
+    height: 50px;
+}
+.step2 .list-info li:last-child{
+    border-bottom: 0;
+}
+.step2 .list-title1, .step2 .list-title2{
+    text-align: left;
+    margin-left: 1rem;
+    padding: 12px;
+    margin-right: 60px;
+    background-color: #1F2EB1; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #AF38D9, #1F2EB1);
+    border-radius: 15px 15px 0 0;
+    color: #fff;
+    font-size: 15px;
+}
+.step2 .list-title2{
+    background-color: #A50C83; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #F16B20, #A50C83);
+}
 
 
 
