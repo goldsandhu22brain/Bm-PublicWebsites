@@ -8,6 +8,9 @@
 .h-90pr{
     height: 90%;
 }
+.mb-30p{
+    margin-bottom:30px;
+}
 .action-btn, .action-btn:hover, .action-btn:active, .action-btn:focus{
     font-weight: 500;
     border: 1px solid #F33558;
@@ -166,6 +169,83 @@ margin-top: -1px;
 
 
 
+/* STEP3 */
+.step3{
+    background-color: #393C76; /* For browsers that do not support gradients */
+    background: url('../images/Steps/step3-bg.png');
+    background: url('../images/Steps/step3-bg.png'),linear-gradient(to bottom right, #00C1DB, #393C76);
+    background-blend-mode: multiply;
+    background-position: center;
+    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+}
+.step3 .content {
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 60px;
+    background-color: #fff;
+    padding: 30px;
+    height: 540px;
+    max-height: 550px;
+}
+.step3 .range-input {
+    background:linear-gradient(to right, #333 25%, #ccc 25% );
+}
+.step3 .range-bubble { 
+    right: 66.2%;
+} 
+.step3 .c-card {
+    border: 1px solid #DEDEDE;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    border-radius: 20px;
+    position: relative;
+    padding: 15px 30px;
+}
+.step3 .img-container{
+    position: relative;
+}
+.step3 img.background{
+    width: 118px;
+    height: 92px;
+}
+.step3 h1{
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+}
+.step3 .img-container .card-icon {
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid #E9E9E9;
+    background-color: #fff;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px;
+}
+.step3 .c-card p{
+    font-size: 17px;
+    line-height: 48px;
+    font-weight: 600;
+}
+.step3 .c-card .img-overlay {
+    border-radius: 50%;
+    position: absolute;
+    background-color: #6967FF;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 14px 10px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+}
+.step3 .c-card .card-icon  img{
+    width:36px;
+    height:35px;
+}
+
+
+
 /* STEP4 */
 .step4{
     background-color: #CA328D; /* For browsers that do not support gradients */
@@ -178,14 +258,17 @@ margin-top: -1px;
     border-radius: 60px;
     background-color: #fff;
     padding: 30px;
-    height: 520px;
-    max-height: 550px;
+    height: 68vh;
+    max-height: 70vh;
     background: url('../images/Steps/step4-bg.png');
     background-color: #FAE5FA;
     background-blend-mode: multiply;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: initial;
+    position: relative;
+    margin-bottom:1.5rem;
+    margin-top:4rem;
 }
 .step4 .range-input {
     background:linear-gradient(to right, #333 33%, #ccc 33% );
@@ -193,6 +276,43 @@ margin-top: -1px;
 .step4 .range-bubble { 
     right: 59.5%;
 }  
+.step4 h1{
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+}
+.step4 .form-wrapper{
+    border: 1px solid #E8E8E8;
+    position: absolute;
+    padding: 60px 50px;
+    background-color: #fff;
+    border-radius: 30px;
+    right: 10%;
+    top: -6%;
+}
+.step4 .icon-wrapper{
+    position: absolute;
+    top: -60%;
+    border: 1px solid #FFBB00;
+    background-color: #FFBB00;
+    border-radius: 50%;
+    padding: 12px 12px 12px 9px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.step4 .icon-wrapper img{
+    width:36px;
+    height:36px;
+}
+.step4 .action-btn, .step4 .action-btn:hover, .step4 .action-btn:active, .step4 .action-btn:focus{
+    padding: 10px 67px;
+}
+.step4 .form-wrapper .text{
+    background: #EFEFEF;
+    border: 1px solid #EFEFEF;
+    padding: 0.45rem 0.75rem;
+    font-size: 15px;;
+}
 
 
 /* STEP 6 */
