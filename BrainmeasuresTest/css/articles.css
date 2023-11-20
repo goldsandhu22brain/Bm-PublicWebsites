@@ -549,6 +549,11 @@ img.reason3{
     }
 
 }
+@media only screen and (max-width: 991px) {
+    .example .sm-margin{
+        margin-top:3rem
+    }
+}
 
 /* Small screen and laptop */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
