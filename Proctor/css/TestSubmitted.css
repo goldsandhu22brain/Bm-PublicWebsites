@@ -55,3 +55,7 @@
     font-size: 15px;
     color: #383838;
 }
+.test-submitted img{
+    max-width: 364px;
+    height: 242px;
+}

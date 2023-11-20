@@ -93,7 +93,7 @@ transition: .2s ease-in-out;
 position: absolute;
 background-color: #fff;
 text-align: center;
-color: #333;
+color: #000;
 border-radius: 10px;
 display: inline-block;
 font-weight: 500;
@@ -125,6 +125,11 @@ margin-top: -1px;
     margin: auto;
     width: 70%;
 }
+p{
+    font-size: 15px;
+    line-height: 27px;
+    color: #383838
+}
 
 
 /* STEP 1 */
@@ -135,25 +140,15 @@ margin-top: -1px;
 }
 .step1 .content {
     text-align: start;
-    border: 1px solid #fff;
+    border: 10px solid #000;
     border-radius: 50px;
     background-color: #fff;
-    /* padding: 55px 40px; */
     height: 450px;
     max-height: 550px;
-    /* background: url('../images/Steps/step1-img.png');
-    background-color: #fff;
-    background-blend-mode: multiply;
-    background-position: right;
-    background-repeat: no-repeat; */
     position: relative;
 }
 .step1 .c-color{
     color: #6967FF;
-}
-.step1 p{
-    font-size: 18px;
-    line-height: 27px;
 }
 .step1 .overlay{
     position: absolute;
@@ -196,7 +191,7 @@ margin-top: -1px;
 /* STEP 2*/
 .step2{
     background-color: #1D7DD6; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to bottom right, #43D99A, #1D7DD6);
+    background-image: linear-gradient(to bottom right, #43D99A 35%, #1D7DD6 79%);
     min-height: 100vh;
 }
 .step2 .wrapper{
@@ -204,10 +199,6 @@ margin-top: -1px;
 }
 .step2 .content {
     text-align: center;
-    /* border: 1px solid #fff;
-    border-radius: 60px;
-    background-color: #fff;
-    padding: 30px; */
     height: 530px;
     max-height: 550px;
     padding:10px;
@@ -249,6 +240,7 @@ margin-top: -1px;
     padding: 12px 20px;
     border-bottom: 1px solid #EAEAEA;
     height: 50px;
+    font-size: 16px;
 }
 .step2 .list-item li:last-child{
     border-bottom: 0;
@@ -263,6 +255,7 @@ margin-top: -1px;
     padding: 12px 20px;
     border-bottom: 1px solid #EAEAEA;
     height: 50px;
+    font-size: 16px;
 }
 .step2 .list-info li:last-child{
     border-bottom: 0;
@@ -289,7 +282,7 @@ margin-top: -1px;
 .step3{
     background-color: #393C76; /* For browsers that do not support gradients */
     background: url('../images/Steps/step3-bg.png');
-    background: url('../images/Steps/step3-bg.png'),linear-gradient(to bottom right, #00C1DB, #393C76);
+    background: url('../images/Steps/step3-bg.png'),linear-gradient(to bottom right, #00C1DB 0%, #393C76 60%);
     background-blend-mode: multiply;
     background-position: center;
     min-height: 100vh;
@@ -360,7 +353,7 @@ margin-top: -1px;
 /* STEP4 */
 .step4{
     background-color: #CA328D; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to right, #CA328D, #6D4BF9);
+    background-image: linear-gradient(to bottom left, #6D4BF9, #CA328D);
     min-height: 100vh;
 }
 .step4 .content {
@@ -416,7 +409,7 @@ margin-top: -1px;
 .step4 .form-wrapper .text{
     background: #EFEFEF;
     border: 1px solid #EFEFEF;
-    padding: 0.45rem 0.75rem;
+    padding: 0.6rem 0.75rem;
     font-size: 15px;
     color: #132730;
 }
@@ -480,6 +473,7 @@ margin-top: -1px;
 /* STEP 6 */
 .step6{
     background-color: #3C2E92;
+    background-image: linear-gradient(to bottom right, #6C3BBB, #3C2E92);
     min-height: 100vh;
 }
 .step6 .content {
@@ -519,12 +513,6 @@ margin-top: -1px;
     /* padding: 30px; */
     height: 520px;
     max-height: 550px;
-    /* background: url('../images/Steps/step6-bg.png');
-    background-color: #C8E7FF;
-    background-blend-mode: multiply;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain; */
 }
 .step7 .c-col {
     /* margin: auto; */
@@ -539,7 +527,7 @@ margin-top: -1px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} 
 .step7 .proof-wrapper{
     width: 410px;
     height: 206px;
@@ -569,7 +557,7 @@ margin-top: -1px;
 } 
 .step7 .range-bubble { 
     right: 40%;
-} 
+}
 
 
 /* STEPS 7 Second Page */
@@ -582,7 +570,7 @@ margin-top: -1px;
     background-color: #fff;
 }
 .step7 .img-icon-wrapper{
-    border: 1px dashed #6967FF;
+    border: 2px dashed #6967FF;
     border-radius: 10px;
 }
 .step7 .img-icon-wrapper span{
@@ -592,6 +580,9 @@ margin-top: -1px;
 }
 .step7 .c-select{
     color: #132730;
+    border-radius: 10px;
+    padding: 9px 12px;
+    border: 1px solid #6967FF;
 }
 .step7 .c-select, .step7 .c-select:hover, .step7 .c-select:active, .step7 .c-select:focus {
     outline: none;
@@ -625,6 +616,10 @@ margin-top: -1px;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: contain;
+}
+.step8 p{
+    font-size: 18px;
+    line-height: 32px;
 }
 .step8 .c-para{
     font-size: 36px;
@@ -691,6 +686,9 @@ margin-top: -1px;
     background-color: #6967FF;
     border-radius: 50px 50px 0 0;
     padding: 20px 30px 0 30px;
+    color: #fff;
+}
+.step9 .status-info p{
     color: #fff;
 }
 

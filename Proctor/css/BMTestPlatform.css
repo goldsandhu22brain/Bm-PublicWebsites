@@ -9,7 +9,7 @@
 .upload-photo{
     /* background-color: #323263; */
     background: url('../images/BMTestPlatoform/upload-photo-bg.png');
-    background-color: #2E2D5C;
+    background-color: #343365;
     background-blend-mode: multiply;
     background-position: center;
     width: 100vw;
@@ -109,6 +109,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 62px;
+    max-height: 62px;
 }
 .docs{
     height:370px;
@@ -151,4 +153,5 @@
 .action button{
     font-size: 15px;
     font-weight: 500;
+    padding: 10px 20px;
 }
