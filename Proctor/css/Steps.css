@@ -698,10 +698,16 @@ p{
     .wrapper{
         width: 95%;
     }
+    .step2 .wrapper{
+        width: 95%;
+    }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
     .wrapper{
         width: 80%;
+    }
+    .step2 .wrapper{
+        width: 85%;
     }
 }
 
