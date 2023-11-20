@@ -471,7 +471,10 @@ img.reason3{
     } 
     .reasons-wrapper p{
         font-size: 20px;
-    }
+    }  
+    .example .sm-margin{
+        margin-top:3rem
+    } 
     img.reason1{
         width: 328px;
         height: 328px;
@@ -535,10 +538,7 @@ img.reason3{
     }
     .reasons-wrapper p{
         font-size: 18px;
-    }  
-    .example .sm-margin{
-        margin-top:3rem
-    } 
+    }
     .recognition .img-bg2 .globe {
         width: 40px;
         height: 40px;
