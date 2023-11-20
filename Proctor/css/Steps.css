@@ -694,7 +694,7 @@ p{
 
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
     .wrapper{
         width: 95%;
     }
