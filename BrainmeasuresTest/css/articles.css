@@ -421,6 +421,18 @@ img.reason3{
     .example .sm-margin{
         margin-top:3rem
     }
+    .recognition img{
+        height: 140px;
+        width: 140px;
+    }    
+    .recognition .img-bg2 .main-image {
+        width: 180px;
+        height: 140px;
+    }
+    .recognition .img-bg2 .globe {
+        width: 40px;
+        height: 40px;
+    }
     .overlay-banner .content{
         text-align: center;
         margin-top: 20px;
@@ -509,6 +521,33 @@ img.reason3{
     .fourth-banner{
         padding-top: 150px;
     }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 740px) {
+    .feature .feature2{
+        margin-left: 0;
+    }
+    .feature .feature3{
+        margin-right: 0;
+    }   
+    .business .icon{
+        padding: 0 50px 50px 50px;
+    }
+    .reasons-wrapper p{
+        font-size: 18px;
+    }  
+    .example .sm-margin{
+        margin-top:3rem
+    } 
+    .recognition .img-bg2 .globe {
+        width: 40px;
+        height: 40px;
+    }
+    .overlay-banner .content{
+        text-align: center;
+        margin-top: 20px;
+    }
+
 }
 
 /* Small screen and laptop */
