@@ -17,14 +17,10 @@
 }
 .banner-content h2{
     color: #fff;
-    font-weight: 700;
-    line-height: 60px;
-    margin-bottom: 20px;
 }
 .banner-content p{
     color: #fff;
     font-size: 16px;
-    font-weight: 400;
     line-height: 27px;
     margin-bottom: 25px;
 }
@@ -35,16 +31,12 @@
 
 
 .feature .wrapper{
-	/* border: 1px solid #C2ACFF; */
 	border-radius: 20px;
-	/* padding: 30px 8px; */
 	text-align: center;
 	margin-bottom: 30px;
 	height: 300px;
     line-height: 260px;
-	/* cursor: pointer; */
-	/* position: relative; */
-    /* width: 510px; */
+	box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
 }
 .feature .feature1{
 	background-color: #F4F0FF;  
@@ -110,13 +102,13 @@
 
 
 .business{
-    padding-top: 400px;
+    padding-top: 320px;
     background-color: #FCF7F7;
 }
-/* .business h6{
-    font-size: 30px;
-    line-height: 35px;
-} */
+.business img{
+    width: 196px;
+    max-width: 100%;
+}
 .business p{
     font-size: 20px;
     line-height: 35px;
@@ -326,6 +318,8 @@ img.reason3{
     top:40%;
     left:50%;
     transform: translate(-50%, -50%);
+    max-width: 640px;
+    max-height: 548px;
 }
 
 
@@ -431,6 +425,16 @@ img.reason3{
         text-align: center;
         margin-top: 20px;
     }
+    .py-90p{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .first-banner {
+        padding-top: 40px;
+    }
+    .fourth-banner{
+        padding-top: 150px;
+    }
 }
 
 /* Ipad and Tablets */
@@ -493,6 +497,16 @@ img.reason3{
         margin-bottom: -200px;
     }
     .business{
+        padding-top: 80px;
+    }
+    .py-90p{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .first-banner {
+        padding-top: 90px;
+    }
+    .fourth-banner{
         padding-top: 150px;
     }
 }
@@ -562,6 +576,9 @@ img.reason3{
         margin-bottom: -200px;
     }
     .business{
+        padding-top: 80px;
+    }
+    .fourth-banner{
         padding-top: 150px;
     }
 
