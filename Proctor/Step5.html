@@ -37,20 +37,14 @@
                         <div class="col">
                             <div class="form-wrapper">
                                 <form>
-                                    <select class="form-select mb-2 drop-down" aria-label="Select a Security Question" id="question1">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                    <input class="form-control mb-3 text" placeholder="Your Answer" id="answer1">
-                                    <select class="form-select mb-2 drop-down" aria-label="Select a Security Question" id="question2">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                    <input class="form-control mb-3 text" placeholder="Your Answer" id="answer2">
+                                    <div class="form-group">
+                                        <label class="c-label" for="answer1"> Question1 </label>
+                                        <input type="text" class="form-control mb-3 text input-error" placeholder="Your Answer" id="answer1" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="c-label" for="answer2"> Question 2 </label>
+                                        <input type="text" class="form-control mb-3 text" placeholder="Your Answer" id="answer2" >
+                                    </div>
                                     <div class="mt-2">
                                         <button type="submit" class="btn btn-primary action-btn" id="startBtn">SUBMIT AND TEXT</button>
                                         <button type="button" class="btn btn-outline-dark ms-3 outline-btn" id="readFaq">Read FAQ</button>

@@ -59,6 +59,9 @@ h1{
     width:175px;
     font-size: 15px;
 }
+.input-error{
+    border: 2px solid #e52929;
+}
 /* Range slider and the bubble above the ranger */
 .range-input {
     -webkit-appearance: none;
@@ -343,6 +346,13 @@ p{
     padding: 14px 10px;
     box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
 }
+.step3 .c-card .img-overlay.failure{
+    background-color: #e52929;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 7px 16px;
+}
 .step3 .c-card .card-icon  img{
     width:36px;
     height:35px;
@@ -366,10 +376,10 @@ p{
     max-height: 550px;
     background: url('../images/Steps/step4-bg.png');
     background-color: #FAE5FA;
-    background-blend-mode: multiply;
+    background-blend-mode: initial;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: initial;
+    background-size: 75% 45%;
     position: relative;
     margin-bottom:1.5rem;
     margin-top:4.5rem;
@@ -386,12 +396,12 @@ p{
     padding: 60px 50px;
     background-color: #fff;
     border-radius: 30px;
-    right: 10%;
+    right: 8%;
     top: -6%;
 }
 .step4 .icon-wrapper{
     position: absolute;
-    top: -60%;
+    top: -40%;
     border: 1px solid #FFBB00;
     background-color: #FFBB00;
     border-radius: 50%;
@@ -412,6 +422,9 @@ p{
     padding: 0.6rem 0.75rem;
     font-size: 15px;
     color: #132730;
+}
+.step4 .form-wrapper  .text.input-error{
+    border: 2px solid #e52929;
 }
 
 
@@ -462,11 +475,16 @@ p{
     font-size: 15px;
     color: #132730;
 }
-.step5 .form-wrapper .drop-down{
-    border: 1px solid #6967FF;
+.step5 .form-wrapper .c-label{
     padding: 0.65rem 0.75rem;
     font-size: 15px;
     color: #132730;
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+.step5 .form-wrapper  .text.input-error{
+    border: 2px solid #e52929;
 }
 
 
@@ -690,6 +708,41 @@ p{
 }
 .step9 .status-info p{
     color: #fff;
+}
+
+
+
+.popup .modal-content{
+    border-radius: 50px;;
+ }
+ .popup .modal-body{
+    padding: 30px 60px 20px 60px; 
+ }
+.popup .modal-body .popup-img{
+    width: 241px;
+    height: 175px;
+}
+.popup .modal-body .popup-label{
+    font-size: 16px;
+    font-weight: 500
+}
+.popup .modal-body h3{
+    font-size: 30px;
+}
+.popup .modal-footer .primary, .popup .modal-footer .secondary{
+    border: 1px solid #6967FF;
+    background-color: #6967FF;
+    color: #fff;
+    box-shadow: 0 10px 10px rgb(159 47 68 / 30%);
+    font-size: 15px;
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.popup .modal-footer .secondary{
+    border: 1px solid #F33558;
+    background-color: #F33558;
 }
 
 
