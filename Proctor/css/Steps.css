@@ -905,14 +905,19 @@ p{
     width:440px;
     height: 215px;
 }
+.step10 #testDiv .question-video{
+    width:440px;
+    height: 215px;
+}
 .step10 #testDiv .answer{
-    background-color: #37344C;
-    border: 2px solid #433C6D;
     color: #fff;
     font-size: 15px;
     border-radius: 10px;
     padding:10px;
     margin-bottom: 0.5rem;
+    cursor: pointer;
+    background-color: #37344C;
+    border: 2px solid #433C6D;
 }
 .step10 #testDiv .answer .option-lbl{
     border: 1px solid #6967FF;
@@ -923,19 +928,11 @@ p{
 .step10 #testDiv .selected-answer{
     background-color: #3533E5;
     border: 2px solid #3533E5;
-    color: #fff;
-    font-size: 15px;
-    border-radius: 10px;
-    padding:10px;
-    margin-bottom: 0.5rem;
 }
 .step10 #testDiv .selected-answer .option-lbl{
     border: 1px solid #fff;
     color: #000;
     background-color: #fff;
-    font-size: 15px;
-    padding: 5px 10px 6px 10px;
-    border-radius: 50%;
 }
 .step10 #tileCardSection .alert-border{    
     border: double 1px transparent;
@@ -1028,6 +1025,9 @@ p{
     display: inline-block;
     border: 1px solid #F33558;
     background-color: #F33558;
+}
+.step10 .action-btn{
+    width: 100px;
 }
 
 
