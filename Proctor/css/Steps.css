@@ -1,3 +1,25 @@
+/* Scroll Bar  */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #b1abab; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #747373;
+  }
 /* common CSS for all steps */
 .fs-15p{
     font-size: 15px;
@@ -22,6 +44,31 @@ h1{
     font-size: 36px;
     line-height: 45px;
     font-weight: 700;
+}
+.light-btn, .light-btn:hover, .light-btn:active, .light-btn:focus{
+    font-weight: 500;
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 8px 20px;
+    outline: none !important;
+    box-shadow: none !important;
+    width: 200px;
+    font-size: 15px;
+    border-radius: 90px;
+}
+.outline-btn-light{
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none !important;
+    box-shadow: none !important;
+    width:275px;
+    font-size: 15px;
+    width:100px;
+    color: #fff;
+}
+.outline-btn-light:hover, .outline-btn-light:active, .outline-btn-light:focus{
+    color: #000;
 }
 .outline-btn{
     font-weight: 500;
@@ -747,12 +794,255 @@ p{
 
 
 
+.step10{
+    background-color: #221C44;
+    min-height: 100vh;
+}
+.step10:before{
+    content:"";
+    position:absolute;
+    right:0;
+    top:0;
+    width: 100vw;
+    height: 50vh;
+    border-radius: 0 0 50% 50%;
+    background-image: linear-gradient(#3B3999, #442C6B);
+    background-color: #442C6B; /* For browsers that do not support gradients */
+}
+.step10 .wrapper {
+    width:100%;
+    z-index: 1;
+}
+.step10 .range-input{
+    width: 55%;
+}
+.step10 .range-input {
+    background:linear-gradient(to right, #333 83%, #ccc 83% );
+} 
+.step10 .range-bubble { 
+    right: 29.5%;
+} 
+.step10 .d-icon{
+    border: 1px solid #FFC756;
+    background-color: #FFC756;
+    border-radius: 50%;
+    padding: 11px;
+    width: 52px;
+    height: 52px;
+}
+.step10 .d-icon img{
+    width: 30px;
+    height:30px;
+}
+.step10 .status-wrapper{
+    background-image: linear-gradient(to right, #BD34C9, #3D1CBF);
+    background-color: #3D1CBF; /*For browsers that does not support gradient*/
+    border-radius: 20px;
+    padding: 8px 30px;
+}
+.step10 .status{
+    float: left;
+    color: #fff;
+    font-size: 15px;
+    font-weight:500;
+    padding: 5px 0;
+}
+.step10 .time-wrapper {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    float:right
+}
+.step10 .time-wrapper .timer{
+    background-color: #47DA86;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;    
+    padding: 6px 20px;
+    border-radius: 80px;
+    margin-right: 8px;
+}
+.step10 .test-lbl p{
+    padding:8px 0;
+}
+.step10 .test-lbl .dot{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid #59EF9A;
+    padding: 1px 5px;
+    margin-left:8px;
+}
+.step10 .test-lbl .dot:after{
+  content: '';
+  background: #59EF9A;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 1px;
+  display: inline-block;
+}
+.step10 .question-lbl {
+    background-color: #201B42;
+    padding: 8px 25px;
+    color: #fff;
+    border-radius: 70px;
+    font-size:15px;
+    display: inline-block;
+}
+.step10 #testDiv{
+    height: 400px;
+    overflow-y: auto;
+}
+.step10 #testDiv .question{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 27px
+}
+.step10 #testDiv .question-img{
+    width:440px;
+    height: 215px;
+}
+.step10 #testDiv .answer{
+    background-color: #37344C;
+    border: 2px solid #433C6D;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    padding:10px;
+    margin-bottom: 0.5rem;
+}
+.step10 #testDiv .answer .option-lbl{
+    border: 1px solid #6967FF;
+    font-size: 15px;
+    padding: 5px 10px 6px 10px;
+    border-radius: 50%;
+}
+.step10 #testDiv .selected-answer{
+    background-color: #3533E5;
+    border: 2px solid #3533E5;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    padding:10px;
+    margin-bottom: 0.5rem;
+}
+.step10 #testDiv .selected-answer .option-lbl{
+    border: 1px solid #fff;
+    color: #000;
+    background-color: #fff;
+    font-size: 15px;
+    padding: 5px 10px 6px 10px;
+    border-radius: 50%;
+}
+.step10 #tileCardSection .alert-border{    
+    border: double 1px transparent;
+    border-radius: 30px 30px 0 0;
+    background-image: linear-gradient(#58379D, #58379D), linear-gradient(#6956DF,#6B2086);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.step10 #tileCardSection .alert-container{
+    height:70px;
+    overflow-y: auto;
+    font-size: 12px;
+    color: #fff;
+    background-color: #342D5C;
+}
+.step10 #tileCardSection .alert-container .dot{
+    height: 8px;
+    width: 8px;
+    border-radius:50%;
+    display: inline-block;
+    border: 1px solid red;
+    background-color: red;
+}
+.step10 #tileCardSection .question-list{
+    border: double 1px transparent;
+    border-radius: 0 0 30px 30px;
+    background-image: linear-gradient(#1D1739, #1D1739), linear-gradient(#6956DF,#6B2086);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.step10 #tileCardSection li{
+    display: inline-block;
+    color: #fff;
+    font-size: 11px;
+    border-radius: 50%;
+    height: 27px;
+    width: 30px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0.5rem 0.35rem 0 0;
+    border: 1px solid #6967FF;
+    background-color: transparent;
+}
+.step10 #tileCardSection li.hold{
+    border: 1px solid #EA1DE2;
+    background-color: transparent;
+}
+.step10 #tileCardSection li.answered{
+    border: 1px solid #6967FF;
+    background-color: #6967FF;
+}
+.step10 #tileCardSection li.marked{
+    border: 1px solid #F33558;
+    background-color: #F33558;
+}
+.step10 #tileCardSection .legend{
+    color: #fff;
+    font-size: 11px;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+.step10 #tileCardSection .legend .hold{
+    height: 10px;
+    width: 10px;
+    border-radius:50%;
+    display: inline-block;
+    border: 1px solid #EA1DE2;
+    background-color: transparent;
+}
+.step10 #tileCardSection .legend .answered{
+    height: 10px;
+    width: 10px;
+    border-radius:50%;
+    display: inline-block;
+    border: 1px solid #6967FF;
+    background-color: #6967FF;
+}
+.step10 #tileCardSection .legend .unanswered{
+    height: 10px;
+    width: 10px;
+    border-radius:50%;
+    display: inline-block;
+    border: 1px solid #6967FF;
+    background-color: transparent;
+}
+.step10 #tileCardSection .legend .marked{
+    height: 10px;
+    width: 10px;
+    border-radius:50%;
+    display: inline-block;
+    border: 1px solid #F33558;
+    background-color: #F33558;
+}
+
+
+
+
+
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
     .wrapper{
         width: 95%;
     }
     .step2 .wrapper{
         width: 95%;
+    }
+    .step10 .wrapper {
+        width:100%;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -761,6 +1051,9 @@ p{
     }
     .step2 .wrapper{
         width: 85%;
+    }
+    .step10 .wrapper {
+        width:100%;
     }
 }
 
