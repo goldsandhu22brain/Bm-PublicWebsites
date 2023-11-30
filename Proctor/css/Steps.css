@@ -941,12 +941,12 @@ p{
 .step10 .testDiv .answer, .step10 .testDiv .answer-type1{
     margin-bottom: 0.5rem;
 }
-.step10 .testDiv .answer input.radioOptions{
+.step10 .testDiv .answer input.radioOptions, .step10 .testDiv .answer-type1 input.radioOptions{
     opacity: 0;
     position:absolute;
     width: 0
 }
-.step10 .testDiv .answer .radioLabel{
+.step10 .testDiv .answer .radioLabel, .step10 .testDiv .answer-type1 .radioLabel{
     color: #fff;
     font-size: 15px;
     padding:10px;
@@ -958,7 +958,9 @@ p{
     cursor: pointer;
 }
 .step10 .testDiv .answer input[type="radio"]:checked + label, 
-.step10 .testDiv .answer input[type="radio"]:focus + label {
+.step10 .testDiv .answer input[type="radio"]:focus + label,
+.step10 .testDiv .answer-type1 input[type="radio"]:checked + label, 
+.step10 .testDiv .answer-type1 input[type="radio"]:focus + label {
     background-color: #3533E5;
     border: 2px solid #3533E5;
 }
@@ -975,13 +977,16 @@ p{
     color: #000;
     background-color: #fff;
 }
-.step10 .testDiv .answer-type1{
+.step10 .testDiv .answer-type1 {
     width:45%;
     margin-right: 1rem;
-    background-color: transparent;
     display: inline-block;
+}
+.step10 .testDiv .answer-type1 .radioLabel{
     font-size:12px;
     padding: 8px 10px;
+    display: block;
+    background-color: transparent;
 }
 .step10 .testDiv .answer-type1 .option-lbl-type1{
     border: 2px solid #6967FF;
@@ -990,14 +995,12 @@ p{
     height: 10px;
     width: 10px;
     display: inline-block;
+    margin-right: 6px
 }
-.step10 .testDiv .selected-answer .option-lbl-type1{
+.step10 .testDiv .answer-type1 input[type="radio"]:checked + label .option-lbl-type1,
+.step10 .testDiv .answer-type1 input[type="radio"]:focus + label .option-lbl-type1{
     border: 1px solid #fff;
     background-color: #fff;
-    border-radius: 50%;
-    height: 10px;
-    width: 10px;
-    display: inline-block;
 }
 /* Sub Question Section CSS */
 .step10 .testDiv .card{
