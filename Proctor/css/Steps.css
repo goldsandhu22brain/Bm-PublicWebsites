@@ -185,6 +185,7 @@ p{
 }
 
 
+
 /* STEP 1 */
 .step1{
     background-color: #1771C5; /* For browsers that do not support gradients */
@@ -478,6 +479,7 @@ p{
 }
 
 
+
 /* STEP 5*/
 .step5{
     background-color: #3DC75B; /* For browsers that do not support gradients */
@@ -538,6 +540,7 @@ p{
 }
 
 
+
 /* STEP 6 */
 .step6{
     background-color: #3C2E92;
@@ -565,6 +568,7 @@ p{
 .step6 .range-bubble { 
     right: 46.5%;
 } 
+
 
 
 /* STEP 7 */
@@ -626,6 +630,7 @@ p{
 .step7 .range-bubble { 
     right: 40%;
 }
+
 
 
 /* STEPS 7 Second Page */
@@ -702,7 +707,6 @@ p{
 
 
 /* STEP 9 */
-
 .step9{
     background-color: #F33557; /* For browsers that do not support gradients */
     background-image: linear-gradient(to bottom right, #F33557, #F335C9);
@@ -761,7 +765,7 @@ p{
 }
 
 
-
+/* Modal Popup */
 .popup .modal-content{
     border-radius: 50px;;
  }
@@ -796,7 +800,7 @@ p{
 }
 
 
-
+/* STEP 10 */
 .step10{
     background-color: #221C44;
     min-height: 100vh;
@@ -839,6 +843,7 @@ p{
     width: 30px;
     height:30px;
 }
+/* Status and Timer CSS */
 .step10 .status-wrapper{
     background-image: linear-gradient(to right, #BD34C9, #3D1CBF);
     background-color: #3D1CBF; /*For browsers that does not support gradient*/
@@ -867,6 +872,7 @@ p{
     border-radius: 80px;
     margin-right: 8px;
 }
+/* Test Label Name Eg: "Special Reasoning Test4" */
 .step10 .test-lbl p{
     padding:8px 0;
 }
@@ -888,6 +894,7 @@ p{
   bottom: 1px;
   display: inline-block;
 }
+/* Question Label Name Eg: "Q1: Simple Radio Button Question" */
 .step10 .question-lbl {
     background-color: #201B42;
     padding: 8px 25px;
@@ -896,6 +903,7 @@ p{
     font-size:15px;
     display: inline-block;
 }
+/* Questions Type Sections CSS */
 .step10 .testDiv{
     height: 70vh;
     overflow-y: auto;
@@ -922,6 +930,7 @@ p{
     width:750px;
     height: 319px;
 }
+/* Answer Type Section CSS */
 .step10 .testDiv .answer, .step10 .testDiv .answer-type1{
     color: #fff;
     font-size: 15px;
@@ -971,6 +980,7 @@ p{
     background-color: #3533E5;
     border: 2px solid #3533E5;
 }
+/* Sub Question Section CSS */
 .step10 .testDiv .card{
     border: 1px solid #6967FF;
 }
@@ -983,6 +993,7 @@ p{
 .step10 .testDiv .card-body{
     background-color: #221C44;
 }
+/* Right Panel - User Alert Section CSS */
 .step10 .tileCardSection .alert-border{    
     border: double 1px transparent;
     border-radius: 30px 30px 0 0;
@@ -1005,6 +1016,7 @@ p{
     border: 1px solid red;
     background-color: red;
 }
+/* Right Panel - No of question Section CSS */
 .step10 .tileCardSection .question-list{
     border: double 1px transparent;
     border-radius: 0 0 30px 30px;
@@ -1042,6 +1054,7 @@ p{
     background-color: #b1abab;
     color: #000
 }
+/* Right Panel - Legends Section CSS */
 .step10 .tileCardSection .legend{
     color: #fff;
     font-size: 11px;
