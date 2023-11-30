@@ -39,6 +39,9 @@
 .mt-50p{
     margin-top: 50px;
 }
+.mt-5rem{
+    margin-top: 5rem;
+}
 
 h1{
     font-size: 36px;
@@ -812,6 +815,8 @@ p{
 .step10 .wrapper {
     width:100%;
     z-index: 1;
+    margin: 0;
+    min-height: inherit;
 }
 .step10 .range-input{
     width: 55%;
@@ -892,21 +897,20 @@ p{
     display: inline-block;
 }
 .step10 #testDiv{
-    height: 400px;
+    height: 70vh;
     overflow-y: auto;
 }
 .step10 #testDiv .question{
     color: #fff;
-    font-size: 17px;
     font-weight: 500;
-    line-height: 27px
+    line-height: 23px
 }
 .step10 #testDiv .question-img{
     width:440px;
     height: 215px;
 }
 .step10 #testDiv .question-video{
-    width:440px;
+    width:410px;
     height: 215px;
 }
 .step10 #testDiv .answer{
@@ -1043,6 +1047,9 @@ p{
     }
     .step10 .wrapper {
         width:100%;
+        z-index: 1;
+        margin: 0;
+        min-height: inherit;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -1054,6 +1061,9 @@ p{
     }
     .step10 .wrapper {
         width:100%;
+        z-index: 1;
+        margin: 0;
+        min-height: inherit;
     }
 }
 
