@@ -913,6 +913,10 @@ p{
     width:410px;
     height: 215px;
 }
+.step10 #testDiv .question-image-type1{
+    width:750px;
+    height: 319px;
+}
 .step10 #testDiv .answer{
     color: #fff;
     font-size: 15px;
@@ -992,6 +996,11 @@ p{
     border: 1px solid #F33558;
     background-color: #F33558;
 }
+.step10 #tileCardSection li.current{
+    border: 1px solid #b1abab;
+    background-color: #b1abab;
+    color: #000
+}
 .step10 #tileCardSection .legend{
     color: #fff;
     font-size: 11px;
@@ -1029,6 +1038,17 @@ p{
     display: inline-block;
     border: 1px solid #F33558;
     background-color: #F33558;
+}
+.step10 #tileCardSection .legend .current{
+    height: 10px;
+    width: 10px;
+    border-radius:50%;
+    display: inline-block;
+    border: 1px solid #b1abab;
+    background-color: #b1abab;
+}
+.step10 #tileCardSection .legend-wrapper{
+    background-color: #342D5C;
 }
 .step10 .action-btn{
     width: 100px;
