@@ -32,7 +32,7 @@
                         </div>
                     </div>   
                     <div class="row mx-0">
-                        <div class="col-7 status-wrapper">
+                        <div class="col-8 status-wrapper">
                             <span class="status">Preparing to start</span>
                             <div class="d-inline-block time-wrapper">
                                 <div class="timer d-inline-block">
@@ -55,7 +55,7 @@
                         </div>
                     </div>                    
                     <div class="row mx-0">
-                        <div class="col-7 px-0 text-start">
+                        <div class="col-8 px-0 text-start">
                             <div id="testDiv" class="testDiv">
                                 <div class="row mx-0">
                                     <div class="col-5 pe-0">
@@ -122,10 +122,15 @@
                                 </div>
                             </div>
                         </div>  
-                        <div class="col-5 px-0">
+                        <!-- Remove position-relative in the below div while implmenting that is for video placeholder --> 
+                        <div class="col-4 px-0 position-relative">
+                            <!-- Placeholder of video - please remove this while implementing - Starts -->
+                            <div class="col-10" style="height: 200px;background-color: #000;position:absolute;
+                            right: -15%;top: -32%;border-radius: 20px;"></div>
+                            <!-- Placeholder of video - please remove this while implementing - Ends -->
                             <div id="tileCardSection" class="tileCardSection">
                                 <div class="row mx-0 justify-content-end">
-                                    <div class="col-8 px-0 mt-5rem">
+                                    <div class="col-10 px-0 mt-5rem">
                                         <div class="row mx-0 text-start alert-border">
                                             <div class="col-12 py-2">
                                                 <label class="fs-15p text-white">User Activity Alert</label>
@@ -225,6 +230,10 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Placeholder of chat icon - please remove this while implementing - Starts -->
+                            <img src="./images/Steps/sample-chat-icon.png" style="position:absolute;
+                            right: -15%;bottom: 0; width:55px;"></img>
+                            <!-- Placeholder of chat icon - please remove this while implementing - Ends -->
                         </div>
                     </div>  
                 </div>
