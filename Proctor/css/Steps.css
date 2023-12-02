@@ -121,6 +121,9 @@ h1{
     outline: none;
     border-radius: 15px;
     height: 6px;
+    margin: auto;
+    padding: 0;
+    border: 0;
     background: #ccc;
     background:linear-gradient(to right, #333 10%, #ccc 10% );
 }  
