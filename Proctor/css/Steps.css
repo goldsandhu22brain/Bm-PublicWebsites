@@ -941,12 +941,12 @@ p{
 .step10 .testDiv .answer, .step10 .testDiv .answer-type1{
     margin-bottom: 0.5rem;
 }
-.step10 .testDiv .answer input.radioOptions, .step10 .testDiv .answer-type1 input.radioOptions{
+.step10 .testDiv .answer input.answer-options, .step10 .testDiv .answer-type1 input.answer-options{
     opacity: 0;
     position:absolute;
     width: 0
 }
-.step10 .testDiv .answer .radioLabel, .step10 .testDiv .answer-type1 .radioLabel{
+.step10 .testDiv .answer .answer-label, .step10 .testDiv .answer-type1 .answer-label{
     color: #fff;
     font-size: 15px;
     padding:10px;
@@ -982,7 +982,7 @@ p{
     margin-right: 1rem;
     display: inline-block;
 }
-.step10 .testDiv .answer-type1 .radioLabel{
+.step10 .testDiv .answer-type1 .answer-label{
     font-size:12px;
     padding: 8px 10px;
     display: block;
