@@ -946,8 +946,8 @@ p{
     height: 100px;
 }
 .step10 .testDiv .answer-img-large{
-    width:750px;
-    height: 319px;
+    width: 720px;
+    height: 300px;
 }
 /*Radio and CheckBox*/
 .step10 .testDiv .answer, .step10 .testDiv .sub-answer{
