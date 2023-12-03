@@ -173,7 +173,7 @@ margin-top: -1px;
 .range-bubble p{
     margin: 0;
     overflow: hidden;
-    width: 180px;
+    width: 200px;
     height: 20px;
     line-height: 18px;
 }
@@ -247,7 +247,7 @@ p{
     background:linear-gradient(to right, #333 14%, #ccc 14% );
 }
 .step1 .range-bubble { 
-    right: 68.5%;
+    right: 67.5%;
 }  
 
 
@@ -275,7 +275,7 @@ p{
     height: 33px;
 }
 .step2 .range-bubble { 
-    right: 59.4%;
+    right: 58.4%;
 }
 .step2 .list-icon{
     width: 22px;
@@ -366,7 +366,7 @@ p{
     background:linear-gradient(to right, #333 38%, #ccc 38% );
 }
 .step3 .range-bubble { 
-    right: 48.8%;
+    right: 47.8%;
 } 
 .step3 .c-card {
     border: 1px solid #DEDEDE;
@@ -421,13 +421,13 @@ p{
 
 
 
-/* STEP4 */
-.step4{
+/* STEP5 */
+.step5{
     background-color: #CA328D; /* For browsers that do not support gradients */
     background-image: linear-gradient(to bottom left, #6D4BF9, #CA328D);
     min-height: 100vh;
 }
-.step4 .content {
+.step5 .content {
     text-align: center;
     border: 1px solid #fff;
     border-radius: 60px;
@@ -435,7 +435,7 @@ p{
     padding: 30px;
     height: 500px;
     max-height: 550px;
-    background: url('../images/Steps/step4-bg.png');
+    background: url('../images/Steps/step5-bg.png');
     background-color: #FAE5FA;
     background-blend-mode: initial;
     background-position: bottom;
@@ -445,13 +445,13 @@ p{
     margin-bottom:1.5rem;
     margin-top:4.5rem;
 }
-.step4 .range-input {
-    background:linear-gradient(to right, #333 50%, #ccc 50% );
+.step5 .range-input {
+    background:linear-gradient(to right, #333 63%, #ccc 63% );
 }
-.step4 .range-bubble { 
-    right: 39%;
+.step5 .range-bubble { 
+    right: 28.1%;
 }  
-.step4 .form-wrapper{
+.step5 .form-wrapper{
     border: 1px solid #E8E8E8;
     position: absolute;
     padding: 60px 50px;
@@ -460,7 +460,7 @@ p{
     right: 8%;
     top: -6%;
 }
-.step4 .icon-wrapper{
+.step5 .icon-wrapper{
     position: absolute;
     top: -40%;
     border: 1px solid #FFBB00;
@@ -470,33 +470,33 @@ p{
     left: 50%;
     transform: translateX(-50%);
 }
-.step4 .icon-wrapper img{
+.step5 .icon-wrapper img{
     width:36px;
     height:36px;
 }
-.step4 .action-btn, .step4 .action-btn:hover, .step4 .action-btn:active, .step4 .action-btn:focus{
+.step5 .action-btn, .step5 .action-btn:hover, .step5 .action-btn:active, .step5 .action-btn:focus{
     padding: 10px 67px;
 }
-.step4 .form-wrapper .text{
+.step5 .form-wrapper .text{
     background: #EFEFEF;
     border: 1px solid #EFEFEF;
     padding: 0.6rem 0.75rem;
     font-size: 15px;
     color: #132730;
 }
-.step4 .form-wrapper  .text.input-error{
+.step5 .form-wrapper  .text.input-error{
     border: 2px solid #e52929;
 }
 
 
 
-/* STEP 5*/
-.step5{
+/* STEP 6*/
+.step6{
     background-color: #3DC75B; /* For browsers that do not support gradients */
     background-image: linear-gradient(to bottom right, #C2E267, #3DC75B);
     min-height: 100vh;
 }
-.step5 .content {
+.step6 .content {
     text-align: center;
     border: 1px solid #fff;
     border-radius: 60px;
@@ -505,39 +505,39 @@ p{
     height: 530px;
     max-height: 550px;
 }
-.step5 .range-input {
-    background:linear-gradient(to right, #333 63%, #ccc 63% );
+.step6 .range-input {
+    background:linear-gradient(to right, #333 75%, #ccc 75% );
 }
-.step5 .range-bubble { 
-    right: 29.3%;
+.step6 .range-bubble { 
+    right: 18.3%;
 }  
-.step5 .step5-img{
+.step6 .step6-img{
     width: 185px;
     height:145px;
 }
-.step5 .action-btn{
+.step6 .action-btn{
     width:255px;
 }
-.step5 .outline-btn{
+.step6 .outline-btn{
     width:150px;
 }
-.step5 .form-wrapper{
+.step6 .form-wrapper{
     border: 1px solid #F8F8F8;
     border-radius: 60px;
     background-color: #F8F8F8;
     padding: 40px 40px 25px 40px;
 }
-.step5 .form-wrapper form{
+.step6 .form-wrapper form{
     width: 60%;
     margin: auto
 }
-.step5 .form-wrapper .text{
+.step6 .form-wrapper .text{
     border: 1px solid #6967FF;
     padding: 0.65rem 0.75rem;
     font-size: 15px;
     color: #132730;
 }
-.step5 .form-wrapper .c-label{
+.step6 .form-wrapper .c-label{
     padding: 0.65rem 0.75rem;
     font-size: 15px;
     color: #132730;
@@ -545,19 +545,19 @@ p{
     text-align: left;
     margin-bottom: 0.5rem;
 }
-.step5 .form-wrapper  .text.input-error{
+.step6 .form-wrapper  .text.input-error{
     border: 2px solid #e52929;
 }
 
 
 
-/* STEP 6 */
-.step6{
+/* STEP 7 */
+.step7{
     background-color: #3C2E92;
     background-image: linear-gradient(to bottom right, #6C3BBB, #3C2E92);
     min-height: 100vh;
 }
-.step6 .content {
+.step7 .content {
     text-align: center;
     border: 1px solid #fff;
     border-radius: 50px;
@@ -565,29 +565,29 @@ p{
     padding: 30px;
     height: 520px;
     max-height: 550px;
-    background: url('../images/Steps/step6-bg.png');
+    background: url('../images/Steps/step7-bg.png');
     background-color: #C8E7FF;
     background-blend-mode: multiply;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
 }
-.step6 .range-input {
+.step7 .range-input {
     background:linear-gradient(to right, #333 75%, #ccc 75% );
 }
-.step6 .range-bubble { 
-    right: 19.5%;
+.step7 .range-bubble { 
+    right: 18.3%;
 } 
 
 
 
-/* STEP 7 */
-.step7{
+/* STEP 4 */
+.step4{
     background-color: #F33557; /* For browsers that do not support gradients */
     background-image: linear-gradient(to bottom right, #F33557, #F335C9);
     min-height: 100vh;
 }
-.step7 .content {
+.step4 .content {
     text-align: start;
     border: 1px solid #fff;
     border-radius: 50px;
@@ -596,7 +596,7 @@ p{
     height: 520px;
     max-height: 550px;
 }
-.step7 .c-col {
+.step4 .c-col {
     /* margin: auto; */
     background-color: #eee;
     /* background-size: cover; */
@@ -604,13 +604,13 @@ p{
     /* height: 100%; */
     position: relative;
 }
-.step7 .content-wrapper{
+.step4 .content-wrapper{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 } 
-.step7 .proof-wrapper{
+.step4 .proof-wrapper{
     width: 410px;
     height: 206px;
     text-align: center;
@@ -621,30 +621,30 @@ p{
     /* margin: auto; */
     background-color: #fff;
 }
-.step7 .proof-title {
+.step4 .proof-title {
     font-size: 24px;
     line-height: 32px;
     color: #383838;
     font-weight: 500;
 }
-.step7 .img-wrapper {
+.step4 .img-wrapper {
     text-align: end;
     padding: 40px;
 }
-.step7 .img-wrapper img{
+.step4 .img-wrapper img{
     border-radius: 20px;
 }
-.step7 .range-input {
-    background:linear-gradient(to right, #333 87%, #ccc 87% );
+.step4 .range-input {
+    background:linear-gradient(to right, #333 50%, #ccc 50% );
 } 
-.step7 .range-bubble { 
-    right: 9.7%;
+.step4 .range-bubble { 
+    right: 38%;
 }
 
 
 
-/* STEPS 7 Second Page */
-.step7 .proof-sec-wrapper{
+/* STEPS 4 Second Page */
+.step4 .proof-sec-wrapper{
     width: 410px;
     height: auto;
     margin-top: 1rem;
@@ -652,29 +652,29 @@ p{
     padding: 35px 60px;
     background-color: #fff;
 }
-.step7 .img-icon-wrapper{
+.step4 .img-icon-wrapper{
     border: 2px dashed #6967FF;
     border-radius: 10px;
 }
-.step7 .img-icon-wrapper span{
+.step4 .img-icon-wrapper span{
     margin-left:20px;
     color: #132730;
     line-height: 27px;
 }
-.step7 .c-select{
+.step4 .c-select{
     color: #132730;
     border-radius: 10px;
     padding: 9px 12px;
     border: 1px solid #6967FF;
 }
-.step7 .c-select, .step7 .c-select:hover, .step7 .c-select:active, .step7 .c-select:focus {
+.step4 .c-select, .step4 .c-select:hover, .step4 .c-select:active, .step4 .c-select:focus {
     outline: none;
     box-shadow: none;
 }
 
 
-/* STEP 7 Third Page */
-.step7 .proof-height{
+/* STEP 4 Third Page */
+.step4 .proof-height{
     height:240px;
 }
 
@@ -712,7 +712,7 @@ p{
     background:linear-gradient(to right, #333 100%, #ccc 100% );
 } 
 .step8 .range-bubble { 
-    right: 0;
+    right: -1.3%;
 } 
 
 
@@ -936,20 +936,21 @@ p{
     width:410px;
     height: 215px;
 }
-.step10 .testDiv .question-image-type1{
+.step10 .testDiv .question-img-large{
     width:750px;
     height: 319px;
 }
 /* Answer Type Section CSS */
-.step10 .testDiv .answer, .step10 .testDiv .answer-type1{
+/*Radio and CheckBox*/
+.step10 .testDiv .answer, .step10 .testDiv .sub-answer{
     margin-bottom: 0.5rem;
 }
-.step10 .testDiv .answer input.answer-options, .step10 .testDiv .answer-type1 input.answer-options{
+.step10 .testDiv .answer input.answer-options, .step10 .testDiv .sub-answer input.answer-options{
     opacity: 0;
     position:absolute;
     width: 0
 }
-.step10 .testDiv .answer .answer-label, .step10 .testDiv .answer-type1 .answer-label{
+.step10 .testDiv .answer .answer-label, .step10 .testDiv .sub-answer .answer-label{
     color: #fff;
     font-size: 15px;
     padding:10px;
@@ -960,38 +961,37 @@ p{
     border-radius: 10px;
     cursor: pointer;
 }
-.step10 .testDiv .answer input[type="radio"]:checked + label, 
-.step10 .testDiv .answer input[type="radio"]:focus + label,
-.step10 .testDiv .answer-type1 input[type="radio"]:checked + label, 
-.step10 .testDiv .answer-type1 input[type="radio"]:focus + label {
+.step10 .testDiv .sub-answer {
+    width:45%;
+    margin-right: 1rem;
+    display: inline-block;
+}
+.step10 .testDiv .sub-answer .answer-label{
+    font-size:12px;
+    padding: 8px 10px;
+    display: block;
+    background-color: transparent;
+}
+/*Radio*/
+.step10 .testDiv input[type="radio"]:checked + label, 
+.step10 .testDiv input[type="radio"]:focus + label{
     background-color: #3533E5;
     border: 2px solid #3533E5;
 }
-.step10 .testDiv .answer .option-lbl{
+.step10 .testDiv .radio-with-text{
     border: 1px solid #6967FF;
     font-size: 15px;
     padding: 5px 10px 6px 10px;
     border-radius: 50%;
     margin-right: 8px;
 }
-.step10 .testDiv .answer input[type="radio"]:checked + label .option-lbl,
-.step10 .testDiv .answer input[type="radio"]:focus + label .option-lbl{
+.step10 .testDiv input[type="radio"]:checked + label .radio-with-text,
+.step10 .testDiv input[type="radio"]:focus + label .radio-with-text{
     border: 1px solid #fff;
     color: #000;
     background-color: #fff;
 }
-.step10 .testDiv .answer-type1 {
-    width:45%;
-    margin-right: 1rem;
-    display: inline-block;
-}
-.step10 .testDiv .answer-type1 .answer-label{
-    font-size:12px;
-    padding: 8px 10px;
-    display: block;
-    background-color: transparent;
-}
-.step10 .testDiv .answer-type1 .option-lbl-type1{
+.step10 .testDiv .radio-no-text{
     border: 2px solid #6967FF;
     background-color: transparent;
     border-radius: 50%;
@@ -1000,9 +1000,26 @@ p{
     display: inline-block;
     margin-right: 6px
 }
-.step10 .testDiv .answer-type1 input[type="radio"]:checked + label .option-lbl-type1,
-.step10 .testDiv .answer-type1 input[type="radio"]:focus + label .option-lbl-type1{
+.step10 .testDiv input[type="radio"]:checked + label .radio-no-text,
+.step10 .testDiv input[type="radio"]:focus + label .radio-no-text{
     border: 1px solid #fff;
+    background-color: #fff;
+}
+/*Check Box*/
+.step10 .testDiv input[type="checkbox"]:checked + label{
+    background-color: #3533E5;
+    border: 2px solid #3533E5;
+}
+.step10 .testDiv .cb-with-text{
+    border: 1px solid #6967FF;
+    font-size: 15px;
+    padding: 5px 10px 6px 10px;
+    margin-right: 8px;
+    border-radius: 6px;
+}
+.step10 .testDiv input[type="checkbox"]:checked + label .cb-with-text{
+    border: 1px solid #fff;
+    color: #000;
     background-color: #fff;
 }
 /* Sub Question Section CSS */
