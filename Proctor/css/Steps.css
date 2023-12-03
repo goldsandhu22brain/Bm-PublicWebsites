@@ -943,7 +943,11 @@ p{
 /* Answer Type Section CSS */
 .step10 .testDiv .answer-img-small{
     width: 120px;
-    height: 100px;;
+    height: 100px;
+}
+.step10 .testDiv .answer-img-large{
+    width:750px;
+    height: 319px;
 }
 /*Radio and CheckBox*/
 .step10 .testDiv .answer, .step10 .testDiv .sub-answer{
@@ -977,8 +981,10 @@ p{
     background-color: transparent;
 }
 .step10 .testDiv .image-answer{
-    width:20%;
     margin-right: 1rem;
+}
+.step10 .testDiv .image-answer.sm{
+    width:20%;
     display: inline-block;
 }
 .step10 .testDiv .image-answer .answer-label{
@@ -1022,8 +1028,8 @@ p{
     margin-right: 6px
 }
 .step10 .testDiv .image-answer .radio-no-text{
-    height: 14px;
-    width: 14px;
+    height: 15px;
+    width: 15px;
 }
 .step10 .testDiv input[type="radio"]:checked + label .radio-no-text,
 .step10 .testDiv input[type="radio"]:focus + label .radio-no-text{
@@ -1061,8 +1067,8 @@ p{
     margin-right: 6px
 }
 .step10 .testDiv .image-answer .cb-no-text{
-    height: 14px;
-    width: 14px;
+    height: 15px;
+    width: 15px;
 }
 .step10 .testDiv input[type="checkbox"]:checked + label .cb-no-text{
     /* border: 1px solid #fff; */
