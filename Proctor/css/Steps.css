@@ -942,7 +942,7 @@ p{
 }
 /* Answer Type Section CSS */
 .step10 .testDiv .answer-img-small{
-    width: 120px;
+    width: 135px;
     height: 100px;
 }
 .step10 .testDiv .answer-img-large{
@@ -950,15 +950,15 @@ p{
     height: 300px;
 }
 /*Radio and CheckBox*/
-.step10 .testDiv .answer, .step10 .testDiv .sub-answer{
+.step10 .testDiv .answer{
     margin-bottom: 0.5rem;
 }
-.step10 .testDiv .answer input.answer-options, .step10 .testDiv .sub-answer input.answer-options{
+.step10 .testDiv .answer input.answer-options{
     opacity: 0;
     position:absolute;
     width: 0
 }
-.step10 .testDiv .answer .answer-label, .step10 .testDiv .sub-answer .answer-label{
+.step10 .testDiv .answer .answer-label{
     color: #fff;
     font-size: 15px;
     padding:10px;
@@ -968,25 +968,32 @@ p{
     border: 2px solid #433C6D;
     border-radius: 10px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
-.step10 .testDiv .sub-answer {
+.step10 .testDiv .answer-50wd {
     width:45%;
     margin-right: 1rem;
     display: inline-block;
 }
-.step10 .testDiv .sub-answer .answer-label{
+.step10 .testDiv .answer-30wd {
+    width:30%;
+    margin-right: 1rem;
+    display: inline-block;
+}
+.step10 .testDiv .answer-label.sub-label{
     font-size:12px;
     padding: 8px 10px;
     display: block;
     background-color: transparent;
 }
-.step10 .testDiv .image-answer{
+/* .step10 .testDiv .image-answer{
     margin-right: 1rem;
 }
 .step10 .testDiv .image-answer.sm{
     width:20%;
     display: inline-block;
-}
+} */
 .step10 .testDiv .image-answer .answer-label{
     font-size:12px;
     padding: 8px 10px;
@@ -1008,9 +1015,11 @@ p{
 .step10 .testDiv .radio-with-text{
     border: 1px solid #6967FF;
     font-size: 15px;
-    padding: 5px 10px 6px 10px;
+    padding: 4px 10px 6px 10px;
     border-radius: 50%;
     margin-right: 8px;
+    height: 33px;
+    width: 32px;
 }
 .step10 .testDiv input[type="radio"]:checked + label .radio-with-text,
 .step10 .testDiv input[type="radio"]:focus + label .radio-with-text{
@@ -1215,6 +1224,12 @@ p{
 }
 
 
+
+/* Sample Will remove or incorporate based on feedback */
+.step10.sample .testDiv{
+    height: 78vh;
+    overflow-y: auto;
+}
 
 
 
