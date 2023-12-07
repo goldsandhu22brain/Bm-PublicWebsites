@@ -42,6 +42,9 @@
 .mt-5rem{
     margin-top: 5rem;
 }
+.mt-7rem{
+    margin-top: 7rem;
+}
 
 h1{
     font-size: 36px;
@@ -915,7 +918,7 @@ p{
 }
 /* Questions Type Sections CSS */
 .step10 .testDiv{
-    height: 70vh;
+    height: 77vh;
     overflow-y: auto;
 }
 .step10 .testDiv .question, .step10 .testDiv .sub-question{
@@ -945,6 +948,10 @@ p{
     width: 135px;
     height: 100px;
 }
+.step10 .testDiv .answer-img-md{
+    width: 270px;
+    height: 140px;
+}
 .step10 .testDiv .answer-img-large{
     width: 720px;
     height: 300px;
@@ -961,7 +968,7 @@ p{
 .step10 .testDiv .answer .answer-label{
     color: #fff;
     font-size: 15px;
-    padding:10px;
+    padding: 8px;
     display: block;    
     cursor: pointer;
     background-color: #37344C;
@@ -1040,6 +1047,10 @@ p{
     height: 15px;
     width: 15px;
 }
+.step10 .testDiv .image-answer .radio-no-text.lg{
+    height: 20px;
+    width: 20px;
+}
 .step10 .testDiv input[type="radio"]:checked + label .radio-no-text,
 .step10 .testDiv input[type="radio"]:focus + label .radio-no-text{
     /* border: 1px solid #fff; */
@@ -1090,6 +1101,10 @@ p{
 .step10 .testDiv .image-answer .cb-no-text{
     height: 15px;
     width: 15px;
+}
+.step10 .testDiv .image-answer .cb-no-text.lg{
+    height: 20px;
+    width: 20px;
 }
 .step10 .testDiv input[type="checkbox"]:checked + label .cb-no-text{
     /* border: 1px solid #fff; */
