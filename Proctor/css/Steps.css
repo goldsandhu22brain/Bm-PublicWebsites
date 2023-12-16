@@ -1269,7 +1269,7 @@ p{
 .step10 .tileCardSection .legend-wrapper{
     background-color: #342D5C;
 }
-.step10 .action-btn{
+.step10 .action-btn, .step10 .next-btn{
     width: 120px;
 }
 
