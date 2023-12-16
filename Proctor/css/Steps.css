@@ -1,7 +1,7 @@
 /* Scroll Bar  */
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 4px;
   }
   
   /* Track */
@@ -51,14 +51,14 @@ h1{
     line-height: 45px;
     font-weight: 700;
 }
-.light-btn, .light-btn:hover, .light-btn:active, .light-btn:focus{
+.report-btn, .report-btn:hover, .report-btn:active, .report-btn:focus{
     font-weight: 500;
-    border: 1px solid #fff;
-    background-color: #fff;
+    border: 1px solid #D62B4B;
+    background-color: #D62B4B;
     padding: 8px 20px;
     outline: none !important;
     box-shadow: none !important;
-    width: 200px;
+    width: 230px;
     font-size: 15px;
     border-radius: 90px;
 }
@@ -70,7 +70,7 @@ h1{
     box-shadow: none !important;
     width:275px;
     font-size: 15px;
-    width:100px;
+    width:120px;
     color: #fff;
 }
 .outline-btn-light:hover, .outline-btn-light:active, .outline-btn-light:focus{
@@ -817,13 +817,20 @@ p{
 .step10{
     background-color: #221C44;
     min-height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    overflow-x: hidden;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .step10:before{
     content:"";
     position:absolute;
     right:0;
     top:0;
-    width: 100vw;
+    width: 105%;
+    left: -3%;
     height: 50vh;
     border-radius: 0 0 50% 50%;
     background-image: linear-gradient(#3B3999, #442C6B);
@@ -858,15 +865,17 @@ p{
 }
 /* Status and Timer CSS */
 .step10 .status-wrapper{
-    background-image: linear-gradient(to right, #BD34C9, #3D1CBF);
+    background-image: linear-gradient(to right, #5A37E8, #BD34C9);
     background-color: #3D1CBF; /*For browsers that does not support gradient*/
-    border-radius: 20px;
-    padding: 8px 30px;
+    /* border-radius: 20px; */
+    padding: 10px 30px;
+    z-index: 1;
+    position: relative;
 }
 .step10 .status{
-    float: left;
+    /* float: left; */
     color: #fff;
-    font-size: 15px;
+    font-size: 20px;
     font-weight:500;
     padding: 5px 0;
 }
@@ -874,7 +883,7 @@ p{
     font-size: 15px;
     font-weight: 400;
     color: #fff;
-    float:right
+    /* float:right */
 }
 .step10 .time-wrapper .timer{
     background-color: #47DA86;
@@ -909,23 +918,24 @@ p{
 }
 /* Question Label Name Eg: "Q1: Simple Radio Button Question" */
 .step10 .question-lbl {
-    background-color: #201B42;
+    background-color: #FFD335;
     padding: 8px 25px;
-    color: #fff;
+    color: #000;
     border-radius: 70px;
     font-size:15px;
     display: inline-block;
+    line-height: 21px;
 }
 /* Questions Type Sections CSS */
 .step10 .testDiv{
-    height: 77vh;
+    height: 74vh;
     overflow-y: auto;
 }
 .step10 .testDiv .question, .step10 .testDiv .sub-question{
     color: #fff;
     font-weight: 500;
     line-height: 23px;
-    font-size: 15px;
+    font-size: 13px;
 }
 .step10 .testDiv .sub-question{
     font-size: 13px;
@@ -936,8 +946,8 @@ p{
     height: 215px;
 }
 .step10 .testDiv .question-video{
-    width:410px;
-    height: 215px;
+    max-width: 360px;
+    max-height:180px;
 }
 .step10 .testDiv .question-img-large{
     width:750px;
@@ -958,7 +968,7 @@ p{
 }
 /*Radio and CheckBox*/
 .step10 .testDiv .answer{
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 .step10 .testDiv .answer input.answer-options{
     opacity: 0;
@@ -971,7 +981,7 @@ p{
     padding: 8px;
     display: block;    
     cursor: pointer;
-    background-color: #37344C;
+    background-color: #38337c;
     border: 2px solid #433C6D;
     border-radius: 10px;
     cursor: pointer;
@@ -980,7 +990,7 @@ p{
 }
 .step10 .testDiv .answer-50wd {
     width:45%;
-    margin-right: 1rem;
+    margin-right: 0.9rem;
     display: inline-block;
 }
 .step10 .testDiv .answer-30wd {
@@ -1010,9 +1020,9 @@ p{
 }
 /*Radio*/
 .step10 .testDiv input[type="radio"]:checked + label, 
-.step10 .testDiv input[type="radio"]:focus + label{
-    background-color: #3533E5;
-    border: 2px solid #3533E5;
+.step10 .testDiv input[type="radio"]:focus + label{    
+    background-color: #6967FF;
+    border: 2px solid #C2ACFF;
 }
 .step10 .testDiv .image-answer input[type="radio"]:checked + label, 
 .step10 .testDiv .image-answer input[type="radio"]:focus + label{
@@ -1020,13 +1030,15 @@ p{
     border: 0;
 }
 .step10 .testDiv .radio-with-text{
-    border: 1px solid #6967FF;
+    border: 1px solid #fff;
     font-size: 15px;
-    padding: 4px 10px 6px 10px;
     border-radius: 50%;
     margin-right: 8px;
     height: 33px;
-    width: 32px;
+    width: 33px;
+    text-align: center;
+    line-height: 31px;
+    font-weight: 500;
 }
 .step10 .testDiv input[type="radio"]:checked + label .radio-with-text,
 .step10 .testDiv input[type="radio"]:focus + label .radio-with-text{
@@ -1125,26 +1137,49 @@ p{
 }
 /* Right Panel - User Alert Section CSS */
 .step10 .tileCardSection .alert-border{    
-    border: double 1px transparent;
     border-radius: 30px 30px 0 0;
-    background-image: linear-gradient(#58379D, #58379D), linear-gradient(#6956DF,#6B2086);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
+    position: relative;
+    margin: 0 auto;
+    background-color: #18C764;
+    height: 65px;
+}
+.step10 .tileCardSection .alert-border:before{
+    content: "";
+    height: 69%;
+    width: 99%;
+    position: absolute;
+    background: white;
+    border-radius: 50px;
+    transition: all 0.8s;
+    top: 60%;
+    content: "";
+    position: absolute;
+    left: 0.5%;
+    height: 55px;
+    background: #1d1739;
 }
 .step10 .tileCardSection .alert-container{
-    height:70px;
-    overflow-y: auto;
+    height: 75px;
     font-size: 12px;
     color: #fff;
     background-color: #342D5C;
+    width: 93%;
+    margin: 0 auto 0;
+    border-radius: 10px;
+    z-index: 1;
+    margin-top: -5px;
+}
+.step10 .tileCardSection .scroll-container{
+    height: 60px;
+    overflow-y: auto;
 }
 .step10 .tileCardSection .alert-container .dot{
-    height: 8px;
-    width: 8px;
+    height: 10px;
+    width: 10px;
     border-radius:50%;
     display: inline-block;
-    border: 1px solid red;
-    background-color: red;
+    border: 1px solid #D11CCD;
+    background-color: #D11CCD;
 }
 /* Right Panel - No of question Section CSS */
 .step10 .tileCardSection .question-list{
@@ -1157,11 +1192,11 @@ p{
 .step10 .tileCardSection li{
     display: inline-block;
     color: #fff;
-    font-size: 11px;
+    font-size: 12px;
     border-radius: 50%;
-    height: 27px;
+    height: 30px;
     width: 30px;
-    line-height: 25px;
+    line-height: 28px;
     text-align: center;
     margin: 0.5rem 0.35rem 0 0;
     border: 1px solid #6967FF;
@@ -1176,13 +1211,12 @@ p{
     background-color: #6967FF;
 }
 .step10 .tileCardSection li.marked{
-    border: 1px solid #F33558;
-    background-color: #F33558;
+    border: 1px solid #D11CCD;
+    background-color: #D11CCD;
 }
 .step10 .tileCardSection li.current{
-    border: 1px solid #b1abab;
-    background-color: #b1abab;
-    color: #000
+    border: 1px solid #514879;
+    background-color: #514879;
 }
 /* Right Panel - Legends Section CSS */
 .step10 .tileCardSection .legend{
@@ -1220,22 +1254,22 @@ p{
     width: 10px;
     border-radius:50%;
     display: inline-block;
-    border: 1px solid #F33558;
-    background-color: #F33558;
+    border: 1px solid #D11CCD;
+    background-color: #D11CCD;
 }
 .step10 .tileCardSection .legend .current{
     height: 10px;
     width: 10px;
     border-radius:50%;
     display: inline-block;
-    border: 1px solid #b1abab;
-    background-color: #b1abab;
+    border: 1px solid #514879;
+    background-color: #514879;
 }
 .step10 .tileCardSection .legend-wrapper{
     background-color: #342D5C;
 }
 .step10 .action-btn{
-    width: 100px;
+    width: 120px;
 }
 
 

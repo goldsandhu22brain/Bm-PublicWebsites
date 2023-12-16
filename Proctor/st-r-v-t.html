@@ -18,23 +18,13 @@
 
 <body>
     <div class="step10">
-        <div class="container">
-            <div class="wrapper">
-                <div class="content">
-                    <!-- <div class="row mx-0 my-3">
-                        <div class="col-12 col-md-1">
-                            <div class="d-icon" >
-                                <img src="./images/Steps/step10-header-icon.png" alt="image" />
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-11 px-0">
-                            <h2 class="text-start text-white">Brainmeasures Test platform</h2>
-                        </div>
-                    </div>    -->
-                    <div class="row mx-0 mt-4">
-                        <div class="col-8 status-wrapper">
-                            <span class="status">Preparing to start</span>
-                            <div class="d-inline-block time-wrapper">
+        <div>
+            <div class="status-wrapper">        
+                <div class="container">   
+                    <div class="row mx-0 w-100">
+                        <div class="col-12">
+                            <div class="col-3 d-inline-block status">Preparing to Start Test</div>
+                            <div class="col-5 d-inline-block time-wrapper text-end">
                                 <div class="timer d-inline-block">
                                     <span > 30:00 </span>
                                     <span > - </span>
@@ -42,200 +32,211 @@
                                 </div>
                                 <span >TIME LEFT</span>
                             </div>
-                        </div>
-                    </div>  
-                    <div class="row mx-0 my-3">
-                        <div class="col-3 test-lbl text-start">
-                            <p class="text-white mb-0"> Special Reasoninig Test 4 <span class="dot"></span></p>
-                        </div>
-                        <div class="col-3 text-start">
-                            <div class="question-lbl">
-                                <span class="fw-bold"> Q2: </span> <span> Multiple Choice </span>
+                        </div> 
+                    </div>
+                </div>
+            </div> 
+            <div class="container">
+                <div class="wrapper">
+                    <div class="content">
+                        
+                        <div class="row mx-0 my-3 mb-2">
+                            <div class="col-3 test-lbl text-start">
+                                <p class="text-white mb-0"> Special Reasoninig Test 4 <span class="dot"></span></p>
                             </div>
-                        </div>
-                    </div>                    
-                    <div class="row mx-0">
-                        <div class="col-8 px-0 text-start">
-                            <div id="testDiv" class="testDiv">
-                                <div class="row mx-0">
-                                    <div class="col-5 pe-0">
-                                        <p class="question">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                            Lorem Ipsum has been the industry's standard dummy text?
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                            Lorem Ipsum has been the industry's standard dummy text?
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                            Lorem Ipsum has been the industry's standard dummy text?
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                            Lorem Ipsum has been the industry's standard dummy text?
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                            Lorem Ipsum has been the industry's standard dummy text?
-                                        </p>
-                                    </div>
-                                    <div class="col-7 text-center">
-                                        <div class="question-video">
-                                            <div class="embed-responsive embed-responsive-16by9">
-                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                            <div class="col-3 text-start">
+                                <div class="question-lbl">
+                                    <span class="fw-bold"> Q2: </span> <span> Simple Radio Button Question </span>
+                                </div>
+                            </div>
+                        </div>                    
+                        <div class="row mx-0">
+                            <div class="col-8 px-0 text-start">
+                                <div id="testDiv" class="testDiv">
+                                    <div class="row mx-0">
+                                        <div class="col-12">
+                                            <p class="question">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                                Lorem Ipsum has been the industry's standard dummy text?
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                                Lorem Ipsum has been the industry's standard dummy text?
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                                Lorem Ipsum has been the industry's standard dummy text?
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                                Lorem Ipsum has been the industry's standard dummy text?
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                                Lorem Ipsum has been the industry's standard dummy text?
+                                            </p>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="question-video">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="my-3">
-                                    <div class="row mx-0">
-                                        <ul class="list-unstyled">  
-                                            <li class="answer">
-                                                <input type="radio" name="radioGroup" class="answer-options" value="option1" id="option1">                                                
-                                                <label class="answer-label" for="option1">
-                                                    <span class="radio-with-text">A</span>
-                                                    Lorem ipsum dolor sit amet
-                                                </label>
-                                            </li>
-                                            <li class="answer">
-                                                <input type="radio" name="radioGroup" class="answer-options" value="option2" id="option2" checked>                                                
-                                                <label class="answer-label" for="option2">
-                                                    <span class="radio-with-text">B</span>
-                                                    Lorem ipsum dolor sit amet
-                                                </label>
-                                            </li>
-                                            <li class="answer">
-                                                <input type="radio" name="radioGroup" class="answer-options" value="option3" id="option3">                                                
-                                                <label class="answer-label" for="option3">
-                                                    <span class="radio-with-text">C</span>
-                                                    Lorem ipsum dolor sit amet
-                                                </label>
-                                            </li>
-                                            <li class="answer">
-                                                <input type="radio" name="radioGroup" class="answer-options" value="option4" id="option4">                                                
-                                                <label class="answer-label" for="option4">
-                                                    <span class="radio-with-text">D</span>
-                                                    Lorem ipsum dolor sit amet
-                                                </label>
-                                            </li>
-                                        </ul>
+                                    <div class="my-3">
+                                        <div class="row mx-0">
+                                            <ul class="list-unstyled">  
+                                                <li class="answer answer-50wd">
+                                                    <input type="radio" name="radioGroup" class="answer-options" value="option1" id="option1">                                                
+                                                    <label class="answer-label" for="option1">
+                                                        <span class="radio-with-text">A</span>
+                                                        Lorem ipsum dolor sit amet
+                                                    </label>
+                                                </li> 
+                                                <li class="answer answer-50wd">
+                                                    <input type="radio" name="radioGroup" class="answer-options" value="option2" id="option2" checked>                                                
+                                                    <label class="answer-label" for="option2">
+                                                        <span class="radio-with-text">B</span>
+                                                        Lorem ipsum dolor sit amet
+                                                    </label>
+                                                </li>
+                                                <li class="answer answer-50wd">
+                                                    <input type="radio" name="radioGroup" class="answer-options" value="option3" id="option3">                                                
+                                                    <label class="answer-label" for="option3">
+                                                        <span class="radio-with-text">C</span>
+                                                        Lorem ipsum dolor sit amet
+                                                    </label>
+                                                </li>
+                                                <li class="answer answer-50wd">
+                                                    <input type="radio" name="radioGroup" class="answer-options" value="option4" id="option4">                                                
+                                                    <label class="answer-label" for="option4">
+                                                        <span class="radio-with-text">D</span>
+                                                        Lorem ipsum dolor sit amet
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
+                                
                                 <div class="row mx-0 mb-3">
                                     <div class="col-12">
                                         <button type="button" class="btn btn-outline-light outline-btn-light" id="previousBtn">Previous</button>
                                         <button type="submit" class="btn btn-primary ms-3 action-btn" id="submitBtn">SUBMIT</button>
                                     </div>
                                 </div>
-                            </div>
-                        </div>  
-                        <!-- Remove position-relative in the below div while implmenting that is for video placeholder --> 
-                        <div class="col-4 px-0 position-relative">
-                            <!-- Placeholder of video - please remove this while implementing - Starts -->
-                            <div class="col-10" style="height: 200px;background-color: #000;position:absolute;
-                            right: -15%;top: -22%;border-radius: 20px;"></div>
-                            <!-- Placeholder of video - please remove this while implementing - Ends -->
-                            <div id="tileCardSection" class="tileCardSection">
-                                <div class="row mx-0 justify-content-end">
-                                    <div class="col-10 px-0 mt-7rem">
-                                        <div class="row mx-0 text-start alert-border">
-                                            <div class="col-12 py-2">
-                                                <label class="fs-15p text-white">User Activity Alert</label>
+                            </div>  
+                            <!-- Remove position-relative in the below div while implmenting that is for video placeholder --> 
+                            <div class="col-4 px-0 position-relative">
+                                <!-- Placeholder of video - please remove this while implementing - Starts -->
+                                <div class="col-10 mt-4" style="height: 200px;background-color: #000;position:absolute;
+                                right: -15%;top: -22%;border-radius: 20px;"></div>
+                                <!-- Placeholder of video - please remove this while implementing - Ends -->
+                                <div id="tileCardSection" class="tileCardSection">
+                                    <div class="row mx-0 justify-content-end">
+                                        <div class="col-10 px-0 mt-7rem">
+                                            <div class="row mx-0 text-start alert-border">
+                                                <div class="col-12 py-2">
+                                                    <label class="fs-15p ms-2 fw-bold">User Activity Alert</label>
+                                                </div>
+                                                
                                             </div>
-                                            <div class="alert-container text-start pt-2">
-                                                <div class="col-12 pb-1">
-                                                    <span class="me-1 dot"></span>
-                                                    Mouse moved out of window
-                                                </div>
-                                                <div class="col-12 pb-1">
-                                                    <span class="me-1 dot"></span>
-                                                    User not viewing camera
-                                                </div>
-                                                <div class="col-12 pb-1">
-                                                    <span class="me-1 dot"></span>
-                                                    Mouse moved out of window
-                                                </div>
-                                                <div class="col-12 pb-1">
-                                                    <span class="me-1 dot"></span>
-                                                    User not viewing camera
-                                                </div>
-                                                <div class="col-12 pb-1">
-                                                    <span class="me-1 dot"></span>
-                                                    Mouse moved out of window
-                                                </div>
-                                                <div class="col-12 pb-1">
-                                                    <span class="me-1 dot"></span>
-                                                    User not viewing camera
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row mx-0 question-list">
-                                            <ul class="list-unstyled py-3 text-start ps-4 mb-0">
-                                                <li class="marked">1</li>
-                                                <li>2</li>
-                                                <li class="answered">3</li> 
-                                                <li class="hold">4</li>   
-                                                <li class="marked">5</li>
-                                                <li>6</li>
-                                                <li class="answered">7</li> 
-                                                <li class="hold">8</li> 
-                                                <li class="marked">9</li>
-                                                <li>10</li>
-                                                <li class="answered">11</li> 
-                                                <li class="hold">12</li> 
-                                                <li class="current">13</li>
-                                                <li>14</li>
-                                                <li>15</li>
-                                                <li>16</li>
-                                                <li>17</li>
-                                                <li>18</li>
-                                                <li>19</li>
-                                                <li>20</li>
-                                                <li>21</li>
-                                                <li>22</li>
-                                                <li>23</li>
-                                                <li>24</li>
-                                                <li>25</li>
-                                                <li>26</li>
-                                                <li>27</li>
-                                                <li>28</li>
-                                                <li>29</li>    
-                                                <li>30</li>                                 
-                                            </ul>
-                                            <div class="row mx-0 px-0">
-                                                <div class="col-12 px-0 py-2 legend-wrapper">
-                                                    <div class="legend">
-                                                        <div class="hold"></div>
-                                                        <span>Hold</span>
-                                                    </div>
-                                                    <div class="legend">
-                                                        <div class="answered"></div>
-                                                        <span>Answer</span>
-                                                    </div>
-                                                    <div class="legend">
-                                                        <div class="unanswered"></div>
-                                                        <span>Not Answer</span>
-                                                    </div>
-                                                    <div class="legend">
-                                                        <div class="marked"></div>
-                                                        <span>Marked</span>
-                                                    </div>
-                                                    <div class="legend">
-                                                        <div class="current"></div>
-                                                        <span>Current</span>
+                                            <div class="row mx-0 question-list">
+                                                <div class="alert-container text-start pt-2">
+                                                    <div class="scroll-container">
+                                                        <div class="col-12 pb-1">
+                                                            <span class="me-1 dot"></span>
+                                                            Mouse moved out of window
+                                                        </div>
+                                                        <div class="col-12 pb-1">
+                                                            <span class="me-1 dot"></span>
+                                                            User not viewing camera
+                                                        </div>
+                                                        <div class="col-12 pb-1">
+                                                            <span class="me-1 dot"></span>
+                                                            Mouse moved out of window
+                                                        </div>
+                                                        <div class="col-12 pb-1">
+                                                            <span class="me-1 dot"></span>
+                                                            User not viewing camera
+                                                        </div>
+                                                        <div class="col-12 pb-1">
+                                                            <span class="me-1 dot"></span>
+                                                            Mouse moved out of window
+                                                        </div>
+                                                        <div class="col-12 pb-1">
+                                                            <span class="me-1 dot"></span>
+                                                            User not viewing camera
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="row mx-0 my-3">
-                                                <div class="col-12">
-                                                    <button type="button" class="btn btn-light light-btn" id="reportQuestion">
-                                                        Report Question
-                                                    </button>
+                                                <ul class="list-unstyled py-3 text-start ps-4 mb-0">
+                                                    <li class="marked">1</li>
+                                                    <li>2</li>
+                                                    <li class="answered">3</li> 
+                                                    <li class="hold">4</li>   
+                                                    <li class="marked">5</li>
+                                                    <li>6</li>
+                                                    <li class="answered">7</li> 
+                                                    <li class="hold">8</li> 
+                                                    <li class="marked">9</li>
+                                                    <li>10</li>
+                                                    <li class="answered">11</li> 
+                                                    <li class="hold">12</li> 
+                                                    <li class="current">13</li>
+                                                    <li>14</li>
+                                                    <li>15</li>
+                                                    <li>16</li>
+                                                    <li>17</li>
+                                                    <li>18</li>
+                                                    <li>19</li>
+                                                    <li>20</li>
+                                                    <li>21</li>
+                                                    <li>22</li>
+                                                    <li>23</li>
+                                                    <li>24</li>
+                                                    <li>25</li>
+                                                    <li>26</li>
+                                                    <li>27</li>
+                                                    <li>28</li>
+                                                    <li>29</li>    
+                                                    <li>30</li>                                 
+                                                </ul>
+                                                <div class="row mx-0 px-0">
+                                                    <div class="col-12 px-0 py-2 legend-wrapper">
+                                                        <div class="legend">
+                                                            <div class="hold"></div>
+                                                            <span>Hold</span>
+                                                        </div>
+                                                        <div class="legend">
+                                                            <div class="answered"></div>
+                                                            <span>Answer</span>
+                                                        </div>
+                                                        <div class="legend">
+                                                            <div class="unanswered"></div>
+                                                            <span>Not Answer</span>
+                                                        </div>
+                                                        <div class="legend">
+                                                            <div class="marked"></div>
+                                                            <span>Marked</span>
+                                                        </div>
+                                                        <div class="legend">
+                                                            <div class="current"></div>
+                                                            <span>Current</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mx-0 my-3">
+                                                    <div class="col-12">
+                                                        <button type="button" class="btn btn-primary report-btn" id="reportQuestion">
+                                                            Report Question
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Placeholder of chat icon - please remove this while implementing - Starts -->
+                                <img src="./images/Steps/sample-chat-icon.png" style="position:absolute;
+                                right: -15%;bottom: 2%; width:55px;"></img>
+                                <!-- Placeholder of chat icon - please remove this while implementing - Ends -->
                             </div>
-                            <!-- Placeholder of chat icon - please remove this while implementing - Starts -->
-                            <img src="./images/Steps/sample-chat-icon.png" style="position:absolute;
-                            right: -15%;bottom: 0; width:55px;"></img>
-                            <!-- Placeholder of chat icon - please remove this while implementing - Ends -->
-                        </div>
-                    </div>  
+                        </div>  
+                    </div>
                 </div>
             </div>
         </div>
