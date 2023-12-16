@@ -1275,10 +1275,10 @@ p{
 
 
 /* Sample Will remove or incorporate based on feedback */
-.step10.sample .testDiv{
+/* .step10.sample .testDiv{
     height: 78vh;
     overflow-y: auto;
-}
+} */
 
 
 
@@ -1288,6 +1288,12 @@ p{
     }
     .step2 .wrapper{
         width: 95%;
+    }
+    .step10 .container {
+        max-width:1000px
+    }
+    .step10 .tileCardSection .col-10 {
+        width:100%;
     }
     .step10 .wrapper {
         width:100%;
