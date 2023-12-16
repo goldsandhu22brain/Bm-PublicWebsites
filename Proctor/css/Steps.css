@@ -928,7 +928,7 @@ p{
 }
 /* Questions Type Sections CSS */
 .step10 .testDiv{
-    height: 74vh;
+    height: 72vh;
     overflow-y: auto;
 }
 .step10 .testDiv .question, .step10 .testDiv .sub-question{
@@ -1039,6 +1039,7 @@ p{
     text-align: center;
     line-height: 31px;
     font-weight: 500;
+    display: block;
 }
 .step10 .testDiv input[type="radio"]:checked + label .radio-with-text,
 .step10 .testDiv input[type="radio"]:focus + label .radio-with-text{
