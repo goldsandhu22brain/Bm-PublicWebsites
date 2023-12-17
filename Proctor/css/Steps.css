@@ -1084,19 +1084,24 @@ p{
 } */
 /*Check Box*/
 .step10 .testDiv input[type="checkbox"]:checked + label{
-    background-color: #3533E5;
-    border: 2px solid #3533E5;
+    background-color: #6967FF;
+    border: 2px solid #C2ACFF;
 }
 .step10 .testDiv .image-answer input[type="checkbox"]:checked + label{
     background-color: transparent;
     border: 0;
 }
 .step10 .testDiv .cb-with-text{
-    border: 1px solid #6967FF;
+    border: 1px solid #fff;
     font-size: 15px;
-    padding: 5px 10px 6px 10px;
     margin-right: 8px;
     border-radius: 6px;
+    height: 33px;
+    width: 33px;
+    text-align: center;
+    line-height: 31px;
+    font-weight: 500;
+    display: block;
 }
 .step10 .testDiv input[type="checkbox"]:checked + label .cb-with-text{
     /* border: 1px solid #fff; */
