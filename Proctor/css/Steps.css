@@ -1001,7 +1001,7 @@ p{
 .step10 .testDiv .answer-label.sub-label{
     font-size:12px;
     padding: 8px 10px;
-    display: block;
+    /* display: block; */
     background-color: transparent;
 }
 /* .step10 .testDiv .image-answer{
@@ -1052,10 +1052,11 @@ p{
     border: 2px solid #6967FF;
     background-color: transparent;
     border-radius: 50%;
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
     display: inline-block;
-    margin-right: 15px
+    margin-right: 15px;
+    vertical-align: sub;
 }
 .step10 .testDiv .image-answer .radio-no-text{
     height: 15px;
@@ -1131,16 +1132,19 @@ p{
 }
 /* Sub Question Section CSS */
 .step10 .testDiv .card{
-    border: 1px solid #6967FF;
+    border: 0;
 }
 .step10 .testDiv .card-header{
     background-color: #3B2C74;
-    border-bottom: 1px solid #6967FF;
+    border-bottom: 2px solid #3B2C74;
     font-size: 15px;
-    color:#fff;
+    color:#fff;    
+    padding: 12px 16px;
 }
 .step10 .testDiv .card-body{
     background-color: #221C44;
+    border: 1px solid #6967FF;
+    border-top: 0;
 }
 /* Right Panel - User Alert Section CSS */
 .step10 .tileCardSection .alert-border{    
