@@ -1308,6 +1308,9 @@ p{
 .step10 .testDiv .c-table.table-bordered>:not(caption)>*>* {
     border-width: 2px 2px;
 }
+.step10 .testDiv .c-table .smiley-img{
+    width: 35px;
+}
 
 
 
