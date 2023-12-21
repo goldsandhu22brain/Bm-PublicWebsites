@@ -576,10 +576,10 @@ p{
     background-size: contain;
 }
 .step7 .range-input {
-    background:linear-gradient(to right, #333 75%, #ccc 75% );
+    background:linear-gradient(to right, #333 86%, #ccc 86% );
 }
 .step7 .range-bubble { 
-    right: 18.3%;
+    right: 8.5%;
 } 
 
 
