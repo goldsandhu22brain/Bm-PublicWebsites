@@ -970,6 +970,9 @@ p{
 .step10 .testDiv .answer{
     margin-bottom: 1rem;
 }
+.step10 .testDiv .td-answer{
+    margin-bottom: 0;
+}
 .step10 .testDiv .answer input.answer-options{
     opacity: 0;
     position:absolute;
@@ -987,6 +990,11 @@ p{
     cursor: pointer;
     display: flex;
     align-items: center;
+}
+.step10 .testDiv .td-answer .answer-label{
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
 }
 .step10 .testDiv .answer-50wd {
     width:45%;
@@ -1024,6 +1032,11 @@ p{
 .step10 .testDiv input[type="radio"]:focus + label{    
     background-color: #6967FF;
     border: 2px solid #C2ACFF;
+}
+.step10 .testDiv .td-answer input[type="radio"]:checked + label, 
+.step10 .testDiv .td-answer input[type="radio"]:focus + label{    
+    background-color: #6967FF;
+    border: 0;
 }
 .step10 .testDiv .image-answer input[type="radio"]:checked + label, 
 .step10 .testDiv .image-answer input[type="radio"]:focus + label{
@@ -1282,6 +1295,20 @@ p{
 .step10 .action-btn, .step10 .next-btn{
     width: 120px;
 }
+/* AppropriateAnswer */
+.step10 .testDiv .c-table{
+    border: 2px solid #433C6D;
+    color: #fff;
+    text-align: center;
+    table-layout: fixed;
+}
+.step10 .testDiv .c-table thead{
+    background-color: #3B2C74;
+}
+.step10 .testDiv .c-table.table-bordered>:not(caption)>*>* {
+    border-width: 2px 2px;
+}
+
 
 
 
