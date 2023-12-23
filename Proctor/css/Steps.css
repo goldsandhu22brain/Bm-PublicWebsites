@@ -1333,7 +1333,7 @@ p{
 }
 .step10 .testDiv .ulList{
     min-height: 50px;
-    padding: 20px 0 15px 0;
+    padding: 20px 12px 15px 12px;
     border-bottom: 3px solid #2e2852;
 }
 .step10 .testDiv .drop-answer {
@@ -1349,6 +1349,25 @@ p{
 }
 .step10 .testDiv ul .drop-answer:first-child {
     margin-left: 0px;
+}
+/* Match the sequence */
+.step10 .testDiv .m-table{
+    border: 2px solid transparent;
+    color: #fff;
+    text-align: center;
+    table-layout: fixed;
+}
+.step10 .testDiv .m-table tr{
+    vertical-align: middle;
+}
+.step10 .testDiv td .blank{
+    display: inline-block;
+    min-width: 50%;
+    margin: 0 5px 0 5px;
+    min-height: 60px;
+    width: auto;
+    height: auto;
+    padding-top: 8px;
 }
 
 
