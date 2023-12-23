@@ -1313,6 +1313,41 @@ p{
     width: 33px;
     margin: 5px;
 }
+/* Fill in the blanks */
+.step10 .testDiv .blank{
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    min-width: 120px;
+    margin: 0 5px -12px 5px;
+    /* padding-top: 5px; */
+    min-height: 40px;
+    width: auto;
+    height: auto;
+}
+.step10 .testDiv .blank-question {
+    display: inline-block;
+    /* font-size: 15px; */
+    color: #fff;
+    font-weight: 500;
+    line-height: 40px;
+}
+.step10 .testDiv .ulList{
+    min-height: 50px;
+}
+.step10 .testDiv .drop-answer {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.step10 .testDiv .drop-answer button {
+    min-width: 120px;
+    width: auto;
+}
+.step10 .testDiv ul .drop-answer {
+    margin-left: 10px;
+}
+.step10 .testDiv ul .drop-answer:first-child {
+    margin-left: 0px;
+}
 
 
 
