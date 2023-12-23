@@ -13,6 +13,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
     <link rel="stylesheet" href="css/Steps.css" type="text/css">
+    <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          if(ev.target.hasChildNodes()){            
+            var data = ev.dataTransfer.getData("text");
+            var answerList = document.getElementById(data).parentNode;
+            removeChild(ev.target, answerList, data);
+          } else{
+            dropItem(ev);
+          }
+        }
+        function dropItem(ev) {
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+        function removeChild(target, answerList, data){
+            if(!(target instanceof HTMLDivElement)) {
+                target = target.closest('div');
+            }            
+            var previousChildId = target.firstElementChild.id;
+            var previousChildNode = document.getElementById(previousChildId);
+            answerList.appendChild(previousChildNode);
+            target.appendChild(document.getElementById(data));
+        }
+    </script>
 
 </head>
 
@@ -72,7 +105,7 @@
                                                     <h6 class="card-header">Sub Question No. 1</h6>
                                                     <div class="card-body">
                                                         <div class="row mx-0">
-                                                            <p class="question px-0">
+                                                            <p class="sub-question px-0">
                                                                 You are the only black person in the company and you believe you are being treated 
                                                                 differently from your colleagues because you are offered only the unpopular shifts 
                                                                 and denied the overtime everyone else is offered. Your fears were confirmed when 
@@ -130,6 +163,16 @@
                                                 <div class="card">
                                                     <h6 class="card-header">Sub Question No. 2</h6>
                                                     <div class="card-body">
+                                                        <div class="row mx-0">
+                                                            <p class="sub-question px-0">
+                                                                You are the only black person in the company and you believe you are being treated 
+                                                                differently from your colleagues because you are offered only the unpopular shifts 
+                                                                and denied the overtime everyone else is offered. Your fears were confirmed when 
+                                                                colleagues started calling you names that are obviously a reference to your ethnic 
+                                                                origin. Your confidence is low, you felt humiliated and physically sick. 
+                                                                The suggested responses;
+                                                            </p>
+                                                        </div>
                                                         <div class="row mx-0 mb-3">
                                                             <img class="question-img ps-0" src="./images/Steps/step10-question1.png" alt="Images" />
                                                         </div>
@@ -405,6 +448,60 @@
                                                                     </tbody>
                                                                 </table>
                                                             </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mx-0 mb-4">
+                                            <div class="col-12">
+                                                <div class="card">
+                                                    <h6 class="card-header">Sub Question No. 4</h6>
+                                                    <div class="card-body">
+                                                        <div class="row mx-0">
+                                                            <p class="sub-question px-0">
+                                                                Which of the boxes comes next in the sequence?
+                                                            </p>
+                                                            <div class="mt-3 px-0">
+                                                                <p class="blank-question">What is the Day</p>
+                                                                <div id="dropbox1" class="blank" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                                                <p class="blank-question">of Month</p>
+                                                                <div id="dropbox2" class="blank" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                                                <p class="blank-question">in year</p>
+                                                                <div id="dropbox3" class="blank" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                                                <p class="blank-question">did</p>
+                                                                <div id="dropbox4" class="blank" ondrop="drop(event)" ondragover="allowDrop(event)"></div> 
+                                                                <p class="blank-question">got Independence</p>                                           
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mx-0">
+                                                            <p class="text-white px-0">Select the answers from below given options</p>
+                                                            <ul id="answerList1" class="list-unstyled ulList" ondrop="dropItem(event)" ondragover="allowDrop(event)">  
+                                                                <li class="answer drop-answer" id="drag1"
+                                                                draggable="true" ondragstart="drag(event)">
+                                                                    <button type="button" class="btn btn-outline-light outline-btn-light">
+                                                                        1947
+                                                                    </button>
+                                                                </li>
+                                                                <li class="answer drop-answer" id="drag2" 
+                                                                draggable="true" ondragstart="drag(event)">
+                                                                    <button type="button" class="btn btn-outline-light outline-btn-light">
+                                                                        India
+                                                                    </button>
+                                                                </li>
+                                                                <li class="answer drop-answer" id="drag3"
+                                                                draggable="true" ondragstart="drag(event)">
+                                                                    <button type="button" class="btn btn-outline-light outline-btn-light">
+                                                                        August
+                                                                    </button>
+                                                                </li>
+                                                                <li class="answer drop-answer" id="drag4"
+                                                                draggable="true" ondragstart="drag(event)">
+                                                                    <button type="button" class="btn btn-outline-light outline-btn-light">
+                                                                        15
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </div>
