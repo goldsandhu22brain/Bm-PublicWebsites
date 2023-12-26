@@ -1,0 +1,139 @@
+.fs-15p{
+    font-size: 15px;
+}
+
+.step6{
+    background-color: #3C2E92;
+    min-height: 100vh;
+}
+.step6 .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: inherit;
+}
+.step6 .wrapper{
+    text-align: center;
+    margin: auto;
+    width: 70%;
+}
+.step6 .content {
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background-color: #fff;
+    padding: 30px;
+    height: 520px;
+    max-height: 550px;
+    background: url('../images/Steps/step6-bg.png');
+    background-color: #C8E7FF;
+    background-blend-mode: multiply;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.step6 h1{
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+}
+.action-btn, .action-btn:hover, .action-btn:active, .action-btn:focus{
+    font-weight: 500;
+    border: 1px solid #F33558;
+    background-color: #F33558;
+    padding: 10px 50px;
+    border-radius: 10px;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.next-btn, .next-btn:hover, .next-btn:active, .next-btn:focus {    
+    font-weight: 500;
+    border: 1px solid #FFBB00;
+    background-color: #FFBB00;
+    padding: 10px 50px;
+    color: #000;
+    border-radius: 10px;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Range slider and the bubble above the ranger */
+.range-input {
+    -webkit-appearance: none;
+    appearance: none; 
+    width: 80%;
+    cursor: pointer;
+    outline: none;
+    border-radius: 15px;
+    height: 6px;
+    background: #ccc;
+    background:linear-gradient(to right, #333 50%, #ccc 50% );
+  }
+  
+.range-input::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none; 
+height: 15px;
+width: 15px;
+background-color: #fff;
+border-radius: 50%;
+border: 5px solid #6967FF;
+transition: .2s ease-in-out;
+}
+
+.range-input::-moz-range-thumb {
+height: 15px;
+width: 15px;
+background-color: #fff;
+border-radius: 50%;
+border: 5px solid #6967FF;
+transition: .2s ease-in-out;
+}
+
+/* .range-input::-webkit-slider-thumb:hover {
+box-shadow: 0 0 0 10px rgba(255,85,0, .1)
+} */
+/* .range-input:active::-webkit-slider-thumb {
+box-shadow: 0 0 0 13px rgba(255,85,0, .2)
+} */
+/* .range-input:focus::-webkit-slider-thumb {
+box-shadow: 0 0 0 13px rgba(255,85,0, .2)
+} */
+
+/* .range-input::-moz-range-thumb:hover {
+box-shadow: 0 0 0 10px rgba(255,85,0, .1)
+} */
+/* .range-input:active::-moz-range-thumb {
+box-shadow: 0 0 0 13px rgba(255,85,0, .2)
+} */
+/* .range-input:focus::-moz-range-thumb {
+box-shadow: 0 0 0 13px rgba(255,85,0, .2)    
+} */
+
+.range-bubble { 
+position: absolute;
+background-color: #fff;
+text-align: center;
+color: #333;
+border-radius: 10px;
+display: inline-block;
+font-weight: 500;
+padding: 4px 10px;
+bottom: 25px;
+right: 46.5%;
+}
+.range-bubble:after { 
+content: "";
+position: absolute;
+width: 0;
+height: 0;
+border-top: 5px solid #fff;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+margin-top: -1px;
+}
+  
+  
