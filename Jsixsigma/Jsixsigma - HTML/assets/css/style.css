@@ -1,0 +1,168 @@
+/*--------------------------------------*/
+
+/*1. Banner Section
+/*--------------------------------------*/
+.banner-section{
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, #5E0200 16.97%, rgba(94, 2, 0, 0.00) 101.13%);
+	padding: 65px 0 0;
+}
+.banner-section .banner-wrap{
+	background-image: url('../images/banner.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: auto;
+	color: #FFFFFF;
+	height: 896px;
+}
+.banner-section .caption span{
+	font-size: 50px;
+}
+.banner-section .caption{
+	max-width: 828px;
+}
+.banner-section .caption p{
+	font-size: 24px;
+	line-height: 40px;
+	max-width: 649px;
+	margin: 20px 0 40px;
+}
+.banner-section .caption .btn.btn-default{
+	width: 434px;
+}
+.banner-section .caption .btn.btn-default .icon-arrow{
+	margin-left: 70px;
+}
+/*--------------------------------------*/
+
+/*2. After Banner Section
+/*--------------------------------------*/
+.after-banner-section .enroll{
+	background-image: url('../images/enroll.png');
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 864px;
+	margin-right: 40px;
+}
+.after-banner-section .enroll .wrap{
+	border-radius: 100%;
+	opacity1: 0.5;
+	background-image: linear-gradient(180deg, #040303 0%, rgba(4, 3, 3, 0.00) 83.83%);
+	max-width: 732px;
+	margin: 0px auto;
+	height: 269px;
+	padding-top: 28px;
+}
+.after-banner-section .enroll .wrap p{
+	font-family: 'Playfair Display', serif;
+	font-size: 22px;
+	line-height: 30px;
+	color: #DDDDDD;
+	padding-top: 20px;
+}
+
+.after-banner-section .cell-section .cell{
+	border-radius: 10px;
+	background-image: linear-gradient(180deg, #322438 0%, rgba(50, 36, 56, 0.42) 105.33%);
+	padding: 26px 40px;
+}
+.after-banner-section .cell-section .cell-body{
+	margin-left: 36px;
+}
+.after-banner-section .cell-section .cell h4{
+	color: #FFFFFF;
+}
+.after-banner-section .cell-section .cell p{
+	font-size: 20px;
+	line-height: 27px;
+	font-weight: 600;
+	color: #BE9A94;
+}
+
+.after-banner-section .specialities{
+	max-width: 1120px;
+	margin: 125px auto 0;
+	color: #BE9A94;
+}
+.after-banner-section .specialities h4{
+	line-height: 55px;
+	font-weight: 600;
+	margin: 30px 0;
+}
+.after-banner-section .specialities h4 span{
+	color: #D65A3B;
+}
+.after-banner-section .specialities p{
+	font-size: 20px;
+	line-height: 32px;
+	font-weight: 300;
+}
+.after-banner-section .specialities-details{
+	color: #FFFFFF;
+	border-radius: 30px;
+	background-image: linear-gradient(360deg, #31202C 0%, rgba(51, 33, 45, 0.00) 95.36%);
+	padding: 128px 70px 99px;
+}
+.after-banner-section .specialities-details .specialities-wrap1{
+	max-width: 310px
+}
+.after-banner-section .specialities-details p{
+	line-height: 27px;
+	color: #BE9A94;
+	margin: 20px 0 30px;
+}
+
+.specialities-slider-wrap1{
+	position: absolute;
+	right: -6px;
+}
+.after-banner-section .specialities-details .slider-cell{
+	border-radius: 10px;
+	background: #422F4A;
+	width: 220px;
+	height: 272px;
+	padding: 32px;
+}
+.after-banner-section .specialities-details .slider-cell h6{
+	font-weight: 600;
+	margin-top: 35px;
+}
+.after-banner-section .specialities-details .slider-cell h6 span{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+.after-banner-section .specialities-details .slick-slide{
+	margin: 0 15px;
+	cursor: pointer;
+}
+.after-banner-section .specialities-details .slick-list{
+  margin: 0 -15px;
+}
+.after-banner-section .specialities-details .slick-arrow{
+	background: url(../images/icons/arrow.svg) no-repeat center, transparent;
+	width: 50px;
+	height: 12px;
+	border: 0;
+	position: absolute;
+	top: unset;
+	bottom: -60px;
+}
+.after-banner-section .specialities-details .slick-next{
+	transform: translate(0, -50%) rotate(-180deg);
+    right: 0;
+}
+.after-banner-section .specialities-details .slick-prev{
+	right: 15px;
+	left: unset;
+}
+.after-banner-section .specialities-details .slick-arrow:before{
+	content: '';
+}
+.after-banner-section .specialities-details .slick-arrow:hover,
+.after-banner-section .specialities-details .slick-arrow:focus{
+	background: url(../images/icons/active-arrow.svg) no-repeat center, transparent;
+}
+/*--------------------------------------*/
+
+
