@@ -22,3 +22,39 @@ $(function () {
         }
     });
 });
+
+// text transcript below 02-02-24 Tosif
+function ValidateTranscript() {
+
+    var message = '';
+    var isValid = true;
+    if ($('#txtTranscriptNoNew').val().trim() == '') {
+
+        isValid = false;
+        message += 'Please enter transcript no.';
+
+    }
+    if ($('#txtTranscriptNoNew').val().trim() != '') {
+        if (!parseInt($('#txtTranscriptNoNew').val())) {
+            isValid = false;
+            message += 'Please enter transcript no. in numeric format.';
+
+        }
+        else if ($('#txtTranscriptNoNew').val().length > 20) {
+            isValid = false;
+            message += 'Length of transcript no. cannot exceed 20 characters.';
+            // window.location.href = "../Individual/Transcript.aspx?transcriptid=" + $('#txtTranscriptNoNew').val();
+        }
+    }
+
+    if (!isValid) {
+        //message += '</ul>';
+        alert(message);
+		    return false;
+
+    }
+	else
+	{
+		window.location.href = "Transcript.aspx?transcriptid=" + $('#txtTranscriptNoNew').val();
+	}
+}
