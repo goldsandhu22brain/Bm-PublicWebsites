@@ -23,6 +23,19 @@ $(function () {
     });
 });
 
+// below function to add purple bg in header whenever user scroll down for better visibility - 02-01-24 Tosif
+$(window).scroll(function () {
+    var nav = $('.d-nav');
+    var top = 50;
+    if ($(window).scrollTop() >= top) {
+
+        nav.addClass('nav-bg-purple');
+
+    } else {
+        nav.removeClass('nav-bg-purple');
+    }
+});
+
 // text transcript below 02-02-24 Tosif
 function ValidateTranscript() {
 
