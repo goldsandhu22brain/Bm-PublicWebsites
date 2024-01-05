@@ -24,18 +24,14 @@
         
         function drop(ev) {
           ev.preventDefault();
-          if(ev.target.hasChildNodes()){            
             var data = ev.dataTransfer.getData("text");
+          if(ev.target.hasChildNodes()){            
             var answerList = document.getElementById(data).parentNode;
             removeChild(ev.target, answerList, data);
           } else{
-            dropItem(ev);
+            ev.target.appendChild(document.getElementById(data));
           }
-        }
-        function dropItem(ev) {
-          var data = ev.dataTransfer.getData("text");
-          ev.target.appendChild(document.getElementById(data));
-        }
+        }        
         function removeChild(target, answerList, data){
             if(!(target instanceof HTMLDivElement)) {
                 target = target.closest('div');
@@ -44,6 +40,12 @@
             var previousChildNode = document.getElementById(previousChildId);
             answerList.appendChild(previousChildNode);
             target.appendChild(document.getElementById(data));
+        }
+
+        function dropItem(ev) {
+          var data = ev.dataTransfer.getData("text");
+          var target = ev.target.closest('ul')
+          target.appendChild(document.getElementById(data));
         }
     </script>
 
