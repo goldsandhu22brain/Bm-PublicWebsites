@@ -24,6 +24,7 @@ $(function () {
 });
 
 // below function to add purple bg in header whenever user scroll down for better visibility - 02-01-24 Tosif
+
 $(window).scroll(function () {
     var nav = $('.d-nav');
     var top = 50;
