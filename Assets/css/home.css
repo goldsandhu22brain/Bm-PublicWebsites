@@ -81,10 +81,13 @@
 	color: #fff;
 }
 .custom-search-box .bi-search {
-    color: #4918BB; /* Icon color, change as needed */
+    color: #FFF; /* Icon color, change as needed */
 }
 .custom-search-box .form-control::placeholder {
     color: #FFF; 
+}
+.custom-search-box .form-control:focus {
+	box-shadow: unset;
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
