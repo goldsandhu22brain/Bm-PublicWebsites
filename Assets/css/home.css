@@ -83,7 +83,7 @@
 .custom-search-box .bi-search {
     color: #4918BB; /* Icon color, change as needed */
 }
-.custom-search-box::placeholder {
+.custom-search-box .form-control::placeholder {
     color: #FFF; 
 }
 
