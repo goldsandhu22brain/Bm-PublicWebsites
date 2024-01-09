@@ -151,10 +151,16 @@
 						<a class="nav-link" href="https://business.brainmeasures.com/?ref=brainmeasures-mainMenu" target="_blank">L & D Program</a>
 					</li>
                     <li class="nav-item">  
-                        <div class="input-group mb-3">
+                        <!-- <div class="input-group mb-3">
                           <input id="txtTranscriptNoNew" type="text" class="form-control" placeholder="Search Transcript No">
                           <button class="btn btn-outline-primary" style="background:#fff" type="button" onclick="return ValidateTranscript();"><i class="bi bi-search"></i></button>
-                        </div>                             
+                        </div>                              -->
+                            <div class="custom-search-box">
+                                <input id="txtTranscriptNoNew" type="text" class="form-control" placeholder="Search Transcript No">
+                                <button class="btn-search" type="button" onclick="return ValidateTranscript();">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div> 
                     </li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="dropdown07XL" data-bs-toggle="dropdown" aria-expanded="false">More</a>
