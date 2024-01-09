@@ -46,7 +46,7 @@
 .custom-search-box {
     display: flex;
     align-items: center;
-    width: 264px;
+    /* width: 264px; */
     height: 41px;
     flex-shrink: 0;
     border-radius: 57px;
@@ -56,8 +56,8 @@
 
 .custom-search-box .form-control {
     flex-grow: 1;
-    border: none; /* Remove default input border if needed */
-    background: transparent; /* Make input background transparent */
+    border: none;
+    background: transparent;
     color: #FFF;
     font-family: Inter;
     font-size: 13px;
@@ -72,15 +72,19 @@
     flex-shrink: 0;
     border-radius: 50%; /* Make it a circle */
     background: #FFC55A;
-    margin-left: 5px; /* Add space between input and button */
+    margin-left: 5px 4px 5px; /* Add space between input and button */
     border: none; /* Remove default button border if needed */
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+	color: #fff;
 }
 .custom-search-box .bi-search {
     color: #4918BB; /* Icon color, change as needed */
+}
+.custom-search-box::placeholder {
+    color: #FFF; 
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
