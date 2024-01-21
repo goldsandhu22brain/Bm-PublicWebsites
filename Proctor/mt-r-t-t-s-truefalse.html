@@ -24,18 +24,16 @@
         
         function drop(ev) {
           ev.preventDefault();
-          if(ev.target.hasChildNodes()){            
-            var data = ev.dataTransfer.getData("text");
-            var answerList = document.getElementById(data).parentNode;
-            removeChild(ev.target, answerList, data);
-          } else{
-            dropItem(ev);
-          }
-        }
-        function dropItem(ev) {
           var data = ev.dataTransfer.getData("text");
-          ev.target.appendChild(document.getElementById(data));
-        }
+          if(validateDropLocation(ev)) {
+            if(ev.target.hasChildNodes()){            
+                var answerList = document.getElementById(data).parentNode;
+                removeChild(ev.target, answerList, data);
+            } else{
+                ev.target.appendChild(document.getElementById(data));
+            }
+          }         
+        }        
         function removeChild(target, answerList, data){
             if(!(target instanceof HTMLDivElement)) {
                 target = target.closest('div');
@@ -44,6 +42,20 @@
             var previousChildNode = document.getElementById(previousChildId);
             answerList.appendChild(previousChildNode);
             target.appendChild(document.getElementById(data));
+        }
+        function dropItem(ev) {
+          var data = ev.dataTransfer.getData("text");
+          if(validateDropLocation(ev)) {
+            var target = ev.target.closest('ul')
+            target.appendChild(document.getElementById(data));
+          }
+        }
+        function validateDropLocation(ev) {
+            let parentContainer = ev.target.closest('.card');
+            var data = ev.dataTransfer.getData("text");
+            var btnElement = document.getElementById(data).children;
+            console.log("parentcontainer", parentContainer.id==btnElement[0].dataset.parent);
+            return (parentContainer.id==btnElement[0].dataset.parent);
         }
     </script>
 
@@ -455,7 +467,7 @@
                                         </div>
                                         <div class="row mx-0 mb-4">
                                             <div class="col-12">
-                                                <div class="card">
+                                                <div class="card" id="parent1">
                                                     <h6 class="card-header">Sub Question No. 4</h6>
                                                     <div class="card-body">
                                                         <div class="row mx-0">
@@ -479,25 +491,79 @@
                                                             <ul id="answerList1" class="list-unstyled ulList" ondrop="dropItem(event)" ondragover="allowDrop(event)">  
                                                                 <li class="answer drop-answer" id="drag1"
                                                                 draggable="true" ondragstart="drag(event)">
-                                                                    <button type="button" class="btn btn-outline-light outline-btn-light">
+                                                                    <button type="button" class="btn btn-outline-light outline-btn-light" data-parent="parent1">
                                                                         1947
                                                                     </button>
                                                                 </li>
                                                                 <li class="answer drop-answer" id="drag2" 
                                                                 draggable="true" ondragstart="drag(event)">
-                                                                    <button type="button" class="btn btn-outline-light outline-btn-light">
+                                                                    <button type="button" class="btn btn-outline-light outline-btn-light" data-parent="parent1">
                                                                         India
                                                                     </button>
                                                                 </li>
                                                                 <li class="answer drop-answer" id="drag3"
                                                                 draggable="true" ondragstart="drag(event)">
-                                                                    <button type="button" class="btn btn-outline-light outline-btn-light">
+                                                                    <button type="button" class="btn btn-outline-light outline-btn-light" data-parent="parent1">
                                                                         August
                                                                     </button>
                                                                 </li>
                                                                 <li class="answer drop-answer" id="drag4"
                                                                 draggable="true" ondragstart="drag(event)">
-                                                                    <button type="button" class="btn btn-outline-light outline-btn-light">
+                                                                    <button type="button" class="btn btn-outline-light outline-btn-light" data-parent="parent1">
+                                                                        15
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mx-0 mb-4">
+                                            <div class="col-12">
+                                                <div class="card" id="parent2">
+                                                    <h6 class="card-header">Sub Question No. 5</h6>
+                                                    <div class="card-body">
+                                                        <div class="row mx-0">
+                                                            <p class="sub-question px-0">
+                                                                Which of the boxes comes next in the sequence?
+                                                            </p>
+                                                            <div class="mt-3 px-0">
+                                                                <p class="blank-question">What is the Day</p>
+                                                                <div id="dropbox5" class="blank" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                                                <p class="blank-question">of Month</p>
+                                                                <div id="dropbox6" class="blank" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                                                <p class="blank-question">in year</p>
+                                                                <div id="dropbox7" class="blank" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                                                <p class="blank-question">did</p>
+                                                                <div id="dropbox8" class="blank" ondrop="drop(event)" ondragover="allowDrop(event)"></div> 
+                                                                <p class="blank-question">got Independence</p>                                           
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mx-0">
+                                                            <p class="text-white px-0">Select the answers from below given options</p>
+                                                            <ul id="answerList1" class="list-unstyled ulList" ondrop="dropItem(event)" ondragover="allowDrop(event)">  
+                                                                <li class="answer drop-answer" id="drag5"
+                                                                draggable="true" ondragstart="drag(event)">
+                                                                    <button type="button" class="btn btn-outline-light outline-btn-light" data-parent="parent2">
+                                                                        1947
+                                                                    </button>
+                                                                </li>
+                                                                <li class="answer drop-answer" id="drag6" 
+                                                                draggable="true" ondragstart="drag(event)">
+                                                                    <button type="button" class="btn btn-outline-light outline-btn-light" data-parent="parent2">
+                                                                        India
+                                                                    </button>
+                                                                </li>
+                                                                <li class="answer drop-answer" id="drag7"
+                                                                draggable="true" ondragstart="drag(event)">
+                                                                    <button type="button" class="btn btn-outline-light outline-btn-light" data-parent="parent2">
+                                                                        August
+                                                                    </button>
+                                                                </li>
+                                                                <li class="answer drop-answer" id="drag8"
+                                                                draggable="true" ondragstart="drag(event)">
+                                                                    <button type="button" class="btn btn-outline-light outline-btn-light" data-parent="parent2">
                                                                         15
                                                                     </button>
                                                                 </li>
