@@ -17,6 +17,7 @@
     <style>
         body {
             font-family: 'Poppins';
+
         }
 
         a {
@@ -53,18 +54,23 @@
         .dataTables_scrollBody {
             height: auto !important;
         }
+
         div#example_length {
-    display: none;
-}
-div#example_info {
-    display: none;
-}
-div#example_filter{
-    display: none;
-}
-div#example_paginate{
-    display: none;
-}
+            display: none;
+        }
+
+        div#example_info {
+            display: none;
+        }
+
+        div#example_filter {
+            display: none;
+        }
+
+        div#example_paginate {
+            display: none;
+        }
+
         .footer_a:after {
             position: absolute;
             content: "";
@@ -77,6 +83,12 @@ div#example_paginate{
 
         .footer_a {
             position: relative;
+        }
+        /* responsive css */
+        @media only screen and (max-width: 576px) {
+            .footer_a:after{
+                display: none;
+            } 
         }
     </style>
 </head>
@@ -99,12 +111,12 @@ div#example_paginate{
 
 
     <!-- banner starts here -->
-    <section class="banner Position-relative">
+    <section class="banner Position-relative overflow-hidden">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-12">
                     <div class="banner-content text-center">
-                        <h1 class="text-white fw-bold" style="font-family: 'poppins'; font-size: 30px; overflow-x: hidden;">Hello
+                        <h1 class="text-white fw-bold" style="font-family: 'poppins'; font-size: 30px;">Hello
                             $CompanyName$ </h1>
                         <p class="text-white fw-normal" style="font-family: 'poppins';">Below are the Tests that are
                             nearing Expiration, Kindly assign or inform your assigned members to complete the Test
@@ -174,7 +186,7 @@ div#example_paginate{
                         </div>
                         <div class="pt-4">
                             <h2 class="text-capitalize fw-semibold text-white" style="font-size: 18px;">
-                                explore test  <br> library
+                                explore test <br> library
                             </h2>
                         </div>
                     </div>
@@ -186,7 +198,7 @@ div#example_paginate{
                         </div>
                         <div class="pt-4">
                             <h2 class="text-capitalize fw-semibold text-white" style="font-size: 18px;">
-                                explore video  <br> courses
+                                explore video <br> courses
                             </h2>
                         </div>
                     </div>
@@ -222,7 +234,8 @@ div#example_paginate{
                             </h3>
                         </div>
                         <div>
-                            <a href="#" class="text-capitalize text-white py-2 px-4 fw-semibold d-inline-block mt-sm-0 mt-3"
+                            <a href="#"
+                                class="text-capitalize text-white py-2 px-4 fw-semibold d-inline-block mt-sm-0 mt-3"
                                 style="background-color: #068dd2; border-radius:20px; font-size: 18px;">click here</a>
                         </div>
                     </div>
@@ -270,13 +283,13 @@ div#example_paginate{
                             </li>
                         </ul>
                         <div class="contact">
-                            <p style="padding: 10px 0 10px 0; margin: 0;"><strong>USA : </strong>Brainmeasures
+                            <p class="text-sm-start text-center"style="padding: 10px 0 10px 0; margin: 0;"><strong>USA : </strong>Brainmeasures
                                 Solutions,
                                 5715 Will Clayton,<br>#8121 Humble, TX 77338 - USA<br><strong>UK :
                                 </strong>************* Solutions, Riverside View,Thornes <br> Lane, WAKEFIELD,WF1 5QW -
                                 UK
                             </p>
-                            <p style="padding: 0; margin: 0;">***** : contact@************ | info@brainmeasures<br>For
+                            <p class="text-sm-start text-center" style="padding: 0; margin: 0;">***** : contact@************ | info@brainmeasures<br>For
                                 any Query <a style="color: #2e2e61; text-decoration: none;"
                                     href="https://www.brainmeasures.com/ContactUs.aspx">Contact us</a></p>
                         </div>
