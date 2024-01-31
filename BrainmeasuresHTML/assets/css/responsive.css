@@ -1,0 +1,1187 @@
+@media screen and (max-width:1580px) {
+    
+}
+@media screen and (max-width:1399px) {
+	.assessment-section li{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.brainmeasures-psychometric .psy-testing-section .psy-testing-img .img-wrap{
+		width: 70%;
+	}
+	
+}
+@media screen and (max-width:1199px) {
+	.banner-section .wrap {
+		max-width: 450px;
+	}
+	.employee-section .wrap{
+		min-height: 306px;
+	}
+	.offers-section .wrap {
+		min-height: 150px;
+		padding: 10px 8px;
+	}
+	.offers-section .wrap p{
+		font-size: 13px;
+		line-height: 20px;
+		bottom: 10px
+	}
+	
+	.brainmeasures-psychometric .banner-section{
+		text-align: left;
+	}
+	.brainmeasures-psychometric .test-type-section .left-wrap{
+		padding: 30px 0;
+	}
+	.brainmeasures-psychometric .test-type-section .right-wrap{
+		padding: 20px 20px;
+	}
+	.brainmeasures-psychometric .what-get-section .wrap{
+		padding: 10px 20px;
+	}
+	.brainmeasures-psychometric .what-get-section .wrap h5 {
+		margin: 10px 0 6px;
+	}
+	.brainmeasures-psychometric .info-report-section .wrap{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .industry-section h3 {
+		line-height: 40px;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.brainmeasures-psychometric .industry-section .block{
+		height: auto;
+	}
+	.brainmeasures-psychometric .hire-right-section .wrap{
+		padding: 16px 20px;
+	}
+	.brainmeasures-psychometric .hire-right-section .wrap{
+		height: 290px;
+	}
+	
+	.contact-page .banner-section{
+		padding-bottom: 30px;
+	}
+	.contact-page .banner-section .banner-img{
+		position: relative;
+	}
+	.contact-page .contact-form{
+		margin-left: -148px;
+	}
+	.contact-page .banner-section .wrap{
+		text-align: center;
+		max-width: 900px;
+	}
+	.contact-page .contact-info .right-wrap{
+		padding: 30px 10px 30px 60px;
+	}
+	.register-page .left-wrap {
+		padding: 60px 16px 16px;
+	}
+	.brainmeasures-certification .category-section .wrap{
+		min-height: 418px;
+	}
+	.case-studies-listing .listing-section .wrap,
+	.case-studies-listing .listing-section .wrap.wrap-4{
+		padding: 20px 35px;
+	}
+	.case-studies-listing .listing-section .wrap.wrap-9{
+		padding-left: 200px;
+	}
+	.brainmeasures-certification .work-level h4 {
+		line-height: 38px;
+	}
+	.brainmeasures-psychometric .aptitude-tests-section .wrap{
+		padding: 20px;
+	}
+	.brainmeasures-psychometric .offers-section .offers-details .img-wrap,
+	.brainmeasures-certification .summary-report-section .img-wrap{
+		text-align: center;
+	}
+	
+	.case-studies-page .solution-section h5{
+		line-height: 26px;
+	}
+	.case-studies-page .solution-section .heading1::before{
+		height: 70px;
+	}
+	.case-studies-page .hero-section .cell h3{
+		font-size: 25px;
+		line-height: 35px;
+	}
+	.case-studies-page .online-solutions-section .wrap{
+		padding: 40px 20px;
+	}
+	.accenture-case-studies-page .experts-talk-section .wrap{
+		height: 390px;
+	}
+	.case-studies-page .challenge-section .wrap{
+		padding-bottom: 30px;
+	}
+	.hnt-product .online-hackathons-section form{
+		padding: 20px;
+	}
+	.hnt-product .campus-ambassador .wrap{
+		padding: 20px;
+		height: 100%;
+	}
+	.hnt-product .customized-solutions-section li{
+		min-height: auto;
+		padding: 20px;
+	}
+	
+	.hnt-product .api-section .features ul {
+		padding: 20px;
+	}
+	.hnt-product .premium-test-section p{
+		max-width: 100%;
+	}
+	.hnt-product .premium-test-section .img-wrap{
+		text-align: center;
+	}
+	.hnt-product .pricing-section .wrap{
+		padding: 20px;
+	}
+	.hnt-product .proctoring-section .img-wrap{
+		text-align: center;
+	}
+}
+@media screen and (max-width:1024px) {
+	
+	
+}
+@media screen and (max-width:991px) {
+	.banner-section{
+		background: linear-gradient(305.84deg, #5A19D7 9.58%, #7122AE 99.05%);
+		text-align: center;
+		padding: 0 0 30px;
+		height: auto;
+	}
+	.banner-section .wrap{
+		margin: 0px auto;
+		max-width: 100%;
+	}
+	.offers-section .wrap {
+		min-height: 175px;
+		padding: 10px 8px;
+	}
+	.offers-section .text-wrap p{
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.professionals-section{
+		text-align: center;
+	}
+	.corporates-section{
+		text-align: center;
+	}
+	.trust-us-section{
+		text-align: center;
+	}
+	.trust-us-section .left-wrap p{
+		margin: 0px auto 20px;
+	}
+	.trust-us-section h1{
+		margin-bottom: 0;
+	}
+	.developed-section .nav-pills .nav-link {
+		font-size: 16px;
+		line-height: 40px;
+		padding-right: 24px;
+	}
+	
+	.inner-banner .banner-img{
+		position: relative;
+		margin-bottom: 30px;
+	}
+	.brainmeasures-psychometric .banner-section,
+	.brainmeasures-psychometric .banner-section .banner-img img,
+	.brainmeasures-psychometric .banner-section .wrap{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .banner-section .caption h4{
+		line-height: 30px;
+	}
+	.brainmeasures-psychometric .banner-section .caption p{
+		margin: 0px auto;
+	}
+	.brainmeasures-psychometric .hero-section p{
+		font-size: 16px;
+		line-height: 24px;
+		padding-bottom: 16px;
+	}
+	.brainmeasures-psychometric .hero-section .hero-img,
+	.test-format-section,
+	.industries-section,
+	.test-uses-section,
+	.brainmeasures-psychometric .test-type-section .right-wrap h3,
+	.preparing-test-section,
+	.what-get-section,
+	.hire-right-section{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .psy-testing-section h1{
+		max-width: 100%;
+		text-align: center;
+	}
+	.brainmeasures-psychometric .psychometric-section .tab-content .wrap h3 {
+		line-height: 40px;
+	}
+	.brainmeasures-psychometric .industries-section .text-wrap p{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.brainmeasures-psychometric .tests-measure-section{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .tests-measure-section .tests-measure-img{
+		position: unset;
+		margin-bottom: 30px;	
+	}
+	.brainmeasures-psychometric .preparing-test-section .left-wrap{
+		padding: 0 20px;
+	}
+	.brainmeasures-psychometric .test-type-section .left-wrap .text-wrap{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .preparing-test-section p{
+		padding: 20px 0;
+	}
+	.brainmeasures-psychometric .preparing-test-section .right-wrap{
+		padding: 20px;
+	}
+	.brainmeasures-psychometric .cheating-section p{
+		font-size: 16px;
+		line-height: 24px;
+		padding: 20px 0;
+	}
+	.brainmeasures-psychometric .personality-test-section li{
+		font-size: 14px;
+		line-height: 20px;
+		margin-top: 20px;
+		height: 80px;
+	}
+	.brainmeasures-psychometric .what-learn-section li{
+		font-size: 14px;
+		line-height: 20px;
+		margin-top: 16px;
+	}
+	.brainmeasures-psychometric .enjoy-test-section h4{
+		line-height: 38px;
+	}
+	.brainmeasures-psychometric .why-choose-section .tab-content{
+		margin-top: 30px;
+		padding: 20px;
+	}
+	.brainmeasures-psychometric .psy-testing-section{
+		padding: 50px 0;
+	}
+	.brainmeasures-psychometric .psy-testing-section .psy-testing-img{
+		position: unset;
+	}
+	.brainmeasures-psychometric .psy-testing-section .psy-testing-img .img-wrap{
+		width: 100%;
+	}
+	.brainmeasures-psychometric .what-get-section .wrap{
+		height: auto;
+		padding: 30px;
+	}
+	
+	.brainmeasures-psychometric .hire-right-section .wrap.wrap-1,
+	.brainmeasures-psychometric .hire-right-section .wrap.wrap-3{
+		margin-bottom: 30px;
+	}
+	.brainmeasures-psychometric .hire-right-section .hire-right-img{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .testimonials-section h3{
+		font-size: 20px;
+		line-height: 36px;
+	}
+	.brainmeasures-psychometric .testimonials-section h5{
+		font-size: 16px;
+	}
+	.brainmeasures-psychometric .testimonials-section .slick-slider .slick-next{
+		right: 44%;
+	}
+	.brainmeasures-psychometric .testimonials-section .slick-slider .slick-prev {
+		left: 44%;
+	}
+	.brainmeasures-psychometric .practice-tests-section{
+		padding-bottom: 40px;
+		text-align: center;
+	}
+	.brainmeasures-psychometric .industry-wrap {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.brainmeasures-psychometric .industry-section .wrap p{
+		font-size: 18px;
+		line-height: 26px;
+		margin: 0px auto;
+	}
+	.brainmeasures-psychometric .faq-section h1{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .our-focus-section .wrap{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .our-focus-section h5{
+		margin: 0px auto 30px;
+	}
+	.brainmeasures-psychometric .hire-right-section .wrap{
+		height: 270px;
+	}
+	.brainmeasures-psychometric .build-team-section .row::after{
+		display: none;
+	}
+	.brainmeasures-psychometric .offers-details h3 {
+		line-height: 40px;
+	}
+	.brainmeasures-psychometric .psychometric-testing h3 {
+		margin-bottom: 0;
+	}
+	.brainmeasures-psychometric .aptitude-tests-section .wrap{
+		min-height: 160px;
+		text-align: center;
+	}
+	.brainmeasures-psychometric .practice-section .wrap {
+		margin-left: 0;
+		text-align: center;
+	}
+	.brainmeasures-psychometric .practice-section .practice-img{
+		height: 260px;
+		background-size: contain;
+	}
+	.brainmeasures-psychometric .personality-questionnaires .cell p{
+		font-size: 13px;
+		line-height: 18px;
+	}
+	.brainmeasures-psychometric .examine-section .wrap{
+		min-height: auto;
+	}
+	.brainmeasures-psychometric .personality-traits .wrap{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .personality-traits h1 {
+		margin-bottom: 20px;
+	}
+	.brainmeasures-psychometric .speed-power-test{
+		text-align: center;
+	}
+	.brainmeasures-psychometric .speed-power-test .wrap p{
+		margin: 0px auto;
+	}
+	.brainmeasures-psychometric .practice-section .wrap p{
+		max-width: 100%;
+	}
+	.brainmeasures-psychometric .practice-section .practice-img{
+		background-position: center;
+	}
+	
+	
+	
+	.contact-page .contact-form{
+		padding: 16px;
+		margin-left: -84px;
+	}
+	.contact-page .contact-form h4{
+		margin-bottom: 14px;
+	}
+	.contact-page .contact-form .form-control{
+		font-size: 12px;
+		line-height: 20px;
+		height: auto;
+	}
+	.contact-page .contact-form .btn{
+		padding: 9px;
+	}
+	.contact-page .contact-info .right-wrap .call-us {
+		top: 0;
+		right: 0;
+		left: unset;
+	}
+
+	.contact-page .our-location p {
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.login-page{
+		padding: 20px 0;
+	}
+	.register-page .left-wrap {
+		padding: 60px 70px 0 110px;
+	}
+	.login-page .login-section .right-wrap,
+	.login-page .login-section .left-wrap{
+		min-height: 650px;
+	}
+	.login-page .login-section .left-wrap .wrap {
+		padding: 120px 30px 0;
+	}
+	.login-page .login-section .right-wrap{
+		padding: 16px;
+	}
+	
+	.brainmeasures-certification .imp-click{
+		text-align: center;
+		padding: 0 0 30px;
+	}
+	.brainmeasures-certification .prof-cert-section .prof-cert-block{
+		text-align: center;
+	}
+	.brainmeasures-certification .your-goal-section .block{
+		padding: 20px;
+	}
+	.brainmeasures-certification .cert-resume-section .block{
+		padding: 20px;
+	}
+	.brainmeasures-certification .summary-report-section .right-wrap{
+		padding: 40px 20px;
+	}
+	.brainmeasures-certification .category-section .wrap{
+		min-height: 470px;
+	}
+	
+	.brainmeasures-certification .brain-cert-section h4{
+		bottom: 0;
+	}
+	.brainmeasures-certification .prof-cert-section h1,
+	.brainmeasures-certification .prof-cert-section .img-wrap {
+		text-align: center;
+	}
+	.case-studies-listing .listing-section .wrap.wrap-4 p{
+		padding-left: 0;
+	}
+	.case-studies-listing .listing-section .wrap{
+		padding: 34px 49px 20px
+	}
+	.case-studies-listing .listing-section .wrap.wrap-4{
+		padding-left: 196px;
+	}
+	.case-studies-listing .listing-section .wrap.wrap-9{
+		padding-left: 220px;
+	}
+	.case-studies-page .banner-section{
+		padding: 40px 0;
+	}
+	.case-studies-page .banner-section .wrap .cs-title{
+		padding-left: 0;
+		background-position: center;
+	}
+	.case-studies-page .banner-section .heading-wrap{
+		margin: 0px auto;
+	}
+	.case-studies-page .hero-section .cell-1 .cell-wrap{
+		height: auto;
+	}
+	.case-studies-page .hero-section .cell-3,
+	.case-studies-page .hero-section .cell-4,
+	.case-studies-page .hero-section .cell-5{
+		margin-top: 20px;
+	}
+	.case-studies-page .hero-section .cell-5{
+		display: block;
+		height: auto;
+	}
+	.case-studies-page .online-solutions-section .text-wrap h4{
+		line-height: 38px;
+	}
+	.case-studies-page .online-solutions-section .text-wrap h1{
+		margin: 20px 0;
+	}
+	.case-studies-page .challenge-section{
+		padding-bottom: 50px;
+	}
+	.case-studies-page .solution-section h5{
+		height: auto;
+		padding: 10px;
+		display: block;
+	}
+	.case-studies-page .solution-section .img-wrap{
+		margin-top: 0;
+	}
+	.case-studies-page .solution-section .heading1::before{
+		height: auto;
+	}
+	.case-studies-page .challenge-section .img-wrap {
+		text-align: left;
+	}
+	
+	.case-studies-page .trends-section ul {
+		margin-top: 0;
+	}
+	.case-studies-page .glimpses-section{
+		padding-bottom: 50px;
+	}
+	.case-studies-page .global-brands-section .even-block{
+		margin-top: 0;
+	}
+	.case-studies-page .global-brands-section .block{
+		text-align: center;
+	}
+	.case-studies-page .super-admin-section::before{
+		right: 0;
+		left: unset;
+	}
+	.case-studies-page .need-section{
+		text-align: center;
+	}
+	.case-studies-page .super-admin-section .wrap{
+		padding: 20px 20px 0;
+	}
+	.case-studies-page .students-testimonials{
+		padding: 50px 0 100px;
+	}
+	.case-studies-page .experts-talk-section .block {
+		height: 560px;
+	}
+	.case-studies-page .experts-talk-section .wrap{
+		padding: 20px;
+		height: 450px;
+	}
+	.case-studies-page .students-testimonials .slick-slider .slick-next {
+		right: 45%;
+	}
+	.case-studies-page .students-testimonials .slick-slider .slick-prev {
+		left: 45%;
+	}
+	.accenture-case-studies-page .banner-section{
+		background: radial-gradient(34.4% 79.39% at 59.2% 100%, #3B0066 0%, #7122AE 100%);
+		padding-top: 0;
+	}
+	.accenture-case-studies-page .banner-section .caption1{
+		padding: 20px 0;
+	}
+	.accenture-case-studies-page .hero-section {
+		padding: 50px;
+	}
+	.accenture-case-studies-page .pre-emp-section .img-wrap,
+	.accenture-case-studies-page .challenge-section .img-wrap,
+	.accenture-case-studies-page .outcome-section  .img-wrap{
+		text-align: center;
+	}
+	.accenture-case-studies-page .online-solutions-section h1{
+		max-width: 100%;
+	}
+	.accenture-case-studies-page .experts-talk-section .wrap{
+		height: auto;
+	}
+	.accenture-case-studies-page .global-brands-section .slick-slider .slick-prev{
+		left: 45%;
+	}
+	.accenture-case-studies-page .global-brands-section .slick-slider .slick-next{
+		right: 45%;
+	}
+	.capgemini-case-studies-page .banner-section{
+		background-image: radial-gradient(22.53% 40.96% at 59.2% 100%, #2B0B3D 0%, #2B0B3D 100%);
+	}
+	.acer-case-studies-page .banner-section{
+		background-image: radial-gradient(50.13% 91.14% at 59.2% 75.76%, #0D1438 0%, #0B3D3D 100%);
+	}
+	.cocacola-case-studies-page .banner-section{
+		background-image: unset;
+	}
+	.genpact-case-studies-page .banner-section{
+		background-image: unset;
+		padding: 0;
+	}
+	.genpact-case-studies-page .hero-section .cell-1,
+	.genpact-case-studies-page .hero-section .cell-2 {
+		margin-top: 0;
+	}
+	.genpact-case-studies-page .banner-section .wrap{
+		padding: 40px 0;
+	}
+	.mphasis-case-studies-page .banner-section{
+		background-image: linear-gradient(125.52deg, #E2F7BE 0%, #B9EFDE 100%);
+	}
+	.aegis-case-studies-page .banner-section{
+		background-image: linear-gradient(150.37deg, #EE2D24 0%, #F47B20 81.87%);
+	}
+	.amex-case-studies-page .banner-section{
+		background-image: linear-gradient(286.82deg, #004D91 23.8%, #0069B5 97.95%);
+	}
+	.toyota-case-studies-page .banner-section{
+		background-image: linear-gradient(102.17deg, #1C0853 0%, #1E1A36 96.03%);
+	}
+	.hcl-case-studies-page .banner-section{
+		background-image: linear-gradient(102.17deg, #1C0853 0%, #1E1A36 96.03%);
+	}
+	.tcs-case-studies-page .banner-section{
+		background-image: unset;
+	}
+	.case-studies-page .challenge-section .wrap{
+		padding-bottom: 0;
+	}
+	.case-studies-page .testimonials-section .slick-slider .slick-prev{
+		left: 40%;
+	}
+	.case-studies-page .testimonials-section .slick-slider .slick-next{
+		right: 40%;
+	}
+	
+	.hnt-product .banner-section .caption p{
+		margin: 10px auto 20px;
+	}
+	.hnt-product .banner-section .btn{
+		width: 150px;
+	}
+	.hnt-product .hero-section{
+		padding: 30px 0;
+	}
+	.hnt-product .hero-section h1{
+		line-height: 40px;
+		margin-bottom: 12px;
+	}
+	.hnt-product .hero-section p{
+		max-width: 390px;
+		margin-left: auto;
+		line-height: 24px;
+	}
+	.hnt-product .hero-section p:not(:last-child) {
+		margin-bottom: 12px;
+	}
+	.hnt-product .featured-services-section .right-wrap{
+		margin: 0px auto;
+	}
+	.hnt-product .featured-services-section .left-wrap .img-wrap{
+		text-align: center;
+	}
+	.best-teams-section .img-wrap{
+		text-align: center;
+	}
+	.hnt-product .acuminate-section{
+		background-image: none;
+	}
+	.hnt-product .pluses-section .right-wrap .block{
+		padding: 0 12px;
+		min-height: 200px;
+	}
+	.hnt-product .pluses-section .right-wrap .block h1{
+		font-size: 30px;
+	}
+	.hnt-product .pluses-section .btn.btn-warning{
+		margin-bottom: 30px;
+	}
+	.hnt-product .coding-section .img-wrap{
+		text-align: center;
+	}
+	.hnt-product .interview-section{
+		background-image: none;
+	}
+	.hnt-product .interview-section .wrap {
+		max-width: 100%;
+	}
+	.hnt-product .interview-section .img-wrap{
+		text-align: center;
+	}
+	.hnt-product .online-interview-section .platform {
+		max-width: 100%;
+	}
+	.hnt-product .hiring-tool-section {
+		padding: 50px 0;
+	}
+	.hnt-product .insights-interview-section .img-wrap{
+		text-align: center;
+	}
+	.hnt-product .hackathon-neeed-section .right-wrap {
+		max-width: 100%;
+	}
+	.hnt-product .hackathon-neeed-section .right-wrap p{
+		padding: 0 0 20px;
+	}
+	.hnt-product .business-section .left-wrap{
+		max-width: 100%;
+	}
+	.hnt-product .business-section .right-wrap{
+		text-align: center;
+	}
+	.hnt-product .campus-section .img-wrap{
+		text-align: center;
+	}
+	.hnt-product .online-hackathons-section{
+		padding: 50px 0;
+	}
+	.hnt-product .online-hackathons-section li{
+		max-width: 100%;
+	}
+	.hnt-product .leaderboard-section .table>thead{
+		font-size: 18px;
+	}
+	.hnt-product .assessment-section .wrap{
+		max-width: 100%;
+	}
+	.hnt-product .prize-section{
+		bottom: -70px;
+	}
+	.hnt-product .campus-ambassador{
+		padding-bottom: 150px;
+	}
+	.hnt-product .leaderboard-section {
+		padding-top: 150px;
+	}
+	.hnt-product .customized-solutions-section li{
+		max-width: 100%;
+	}
+	.hnt-product .customized-solutions-section form{
+		min-height: auto;
+		padding: 20px;
+	}
+	.hnt-product .customized-solutions-section form .form-control{
+		height: 50px;
+	}
+	.hnt-product .proctored-section{
+		position: unset;
+		margin-top: 60px;
+	}
+	.hnt-product .bm-proctored{
+		padding: 50px 0;
+	}
+	.hnt-product .test-proctored-section{
+		padding: 50px 0;
+	}
+	.hnt-product .test-proctored-section .img-wrap{
+		text-align: center;
+	}
+	.hnt-product .api-section{
+		padding: 50px 0;
+	}
+	.hnt-product .api-section .img-wrap{
+		text-align: center;
+	}
+	.hnt-product .win-prizes-section {
+		background: linear-gradient(to bottom, #F9F9F9 0%, #F9F9F9 50%, #FFE08B 50%, #FFE08B 100%);
+		padding: 50px 0;
+	}
+	.hnt-product .win-prizes-section .left-wrap,
+	.hnt-product .win-prizes-section .right-wrap{
+		padding: 0;
+	}
+	.hnt-product .analyze-section .wrap{
+		max-width: 100%;
+	}
+	.hnt-product .pricing-section .wrap{
+		min-height: auto;
+		margin-bottom: 20px;
+		margin-top: 40px;
+	}
+	.hnt-product .pricing-section .wrap.custom{
+		min-height: 370px;
+	}
+	.hnt-product .psychometric-tests-section{
+		background-position: 50% 80%;
+	}
+	.hnt-product .psychometric-tests-section .wrap h5{
+		margin: 0 0 20px;
+	}
+	.hnt-product .type-test-section{
+		background-image: none;
+		padding-bottom: 0;
+	}
+	
+}
+@media screen and (max-width:767px) {
+	
+	.hero-section .text-wrap{
+		padding: 30px 0;
+	}
+	.hero-section .wrap p{
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.assessment-section ol {
+		margin-top: 28px;
+	}
+	.assessment-section li{
+		font-size: 14px;
+		line-height: 22px;
+	}
+	.developed-section .nav-pills .nav-link{
+		font-size: 12px;
+		line-height: 40px;
+		padding-right: 18px;
+	}
+	.professionals-section .skill-wrap a{
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.employee-section .text-wrap {
+		margin-bottom: 30px;
+	}
+	.developed-section .wrap{
+		padding: 0 10px;
+		margin: 0px auto;
+	}
+	.corporates-section .wrap h3{
+		line-height: 40px;
+	}
+	.corporates-section .wrap h4{
+		line-height: 38px;
+	}
+	.enquiry-section form{
+		margin: 20px auto 0;
+	}
+	
+	.offers-section .wrap {
+		min-height: 150px;
+		padding: 10px 8px;
+	}
+	
+	.brainmeasures-psychometric .psychometric-section .nav-pills {
+		margin: 30px 0;
+	}
+	.brainmeasures-psychometric .psychometric-section .nav-pills .nav-link{
+		font-size: 16px;
+		width: 248px;
+		padding: 4px;
+	}
+	.brainmeasures-psychometric .psychometric-section .tab-content{
+		padding: 30px;
+	}
+	.brainmeasures-psychometric .why-choose-section .text-wrap{
+		padding: 30px 0;
+	}
+	.brainmeasures-psychometric .why-choose-section .nav-pills .nav-link{
+		font-size: 14px;
+		line-height: 30px;
+	}
+	
+	.brainmeasures-psychometric .what-get-section .wrap{
+		height: auto;
+		padding: 30px;
+	}
+	.brainmeasures-psychometric .hire-right-section .wrap{
+		height: auto;
+		margin-bottom: 30px;
+	}
+	
+	.contact-page .contact-form{
+		margin-left: -62px;
+	}
+	
+	
+	.login-page .login-section .left-wrap{
+		min-height: 520px;
+		border-radius: 20px;
+		margin-bottom: 20px;
+	}
+	.login-page .login-section .left-wrap .wrap {
+		padding: 90px 35px 0;
+	}
+	.login-page .login-section .right-wrap{
+		min-height: 520px;
+		border-radius: 20px;
+	}
+	
+	.brainmeasures-certification .category-section .wrap{
+		min-height: auto;
+	}
+	.brainmeasures-psychometric .aptitude-tests-section .wrap{
+		min-height: auto
+	}
+	
+
+	.case-studies-page .outcome-section li,
+	.case-studies-page .outcome-section li p{
+		display: block;
+	}
+	.case-studies-page .global-brands-section .slick-slider .slick-next {
+		right: 80%;
+	}
+	.case-studies-page .testimonials-section .slick-slider .slick-prev,
+	.case-studies-page .testimonials-section .slick-slider .slick-next{
+		top: 120%;
+	}
+	
+	.case-studies-page .hero-section .cell-2 .cell-wrap,
+	.case-studies-page .hero-section .cell-2 .cell-bottom,
+	.case-studies-page .hero-section .cell-3,
+	.case-studies-page .hero-section .cell-4{
+		height: auto;
+	}
+	
+	.case-studies-page .online-solutions-section .wrap{
+		text-align: center;
+	}
+	.case-studies-page .students-testimonials .block{
+		padding: 20px;
+	}
+	.case-studies-page .experts-talk-section .block {
+		height: 510px;
+	}
+	.case-studies-page .students-testimonials .slick-slider .slick-next {
+		right: 42%;
+	}
+	.case-studies-page .students-testimonials .slick-slider .slick-prev {
+		left: 42%;
+	}
+	.accenture-case-studies-page .global-brands-section .slick-slider .slick-prev{
+		left: 40%;
+	}
+	.accenture-case-studies-page .global-brands-section .slick-slider .slick-next{
+		right: 40%;
+	}
+	
+	.hnt-product .banner-section .caption h1 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.hnt-product .banner-section .banner-img img {
+		height: auto;
+	}
+	.hnt-product .hero-section{
+		padding: 0 0 20px;
+		background-image: none;
+	}
+	.hnt-product .hero-section .block{
+		margin: 0;
+	}
+	.hnt-product .hero-section h1 {
+		line-height: 40px;
+	}
+	.hnt-product .hero-section p{
+		max-width: 100%;
+	}
+	
+	.hnt-product .product-tour-section .yt-play-img{
+		height: 40px;
+		top: 40%;
+	}
+	.hnt-product .pluses-section{
+		padding: 30px 0 0;
+	}
+	.hnt-product .coding-section .btn-wrap .btn-default {
+		margin-right: 6px;
+	}
+	
+	.hnt-product .language-section .tab-pane li{
+		width: 48%;
+		margin: 32px 4px 0;
+	}
+	.hnt-product .needs-section .wrap{
+		padding: 20px;
+		text-align: center;
+	}
+	.hnt-product .needs-section .wrap h6{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.hnt-product .needs-section .wrap .btn-wrap {
+		text-align: center;
+		margin-top: 20px;
+	}
+	.hnt-product .featured-services-section .right-wrap ul {
+		padding: 24px;
+	}
+	.hnt-product .hiring-section{
+		padding-top: 200px;
+	}
+	.hnt-product .hiring-section h1{
+		margin: 0px auto 40px;
+	}
+	.hnt-product .hiring-section .counter{
+		margin-right: 12px;
+		max-width: 50px;
+		height: 50px;
+		font-size: 26px;
+	}
+	.hnt-product .hiring-section .img-wrap{
+		margin-bottom: 40px;
+	}
+	.hnt-product .interview-section .interview-process h1 {
+		margin: 90px 0 30px;
+	}
+	.hnt-product .interview-section .interview-process .box{
+		min-height: auto;
+		margin: 0 0 20px;
+		height: 100%;
+	}
+	.hnt-product .interview-section .interview-process .btn.btn-default{
+		margin-top: 30px;
+	}
+	.hnt-product .hiring-tool-section .wrap-body{
+		margin-left: 0;
+	}
+	
+	.hnt-product .prize-section ul{
+		display: block;
+		padding: 20px;
+	}
+	.hnt-product .prize-section ul li{
+		font-size: 20px;
+		line-height: 30px;
+		margin: 20px 0;
+		max-width: 100%;
+		text-align: center;
+	}
+	.hnt-product .campus-ambassador{
+		padding-bottom: 50px;
+		margin-top: 40px;
+	}
+	.hnt-product .prize-section{
+		position: unset;
+		margin-top: 60px;
+	}
+	.hnt-product .leaderboard-section {
+		padding-top: 50px;
+	}
+	
+	.hnt-product .questions-type-section ul{
+		display: block;
+	}
+	.hnt-product .questions-type-section li{
+		margin: 0px auto 30px;
+	}
+	.hnt-product .questions-type-section li:not(:last-child){
+		margin-right: auto;
+	}
+	.hnt-product .type-test-section .accordion-button{
+		font-size: 18px;
+	}
+	
+	.hnt-product .win-prizes-section{
+		background: linear-gradient(to bottom, #F9F9F9 0%, #F9F9F9 50%, #FFE08B 50%, #FFE08B 100%);
+	}
+	.hnt-product .language-section .nav-tabs .nav-link{
+		font-size: 13px;
+		padding: 0;
+		width: auto;
+	}
+	.hnt-product .test-proctored-section .wrap{
+		max-width: 100%;
+	}
+	
+	
+}
+@media screen and (max-width:600px) {
+	
+}
+@media (max-width: 575.98px) {
+	.developed-section .nav-pills .nav-link{
+		font-size: 9px;
+		line-height: 40px;
+		padding-right: 8px;
+	}
+	.employee-section .wrap{
+		padding: 20px 30px;
+		min-height: auto;
+	}
+	.brainmeasures-psychometric .psychometric-section .nav-pills .nav-link{
+		font-size: 13px;
+		width: 204px;
+		padding: 4px;
+	}
+	.brainmeasures-psychometric .psychometric-section .nav-pills .nav-item:first-child {
+		margin-right: 8px;
+	}
+	
+	.contact-page .contact-form{
+		margin-left: -67px;
+	}
+	.register-page .left-wrap {
+		padding: 60px 8px 0;
+	}
+	.case-studies-listing .get-started-section .subscribe{
+		display: block;
+	}
+	.case-studies-listing .get-started-section .form-control{
+		margin: 0 0 10px 0;
+		width: 100%;
+	}
+	.case-studies-listing .get-started-section .btn.btn-warning{
+		width: 100%;
+	}
+	.case-studies-listing .listing-section .wrap,
+	.case-studies-listing .listing-section .wrap.wrap-4,
+	.case-studies-listing .listing-section .wrap.wrap-9{
+		padding: 20px 35px;
+	}
+	.case-studies-page .trends-section .metros h5{
+		width: auto;
+	}
+	.case-studies-page .online-solutions-section .wrap{
+		height: auto;
+		text-align: center;
+	}
+	.accenture-case-studies-page .global-brands-section::before{
+		left: unset;
+		right: 0;
+	}
+	.accenture-case-studies-page .hero-section {
+		padding: 16px;
+	}
+	.accenture-case-studies-page .hero-section .cell-last{
+		padding: 20px;
+	}
+	.accenture-case-studies-page .hero-section .cell-pdf{
+		padding: 30px;
+		margin-top: 20px;
+	}
+	
+	
+}
+
+@media (max-width: 480px){
+	.case-studies-page .trends-section .countries h5 {
+		width: auto;
+	}
+	.case-studies-page .experts-talk-section .wrap h6 {
+		font-size: 20px;
+		line-height: 27px;
+	}
+	.hnt-product .language-section .tab-pane li{
+		width: 100%;
+		margin: 32px 0 0;
+	}
+	
+}
+
+@media (max-width: 440px){
+	.banner-section .caption h4{
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.brainmeasures-psychometric .psychometric-section .nav-pills .nav-link{
+		font-size: 11px;
+		width: 170px;
+		padding: 4px;
+	}
+	.brainmeasures-psychometric .testimonials-section .slick-slider .slick-next{
+		right: 40%;
+	}
+	.brainmeasures-psychometric .testimonials-section .slick-slider .slick-prev {
+		left: 40%;
+	}
+	.brainmeasures-psychometric .psychometric-section .btn-default {
+		margin-right: 5px;
+	}
+	.offers-section .btn.btn-outline {
+		margin-left: 5px;
+	}
+	.brainmeasures-psychometric .test-type-section .btn-wrap .btn.btn-default {
+		margin-right: 5px;
+	}
+	.brainmeasures-psychometric .build-team-section .btn {
+		font-size: 13px;
+		width: 114px;
+	}
+	.contact-page .contact-form{
+		margin-left: -44px;
+	}
+	
+	.login-page .login-section .right-wrap{
+		padding: 15px;
+	}
+	.register-page .left-wrap h3{
+		font-size: 24px;
+	}
+	.case-studies-page .hero-section .cell-1 .cognizant-img img{
+		padding-right: 8px;
+	}
+	
+}
+
+

@@ -1,0 +1,229 @@
+@font-face {
+    font-family: Dnormal;
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/GOTHIC.TTF);
+}
+
+@font-face {
+    font-family: Dbold;
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/GOTHICB.TTF);
+}
+
+@font-face {
+    font-family: DNewnormal;
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/NewNormal.otf);
+}
+
+@font-face {
+    font-family: DNewbold;
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/NewBold.otf);
+}
+
+@font-face {
+    font-family: DGotham;
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/GothamLight.ttf);
+}
+
+@font-face {
+    font-family: DGothamBold;
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/Gotham.ttf);
+}
+
+@font-face {
+    font-family: DboldG;
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/GOTHICB.TTF);
+}
+
+@font-face {
+    font-family: DnormalG;
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/GOTHIC.TTF);
+}
+
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/MyriadProBold.woff2);
+}
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/MyriadProBold.woff);
+}
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url(https://testbmui.brainmeasures.com/Assets/fonts/MyriadProBold.ttf);
+}
+
+header.fixed-top.sticky .navbar-dark .navbar-nav .nav-link:hover{
+	opacity: 0.7;
+}
+.newfsupprt h2 a{
+	color: #fcff04;
+}
+.newfsupprt h2 a:hover{
+	opacity: 0.9;
+}
+.newfsupprt h5 a{
+	color: #FFF;
+}
+.newfsupprt h5 a:hover{
+	color: #fcff04;
+}
+
+.navbar-toggler{
+	border: 0;
+}
+.navbar-toggler:focus{
+	box-shadow: none;
+}
+.navbar-toggler.collapsed>.close,
+.navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display: none;
+}
+.navbar-toggler>.close{
+	font-weight: 500;
+	font-size: 24px;
+}
+
+header .dropdown-item.active,
+header .dropdown-item:active{
+	background-color: #e9ecef;
+}
+header #navl li:not(:last-child){
+	outline: none;
+    border-bottom: 1px solid #ffc443;
+    border-radius: 0;
+	margin-left: 0;
+	width: 100%;
+}
+header #navl li a {
+    outline: none;
+}
+header .dropdown-menu{
+	font-size: 12px;
+}
+.dropdown-toggle.show::after{
+	/*border-bottom: 0.3em solid;*/
+    /*border-left: 0.3em solid transparent;*/
+    /*border-top: 0;*/
+    /*border-right: 0.3em solid transparent;*/
+	transform: rotate(180deg);
+}
+
+/*Start: Inline Css*/
+.ui-autocomplete {
+	max-height: 300px;
+	overflow-y: auto;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+	/* add padding to account for vertical scrollbar */
+	padding-right: 20px;
+}
+
+.ui-menu .ui-menu-item {
+	margin: 5px !important;
+}
+.cbox{position:relative}
+/*End: Inline Css*/
+
+.testmodal{
+	background: #FFFFFF;
+}
+.testmodal .modal-body .btnSelectViewTest:hover{
+	text-decoration: underline;
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px){
+	
+	header .navbar .navbar-nav .nav-item {
+		margin-left: 8px;
+	}
+	header .navbar-dark .navbar-nav .nav-link{
+		font-size: 13px;
+	}
+	
+	
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px){
+	
+	.navbar-toggler:focus{
+		box-shadow: none;
+	}
+	header .navbar .navbar-nav .nav-item {
+		margin-left: 30px;
+	}
+	header .navbar-dark .navbar-nav .nav-link{
+		font-size: 14px;
+	}
+	header .dropdown-menu{
+		background-color: transparent;
+		border: 0;
+		color: #FFF;
+		font-size: 14px;
+	}
+	header .dropdown-menu#navl li a {
+		color: #FFF !important;
+	}
+	header #navl li:not(:last-child){
+		width: calc(100% - 30px);
+	}
+
+	.CourseList .cbox{
+		min-height: 280px;
+	}
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.main-banner1 .display-4 {
+		margin-top: 5px;
+		font-size: 36px;
+	}
+	
+	.btn-group-lg>.btn, .btn-lg {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.main-banner1{
+		text-align: center;
+	}
+	.main-banner1 .main-banner1-img .img-fluid{
+		height: 350px;
+	}
+	.main-banner1 .display-4 {
+		margin-top: 5px;
+		font-size: 22px;
+	}
+	
+	.btn-group-lg>.btn, .btn-lg {
+		font-size: 1rem;
+	}
+	.lead1{
+		font-size: 30px;
+		margin-top: 30px;
+	}
+}
+
+
+@media (max-width: 575.98px){
+	
+	.main-banner1 .display-4 {
+		margin-top: 20px;
+		
+	}
+	.CourseList .cbox{
+		min-height: 380px;
+	}
+}
+
+@media (max-width: 400px){
+	.CourseList .cbox{
+		min-height: 280px;
+	}
+}
+
+
+

@@ -1,0 +1,74 @@
+﻿#chat-span {
+    vertical-align: middle;
+}
+#key-press {
+    text-align: right;
+    display: none;
+    font-size: 11px;
+}
+#other-videos video {
+    width: 10%;
+    height: 100%;
+    /*margin: 2px;*/
+    /*border: 3px solid #0d6efd;*/
+    /*padding: 1px;   */
+    /*border-radius: 5px;*/
+    /*vertical-align: middle*/
+}
+.checkmark {
+    display: none;
+    width: 15px;
+    vertical-align: middle;
+}
+a[disabled] {
+    pointer-events: none;
+    cursor: default;
+    color: #afafaf;
+    opacity: 0.5;
+}
+
+#screen-viewer {
+    top: 0;
+    left: 0;
+    width: 90%;
+    z-index: 9999999999999;
+    margin-top: 25px;
+    margin-left:50px;
+    border: 5px solid #27333a;
+    border-radius: 2px;
+    vertical-align: middle;
+    padding-bottom: 1px;
+}
+
+#onCandidateJoinedStatus {
+    text-align: center;
+}
+
+#onUserStatusChanged {
+    text-align: left;
+}
+/*User Activity button Glowing in admin panel start*/
+@keyframes glowing {
+    0% {
+        border-style: solid;
+        border-color: red;
+        box-shadow: 0 0 5px #2ba805;
+    }
+
+    50% {
+        border-style: solid;
+        border-color: red;
+        box-shadow: 0 0 20px #49e819;
+    }
+
+    100% {
+        border-style: solid;
+        border-color: red;
+        box-shadow: 0 0 5px #2ba805;
+    }
+}
+
+.glow {
+    animation: glowing 1300ms infinite;
+}
+/*User Activity button Glowing in admin panel end*/

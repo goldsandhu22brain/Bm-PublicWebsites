@@ -1,0 +1,107 @@
+﻿@using System
+@{
+    Layout = null;
+
+    var localRefreshUrl = "https://" + @Request.Url.Host + "/Tracker/RefreshAdminSession";
+}
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Brainmeasures Corporate Test Platform</title>
+    <meta name="description" content="Brain Measures Test Platform System" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel='dns-prefetch' href='//use.fontawesome.com' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="~/MvcScriptsAndStyles/css/Test/Dstyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/MvcScriptsAndStyles/css/plugins/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/MvcScriptsAndStyles/css/plugins/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/MvcScriptsAndStyles/css/Test/getHTMLMediaElement.css">
+    <link rel="stylesheet" href="~/MvcScriptsAndStyles/css/Test/Panel.css">
+
+    <script src="~/MvcScriptsAndStyles/js/Interview/adapter.js"></script>
+    <script src="https://www.brainmeasures.com:9001/dist/RTCMultiConnection.js"></script>
+    <script src="https://www.brainmeasures.com:9001/socket.io/socket.io.js"></script>
+    <script src="~/MvcScriptsAndStyles/js/Interview/FileBufferReader.js"></script>
+    <script src="~/MvcScriptsAndStyles/js/Interview/canvas-designer-widget.js"></script>
+    <script>
+        //chat message mapping
+        var SendButtonClick = null;
+    </script>
+</head>
+<body>
+    <div class="container-fluid interview-main-wrap">
+        <div class="row">
+            <div class="col-sm-9 interview-mainbar">
+                <div class="col-sm-12 interview-video-container" id="content">
+                    <a href="#" class="rightbar-toggle"><i class="rightbar-toggle-1 right-bar-close-i bi bi-caret-right"></i></a>
+                    <video id="screen-viewer" controls playsinline autoplay></video>
+                </div>
+                <div class="col-sm-12 interview-actionbar">
+                    <div class="row text-center">
+                        <div class="col-sm-12">
+                            <a id="btn-view-proof" onclick="ViewProof()" class="interview-extra-btn">View Proof</a>
+                            <a id="btn-request-proof" onclick="RequestNewProof()" class="interview-extra-btn">Request Proof</a>
+                            <a id="btn-view-new-proof" class="interview-extra-btn" onclick="ViewNewProof()" disabled="disabled">View New Proof</a>
+                            <a id="btn-send-test" class="interview-extra-btn" disabled="disabled">Send Test</a>
+                            <a id="btn-start-recording" class="interview-extra-btn" disabled="disabled">Start Recording</a>
+                            <a id="btn-pause-start-test" class="interview-end-btn" disabled="disabled"><i class="bi bi-x-circle-fill" onclick="pauseTest()"></i><span>Pause Test</span></a>
+                            <a id="btn-user-alert-test" class="interview-alert-btn"><i class="bi bi-x-circle-fill" onclick="UserAlertTest()"></i><span>User Alert</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 interview-rightbar">
+                <div class="col-sm-12 interview-details">
+                    <h2>Brainmeasures.</h2>
+                </div>
+                <div class="col-sm-12 interview-my-cam">
+                    <video class="col-sm-12 interview-my-cam" id="main-video" controls playsinline autoplay></video>
+                </div>
+                <div class="col-sm-12 interview-details mt-15">
+                    <h2 class="status-sm-2" id="onCandidateJoinedStatus"></h2>
+                    <h2 class="status-sm-2" id="onUserStatusChanged"></h2>
+                </div>
+                <hr />
+                @Html.Partial("InterviewTest/Components/_ChatMessage")
+            </div>
+        </div>
+    </div>
+    <!-- jQuery JS -->
+    <!-- Bootstrap JS -->
+    <script>
+        var userFullName = '@ViewBag.FullName';
+        var role = '@ViewBag.Role';
+        var publicIdentifier = '@ViewBag.PublicIdentifier';
+        var password = '@ViewBag.Password';
+        var roomId = '@ViewBag.MeetingId';
+        var userId = '@ViewBag.UserId';
+        var SendButtonClick = null;
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js" integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="~/MvcScriptsAndStyles/js/Interview/jquery-3.4.1.min.js"></script>
+    <script src="~/MvcScriptsAndStyles/js/owlcarousel/owl.carousel.min.js"></script>
+    <link href="~/MvcScriptsAndStyles/css/Test/emojionearea.min.css" rel="stylesheet" />
+    <script src="~/MvcScriptsAndStyles/js/Interview/emojionearea.min.js"></script>
+    <script src="~/MvcScriptsAndStyles/js/Interview/Panel.js"></script>
+    <!-- Required datatable js -->
+    <script src="https://cdn.brainmeasures.com/AdminAssets/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.brainmeasures.com/AdminAssets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+    <div class="modal" id="test-myModal" role="dialog">
+        <div class="modal-dialog modal-fullscreen">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="color:green;"><span class="glyphicon glyphicon-lock"></span>User Activity Alert</h4>
+                    <button type="button" class="close" data-dismiss="modal"  onclick="javascript:{ $('#test-myModal').modal('hide'); }">&times;</button>
+                </div>
+                <div class="modal-body" id="Inject-UAA">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

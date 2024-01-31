@@ -1,0 +1,157 @@
+.fsize-15p{
+    font-size: 15px;
+}
+.fsize-14p{
+    font-size: 14px;
+}
+
+
+.upload-photo{
+    /* background-color: #323263; */
+    background: url('../images/BMTestPlatoform/upload-photo-bg.png');
+    background-color: #343365;
+    background-blend-mode: multiply;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+.upload-photo:before{
+    content: "";
+    display: block;
+    pointer-events: none;
+    height: 45vh;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    border-radius: 50% 50% 0 0;
+}
+.main-wrap{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    translate: transform(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.title h3{
+    font-size: 40px;
+    line-height: 50px;
+    color: #fff;
+}
+.title h6{
+    font-size: 20px;
+    line-height: 27px;
+    color: #fff;
+}
+.upload-photo .wrapper{
+    background-color: #FFCE22;    
+    border-radius: 50px;
+    border: 1px solid #FFCE22;    
+    height:370px;
+}
+.wrap-row{
+    padding: 20px;
+    height:100%;
+}
+.info{
+    position: relative;
+}
+.info .content{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-12%, -50%);
+}
+.info-image-wrapper{
+    margin-top: 2rem;
+}
+.info-image-wrapper, .info-image-wrapper .main-image{
+    position: relative;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 150px;
+}
+.info-image-wrapper .camera-icon{
+    position: absolute;
+    top: 125px;
+    left: 90px;
+}
+.content p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.snapshot{
+    background-color: #fff;
+    border-radius: 30px;
+    position: relative;
+}
+.snapshot .content{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-12%, -50%);
+}
+.snapshot .title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.snapshot .image-wrapper{
+    height: 150px;
+    border: 1px dashed;
+    position: relative;
+    margin-top: 2rem;
+    border-radius: 30px;
+}
+.snapshot img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 62px;
+    max-height: 62px;
+}
+.docs{
+    height:370px;
+    background-color: #9E56FA;
+    border-radius: 50px;
+    border: 1px solid #9E56FA;
+    position: relative;
+}
+.doc-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-13%, -50%);
+}
+.doc-title{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+.proof-wrapper {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    border-top: 20px solid #fff;
+    margin-top: 3rem;
+    color: #fff;
+}
+.proof-wrapper hr{
+    opacity: 1;
+}
+.proof-title{
+    padding: 20px 20px 0 20px;
+}
+.proof-content{
+    padding: 0px 20px 20px 20px;
+}
+.action .btn-primary{
+    background-color: #F33558;
+    border: 1px solid #F33558;
+}
+.action button{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 20px;
+}

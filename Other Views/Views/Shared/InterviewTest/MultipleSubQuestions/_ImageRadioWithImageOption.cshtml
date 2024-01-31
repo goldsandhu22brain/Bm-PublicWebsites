@@ -1,0 +1,37 @@
+﻿@using BM.Shared.Helper
+@model BM.Models.TestSystem.Mcq
+@{
+    var domainUri = @HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Authority) + "/ExamMedias/";
+    var imgUrl = domainUri + Model.QuestionInRichText;
+    int cnt = 1;
+}
+@Html.Partial("InterviewTest/_McqDisplayQuestionSection", @Model.QuestionTitleInRichText)
+
+@Html.Partial("InterviewTest/Components/_QuestionInRichText", @Model.QuestionInRichText)
+<br />
+
+@foreach (var eachQuestion in Model.MultiQuestion)
+{
+    <div class="col-sm-12 mb-40">
+        <div class="row">
+            <p><b>Sub Question No.&nbsp;@cnt</b></p><h6 class="text-justify">@Html.Raw(eachQuestion.QuestionTitleInRichText)</h6>
+            <div class="col-sm-5 question-image-resizing">
+                <img onerror="this.src='https://cdn.brainmeasures.com/Interview/QuestionImageNotFound.jpg';" src='https://cdn.brainmeasures.com/Interview/QuestionImageBlank.jpg' data-lazysrc1="@domainUri@eachQuestion.QuestionInRichText" class="image-max-full">
+            </div>
+           <hr class="mt-20">
+            <div class="col-sm-12 text-center">
+                @foreach (var eachOption in eachQuestion.Option)
+                {
+                    var id = "imageRadio" + eachOption.Id.ToString();
+                    var name = "radio" + cnt;
+                    <label class="mb-2">
+                        <input type="radio" id="@id" name="@name" value="@eachOption.OptionNo" checked="@eachOption.IsChecked"
+                               data-option-id="@eachOption.Id.ToString()" data-subquestion-id="@eachQuestion.Id.ToString()" />
+                        <img onerror="this.src='https://cdn.brainmeasures.com/Interview/OptionImageNotFound.jpg';" src='https://cdn.brainmeasures.com/Interview/OptionBlank.jpg'  data-lazysrc1="@domainUri@eachOption.Display">
+                    </label>
+                }
+            </div>
+        </div>
+    </div>
+    cnt = cnt + 1;
+}

@@ -1,0 +1,659 @@
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+.b-banner {
+    background-image: url(../img/b-banner-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 58px;
+}
+
+.b-banner .b-banner-small-font {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #9E9CFF;
+    margin-bottom: 5px;
+}
+
+.b-banner .h4,
+.b-banner p {
+    color: #fff;
+}
+
+.b-banner .h4 .red-color {
+    color: #F33558;
+}
+
+.banner-img-1 {
+    max-width: 270px;
+}
+
+.b-banner-content {
+    padding-left: 25px;
+}
+
+
+.main-content {
+    background-color: #131922;
+    padding: 70px 0;
+}
+
+.profile_picture {
+    background: #222530;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile_picture img {
+    border: 10px solid #394262;
+    border-radius: 100%;
+}
+
+.profile_picture_name h1 {
+    font-size: 20px;
+    color: #fff;
+    line-height: 30px;
+}
+
+.column_middle .Testdetails {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    background: #222530;
+    border-radius: 20px;
+}
+
+.column_middle .Testdetails h2 {
+    background: #6967FF;
+    border-radius: 20px 20px 0px 0px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 25px 25px 20px;
+}
+
+.column_middle .Testdetails .D-table td:first-child {
+    color: rgba(164, 164, 164, 1);
+}
+
+.column_middle .Testdetails .D-table table tr td {
+    font-size: 15px;
+    padding: 20px 0;
+}
+
+.column_left .social_networks,
+.column_right_grid {
+    background: #222530;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 25px;
+}
+
+.column_left .social_networks li a {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+}
+
+.column_left .social_networks li a>i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    color: #FFFF;
+}
+
+.column_left .social_networks li a span {
+    color: rgba(135, 143, 170, 1);
+    font-family: "Inter", sans-serif;
+    padding: 10px;
+    font-size: 12px;
+}
+
+
+.column_right_grid {
+    background-color: rgba(57, 66, 98, 1);
+    margin-top: 30px;
+}
+
+.newsletter {
+    text-align: left;
+}
+
+.newsletter h3,
+.social_networks h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 300;
+    line-height: 35px;
+    color: #FFF;
+}
+
+.newsletter h3 strong,
+.social_networks h3 {
+    font-weight: bold;
+}
+
+.column_middle .Testdetails .D-table table tr:last-child {
+    border-bottom: none;
+}
+
+.column_right_grid .newsletter input {
+    width: 100%;
+    border: 1px solid rgba(123, 132, 164, 1);
+    border-radius: 10px;
+    margin-bottom: 17px;
+}
+
+.chart h3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.chart h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 36px;
+    color: #fff;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    right: 0;
+}
+
+.chart,
+.graph_list {
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.diagram #canvas {
+    height: 100% !important;
+}
+
+.diagram {
+    background-color: #394262;
+}
+
+.chart canvas {
+    padding: 0;
+    padding-bottom: 30px;
+}
+
+.chart_list {
+    background: #2A3149;
+    border-radius: 0 0 20px 20px;
+}
+
+.que {
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+}
+
+.chart_list li a {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.chart_list p.percentage {
+    font-size: 20px;
+}
+
+.graph_list .week-month-year {
+    text-align: left;
+}
+
+.graph_list h2 {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.graph_list .week-month-year p a {
+    border-radius: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    background-color: rgba(42, 49, 73, 1);
+    color: #FFF;
+}
+
+.graph_list .week-month-year p a.active,
+.graph_list .week-month-year p a:hover {
+    background-color: #F33558;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.graph_list li a {
+    font-size: 15px;
+    font-weight: 400;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+    text-transform: capitalize;
+}
+
+.graph_list li:last-child a {
+    border-bottom: 0;
+}
+
+.award h2 {
+    background-color: #394262;
+    border-radius: 20px 20px 0px 0px;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.award h3 {
+    color: #fff;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.award p {
+    color: rgba(135, 143, 170, 1);
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.award .big {
+    margin-bottom: 10px !important;
+}
+
+.award .down-icon .small {
+    background: rgba(19, 25, 34, 1);
+    padding: 5px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.date_events {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.date_events h3 {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+    text-transform: capitalize;
+    border-radius: 20px 20px 0 0;
+}
+
+.box.mybox.graph_list {
+    background-color: #222530;
+    border-radius: 20px;
+    padding: 45px 35px;
+}
+.award{
+    border-radius: 20px;
+}
+.box.mybox.graph_list .box-header .box-title {
+    font-size: 20px !important;
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+    line-height: 30px;
+}
+
+.box.mybox.graph_list .box-body p {
+    text-align: left;
+    color: #fff;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+}
+
+.progress-bar {
+    background-color: rgba(105, 103, 255, 1);
+    height: 8px;
+}
+
+.progress {
+    height: 8px;
+    background: #000;
+}
+
+.progress-group {
+    margin-top: 30px;
+    margin-top: 30px;
+}
+
+.progress-group b {
+    color: rgba(105, 103, 255, 1) !important;
+}
+
+.back-bg-down {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.back-bg-down p {
+    color: rgba(255, 255, 255, 1) !important;
+    font-size: 12px !important;
+    line-height: 25px !important;
+}
+
+.back-bg-down p>b {
+    color: rgba(105, 103, 255, 1);
+}
+
+.chat-box-canvas-div {
+    margin-top: 40px;
+}
+
+.chat-box-canvas-div ul.chart-legend li {
+    color: rgba(135, 143, 170, 1);
+    font-size: 14px;
+    line-height: 34px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.box-footer p {
+    font-size: 16px;
+    line-height: 34px;
+    font-weight: 500;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+}
+
+.table-edite-class {
+    margin-top: 40px;
+}
+
+.table-edite-class .table-dark th {
+    background-color: #000;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.table-edite-class .table-dark th:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+.table-edite-class .table-dark th:last-child {
+    border-radius: 0px 10px 0 0;
+}
+
+.table-edite-class tr,
+.table-edite-class td {
+    color: #fff !important;
+}
+
+.table-edite-class td {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.table-edite-class tbody tr:nth-child(odd) {
+    background-color: rgba(57, 66, 98, 1);
+    color: #fff !important;
+}
+
+.table-edite-class tbody tr:nth-child(even) {
+    background: rgba(57, 66, 98, 0.3);
+}
+
+.overall-score-div .overall-score-div-left h3 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.overall-score-div .overall-score-div-left p {
+    color: #fff;
+    line-height: 20px;
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+}
+
+.overall-score-div {
+    padding: 60px 50px !important;
+}
+
+.overall-score-div-black-div {
+    background-color: #000;
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.overall-score-div-black-div h6 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+}
+
+.overall-score-div-black-div p.small-o {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #fff;
+}
+
+.overall-score-div-black-div .big-numb {
+    font-size: 60px;
+    font-family: "Inter", sans-serif;
+    line-height: 60px;
+    font-weight: bold;
+    color: rgba(105, 103, 255, 1);
+}
+
+.chat-down-div {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 0px 0px 20px;
+    background: rgba(40, 43, 56, 1);
+
+}
+
+.chat-down-div .description-percentage {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 34px;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+}
+
+.chat-down-div .description-header {
+    color: rgba(135, 143, 170, 1);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.chat-down-div .chat-down-module {
+    padding: 15px;
+    position: relative;
+}
+
+.chat-down-div .chat-down-module::before {
+    position: absolute;
+    right: 0;
+    content: '';
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(57, 66, 98, 1);
+}
+
+.chat-down-div .chat-down-module:last-child:before {
+    display: none;
+}
+
+.no-slider-item .item {
+    padding-top: 15px;
+}
+
+.no-slider-item .item h4 {
+    color: #fff;
+    font-size: 90px;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+.no-slider-item .item p {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.bg-253F5F {
+    background-color: #253F5F;
+}
+
+.no-slider-item .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+    display: flex;
+    width: 80%;
+}
+
+.no-slider-item .owl-nav .owl-prev,
+.no-slider-item .owl-next {
+    background-color: rgba(255, 187, 0, 1) !important;
+    width: 35px !important;
+    height: 35px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.no-slider-item .owl-nav .owl-prev span,
+.no-slider-item .owl-next span {
+    font-size: 25px;
+}
+.column_middle_grid1{
+    border-radius: 20px;
+}
+
+@media (max-width: 991px) {
+    .b-banner {
+        padding-top: 50px;
+    }
+
+    .b-banner .left {
+        text-align: center;
+    }
+    .award img.big{
+		max-width: 250px;
+    }
+}
+@media (max-width: 575.98px) {
+	.chart_list li a{
+		font-size: 10px;
+	}
+}
+@media (max-width: 440px){
+	.graph_list .week-month-year p a{
+		padding-left: 26px;
+		padding-right: 26px;
+		font-size: 14px;
+	}
+	.chart_list li a{
+		font-size: 9px;
+	}
+}
+
+
+
+
+.graph_list {
+            color: #fff;
+        }
+
+        .chart {
+            color: #fff;
+        }
+
+        .box-title {
+            margin-bottom: 10px;
+            font-size: 18px !important;
+            text-align: center
+        }
+
+        .box-body {
+            font-size: 14px !important
+        }
+
+        .modal-lg {
+            width: 600px;
+        }
+
+        .profile_details img {
+            height: 69px !important;
+        }
+
+        .profile_details {
+            background: none !important
+        }
+
+        .description-block {
+            text-align: center;
+        }
+
+        .progress-group b {
+            color: rgba(105, 103, 255, 1);
+            font-weight: bold;
+        }
+
+        p>b {
+            color: rgba(105, 103, 255, 1);
+            font-weight: bold;
+        }
+
+        .progress-group .progress-number {
+            float: right;
+        }
+
+        .text-green {
+            color: #46C56A !important;
+        }
+		
+		.text-grey {
+            color: #5C678D !important;
+        }
+
+        .text-yellow {
+            color: #FFBB00 !important;
+        }
+
+        .text-aqua {
+            color: #6967FF !important;
+        }
+		.text-acu {
+            color: #29B2FF !important;
+        }
+
+        .text-red {
+            color: #F33558 !important;
+        }

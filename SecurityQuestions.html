@@ -1,0 +1,533 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brainmeasures.com - Individual</title>
+	<meta name="robots" content="noindex, nofollow" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+   <link rel="stylesheet" href="https://www.brainmeasures.com/dist/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://www.brainmeasures.com/dist/css/Dstyle.css">
+    <link rel="stylesheet" href="https://www.brainmeasures.com/dist/css/main.css">
+	
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="assets/css/WelcomeUser.css">
+   
+	<link href="https://www.brainmeasures.com/dist/css/jquery.gritter.css" rel="stylesheet" />
+	 <link rel="stylesheet" href="https://www.brainmeasures.com/plugins/select2/select2.css" />
+    <script src="https://www.brainmeasures.com/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="https://www.brainmeasures.com/plugins/jQueryUI/jquery-ui.min.js"></script>
+    <script src="https://www.brainmeasures.com/plugins/gritter/jquery.gritter.js"></script>
+    <script src="https://www.brainmeasures.com/plugins/tools.js"></script>
+	<script src="https://www.brainmeasures.com/plugins/select2/select2.js"></script>
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="hold-transition skin-blue layout-top-nav">
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <form method="post" action="./SecurityQuestions.aspx" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EE5CB60E" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="aEG9Oj3U8pN0BD0TDs/ppk0ee3K6nolkhbRup/q1+aYG4CaZ0oxuv0V0s5wNzRCIb/cobMteCtGwBuHnEYqFuUWYzyPlburB4G8AcStkk0MZWCggf+2a7A6kZGqpQFqaKNbDWuTgwNO6R0lUKDR2HEkr83MlnnS7AmwunkuLeR5JtTKB+eMB2OrcNTrk6t1sMbsUHI4sAI38U2Kwf3O7GcAsv6OFqmMEh2RP44VFL7044NpvAMLysSeOwP/uT/F2xqjZSqvMbxDxllUUK4PrrwLtJx0ICFud6W79EMRF05lCCsGK1MRbACgt0bN+pfuCiKsqHkUUGJGbBA93wsGyVY7hhs3d2GF4x9t+nxomZaTmJl1u2KC8hTIN6oIX2Sjq3wMfrs3uAsZGkfEpoZ3oCTMAhJtAbvEcSEz6rhUkTQ8mCNulxnOmiVxfkc9tDvhhPY5M+ZXVERSLvKPGOP/U/h9plYW9cWJIFZ5P1yhheP+Sx07n8o63dIoA+t31k9jA0/nezccwzYd+fR3DZ+2b51NTGm1iQYhLhKiQMrXrXeSiWtpL5ugxxE93Mx+gZHHXMVnCf9BlBUrqrkvp3KLhL6xwOAHLMC7RV2SoDZRyLUg=" />
+</div>
+        <img class="AccTypeFixed" src="https://www.brainmeasures.com/dist/img/Lable_Individual.png" />
+        <div class="wrapper">
+
+            <header class="main-header">
+                <nav id="ucTopNav" class="navbar navbar-static-top">
+                    
+<div class="container">
+    <div class="navbar-header">
+        <a href="Index.aspx" class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Brainmeasures.com (Since 2007) - An ISO Certified Company"><b>Brainmeasures</b></a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-search"></i>
+        </button>
+    </div>
+    <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+            <li class="dropdown messages-menu" data-toggle="tooltip" data-placement="bottom" title="Messages">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="glyphicon glyphicon-comment"></i>
+                    <span id="lblMessageCounterTop" class="label label-warning">0</span>
+                </a>
+                
+            </li>
+            <li class="dropdown notifications-menu" data-toggle="tooltip" data-placement="bottom" title="Ticket">
+                <a href="../MyTickets.aspx" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="glyphicon glyphicon-file"></i>
+                    <span class="label label-warning">
+                        <span id="lblTicketCounter">0</span></span>
+                </a>
+                <ul id="ulTickets" class="dropdown-menu">
+                    <li class="header">You have
+                        <span id="lblTicketMessageCount"></span>
+                        Ticket Message</li>
+                    <li>
+                        <ul class="menu">
+                            
+                        </ul>
+                    </li>
+                    <li class="footer"><a href="MyTickets.aspx">View all</a></li>
+                </ul>
+            </li>
+            <li class="dropdown notifications-menu" data-toggle="tooltip" data-placement="bottom" title="Notifications">
+                <a href="Notifications.aspx" >
+                    <i class="glyphicon glyphicon-bell"></i>
+                    <span class="label label-warning">
+                        <span id="lblNotifyCounter">0</span></span>
+                </a>
+                
+            </li>
+            <li class="dropdown tasks-menu" data-toggle="tooltip" data-placement="bottom" title="Your Wishlist">
+                <a id="wfor" href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="glyphicon glyphicon-heart"></i>
+                    <span id="spnShowWishListItems" class="label label-info">
+                        <span id="lblShowWishlistCountTop">0</span></span>
+                </a>
+                
+            </li>
+            <li class="dropdown tasks-menu" data-toggle="tooltip" data-placement="bottom" title="Cart">
+                <a href="MyCart.aspx">
+                    <i class="glyphicon glyphicon-shopping-cart"></i>
+                    <span id="spnShowCartIcon" class="label label-danger">
+                        <span id="lblCartCountTopHeader">0</span></span>
+                </a>
+                
+            </li>
+            <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <img src="https://lh3.googleusercontent.com/a/AGNmyxbTHd4vmtogUZLKI1DwXVH_8Bt-9YRw20oxSVwa=s50" id="headerimgSmall" class="user-image" alt="User Image" />
+                    <span class="hidden-xs">
+                        <span id="lblUserName">Ravi Singh</span><span class="caret"></span></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="user-header">
+                        <img src="https://lh3.googleusercontent.com/a/AGNmyxbTHd4vmtogUZLKI1DwXVH_8Bt-9YRw20oxSVwa=s50" id="headerimgLarge" class="img-circle" alt="User Image" />
+                        <p>
+                            <span id="lblUserNameTitle">Ravi Singh</span><a href="EditProfile.aspx" class="editpftop" id="ahrefEditProfile" data-toggle="tooltip" data-placement="top" title="Edit Profile"><i class="glyphicon glyphicon-pencil"></i></a><small>
+                                <span id="lblCityCountry"></span></small>
+                        </p>
+                    </li>
+                    <li class="user-footer">
+                        <div class="pull-left">
+                            <a class="btn btn-info btn-flat" href="../Individual/EditProfile.aspx" data-toggle="tooltip" data-placement="left" id="lnkbtnSetting" title="Manage Notifications, Account Setting, Change Password, etc."><i class="glyphicon glyphicon-cog"></i>Settings</a>
+                        </div>
+                        <div class="pull-right">
+                            <a class="btn btn-danger btn-flat" href="../../Logout.aspx" id="ahrefLogout" data-toggle="tooltip" data-placement="left" title="End your Current Session"><i class="glyphicon glyphicon-off"></i>Sign out</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="collapse navbar-collapse pull-right" id="Div1">
+        <form class="navbar-form navbar-left" role="search">
+            <div style="display: none;" class="form-group">
+                <input type="text" class="form-control" id="Text1" placeholder="Search Course / Tests">
+            </div>
+        </form>
+    </div>
+
+    <div class="collapse navbar-collapse pull-right" id="navbar-collapse">
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+
+                <input type="text" class="form-control" onkeypress="search(this);" id="navbar-search-input" placeholder="Search Course / Tests">
+            </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+
+    function search(srch) {
+        if (event.keyCode == 13) {
+            event.preventDefault();
+            if ($("#navbar-search-input").val() != "") {
+                value = $("#navbar-search-input").val();
+                event.preventDefault();
+                window.location.href = "/Individual/SearchTestsCourses.aspx?srchtxt=" + value;
+            }
+            else {
+                Warning("Search cannot be empty.");
+            }
+        }
+    }
+</script>
+
+                </nav>
+            </header>
+            <div class="bottom-nav">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-bottom">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse pull-left" id="navbar-bottom">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="Index.aspx">Dashboard</a></li>
+                                <li><a id="allcourses" href="Courses.aspx">Courses</a></li>
+                                <li><a href="VideoCourses.aspx">Video Courses</a></li>
+                                <li><a href="Tests.aspx">Tests</a></li>
+                                <li><a href="ViewResult.aspx">Results</a></li>
+                                <li><a href="ForwardTestResult.aspx">Forward Test Result</a></li>
+                                <li><a href="ManageDocument.aspx">Verify Documents</a></li>
+                                <li><a href="CertificateRenewal.aspx">Renewal <span id="spnCertRenewCount" class="label label-danger" style="padding: 0px 5px">0</span></a></li>
+                                <li><a href="MyTickets.aspx">Tickets</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="MyCourses.aspx">My Courses</a></li>
+                                        <li><a href="MyVideoCourse.aspx">My Video Courses</a></li>
+                                        <li><a href="MyTests.aspx">My Tests</a></li>
+                                        <li><a href="MyRegisteredCourses.aspx">My Registered Courses</a></li>
+                                        <li><a href="MyEarnings.aspx">Check your Referals</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="YourBrainMeasuresLogo.aspx">Your Brainmeasures Logo</a></li>
+                                        <li><a href="TestVideos.aspx">My Proctor Test Video</a></li>
+                                        <li><a href="ReferFriend.aspx">Refer a Friend <sup style="color: #de0000">Earn Money</sup></a></li>
+                                        <li><a href="Receipts.aspx">View All Receipts</a></li>
+                                        <li><a href="Online-transcript-number.aspx">Online Transcript Number</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="content-wrapper test-page">
+                <div class="container" id="dvContainerPage">
+                    <section id="scHeaderSearch" class="content-header">
+                        <h1 id="pageHeading" style="font-size: 18px;height: 22px;"></h1>
+                        
+<div class="input-group input-group-sm tserach">
+    <input name="ctl00$USearchTranscript$txtTranscriptNo" type="text" id="txtTranscriptNo" maxlength="20" class="form-control input-trs" placeholder="Enter Transcript No" />
+    <span class="input-group-btn">
+        <input type="submit" name="ctl00$USearchTranscript$btnSearchTranscriptResult" value="Search Result" onclick="return ValidateTranscript();" id="btnSearchTranscriptResult" class="btn btn-trs" />
+    </span>
+</div>
+ 
+<script type="text/javascript">
+    function ValidateTranscript() {
+      
+        var message = '<ul>';
+        var isValid = true;
+        if ($('#txtTranscriptNo').val().trim() == '') {
+          
+            isValid = false;
+            message += '<li>Please enter transcript no.</li>';
+
+        }
+        if ($('#txtTranscriptNo').val().trim() != '') {
+            if (!ValidateNumberText($('#txtTranscriptNo').val())) {
+                isValid = false;
+                message += '<li>Please enter transcript no. in numeric format.</li>';
+
+            }
+            else if ($('#txtTranscriptNo').val().length > 20) {
+                isValid = false;
+                message += '<li>Length of transcript no. cannot exceed 20 characters.</li>';
+                // window.location.href = "../Individual/Transcript.aspx?transcriptid=" + $('#txtTranscriptNo').val();
+            }
+        }
+
+        if (!isValid) {
+            message += '</ul>';
+            Warning(message);
+        }
+        return isValid;
+    }
+</script>
+
+                        
+                    </section>
+                    <section class="content no-padd">
+                        <div class="row">
+                            
+                            
+    <div class="col-md-12 no-padding">
+        <div class="col-md-12">
+            <div class="box mybox secubg">
+                <div class="box-body table-responsive overlowVisible">
+                    <div class="col-md-12 stepcontent stepone">
+                        <h1 style="font-size: 32px;"><span>Security</span> Questions</h1>
+                        <p class="abcnote">To Complete the Registration Process, You have to give a Security Quiz of 3 Questions, these questions you will be asked at the Examination time for Security Purpose. </p>
+                        <hr>
+                        <div id="dvInputControls" class="col-md-6 col-md-offset-3">
+                            <span class="spnInputControls">
+                                <select name="ctl00$cntCartMaster$ddlSecurityQue_1" id="ddlSecurityQue_1" tabindex="1" class="authtxt questionDDL">
+	<option value="0">Select a Security Question</option>
+	<option value="1">What is your pet name?</option>
+	<option value="2">What is your favorite color?</option>
+	<option value="3">In which year you born?</option>
+	<option value="4">What is your first car color?</option>
+	<option value="5">In what city or town was your first job?</option>
+
+</select>
+                                <input name="ctl00$cntCartMaster$txtSecurityAns_1" type="text" maxlength="50" id="txtSecurityAns_1" tabindex="2" class="authtxt txtanswer" placeholder="Your Answer" />
+                            </span>
+                            <hr>
+                            <span class="spnInputControls">
+                                <select name="ctl00$cntCartMaster$ddlSecurityQues_2" id="ddlSecurityQues_2" tabindex="3" class="authtxt questionDDL">
+	<option value="0">Select a Security Question</option>
+	<option value="6">In which city you born?</option>
+	<option value="7">What was the name of your elementary / primary school?</option>
+	<option value="8">What is your dream job?</option>
+	<option value="9">What was the first company I have ever worked for?</option>
+	<option value="10">In which city was my father born?</option>
+
+</select>
+                                <input name="ctl00$cntCartMaster$txtSecurityAns_2" type="text" maxlength="50" id="txtSecurityAns_2" tabindex="4" class="authtxt txtanswer" placeholder="Your Answer" />
+                            </span>
+                            <hr>
+                            <span class="spnInputControls">
+                                <select name="ctl00$cntCartMaster$ddlSecurityQues_3" id="ddlSecurityQues_3" tabindex="5" class="authtxt questionDDL">
+	<option value="0">Select a Security Question</option>
+	<option value="11">What is my best friend&#39;s first name?</option>
+	<option value="12">What is the first name of my oldest cousin?</option>
+	<option value="13">In which city was my mother born?</option>
+	<option value="14">Who was your childhood hero?</option>
+	<option value="15">What was your childhood nickname?</option>
+
+</select>
+                                <input name="ctl00$cntCartMaster$txtSecurityAns_3" type="text" maxlength="50" id="txtSecurityAns_3" tabindex="6" class="authtxt txtanswer" placeholder="Your Answer" />
+                            </span>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box mybox">
+                <div class="box-body table-responsive overlowVisible">
+                    <div class="col-md-6 col-md-offset-3" style="text-align: center">
+                        <input type="submit" name="ctl00$cntCartMaster$btnSubmit" value="Submit" id="btnSubmit" tabindex="11" class="btn btn-my btn-block btn-flat" style="padding: 10px 70px" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                            
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <footer class="top-footer">
+                <div class="container">
+					<div class="col-sm-12 d-md-none text-center">
+                        <img src="https://www.brainmeasures.com/dist/img/footerimg.png" class="footerimg">
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <ul>
+                            <li>
+                                <h3>Explore</h3>
+                            </li>
+                            <li><a href="Tests.aspx">All Tests</a></li>
+                            <li><a href="Courses.aspx">All Courses</a></li>
+                            <li><a href="Index.aspx">Deal of the Day !</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6">
+                        <ul>
+                            <li>
+                                <h3>Account</h3>
+                            </li>
+                            <li><a href="MyAccount.aspx">My Account</a></li>
+                            <li><a href="WishList.aspx">My Wish List</a></li>
+                            <li><a href="MyCart.aspx">My Cart</a></li>
+                            <li><a href="Index.aspx">My Recently Views</a></li>
+                            <li><a href="MyTickets.aspx">My Tickets</a></li>
+                            <li><a href="EditProfile.aspx">Account Settings</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6">
+                        <ul>
+                            <li>
+                                <h3>Brainmeasures</h3>
+                            </li>
+                            <li><a href="../OurStory.aspx">Our Story</a></li>
+                            <li><a href="../SuccessStory.aspx">Success Story</a></li>
+                            <li><a href="../Reviews.aspx">Reviews</a></li>
+                            <li><a href="FAQ.aspx">FAQs</a></li>
+                            <li><a href="../ContactUs.aspx">Contact us</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6">
+                        <ul>
+                            <li>
+                                <h3>Important</h3>
+                            </li>
+                            <li><a href="../Affiliate_Program.aspx">Be an Affiliate</a></li>
+                            <li><a href="ReferFriend.aspx">Refer and Earn</a></li>
+                            <li><a href="PrivacyPolicy.aspx">Privacy Policy</a></li>
+                            
+                            <li><a href="../Sitemap.aspx">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 d-none d-md-block">
+                        <img src="https://www.brainmeasures.com/dist/img/footerimg.png" class="footerimg">
+                    </div>
+                </div>
+            </footer>
+            <footer class="main-footer">
+                <div class="container">
+                    <div class="pull-right payment-wrap">
+                        <i class="fa fa-cc-paypal"></i><i class="fa fa-cc-mastercard"></i><i class="fa fa-cc-visa"></i><i class="fa fa-cc-amex"></i><i class="fa fa-cc-discover"></i>
+                    </div>
+                    <p>
+                        Copyright &copy; 2007-2023 Brainmeasures. All rights reserved.
+                    </p>
+
+                </div>
+            </footer>
+        </div>
+        
+    </form>
+
+    <script src="https://www.brainmeasures.com/dist/bootstrap/js/bootstrap.js"></script>
+    <script src="https://www.brainmeasures.com/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="https://www.brainmeasures.com/plugins/fastclick/fastclick.min.js"></script>
+    <script src="https://www.brainmeasures.com/dist/js/app.js"></script>
+    <script src="https://www.brainmeasures.com/plugins/flot/jquery.flot.min.js"></script>
+    <script src="https://www.brainmeasures.com/plugins/flot/jquery.flot.resize.min.js"></script>
+    <script src="https://www.brainmeasures.com/plugins/flot/jquery.flot.pie.min.js"></script>
+    <script src="https://www.brainmeasures.com/plugins/flot/jquery.flot.categories.min.js"></script>
+
+    <script src="https://www.brainmeasures.com/dist/js/modernizr-2.6.2.min.js"></script>
+    
+    <script src="https://www.brainmeasures.com/Individual/ajax/SecurityQuestions.js"></script>
+    
+    
+    <script>
+        $(document).ready(function () {
+            $("#dvContainerPage").removeClass('container');
+            $("#scHeaderSearch").hide();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            setTimeout(function () {
+                $('body').addClass('loaded');
+            }, 2000);
+            //Load time zone from common
+            //LoadTimeZone();
+        });
+        $(function () {
+            var data = [], totalPoints = 100;
+            function getRandomData() {
+
+                if (data.length > 0)
+                    data = data.slice(1);
+
+                while (data.length < totalPoints) {
+
+                    var prev = data.length > 0 ? data[data.length - 1] : 50,
+							y = prev + Math.random() * 10 - 5;
+
+                    if (y < 0) {
+                        y = 0;
+                    } else if (y > 100) {
+                        y = 100;
+                    }
+
+                    data.push(y);
+                }
+
+
+                var res = [];
+                for (var i = 0; i < data.length; ++i) {
+                    res.push([i, data[i]]);
+                }
+
+                return res;
+            }
+
+            var interactive_plot = $.plot("#interactive", [getRandomData()], {
+                grid: {
+                    borderColor: "#f3f3f3",
+                    borderWidth: 1,
+                    tickColor: "#f3f3f3"
+                },
+                series: {
+                    shadowSize: 0, // Drawing is faster without shadows
+                    color: "#3c8dbc"
+                },
+                lines: {
+                    fill: true, //Converts the line chart to area chart
+                    color: "#3c8dbc"
+                },
+                yaxis: {
+                    min: 0,
+                    max: 100,
+                    show: true
+                },
+                xaxis: {
+                    show: true
+                }
+            });
+
+            var updateInterval = 500; //Fetch data ever x milliseconds
+            var realtime = "on"; //If == to on then fetch data every x seconds. else stop fetching
+            function update() {
+
+                interactive_plot.setData([getRandomData()]);
+
+                // Since the axes don't change, we don't need to call plot.setupGrid()
+                interactive_plot.draw();
+                if (realtime === "on")
+                    setTimeout(update, updateInterval);
+            }
+
+            //INITIALIZE REALTIME DATA FETCHING
+            if (realtime === "on") {
+                update();
+            }
+
+        });        
+
+    </script>
+    <!--Start of Zopim Live Chat Script-->
+  <!--  <script src="//v2.zopim.com/?2YMhIJ46JFYuuChECGepCtOTddFUzEp5" charset="utf-8" type="text/javascript"></script>-->
+    <!--End of Zopim Live Chat Script-->
+	
+	
+	<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5d57f12c77aa790be32f5b32/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>

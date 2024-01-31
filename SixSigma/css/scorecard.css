@@ -1,0 +1,19 @@
+/* First Banner */
+.first-banner{
+    background-image: linear-gradient(to bottom right, #E74949, #D80081);
+    padding-top: 140px;
+    padding-bottom: 200px;
+}
+.banner-content h2{
+    color: #fff;
+}
+.banner-content p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.banner-img img{
+    max-width: 570px;
+    max-height: 520px;
+}

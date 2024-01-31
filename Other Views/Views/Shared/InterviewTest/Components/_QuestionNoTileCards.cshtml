@@ -1,0 +1,73 @@
+﻿@using BM.Models.TestSystem;
+@using System.Linq;
+@using System.Diagnostics;
+
+@{
+	var questionCounterClass = "";
+	var examTestProperties = ViewBag.ExamTestProperties != null ? ViewBag.ExamTestProperties as ExamTestProperties : new ExamTestProperties();
+	var McqCollectionIds = ViewBag.QuestionIds as List<TestRecordStatus>;
+	var questionNo = (int)ViewBag.QuestionId;
+	int totalQuestions = (int)ViewBag.NoOfQuestion;
+	var currentQuestionGuid = "";
+}
+
+
+<div class="test-question-grid" id="tileCardSection">
+    @for (int loopCnt = 1; loopCnt <= totalQuestions; loopCnt++)
+    {
+        questionCounterClass = "";
+        if (loopCnt == questionNo)
+        {
+            questionCounterClass = "current";
+            currentQuestionGuid = @McqCollectionIds[loopCnt - 1].Id.ToString();
+        }
+        else if (!McqCollectionIds[loopCnt - 1].HasAnswered)
+        {
+            questionCounterClass = " ";
+        }
+        else if (McqCollectionIds[loopCnt - 1].HasAnswered)
+        {
+            questionCounterClass = "completed";
+        }
+        if (examTestProperties.IsReviewAllowed || (examTestProperties.AllowedToGoBack && (loopCnt < questionNo)))
+        {
+            //If Review Allowed Only we Inject the Click Action
+            // if user is allowed to Go back and the curent question no is greater than loop
+            //i.e previous questions
+            <a class="questio-grid-number @questionCounterClass" data-questionNo="@questionNo" data-totalQuestion="@totalQuestions"
+               data-question-id="@McqCollectionIds[loopCnt - 1].Id.ToString()" onclick="onClikQuestionNo(this)">@loopCnt</a>
+        }
+        else
+        {
+            <a href="#" class="questio-grid-number @questionCounterClass">@loopCnt</a>
+        }
+
+        questionCounterClass = "";
+    }
+    <table class="mt-2">
+        <tr>
+            <td><p class="questio-grid-number completed"></p></td>
+            <td class="color-white-test"> Answered</td>
+            <td><p class="questio-grid-number"></p></td>
+            <td  class="color-white-test"> Not Answered</td>
+        </tr>
+    </table>
+    <h6 class="text-center color-white-test">@questionNo / @totalQuestions Questions</h6>
+    <div class="text-center">
+        <a class="btn btn-primary current color-white-test" data-question-id="@currentQuestionGuid" id="reportBtn" onclick="reportBtn(this)">
+            Report Question          
+        </a>
+    </div>
+    <div class="modal fade bs-example-modal-lg" id="ReportQuestionModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h1 class="ReportMessage">Reported Successfully!!!!</h1>
+                </div>
+                <div class="modal-footer">                    
+                    <button type="button" class="btn btn-default  btn-danger" id="reportclose">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

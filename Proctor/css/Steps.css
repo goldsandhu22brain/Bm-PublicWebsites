@@ -1,0 +1,1424 @@
+/* Scroll Bar  */
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #b1abab; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #747373;
+  }
+/* common CSS for all steps */
+.fs-15p{
+    font-size: 15px;
+}
+.mt-80p{
+    margin-top: 80px;
+}
+.h-90pr{
+    height: 90%;
+}
+.mb-30p{
+    margin-bottom:30px;
+}
+.mt-m45p{
+    margin-top:-45px;
+}
+.mt-50p{
+    margin-top: 50px;
+}
+.ml-12p{
+    margin-left: 12px;
+}
+.mt-5rem{
+    margin-top: 5rem;
+}
+.mt-7rem{
+    margin-top: 7rem;
+}
+
+h1{
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+}
+.report-btn, .report-btn:hover, .report-btn:active, .report-btn:focus{
+    font-weight: 500;
+    border: 1px solid #D62B4B;
+    background-color: #D62B4B;
+    padding: 8px 20px;
+    outline: none !important;
+    box-shadow: none !important;
+    width: 230px;
+    font-size: 15px;
+    border-radius: 90px;
+}
+.outline-btn-light{
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none !important;
+    box-shadow: none !important;
+    width:275px;
+    font-size: 15px;
+    width:120px;
+    color: #fff;
+}
+.outline-btn-light:hover, .outline-btn-light:active, .outline-btn-light:focus{
+    color: #000;
+}
+.outline-btn{
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none !important;
+    box-shadow: none !important;
+    width:275px;
+    font-size: 15px;
+    color: #000;
+}
+.outline-btn:hover, .outline-btn:active, .outline-btn:focus{
+    color: #fff;
+}
+.action-btn, .action-btn:hover, .action-btn:active, .action-btn:focus{
+    font-weight: 500;
+    border: 1px solid #F33558;
+    background-color: #F33558;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none !important;
+    box-shadow: none !important;
+    width:275px;
+    font-size: 15px;
+}
+.next-btn, .next-btn:hover, .next-btn:active, .next-btn:focus {    
+    font-weight: 500;
+    border: 1px solid #FFBB00;
+    background-color: #FFBB00;
+    padding: 10px 20px;
+    color: #000;
+    border-radius: 10px;
+    outline: none !important;
+    box-shadow: none !important;
+    width:175px;
+    font-size: 15px;
+}
+.input-error{
+    border: 2px solid #e52929;
+}
+/* Range slider and the bubble above the ranger */
+.range-input {
+    -webkit-appearance: none;
+    appearance: none; 
+    width: 80%;
+    cursor: pointer;
+    outline: none;
+    border-radius: 15px;
+    height: 6px;
+    margin: auto;
+    padding: 0;
+    border: 0;
+    background: #ccc;
+    background:linear-gradient(to right, #333 10%, #ccc 10% );
+}  
+.range-input::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none; 
+height: 15px;
+width: 15px;
+background-color: #fff;
+border-radius: 50%;
+border: 5px solid #6967FF;
+transition: .2s ease-in-out;
+}
+.range-input::-moz-range-thumb {
+height: 15px;
+width: 15px;
+background-color: #fff;
+border-radius: 50%;
+border: 5px solid #6967FF;
+transition: .2s ease-in-out;
+}
+.range-bubble { 
+position: absolute;
+background-color: #fff;
+text-align: center;
+color: #000;
+border-radius: 10px;
+display: inline-block;
+font-weight: 500;
+padding: 4px 10px;
+bottom: 25px;
+right: 46.5%;
+}
+.range-bubble:after { 
+content: "";
+position: absolute;
+width: 0;
+height: 0;
+border-top: 5px solid #fff;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+margin-top: -1px;
+}
+.range-bubble p{
+    margin: 0;
+    overflow: hidden;
+    width: 200px;
+    height: 20px;
+    line-height: 18px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: inherit;
+}
+.wrapper{
+    text-align: center;
+    margin: auto;
+    width: 70%;
+}
+p{
+    font-size: 15px;
+    line-height: 27px;
+    color: #383838
+}
+
+
+
+/* STEP 1 */
+.step1{
+    background-color: #1771C5; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #46DF95, #1771C5, #C22EBD, #EE5050);
+    min-height: 100vh;
+}
+.step1 .content {
+    text-align: start;
+    border: 10px solid #000;
+    border-radius: 50px;
+    background-color: #fff;
+    height: 450px;
+    max-height: 550px;
+    position: relative;
+}
+.step1 .c-color{
+    color: #6967FF;
+}
+.step1 .overlay{
+    position: absolute;
+    bottom: -20%;
+    left: 30%;
+    transform: translateX(-21%);
+    text-align: center;
+    padding: 25px 40px;
+    border: 1px solid #59EF9A;
+    background-color: #59EF9A;
+    border-radius: 20px;
+}
+.step1 .overlay h4{
+    color: #383838;
+    line-height: 32px;
+}
+.step1 .col-padding{    
+    padding: 55px 40px;
+}
+.step1 .img-padding{    
+    padding: 35px 0px 45px 40px;
+}
+.step1 img{    
+    max-width: 100%;
+}
+.step1 .arrow{
+    position: absolute;
+    right: 11%;
+    top: 40%;
+}
+.step1 .range-input {
+    background:linear-gradient(to right, #333 14%, #ccc 14% );
+}
+.step1 .range-bubble { 
+    right: 67.5%;
+}  
+
+
+
+/* STEP 2*/
+.step2{
+    background-color: #1D7DD6; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #43D99A 35%, #1D7DD6 79%);
+    min-height: 100vh;
+}
+.step2 .wrapper{
+    width: 75%;
+}
+.step2 .content {
+    text-align: center;
+    height: 530px;
+    max-height: 550px;
+    padding:10px;
+}
+.step2 .range-input {
+    background:linear-gradient(to right, #333 26%, #ccc 26% );
+}
+.step2 .main{
+    width: 33px;
+    height: 33px;
+}
+.step2 .range-bubble { 
+    right: 58.4%;
+}
+.step2 .list-icon{
+    width: 22px;
+    height: 22px;    
+    margin-right: 0.75rem;
+} 
+.step2 .icon-wrapper{
+    border: 1px solid #FFBB00;
+    background-color: #FFBB00;
+    border-radius: 50%;
+    padding: 15px;
+    display: inline-block;
+}
+.step2 .info{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+.step2 .list-item{
+    background-color: #323263;
+    color: #fff;
+    text-align: left;
+    border-radius: 20px;
+}
+.step2 .list-item li{
+    padding: 12px 20px;
+    border-bottom: 1px solid #EAEAEA;
+    height: 50px;
+    font-size: 16px;
+}
+.step2 .list-item li:last-child{
+    border-bottom: 0;
+}
+.step2 .list-info{
+    text-align: left;
+    background-color: #fff;
+    color: #383838;
+    border-radius: 20px;
+}
+.step2 .list-info li{
+    padding: 12px 20px;
+    border-bottom: 1px solid #EAEAEA;
+    height: 50px;
+    font-size: 16px;
+}
+.step2 .list-info li:last-child{
+    border-bottom: 0;
+}
+.step2 .list-title1, .step2 .list-title2{
+    text-align: left;
+    margin-left: 1rem;
+    padding: 12px;
+    margin-right: 60px;
+    background-color: #1F2EB1; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #AF38D9, #1F2EB1);
+    border-radius: 15px 15px 0 0;
+    color: #fff;
+    font-size: 15px;
+}
+.step2 .list-title2{
+    background-color: #A50C83; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #F16B20, #A50C83);
+}
+
+
+
+/* STEP3 */
+.step3{
+    background-color: #393C76; /* For browsers that do not support gradients */
+    background: url('../images/Steps/step3-bg.png');
+    background: url('../images/Steps/step3-bg.png'),linear-gradient(to bottom right, #00C1DB 0%, #393C76 60%);
+    background-blend-mode: multiply;
+    background-position: center;
+    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+}
+.step3 .content {
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 60px;
+    background-color: #fff;
+    padding: 30px;
+    height: 540px;
+    max-height: 550px;
+}
+.step3 .range-input {
+    background:linear-gradient(to right, #333 38%, #ccc 38% );
+}
+.step3 .range-bubble { 
+    right: 47.8%;
+} 
+.step3 .c-card {
+    border: 1px solid #DEDEDE;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    border-radius: 20px;
+    position: relative;
+    padding: 15px 30px;
+}
+.step3 .img-container{
+    position: relative;
+}
+.step3 img.background{
+    width: 118px;
+    height: 92px;
+}
+.step3 .img-container .card-icon {
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid #E9E9E9;
+    background-color: #fff;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px;
+}
+.step3 .c-card p{
+    font-size: 17px;
+    line-height: 48px;
+    font-weight: 600;
+}
+.step3 .c-card .img-overlay {
+    border-radius: 50%;
+    position: absolute;
+    background-color: #6967FF;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 14px 10px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+}
+.step3 .c-card .img-overlay.failure{
+    background-color: #e52929;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 7px 16px;
+}
+.step3 .c-card .card-icon  img{
+    width:36px;
+    height:35px;
+}
+
+
+
+/* STEP5 */
+.step5{
+    background-color: #CA328D; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom left, #6D4BF9, #CA328D);
+    min-height: 100vh;
+}
+.step5 .content {
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 60px;
+    background-color: #fff;
+    padding: 30px;
+    height: 500px;
+    max-height: 550px;
+    background: url('../images/Steps/step5-bg.png');
+    background-color: #FAE5FA;
+    background-blend-mode: initial;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 75% 45%;
+    position: relative;
+    margin-bottom:1.5rem;
+    margin-top:4.5rem;
+}
+.step5 .range-input {
+    background:linear-gradient(to right, #333 63%, #ccc 63% );
+}
+.step5 .range-bubble { 
+    right: 28.1%;
+}  
+.step5 .form-wrapper{
+    border: 1px solid #E8E8E8;
+    position: absolute;
+    padding: 60px 50px;
+    background-color: #fff;
+    border-radius: 30px;
+    right: 8%;
+    top: -6%;
+}
+.step5 .icon-wrapper{
+    position: absolute;
+    top: -40%;
+    border: 1px solid #FFBB00;
+    background-color: #FFBB00;
+    border-radius: 50%;
+    padding: 12px 12px 12px 9px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.step5 .icon-wrapper img{
+    width:36px;
+    height:36px;
+}
+.step5 .action-btn, .step5 .action-btn:hover, .step5 .action-btn:active, .step5 .action-btn:focus{
+    padding: 10px 67px;
+}
+.step5 .form-wrapper .text{
+    background: #EFEFEF;
+    border: 1px solid #EFEFEF;
+    padding: 0.6rem 0.75rem;
+    font-size: 15px;
+    color: #132730;
+}
+.step5 .form-wrapper  .text.input-error{
+    border: 2px solid #e52929;
+}
+
+
+
+/* STEP 6*/
+.step6{
+    background-color: #3DC75B; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #C2E267, #3DC75B);
+    min-height: 100vh;
+}
+.step6 .content {
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 60px;
+    background-color: #fff;
+    padding: 30px;
+    height: 530px;
+    max-height: 550px;
+}
+.step6 .range-input {
+    background:linear-gradient(to right, #333 75%, #ccc 75% );
+}
+.step6 .range-bubble { 
+    right: 18.3%;
+}  
+.step6 .step6-img{
+    width: 185px;
+    height:145px;
+}
+.step6 .action-btn{
+    width:255px;
+}
+.step6 .outline-btn{
+    width:150px;
+}
+.step6 .form-wrapper{
+    border: 1px solid #F8F8F8;
+    border-radius: 60px;
+    background-color: #F8F8F8;
+    padding: 40px 40px 25px 40px;
+}
+.step6 .form-wrapper form{
+    width: 60%;
+    margin: auto
+}
+.step6 .form-wrapper .text{
+    border: 1px solid #6967FF;
+    padding: 0.65rem 0.75rem;
+    font-size: 15px;
+    color: #132730;
+}
+.step6 .form-wrapper .c-label{
+    padding: 0.65rem 0.75rem;
+    font-size: 15px;
+    color: #132730;
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+.step6 .form-wrapper  .text.input-error{
+    border: 2px solid #e52929;
+}
+
+
+
+/* STEP 7 */
+.step7{
+    background-color: #3C2E92;
+    background-image: linear-gradient(to bottom right, #6C3BBB, #3C2E92);
+    min-height: 100vh;
+}
+.step7 .content {
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background-color: #fff;
+    padding: 30px;
+    height: 520px;
+    max-height: 550px;
+    background: url('../images/Steps/step7-bg.png');
+    background-color: #C8E7FF;
+    background-blend-mode: multiply;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.step7 .range-input {
+    background:linear-gradient(to right, #333 86%, #ccc 86% );
+}
+.step7 .range-bubble { 
+    right: 8.5%;
+} 
+
+
+
+/* STEP 4 */
+.step4{
+    background-color: #F33557; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #F33557, #F335C9);
+    min-height: 100vh;
+}
+.step4 .content {
+    text-align: start;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background-color: #fff;
+    /* padding: 30px; */
+    height: 520px;
+    max-height: 550px;
+}
+.step4 .c-col {
+    /* margin: auto; */
+    background-color: #eee;
+    /* background-size: cover; */
+    border-radius: 50px 0 0 50px;
+    /* height: 100%; */
+    position: relative;
+}
+.step4 .content-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+.step4 .proof-wrapper{
+    width: 410px;
+    height: 206px;
+    text-align: center;
+    margin-top: 1rem;
+    border: 1px dashed #000;
+    border-radius: 20px;
+    padding: 35px 60px;
+    /* margin: auto; */
+    background-color: #fff;
+}
+.step4 .proof-title {
+    font-size: 24px;
+    line-height: 32px;
+    color: #383838;
+    font-weight: 500;
+}
+.step4 .img-wrapper {
+    text-align: end;
+    padding: 40px;
+}
+.step4 .img-wrapper img{
+    border-radius: 20px;
+}
+.step4 .range-input {
+    background:linear-gradient(to right, #333 50%, #ccc 50% );
+} 
+.step4 .range-bubble { 
+    right: 38%;
+}
+
+
+
+/* STEPS 4 Second Page */
+.step4 .proof-sec-wrapper{
+    width: 410px;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 20px;
+    padding: 35px 60px;
+    background-color: #fff;
+}
+.step4 .img-icon-wrapper{
+    border: 2px dashed #6967FF;
+    border-radius: 10px;
+}
+.step4 .img-icon-wrapper span{
+    margin-left:20px;
+    color: #132730;
+    line-height: 27px;
+}
+.step4 .c-select{
+    color: #132730;
+    border-radius: 10px;
+    padding: 9px 12px;
+    border: 1px solid #6967FF;
+}
+.step4 .c-select, .step4 .c-select:hover, .step4 .c-select:active, .step4 .c-select:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* STEP 4 Third Page */
+.step4 .proof-height{
+    height:240px;
+}
+
+
+/* STEP 8 */
+.step8{
+    background-image: url('../images/Steps/step8-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.step8 .content {
+    text-align: center;
+    border: 10px solid #433C6D;
+    border-radius: 65px;
+    background-color: #fff;
+    padding: 30px;
+    height: 460px;
+    max-height: 550px;
+    background: url('../images/Steps/step8-img.png');
+    background-color: #fff;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.step8 .content p{
+    font-size: 18px;
+    line-height: 32px;
+}
+.step8 .c-para{
+    font-size: 36px;
+    line-height: 45px;
+}
+.step8 .range-input {
+    background:linear-gradient(to right, #333 100%, #ccc 100% );
+} 
+.step8 .range-bubble { 
+    right: -1.3%;
+} 
+
+
+/* STEP 9 */
+.step9{
+    background-color: #F33557; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #F33557, #F335C9);
+    min-height: 100vh;
+}
+.step9 .content {
+    text-align: start;
+    border-radius: 50px;
+    background-color: #fff;
+    /* padding: 30px; */
+    height: 540px;
+    max-height: 550px;
+}
+.step9 .content-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.step9 .proof-wrapper{
+    width: 410px;
+    text-align: center;
+    margin-top: 1rem;
+    border: 1px dashed #000;
+    border-radius: 20px;
+    padding: 35px 60px;
+    /* margin: auto; */
+    background-color: #fff;
+}
+.step9 .proof-wrapper img{
+    max-height: 132px;
+    max-width: 132px;
+}
+.step9 .img-wrapper {
+    text-align: end;
+    padding: 40px;
+}
+.step9 .img-wrapper img{
+    border-radius: 20px;
+}
+.step9 .range-input {
+    background:linear-gradient(to right, #333 75%, #ccc 75% );
+} 
+.step9 .range-bubble { 
+    right: 27%;
+} 
+.step9 .status-info{
+    height: 60px;
+    background-color: #6967FF;
+    border-radius: 50px 50px 0 0;
+    padding: 20px 30px 0 30px;
+    color: #fff;
+}
+.step9 .status-info p{
+    color: #fff;
+}
+
+
+/* Modal Popup */
+.popup .modal-content{
+    border-radius: 50px;;
+ }
+ .popup .modal-body{
+    padding: 30px 60px 20px 60px; 
+ }
+.popup .modal-body .popup-img{
+    width: 241px;
+    height: 175px;
+}
+.popup .modal-body .popup-label{
+    font-size: 16px;
+    font-weight: 500
+}
+.popup .modal-body h3{
+    font-size: 30px;
+}
+.popup .modal-footer .primary, .popup .modal-footer .secondary{
+    border: 1px solid #6967FF;
+    background-color: #6967FF;
+    color: #fff;
+    box-shadow: 0 10px 10px rgb(159 47 68 / 30%);
+    font-size: 15px;
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.popup .modal-footer .secondary{
+    border: 1px solid #F33558;
+    background-color: #F33558;
+}
+
+
+/* STEP 10 */
+.step10{
+    background-color: #221C44;
+    min-height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    overflow-x: hidden;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.step10:before{
+    content:"";
+    position:absolute;
+    right:0;
+    top:0;
+    width: 105%;
+    left: -3%;
+    height: 50vh;
+    border-radius: 0 0 50% 50%;
+    background-image: linear-gradient(#3B3999, #442C6B);
+    background-color: #442C6B; /* For browsers that do not support gradients */
+}
+.step10 .wrapper {
+    width:100%;
+    z-index: 1;
+    margin: 0;
+    min-height: inherit;
+}
+.step10 .range-input{
+    width: 55%;
+}
+.step10 .range-input {
+    background:linear-gradient(to right, #333 83%, #ccc 83% );
+} 
+.step10 .range-bubble { 
+    right: 29.5%;
+} 
+.step10 .d-icon{
+    border: 1px solid #FFC756;
+    background-color: #FFC756;
+    border-radius: 50%;
+    padding: 11px;
+    width: 52px;
+    height: 52px;
+}
+.step10 .d-icon img{
+    width: 30px;
+    height:30px;
+}
+/* Status and Timer CSS */
+.step10 .status-wrapper{
+    background-image: linear-gradient(to right, #5A37E8, #BD34C9);
+    background-color: #3D1CBF; /*For browsers that does not support gradient*/
+    /* border-radius: 20px; */
+    padding: 10px 30px;
+    z-index: 1;
+    position: relative;
+}
+.step10 .status{
+    /* float: left; */
+    color: #fff;
+    font-size: 20px;
+    font-weight:500;
+    padding: 5px 0;
+}
+.step10 .time-wrapper {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    /* float:right */
+}
+.step10 .time-wrapper .timer{
+    background-color: #47DA86;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;    
+    padding: 6px 20px;
+    border-radius: 80px;
+    margin-right: 8px;
+}
+/* Test Label Name Eg: "Special Reasoning Test4" */
+.step10 .test-lbl p{
+    padding:8px 0;
+}
+.step10 .test-lbl .dot{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid #59EF9A;
+    padding: 1px 5px;
+    margin-left:8px;
+}
+.step10 .test-lbl .dot:after{
+  content: '';
+  background: #59EF9A;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 1px;
+  display: inline-block;
+}
+/* Question Label Name Eg: "Q1: Simple Radio Button Question" */
+.step10 .question-lbl {
+    background-color: #FFD335;
+    padding: 8px 25px;
+    color: #000;
+    border-radius: 70px;
+    font-size:15px;
+    display: inline-block;
+    line-height: 21px;
+}
+/* Questions Type Sections CSS */
+.step10 .testDiv{
+    height: 72vh;
+    overflow-y: auto;
+}
+.step10 .testDiv .question, .step10 .testDiv .sub-question{
+    color: #fff;
+    font-weight: 500;
+    line-height: 23px;
+    font-size: 13px;
+}
+.step10 .testDiv .sub-question{
+    font-size: 13px;
+    font-weight: 400;
+}
+.step10 .testDiv .question-img{
+    width:440px;
+    height: 215px;
+}
+.step10 .testDiv .question-video{
+    max-width: 360px;
+    max-height:180px;
+}
+.step10 .testDiv .question-img-large{
+    width:750px;
+    height: 319px;
+}
+/* Answer Type Section CSS */
+.step10 .testDiv .answer-img-small{
+    width: 135px;
+    height: 100px;
+}
+.step10 .testDiv .answer-img-md{
+    width: 270px;
+    height: 140px;
+}
+.step10 .testDiv .answer-img-large{
+    width: 680px;
+    height: 280px;
+}
+/*Radio and CheckBox*/
+.step10 .testDiv .answer{
+    margin-bottom: 1rem;
+}
+.step10 .testDiv .td-answer{
+    margin-bottom: 0;
+}
+.step10 .testDiv .answer input.answer-options{
+    opacity: 0;
+    position:absolute;
+    width: 0
+}
+.step10 .testDiv .answer .answer-label{
+    color: #fff;
+    font-size: 15px;
+    padding: 8px;
+    display: block;    
+    cursor: pointer;
+    background-color: #38337c;
+    border: 2px solid #433C6D;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.step10 .testDiv .td-answer .answer-label{
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+}
+.step10 .testDiv .answer-50wd {
+    width:45%;
+    margin-right: 0.9rem;
+    display: inline-block;
+}
+.step10 .testDiv .answer-30wd {
+    width:30%;
+    margin-right: 1rem;
+    display: inline-block;
+}
+.step10 .testDiv .answer-label.sub-label{
+    font-size:12px;
+    padding: 8px 10px;
+    /* display: block; */
+    background-color: transparent;
+}
+/* .step10 .testDiv .image-answer{
+    margin-right: 1rem;
+}
+.step10 .testDiv .image-answer.sm{
+    width:20%;
+    display: inline-block;
+} */
+.step10 .testDiv .image-answer .answer-label{
+    font-size:12px;
+    padding: 15px 10px;
+    /* display: block; */
+    background-color: transparent;
+    /* border: 0; */
+    justify-content: center;
+}
+/*Radio*/
+.step10 .testDiv input[type="radio"]:checked + label, 
+.step10 .testDiv input[type="radio"]:focus + label{    
+    background-color: #6967FF;
+    border: 2px solid #C2ACFF;
+}
+.step10 .testDiv .td-answer input[type="radio"]:checked + label, 
+.step10 .testDiv .td-answer input[type="radio"]:focus + label{    
+    background-color: #6967FF;
+    border: 0;
+}
+.step10 .testDiv .image-answer input[type="radio"]:checked + label, 
+.step10 .testDiv .image-answer input[type="radio"]:focus + label{
+    background-color: #3533E5;
+    border: 2px solid #3533E5;
+}
+.step10 .testDiv .radio-with-text{
+    border: 1px solid #fff;
+    font-size: 15px;
+    border-radius: 50%;
+    margin-right: 8px;
+    height: 33px;
+    width: 33px;
+    text-align: center;
+    line-height: 31px;
+    font-weight: 500;
+    display: block;
+}
+.step10 .testDiv input[type="radio"]:checked + label .radio-with-text,
+.step10 .testDiv input[type="radio"]:focus + label .radio-with-text{
+    border: 1px solid #fff;
+    color: #000;
+    background-color: #fff;
+}
+.step10 .testDiv .radio-no-text{
+    border: 2px solid #6967FF;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: sub;
+}
+.step10 .testDiv .image-answer .radio-no-text{
+    height: 15px;
+    width: 15px;
+}
+.step10 .testDiv .image-answer .radio-no-text.lg{
+    height: 20px;
+    width: 20px;
+}
+.step10 .testDiv input[type="radio"]:checked + label .radio-no-text,
+.step10 .testDiv input[type="radio"]:focus + label .radio-no-text{
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+/* .step10 .testDiv .image-answer input[type="radio"]:checked + label .radio-no-text:after,
+.step10 .testDiv .image-answer input[type="radio"]:focus + label .radio-no-text:after{
+    content: '';
+    background: #1d1739;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 3px;
+    left:3px;
+    display: inline-block;
+} */
+/*Check Box*/
+.step10 .testDiv input[type="checkbox"]:checked + label{
+    background-color: #6967FF;
+    border: 2px solid #C2ACFF;
+}
+.step10 .testDiv .image-answer input[type="checkbox"]:checked + label{
+    background-color: #3533E5;
+    border: 2px solid #3533E5;
+}
+.step10 .testDiv .cb-with-text{
+    border: 1px solid #fff;
+    font-size: 15px;
+    margin-right: 8px;
+    border-radius: 6px;
+    height: 33px;
+    width: 33px;
+    text-align: center;
+    line-height: 31px;
+    font-weight: 500;
+    display: block;
+}
+.step10 .testDiv input[type="checkbox"]:checked + label .cb-with-text{
+    border: 1px solid #fff;
+    color: #000;
+    background-color: #fff;
+}
+.step10 .testDiv .cb-no-text{
+    border: 2px solid #6967FF;
+    background-color: transparent;
+    border-radius: 2px;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: sub;
+}
+.step10 .testDiv .image-answer .cb-no-text{
+    height: 15px;
+    width: 15px;
+}
+.step10 .testDiv .image-answer .cb-no-text.lg{
+    height: 20px;
+    width: 20px;
+}
+.step10 .testDiv input[type="checkbox"]:checked + label .cb-no-text{
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+/* Sub Question Section CSS */
+.step10 .testDiv .card{
+    border: 0;
+}
+.step10 .testDiv .card-header{
+    background-color: #3B2C74;
+    border-bottom: 2px solid #3B2C74;
+    font-size: 15px;
+    color:#fff;    
+    padding: 12px 16px;
+}
+.step10 .testDiv .card-body{
+    background-color: #221C44;
+    border: 1px solid #6967FF;
+    border-top: 0;
+}
+/* Right Panel - User Alert Section CSS */
+.step10 .tileCardSection .alert-border{    
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    margin: 0 auto;
+    background-color: #18C764;
+    height: 65px;
+}
+.step10 .tileCardSection .alert-border:before{
+    content: "";
+    height: 69%;
+    width: 99%;
+    position: absolute;
+    background: white;
+    border-radius: 50px;
+    transition: all 0.8s;
+    top: 60%;
+    content: "";
+    position: absolute;
+    left: 0.5%;
+    height: 55px;
+    background: #1d1739;
+}
+.step10 .tileCardSection .alert-container{
+    height: 75px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #342D5C;
+    width: 93%;
+    margin: 0 auto 0;
+    border-radius: 10px;
+    z-index: 1;
+    margin-top: -5px;
+}
+.step10 .tileCardSection .scroll-container{
+    height: 60px;
+    overflow-y: auto;
+}
+.step10 .tileCardSection .alert-container .dot{
+    height: 10px;
+    width: 10px;
+    border-radius:50%;
+    display: inline-block;
+    border: 1px solid #D11CCD;
+    background-color: #D11CCD;
+}
+/* Right Panel - No of question Section CSS */
+.step10 .tileCardSection .question-list{
+    border: double 1px transparent;
+    border-radius: 0 0 30px 30px;
+    background-image: linear-gradient(#1D1739, #1D1739), linear-gradient(#6956DF,#6B2086);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.step10 .tileCardSection li{
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0.5rem 0.35rem 0 0;
+    border: 1px solid #6967FF;
+    background-color: transparent;
+}
+.step10 .tileCardSection li.hold{
+    border: 1px solid #EA1DE2;
+    background-color: transparent;
+}
+.step10 .tileCardSection li.answered{
+    border: 1px solid #6967FF;
+    background-color: #6967FF;
+}
+.step10 .tileCardSection li.marked{
+    border: 1px solid #D11CCD;
+    background-color: #D11CCD;
+}
+.step10 .tileCardSection li.current{
+    border: 1px solid #514879;
+    background-color: #514879;
+}
+/* Right Panel - Legends Section CSS */
+.step10 .tileCardSection .legend{
+    color: #fff;
+    font-size: 11px;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+.step10 .tileCardSection .legend .hold{
+    height: 10px;
+    width: 10px;
+    border-radius:50%;
+    display: inline-block;
+    border: 1px solid #EA1DE2;
+    background-color: transparent;
+}
+.step10 .tileCardSection .legend .answered{
+    height: 10px;
+    width: 10px;
+    border-radius:50%;
+    display: inline-block;
+    border: 1px solid #6967FF;
+    background-color: #6967FF;
+}
+.step10 .tileCardSection .legend .unanswered{
+    height: 10px;
+    width: 10px;
+    border-radius:50%;
+    display: inline-block;
+    border: 1px solid #6967FF;
+    background-color: transparent;
+}
+.step10 .tileCardSection .legend .marked{
+    height: 10px;
+    width: 10px;
+    border-radius:50%;
+    display: inline-block;
+    border: 1px solid #D11CCD;
+    background-color: #D11CCD;
+}
+.step10 .tileCardSection .legend .current{
+    height: 10px;
+    width: 10px;
+    border-radius:50%;
+    display: inline-block;
+    border: 1px solid #514879;
+    background-color: #514879;
+}
+.step10 .tileCardSection .legend-wrapper{
+    background-color: #342D5C;
+}
+.step10 .action-btn, .step10 .next-btn{
+    width: 120px;
+}
+/* AppropriateAnswer */
+.step10 .testDiv .c-table{
+    border: 2px solid #433C6D;
+    color: #fff;
+    text-align: center;
+    table-layout: fixed;
+}
+.step10 .testDiv .c-table thead{
+    background-color: #3B2C74;
+}
+.step10 .testDiv .c-table.table-bordered>:not(caption)>*>* {
+    border-width: 2px 2px;
+}
+.step10 .testDiv .c-table .smiley-img{
+    width: 33px;
+    margin: 5px;
+}
+/* Fill in the blanks */
+.step10 .testDiv .blank{
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    min-width: 120px;
+    margin: 0 5px -12px 5px;
+    /* padding-top: 5px; */
+    min-height: 40px;
+    width: auto;
+    height: auto;
+}
+.step10 .testDiv .blank-question {
+    display: inline-block;
+    /* font-size: 15px; */
+    color: #fff;
+    font-weight: 500;
+    line-height: 40px;
+}
+.step10 .testDiv .ulList{
+    min-height: 50px;
+    padding: 20px 12px 15px 12px;
+    border-bottom: 3px solid #2e2852;
+}
+.step10 .testDiv .drop-answer {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.step10 .testDiv .drop-answer button {
+    min-width: 120px;
+    width: auto;
+}
+.step10 .testDiv ul .drop-answer {
+    margin-left: 10px;
+}
+.step10 .testDiv ul .drop-answer:first-child {
+    margin-left: 0px;
+}
+/* Match the sequence */
+.step10 .testDiv .m-table{
+    border: 2px solid transparent;
+    color: #fff;
+    text-align: center;
+    table-layout: fixed;
+}
+.step10 .testDiv .m-table tr{
+    vertical-align: middle;
+}
+.step10 .testDiv td .blank{
+    display: inline-block;
+    min-width: 50%;
+    margin: 0 5px 0 5px;
+    min-height: 60px;
+    width: auto;
+    height: auto;
+    padding-top: 8px;
+}
+
+
+
+
+/* Sample Will remove or incorporate based on feedback */
+/* .step10.sample .testDiv{
+    height: 78vh;
+    overflow-y: auto;
+} */
+
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    .wrapper{
+        width: 95%;
+    }
+    .step2 .wrapper{
+        width: 95%;
+    }
+    .step10 .container {
+        max-width:1000px
+    }
+    .step10 .tileCardSection .col-10 {
+        width:100%;
+    }
+    .step10 .wrapper {
+        width:100%;
+        z-index: 1;
+        margin: 0;
+        min-height: inherit;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    .wrapper{
+        width: 80%;
+    }
+    .step2 .wrapper{
+        width: 85%;
+    }
+    .step10 .wrapper {
+        width:100%;
+        z-index: 1;
+        margin: 0;
+        min-height: inherit;
+    }
+}
+
+  
+  
+

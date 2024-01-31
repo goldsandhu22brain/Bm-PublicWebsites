@@ -1,0 +1,84 @@
+﻿@using System
+@using System.Linq
+@model BM.Models.TestSystem.CorporatePinRequest
+@{
+
+}
+<div class="content-wrapper" style="min-height: 237px;margin-left:0px">
+	<div class="container">
+		<section class="content no-padd">
+			<div class="row">
+				<div class="col-md-12 no-padding">
+					<div class="col-md-12">
+						<div class="box mybox">
+							<div class="box-header">
+								<h3 class="box-title">Take a Test</h3>
+								<div class="pull-right">
+									<a href="#" class="btn btn-my" data-toggle="modal" data-target=".bs-example-modal-lg">What is a test pin?</a>
+								</div>
+							</div>
+							<div class="box-body table-responsive overlowVisible">
+								<div class="col-md-12 stepcontent stepone">
+									<div class="col-md-12">
+										<p>This test can only be run on a computer that meets the following requirements: </p>
+										<p>1. You must have to give this test in GOOGLE CHROME BROWSER</p>
+									</div>
+									<div class="col-md-12">
+
+										<label>Pin no.</label>
+										@using (Html.BeginForm("Index", "MyAssigned", FormMethod.Post))
+										{
+											@Html.HiddenFor(f => f.Recaptcha)										
+											@Html.TextBoxFor(f => f.IdAsString, new { @class = "form-control", @placeholder = "Please Enter your PIN number" })
+											<button class="btn btn-my" type="submit" style="margin-top: 10px;"><span>Verify Pin</span></button>
+											<br />
+											<p>@ViewBag.ErrorMessage</p>
+										}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+						<h4 class="modal-title" id="gridSystemModalLabel">What is a test pin?</h4>
+					</div>
+					<div class="modal-body">
+						<div>
+							<ul>
+								<li>Test pin is a 12 digit numeric code provided when Brainmeasures test is purchased.</li>
+								<li>Test pins are used by employers for testing their prospective/in-house employees. If you have a test pin issued by your employer then enter it in space provided to take your brainmeasures test.</li>
+								<li>Note: If you have a Brainmeasures test pin, you need not purchase the test.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-my" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://www.google.com/recaptcha/api.js?render=6Lc_RrMhAAAAALtqyBISlfcB0c-zlQNFIQS4oh4f"></script>
+<script type="text/javascript">
+	function getReCaptcha() {
+		grecaptcha.ready(function () {
+			grecaptcha.execute('6Lc_RrMhAAAAALtqyBISlfcB0c-zlQNFIQS4oh4f', { action: 'MyAssigned' }).then(function (token) {
+				$('#Recaptcha').val(token);
+			});
+		});
+	}
+	getReCaptcha();  // This is the initial call
+	setInterval(function () { getReCaptcha(); }, 10000);
+
+</script>
+

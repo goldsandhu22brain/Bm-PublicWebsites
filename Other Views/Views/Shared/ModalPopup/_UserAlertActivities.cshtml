@@ -1,0 +1,43 @@
+﻿@using BM.Models.TestSystem.Proctor
+@using BM.Shared.Extension;
+@model TestActivities
+@{
+    var data = Model.Activities;
+}
+<script src="https://mediacdn.brainmeasures.com/Plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="https://mediacdn.brainmeasures.com/Plugins/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="https://mediacdn.brainmeasures.com/Plugins/datatables/dataTables.responsive.min.js"></script>
+<script src="https://mediacdn.brainmeasures.com/Plugins/datatables/responsive.bootstrap4.min.js"></script>
+<script src="https://mediacdn.brainmeasures.com/AdminAssets/pages/jquery.datatable.init.js"></script>
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-body">
+            <table id="uaa-datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                <thead>
+                    <tr>
+                        <th>ActivityType</th>
+                        <th>OccurredOn</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (var i = 0; i < data.Count; i++)
+                    {
+                        var eachRow = data[i];
+                        <tr>
+                            <td>@eachRow.ActivityType.ToString()</td>
+                            <td>@eachRow.OccurredOn.ToString("dd/MMM/yyyy hh:mm:ss")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    setTimeout(() => {
+                        var CatTableData = $('#uaa-datatable').dataTable();
+                    }, 1000);                   
+                });
+            </script>
+        </div>
+    </div>
+</div>
+

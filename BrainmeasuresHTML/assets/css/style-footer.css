@@ -1,0 +1,104 @@
+/*--------------------------------------*/
+
+/* Footer
+/*------------------------------*-------*/
+footer{
+	padding: 60px 0 16px;
+	background: #0f0c14;
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+}
+footer .footer-logo{
+	height: 75px;
+	margin-bottom: 16px;
+}
+footer a{
+   color: rgba(255,255,244,0.8);
+   font-size: 13px;
+}
+footer a:hover{
+	color: #ffca00;
+}
+footer h5,
+footer h6{
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+footer .contact li a{
+	margin-right: 15px;
+}
+footer .contact h5{
+	color: #ffca00;
+	margin-bottom: 16px;
+}
+footer .contact h5 .telno{
+	font-size: 24px;
+    line-height: 32px;
+	color: #ffca00;
+}
+footer .contact h5 .telno:hover{
+	opacity: 0.9;
+}
+footer .contact h5 span{
+	font-size: 15px;
+}
+footer .forbes-img{
+	border-radius: 4px;
+}
+footer .imp-links li:not(:last-child){
+	margin-bottom: 10px;
+}
+footer .imp-links a{
+	font-weight: 300;
+}
+footer .footer-bottom{
+	text-align: center;
+	max-width: 726px;
+    margin: 48px auto 0;
+}
+footer p{
+	color: rgba(255,255,244,0.4);
+	margin-bottom: 16px;
+	font-size: 13px;
+	font-weight: 300;
+}
+/*--------------------------------------*/
+
+/* Responsive Footer
+/*------------------------------*-------*/
+@media screen and (max-width: 991px){
+	footer .social{
+		margin-bottom: 32px;
+	}
+	footer .footer-bottom ul li:not(:last-child){
+		margin-right: 30px;
+	}
+}
+@media screen and (max-width: 767px){
+	footer{
+		padding: 48px 0 0;
+	}
+	footer .wrap {
+		margin-bottom: 48px;
+	}
+	footer .footer-bottom{
+		margin-top: 0;
+	}
+	footer .footer-bottom ul{
+		justify-content: unset;
+		margin-top: 15px;
+	}
+	
+}
+@media (max-width: 575.98px) {
+	
+}
+@media (max-width: 440px){
+	footer h5{
+		font-size: 18px;
+		line-height: 18px;
+	}
+}
+/*--------------------------------------*/
+
+

@@ -1,0 +1,19 @@
+﻿@model BM.Models.TestSystem.Mcq
+@{
+
+}
+@Html.Partial("InterviewTest/_McqDisplayQuestionSection", @Model.QuestionTitleInRichText)
+@Html.Partial("InterviewTest/Components/_QuestionInRichText", @Model.QuestionInRichText)
+<div class="col-sm-12 mt-40 mb-40">
+	<div class="radio">
+		@foreach (var eachOption in Model.Option)
+		{
+			var id = "radio" + @eachOption.Id.ToString();
+			<label class="radio-dk">
+				@Html.Raw(@eachOption.Display)
+				<input type="radio" name="radio" id="@id" value="@eachOption.OptionNo" checked="@eachOption.IsChecked" data-option-id="@eachOption.Id.ToString()">
+				<span class="checkmark"></span>
+			</label>
+		}
+	</div>
+</div>

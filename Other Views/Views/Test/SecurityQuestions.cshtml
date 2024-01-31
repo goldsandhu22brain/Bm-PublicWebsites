@@ -1,0 +1,47 @@
+﻿@model BM.Models.UserProfile.SecurityQuestionList
+
+@{ Layout = null; //"~/Areas/User/Views/Shared/_Layout.cshtml";
+    var answer = string.Empty; }
+
+
+@{
+    <div class="col-md-12 no-padding">
+        <div class="col-md-12">
+            <div class="box mybox secubg">
+                <div class="box-body table-responsive overlowVisible">
+                    <div class="col-md-12 stepcontent stepone">
+						<div class="text-center">
+							<h1 style="font-size: 32px;"><span>Security</span> Questions</h1>
+							<p class="abcnote">To Complete the Registration Process, You have to give a Security Quiz of 3 Questions, these questions you will be asked at the Examination time for Security Purpose. </p>
+						</div>
+                        <hr>
+                        <div id="dvInputControls" class="proctor-form col-md-6 col-md-offset-3">
+                            @for (int i = 0; i < Model.ListOfQuestion.Count; i++)
+                            {
+                                var qns = Model.ListOfQuestion[i];
+                                <span class="spnInputControls">
+                                    <label class="qns" data-qid="@qns.Id">@qns.Question</label>
+                                    <input name="txtSecurityAns_@i" type="text" value="@answer" maxlength="50" id="txtSecurityAns_@i" TabIndex="2" class="authtxt txtanswer" placeholder="Your Answer">
+                                </span>
+                                <hr />
+                            }
+                        <div id="controls">
+                            <button class="step-next-5 btn-control btn-rounded" onclick="UpdateSecretQuestion()">Submit</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </div>
+    <script src="~/MvcScriptsAndStyles/js/Profile/Profile.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#dvContainerPage").removeClass('container');
+            $("#scHeaderSearch").hide();
+            $("#profilesidenav").hide();
+        });
+    </script>
+
+}

@@ -1,0 +1,50 @@
+﻿@{
+	var isCorporate = ViewBag.IsCorporateFlow != null ? (bool)ViewBag.IsCorporateFlow : false;
+	var displayMessage = "Please wait your test is getting evaluated and submitted for Report!!!";
+	if (isCorporate)
+	{
+		BM.Website.Helper.NextGenSessionManager.NextGenTempLoginForTest = false;
+		BM.Website.Helper.NextGenSessionManager.NextGenUserId = Guid.Empty;		
+		displayMessage = "Your results will be shared by the test assigned company. You can close the browser.";
+	}
+	bool isRedemptionValid = false;
+	if(ViewBag.RedemptionId != null && ViewBag.RedemptionId != Guid.Empty)
+	{
+		isRedemptionValid = true;
+	}
+
+}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="~/MvcScriptsAndStyles/css/Test/McqTest.css" rel="stylesheet" />
+
+<section class="test-main mt-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 test-wrapper">
+				<div class="thanks-message text-center" id="text-message">
+					<img src="https://i.imgur.com/O18mJ1K.png" width="100" class="mb-4">
+					<h3>Test Submited SuccessFully</h3>
+					<br />
+					<h3>Thanks for your participation!!! </h3>
+					<br />
+					<h3>@displayMessage</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script>
+	$(".test-right").empty();
+</script>
+
+@if (isRedemptionValid && !isCorporate)
+{
+	<script>
+         function callRedirect(id) {
+        window.location.href = '@ViewBag.PublicWebsiteDomain' + "/User/Individual/Report?TranscriptId=" + id;
+						}
+                var id = '@ViewBag.RedemptionId';
+      window.setTimeout(callRedirect, 3000, id);
+	</script>
+}

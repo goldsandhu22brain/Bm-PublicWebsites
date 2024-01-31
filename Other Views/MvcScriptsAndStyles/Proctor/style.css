@@ -1,0 +1,125 @@
+.candidate-conference .video-section-border {
+	border: 0 !important;
+}
+.candidate-conference .test-right {
+	top: 320px;
+}
+
+.candidate-conference1 #controls {
+	left: 20%;
+}
+.candidate-conference .test-header-react {
+	padding: 10px !important;
+}
+.candidate-conference .icon {
+	position: fixed;
+	top: 60px;
+}
+	.candidate-conference .icon.icon-chat {
+		top: unset;
+		bottom: 10px;
+	}
+.candidate-conference .sidebar {
+	top: 60px;
+	padding: 0;
+}
+.candidate-conference .peer-video-tile,
+.candidate-conference .shape-circle,
+.candidate-conference .peer-video {
+	border-radius: 0;
+	margin-bottom: 0;
+}
+.candidate-conference .shape-circle {
+	aspect-ratio: 1/1;
+	height: 250px;
+	width: 100%;
+}
+.candidate-conference .sidebar.chat-box {
+	top: unset;
+	bottom: 0;
+	padding: 8px;
+}
+.candidate-conference .btn-close {
+	position: absolute;
+	left: 10px;
+	width: 6px;
+	height: 6px;
+}
+
+.candidate-conference .messages {
+	height: 250px;
+	max-height: 250px;
+}
+.candidate-conference .peer-name {
+	display: none;
+}
+
+.candidate-conference .peer-network {
+	position: absolute;
+	top: 0;
+	padding-left: 3px;
+}
+
+.candidate-conference .connection-network {
+	background-color: transparent;
+}
+
+#controls .btn-control {
+	display: inline-block;
+	background: #f30446;
+	color: #fff;
+	font-weight: 500;
+	padding: 10px 10px;
+	margin: 5px;
+	border-radius: 0px 100px 100px 0px;
+	width: 158px;
+	text-align: center;
+	transition: 0.4s;
+	border: 0;
+}
+
+#controls .btn-left-rounded {
+	border-radius: 100px 0px 0px 100px;
+}
+
+#controls .btn-control:hover,
+#controls .btn-no-rounded {
+	border-radius: 0px;
+}
+
+.test-right {
+	top: 320px;
+}
+
+.all-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*Admin*/
+.admin-conference .btn-close {
+	position: absolute;
+	left: 10px;
+	width: 12px;
+	height: 12px;
+	border: 0;
+}
+.admin-conference header {
+	background: #3f51b5 !important;
+}
+.admin-conference .screen-share-status {
+	background: #3f51b5 !important;
+	padding-bottom: 10px;
+}
+.admin-conference .peer-network {
+	right: 5px;
+}
+.admin-conference .shape-circle {
+	height: 500px;
+}
+.admin-conference .video-box {
+	width: 500px;
+}
+
+/*# sourceMappingURL=/style.13b0a558.css.map */

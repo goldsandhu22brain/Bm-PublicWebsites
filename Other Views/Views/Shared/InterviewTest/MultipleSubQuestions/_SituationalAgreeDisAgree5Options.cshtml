@@ -1,0 +1,101 @@
+﻿@using BM.Shared.Helper
+@using BM.Website.Helper.Helper
+@using ProctorPlatform.Helpers
+@model BM.Models.TestSystem.Mcq
+@using System
+@{
+    int cnt = 1;
+    int i = 0;
+    List<string> imageUrls = new List<string>();
+}
+<style>
+    [type=radio] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+        [type=radio] + img {
+            width: 35px;
+            margin-bottom: 10px;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+
+            [type=radio] + img:hover {
+                transform: scale(1.1);
+                transition: 0.4s;
+            }
+        /* CHECKED STYLES */
+        [type=radio]:checked + img {
+            cursor: pointer;
+            transform: scale(1.2);
+            background: #ffd93b;
+            padding: 5px;
+            border-radius: 4px;
+        }
+</style>
+@Html.Partial("InterviewTest/_McqDisplayQuestionSection", @Model.QuestionTitleInRichText)
+@Html.Partial("InterviewTest/Components/_QuestionInRichText", @Model.QuestionInRichText)
+<br />
+<div class="col-sm-12 mt-40 mb-40">
+    <table class="table table-bordered question-group-table">
+        <thead>
+            <tr>
+                <th colspan="2">Question</th>
+                @foreach (var option in Model.Option.Take(5))
+                {
+                    <th>@Html.Raw(@option.Display)</th>
+                    switch (option.Display.ToLower())
+                    {
+                        case "agree strongly":
+                            imageUrls.Add(Helper.GetCdnUrl("/Psychometric/TestImage/5-agree.png"));
+                            break;
+                        case "agree":
+                            imageUrls.Add(Helper.GetCdnUrl("/Psychometric/TestImage/4-slightly-agree.png"));
+                            break;
+                        case "do not agree or disagree":
+                            imageUrls.Add(Helper.GetCdnUrl("/Psychometric/TestImage/3-neutral.png"));
+                            break;
+                        case "disagree":
+                            imageUrls.Add(Helper.GetCdnUrl("/Psychometric/TestImage/2-slightly-disagree.png"));
+                            break;
+                        case "disagree strongly":
+                            imageUrls.Add(Helper.GetCdnUrl("/Psychometric/TestImage/1-disagree.png"));
+                            break;
+                    }
+                }
+            </tr>
+        </thead>
+        @foreach (var subQuestion in Model.MultiQuestion)
+        {
+            <tr>
+                <td colspan="2">
+                    <p class="font-500 mb-0">@cnt.  @subQuestion.QuestionTitleInRichText</p>
+                </td>
+                @foreach (var subQuestionOption in Model.Option.Take(5))
+                {
+                    var id = "subQuestionRadio" + subQuestionOption.Id.ToString();
+                    var name = "radio" + cnt;
+                    var isChecked = false;
+                    if (subQuestion.UserAnswers != null && subQuestion.UserAnswers.Count > 0 && subQuestion.UserAnswers[0] != null)
+                    {
+                        isChecked = subQuestion.UserAnswers[0].Id == subQuestionOption.Id;
+                    }
+                    <td>
+						<label class="radio-dk">
+							<input type="radio" name="@name" id="@id" value="@subQuestionOption.OptionNo" data-option-id="@subQuestionOption.Id.ToString()" data-subquestion-id="@subQuestion.Id.ToString()" checked="@isChecked">						
+							<img onerror="this.src='https://cdn.brainmeasures.com/Interview/OptionImageNotFound.jpg';" src="@imageUrls.ElementAt(i)" /><br>
+
+						</label>
+                    </td>
+                    i = i + 1;
+                }
+            </tr>
+            cnt = cnt + 1;//INcremental to show question No in the Table
+            i = 0;
+        }
+
+    </table>
+</div>

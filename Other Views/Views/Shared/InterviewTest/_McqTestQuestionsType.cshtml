@@ -1,0 +1,73 @@
+﻿@model BM.Models.TestSystem.Mcq
+@using BM.Models.Enum
+@{
+	var defaultQuestion = Model;
+	bool isMultiQuestionMode = false;
+	if (defaultQuestion.MultiQuestion != null && defaultQuestion.MultiQuestion.Any())
+	{
+		isMultiQuestionMode = true;
+	}
+}
+@switch (defaultQuestion.QuestionType)
+{
+	//TODO: We need to pass currentQuestionAnswered as Tuple Object and make sure they are default selected for user
+	//Have Logic to do only when user is allowed go back or if review enabled
+	case QuestionType.RadioButton:
+		@Html.Partial("InterviewTest/SingleQuestions/_McqSingleRadioOption", defaultQuestion)
+		break;
+	case QuestionType.ImageRadioButtonWithImageOnlyQuestion:
+		@Html.Partial("InterviewTest/SingleQuestions/_ImageRadioWithImageOption", defaultQuestion)
+		break;
+	case QuestionType.RadioButtonWithImageOnlyQuestion:
+		@Html.Partial("InterviewTest/SingleQuestions/_McqRadioWithSingleImageOption", defaultQuestion)
+		break;
+	case QuestionType.CheckBox:
+		@Html.Partial("InterviewTest/SingleQuestions/_McqMultiCheckOption", defaultQuestion)
+		break;
+	case QuestionType.ImageCheckBox:
+		@Html.Partial("InterviewTest/SingleQuestions/_McqMultiImageOption", defaultQuestion)
+		break;
+	case QuestionType.Ordering:
+		@Html.Partial("InterviewTest/SingleQuestions/_McqOrderingOption", defaultQuestion)
+		break;
+	case QuestionType.FillInTheBlanks:
+		@Html.Partial("InterviewTest/SingleQuestions/_McqFillingTheBlanksOption", defaultQuestion)
+		break;
+
+	case QuestionType.SituationalMostLeast:
+		if (isMultiQuestionMode)
+		{
+			@Html.Partial("InterviewTest/MultipleSubQuestions/_SituationalMostLeast", defaultQuestion)
+		}
+		else
+		{
+			@Html.Partial("InterviewTest/SingleQuestions/_McqSituational", defaultQuestion)
+		}
+		break;
+	case QuestionType.SituationalAgreeDisAgree5Options:
+		if (isMultiQuestionMode)
+		{
+			@Html.Partial("InterviewTest/MultipleSubQuestions/_SituationalAgreeDisAgree5Options", defaultQuestion)
+		}
+		else
+		{
+			@Html.Partial("InterviewTest/SingleQuestions/_McqSituational", defaultQuestion)
+
+		}
+		break;
+
+	case QuestionType.SituationalTrueFalseCannotTell:
+		if (isMultiQuestionMode)
+		{
+			@Html.Partial("InterviewTest/MultipleSubQuestions/_SituationalTrueFalseCannotTell", defaultQuestion)
+		}
+		else
+		{
+			@Html.Partial("InterviewTest/SingleQuestions/_McqSituational", defaultQuestion)
+		}
+		break;
+
+	case QuestionType.MultipleQuestion:
+		@Html.Partial("InterviewTest/_McqMultipleSubQuestionType", defaultQuestion)
+		break;
+}

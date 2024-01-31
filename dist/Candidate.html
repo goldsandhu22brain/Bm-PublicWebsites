@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quickstart JS</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/common.c99a88be.css">
+    <link rel="stylesheet" href="/style.a17c4a60.css">
+    <meta charset="UTF-8">
+    <script src="https://cdn.WebRTC-Experiment.com/DetectRTC.js"></script>
+    <script src="https://cdn.webrtc-experiment.com/screenshot.js"></script>
+    <script src="https://cdn.webrtc-experiment.com/gumadapter.js"></script>
+</head>
+
+<body class="candidate-page">
+    <header class="">
+
+        <div class="screen-share-status test-header-react mb-0 p-0">
+            <div class="col-sm-4">
+                <h4>Brainmeasures Test Platform</h4>
+            </div>
+            <div class="col-sm-5 text-right">
+                <h5 class="screen-share-status-text"></h5>
+            </div>
+        </div>
+
+        <button id="leave-btn" class="btn-danger d-none">Leave Room</button>
+        <span class="recording-icon hide"><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.992 20.59c4.706 0 8.591-3.885 8.591-8.583s-3.893-8.583-8.6-8.583c-4.698 0-8.574 3.885-8.574 8.583s3.884 8.583 8.583 8.583Zm0-1.71a6.84 6.84 0 0 1-6.857-6.873 6.832 6.832 0 0 1 6.848-6.865 6.86 6.86 0 0 1 6.882 6.865 6.85 6.85 0 0 1-6.873 6.873ZM12 15.26A3.25 3.25 0 0 0 15.254 12 3.254 3.254 0 0 0 12 8.745a3.256 3.256 0 0 0-3.262 3.254A3.252 3.252 0 0 0 12 15.26Z" fill="#F00"></path></svg></span>
+    </header>
+    <ul class="nav nav-pills mb-3 d-none" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-browser-check-tab" data-bs-toggle="pill" data-bs-target="#pills-browser-check" type="button" role="tab" aria-controls="pills-browser-check" aria-selected="true">Browser Check</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-technical-config-tab" data-bs-toggle="pill" data-bs-target="#pills-technical-config" type="button" role="tab" aria-controls="pills-technical-config" aria-selected="false">Technical Configuration</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-system-check-tab" data-bs-toggle="pill" data-bs-target="#pills-system-check" type="button" role="tab" aria-controls="pills-system-check" aria-selected="false">System Check</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-screenshare-tab" data-bs-toggle="pill" data-bs-target="#pills-screenshare" type="button" role="tab" aria-controls="pills-screenshare" aria-selected="false">Screen Share</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-authentication-tab" data-bs-toggle="pill" data-bs-target="#pills-authentication" type="button" role="tab" aria-controls="pills-authentication" aria-selected="false">Candidate Authentication</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-security-questions-tab" data-bs-toggle="pill" data-bs-target="#pills-security-questions" type="button" role="tab" aria-controls="pills-security-questions" aria-selected="false">Security Questions</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-load-test-tab" data-bs-toggle="pill" data-bs-target="#pills-load-test" type="button" role="tab" aria-controls="pills-load-test" aria-selected="false">Load Test</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <!--Step 1 Start Browser Check-->
+        <div class="tab-pane show active" id="pills-browser-check" role="tabpanel" aria-labelledby="pills-browser-check-tab">
+            <div class="box-body table-responsive overlowVisible">
+                <div class="col-md-12 stepcontent stepone text-center">
+                    <h1>You Must have to give this test in <span>Google Chrome</span> Browser</h1>
+                    <p>The very first step is to use Google chrome browser to give Brainmeasures Test, Other browsers like Mozilla, safari, etc do not supports with our Proctor system, So you must have to use Chrome browser. If you are not having chrome then you can download it from given below Link.</p>
+                    <div class="text-center">
+                        <img src="/chrome.23928897.png">
+                        <div>
+                            <a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank" class="stepbtn">Download Google Chrome</a>
+                        </div>
+                        <div id="controls">
+                            <button class="step-next-1 btn-control btn-rounded" onclick="javascript:change_tab('technical-config')">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Step 1 End-->
+        <!--Step 2 Start Technical Configuration-->
+        <div class="tab-pane" id="pills-technical-config" role="tabpanel" aria-labelledby="pills-technical-config-tab">
+            <div class="box-body table-responsive overlowVisible">
+                <div class="col-md-12 stepcontent stepone">
+                    <div class="text-center">
+                        <h3>Your system must have fullfil this Technical Requirements for Proctor testing</h3>
+                        <p>Given below the Minimum and recommended Technical Requirements for Proctor Testing, Please check twice before go ahead.</p>
+                    </div>
+                    <hr style="display:none;">
+                    <table class="table table-bordered table-responsive steptble">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th>MINIMUM</th>
+                                <th>RECOMMENDED</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="/webcam.ead4c797.png">
+                                </td>
+                                <td>Web Camera</td>
+                                <td>640x480 resolution</td>
+                                <td>1280x720 resolution</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/windows.f1952f50.png">
+                                </td>
+                                <td>Windows Users</td>
+                                <td>Windows Vista</td>
+                                <td>Windows 8</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/mac.9ea4cd73.png">
+                                </td>
+                                <td>Mac Users</td>
+                                <td>Version 10.5: "Leopard"</td>
+                                <td>Version 10.8: "Mountain Lion"</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/download.87a5cdca.png">
+                                </td>
+                                <td>Internet Download Speed</td>
+                                <td>.768 Mbps</td>
+                                <td>1.5 Mbps</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/upload.135ef3b5.png">
+                                </td>
+                                <td>Internet Upload Speed</td>
+                                <td>.384 Mbps</td>
+                                <td>1 Mbps</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/ram.8dd066fe.png">
+                                </td>
+                                <td>RAM</td>
+                                <td>1024 MB</td>
+                                <td>2 GB</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/port.f1f193a6.png">
+                                </td>
+                                <td>Port</td>
+                                <td>1935, UDP/TCP</td>
+                                <td>1935, UDP/TCP</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/microphone.5616df40.png">
+                                </td>
+                                <td>Microphone</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="stepnote"><span>NOTE:</span> At this time we do not support the Google Chromebook, Andorid Tablets, iPad, Linux OS, Microsoft Surface, etc. however, we are working on solutions to accommodate every platform.</p>
+                </div>
+            </div>
+            <div id="controls" class="text-center">
+                <input type="submit" id="load-system-check" data-loading-text="Loading..." class="step-next-2 btn-control btn-rounded" value="Next">
+            </div>
+        </div>
+        <!--Step 2 End-->
+        <!--Step 3 Start System Check-->
+        <div class="tab-pane" id="pills-system-check" role="tabpanel" aria-labelledby="pills-system-check-tab">
+
+        </div>
+        <!--Step 3 End System Check-->
+        <!--Step 4 Start ScreenShare-->
+        <div class="tab-pane" id="pills-screenshare" role="tabpanel" aria-labelledby="pills-screenshare-tab">
+            <div class="col-md-12 stepcontent stepone text-center">
+                <h2 style="font-weight: bold; text-transform: uppercase; font-size: 30px">
+                    <span style="color:#777; font-weight:normal">In order to move ahead,</span><br>
+                    you must have to share your screen via Brainmeasures's Screen Sharing Extension,<br>
+                    <span style="color: #25e300; font-size: 22px;">Click the below button to Process ahead.</span>
+                </h2>
+
+                <p></p>
+                <div class="">
+                    <img src="/sharescreen.e6abb288.jpg" style="max-width: 100%; border-radius: 15px; box-shadow: 4px 4px 4px #c1c1c1">
+                </div>
+            </div>
+            <div id="controls" class="text-center">
+                <input type="submit" id="screen-share" data-loading-text="Loading..." class="btn-control btn-share-screen btn-rounded btn-loading" value="SHARE YOUR SCREEN">
+                <button class="step-next-4 btn-control btn-rounded hide" onclick="javascript:change_tab('authentication')">Next</button>
+            </div>
+        </div>
+        <!--Step 4 End ScreenShare-->
+        <!--Step 5 Start Candidate Authentication-->
+        <div class="tab-pane" id="pills-authentication" role="tabpanel" aria-labelledby="pills-authentication-tab">
+
+            <div class="col-md-12 stepcontent stepone">
+                <div class="text-center">
+                    <h2><span>Candidate</span> Authentication</h2>
+
+                    <!--<div>
+                        <img id="imgProfile" src="../UserImages/Indv/Images/1299.jpg" style="width:220px;">
+                    </div>-->
+                    <h4 style="color: #707070">
+                        Hello! <b><span id="lblUserName">jasdeep</span></b>. We wish you All the very Best, you are about to give the Brainmeasures' Test.<br>
+                        In order to go ahead please insert your registered Email Id and Mobile Number in given below fields. In the Next step you will be asked the Security questions which you have answered at Sign Up Time. and yes also make ready your Identity Card and Qualification Certificate, These will be needed when the Proctor Screening will get started. Thanks !
+                    </h4>
+                </div>
+                <hr>
+                <div class="col-md-12">
+                    <div class="proctor-form requires-validation" novalidate="">
+                        <div class="mb-3">
+                            <input name="ctl00$cntCartMaster$txtEmail" type="email" id="txtEmail" class="authtxt" placeholder="Registered Email" required="">
+                            <div class="valid-feedback">Email field is valid!</div>
+                            <div class="invalid-feedback">Email field cannot be blank!</div>
+                        </div>
+                        <div class="mb-3">
+                            <input name="ctl00$cntCartMaster$txtMobile" type="number" id="txtMobile" class="authtxt" placeholder="Mobile Number" required="">
+                            <div class="valid-feedback">Mobile Number is valid!</div>
+                            <div class="invalid-feedback">Mobile Number cannot be blank!</div>
+                        </div>
+                        <div id="controls">
+                            <input type="submit" id="authenticateSubmit" data-loading-text="Loading..." class="step-next-5 btn-rounded btn-control" value="Submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Step 5 End Candidate Authentication-->
+        <!--Step 6 Start Security Question-->
+        <div class="tab-pane" id="pills-security-questions" role="tabpanel" aria-labelledby="pills-security-questions-tab">
+
+        </div>
+        <!--Step 6 End Security Question-->
+        <!--Step 7 Start Load Test-->
+        <div class="tab-pane" id="pills-load-test" role="tabpanel" aria-labelledby="pills-load-test-tab">
+
+            <section class="conference candidate-conference hide">
+                <button class="icon" id="openvideo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"></path></svg>
+                </button>
+                <button class="icon icon-chat" id="openchat">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16"><path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"></path></svg>
+                    <span class="badge msg-badge"></span>
+                </button>
+
+                <div class="container-fluid">
+                    <div class="screen-share-container video-section-border">
+
+                        <div id="InjectTest"> </div>
+                    </div>
+                    <div class="timer"></div>
+                    <div id="controls" class="presenter-controller text-center">
+                        <button id="mute-aud" class="btn-control btn-mute-audio btn-left-rounded hide">Mute</button>
+                        <button id="mute-vid" class="btn-control btn-hide-video hide">Hide</button>
+                        <!--<button id="screen-share" class="btn-control btn-share-screen btn-left-rounded hide">ScreenShare</button>-->
+                        <input type="submit" id="load-test" data-loading-text="Loading..." class="btn-control btn-start-test btn-left-rounded" value="Start Quiz">
+                        <button id="proof-test" class="btn-control btn-start-test btn-left-rounded hide" onclick="NewProofUpload()">Upload Proof</button>
+                        <button id="full-screen" class="btn-control btn-full-screen hide">Full Screen</button>
+                    </div>
+
+                    <div class="sidebar video-box" id="video" style="visibility: inherit;">
+                        <button id="closevideo" class="btn-close d-none"></button>
+                        <div class="peers-container"></div>
+                    </div>
+
+                    <div class="sidebar chat-box" id="chat">
+
+                        <div class="open-chat-message">
+                            <div class="all-center"> <button id="closechat" class="btn-close"></button><h5 class="mb-0">Messages</h5></div>
+                            <div id="messages" class="messages"></div>
+                            <input id="msgInput" placeholder="Type your message...">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+        </div>
+        <!--Step 7 End Load Test-->
+        <div id="toastMessage"></div>
+    </div>
+
+    <script>var GlobalObj = {
+  IsProctorLive: true,
+  ActivityCallBack: function ActivityCallBack() {}
+};
+function UpdateGlobalVariable(scopeData) {
+  GlobalObj = scopeData;
+  GlobalObj.IsProctorLive = scopeData.TestType == "20";
+  $("#lblUserName").html(GlobalObj.FullName);
+}</script>
+    <script>function change_tab(tab_id) {
+  $(".nav-link").attr("class", "nav-link"); //clear classes
+  $(".tab-pane").attr("class", "tab-pane"); //clear classes
+
+  var tab_content = "#pills-" + tab_id;
+  var tab = "#pills-" + tab_id + "-tab";
+  $(tab).attr("class", "nav-link active show");
+  $(tab_content).attr("class", " tab-pane show active");
+}</script>
+    <!-- JS -->
+    <script src="/candidate.45b10ec3.js"></script>
+
+    <div class="modal" id="candidate-myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="color:green;"><span class="glyphicon glyphicon-lock"></span>Upload Proof</h4>
+                    <button type="button" class="close" data-dismiss="modal" onclick="javascript: { $('#candidate-myModal').hide(); }">&times;</button>
+                </div>
+                <div class="modal-body" id="Inject-UAA">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
