@@ -3,7 +3,6 @@ MENU RESPONSIVE
 ========================================== */
 $(function () {
     const header = $('header').outerHeight();
-    console.log(header);
     const burgerMenu = document.getElementById("burger");
     const navbarMenu = document.getElementById("menu-nav");
 
@@ -72,3 +71,4 @@ function ValidateTranscript() {
 		window.location.href = "Transcript.aspx?transcriptid=" + $('#txtTranscriptNoNew').val();
 	}
 }
+
