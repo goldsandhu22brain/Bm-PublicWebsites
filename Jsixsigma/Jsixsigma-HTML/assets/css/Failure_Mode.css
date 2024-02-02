@@ -1,0 +1,2982 @@
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit";
+  overflow-x: hidden;
+  font-size: 1.4rem;
+  background-color: #f9f6ff;
+  color: black;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+.contaiorX {
+  padding: 100px;
+}
+
+
+/* Measurement Systems Evaluation Section css */
+.Measurementsection {
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  gap: 140px;
+  background: radial-gradient(54.98% 59.38% at 50% 5.85%,
+      #f94f42 0%,
+      #b92419 100%);
+  margin-top: 70px;
+  height: max-content;
+}
+
+
+.measurementsystem {
+  max-width: 822px;
+  padding-left: 120px;
+}
+
+.measurementsystem h1 {
+  font-size: 60px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 25px;
+  line-height: 70px;
+}
+
+.measurementsystem p {
+  color: #fff;
+}
+
+.bannerlady {
+  max-width: 885px;
+  margin: 27px 0 -117px 0;
+}
+
+.bannerlady img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* end */
+
+/* Objectives section */
+
+.Objectives_section {
+  background-color: #f4f0ff;
+  padding: 100px;
+  display: grid;
+}
+
+.FMEA_h2 {
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 30px;
+  line-height: 60px;
+}
+
+.Objectives_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+}
+
+.sub_Objectives_div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.sub_Objectives_img {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.sub_Objectives_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sub_Objectives_div h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-right: 50%;
+}
+
+.sub_Objectives_div p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-right: 90px;
+}
+
+/* Components section css */
+.Components_section {
+  background-color: #2f136a;
+}
+
+.Components_h2,
+.Applications_h2 {
+  color: #fff !important;
+  padding: 0 20%;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+
+.underline_div {
+  border-bottom: 5px solid #6967ff;
+  width: 100px;
+}
+
+
+
+.sub_Components_section,
+.sub_Components_section-2 {
+  display: grid;
+  grid-template-columns: auto 40%;
+  gap: 100px;
+  padding: 50px 0;
+  min-height: 200px;
+  /* max-height: 370px; */
+  margin-top: 40px;
+  align-items: center;
+}
+
+
+.sub_Components_section-2 {
+  grid-template-columns: 40% auto;
+}
+
+.Components_order_0 {
+  order: 0;
+}
+
+.Components_order_1 {
+  order: 1;
+  width: 100%;
+}
+
+.Components_order_1 img {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.Components_image {
+  width: 100%;
+}
+
+.Components_image img {
+  width: 80%;
+}
+
+.Components_div h3 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff !important;
+  padding-bottom: 20px;
+}
+
+.Components_div p {
+  font-size: 20px;
+  font-weight: 400;
+  padding-right: 20%;
+  color: #fff !important;
+}
+
+/* end */
+
+/* Content04 start */
+.content04_div {
+  background: #ffd65C;
+}
+
+.content04_div_1_img {
+  height: 150px;
+  width: 100%;
+  position: relative;
+}
+
+.content04_div_1_img img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+
+.content04_h2 {
+  /* padding-right: 20%; */
+  font-weight: 600;
+}
+
+.content04_div_1_image {
+  min-height: 200px;
+}
+
+.content04_div_1_img img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: -90px;
+  right: 115px;
+}
+
+.content04_div_2 {
+  border-radius: 40px;
+  background: #fff;
+  padding: 40px;
+  margin-top: -6px;
+}
+
+.Effect_Analysis_div {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.Effect_Analysis_div_1 {
+  min-height: 220px;
+  padding: 60px;
+  border-radius: 30px;
+  background: #ff9b7b;
+}
+
+.Effect_Analysis_div_1 h4 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.Effect_Analysis_div_1 p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.Effect_Analysis_div_2 {
+  background: #12db7b;
+}
+
+.Effect_Analysis_div_3 {
+  background: #c2acff;
+}
+
+.content04_div_1_text {
+  order: 0;
+}
+
+.content04_div_1_image {
+  order: 1;
+}
+
+/* end */
+
+/* Implementation section - start */
+
+.Implementation_div,
+.Implementation_div_1 {
+  margin-top: 40px;
+  background: #15e5b3;
+  border-radius: 20px;
+  padding: 50px;
+  max-height: 335px;
+}
+
+.sub_Implementation_div {
+  grid-template-columns: auto 40%;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}
+
+.Forming_div h4,
+.FMEA_div h4,
+.Applications_text h3 {
+  color: #000;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-bottom: 25px;
+}
+
+.Forming_div p,
+.FMEA_div p {
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.Forming_div_img {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Forming_div_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Implementation_div_1 {
+  background: #df4b2d;
+  max-height: 100%;
+}
+
+.FMEA_div h4,
+.FMEA_div p {
+  color: #fff;
+}
+
+.FMEA_div p {
+  padding-bottom: 25px;
+}
+
+.right_img {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* end */
+
+/* Effect_section */
+
+.Effect_section {
+  background: #1d1c41;
+}
+
+.Effect_top_div {
+  max-height: 300px;
+  margin-bottom: 30px;
+}
+
+.effect_top_text {
+  width: 50%;
+}
+
+.effect_top_img img {
+  object-fit: cover;
+}
+
+.Effect_h4 {
+  text-align: start;
+  color: #fff;
+  max-width: 100%;
+}
+
+.Effect_bottem_div {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  margin-top: 140px;
+}
+
+.sub_Effect_bottem_div {
+  padding: 50px 35px 70px 70px;
+  border-radius: 50px;
+  background: linear-gradient(138deg,
+      #9d4e69 17.88%,
+      rgba(79, 67, 222, 0) 68.36%);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 2;
+}
+
+.sub_Effect_bottem_div_1 {
+  background: linear-gradient(148deg,
+      #255c70 16.21%,
+      rgba(57, 67, 157, 0.45) 43.39%,
+      rgba(79, 67, 222, 0) 76.11%);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.Effect_left_div {
+  position: relative;
+}
+
+.Effect_div {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+}
+
+.Effect_span {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: -58px;
+  left: 69px;
+  background: rgba(105, 103, 255, 0.1);
+  z-index: 1;
+}
+
+.Effect_text {
+  width: 80%;
+  height: 80%;
+  background: #f990b4;
+  border-radius: 50%;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+  z-index: 3;
+  position: relative;
+  top: -42px;
+  left: 81px;
+}
+
+.Effect_text_1 {
+  background: #33f2c4;
+}
+
+.Effect_text span,
+.sub_Effect_bottem_div h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.sub_Effect_bottem_div h4 {
+  color: #fff;
+  font-weight: 700;
+  line-height: 40px;
+  padding-top: 10px;
+}
+
+.sub_Effect_bottem_div p {
+  color: #fff;
+
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.Challenges_section {
+  background-color: #fff !important;
+}
+
+.sub_Challenges_div {}
+
+.Challenges_h3 {
+  padding-right: 0% !important;
+  text-align: center;
+}
+
+.Challenges_p {
+  padding-right: 0px !important;
+  text-align: center;
+}
+
+/* Applications  */
+.Applications_section {
+  background-color: #FFFFFF;
+}
+
+.sub_Applications_div {
+  border-radius: 100px;
+  background: #F64082;
+  padding: 70px;
+  position: relative;
+  min-height: 380px;
+}
+
+
+.Applications_text_h2 {
+  width: 75%;
+}
+
+.Applications_h2 {
+  padding: 0;
+  max-width: 70%;
+  text-align: left;
+}
+
+.Applications_img {
+  position: relative;
+}
+
+.Applications_img img {
+  position: absolute;
+  width: 450px;
+  height: 460px;
+  top: -242px;
+  right: -363px;
+}
+
+/* .Applications_div_2,
+.Applications_div_3 {
+  max-height: 400px;
+  height: 380px;
+} */
+
+.Applications_text h3,
+.Applications_text p {
+  color: #000 !important;
+}
+
+.Applications_image_2 img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Applications_div_2 {
+  grid-template-columns: 30% auto;
+}
+
+.Applications_div_3 {
+  grid-template-columns: auto 30%;
+}
+
+/* Examples section */
+.Examples_section {
+  background-color: #FFDE05;
+  justify-items: center;
+}
+
+.Examples_div {
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 90px;
+  gap: 50px;
+}
+
+.Examples_right_div {
+  background-color: #7C23A6;
+  border-radius: 30px;
+}
+
+.Examples_right_div_1 {
+  padding: 60px 60px 0 60px;
+}
+
+.Examples_right_div_1 h3 {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 34px
+}
+
+.Examples_right_div_1 h3 span {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.Example_UL li p,
+.Examples_Corrective_UL li p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.Examples_Effects_UL li p {
+  color: #000;
+}
+
+.Examples_tic_img {
+  width: 20px;
+}
+
+.Examples__UL {
+
+  margin-top: 20px;
+}
+
+.Examples__UL li {
+  padding-bottom: 10px;
+}
+
+.Examples_Effects_div,
+.Examples_Corrective_div {
+  border-radius: 30px;
+  background: #FFF;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.Examples_Corrective_div {
+  padding: 30px 60px;
+  background-color: #35072B;
+}
+
+.Examples_Corrective_div h4 {
+  color: #fff;
+}
+
+.sub_Examples_left_div {
+  padding-bottom: 30px;
+}
+
+.sub_Examples_left_div h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-bottom: 40px;
+}
+
+/* Content 4 */
+.fourth-content {
+  background: url('../images/Six_Sigma.svg');
+  background-color: #31003E;
+  background-blend-mode: initial;
+  background-repeat: no-repeat;
+  background-size: 38%;
+  background-position: bottom left;
+}
+
+.fourth-content h2 {
+  color: #fff;
+}
+
+.fourth-content p {
+  color: #fff;
+}
+
+/* Role of Measurement Systems Evaluation in Six Sigma css */
+.role_of {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#sigma {
+  max-width: 880px;
+}
+
+.Objectives_div_role {
+  display: flex;
+  gap: 34px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.sub_Objectives_div_role {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 31%;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  padding: 28px 28px 14px 28px;
+  border: 2px solid #D9D9D9;
+}
+
+.sub_Objectives_imgs {
+  width: 80px;
+  height: 80px;
+}
+
+.sub_Objectives_imgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sub_Objectives_div_role h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+}
+
+.sub_Objectives_div_role p {
+  text-align: center;
+  font-size: 15px;
+}
+
+
+/* Interpretation of Measurement System Evaluation in Six Sigma css */
+.importancesection {
+  padding: 120px 100px 85px 100px;
+}
+
+#sex_sigma {
+  background: #FFDEDB;
+}
+
+#six_measurement {
+  background: #FEF7F7;
+  display: flex;
+  padding: 70px 20px 70px 70px;
+}
+
+.importance h3 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+#importance {
+  max-width: 1059px;
+}
+
+#importance h1 {
+  font-weight: 700;
+}
+
+.sex_sigma_object {
+  padding-top: 100px;
+}
+
+#objective_sigma {
+  border-left: 5px solid #6967FF;
+  padding: 0 0 0 25px;
+}
+
+#objective_sigmaone {
+  border-left: 5px solid #DF4B2D;
+  padding: 0 0 0 35px;
+}
+
+#objective_sigmathree {
+  border-left: 5px solid #ED9964;
+  padding: 0 0 0 35px;
+}
+
+#objective_sigmafour {
+  border-left: 5px solid #0695A9;
+  padding: 0 0 0 35px;
+}
+
+#objective_sigma h3,
+#objective_sigmaone h3,
+#objective_sigmatwo h3,
+#objective_sigmathree h3,
+#objective_sigmafour h3,
+#objective_sigmafive h3,
+#objective_sigmasix h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #000;
+}
+
+#objective_sigma p,
+#objective_sigmaone p,
+#objective_sigmatwo p,
+#objective_sigmathree p,
+#objective_sigmafour p,
+#objective_sigmafive p,
+#objective_sigmasix p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.process_sigma {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+
+#objective_div {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 106px;
+}
+
+/* Conclusion css */
+
+#conclution {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  align-items: center;
+  border-radius: 40px;
+  background: #33F2C4;
+  padding: 0;
+}
+
+#conclution_section {
+  background: #33F2C4;
+  margin-bottom: -200px;
+  padding-bottom: 340px;
+}
+
+#importance_conclution h1 {
+  font-weight: 800;
+}
+
+#importance_conclution h3 {
+  font-weight: 400;
+}
+
+#importance_conclution p {
+  font-size: 15px;
+}
+
+
+.importanceimg {
+  max-width: 500px;
+}
+
+#importance_conclution h3 {
+  font-weight: 400;
+}
+
+.importance h3 {
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.importance h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.importance_measurement {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  align-items: center;
+  border-radius: 40px;
+  background: #f4f0ff;
+  padding: 70px 100px;
+}
+
+.importanceimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fourth-content h2 {
+  color: #fff;
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+
+.fourth-content p {
+  color: #fff;
+  font-size: 27px;
+  line-height: 40px;
+}
+
+
+/* =======================================================================================
+                                        * Media Query *   
+===========================================================================================*/
+
+/* XX-Large devices (larger desktops, 1400px and 1699px) */
+@media screen and (min-width: 1400px) and (max-width: 1699px) {
+  .content04_div_1_img img {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    bottom: 27px;
+    right: 78px;
+  }
+
+  .Applications_img img {
+    width: 390px;
+    height: 420px;
+    top: -242px;
+    right: -278px;
+  }
+
+  .sub_Applications_div {
+    padding: 70px;
+    min-height: 340px;
+  }
+
+  .Applications_img img {
+    width: 415px;
+    height: 450px;
+    top: -221px;
+    right: -278px;
+  }
+
+  .Applications_h2 {
+    font-size: 45px;
+  }
+
+  .fourth-content {
+    background: url('../images/Six_Sigma.svg');
+    background-color: #31003E;
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 38%;
+    background-position: bottom left;
+  }
+
+  .measurementsystem {
+    max-width: 600px;
+    padding-left: 0px;
+  }
+
+  .keycharacteristicimg {
+    width: 560px;
+  }
+
+  .arrow {
+    width: 140px;
+    top: 70px;
+  }
+
+  .bannerlady {
+    margin: 27px 0 -90px 0;
+  }
+
+  .Objectives_div_role {
+    gap: 26px;
+  }
+  .fourth-content h2 {
+    font-size: 55px;
+    
+}
+.fourth-content p {
+  font-size: 24px;
+}
+
+}
+
+/* X-Large devices (large desktops, 1200px and 1399px) */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .contaiorX {
+    padding: 90px;
+  }
+
+  .Objectives_div {
+    gap: 80px;
+  }
+
+  .hero_section {
+    padding: 90px;
+  }
+
+  .sub_Objectives_img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .sub_Objectives_div h3 {
+    font-size: 18px;
+    padding-right: 20%;
+  }
+
+  .sub_Objectives_div p {
+    font-size: 13px;
+    padding-right: 20px;
+  }
+
+  .Components_h2 {
+    padding: 0 15%;
+  }
+
+  .FMEA_h2 {
+    font-size: 45px;
+  }
+
+  .content04_div_1_img {
+    height: 50px;
+  }
+
+  .content04_div_1_img img {
+    width: 70px;
+    height: 80px;
+    bottom: -1px;
+    right: 65px;
+  }
+
+  .content04_div_2 {
+    padding: 30px;
+  }
+
+  .Effect_Analysis_div_1 {
+    padding: 30px;
+  }
+
+  .Forming_div_img {
+    width: 70%;
+  }
+
+  .Forming_div h4,
+  .FMEA_div h4 {
+    font-size: 32px;
+    padding-bottom: 25px;
+  }
+
+  .Forming_div p,
+  .FMEA_div p {
+    font-size: 22px;
+  }
+
+  .Applications_image_2 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sub_Applications_div {
+    padding: 60px;
+    min-height: 340px;
+  }
+
+  .Applications_img img {
+    width: 420px;
+    height: 450px;
+    top: -221px;
+    right: -236px;
+  }
+
+
+  .Examples_div {
+    margin-top: 70px;
+  }
+
+  .Examples_right_div_1 {
+    padding: 50px 50px 0 50px;
+  }
+
+  .sub_Examples_left_div h4 {
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+
+  .Examples_right_div_1 h3 {
+    font-size: 32px;
+  }
+
+  .Example_UL li p,
+  .Examples_Corrective_UL li p {
+    font-size: 14px;
+  }
+
+  .Examples_Corrective_div h4,
+  .Examples_Effects_div h4 {
+    font-size: 32px;
+  }
+
+  .fourth-content {
+    background: url('../images/Six_Sigma.svg');
+    background-color: #31003E;
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 48%;
+    background-position: bottom left;
+  }
+
+  .sub_Components_section,
+  .sub_Components_section-2 {
+    margin-top: 20px;
+  }
+
+  /*  */
+
+
+  .measurementsystem p {
+    font-size: 17px;
+    color: #fff;
+  }
+
+  .Measurementsection {
+    padding: 0px 80px;
+    gap: 40px;
+    margin-top: 95px;
+  }
+
+  .importance h3 {
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  .measurementsystem h1 {
+    font-size: 40px;
+    margin-bottom: 23px;
+    line-height: 55px;
+  }
+
+  .measurementsystem {
+    max-width: 480px;
+    padding-left: 0px;
+  }
+
+  .importanceimg {
+    width: 386px;
+  }
+
+  .importancesection {
+    padding: 100px 80px;
+  }
+
+  .importance_measurement {
+    padding: 50px 55px;
+    gap: 45px;
+  }
+
+  .role_of {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #sigma {
+    max-width: 570px;
+  }
+
+  .importance p {
+    padding-top: 17px;
+  }
+
+  .Objectives_div_role {
+    gap: 20px;
+  }
+
+  .sub_Objectives_div_role h3 {
+    font-size: 22px;
+  }
+
+  .sub_Objectives_div_role p {
+    font-size: 14px;
+  }
+
+  .bannerlady {
+    margin: 27px 0 -85px 0;
+  }
+
+  #importance {
+    max-width: 569px;
+  }
+  .fourth-content h2 {
+    font-size: 45px;
+    
+}
+.fourth-content p {
+  font-size: 20px;
+}
+}
+
+/* Large devices (desktops, 992px and 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .contaiorX {
+    padding: 60px;
+  }
+
+  .Objectives_div {
+    gap: 60px;
+  }
+
+  /* .hero_section {
+    padding: 90px;
+  } */
+  .Objectives_section {
+    padding: 70px;
+  }
+
+  .sub_Objectives_img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .FMEA_h2 {
+    font-size: 35px;
+  }
+
+  .sub_Objectives_div h3 {
+    font-size: 16px;
+    padding-right: 20%;
+  }
+
+  .sub_Objectives_div p {
+    font-size: 13px;
+    padding-right: 10px;
+  }
+
+  .content04_div_1_img {
+    height: 50px;
+  }
+
+  .content04_div_1_img img {
+    width: 70px;
+    height: 80px;
+    bottom: 40px;
+    right: 27px;
+  }
+
+  .content04_div_2 {
+    padding: 30px;
+    margin-top: -44px;
+  }
+
+  .Effect_Analysis_div_1 {
+    padding: 30px;
+  }
+
+  .Effect_Analysis_div_1 h4 {
+    font-size: 20px;
+  }
+
+  .Effect_Analysis_div_1 p {
+    font-size: 14px;
+  }
+
+  /* Implementation section */
+  .Forming_div_img {
+    width: 80%;
+  }
+
+  .Forming_div h4,
+  .FMEA_div h4 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  .FMEA_Steps_h4 {
+    padding-bottom: 0;
+  }
+
+  .Implementation_div,
+  .Implementation_div_1 {
+    margin-top: 30px;
+    padding: 40px;
+  }
+
+  .Forming_div p,
+  .FMEA_div p {
+    font-size: 18px;
+  }
+
+  .right_img {
+    width: 36%;
+  }
+
+
+  .Effect_div {
+    width: 100px;
+    height: 100px;
+  }
+
+  .Effect_span {
+    top: -56px;
+    left: 71px;
+  }
+
+  .Effect_bottem_div {
+    gap: 80px;
+  }
+
+  .sub_Effect_bottem_div {
+    padding: 50px 30px 70px 50px;
+  }
+
+  .Effect_text span,
+  .sub_Effect_bottem_div h4 {
+    font-size: 28px;
+  }
+
+  .sub_Effect_bottem_div p {
+    font-size: 16px;
+  }
+
+  .Applications_image_2 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sub_Applications_div {
+    padding: 30px;
+    min-height: 340px;
+  }
+
+  .Applications_img img {
+    width: 420px;
+    height: 450px;
+    top: -221px;
+    right: -236px;
+  }
+
+  .Applications_img img {
+    width: 380px;
+    height: 390px;
+    top: -204px;
+    right: -174px;
+  }
+
+
+  .Examples_div {
+    margin-top: 50px;
+  }
+
+  .Examples_right_div_1 {
+    padding: 40px 40px 0 40px;
+  }
+
+  .Examples_Corrective_div {
+    padding: 30px;
+  }
+
+  .sub_Examples_left_div h4 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .Examples_right_div_1 h3 {
+    font-size: 32px;
+  }
+
+  .Example_UL li p,
+  .Examples_Corrective_UL li p {
+    font-size: 14px;
+  }
+
+  .Examples_Corrective_div h4,
+  .Examples_Effects_div h4 {
+    font-size: 32px;
+  }
+
+  .fourth-content {
+    background: url('../images/Six_Sigma.svg');
+    background-color: #31003E;
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 48%;
+    background-position: bottom left;
+  }
+
+
+
+  /*  */
+  #importance h1 {
+    font-size: 37px;
+  }
+
+  .Measurementsection {
+    padding: 0px 70px;
+    gap: 40px;
+    margin-top: 88px;
+
+  }
+
+  .importancesection {
+    padding: 90px 70px;
+  }
+
+  .importance_measurement {
+    padding: 40px 60px;
+    gap: 40px;
+  }
+
+  .bannerlady {
+    margin: 27px 0 -63px 0;
+  }
+
+
+  .measurementsystem h1 {
+    font-size: 37px;
+    margin-bottom: 23px;
+    line-height: 46px;
+  }
+
+  .measurementsystem p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+
+
+  /*  */
+  .Measurementsection {
+    padding: 0px 70px;
+    gap: 40px;
+    margin-top: 88px;
+  }
+
+  .importancesection {
+    padding: 90px 70px;
+  }
+
+  .importance_measurement {
+    padding: 40px 60px;
+    gap: 40px;
+  }
+
+  .bannerlady {
+    margin: 27px 0 -63px 0;
+  }
+
+
+  .measurementsystem h1 {
+    font-size: 37px;
+    margin-bottom: 23px;
+    line-height: 46px;
+  }
+
+  .measurementsystem p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .measurementsystem {
+    max-width: 430px;
+    padding-left: 0px;
+  }
+
+  .role_of {
+    gap: 28px;
+  }
+
+  #sigma {
+    max-width: 450px;
+  }
+
+  .sub_Objectives_div_role {
+    width: 48%;
+  }
+
+  .Objectives_div_role {
+    gap: 34px;
+  }
+
+  .sub_Objectives_div_role h3 {
+    font-size: 22px;
+  }
+
+  .sub_Objectives_div_role p {
+    font-size: 14px;
+  }
+
+  #importance {
+    max-width: 400px;
+  }
+
+  .importance h3 {
+    font-size: 20px;
+  }
+
+  #objective_div {
+    gap: 40px;
+  }
+
+  #objective_sigma h3,
+  #objective_sigmaone h3,
+  #objective_sigmatwo h3,
+  #objective_sigmathree h3,
+  #objective_sigmafour h3,
+  #objective_sigmafive h3,
+  #objective_sigmasix h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  #objective_sigma p,
+  #objective_sigmaone p,
+  #objective_sigmatwo p,
+  #objective_sigmathree p,
+  #objective_sigmafour p,
+  #objective_sigmafive p,
+  #objective_sigmasix p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .fourth-content h2 {
+    font-size: 35px;
+    
+}
+.fourth-content p {
+  font-size: 18px;
+}
+}
+
+/* Medium devices (tablets, 768px and 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contaiorX {
+    padding: 60px;
+  }
+
+  .Objectives_section {
+    padding: 60px;
+  }
+
+  .Objectives_div {
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero_section {
+    padding: 90px;
+  }
+
+  .sub_Objectives_img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .FMEA_h2 {
+    font-size: 30px;
+  }
+
+  .Components_h2 {
+    padding: 0 10%;
+  }
+
+  .sub_Objectives_div h3 {
+    font-size: 16px;
+    padding-right: 20%;
+  }
+
+  .sub_Objectives_div p {
+    font-size: 13px;
+    padding-right: 10px;
+  }
+
+  .Components_div p {
+    font-size: 16px;
+    padding-right: 10%;
+  }
+
+  .Effect_Analysis_div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .content04_div_1_img {
+    height: 20px;
+  }
+
+  .content04_div_1_img img {
+    width: 70px;
+    height: 80px;
+    bottom: 68px;
+    right: -27px;
+    position: relative;
+  }
+
+  .content04_div_2 {
+    padding: 20px;
+  }
+
+  .Effect_Analysis_div_1 {
+    min-height: 180px;
+  }
+
+  .Effect_Analysis_div_1 {
+    padding: 30px;
+  }
+
+  .Effect_Analysis_div_1 h4 {
+    font-size: 18px;
+  }
+
+  .Effect_Analysis_div_1 p {
+    font-size: 12px;
+  }
+
+  .Forming_div_img {
+    width: 80%;
+    height: 70%;
+  }
+
+  .Forming_div h4,
+  .FMEA_div h4 {
+    font-size: 26px;
+    padding-bottom: 8px;
+  }
+
+  .FMEA_Steps_h4 {
+    padding-bottom: 0;
+  }
+
+  .Implementation_div,
+  .Implementation_div_1 {
+    margin-top: 30px;
+    padding: 30px;
+  }
+
+  .Forming_div p,
+  .FMEA_div p {
+    font-size: 14px;
+  }
+
+  .right_img {
+    width: 36%;
+  }
+
+  .FMEA_div p {
+    padding-bottom: 20px;
+  }
+
+
+  .effect_top_text {
+    width: 80%;
+  }
+
+  .Effect_div {
+    width: 90px;
+    height: 90px;
+  }
+
+  .Effect_span {
+    top: -55px;
+    left: 50px;
+  }
+
+  .Effect_text {
+    top: -42px;
+    left: 59px;
+  }
+
+  .Effect_bottem_div {
+    gap: 70px;
+    margin-top: 50px;
+  }
+
+
+  .sub_Effect_bottem_div {
+    padding: 50px 22px 40px 30px;
+  }
+
+  .Effect_text span,
+  .sub_Effect_bottem_div h4 {
+    font-size: 24px;
+  }
+
+  .sub_Effect_bottem_div p {
+    font-size: 14px;
+  }
+
+  .Applications_image_2 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sub_Applications_div {
+    padding: 30px;
+    min-height: 340px;
+  }
+
+  .Applications_img img {
+    width: 300px;
+    height: 400px;
+    top: -195px;
+    right: -162px;
+  }
+
+  .Examples_div {
+    margin-top: 50px;
+  }
+
+  .Examples_right_div_1 {
+    padding: 20px 20px 0 20px;
+  }
+
+  .Examples_Corrective_div {
+    padding: 20px;
+  }
+
+  .sub_Examples_left_div h4 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .Examples_right_div_1 h3 {
+    font-size: 24px;
+  }
+
+  .Examples_right_div_1 h3 span {
+    font-size: 16px;
+  }
+
+  .Example_UL li p,
+  .Examples_Corrective_UL li p {
+    font-size: 14px;
+  }
+
+  .Examples_tic_img {
+    width: 15px;
+  }
+
+  .Example_UL li p,
+  .Examples_Corrective_UL li p {
+    font-size: 12px;
+  }
+
+  .Examples_Corrective_div h4,
+  .Examples_Effects_div h4 {
+    font-size: 28px;
+  }
+
+
+  .fourth-content {
+    background-image: none;
+    background-color: #31003E;
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }
+
+  .fourth-content .c-margin-top {
+    margin-top: 3%;
+  }
+
+  .fifth-content .c-my {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .Components_image img {
+    width: 100%;
+  }
+
+  /*  */
+  .Measurementsection {
+    padding: 23px 70px;
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+
+  .Components_div h3 {
+    font-size: 25px;
+  }
+
+  .bannerlady {
+    margin: 0;
+  }
+
+  .measurementsystem h1 {
+    font-size: 37px;
+    margin-bottom: 23px;
+    line-height: 30px;
+  }
+
+  .measurementsystem {
+    max-width: 430px;
+  }
+
+  .measurementsystem p {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+
+  .measurementsystem {
+    max-width: 100%;
+  }
+
+  .bannerlady {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bannerlady img {
+    width: 75%;
+    height: 75%;
+  }
+
+  .measurementsystem {
+    order: 2;
+    padding-left: 0px;
+  }
+
+  .importancesection {
+    padding: 90px 70px;
+  }
+
+  .role_of {
+    display: flex;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  #sigma {
+    order: 2;
+  }
+
+  .sub_Objectives_div_role {
+    width: 48%;
+    padding: 20px 20px 12px 20px;
+  }
+
+  .Objectives_div_role {
+    gap: 25px;
+  }
+
+  .sub_Objectives_div_role h3 {
+    font-size: 22px;
+  }
+
+  .sub_Objectives_div_role p {
+    font-size: 14px;
+  }
+
+  #six_measurement {
+    display: grid;
+    padding: 40px 60px;
+  }
+
+  #importance {
+    order: 2;
+  }
+
+  .importance h3 {
+    font-size: 20px;
+  }
+
+  #objective_div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  #objective_sigma h3,
+  #objective_sigmaone h3,
+  #objective_sigmatwo h3,
+  #objective_sigmathree h3,
+  #objective_sigmafour h3,
+  #objective_sigmafive h3,
+  #objective_sigmasix h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  #objective_sigma p,
+  #objective_sigmaone p,
+  #objective_sigmatwo p,
+  #objective_sigmathree p,
+  #objective_sigmafour p,
+  #objective_sigmafive p,
+  #objective_sigmasix p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  #conclution {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .importanceimg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .importance h1 {
+    font-size: 37px;
+    line-height: 45px;
+  }
+
+  #six_measurement {
+    display: grid;
+    padding: 40px 60px;
+  }
+
+  .importance_measurement {
+    padding: 40px 60px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  .importanceimg img {
+    width: 75%;
+    height: 75%;
+  }
+
+  .sub_Components_section,
+  .sub_Components_section-2 {
+    gap: 70px;
+    padding: 10px 0;
+  }
+  .fourth-content h2 {
+    font-size: 35px;
+    text-align: center;
+    
+}
+.fourth-content p {
+  font-size: 16px;
+  text-align: center;
+}
+}
+
+/* Small devices (landscape phones, 576px and 767px) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .Objectives_section {
+    padding: 40px;
+  }
+
+  .FMEA_h2,
+  .Components_div h3 {
+    font-size: 30px;
+  }
+
+  .Components_div p {
+    font-size: 14px;
+    padding-right: 0;
+  }
+
+  .Components_div h3 {
+    padding-bottom: 10px;
+  }
+
+  /* .content04_div_1{
+    display: grid;
+  } */
+  .Effect_Analysis_div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+
+  .content04_div_1_img img {
+    width: 40px;
+    height: 50px;
+    bottom: -9px;
+    right: 2px;
+  }
+
+  .content04_div_1_img {
+    height: 0px;
+    width: 100%;
+  }
+
+  .content04_h2 {
+    font-size: 23px !important;
+    line-height: 47px;
+  }
+
+  .content04_div_2 {
+    padding: 20px;
+  }
+
+  .Effect_Analysis_div_1 {
+    min-height: 160px;
+    padding: 20px;
+  }
+
+  .Effect_Analysis_div_1 h4 {
+    font-size: 18px;
+  }
+
+  .Effect_Analysis_div_1 p {
+    font-size: 12px;
+  }
+
+  .Forming_div_img {
+    width: 80%;
+    height: 50%;
+  }
+
+  .Forming_div h4,
+  .FMEA_div h4 {
+    font-size: 26px;
+    padding-bottom: 8px;
+  }
+
+  .FMEA_Steps_h4 {
+    padding-bottom: 0;
+  }
+
+  .Implementation_div,
+  .Implementation_div_1 {
+    margin-top: 30px;
+    padding: 30px;
+  }
+
+  .Forming_div p,
+  .FMEA_div p {
+    font-size: 14px;
+  }
+
+  .right_img {
+    width: 36%;
+  }
+
+  .FMEA_div p {
+    padding-bottom: 20px;
+  }
+
+
+  .effect_top_text {
+    width: 100%;
+    text-align: center;
+  }
+
+
+
+  .Effect_div {
+    width: 90px;
+    height: 90px;
+  }
+
+  .Effect_span {
+    top: -55px;
+    left: 50px;
+  }
+
+  .Effect_text {
+    top: -42px;
+    left: 59px;
+  }
+
+  .Effect_bottem_div {
+    gap: 70px;
+    margin-top: 50px;
+  }
+
+
+  .sub_Effect_bottem_div {
+    padding: 50px 22px 40px 30px;
+  }
+
+  .Effect_text span,
+  .sub_Effect_bottem_div h4 {
+    font-size: 24px;
+  }
+
+  .sub_Effect_bottem_div p {
+    font-size: 14px;
+  }
+
+  .sub_Applications_div {
+    padding: 20px;
+    min-height: 100%;
+    flex-direction: column;
+  }
+
+  .Applications_img img {
+    width: 100%;
+    height: 100%;
+    right: 0;
+    position: relative;
+    bottom: 0;
+  }
+
+  .Applications_text_h2 {
+    width: 100% !important;
+    position: relative;
+  }
+
+  .sub_Applications_div {
+    padding: 20px;
+    min-height: 100%;
+  }
+
+  .Examples_right_div_1 {
+    padding: 20px 20px 0 20px;
+  }
+
+  .Examples_Corrective_div {
+    padding: 20px;
+  }
+
+  .Examples_right_div_1 h3 {
+    font-size: 24px;
+  }
+
+  .Examples_right_div_1 h3 span {
+    font-size: 16px;
+  }
+
+  .Example_UL li p,
+  .Examples_Corrective_UL li p {
+    font-size: 14px;
+  }
+
+  .Examples_tic_img {
+    width: 15px;
+  }
+
+  .Example_UL li p,
+  .Examples_Corrective_UL li p {
+    font-size: 12px;
+  }
+
+  .Examples_Corrective_div h4,
+  .Examples_Effects_div h4 {
+    font-size: 28px;
+  }
+
+  .fourth-content {
+    background-image: none;
+    background-color: #31003E;
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+  }
+
+  .fourth-content .c-margin-top {
+    margin-top: 3%;
+  }
+
+  .fifth-content .c-my {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .sub_Objectives_div p {
+    padding-right: 0;
+  }
+
+  .sub_Objectives_div h3 {
+    padding-right: 20%;
+  }
+
+  /*  */
+  .Measurementsection {
+    padding: 23px 55px;
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .measurementsystem h1 {
+    font-size: 30px;
+    line-height: 25px;
+  }
+
+  .bannerlady {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .bannerlady img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .measurementsystem {
+    padding-left: 0px;
+    order: 2;
+  }
+
+  .importancesection {
+    padding: 70px 55px;
+  }
+
+  .importance_measurement {
+    padding: 35px 45px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  .importanceimg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #importanceimg img {
+    width: 75%;
+    height: 75%;
+  }
+
+  .importance h1 {
+    font-size: 37px;
+    line-height: 45px;
+  }
+
+  .role_of {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  #sigma {
+    order: 2;
+  }
+
+  .sub_Objectives_div_role {
+    width: 100%;
+    padding: 20px 20px 12px 20px;
+  }
+
+  .importancesection {
+    padding: 70px 30px;
+  }
+
+  .sub_Objectives_div_role h3 {
+    font-size: 22px;
+  }
+
+  .sub_Objectives_div_role p {
+    font-size: 14px;
+  }
+
+  .sub_Objectives_imgs {
+    width: 65px;
+    height: 65px;
+  }
+
+  #six_measurement {
+    display: grid;
+    padding: 35px 45px;
+  }
+
+  #importance {
+    order: 2;
+  }
+
+  .importance h3 {
+    font-size: 16px;
+    line-height: 35px;
+  }
+
+  .importance h3 {
+    font-size: 16px;
+  }
+
+  #objective_div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  #objective_sigma h3,
+  #objective_sigmaone h3,
+  #objective_sigmatwo h3,
+  #objective_sigmathree h3,
+  #objective_sigmafour h3,
+  #objective_sigmafive h3,
+  #objective_sigmasix h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  #objective_sigma p,
+  #objective_sigmaone p,
+  #objective_sigmatwo p,
+  #objective_sigmathree p,
+  #objective_sigmafour p,
+  #objective_sigmafive p,
+  #objective_sigmasix p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  #conclution {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+
+  .FMEA_h2,
+  .Components_div h3 {
+    font-size: 27px;
+    line-height: 38px;
+  }
+
+  .Components_div p {
+    font-size: 14px;
+    padding-right: 0;
+  }
+
+  .Components_div h3 {
+    padding-bottom: 10px;
+  }
+
+  .Measurementsection {
+    padding: 23px 30px;
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+
+  .Components_div h3 {
+    font-size: 28px;
+  }
+
+  .bannerlady {
+    margin: 0 0 -53px 0;
+  }
+
+  .measurementsystem h1 {
+    font-size: 37px;
+    line-height: 45px;
+    margin-bottom: 10px;
+  }
+
+  .measurementsystem p {
+    padding-top: 5px;
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .bannerlady {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bannerlady img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .measurementsystem {
+    order: 2;
+
+  }
+
+  .importancesection {
+    padding: 70px 30px;
+  }
+
+  .role_of {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  #sigma {
+    order: 2;
+  }
+
+  .sub_Objectives_div_role {
+    width: 100%;
+    padding: 20px 20px 12px 20px;
+  }
+
+  .importancesection {
+    padding: 70px 30px;
+  }
+
+  .sub_Objectives_div_role h3 {
+    font-size: 22px;
+  }
+
+  .sub_Objectives_div_role p {
+    font-size: 14px;
+    padding-top: 0;
+  }
+
+  .sub_Objectives_imgs {
+    width: 65px;
+    height: 65px;
+  }
+
+  #six_measurement {
+    display: grid;
+    padding: 35px 45px;
+  }
+
+  #sigma h1 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  #importance h1 {
+    font-size: 28px;
+    line-height: 37px;
+  }
+  .fourth-content h2 {
+    font-size: 30px;
+    text-align: center;
+    
+}
+.fourth-content p {
+  font-size: 14px;
+  text-align: center;
+}
+
+  .fourth-content h2 {
+    font-size: 32px;
+    text-align: center;
+    
+}
+.fourth-content p {
+  font-size: 14px;
+  text-align: center;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+  .contaiorX {
+    padding: 40px;
+  }
+
+  .Objectives_div {
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Components_h2 {
+    padding: 0 5%;
+  }
+
+  .sub_Components_section,
+  .sub_Components_section-2 {
+    gap: 30px;
+    padding: 30px 0;
+  }
+
+  .Effect_bottem_div {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  .Effect_top_div {
+    max-height: 100%;
+    flex-direction: column;
+  }
+
+  .Effect_h4 {
+    text-align: center;
+  }
+
+  .effect_top_text {
+    width: 100%;
+  }
+
+  .Applications_div_2,
+  .Applications_div_3 {
+    max-height: 100%;
+    height: 100%;
+  }
+
+  .Applications_img {
+    display: none;
+  }
+
+  .Applications_h2 {
+    padding: 30px;
+    max-width: 100%;
+    text-align: center;
+    width: 100% !important;
+  }
+
+  .Examples_div {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 30px;
+    gap: 20px;
+  }
+
+  .sub_Examples_left_div h4 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  /*  */
+  .role_of {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .Measurementsection {
+    gap: 30px;
+    margin-top: 0;
+  }
+
+  .measurementsystem {
+    order: 2;
+    padding-left: 0px;
+  }
+
+  .measurementsystem h1,
+  .measurementsystem p,
+  .sub_Objectives_div_1 p,
+  .Components_div h3,
+  .fourth-content h2,
+  .fourth-content p,
+  #importance_conclution h1,
+  .Components_div p {
+    text-align: center;
+  }
+
+  .Components_image img {
+    width: 60%;
+  }
+
+  .sub_Objectives_div_1 {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .contaiorX {
+    padding: 30px;
+  }
+
+  .Objectives_section {
+    padding: 30px;
+  }
+
+  .Objectives_div {
+    gap: 40px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .FMEA_h2,
+  .Components_div h3 {
+    font-size: 23px;
+    line-height: 45px;
+  }
+
+  .Components_div p {
+    font-size: 14px;
+    padding-right: 0;
+  }
+
+  .Components_div h3 {
+    padding-bottom: 10px;
+  }
+
+  .sub_Objectives_div {
+    gap: 8px;
+
+  }
+
+  .sub_Objectives_img {
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+  }
+
+  .sub_Objectives_div h3 {
+    font-size: 16px;
+    padding-right: 0%;
+  }
+
+  .sub_Objectives_div p {
+    font-size: 12px;
+    padding-right: 20px;
+  }
+
+  .sub_Components_section,
+  .sub_Components_section-2 {
+    grid-template-columns: repeat(1, 1fr);
+    max-height: 100%;
+  }
+
+  .Components_order_0 {
+    order: 1;
+  }
+
+  .Components_order_1 {
+    order: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Components_image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content04_div_1 {
+    display: grid !important;
+  }
+
+  .content04_div_1_text {
+    width: 100%;
+    order: 1 !important;
+  }
+
+  .content04_div_1_image {
+    width: 100%;
+    order: 0 !important;
+  }
+
+  .Effect_Analysis_div {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .content04_div_1_img img {
+    width: 40px;
+    height: 50px;
+    bottom: -9px;
+    right: 2px;
+  }
+
+  .content04_div_2 {
+    padding: 20px;
+  }
+
+  .content04_div_1_img {
+    height: 0px;
+    width: 100%;
+  }
+
+  .Effect_Analysis_div_1 {
+    min-height: 160px;
+    padding: 20px;
+  }
+
+  .Effect_Analysis_div_1 h4 {
+    font-size: 18px;
+  }
+
+  .Effect_Analysis_div_1 p {
+    font-size: 12px;
+  }
+
+  .Implementation_div,
+  .Implementation_div_1 {
+    margin-top: 40px;
+    padding: 30px;
+    max-height: max-content;
+  }
+
+  .sub_Implementation_div {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+  }
+
+  .Forming_div_img {
+    width: 80%;
+    height: 100%;
+  }
+
+  .Forming_div h4,
+  .FMEA_div h4 {
+    font-size: 26px;
+    padding-bottom: 8px;
+  }
+
+  .FMEA_Steps_h4 {
+    padding-bottom: 0;
+  }
+
+  .Implementation_div,
+  .Implementation_div_1 {
+    margin-top: 30px;
+    padding: 30px;
+  }
+
+  .Forming_div p,
+  .FMEA_div p {
+    font-size: 14px;
+  }
+
+  .right_img {
+    width: 36%;
+  }
+
+  .FMEA_div p {
+    padding-bottom: 20px;
+  }
+
+
+
+  .effect_top_text {
+    width: 100%;
+
+  }
+
+  .Effect_div {
+    width: 90px;
+    height: 90px;
+  }
+
+  .Effect_span {
+    top: -55px;
+    left: 50px;
+  }
+
+  .Effect_text {
+    top: -42px;
+    left: 59px;
+  }
+
+  .Effect_bottem_div {
+    gap: 70px;
+    margin-top: 50px;
+  }
+
+
+  .sub_Effect_bottem_div {
+    padding: 50px 22px 40px 30px;
+  }
+
+  .Effect_text span,
+  .sub_Effect_bottem_div h4 {
+    font-size: 24px;
+  }
+
+  .sub_Effect_bottem_div p {
+    font-size: 14px;
+  }
+
+  .sub_Applications_div {
+    padding: 20px;
+    min-height: 100%;
+    justify-content: center !important;
+    border-radius: 80px
+  }
+
+  .Applications_div_2,
+  .Applications_div_3 {
+    justify-items: center;
+  }
+
+  .Applications_image_2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .Applications_text_h2 {
+    width: 100%;
+  }
+
+  .Applications_h2 {
+    padding: 10px;
+  }
+
+  .Examples_right_div_1 {
+    padding: 20px 20px 0 20px;
+  }
+
+  .Examples_Corrective_div {
+    padding: 20px;
+  }
+
+  .Examples_right_div_1 h3 {
+    font-size: 20px;
+  }
+
+  .Examples_right_div_1 h3 span {
+    font-size: 16px;
+  }
+
+  .Example_UL li p,
+  .Examples_Corrective_UL li p {
+    font-size: 14px;
+  }
+
+  .Examples_tic_img {
+    width: 15px;
+  }
+
+  .Example_UL li p,
+  .Examples_Corrective_UL li p {
+    font-size: 12px;
+  }
+
+  .Examples_Corrective_div h4,
+  .Examples_Effects_div h4 {
+    font-size: 28px;
+  }
+
+  .fourth-content {
+    background-image: none;
+    background-color: #31003E;
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+  }
+
+  .fourth-content h2 {
+    font-size: 30px;
+    text-align: center;
+    
+}
+.fourth-content p {
+  font-size: 14px;
+  text-align: center;
+}
+
+  .fourth-content .c-margin-top {
+    margin-top: 10%;
+  }
+
+  .fifth-content .c-my {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .py-60p {
+    padding-top: 10px !important;
+    padding-bottom: 60px;
+  }
+
+  /*  */
+  .Measurementsection {
+    padding: 25px 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .measurementsystem h1 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .measurementsystem p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .bannerlady {
+    margin: 0px 0 -60px 0;
+  }
+
+  .bannerlady img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #six_measurement {
+    padding: 30px;
+  }
+
+  #importance {
+    order: 2;
+  }
+
+  .importance h3 {
+    font-size: 20px;
+  }
+
+  .importance h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #objective_div {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  #objective_sigma h3,
+  #objective_sigmaone h3,
+  #objective_sigmatwo h3,
+  #objective_sigmathree h3,
+  #objective_sigmafour h3,
+  #objective_sigmafive h3,
+  #objective_sigmasix h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  #objective_sigma p,
+  #objective_sigmaone p,
+  #objective_sigmatwo p,
+  #objective_sigmathree p,
+  #objective_sigmafour p,
+  #objective_sigmafive p,
+  #objective_sigmasix p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  #sigma h1 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .Measurementsection {
+    padding: 25px 30px;
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+  }
+
+  .importancesection {
+    padding: 50px 30px 50px 30px;
+  }
+
+  #sigma {
+    order: 2;
+  }
+
+  .sub_Objectives_div_role {
+    width: 100%;
+  }
+
+
+  #six_measurement {
+    display: grid;
+    padding: 35px 45px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  #importance h1 {
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  #conclution {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .sub_Components_section,
+  .sub_Components_section-2 {
+    gap: 30px;
+    padding: 20px 0 10px 0;
+  }
+}
