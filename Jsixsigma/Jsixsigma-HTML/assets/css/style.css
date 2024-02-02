@@ -1,168 +1,1309 @@
-/*--------------------------------------*/
-
-/*1. Banner Section
-/*--------------------------------------*/
-.banner-section{
-	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, #5E0200 16.97%, rgba(94, 2, 0, 0.00) 101.13%);
-	padding: 65px 0 0;
-}
-.banner-section .banner-wrap{
-	background-image: url('../images/banner.png');
-	background-position: right top;
-	background-repeat: no-repeat;
-	background-size: auto;
-	color: #FFFFFF;
-	height: 896px;
-}
-.banner-section .caption span{
-	font-size: 50px;
-}
-.banner-section .caption{
-	max-width: 828px;
-}
-.banner-section .caption p{
-	font-size: 24px;
-	line-height: 40px;
-	max-width: 649px;
-	margin: 20px 0 40px;
-}
-.banner-section .caption .btn.btn-default{
-	width: 434px;
-}
-.banner-section .caption .btn.btn-default .icon-arrow{
-	margin-left: 70px;
-}
-/*--------------------------------------*/
-
-/*2. After Banner Section
-/*--------------------------------------*/
-.after-banner-section .enroll{
-	background-image: url('../images/enroll.png');
-	background-position: left top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 864px;
-	margin-right: 40px;
-}
-.after-banner-section .enroll .wrap{
-	border-radius: 100%;
-	opacity1: 0.5;
-	background-image: linear-gradient(180deg, #040303 0%, rgba(4, 3, 3, 0.00) 83.83%);
-	max-width: 732px;
-	margin: 0px auto;
-	height: 269px;
-	padding-top: 28px;
-}
-.after-banner-section .enroll .wrap p{
-	font-family: 'Playfair Display', serif;
-	font-size: 22px;
-	line-height: 30px;
-	color: #DDDDDD;
-	padding-top: 20px;
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.after-banner-section .cell-section .cell{
-	border-radius: 10px;
-	background-image: linear-gradient(180deg, #322438 0%, rgba(50, 36, 56, 0.42) 105.33%);
-	padding: 26px 40px;
-}
-.after-banner-section .cell-section .cell-body{
-	margin-left: 36px;
-}
-.after-banner-section .cell-section .cell h4{
-	color: #FFFFFF;
-}
-.after-banner-section .cell-section .cell p{
-	font-size: 20px;
-	line-height: 27px;
-	font-weight: 600;
-	color: #BE9A94;
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.after-banner-section .specialities{
-	max-width: 1120px;
-	margin: 125px auto 0;
-	color: #BE9A94;
-}
-.after-banner-section .specialities h4{
-	line-height: 55px;
-	font-weight: 600;
-	margin: 30px 0;
-}
-.after-banner-section .specialities h4 span{
-	color: #D65A3B;
-}
-.after-banner-section .specialities p{
-	font-size: 20px;
-	line-height: 32px;
-	font-weight: 300;
-}
-.after-banner-section .specialities-details{
-	color: #FFFFFF;
-	border-radius: 30px;
-	background-image: linear-gradient(360deg, #31202C 0%, rgba(51, 33, 45, 0.00) 95.36%);
-	padding: 128px 70px 99px;
-}
-.after-banner-section .specialities-details .specialities-wrap1{
-	max-width: 310px
-}
-.after-banner-section .specialities-details p{
-	line-height: 27px;
-	color: #BE9A94;
-	margin: 20px 0 30px;
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
-.specialities-slider-wrap1{
-	position: absolute;
-	right: -6px;
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
 }
-.after-banner-section .specialities-details .slider-cell{
-	border-radius: 10px;
-	background: #422F4A;
-	width: 220px;
-	height: 272px;
-	padding: 32px;
-}
-.after-banner-section .specialities-details .slider-cell h6{
-	font-weight: 600;
-	margin-top: 35px;
-}
-.after-banner-section .specialities-details .slider-cell h6 span{
-	font-size: 16px;
-	line-height: 24px;
-	font-weight: 400;
-}
-.after-banner-section .specialities-details .slick-slide{
-	margin: 0 15px;
-	cursor: pointer;
-}
-.after-banner-section .specialities-details .slick-list{
-  margin: 0 -15px;
-}
-.after-banner-section .specialities-details .slick-arrow{
-	background: url(../images/icons/arrow.svg) no-repeat center, transparent;
-	width: 50px;
-	height: 12px;
-	border: 0;
-	position: absolute;
-	top: unset;
-	bottom: -60px;
-}
-.after-banner-section .specialities-details .slick-next{
-	transform: translate(0, -50%) rotate(-180deg);
-    right: 0;
-}
-.after-banner-section .specialities-details .slick-prev{
-	right: 15px;
-	left: unset;
-}
-.after-banner-section .specialities-details .slick-arrow:before{
-	content: '';
-}
-.after-banner-section .specialities-details .slick-arrow:hover,
-.after-banner-section .specialities-details .slick-arrow:focus{
-	background: url(../images/icons/active-arrow.svg) no-repeat center, transparent;
-}
-/*--------------------------------------*/
 
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit";
+  overflow-x: hidden;
+  font-size: 1.4rem;
+  background-color: #f9f6ff;
+  color: black;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+.contaiorX {
+  padding: 100px;
+}
+
+/* Measurement Systems Evaluation Section css */
+.Measurementsection {
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  gap: 140px;
+  background: radial-gradient(
+    54.98% 59.38% at 50% 5.85%,
+    #f94f42 0%,
+    #b92419 100%
+  );
+  margin-top: 70px;
+  max-height: 655px;
+}
+
+.measurementsystem {
+  max-width: 822px;
+  padding-left: 120px;
+}
+
+.measurementsystem h1 {
+  font-size: 60px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 25px;
+  line-height: 70px;
+}
+
+.measurementsystem p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.bannerlady {
+  max-width: 885px;
+  margin: 27px 0 -95px 0;
+}
+
+.bannerlady img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* end */
+
+/* Importance of Measurement Systems Section css */
+.importancesection {
+  padding: 120px 0 85px 0;
+}
+.importance_measurement {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  border-radius: 40px;
+  background: #f4f0ff;
+  padding: 70px 100px;
+}
+
+.importanceimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.importance h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.importance p {
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+#sigma h4 {
+  font-weight: 600;
+}
+/* end */
+
+/* Key Characteristics of Measurement Systems Section css  */
+.keycharacteristic {
+  padding: 0 100px 100px 100px;
+}
+.keycharacteristic_measurement {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  align-items: center;
+}
+.keycharacteristicimg {
+  width: 600px;
+}
+.keycharacteristicimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.keycharacteristic_fonts {
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 170px;
+}
+.arrow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.keycharacteristic_fonts h1 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60px;
+  text-transform: capitalize;
+}
+.keycharacteristic_fonts p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  padding: 45px 0;
+}
+.listsection {
+  border-radius: 10px;
+  border: 10px solid #df4b2d;
+  background: #fff;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+}
+.listicon {
+  border-bottom: 1px solid #d9d9d9;
+  display: flex;
+  gap: 22px;
+  margin-bottom: 20px;
+  padding: 15px 0;
+}
+#listicon {
+  border-bottom: 0;
+}
+.list_icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.list_paregraph h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.list_paregraph p {
+  font-size: 15px;
+  font-weight: 400;
+}
+/* end */
+
+/* Objectives section */
+
+.Objectives_section {
+  background-color: #f4f0ff;
+  padding: 100px;
+  display: grid;
+}
+
+.FMEA_h2 {
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 30px;
+  line-height: 60px;
+}
+
+.Objectives_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+}
+
+.sub_Objectives_div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.sub_Objectives_img {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.sub_Objectives_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sub_Objectives_div h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.sub_Objectives_div p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Evaluation Section css */
+.Components_section {
+  background-color: #2f136a;
+}
+
+.Components_h2,
+.Applications_h2 {
+  color: #fff !important;
+  padding: 0 20%;
+  font-weight: 600;
+  font-size: 60px;
+  padding-bottom: 30px;
+}
+
+.underline_div {
+  border-bottom: 5px solid #6967ff;
+  width: 100px;
+}
+
+.sub_Components_section,
+.sub_Components_section-2 {
+  display: grid;
+  grid-template-columns: auto 40%;
+  gap: 100px;
+  padding: 50px 0;
+  min-height: 200px;
+  max-height: 370px;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.sub_Components_section-2 {
+  grid-template-columns: 40% auto;
+}
+
+.Components_order_0 {
+  order: 0;
+}
+
+.Components_order_1 {
+  order: 1;
+  width: 100%;
+}
+
+.Components_order_1 img {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.Components_image {
+  width: 100%;
+}
+
+.Components_image img {
+  width: 80%;
+}
+
+.Components_div h3 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff !important;
+  padding-bottom: 20px;
+}
+
+.Components_div p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  padding-right: 20%;
+  color: #fff !important;
+}
+
+/* end */
+
+/* Common Challenges in Measurement System Evaluation Section css */
+.content04_div {
+  background: #ffd65c;
+}
+
+.content04_div_1 {
+  display: flex;
+  align-items: center;
+}
+
+.content04_div_1_img {
+  height: 150px;
+  width: 100%;
+  position: relative;
+}
+
+.content04_div_1_img img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+
+.content04_h2 {
+  font-weight: 600;
+}
+
+.content04_div_1_image {
+  min-height: 200px;
+  width: 50%;
+}
+
+.content04_div_1_image img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.content04_div_1_img img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: -64px;
+  right: 115px;
+}
+
+.common_challenges {
+  display: grid;
+  grid-template-columns: 40% auto;
+  gap: 50px;
+}
+
+.content04_div_2 {
+  border-radius: 40px;
+  background: #fff;
+  padding: 40px;
+  margin-top: -9px;
+}
+
+.lack_section {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.lack_of h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.lack_common {
+  padding-top: 30px;
+}
+.lack_head h2 {
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 5px solid #000;
+  padding-bottom: 15px;
+  margin-bottom: 22px;
+}
+.lack_paragraph p {
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.lackimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #f3eeed;
+  border-radius: 70%;
+  padding: 20px;
+}
+
+.Effect_Analysis_div {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.Effect_Analysis_div_1 {
+  min-height: 220px;
+  padding: 23px;
+  border-radius: 30px;
+  background: #ff9b7b;
+}
+.lacks {
+  width: 40%;
+}
+.lacks_one {
+  width: 60%;
+  margin-top: -29px;
+}
+
+.Effect_Analysis_div_1 h4 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.Effect_Analysis_div_1 p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.Effect_Analysis_div_2 {
+  background: #12db7b;
+}
+
+.Effect_Analysis_div_3 {
+  background: #c2acff;
+}
+
+.content04_div_1_text {
+  order: 0;
+  width: 50%;
+}
+
+.content04_div_1_image {
+  order: 1;
+}
+
+/* end */
+
+/* Best Practices for Measurement Systems Evaluation css */
+.best_practice {
+  background: #11192d;
+}
+.best_practice_for {
+  display: grid;
+  grid-template-columns: 39% auto;
+  gap: 90px;
+}
+.best_practiceimg {
+  width: 470px;
+  padding-top: 65px;
+}
+.best_practiceimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.evaluation h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60px;
+}
+.Objectives_div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+
+.sub_Objectives_div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.sub_Objectives_img {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.sub_Objectives_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sub_Objectives_div h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fff;
+}
+
+.sub_Objectives_div p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+}
+/* end */
+
+/* Implementation section - start */
+
+.Implementation_div,
+.Implementation_div_1 {
+  margin-top: 40px;
+  background: #15e5b3;
+  border-radius: 20px;
+  padding: 50px;
+  max-height: 335px;
+}
+
+.sub_Implementation_div {
+  grid-template-columns: auto 40%;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}
+
+.Forming_div h4,
+.FMEA_div h4,
+.Applications_text h3 {
+  color: #000;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-bottom: 25px;
+}
+
+.Forming_div p,
+.FMEA_div p {
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.Forming_div_img {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Forming_div_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Implementation_div_1 {
+  background: #df4b2d;
+  max-height: 100%;
+}
+
+.FMEA_div h4,
+.FMEA_div p {
+  color: #fff;
+}
+
+.FMEA_div p {
+  padding-bottom: 25px;
+}
+
+.right_img {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* end */
+
+/* Interpretation of Measurement System Evaluation in Six Sigma css */
+#sex_sigma {
+  background: #ffdedb;
+}
+#six_measurement {
+  background: #fef7f7;
+  display: flex;
+  padding: 70px 20px 70px 70px;
+}
+.importance h3 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+#importance {
+  max-width: 1059px;
+}
+#importance h1 {
+  font-weight: 700;
+}
+.sex_sigma_object {
+  padding-top: 100px;
+}
+#objective_sigma {
+  border-left: 5px solid #6967ff;
+  padding: 0 0 0 25px;
+}
+#objective_sigmaone {
+  border-left: 5px solid #3abe73;
+  padding: 0 0 0 35px;
+}
+#objective_sigmatwo {
+  border-left: 5px solid #0655ff;
+  padding: 0 0 0 35px;
+}
+#objective_sigmathree {
+  border-left: 5px solid #ed9964;
+  padding: 0 0 0 35px;
+}
+#objective_sigmafour {
+  border-left: 5px solid #df4b2d;
+  padding: 0 0 0 35px;
+}
+#objective_sigmafive {
+  border-left: 5px solid #0695a9;
+  padding: 0 0 0 35px;
+}
+#objective_sigmasix {
+  border-left: 5px solid #ed9b60;
+  padding: 0 0 0 35px;
+}
+#objective_sigma h3,
+#objective_sigmaone h3,
+#objective_sigmatwo h3,
+#objective_sigmathree h3,
+#objective_sigmafour h3,
+#objective_sigmafive h3,
+#objective_sigmasix h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #000;
+}
+#objective_sigma p,
+#objective_sigmaone p,
+#objective_sigmatwo p,
+#objective_sigmathree p,
+#objective_sigmafour p,
+#objective_sigmafive p,
+#objective_sigmasix p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.process_sigma {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+#objective_div {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 106px;
+}
+
+/* Effect_section */
+
+.Effect_section {
+  background: #1d1c41;
+}
+
+.Effect_top_div {
+  max-height: 300px;
+  margin-bottom: 30px;
+}
+
+.effect_top_text {
+  width: 50%;
+}
+
+.effect_top_img img {
+  object-fit: cover;
+}
+
+.Effect_h4 {
+  text-align: start;
+  color: #fff;
+  max-width: 100%;
+}
+
+.sub_Effect_bottem_div {
+  padding: 50px 35px 70px 70px;
+  border-radius: 50px;
+  background: linear-gradient(
+    138deg,
+    #9d4e69 17.88%,
+    rgba(79, 67, 222, 0) 68.36%
+  );
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 2;
+}
+
+.sub_Effect_bottem_div_1 {
+  background: linear-gradient(
+    148deg,
+    #255c70 16.21%,
+    rgba(57, 67, 157, 0.45) 43.39%,
+    rgba(79, 67, 222, 0) 76.11%
+  );
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.Effect_left_div {
+  position: relative;
+}
+
+.Effect_div {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+}
+
+.Effect_span {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: -58px;
+  left: 69px;
+  background: rgba(105, 103, 255, 0.1);
+  z-index: 1;
+}
+
+.Effect_text {
+  width: 80%;
+  height: 80%;
+  background: #f990b4;
+  border-radius: 50%;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+  z-index: 3;
+  position: relative;
+  top: -42px;
+  left: 81px;
+}
+
+.Effect_text_1 {
+  background: #33f2c4;
+}
+
+.Effect_text span,
+.sub_Effect_bottem_div h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.sub_Effect_bottem_div h4 {
+  color: #fff;
+  font-weight: 700;
+  line-height: 40px;
+  padding-top: 10px;
+}
+
+.sub_Effect_bottem_div p {
+  color: #fff;
+
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.Challenges_section {
+  background-color: #fff !important;
+}
+
+.Challenges_h3 {
+  padding-right: 0% !important;
+  text-align: center;
+}
+
+.Challenges_p {
+  padding-right: 0px !important;
+  text-align: center;
+}
+
+/* Applications  */
+.Applications_section {
+  background-color: #ffffff;
+}
+
+.sub_Applications_div {
+  border-radius: 100px;
+  background: #f64082;
+  padding: 70px;
+  position: relative;
+  min-height: 380px;
+}
+
+.Applications_text_h2 {
+  width: 75%;
+}
+
+.Applications_h2 {
+  padding: 0;
+  max-width: 70%;
+  text-align: left;
+}
+
+.Applications_img {
+  position: relative;
+}
+
+.Applications_img img {
+  position: absolute;
+  width: 450px;
+  height: 460px;
+  top: -242px;
+  right: -363px;
+}
+
+.Applications_div_2,
+.Applications_div_3 {
+  max-height: 400px;
+  height: 380px;
+}
+
+.Applications_text h3,
+.Applications_text p {
+  color: #000 !important;
+}
+
+.Applications_image_2 img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Applications_div_2 {
+  grid-template-columns: 30% auto;
+}
+
+.Applications_div_3 {
+  grid-template-columns: auto 30%;
+}
+
+/* Examples section */
+.Examples_section {
+  background-color: #ffde05;
+  justify-items: center;
+}
+
+.Examples_div {
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 90px;
+  gap: 50px;
+}
+
+.Examples_right_div {
+  background-color: #7c23a6;
+  border-radius: 30px;
+}
+
+.Examples_right_div_1 {
+  padding: 60px 60px 0 60px;
+}
+
+.Examples_right_div_1 h3 {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+.Examples_right_div_1 h3 span {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.Example_UL li p,
+.Examples_Corrective_UL li p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.Examples_Effects_UL li p {
+  color: #000;
+}
+
+.Examples_tic_img {
+  width: 20px;
+}
+
+.Examples__UL {
+  margin-top: 20px;
+}
+
+.Examples__UL li {
+  padding-bottom: 10px;
+}
+
+.Examples_Effects_div,
+.Examples_Corrective_div {
+  border-radius: 30px;
+  background: #fff;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.Examples_Corrective_div {
+  padding: 30px 60px;
+  background-color: #35072b;
+}
+
+.Examples_Corrective_div h4 {
+  color: #fff;
+}
+
+.sub_Examples_left_div {
+  padding-bottom: 30px;
+}
+
+.sub_Examples_left_div h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-bottom: 40px;
+}
+
+/* Content 4 */
+.fourth-content {
+  background: url("../images/Six_Sigma.svg");
+  background-color: #31003e;
+  background-blend-mode: initial;
+  background-repeat: no-repeat;
+  background-size: 28%;
+  background-position: bottom left;
+}
+
+.fourth-content h2 {
+  color: #fff;
+}
+
+.fourth-content p {
+  color: #fff;
+}
+
+.icon-arrow-left7 {
+  left: 0;
+}
+.icon-arrow-left7:before {
+  content: " \2190";
+}
+.icon-arrow-right7 {
+  right: 0;
+}
+.icon-arrow-right7:before {
+  content: " \2192";
+}
+
+.icon-arrow-left7,
+.icon-arrow-right7 {
+  font-size: 55px;
+  margin-right: 12px;
+}
+
+.Components_order_0 {
+  order: 0;
+}
+.Components_order_1 {
+  order: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Role of Measurement Systems Evaluation in Six Sigma css */
+.role_of {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#sigma {
+  max-width: 636px;
+}
+
+.Objectives_div_role {
+  display: flex;
+  gap: 34px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.sub_Objectives_div_role {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 31%;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  padding: 28px 28px 14px 28px;
+  border: 2px solid #d9d9d9;
+}
+
+.sub_Objectives_imgs {
+  width: 80px;
+  height: 80px;
+}
+
+.sub_Objectives_imgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sub_Objectives_div_role h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+}
+
+.sub_Objectives_div_role p {
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Interpretation of Measurement System Evaluation in Six Sigma css */
+.importancesection {
+  padding: 120px 100px 85px 100px;
+}
+
+#sex_sigma {
+  background: #ffdedb;
+}
+
+#six_measurement {
+  background: #fef7f7;
+  display: flex;
+  padding: 70px 20px 70px 70px;
+}
+
+.importance h3 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+#importance {
+  max-width: 636px;
+}
+
+#importance h1 {
+  font-weight: 700;
+}
+
+.sex_sigma_object {
+  padding-top: 100px;
+}
+
+#objective_sigma {
+  border-left: 5px solid #6967ff;
+  padding: 0 0 0 25px;
+}
+
+#objective_sigmaone {
+  border-left: 5px solid #df4b2d;
+  padding: 0 0 0 35px;
+}
+
+#objective_sigmathree {
+  border-left: 5px solid #ed9964;
+  padding: 0 0 0 35px;
+}
+
+#objective_sigmafour {
+  border-left: 5px solid #0695a9;
+  padding: 0 0 0 35px;
+}
+
+#objective_sigma h3,
+#objective_sigmaone h3,
+#objective_sigmatwo h3,
+#objective_sigmathree h3,
+#objective_sigmafour h3,
+#objective_sigmafive h3,
+#objective_sigmasix h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #000;
+}
+
+#objective_sigma p,
+#objective_sigmaone p,
+#objective_sigmatwo p,
+#objective_sigmathree p,
+#objective_sigmafour p,
+#objective_sigmafive p,
+#objective_sigmasix p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.process_sigma {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+
+/* Examples of Measurement Systems Evaluation in Six Sigma css */
+#sigma h1 {
+  font-weight: 700;
+}
+.reproducibility {
+  padding: 100px 0 60px 0;
+}
+.reproducibility h1 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.goal_sec {
+  margin-top: 40px;
+}
+.measures {
+  border-radius: 20px;
+  background: #f4f0ff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.goalimg {
+  max-width: 180px;
+}
+.goalimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.measure h3 {
+  width: 100%;
+  text-align: start;
+  font-size: 36px;
+  font-weight: 700;
+}
+.measure p {
+  font-size: 24px;
+  line-height: 35px;
+  padding-top: 20px;
+}
+#measure {
+  background: #fddb8d;
+}
+
+.owl-nav {
+  text-align: center;
+  padding-top: 33px;
+}
+
+/* Conclusion css */
+
+#conclution {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  align-items: center;
+  border-radius: 40px;
+  background: #33f2c4;
+  padding: 0;
+}
+
+#conclution_section {
+  background: #33f2c4;
+  margin-bottom: -200px;
+  padding-bottom: 340px;
+}
+
+#importance_conclution h1 {
+  font-weight: 800;
+}
+
+#importance_conclution h3 {
+  font-weight: 400;
+}
+
+#importance_conclution p {
+  font-size: 15px;
+}
+
+.importanceimg {
+  max-width: 500px;
+}
+
+#importance_conclution h3 {
+  font-weight: 400;
+}
+
+.importance h3 {
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.importance h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.importance_measurement {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  align-items: center;
+  border-radius: 40px;
+  background: #f4f0ff;
+  padding: 70px 100px;
+}
+
+.importanceimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

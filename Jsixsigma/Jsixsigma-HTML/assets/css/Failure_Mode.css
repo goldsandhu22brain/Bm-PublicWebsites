@@ -111,7 +111,7 @@ a:hover {
 
 .bannerlady {
   max-width: 885px;
-  margin: 27px 0 -118px 0;
+  margin: 27px 0 -117px 0;
 }
 
 .bannerlady img {
@@ -573,11 +573,11 @@ a:hover {
   right: -363px;
 }
 
-.Applications_div_2,
+/* .Applications_div_2,
 .Applications_div_3 {
-  /* max-height: 400px;
-  height: 380px; */
-}
+  max-height: 400px;
+  height: 380px;
+} */
 
 .Applications_text h3,
 .Applications_text p {
@@ -690,7 +690,7 @@ a:hover {
   background-color: #31003E;
   background-blend-mode: initial;
   background-repeat: no-repeat;
-  background-size: 28%;
+  background-size: 38%;
   background-position: bottom left;
 }
 
@@ -701,10 +701,6 @@ a:hover {
 .fourth-content p {
   color: #fff;
 }
-
-/* .sub_Applications_div_2{
-  margin-top: 100px !important;
-} */
 
 /* Role of Measurement Systems Evaluation in Six Sigma css */
 .role_of {
@@ -921,14 +917,17 @@ a:hover {
   object-fit: cover;
 }
 
-/*  */
 .fourth-content h2 {
   color: #fff;
-  font-size: 50px;
-  font-weight: 600;
-  text-align: left;
+  font-size: 60px;
+  padding-bottom: 20px;
 }
 
+.fourth-content p {
+  color: #fff;
+  font-size: 27px;
+  line-height: 40px;
+}
 
 
 /* =======================================================================================
@@ -998,15 +997,14 @@ a:hover {
   .Objectives_div_role {
     gap: 26px;
   }
+  .fourth-content h2 {
+    font-size: 55px;
+    
+}
+.fourth-content p {
+  font-size: 24px;
+}
 
-  .sub_Components_section,
-  .sub_Components_section-2 {
-    padding: 30px 0;
-  }
-
-  .sub_Applications_div_2 {
-    margin-top: 40px !important;
-  }
 }
 
 /* X-Large devices (large desktops, 1200px and 1399px) */
@@ -1140,10 +1138,6 @@ a:hover {
     margin-top: 20px;
   }
 
-  .Components_div h3 {
-    font-size: 45px;
-  }
-
   /*  */
 
 
@@ -1219,6 +1213,13 @@ a:hover {
   #importance {
     max-width: 569px;
   }
+  .fourth-content h2 {
+    font-size: 45px;
+    
+}
+.fourth-content p {
+  font-size: 20px;
+}
 }
 
 /* Large devices (desktops, 992px and 1199px) */
@@ -1408,14 +1409,7 @@ a:hover {
     background-position: bottom left;
   }
 
-  .sub_Components_section,
-  .sub_Components_section-2 {
-    padding: 20px 0;
-  }
 
-  .fourth-content h2 {
-    font-size: 34px;
-  }
 
   /*  */
   #importance h1 {
@@ -1502,7 +1496,7 @@ a:hover {
   }
 
   .sub_Objectives_div_role {
-    width: 47%;
+    width: 48%;
   }
 
   .Objectives_div_role {
@@ -1550,6 +1544,13 @@ a:hover {
     font-size: 13px;
     line-height: 22px;
   }
+  .fourth-content h2 {
+    font-size: 35px;
+    
+}
+.fourth-content p {
+  font-size: 18px;
+}
 }
 
 /* Medium devices (tablets, 768px and 991px) */
@@ -1792,21 +1793,6 @@ a:hover {
     width: 100%;
   }
 
-  .fourth-content h2 {
-    color: #fff;
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-  }
-
-  .fourth-content p {
-    text-align: center;
-  }
-
-  .Applications_div_2 {
-    height: max-content;
-  }
-
   /*  */
   .Measurementsection {
     padding: 23px 70px;
@@ -1877,7 +1863,7 @@ a:hover {
   }
 
   .sub_Objectives_div_role {
-    width: 40%;
+    width: 48%;
     padding: 20px 20px 12px 20px;
   }
 
@@ -1935,7 +1921,6 @@ a:hover {
 
   #conclution {
     grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
   }
 
   .importanceimg {
@@ -1970,6 +1955,15 @@ a:hover {
     gap: 70px;
     padding: 10px 0;
   }
+  .fourth-content h2 {
+    font-size: 35px;
+    text-align: center;
+    
+}
+.fourth-content p {
+  font-size: 16px;
+  text-align: center;
+}
 }
 
 /* Small devices (landscape phones, 576px and 767px) */
@@ -2191,29 +2185,7 @@ a:hover {
   }
 
   .sub_Objectives_div h3 {
-    padding-right: 0%;
-    text-align: center;
-  }
-
-  .fourth-content h2 {
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-  }
-
-  .Components_image img {
-    width: 100% !important;
-  }
-
-  .measurementsystem h1,
-  .measurementsystem p,
-  .sub_Objectives_div_1 p,
-  .Components_div h3,
-  .fourth-content h2,
-  .fourth-content p,
-  #importance_conclution h1,
-  .Components_div p {
-    text-align: left !important;
+    padding-right: 20%;
   }
 
   /*  */
@@ -2466,7 +2438,25 @@ a:hover {
     font-size: 28px;
     line-height: 37px;
   }
+  .fourth-content h2 {
+    font-size: 30px;
+    text-align: center;
+    
+}
+.fourth-content p {
+  font-size: 14px;
+  text-align: center;
+}
 
+  .fourth-content h2 {
+    font-size: 32px;
+    text-align: center;
+    
+}
+.fourth-content p {
+  font-size: 14px;
+  text-align: center;
+}
 
 }
 
@@ -2708,26 +2698,14 @@ a:hover {
   }
 
   .Forming_div_img {
-    width: 60%;
+    width: 80%;
     height: 100%;
-  }
-
-  .fourth-content h2 {
-    font-size: 30px;
-  }
-
-  .fourth-content p {
-    padding-top: 20px;
   }
 
   .Forming_div h4,
   .FMEA_div h4 {
     font-size: 26px;
     padding-bottom: 8px;
-  }
-
-  .Forming_div p {
-    text-align: center;
   }
 
   .FMEA_Steps_h4 {
@@ -2862,6 +2840,16 @@ a:hover {
     background-repeat: no-repeat;
   }
 
+  .fourth-content h2 {
+    font-size: 30px;
+    text-align: center;
+    
+}
+.fourth-content p {
+  font-size: 14px;
+  text-align: center;
+}
+
   .fourth-content .c-margin-top {
     margin-top: 10%;
   }
@@ -2874,22 +2862,6 @@ a:hover {
   .py-60p {
     padding-top: 10px !important;
     padding-bottom: 60px;
-  }
-
-  .Forming_div h4,
-  .FMEA_div h4 {
-    text-align: center;
-  }
-
-  .importanceimg {
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .importanceimg img {
-    width: 80%;
   }
 
   /*  */
