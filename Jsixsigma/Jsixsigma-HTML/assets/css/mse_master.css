@@ -1,0 +1,4054 @@
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit";
+  overflow-x: hidden;
+  font-size: 1.4rem;
+  background-color: #f9f6ff;
+  color: black;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+.contaiorX {
+  padding: 100px;
+}
+
+/* Measurement Systems Evaluation Section css */
+.Measurementsection {
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  gap: 140px;
+  background: radial-gradient(
+    54.98% 59.38% at 50% 5.85%,
+    #f94f42 0%,
+    #b92419 100%
+  );
+  margin-top: 70px;
+  max-height: 655px;
+}
+
+.measurementsystem {
+  max-width: 822px;
+  padding-left: 120px;
+}
+
+.measurementsystem h1 {
+  font-size: 60px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 25px;
+  line-height: 70px;
+}
+
+.measurementsystem p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.bannerlady {
+  max-width: 885px;
+  margin: 27px 0 -95px 0;
+}
+
+.bannerlady img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* end */
+
+/* Importance of Measurement Systems Section css */
+.importancesection {
+  padding: 120px 0 85px 0;
+}
+.importance_measurement {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  border-radius: 40px;
+  background: #f4f0ff;
+  padding: 70px 100px;
+}
+
+.importanceimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.importance h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.importance p {
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+#sigma h4 {
+  font-weight: 600;
+}
+/* end */
+
+/* Key Characteristics of Measurement Systems Section css  */
+.keycharacteristic {
+  padding: 0 100px 100px 100px;
+}
+.keycharacteristic_measurement {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  align-items: center;
+}
+.keycharacteristicimg {
+  width: 600px;
+}
+.keycharacteristicimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.keycharacteristic_fonts {
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 170px;
+}
+.arrow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.keycharacteristic_fonts h1 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60px;
+  text-transform: capitalize;
+}
+.keycharacteristic_fonts p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  padding: 45px 0;
+}
+.listsection {
+  border-radius: 10px;
+  border: 10px solid #df4b2d;
+  background: #fff;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+}
+.listicon {
+  border-bottom: 1px solid #d9d9d9;
+  display: flex;
+  gap: 22px;
+  margin-bottom: 20px;
+  padding: 15px 0;
+}
+#listicon {
+  border-bottom: 0;
+}
+.list_icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.list_paregraph h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.list_paregraph p {
+  font-size: 15px;
+  font-weight: 400;
+}
+/* end */
+
+/* Objectives section */
+
+.Objectives_section {
+  background-color: #f4f0ff;
+  padding: 100px;
+  display: grid;
+}
+
+.FMEA_h2 {
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 30px;
+  line-height: 60px;
+}
+
+.Objectives_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+}
+
+.sub_Objectives_div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.sub_Objectives_img {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.sub_Objectives_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sub_Objectives_div h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.sub_Objectives_div p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Evaluation Section css */
+.Components_section {
+  background-color: #2f136a;
+}
+
+.Components_h2,
+.Applications_h2 {
+  color: #fff !important;
+  padding: 0 20%;
+  font-weight: 600;
+  font-size: 60px;
+  padding-bottom: 30px;
+}
+
+.underline_div {
+  border-bottom: 5px solid #6967ff;
+  width: 100px;
+}
+
+.sub_Components_section,
+.sub_Components_section-2 {
+  display: grid;
+  grid-template-columns: auto 40%;
+  gap: 100px;
+  padding: 50px 0;
+  min-height: 200px;
+  max-height: 370px;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.sub_Components_section-2 {
+  grid-template-columns: 40% auto;
+}
+
+.Components_order_0 {
+  order: 0;
+}
+
+.Components_order_1 {
+  order: 1;
+  width: 100%;
+}
+
+.Components_order_1 img {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.Components_image {
+  width: 100%;
+}
+
+.Components_image img {
+  width: 80%;
+}
+
+.Components_div h3 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff !important;
+  padding-bottom: 20px;
+}
+
+.Components_div p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  padding-right: 20%;
+  color: #fff !important;
+}
+
+/* end */
+
+/* Common Challenges in Measurement System Evaluation Section css */
+.content04_div {
+  background: #ffd65c;
+}
+
+.content04_div_1 {
+  display: flex;
+  align-items: center;
+}
+
+.content04_div_1_img {
+  height: 150px;
+  width: 100%;
+  position: relative;
+}
+
+.content04_div_1_img img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+
+.content04_h2 {
+  font-weight: 600;
+}
+
+.content04_div_1_image {
+  min-height: 200px;
+  width: 50%;
+}
+
+.content04_div_1_image img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.content04_div_1_img img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: -64px;
+  right: 115px;
+}
+
+.common_challenges {
+  display: grid;
+  grid-template-columns: 40% auto;
+  gap: 50px;
+}
+
+.content04_div_2 {
+  border-radius: 40px;
+  background: #fff;
+  padding: 40px;
+  margin-top: -9px;
+}
+
+.lack_section {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.lack_of h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.lack_common {
+  padding-top: 30px;
+}
+.lack_head h2 {
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 5px solid #000;
+  padding-bottom: 15px;
+  margin-bottom: 22px;
+}
+.lack_paragraph p {
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.lackimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #f3eeed;
+  border-radius: 70%;
+  padding: 20px;
+}
+
+.Effect_Analysis_div {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.Effect_Analysis_div_1 {
+  min-height: 220px;
+  padding: 23px;
+  border-radius: 30px;
+  background: #ff9b7b;
+}
+.lacks {
+  width: 40%;
+}
+.lacks_one {
+  width: 60%;
+  margin-top: -29px;
+}
+
+.Effect_Analysis_div_1 h4 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.Effect_Analysis_div_1 p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.Effect_Analysis_div_2 {
+  background: #12db7b;
+}
+
+.Effect_Analysis_div_3 {
+  background: #c2acff;
+}
+
+.content04_div_1_text {
+  order: 0;
+  width: 50%;
+}
+
+.content04_div_1_image {
+  order: 1;
+}
+
+/* end */
+
+/* Best Practices for Measurement Systems Evaluation css */
+.best_practice {
+  background: #11192d;
+}
+.best_practice_for {
+  display: grid;
+  grid-template-columns: 39% auto;
+  gap: 90px;
+}
+.best_practiceimg {
+  width: 470px;
+  padding-top: 65px;
+}
+.best_practiceimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.evaluation h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60px;
+}
+.Objectives_div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+
+.sub_Objectives_div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.sub_Objectives_img {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.sub_Objectives_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sub_Objectives_div h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fff;
+}
+
+.sub_Objectives_div p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+}
+/* end */
+
+/* Implementation section - start */
+
+.Implementation_div,
+.Implementation_div_1 {
+  margin-top: 40px;
+  background: #15e5b3;
+  border-radius: 20px;
+  padding: 50px;
+  max-height: 335px;
+}
+
+.sub_Implementation_div {
+  grid-template-columns: auto 40%;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}
+
+.Forming_div h4,
+.FMEA_div h4,
+.Applications_text h3 {
+  color: #000;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-bottom: 25px;
+}
+
+.Forming_div p,
+.FMEA_div p {
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.Forming_div_img {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Forming_div_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Implementation_div_1 {
+  background: #df4b2d;
+  max-height: 100%;
+}
+
+.FMEA_div h4,
+.FMEA_div p {
+  color: #fff;
+}
+
+.FMEA_div p {
+  padding-bottom: 25px;
+}
+
+.right_img {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* end */
+
+/* Interpretation of Measurement System Evaluation in Six Sigma css */
+#sex_sigma {
+  background: #ffdedb;
+}
+#six_measurement {
+  background: #fef7f7;
+  display: flex;
+  padding: 70px 20px 70px 70px;
+}
+.importance h3 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+#importance {
+  max-width: 1059px;
+}
+#importance h1 {
+  font-weight: 700;
+}
+.sex_sigma_object {
+  padding-top: 100px;
+}
+#objective_sigma {
+  border-left: 5px solid #6967ff;
+  padding: 0 0 0 25px;
+}
+#objective_sigmaone {
+  border-left: 5px solid #3abe73;
+  padding: 0 0 0 35px;
+}
+#objective_sigmatwo {
+  border-left: 5px solid #0655ff;
+  padding: 0 0 0 35px;
+}
+#objective_sigmathree {
+  border-left: 5px solid #ed9964;
+  padding: 0 0 0 35px;
+}
+#objective_sigmafour {
+  border-left: 5px solid #df4b2d;
+  padding: 0 0 0 35px;
+}
+#objective_sigmafive {
+  border-left: 5px solid #0695a9;
+  padding: 0 0 0 35px;
+}
+#objective_sigmasix {
+  border-left: 5px solid #ed9b60;
+  padding: 0 0 0 35px;
+}
+#objective_sigma h3,
+#objective_sigmaone h3,
+#objective_sigmatwo h3,
+#objective_sigmathree h3,
+#objective_sigmafour h3,
+#objective_sigmafive h3,
+#objective_sigmasix h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #000;
+}
+#objective_sigma p,
+#objective_sigmaone p,
+#objective_sigmatwo p,
+#objective_sigmathree p,
+#objective_sigmafour p,
+#objective_sigmafive p,
+#objective_sigmasix p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.process_sigma {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+#objective_div {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 106px;
+}
+
+/* Effect_section */
+
+.Effect_section {
+  background: #1d1c41;
+}
+
+.Effect_top_div {
+  max-height: 300px;
+  margin-bottom: 30px;
+}
+
+.effect_top_text {
+  width: 50%;
+}
+
+.effect_top_img img {
+  object-fit: cover;
+}
+
+.Effect_h4 {
+  text-align: start;
+  color: #fff;
+  max-width: 100%;
+}
+
+.sub_Effect_bottem_div {
+  padding: 50px 35px 70px 70px;
+  border-radius: 50px;
+  background: linear-gradient(
+    138deg,
+    #9d4e69 17.88%,
+    rgba(79, 67, 222, 0) 68.36%
+  );
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 2;
+}
+
+.sub_Effect_bottem_div_1 {
+  background: linear-gradient(
+    148deg,
+    #255c70 16.21%,
+    rgba(57, 67, 157, 0.45) 43.39%,
+    rgba(79, 67, 222, 0) 76.11%
+  );
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.Effect_left_div {
+  position: relative;
+}
+
+.Effect_div {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+}
+
+.Effect_span {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: -58px;
+  left: 69px;
+  background: rgba(105, 103, 255, 0.1);
+  z-index: 1;
+}
+
+.Effect_text {
+  width: 80%;
+  height: 80%;
+  background: #f990b4;
+  border-radius: 50%;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+  z-index: 3;
+  position: relative;
+  top: -42px;
+  left: 81px;
+}
+
+.Effect_text_1 {
+  background: #33f2c4;
+}
+
+.Effect_text span,
+.sub_Effect_bottem_div h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.sub_Effect_bottem_div h4 {
+  color: #fff;
+  font-weight: 700;
+  line-height: 40px;
+  padding-top: 10px;
+}
+
+.sub_Effect_bottem_div p {
+  color: #fff;
+
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.Challenges_section {
+  background-color: #fff !important;
+}
+
+.Challenges_h3 {
+  padding-right: 0% !important;
+  text-align: center;
+}
+
+.Challenges_p {
+  padding-right: 0px !important;
+  text-align: center;
+}
+
+/* Applications  */
+.Applications_section {
+  background-color: #ffffff;
+}
+
+.sub_Applications_div {
+  border-radius: 100px;
+  background: #f64082;
+  padding: 70px;
+  position: relative;
+  min-height: 380px;
+}
+
+.Applications_text_h2 {
+  width: 75%;
+}
+
+.Applications_h2 {
+  padding: 0;
+  max-width: 70%;
+  text-align: left;
+}
+
+.Applications_img {
+  position: relative;
+}
+
+.Applications_img img {
+  position: absolute;
+  width: 450px;
+  height: 460px;
+  top: -242px;
+  right: -363px;
+}
+
+.Applications_div_2,
+.Applications_div_3 {
+  max-height: 400px;
+  height: 380px;
+}
+
+.Applications_text h3,
+.Applications_text p {
+  color: #000 !important;
+}
+
+.Applications_image_2 img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Applications_div_2 {
+  grid-template-columns: 30% auto;
+}
+
+.Applications_div_3 {
+  grid-template-columns: auto 30%;
+}
+
+/* Examples section */
+.Examples_section {
+  background-color: #ffde05;
+  justify-items: center;
+}
+
+.Examples_div {
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 90px;
+  gap: 50px;
+}
+
+.Examples_right_div {
+  background-color: #7c23a6;
+  border-radius: 30px;
+}
+
+.Examples_right_div_1 {
+  padding: 60px 60px 0 60px;
+}
+
+.Examples_right_div_1 h3 {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+.Examples_right_div_1 h3 span {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.Example_UL li p,
+.Examples_Corrective_UL li p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.Examples_Effects_UL li p {
+  color: #000;
+}
+
+.Examples_tic_img {
+  width: 20px;
+}
+
+.Examples__UL {
+  margin-top: 20px;
+}
+
+.Examples__UL li {
+  padding-bottom: 10px;
+}
+
+.Examples_Effects_div,
+.Examples_Corrective_div {
+  border-radius: 30px;
+  background: #fff;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.Examples_Corrective_div {
+  padding: 30px 60px;
+  background-color: #35072b;
+}
+
+.Examples_Corrective_div h4 {
+  color: #fff;
+}
+
+.sub_Examples_left_div {
+  padding-bottom: 30px;
+}
+
+.sub_Examples_left_div h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-bottom: 40px;
+}
+
+/* Content 4 */
+.fourth-content {
+  background: url("../images/Six_Sigma.svg");
+  background-color: #31003e;
+  background-blend-mode: initial;
+  background-repeat: no-repeat;
+  background-size: 28%;
+  background-position: bottom left;
+}
+
+.fourth-content h2 {
+  color: #fff;
+}
+
+.fourth-content p {
+  color: #fff;
+}
+
+.icon-arrow-left7 {
+  left: 0;
+}
+.icon-arrow-left7:before {
+  content: " \2190";
+}
+.icon-arrow-right7 {
+  right: 0;
+}
+.icon-arrow-right7:before {
+  content: " \2192";
+}
+
+.icon-arrow-left7,
+.icon-arrow-right7 {
+  font-size: 55px;
+  margin-right: 12px;
+}
+
+.Components_order_0 {
+  order: 0;
+}
+.Components_order_1 {
+  order: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Role of Measurement Systems Evaluation in Six Sigma css */
+.role_of {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#sigma {
+  max-width: 636px;
+}
+
+.Objectives_div_role {
+  display: flex;
+  gap: 34px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.sub_Objectives_div_role {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 31%;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  padding: 28px 28px 14px 28px;
+  border: 2px solid #d9d9d9;
+}
+
+.sub_Objectives_imgs {
+  width: 80px;
+  height: 80px;
+}
+
+.sub_Objectives_imgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sub_Objectives_div_role h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+}
+
+.sub_Objectives_div_role p {
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Interpretation of Measurement System Evaluation in Six Sigma css */
+.importancesection {
+  padding: 120px 100px 85px 100px;
+}
+
+#sex_sigma {
+  background: #ffdedb;
+}
+
+#six_measurement {
+  background: #fef7f7;
+  display: flex;
+  padding: 70px 20px 70px 70px;
+}
+
+.importance h3 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+#importance {
+  max-width: 636px;
+}
+
+#importance h1 {
+  font-weight: 700;
+}
+
+.sex_sigma_object {
+  padding-top: 100px;
+}
+
+#objective_sigma {
+  border-left: 5px solid #6967ff;
+  padding: 0 0 0 25px;
+}
+
+#objective_sigmaone {
+  border-left: 5px solid #df4b2d;
+  padding: 0 0 0 35px;
+}
+
+#objective_sigmathree {
+  border-left: 5px solid #ed9964;
+  padding: 0 0 0 35px;
+}
+
+#objective_sigmafour {
+  border-left: 5px solid #0695a9;
+  padding: 0 0 0 35px;
+}
+
+#objective_sigma h3,
+#objective_sigmaone h3,
+#objective_sigmatwo h3,
+#objective_sigmathree h3,
+#objective_sigmafour h3,
+#objective_sigmafive h3,
+#objective_sigmasix h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #000;
+}
+
+#objective_sigma p,
+#objective_sigmaone p,
+#objective_sigmatwo p,
+#objective_sigmathree p,
+#objective_sigmafour p,
+#objective_sigmafive p,
+#objective_sigmasix p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.process_sigma {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+
+/* Examples of Measurement Systems Evaluation in Six Sigma css */
+#sigma h1 {
+  font-weight: 700;
+}
+.reproducibility {
+  padding: 100px 0 60px 0;
+}
+.reproducibility h1 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.goal_sec {
+  margin-top: 40px;
+}
+.measures {
+  border-radius: 20px;
+  background: #f4f0ff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.goalimg {
+  max-width: 180px;
+}
+.goalimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.measure h3 {
+  width: 100%;
+  text-align: start;
+  font-size: 36px;
+  font-weight: 700;
+}
+.measure p {
+  font-size: 24px;
+  line-height: 35px;
+  padding-top: 20px;
+}
+#measure {
+  background: #fddb8d;
+}
+
+.owl-nav {
+  text-align: center;
+  padding-top: 33px;
+}
+
+/* Conclusion css */
+
+#conclution {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  align-items: center;
+  border-radius: 40px;
+  background: #33f2c4;
+  padding: 0;
+}
+
+#conclution_section {
+  background: #33f2c4;
+  margin-bottom: -200px;
+  padding-bottom: 340px;
+}
+
+#importance_conclution h1 {
+  font-weight: 800;
+}
+
+#importance_conclution h3 {
+  font-weight: 400;
+}
+
+#importance_conclution p {
+  font-size: 15px;
+}
+
+.importanceimg {
+  max-width: 500px;
+}
+
+#importance_conclution h3 {
+  font-weight: 400;
+}
+
+.importance h3 {
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.importance h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.importance_measurement {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  align-items: center;
+  border-radius: 40px;
+  background: #f4f0ff;
+  padding: 70px 100px;
+}
+
+.importanceimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/*--------------------------------------*/
+
+/* Responsive
+/*--------------------------------------*/
+/* XX-Large devices (larger desktops, 1400px and 1699px) */
+@media screen and (min-width: 1400px) and (max-width: 1699px) {
+  .content04_div_1_img img {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    bottom: 27px;
+    right: 78px;
+  }
+
+  .Applications_img img {
+    width: 390px;
+    height: 420px;
+    top: -242px;
+    right: -278px;
+  }
+
+  .sub_Applications_div {
+    padding: 70px;
+    min-height: 340px;
+  }
+
+  .Applications_img img {
+    width: 415px;
+    height: 450px;
+    top: -221px;
+    right: -278px;
+  }
+
+  .Applications_h2 {
+    font-size: 45px;
+  }
+
+  .fourth-content {
+    background: url('../images/Six_Sigma.svg');
+    background-color: #31003E;
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 38%;
+    background-position: bottom left;
+  }
+
+  .content04_div_2 {
+    margin-top: -14px;
+}
+
+  .measurementsystem {
+    max-width: 600px;
+    padding-left: 0px;
+  }
+
+  .keycharacteristicimg {
+    width: 560px;
+  }
+
+  .arrow {
+    width: 140px;
+    top: 70px;
+  }
+
+  .bannerlady {
+    margin: 27px 0 -91px 0;
+}
+.measure p {
+    font-size: 23px;
+}
+
+  .Objectives_div_role {
+    gap: 26px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and 1399px) */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .contaiorX {
+    padding: 90px;
+  }
+
+  .Objectives_div {
+    gap: 80px;
+  }
+
+  .hero_section {
+    padding: 90px;
+  }
+
+  .sub_Objectives_img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .sub_Objectives_div h3 {
+    font-size: 18px;
+    /* padding-right: 20%; */
+  }
+
+  .sub_Objectives_div p {
+    font-size: 13px;
+    /* padding-right: 20px; */
+  }
+
+  #objective_sigma h3, #objective_sigmaone h3, #objective_sigmatwo h3, #objective_sigmathree h3, #objective_sigmafour h3, #objective_sigmafive h3, #objective_sigmasix h3 {
+    font-size: 20px;
+}
+
+#objective_sigma p, #objective_sigmaone p, #objective_sigmatwo p, #objective_sigmathree p, #objective_sigmafour p, #objective_sigmafive p, #objective_sigmasix p {
+    font-size: 13px;
+}
+.measure p {
+    font-size: 22px;
+}
+
+  .Components_h2 {
+    padding: 0 15%;
+  }
+
+  .FMEA_h2 {
+    font-size: 42px;
+    line-height: 50px;
+}
+.Components_div h3 {
+    font-size: 37px;
+}
+
+.Components_h2 {
+    margin-bottom: 13px;
+}
+
+  .content04_div_1_img {
+    height: 50px;
+  }
+
+ .content04_div_1_img img {
+    width: 70px;
+    height: 80px;
+    bottom: -31px;
+    right: 88px;
+}
+
+  .content04_div_2 {
+    padding: 30px;
+  }
+
+  .Effect_Analysis_div_1 {
+    padding: 30px;
+  }
+
+  .Forming_div_img {
+    width: 70%;
+  }
+
+  .Forming_div h4,
+  .FMEA_div h4 {
+    font-size: 32px;
+    padding-bottom: 25px;
+  }
+
+  .Forming_div p,
+  .FMEA_div p {
+    font-size: 22px;
+  }
+
+  .Applications_image_2 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sub_Applications_div {
+    padding: 60px;
+    min-height: 340px;
+  }
+
+  .Applications_img img {
+    width: 420px;
+    height: 450px;
+    top: -221px;
+    right: -236px;
+  }
+
+  .lack_of h1 {
+    font-size: 28px;
+}
+
+
+  .Examples_div {
+    margin-top: 70px;
+  }
+
+  .Examples_right_div_1 {
+    padding: 50px 50px 0 50px;
+  }
+
+  .sub_Examples_left_div h4 {
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+
+  .Examples_right_div_1 h3 {
+    font-size: 32px;
+  }
+
+  .Example_UL li p,
+  .Examples_Corrective_UL li p {
+    font-size: 14px;
+  }
+
+  .Examples_Corrective_div h4,
+  .Examples_Effects_div h4 {
+    font-size: 32px;
+  }
+
+  .fourth-content {
+    background: url('../images/Six_Sigma.svg');
+    background-color: #31003E;
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 48%;
+    background-position: bottom left;
+  }
+
+  .sub_Components_section,
+  .sub_Components_section-2 {
+    margin-top: 20px;
+  }
+
+  .evaluation h1 {
+    font-size: 42px;
+    line-height: 50px;
+}
+#sigma h4 {
+    font-size: 40px;
+    line-height: 50px;
+}
+.reproducibility h1 {
+    font-size: 34px;
+    line-height: 45px;
+}
+.measure h3 {
+    font-size: 30px;
+}
+.keycharacteristic_fonts p {
+    font-size: 17px;
+    line-height: 28px;
+}
+.Components_div p {
+    font-size: 14px;
+    line-height: 25px;
+    padding-right: 0;
+}
+.lack_paragraph p {
+    font-size: 15px;
+    line-height: 45px;
+}
+.lack_head h2{
+    font-size: 15px;
+}
+
+.keycharacteristicimg {
+    width: 500px;
+}
+.keycharacteristic_measurement {
+    gap: 30px;
+}
+.arrow {
+    width: 125px;
+}
+.common_challenges {
+    grid-template-columns: 35% auto;
+}
+.best_practiceimg {
+    width: 400px;
+}
+
+  /*  */
+
+
+  .measurementsystem p {
+    font-size: 17px;
+    color: #fff;
+  }
+
+  .Measurementsection {
+    padding: 0px 80px;
+    gap: 40px;
+    margin-top: 95px;
+  }
+
+  .importance h3 {
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  .measurementsystem h1 {
+    font-size: 42px;
+    margin-bottom: 23px;
+    line-height: 50px;
+}
+
+  .measurementsystem {
+    max-width: 480px;
+    padding-left: 0px;
+  }
+
+  .importance h1 {
+    font-size: 42px;
+    line-height: 50px;
+}
+
+  .importanceimg {
+    width: 467px;
+}
+.goalimg {
+    max-width: 130px;
+}
+
+  .importancesection {
+    padding: 100px 80px;
+  }
+
+  .importance_measurement {
+    padding: 50px 55px;
+    gap: 45px;
+  }
+
+  .keycharacteristic_fonts h1 {
+    font-size: 42px;
+    line-height: 50px;
+}
+
+  .role_of {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #sigma {
+    max-width: 570px;
+  }
+
+  .importance p {
+    padding-top: 17px;
+  }
+
+  .Objectives_div_role {
+    gap: 20px;
+  }
+
+  .sub_Objectives_div_role h3 {
+    font-size: 22px;
+  }
+
+  .sub_Objectives_div_role p {
+    font-size: 14px;
+  }
+
+  .bannerlady {
+    margin: 27px 0 -85px 0;
+  }
+
+  #importance {
+    max-width: 569px;
+  }
+}
+
+/* Large devices (desktops, 992px and 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .contaiorX {
+    padding: 60px;
+  }
+
+  .Objectives_div {
+    gap: 60px;
+  }
+
+  /* .hero_section {
+    padding: 90px;
+  } */
+  .Objectives_section {
+    padding: 70px;
+  }
+
+  .sub_Objectives_img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .FMEA_h2 {
+    font-size: 35px;
+    line-height: 46px;
+}
+.common_challenges {
+    grid-template-columns: 36% auto;
+    gap: 36px;
+    margin-top: 38px;
+}
+
+  .sub_Objectives_div h3 {
+    font-size: 16px;
+    /* padding-right: 20%; */
+  }
+
+  .sub_Objectives_div p {
+    font-size: 13px;
+    /* padding-right: 10px; */
+  }
+
+  .content04_div_1_img {
+    height: 50px;
+  }
+
+  .content04_div_1_img img {
+    width: 70px;
+    height: 80px;
+    bottom: 40px;
+    right: 27px;
+  }
+  #six_measurement {
+    padding: 60px 20px 60px 60px;
+}
+#importance {
+    max-width: 419px;
+}
+
+  .content04_div_2 {
+    padding: 25px;
+    margin-top: -44px;
+}
+
+  .Effect_Analysis_div_1 {
+    padding: 22px;
+}
+
+  .Effect_Analysis_div_1 h4 {
+    font-size: 20px;
+  }
+
+  .Effect_Analysis_div_1 p {
+    font-size: 14px;
+  }
+
+  .lack_of h1 {
+    font-size: 27px;
+}
+.sub_Components_section, .sub_Components_section-2 {
+    margin-top: 0;
+}
+.lack_section {
+    gap: 17px;
+    padding-bottom: 15px;
+}
+.best_practiceimg {
+    width: 340px;
+}
+.lackimg img {
+    padding: 14px;
+}
+.evaluation h1 {
+    font-size: 37px;
+    line-height: 45px;
+}
+.measure h3 {
+    font-size: 28px;
+}
+.goalimg {
+    max-width: 105px;
+}
+.measure p {
+    font-size: 18px;
+}
+.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+    display: block !important;
+}
+
+  /* Implementation section */
+  .Forming_div_img {
+    width: 80%;
+  }
+
+  .Forming_div h4,
+  .FMEA_div h4 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  .FMEA_Steps_h4 {
+    padding-bottom: 0;
+  }
+
+  .Implementation_div,
+  .Implementation_div_1 {
+    margin-top: 30px;
+    padding: 40px;
+  }
+
+  .Forming_div p,
+  .FMEA_div p {
+    font-size: 18px;
+  }
+
+  .right_img {
+    width: 36%;
+  }
+
+
+  .Effect_div {
+    width: 100px;
+    height: 100px;
+  }
+
+  .Effect_span {
+    top: -56px;
+    left: 71px;
+  }
+
+  .Effect_bottem_div {
+    gap: 80px;
+  }
+
+  .sub_Effect_bottem_div {
+    padding: 50px 30px 70px 50px;
+  }
+
+  .Effect_text span,
+  .sub_Effect_bottem_div h4 {
+    font-size: 28px;
+  }
+
+  .sub_Effect_bottem_div p {
+    font-size: 16px;
+  }
+
+  .Applications_image_2 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sub_Applications_div {
+    padding: 30px;
+    min-height: 340px;
+  }
+
+  .Applications_img img {
+    width: 420px;
+    height: 450px;
+    top: -221px;
+    right: -236px;
+  }
+
+  .Applications_img img {
+    width: 380px;
+    height: 390px;
+    top: -204px;
+    right: -174px;
+  }
+
+
+  .Examples_div {
+    margin-top: 50px;
+  }
+
+  .Examples_right_div_1 {
+    padding: 40px 40px 0 40px;
+  }
+
+  .Examples_Corrective_div {
+    padding: 30px;
+  }
+
+  .sub_Examples_left_div h4 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .Examples_right_div_1 h3 {
+    font-size: 32px;
+  }
+
+  .Example_UL li p,
+  .Examples_Corrective_UL li p {
+    font-size: 14px;
+  }
+
+  .Examples_Corrective_div h4,
+  .Examples_Effects_div h4 {
+    font-size: 32px;
+  }
+
+  .fourth-content {
+    background: url('../images/Six_Sigma.svg');
+    background-color: #31003E;
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 48%;
+    background-position: bottom left;
+  }
+
+
+
+  /*  */
+  #importance h1 {
+    font-size: 37px;
+  }
+
+  .Measurementsection {
+    padding: 0px 70px;
+    gap: 40px;
+    margin-top: 88px;
+
+  }
+
+  .importancesection {
+    padding: 90px 70px;
+  }
+
+  .importance_measurement {
+    padding: 40px 60px;
+    gap: 40px;
+  }
+
+  .bannerlady {
+    margin: 27px 0 -63px 0;
+  }
+
+
+  .measurementsystem h1 {
+    font-size: 37px;
+    margin-bottom: 23px;
+    line-height: 46px;
+  }
+
+  .measurementsystem p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+
+
+  /*  */
+  .Measurementsection {
+    padding: 0px 70px;
+    gap: 40px;
+    margin-top: 88px;
+  }
+
+  .importancesection {
+    padding: 90px 70px;
+  }
+
+  .importance_measurement {
+    padding: 40px 60px;
+    gap: 40px;
+  }
+
+  .bannerlady {
+    margin: 27px 0 -63px 0;
+  }
+
+
+  .measurementsystem h1 {
+    font-size: 37px;
+    margin-bottom: 23px;
+    line-height: 46px;
+  }
+
+  .measurementsystem p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .measurementsystem {
+    max-width: 430px;
+    padding-left: 0px;
+  }
+
+  .role_of {
+    gap: 28px;
+  }
+
+  #sigma {
+    max-width: 450px;
+  }
+
+  .sub_Objectives_div_role {
+    width: 48%;
+  }
+
+  .Objectives_div_role {
+    gap: 34px;
+  }
+
+  .sub_Objectives_div_role h3 {
+    font-size: 22px;
+  }
+
+  .sub_Objectives_div_role p {
+    font-size: 14px;
+  }
+
+  /* #importance {
+    max-width: 400px;
+  } */
+
+  .importance h3 {
+    font-size: 20px;
+  }
+
+  #objective_div {
+    gap: 40px;
+  }
+
+  #objective_sigma h3,
+  #objective_sigmaone h3,
+  #objective_sigmatwo h3,
+  #objective_sigmathree h3,
+  #objective_sigmafour h3,
+  #objective_sigmafive h3,
+  #objective_sigmasix h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  #objective_sigma p,
+  #objective_sigmaone p,
+  #objective_sigmatwo p,
+  #objective_sigmathree p,
+  #objective_sigmafour p,
+  #objective_sigmafive p,
+  #objective_sigmasix p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .importance h1 {
+    font-size: 42px;
+    line-height: 50px;
+}
+
+  .importanceimg {
+    width: 354px;
+}
+.goalimg {
+    max-width: 130px;
+}
+
+  .importancesection {
+    padding: 100px 80px;
+  }
+
+  .importance_measurement {
+    padding: 50px 55px;
+    gap: 45px;
+  }
+
+  .keycharacteristic_fonts h1 {
+    font-size: 42px;
+    line-height: 50px;
+}
+
+  .role_of {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #sigma {
+    max-width: 570px;
+  }
+
+  .importance p {
+    padding-top: 17px;
+  }
+
+  .Objectives_div_role {
+    gap: 20px;
+  }
+
+  .sub_Objectives_div_role h3 {
+    font-size: 22px;
+  }
+
+  .sub_Objectives_div_role p {
+    font-size: 14px;
+  }
+
+  .bannerlady {
+    margin: 27px 0 -64px 0;
+  }
+
+  /* #importance {
+    max-width: 569px;
+  } */
+
+  .importanceimg {
+    width: 354px;
+}
+
+.importance h1 {
+    font-size: 37px;
+    line-height: 46px;
+}
+
+ .importanceimg {
+    width: 392px;
+}
+.goalimg {
+    max-width: 130px;
+}
+
+  .importancesection {
+    padding: 100px 60px;
+}
+.keycharacteristic_fonts p {
+    font-size: 18px;
+    line-height: 30px;
+}
+  .importance_measurement {
+    padding: 45px 50px;
+    gap: 45px;
+}
+
+.arrow {
+    top: 68px;
+    width: 100px;
+}
+
+  .keycharacteristic_fonts h1 {
+    font-size: 37px;
+    line-height: 46px;
+}
+
+  .role_of {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #sigma {
+    max-width: 570px;
+  }
+  .keycharacteristic {
+    padding: 0 60px 100px 60px;
+}
+
+  .importance p {
+    padding-top: 17px;
+  }
+
+  .Objectives_div_role {
+    gap: 20px;
+  }
+
+  .sub_Objectives_div_role h3 {
+    font-size: 22px;
+  }
+
+  .sub_Objectives_div_role p {
+    font-size: 14px;
+  }
+
+  .bannerlady {
+    margin: 27px 0 -64px 0;
+}
+
+  /* #importance {
+    max-width: 569px;
+  } */
+ .keycharacteristicimg {
+    width: 400px;
+}
+.lack_paragraph p {
+    font-size: 13px;
+    line-height: 36px;
+}
+
+.lack_head h2{
+font-size: 13px;
+}
+.keycharacteristic_measurement {
+    gap: 23px;
+}
+.Components_div h3 {
+    font-size: 30px;
+}
+.Components_div p {
+    font-size: 13px;
+    line-height: 24px;
+    padding-right: 0;
+}
+}
+
+/* Medium devices (tablets, 768px and 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contaiorX {
+    padding: 60px;
+  }
+
+  .Objectives_section {
+    padding: 60px;
+  }
+
+  .Objectives_div {
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero_section {
+    padding: 90px;
+  }
+
+  .sub_Objectives_img {
+    width: 60px;
+    height: 60px;
+  }
+  .arrow {
+    display: none;
+}
+
+  .FMEA_h2 {
+    font-size: 30px;
+  }
+
+  .Components_h2 {
+    padding: 0 10%;
+  }
+
+  .sub_Objectives_div h3 {
+    font-size: 16px;
+    padding-right: 20%;
+  }
+
+  .sub_Objectives_div p {
+    font-size: 13px;
+    padding-right: 10px;
+  }
+
+  .Components_div p {
+    font-size: 13px;
+    padding-right: 10%;
+}
+
+  .Effect_Analysis_div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .best_practiceimg {
+    width: 400px;
+}
+
+  .content04_div_1_img {
+    height: 20px;
+  }
+
+  .content04_div_1_img img {
+    width: 70px;
+    height: 80px;
+    bottom: -670px;
+    right: -27px;
+    position: relative;
+}
+
+  .content04_div_2 {
+    padding: 20px;
+  }
+
+  .Effect_Analysis_div_1 {
+    min-height: 180px;
+  }
+
+  .Effect_Analysis_div_1 {
+    padding: 30px;
+  }
+
+  .Effect_Analysis_div_1 h4 {
+    font-size: 18px;
+  }
+
+  .Effect_Analysis_div_1 p {
+    font-size: 12px;
+  }
+
+  .Forming_div_img {
+    width: 80%;
+    height: 70%;
+  }
+
+  .Forming_div h4,
+  .FMEA_div h4 {
+    font-size: 26px;
+    padding-bottom: 8px;
+  }
+
+  .FMEA_Steps_h4 {
+    padding-bottom: 0;
+  }
+
+  .Implementation_div,
+  .Implementation_div_1 {
+    margin-top: 30px;
+    padding: 30px;
+  }
+
+  .Forming_div p,
+  .FMEA_div p {
+    font-size: 14px;
+  }
+
+  .right_img {
+    width: 36%;
+  }
+
+  .FMEA_div p {
+    padding-bottom: 20px;
+  }
+
+
+  .effect_top_text {
+    width: 80%;
+  }
+
+  .Effect_div {
+    width: 90px;
+    height: 90px;
+  }
+
+  .Effect_span {
+    top: -55px;
+    left: 50px;
+  }
+
+  .Effect_text {
+    top: -42px;
+    left: 59px;
+  }
+
+  .Effect_bottem_div {
+    gap: 70px;
+    margin-top: 50px;
+  }
+
+
+  .sub_Effect_bottem_div {
+    padding: 50px 22px 40px 30px;
+  }
+
+  .Effect_text span,
+  .sub_Effect_bottem_div h4 {
+    font-size: 24px;
+  }
+
+  .sub_Effect_bottem_div p {
+    font-size: 14px;
+  }
+
+  .Applications_image_2 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sub_Applications_div {
+    padding: 30px;
+    min-height: 340px;
+  }
+
+  .Applications_img img {
+    width: 300px;
+    height: 400px;
+    top: -195px;
+    right: -162px;
+  }
+
+  .Examples_div {
+    margin-top: 50px;
+  }
+
+  .Examples_right_div_1 {
+    padding: 20px 20px 0 20px;
+  }
+
+  .Examples_Corrective_div {
+    padding: 20px;
+  }
+
+  .sub_Examples_left_div h4 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .Examples_right_div_1 h3 {
+    font-size: 24px;
+  }
+
+  .Examples_right_div_1 h3 span {
+    font-size: 16px;
+  }
+
+  .Example_UL li p,
+  .Examples_Corrective_UL li p {
+    font-size: 14px;
+  }
+
+  .Examples_tic_img {
+    width: 15px;
+  }
+
+  .Example_UL li p,
+  .Examples_Corrective_UL li p {
+    font-size: 12px;
+  }
+
+  .Examples_Corrective_div h4,
+  .Examples_Effects_div h4 {
+    font-size: 28px;
+  }
+
+
+  .fourth-content {
+    background-image: none;
+    background-color: #31003E;
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }
+
+  .fourth-content .c-margin-top {
+    margin-top: 3%;
+  }
+
+  .fifth-content .c-my {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .Components_image img {
+    width: 100%;
+  }
+
+  /*  */
+  .Measurementsection {
+    padding: 23px 60px;
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+}
+
+  .Components_div h3 {
+    font-size: 25px;
+  }
+
+  .bannerlady {
+    margin: 0;
+  }
+
+  .measurementsystem h1 {
+    font-size: 34px;
+    margin-bottom: 23px;
+    line-height: 48px;
+}
+.measurementsystem h1 {
+    font-size: 34px;
+    margin-top: -42px;
+}
+
+  .measurementsystem {
+    max-width: 430px;
+  }
+
+  .measurementsystem p {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+
+  .measurementsystem {
+    max-width: 100%;
+  }
+
+  .bannerlady {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bannerlady img {
+    width: 75%;
+    height: 75%;
+  }
+
+  .measurementsystem {
+    order: 2;
+    padding-left: 0px;
+  }
+
+  .importancesection {
+    padding: 55px 60px;
+}
+.keycharacteristic {
+    padding: 0 60px 100px 60px;
+}
+
+.common_challenges {
+    grid-template-columns: repeat(1,1fr);
+}
+.best_practice_for {
+    grid-template-columns: repeat(1,1fr);
+}
+
+  .role_of {
+    display: flex;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  #sigma {
+    order: 2;
+  }
+
+  .sub_Objectives_div_role {
+    width: 48%;
+    padding: 20px 20px 12px 20px;
+  }
+
+  .Objectives_div_role {
+    gap: 24px;
+}
+
+  .sub_Objectives_div_role h3 {
+    font-size: 22px;
+  }
+
+  .sub_Objectives_div_role p {
+    font-size: 14px;
+  }
+
+  #six_measurement {
+    display: grid;
+    padding: 40px 60px;
+  }
+
+  #importance {
+    order: 2;
+  }
+
+  .importance h3 {
+    font-size: 20px;
+  }
+
+  #objective_div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  #objective_sigma h3,
+  #objective_sigmaone h3,
+  #objective_sigmatwo h3,
+  #objective_sigmathree h3,
+  #objective_sigmafour h3,
+  #objective_sigmafive h3,
+  #objective_sigmasix h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  #objective_sigma p,
+  #objective_sigmaone p,
+  #objective_sigmatwo p,
+  #objective_sigmathree p,
+  #objective_sigmafour p,
+  #objective_sigmafive p,
+  #objective_sigmasix p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  #conclution {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 33px;
+  }
+.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+    display: block !important;
+}
+
+.importanceimg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+  .importance h1 {
+    font-size: 34px;
+    line-height: 45px;
+}
+.keycharacteristic_fonts h1 {
+    font-size: 34px;
+    line-height: 45px;
+    text-align: center;
+}
+.FMEA_h2 {
+  font-size: 34px;
+  line-height: 42px;
+  margin-bottom: 15px;
+}
+.lack_of h1 {
+    font-size: 33px;
+}
+.evaluation h1 {
+    font-size: 37px;
+    line-height: 45px;
+}
+.goalimg {
+    max-width: 95px;
+}
+.content04_div_1 {
+  display: grid;
+}
+.content04_div_1_text {
+  width: 100%;
+}
+.content04_div_1_image {
+  width: 100%;
+}
+.measure h3 {
+    font-size: 25px;
+}
+.measure p {
+    font-size: 13px;
+    line-height: 27px;
+}
+.measures {
+    padding: 33px;
+}
+#conclution_section {
+  margin-bottom: -223px;
+}
+.importance p {
+    font-size: 13px;
+    line-height: 24px;
+}
+.arrow {
+    width: 130px;
+}
+
+  #six_measurement {
+    display: grid;
+    padding: 40px 60px;
+  }
+
+  .importance_measurement {
+    padding: 40px 50px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+.keycharacteristic_fonts p {
+    font-size: 13px;
+    line-height: 27px;
+    padding: 32px 0;
+    text-align: center;
+}
+  .importanceimg img {
+    width: 75%;
+    height: 75%;
+  }
+
+  .sub_Components_section,
+  .sub_Components_section-2 {
+    gap: 70px;
+    padding: 10px 0;
+  }
+
+  .keycharacteristic_measurement {
+    grid-template-columns: repeat(1, 1fr);
+}
+.Measurementsection {
+    max-height: 780px;
+}
+}
+
+/* Small devices (landscape phones, 576px and 767px) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .Objectives_section {
+    padding: 40px;
+  }
+  .content04_div_1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+  .FMEA_h2,
+  .Components_div h3 {
+    font-size: 30px;
+  }
+
+  .Components_div p {
+    font-size: 14px;
+    padding-right: 0;
+  }
+
+
+  .Components_div h3 {
+    padding-bottom: 10px;
+  }
+
+  /* .content04_div_1{
+    display: grid;
+  } */
+  .Effect_Analysis_div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+
+  .content04_div_1_img img {
+    width: 40px;
+    height: 50px;
+    bottom: -9px;
+    right: 2px;
+  }
+
+  .content04_div_1_img {
+    height: 0px;
+    width: 100%;
+  }
+
+  .content04_h2 {
+    font-size: 23px !important;
+    line-height: 47px;
+  }
+
+  .content04_div_2 {
+    padding: 20px;
+  }
+
+  .Effect_Analysis_div_1 {
+    min-height: 160px;
+    padding: 20px;
+  }
+
+  .Effect_Analysis_div_1 h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .Effect_Analysis_div_1 p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .Forming_div_img {
+    width: 80%;
+    height: 50%;
+  }
+
+  .Forming_div h4,
+  .FMEA_div h4 {
+    font-size: 26px;
+    padding-bottom: 8px;
+  }
+
+  .FMEA_Steps_h4 {
+    padding-bottom: 0;
+  }
+
+  .Implementation_div,
+  .Implementation_div_1 {
+    margin-top: 30px;
+    padding: 30px;
+  }
+
+  .Forming_div p,
+  .FMEA_div p {
+    font-size: 14px;
+  }
+
+  .right_img {
+    width: 36%;
+  }
+
+  .FMEA_div p {
+    padding-bottom: 20px;
+  }
+
+
+  .effect_top_text {
+    width: 100%;
+    text-align: center;
+  }
+
+
+
+  .Effect_div {
+    width: 90px;
+    height: 90px;
+  }
+
+  .Effect_span {
+    top: -55px;
+    left: 50px;
+  }
+
+  .Effect_text {
+    top: -42px;
+    left: 59px;
+  }
+
+  .Effect_bottem_div {
+    gap: 70px;
+    margin-top: 50px;
+  }
+
+
+  .sub_Effect_bottem_div {
+    padding: 50px 22px 40px 30px;
+  }
+
+  .Effect_text span,
+  .sub_Effect_bottem_div h4 {
+    font-size: 24px;
+  }
+
+  .sub_Effect_bottem_div p {
+    font-size: 14px;
+  }
+
+  .sub_Applications_div {
+    padding: 20px;
+    min-height: 100%;
+    flex-direction: column;
+  }
+
+  .Applications_img img {
+    width: 100%;
+    height: 100%;
+    right: 0;
+    position: relative;
+    bottom: 0;
+  }
+
+  .Applications_text_h2 {
+    width: 100% !important;
+    position: relative;
+  }
+
+  .sub_Applications_div {
+    padding: 20px;
+    min-height: 100%;
+  }
+
+  .Examples_right_div_1 {
+    padding: 20px 20px 0 20px;
+  }
+
+  .Examples_Corrective_div {
+    padding: 20px;
+  }
+
+  .Examples_right_div_1 h3 {
+    font-size: 24px;
+  }
+
+  .Examples_right_div_1 h3 span {
+    font-size: 16px;
+  }
+
+  .Example_UL li p,
+  .Examples_Corrective_UL li p {
+    font-size: 14px;
+  }
+
+  .Examples_tic_img {
+    width: 15px;
+  }
+
+  .Example_UL li p,
+  .Examples_Corrective_UL li p {
+    font-size: 12px;
+  }
+
+  .Examples_Corrective_div h4,
+  .Examples_Effects_div h4 {
+    font-size: 28px;
+  }
+
+  .fourth-content {
+    background-image: none;
+    background-color: #31003E;
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+  }
+
+  .fourth-content .c-margin-top {
+    margin-top: 3%;
+  }
+
+  .fifth-content .c-my {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .sub_Objectives_div p {
+    padding-right: 0;
+  }
+
+  .sub_Objectives_div h3 {
+    /* padding-right: 20%; */
+    text-align: center;
+}
+.sub_Objectives_div p {
+    text-align: center;
+    font-size: 13px;
+    padding-top: 7px;
+}
+
+  /*  */
+  .Measurementsection {
+    padding: 23px 55px;
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .measurementsystem h1 {
+    font-size: 30px;
+    line-height: 25px;
+  }
+
+  .bannerlady {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .bannerlady img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .measurementsystem {
+    padding-left: 0px;
+    order: 2;
+  }
+
+  .importancesection {
+    padding: 70px 55px;
+  }
+
+  .importance_measurement {
+    padding: 35px 45px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  .importanceimg {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+  #importanceimg img {
+    width: 75%;
+    height: 75%;
+  }
+
+ .importance h1 {
+    font-size: 27px;
+    line-height: 34px;
+    text-align: center;
+}
+.importance p {
+    text-align: center;
+}
+
+  .role_of {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  #sigma {
+    order: 2;
+  }
+
+  .sub_Objectives_div_role {
+    width: 100%;
+    padding: 20px 20px 12px 20px;
+  }
+
+  .importancesection {
+    padding: 70px 30px;
+  }
+
+  .sub_Objectives_div_role h3 {
+    font-size: 22px;
+  }
+
+  .sub_Objectives_div_role p {
+    font-size: 14px;
+  }
+
+  .sub_Objectives_imgs {
+    width: 65px;
+    height: 65px;
+  }
+
+  #six_measurement {
+    display: grid;
+    padding: 35px 45px;
+  }
+
+  #importance {
+    order: 2;
+  }
+
+  .importance h3 {
+    font-size: 16px;
+    line-height: 35px;
+  }
+
+  .importance h3 {
+    font-size: 16px;
+  }
+
+  #objective_div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+ #objective_sigma h3, #objective_sigmaone h3, #objective_sigmatwo h3, #objective_sigmathree h3, #objective_sigmafour h3, #objective_sigmafive h3, #objective_sigmasix h3 {
+    font-size: 17px;
+    line-height: 26px;
+}
+
+  #objective_sigma p,
+  #objective_sigmaone p,
+  #objective_sigmatwo p,
+  #objective_sigmathree p,
+  #objective_sigmafour p,
+  #objective_sigmafive p,
+  #objective_sigmasix p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  #conclution {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+
+  .FMEA_h2,
+  .Components_div h3 {
+    font-size: 27px;
+    line-height: 38px;
+  }
+
+  .Components_div p {
+    font-size: 14px;
+    padding-right: 0;
+  }
+
+  .Components_div h3 {
+    padding-bottom: 10px;
+  }
+
+  .Measurementsection {
+    padding: 23px 30px;
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+
+  .Components_div h3 {
+    font-size: 28px;
+  }
+
+  .bannerlady {
+    margin: 0 0 -53px 0;
+  }
+
+ .measurementsystem h1 {
+    font-size: 27px;
+    line-height: 34px;
+    margin-bottom: 10px;
+}
+
+  .measurementsystem p {
+    padding-top: 5px;
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .bannerlady {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bannerlady img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .measurementsystem {
+    order: 2;
+
+  }
+
+  .importancesection {
+    padding: 70px 30px;
+  }
+
+  .role_of {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  #sigma {
+    order: 2;
+  }
+
+  .sub_Objectives_div_role {
+    width: 100%;
+    padding: 20px 20px 12px 20px;
+  }
+
+  .importancesection {
+    padding: 70px 30px;
+  }
+
+  .sub_Objectives_div_role h3 {
+    font-size: 22px;
+  }
+
+  .sub_Objectives_div_role p {
+    font-size: 14px;
+    padding-top: 0;
+  }
+
+  .sub_Objectives_imgs {
+    width: 65px;
+    height: 65px;
+  }
+
+  #six_measurement {
+    display: grid;
+    padding: 35px 45px;
+  }
+
+  #sigma h1 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  #importance h1 {
+    font-size: 28px;
+    line-height: 37px;
+  }
+.keycharacteristic_measurement {
+    grid-template-columns: repeat(1, 1fr);
+}
+.common_challenges {
+     grid-template-columns: repeat(1, 1fr);
+}
+.best_practice_for {
+    grid-template-columns: repeat(1, 1fr);
+}
+.keycharacteristicimg {
+    width: 400px;
+}
+.keycharacteristic {
+    padding: 0 30px 100px 30px;
+}
+}
+
+@media screen and (max-width: 767px) {
+  .contaiorX {
+    padding: 30px;
+}
+.measures {
+  padding: 29px;
+}
+.content04_div_1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.arrow img {
+  display: none;
+}
+.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+  display: block !important;
+}
+
+  .Objectives_div {
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Components_h2 {
+    padding: 0 5%;
+  }
+
+  .sub_Components_section, .sub_Components_section-2 {
+    gap: 30px;
+    padding: 14px 0;
+    margin-top: 10px;
+}
+
+  .Effect_bottem_div {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+  .content04_div_1_img img {
+    width: 63px;
+    bottom: -623px;
+    right: 0px;
+}
+.content04_div_1_image{
+    width: 100%;
+    /* margin-top: -166px; */
+}
+  .Effect_top_div {
+    max-height: 100%;
+    flex-direction: column;
+  }
+
+ .sub_Components_section, .sub_Components_section-2 {
+    max-height: 600px;
+}
+
+.Components_div p {
+    padding-right: 0;
+}
+.FMEA_h2 {
+    font-size: 27px;
+    line-height: 40px;
+}
+.content04_div_1_text {
+  width: 100%;
+}
+.Components_div h3 {
+    font-size: 27px;
+    line-height: 40px;
+}
+.Components_div p {
+    font-size: 13px;
+    line-height: 22px;
+}
+  .Effect_h4 {
+    text-align: center;
+  }
+
+  .effect_top_text {
+    width: 100%;
+  }
+
+  .Applications_div_2,
+  .Applications_div_3 {
+    max-height: 100%;
+    height: 100%;
+  }
+
+  .Applications_img {
+    display: none;
+  }
+
+  .Applications_h2 {
+    padding: 30px;
+    max-width: 100%;
+    text-align: center;
+    width: 100% !important;
+  }
+
+  .Examples_div {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 30px;
+    gap: 20px;
+  }
+
+  .sub_Examples_left_div h4 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  /*  */
+  .role_of {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  
+
+  .Measurementsection {
+    gap: 30px;
+    margin-top: 0;
+    max-height: 750px;
+  }
+
+  .measurementsystem {
+    order: 2;
+    padding-left: 0px;
+  }
+
+  .measurementsystem h1,
+  .measurementsystem p,
+  .sub_Objectives_div_1 p,
+  .Components_div h3,
+  .fourth-content h2,
+  .fourth-content p,
+  #importance_conclution h1,
+  .Components_div p {
+    text-align: center;
+  }
+
+  .Components_image img {
+    width: 60%;
+  }
+
+  .sub_Objectives_div_1 {
+    align-items: center;
+  }
+
+.importance_measurement {
+    grid-template-columns: repeat(1, 1fr);
+}
+.keycharacteristic_measurement {
+    grid-template-columns: repeat(1, 1fr);
+}
+.keycharacteristic_measurement {
+    grid-template-columns: repeat(1 ,1fr);
+}
+.keycharacteristic_fonts h1 {
+    font-size: 27px;
+    line-height: 34px;
+}
+.arrow {
+    width: 100px;
+}
+.keycharacteristic_fonts p {
+    font-size: 17px;
+    line-height: 28px;
+    padding: 30px 0 50px 0;
+}
+.Components_h2 {
+    margin-bottom: 13px;
+}
+.reproducibility h1 {
+    font-size: 25px;
+    margin-top: -45px;
+    line-height: 35px;
+}
+.goalimg {
+    max-width: 115px;
+}
+.measure h3 {
+    font-size: 25px;
+}
+.measure p {
+  font-size: 13px;
+  line-height: 27px;
+}
+#importance_conclution p {
+  font-size: 12px;
+  line-height: 27px;
+}
+.owl-nav {
+    margin-bottom: -54px;
+}
+.importance h3 {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+#conclution_section {
+    padding-bottom: 270px;
+}
+.best_practiceimg {
+    width: 304px;
+    margin: 0 auto;
+}
+.evaluation h1 {
+    font-size: 27px;
+    text-align: center;
+    line-height: 40px;
+}
+.importanceimg {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.lack_of h1 {
+    font-size: 23px;
+}
+.sub_Objectives_div {
+    align-items: center;
+}
+.lack_section {
+    gap: 23px;
+}
+.lackimg img {
+    width: 82%;
+    height: 82%;
+    padding: 14px;
+    margin-bottom: -17px;
+}
+.lack_paragraph p {
+    font-size: 16px;
+    line-height: 43px;
+}
+.lack_head h2 {
+  font-size: 16px;
+}
+.Components_image {
+    display: flex;
+    justify-content: center;
+}
+.sub_Components_section, .sub_Components_section-2 {
+    grid-template-columns: repeat(1,1fr);
+}
+.sub_Components_section-2 {
+    grid-template-columns: repeat(1,1fr);
+}
+.Components_order_1 {
+    order: 1;
+}
+.Components_order_0 {
+    order: 2;
+}
+.common_challenges,.best_practice_for,#objective_div {
+    grid-template-columns: repeat(1,1fr);
+}
+.importancesection {
+    padding: 120px 30px 85px 30px;
+}
+.keycharacteristic {
+    padding: 0 30px 45px 30px;
+}
+.importancesection {
+    padding: 54px 30px 40px 30px;
+}
+.keycharacteristicimg {
+    width: 490px;
+}
+
+/* .keycharacteristicimg {
+    width: 282px;
+} */
+.arrow {
+    top: 21px;
+}
+.sub_Objectives_div_role {
+    width: 100%;
+}
+#conclution {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+}
+.Measurementsection {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 30px;
+}
+.measurementsystem h1 {
+    font-size: 27px;
+    margin-top: 23px;
+    line-height: 40px;
+}
+.measurementsystem p {
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+.importance_measurement {
+    gap: 40px;
+    padding: 40px;
+}
+.importance h1 {
+    font-size: 27px;
+    line-height: 40px;
+    text-align: center;
+}
+.Components_h2, .Applications_h2 {
+    font-size: 27px;
+}
+.Effect_Analysis_div {
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+}
+#six_measurement{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 29px 40px 70px 40px;
+}
+.sub_Objectives_div p {
+    font-size: 14px;
+}
+#importance {
+    order: 2;
+}
+.sub_Objectives_img {
+    width: 70px;
+    height: 70px;
+}
+
+.Effect_Analysis_div_1 h4,.Effect_Analysis_div_1 p,.importance p,.sub_Objectives_div h3,.sub_Objectives_div p,#sigma h4  {
+    text-align: start;
+}
+
+}
+
+@media screen and (max-width: 575px) {
+  .contaiorX {
+    padding: 30px;
+  }
+  
+  .listsection {
+    padding: 18px;
+}
+.importance h1 {
+    line-height: 33px;
+    font-size: 23px;
+}
+
+.keycharacteristic_fonts h1,.keycharacteristic_fonts p {
+  text-align: center;
+  font-size: 23px;
+}
+.sub_Objectives_imgs {
+  width: 60px;
+  height: 60px;
+}
+.keycharacteristic_fonts p {
+  font-size: 12px;
+}
+.goalimg {
+  max-width: 96px;
+}
+.listicon {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+.list_icon{
+  margin: 0 auto;
+}
+.list_paregraph h2 {
+  text-align: center;
+}
+.list_paregraph p{
+  text-align: center;
+  padding-top: 5px;
+}
+.arrow {
+    top: 68px;
+    width: 70px;
+}
+.sub_Components_section, .sub_Components_section-2 {
+    padding: 0px 0 10px 0;
+}
+.FMEA_h2, .Components_div h3 {
+    font-size: 24px;
+}
+.keycharacteristicimg {
+  width: 282px;
+  margin: 0 auto;
+}
+
+/* .keycharacteristicimg {
+  width: 400px;
+} */
+.importance_measurement {
+    gap: 24px;
+    padding: 20px;
+}
+  .Objectives_section {
+    padding: 30px;
+  }
+
+  .importanceimg {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+  .Objectives_div {
+    gap: 40px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .list_paregraph p {
+    font-size: 13px;
+    line-height: 26px;
+}
+
+.FMEA_h2, .Components_div h3 {
+  font-size: 23px;
+  line-height: 34px;
+  padding-top: 30px;
+  text-align: center;
+}
+.lack_of h1 {
+    font-size: 18px;
+}
+.lack_section {
+    gap: 2px;
+}
+.evaluation h1 {
+    font-size: 23px;
+    line-height: 40px;
+}
+#sigma h4 {
+    font-size: 23px;
+    line-height: 35px;
+}
+.sub_Objectives_div_role {
+    padding: 22px 22px 12px 22px;
+}
+.sub_Objectives_div_role h3 {
+    font-size: 18px;
+}
+
+.Components_div p {
+  font-size: 12px;
+  padding-right: 0;
+}
+
+  .Components_div h3 {
+    padding-bottom: 10px;
+    padding-top: 0;
+  }
+
+  .sub_Objectives_div {
+    gap: 8px;
+  }
+  .list_paregraph h2 {
+    font-size: 17px;
+}
+
+  .sub_Objectives_img {
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+  }
+
+  .sub_Objectives_div h3 {
+    font-size: 16px;
+    padding-right: 0%;
+  }
+
+  .sub_Objectives_div p {
+    font-size: 12px;
+    /* padding-right: 20px; */
+  }
+
+  .measures {
+    padding: 27px;
+}
+
+  .sub_Components_section,
+  .sub_Components_section-2 {
+    grid-template-columns: repeat(1, 1fr);
+    max-height: 100%;
+  }
+
+  .Components_order_0 {
+    order: 1;
+  }
+
+  .Components_order_1 {
+    order: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Components_image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content04_div_1 {
+    display: grid !important;
+  }
+
+  .content04_div_1_text {
+    width: 100%;
+    order: 1 !important;
+  }
+
+  .content04_div_1_image {
+    width: 100%;
+    /* order: 0 !important; */
+  }
+
+  .Effect_Analysis_div {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .content04_div_1_img img {
+    width: 40px;
+    height: 50px;
+    bottom: -532px;
+    right: 2px;
+    display: none;
+}
+.lack_paragraph p {
+  line-height: 36px;
+  font-size: 13px;
+}
+.sub_Objectives_div_role p {
+  font-size: 12px;
+}
+.importance p {
+  font-size: 12px;
+}
+
+  .content04_div_2 {
+    padding: 20px;
+  }
+
+  .content04_div_1_img {
+    height: 0px;
+    width: 100%;
+  }
+
+  .Effect_Analysis_div_1 {
+    min-height: 160px;
+    padding: 20px;
+  }
+
+  .Effect_Analysis_div_1 h4 {
+    font-size: 18px;
+  }
+
+  .Effect_Analysis_div_1 p {
+    font-size: 12px;
+  }
+
+  .Implementation_div,
+  .Implementation_div_1 {
+    margin-top: 40px;
+    padding: 30px;
+    max-height: max-content;
+  }
+
+  .sub_Implementation_div {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+  }
+
+  .Forming_div_img {
+    width: 80%;
+    height: 100%;
+  }
+
+  .Forming_div h4,
+  .FMEA_div h4 {
+    font-size: 26px;
+    padding-bottom: 8px;
+  }
+
+  .FMEA_Steps_h4 {
+    padding-bottom: 0;
+  }
+
+  .Implementation_div,
+  .Implementation_div_1 {
+    margin-top: 30px;
+    padding: 30px;
+  }
+
+  .Forming_div p,
+  .FMEA_div p {
+    font-size: 14px;
+  }
+
+  .right_img {
+    width: 36%;
+  }
+
+  .FMEA_div p {
+    padding-bottom: 20px;
+  }
+
+
+
+  .effect_top_text {
+    width: 100%;
+
+  }
+
+  .Effect_div {
+    width: 90px;
+    height: 90px;
+  }
+
+  .Effect_span {
+    top: -55px;
+    left: 50px;
+  }
+
+  .Effect_text {
+    top: -42px;
+    left: 59px;
+  }
+
+  .Effect_bottem_div {
+    gap: 70px;
+    margin-top: 50px;
+  }
+
+
+  .sub_Effect_bottem_div {
+    padding: 50px 22px 40px 30px;
+  }
+
+  .Effect_text span,
+  .sub_Effect_bottem_div h4 {
+    font-size: 24px;
+  }
+
+  .sub_Effect_bottem_div p {
+    font-size: 14px;
+  }
+
+  .sub_Applications_div {
+    padding: 20px;
+    min-height: 100%;
+    justify-content: center !important;
+    border-radius: 80px
+  }
+
+  .Applications_div_2,
+  .Applications_div_3 {
+    justify-items: center;
+  }
+
+  .Applications_image_2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .Applications_text_h2 {
+    width: 100%;
+  }
+
+  .Applications_h2 {
+    padding: 10px;
+  }
+
+  .Examples_right_div_1 {
+    padding: 20px 20px 0 20px;
+  }
+
+  .Examples_Corrective_div {
+    padding: 20px;
+  }
+
+  .Examples_right_div_1 h3 {
+    font-size: 20px;
+  }
+
+  .Examples_right_div_1 h3 span {
+    font-size: 16px;
+  }
+
+  .Example_UL li p,
+  .Examples_Corrective_UL li p {
+    font-size: 14px;
+  }
+
+  .Examples_tic_img {
+    width: 15px;
+  }
+
+  .Example_UL li p,
+  .Examples_Corrective_UL li p {
+    font-size: 12px;
+  }
+
+  .Examples_Corrective_div h4,
+  .Examples_Effects_div h4 {
+    font-size: 28px;
+  }
+
+  .fourth-content {
+    background-image: none;
+    background-color: #31003E;
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+  }
+
+  .fourth-content .c-margin-top {
+    margin-top: 10%;
+  }
+
+  .fifth-content .c-my {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .py-60p {
+    padding-top: 10px !important;
+    padding-bottom: 60px;
+  }
+
+  /*  */
+  .Measurementsection {
+    padding: 25px 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .measurementsystem h1 {
+    font-size: 23px;
+    line-height: 35px;
+  }
+
+  .measurementsystem p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .bannerlady {
+    margin: 0px 0 -60px 0;
+  }
+
+  .bannerlady img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #six_measurement {
+    padding: 30px;
+  }
+
+  #importance {
+    order: 2;
+  }
+
+  .importance h3 {
+    font-size: 20px;
+  }
+
+  .importance h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #objective_div {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  #objective_sigma h3,
+  #objective_sigmaone h3,
+  #objective_sigmatwo h3,
+  #objective_sigmathree h3,
+  #objective_sigmafour h3,
+  #objective_sigmafive h3,
+  #objective_sigmasix h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  #objective_sigma p,
+  #objective_sigmaone p,
+  #objective_sigmatwo p,
+  #objective_sigmathree p,
+  #objective_sigmafour p,
+  #objective_sigmafive p,
+  #objective_sigmasix p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  #sigma h1 {
+    font-size: 23px;
+    line-height: 35px;
+}
+
+  .Measurementsection {
+    padding: 25px 30px;
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+  }
+
+  .importancesection {
+    padding: 50px 30px 50px 30px;
+  }
+
+  #sigma {
+    order: 2;
+  }
+
+  .sub_Objectives_div_role {
+    width: 100%;
+  }
+
+
+  #six_measurement {
+    display: grid;
+    padding: 25px 30px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+.listsection {
+    margin-top: -48px;
+}
+
+ #importance h1 {
+    font-size: 23px;
+    line-height: 35px;
+}
+.sex_sigma_object {
+    padding-top: 50px;
+}
+.content04_div_1_image {
+    margin-top: 0;
+    margin-bottom: -29px;
+}
+  #conclution {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .sub_Components_section,
+  .sub_Components_section-2 {
+    gap: 30px;
+    padding: 20px 0 10px 0;
+  }
+  
+  
+}
+/*--------------------------------------*/

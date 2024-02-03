@@ -89,7 +89,7 @@ a:hover {
     #b92419 100%
   );
   margin-top: 70px;
-  max-height: 655px;
+  height: max-content;
 }
 
 .measurementsystem {
@@ -107,13 +107,11 @@ a:hover {
 
 .measurementsystem p {
   color: #fff;
-  font-size: 16px;
-  line-height: 27px;
 }
 
 .bannerlady {
   max-width: 885px;
-  margin: 27px 0 -95px 0;
+  margin: 27px 0 -118px 0;
 }
 
 .bannerlady img {
@@ -122,116 +120,6 @@ a:hover {
   object-fit: cover;
 }
 
-/* end */
-
-/* Importance of Measurement Systems Section css */
-.importancesection {
-  padding: 120px 0 85px 0;
-}
-.importance_measurement {
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  border-radius: 40px;
-  background: #f4f0ff;
-  padding: 70px 100px;
-}
-
-.importanceimg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.importance h1 {
-  font-size: 50px;
-  font-weight: 600;
-  line-height: 60px;
-}
-
-.importance p {
-  padding-top: 20px;
-  font-size: 16px;
-  line-height: 27px;
-}
-
-#sigma h4 {
-  font-weight: 600;
-}
-/* end */
-
-/* Key Characteristics of Measurement Systems Section css  */
-.keycharacteristic {
-  padding: 0 100px 100px 100px;
-}
-.keycharacteristic_measurement {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 80px;
-  align-items: center;
-}
-.keycharacteristicimg {
-  width: 600px;
-}
-.keycharacteristicimg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.keycharacteristic_fonts {
-  position: relative;
-}
-.arrow {
-  position: absolute;
-  top: 50px;
-  right: 0;
-  width: 170px;
-}
-.arrow img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.keycharacteristic_fonts h1 {
-  font-size: 50px;
-  font-weight: 800;
-  line-height: 60px;
-  text-transform: capitalize;
-}
-.keycharacteristic_fonts p {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 35px;
-  padding: 45px 0;
-}
-.listsection {
-  border-radius: 10px;
-  border: 10px solid #df4b2d;
-  background: #fff;
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
-  padding: 40px;
-}
-.listicon {
-  border-bottom: 1px solid #d9d9d9;
-  display: flex;
-  gap: 22px;
-  margin-bottom: 20px;
-  padding: 15px 0;
-}
-#listicon {
-  border-bottom: 0;
-}
-.list_icon img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-}
-.list_paregraph h2 {
-  font-size: 20px;
-  font-weight: 600;
-}
-.list_paregraph p {
-  font-size: 15px;
-  font-weight: 400;
-}
 /* end */
 
 /* Objectives section */
@@ -282,15 +170,17 @@ a:hover {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  padding-right: 50%;
 }
 
 .sub_Objectives_div p {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
+  padding-right: 90px;
 }
 
-/* Evaluation Section css */
+/* Components section css */
 .Components_section {
   background-color: #2f136a;
 }
@@ -300,7 +190,6 @@ a:hover {
   color: #fff !important;
   padding: 0 20%;
   font-weight: 600;
-  font-size: 60px;
   padding-bottom: 30px;
 }
 
@@ -316,7 +205,7 @@ a:hover {
   gap: 100px;
   padding: 50px 0;
   min-height: 200px;
-  max-height: 370px;
+  /* max-height: 370px; */
   margin-top: 40px;
   align-items: center;
 }
@@ -356,23 +245,17 @@ a:hover {
 }
 
 .Components_div p {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 27px;
   padding-right: 20%;
   color: #fff !important;
 }
 
 /* end */
 
-/* Common Challenges in Measurement System Evaluation Section css */
+/* Content04 start */
 .content04_div {
   background: #ffd65c;
-}
-
-.content04_div_1 {
-  display: flex;
-  align-items: center;
 }
 
 .content04_div_1_img {
@@ -388,92 +271,39 @@ a:hover {
 }
 
 .content04_h2 {
+  /* padding-right: 20%; */
   font-weight: 600;
 }
 
 .content04_div_1_image {
   min-height: 200px;
-  width: 50%;
-}
-
-.content04_div_1_image img {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
 }
 
 .content04_div_1_img img {
   width: 150px;
   height: 150px;
   position: absolute;
-  bottom: -64px;
+  bottom: -90px;
   right: 115px;
-}
-
-.common_challenges {
-  display: grid;
-  grid-template-columns: 40% auto;
-  gap: 50px;
 }
 
 .content04_div_2 {
   border-radius: 40px;
   background: #fff;
   padding: 40px;
-  margin-top: -9px;
-}
-
-.lack_section {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  padding-bottom: 40px;
-}
-.lack_of h1 {
-  font-size: 40px;
-  font-weight: 500;
-}
-.lack_common {
-  padding-top: 30px;
-}
-.lack_head h2 {
-  font-size: 20px;
-  font-weight: 700;
-  border-bottom: 5px solid #000;
-  padding-bottom: 15px;
-  margin-bottom: 22px;
-}
-.lack_paragraph p {
-  font-size: 20px;
-  line-height: 50px;
-}
-
-.lackimg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-color: #f3eeed;
-  border-radius: 70%;
-  padding: 20px;
+  margin-top: -6px;
 }
 
 .Effect_Analysis_div {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
 .Effect_Analysis_div_1 {
   min-height: 220px;
-  padding: 23px;
+  padding: 60px;
   border-radius: 30px;
   background: #ff9b7b;
-}
-.lacks {
-  width: 40%;
-}
-.lacks_one {
-  width: 60%;
-  margin-top: -29px;
 }
 
 .Effect_Analysis_div_1 h4 {
@@ -500,80 +330,12 @@ a:hover {
 
 .content04_div_1_text {
   order: 0;
-  width: 50%;
 }
 
 .content04_div_1_image {
   order: 1;
 }
 
-/* end */
-
-/* Best Practices for Measurement Systems Evaluation css */
-.best_practice {
-  background: #11192d;
-}
-.best_practice_for {
-  display: grid;
-  grid-template-columns: 39% auto;
-  gap: 90px;
-}
-.best_practiceimg {
-  width: 470px;
-  padding-top: 65px;
-}
-.best_practiceimg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.evaluation h1 {
-  color: #fff;
-  font-size: 50px;
-  font-weight: 800;
-  line-height: 60px;
-}
-.Objectives_div {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 100px;
-}
-
-.sub_Objectives_div {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 10px;
-}
-
-.sub_Objectives_img {
-  width: 80px;
-  height: 80px;
-  background-color: #fff;
-  border-radius: 50%;
-  padding: 12px;
-  overflow: hidden;
-}
-
-.sub_Objectives_img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.sub_Objectives_div h3 {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #fff;
-}
-
-.sub_Objectives_div p {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #fff;
-}
 /* end */
 
 /* Implementation section - start */
@@ -648,93 +410,6 @@ a:hover {
 
 /* end */
 
-/* Interpretation of Measurement System Evaluation in Six Sigma css */
-#sex_sigma {
-  background: #ffdedb;
-}
-#six_measurement {
-  background: #fef7f7;
-  display: flex;
-  padding: 70px 20px 70px 70px;
-}
-.importance h3 {
-  font-size: 24px;
-  font-weight: 500;
-  padding-top: 20px;
-}
-#importance {
-  max-width: 1059px;
-}
-#importance h1 {
-  font-weight: 700;
-}
-.sex_sigma_object {
-  padding-top: 100px;
-}
-#objective_sigma {
-  border-left: 5px solid #6967ff;
-  padding: 0 0 0 25px;
-}
-#objective_sigmaone {
-  border-left: 5px solid #3abe73;
-  padding: 0 0 0 35px;
-}
-#objective_sigmatwo {
-  border-left: 5px solid #0655ff;
-  padding: 0 0 0 35px;
-}
-#objective_sigmathree {
-  border-left: 5px solid #ed9964;
-  padding: 0 0 0 35px;
-}
-#objective_sigmafour {
-  border-left: 5px solid #df4b2d;
-  padding: 0 0 0 35px;
-}
-#objective_sigmafive {
-  border-left: 5px solid #0695a9;
-  padding: 0 0 0 35px;
-}
-#objective_sigmasix {
-  border-left: 5px solid #ed9b60;
-  padding: 0 0 0 35px;
-}
-#objective_sigma h3,
-#objective_sigmaone h3,
-#objective_sigmatwo h3,
-#objective_sigmathree h3,
-#objective_sigmafour h3,
-#objective_sigmafive h3,
-#objective_sigmasix h3 {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 30px;
-  color: #000;
-}
-#objective_sigma p,
-#objective_sigmaone p,
-#objective_sigmatwo p,
-#objective_sigmathree p,
-#objective_sigmafour p,
-#objective_sigmafive p,
-#objective_sigmasix p {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 25px;
-  margin-bottom: 0;
-  color: #000;
-}
-
-.process_sigma {
-  display: flex;
-  gap: 40px;
-  flex-direction: column;
-}
-#objective_div {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 106px;
-}
-
 /* Effect_section */
 
 .Effect_section {
@@ -742,7 +417,7 @@ a:hover {
 }
 
 .Effect_top_div {
-  max-height: 300px;
+  max-height: 400px;
   margin-bottom: 30px;
 }
 
@@ -760,6 +435,13 @@ a:hover {
   max-width: 100%;
 }
 
+.Effect_bottem_div {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  margin-top: 140px;
+  width: 100%;
+}
+
 .sub_Effect_bottem_div {
   padding: 50px 35px 70px 70px;
   border-radius: 50px;
@@ -772,6 +454,18 @@ a:hover {
   position: relative;
   z-index: 2;
 }
+
+/* .sub_Effect_bottem_div {
+  padding: 50px 35px 70px 70px;
+  border-radius: 50px;
+  background: linear-gradient(138deg,
+    #9d4e69 17.88%,
+    rgba(79, 67, 222, 0) 68.36%);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 2;
+  height: 440px;
+} */
 
 .sub_Effect_bottem_div_1 {
   background: linear-gradient(
@@ -889,11 +583,11 @@ a:hover {
   right: -363px;
 }
 
-.Applications_div_2,
+/* .Applications_div_2,
 .Applications_div_3 {
   max-height: 400px;
   height: 380px;
-}
+} */
 
 .Applications_text h3,
 .Applications_text p {
@@ -1005,7 +699,7 @@ a:hover {
   background-color: #31003e;
   background-blend-mode: initial;
   background-repeat: no-repeat;
-  background-size: 28%;
+  background-size: 38%;
   background-position: bottom left;
 }
 
@@ -1015,34 +709,6 @@ a:hover {
 
 .fourth-content p {
   color: #fff;
-}
-
-.icon-arrow-left7 {
-  left: 0;
-}
-.icon-arrow-left7:before {
-  content: " \2190";
-}
-.icon-arrow-right7 {
-  right: 0;
-}
-.icon-arrow-right7:before {
-  content: " \2192";
-}
-
-.icon-arrow-left7,
-.icon-arrow-right7 {
-  font-size: 55px;
-  margin-right: 12px;
-}
-
-.Components_order_0 {
-  order: 0;
-}
-.Components_order_1 {
-  order: 0;
-  display: flex;
-  justify-content: flex-end;
 }
 
 /* Role of Measurement Systems Evaluation in Six Sigma css */
@@ -1055,7 +721,7 @@ a:hover {
 }
 
 #sigma {
-  max-width: 636px;
+  max-width: 880px;
 }
 
 .Objectives_div_role {
@@ -1117,6 +783,7 @@ a:hover {
   padding: 70px 20px 70px 70px;
 }
 
+
 .importance h3 {
   font-size: 24px;
   font-weight: 500;
@@ -1124,7 +791,7 @@ a:hover {
 }
 
 #importance {
-  max-width: 636px;
+  max-width: 1059px;
 }
 
 #importance h1 {
@@ -1188,59 +855,9 @@ a:hover {
   flex-direction: column;
 }
 
-/* Examples of Measurement Systems Evaluation in Six Sigma css */
-#sigma h1 {
-  font-weight: 700;
-}
-.reproducibility {
-  padding: 100px 0 60px 0;
-}
-.reproducibility h1 {
-  text-align: center;
-  font-size: 34px;
-  font-weight: 700;
-  line-height: 45px;
-}
-
-.goal_sec {
-  margin-top: 40px;
-}
-.measures {
-  border-radius: 20px;
-  background: #f4f0ff;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.goalimg {
-  max-width: 180px;
-}
-.goalimg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.measure h3 {
-  width: 100%;
-  text-align: start;
-  font-size: 36px;
-  font-weight: 700;
-}
-.measure p {
-  font-size: 24px;
-  line-height: 35px;
-  padding-top: 20px;
-}
-#measure {
-  background: #fddb8d;
-}
-
-.owl-nav {
-  text-align: center;
-  padding-top: 33px;
+#objective_div {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 106px;
 }
 
 /* Conclusion css */
@@ -1307,3 +924,596 @@ a:hover {
   height: 100%;
   object-fit: cover;
 }
+
+.fourth-content h2 {
+  color: #fff;
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+
+.fourth-content p {
+  color: #fff;
+  font-size: 27px;
+  line-height: 40px;
+}
+
+/* Implementation css */
+.Implementation_Matrix_div {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.WT_div {
+  background-color: #ffcfa4;
+}
+
+.Matrix_arrow img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 26px;
+  right: 115px;
+}
+
+/* end */
+
+/* Data Collection and Types */
+.different {
+  color: #fff;
+  text-align: center;
+}
+
+.types_data {
+  background: #180a35 !important;
+}
+
+.step_create {
+  background: #3a1d60;
+}
+.understanding h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  padding-bottom: 25px;
+}
+.process_of {
+  font-size: 16px;
+  line-height: 27px;
+  padding-bottom: 25px;
+}
+.purpose {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 35px;
+  padding-bottom: 25px;
+}
+.understanding_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 56px;
+  margin-right: 320px;
+  margin-top: 25px;
+}
+.understanding_table {
+  border-radius: 20px;
+  background: #f4f0ff;
+  padding: 50px;
+  height: 430px;
+}
+.understanding {
+  margin-right: 82px;
+}
+.table_one {
+  background: #fbf0ff;
+}
+.table_two {
+  background: #fff5f0;
+}
+.table_three {
+  background: #eefaf1;
+}
+.data_sources h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.data_sources p {
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+}
+.data_sources_img {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: -33px;
+}
+.data_sources_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Relation Between Data and Six Sigma css */
+.relation {
+  background: #fbfbe5;
+}
+.date_sigma {
+  margin-bottom: 26px;
+}
+.approach {
+  padding-bottom: 19px;
+}
+.methodologies {
+  font-size: 16px;
+}
+.rol_section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Data collection */
+.data_six_best {
+  background-color: #fff !important;
+}
+
+.circumstances {
+  max-width: 833px !important;
+}
+.circumstances h1 {
+  font-size: 42px !important;
+  padding-bottom: 14px;
+}
+.to_discover {
+  padding-bottom: 25px;
+}
+.sub_obj h3 {
+  padding-right: 0;
+}
+
+/* Strategy Development Matrix css */
+.Strategy_section {
+  background-color: #1d1c41;
+}
+
+.Strategy_div {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+}
+.Strategy_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Strategy_img img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}
+.Strategy_h2 {
+  color: #fff;
+  text-align: left;
+  line-height: 60px;
+}
+.sub_Strategy_div .Perform_div {
+  grid-template-columns: 100px auto;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.Perform_SWOT_div h4 {
+  color: #ffff;
+  font-size: 24px;
+  line-height: 34px;
+}
+.Determine_img {
+  width: 25px;
+  height: 25px;
+}
+.starimg {
+  display: flex;
+  justify-content: start;
+}
+.numerical {
+  color: #fff;
+  font-size: 15px;
+}
+.numerical_one {
+  color: #fff;
+  font-size: 15px;
+  padding-top: 25px;
+}
+.categories {
+  color: #fff;
+  padding: 21px 0;
+  font-size: 15px;
+}
+.types_sigma_section {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60px;
+}
+.primary {
+  color: #fff;
+  font-size: 16px;
+  line-height: 27px;
+  padding: 40px 0;
+}
+.strategy_sigma {
+  padding-right: 86px;
+}
+.Percentage_div_img {
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+/* end */
+
+/* Strategy Development page start */
+.Strategy_Development_section {
+  background: radial-gradient(54.98% 59.38% at 50% 5.85%, #C521C9 0%, #530F73 100%);
+  min-height: 700px;
+  position: relative;
+}
+
+.Strategy_Development_img {
+  margin: 27px 0 -140px 0;
+}
+
+
+
+/* Components of the Matrix section css start */
+.Matrix_section {
+  background: #FFF;
+}
+
+.Matrix_left_div {
+  background-color: #FBF0FF;
+  min-height: 690px;
+}
+
+.Matrix_left_img {
+  width: 100%;
+}
+
+.Internal_div_img{
+  margin: 0;
+}
+.Matrix_left_div-1 {
+  /* background-image: url("/assets/images/Internal_Factor.svg"); */
+  background-position: 44px 16px;
+  background-repeat: no-repeat;
+  /* padding-top: 200px; */
+  padding-bottom: 60px;
+
+}
+
+.Matrix_right_div-1 {
+  /* background-image: url("/assets/images/External_Factor.svg"); */
+
+}
+
+.Internal_div h3 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.Matrix_right_div {
+  background-color: #EEFAF1;
+}
+
+.Weaknesses {
+  background-color: #DED2FF;
+}
+
+.Threats {
+  background-color: #B9EDC6;
+}
+
+/* end */
+/* Implementation css */
+.Implementation_Matrix_div {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.WT_div {
+  background-color: #FFCFA4;
+}
+
+.Matrix_arrow img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 3px;
+  right: 115px;
+}
+
+/* end */
+
+/* Formulation of Strategies section  CSS*/
+.Formulation_div {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Formulation_img {
+  display: flex;
+  justify-content: center;
+}
+
+.Formulation_img img {
+
+  width: 60%;
+  height: 70%;
+  object-fit: cover;
+
+}
+
+.Formulation_img_1 {
+  justify-content: start;
+}
+
+/* end */
+
+/* Strategy Development Matrix css */
+.Strategy_section {
+  background-color: #1D1C41;
+}
+
+.Strategy_div {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+}
+
+.Strategy_img {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.Strategy_img img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.Strategy_h2 {
+  color: #fff;
+  text-align: left;
+  line-height: 60px;
+}
+
+.sub_Strategy_div .Perform_div {
+  grid-template-columns: 100px auto;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+
+.Perform_SWOT_div h4 {
+  color: #ffff;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.Determine_img {
+  width: 25px;
+  height: 25px;
+}
+
+/* end */
+
+/* Strategy Development Matrix Section CSS Start*/
+.Strategy_Matrix_section {
+  background-color: #fff;
+}
+.Strategy_aa{
+  background-color: #FEF7F7;
+}
+
+/* end */
+
+/* Strategy Development Matrix in Six Sigma section */
+.Six_Sigma_section {
+  background-color: #E11439;
+}
+
+.Six_Sigma_div .Six_Sigma_p {
+  color: #fff;
+}
+
+.Six_Sigma_img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* end */
+
+.Implementation_p {
+  color: #fff;
+}
+
+.Conclusion_dev,
+.sub_Conclusion_dev {
+  background-color: #D0FA78 !important;
+}
+
+/* end */
+
+/* Benefits of Strategy section */
+.Benefits_img {
+  width: 90px;
+}
+
+.Benefits_Strategy {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.Alignment_div {
+  width: 100%;
+  max-height: 290px;
+  background-color: #fff;
+  border-radius: 30px;
+  position: relative;
+}
+
+.Alignment_div_top {
+  height: 50px;
+  border-radius: 30px 30px 0 0;
+  background-color: #6967FF;
+}
+
+.Risk_div {
+  background-color: #F33558 !important;
+}
+
+.Focus_div {
+  background-color: #F39035;
+}
+
+.Innovation_div {
+  background-color: #3ABE73;
+}
+
+.Alignment_div_bottom {
+  padding: 40px;
+}
+
+.Benefits_Strategy_div {
+  width: 100%;
+  gap: 60px;
+}
+
+.Alignment_div_top .Alignment_img {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 10px;
+  position: absolute;
+  top: -20px;
+  left: 40px;
+}
+
+.top_blank {
+  height: 50px;
+}
+
+/*  */
+
+/* Use_Strategy_section */
+.Use_Strategy_section {
+  background-color: #fff;
+}
+
+.Use_Strategy_img img {
+  object-fit: cover;
+  width: 70%;
+}
+
+.Use_Strategy_h2 {
+  text-align: left;
+}
+
+.Strategic_Alignment_div {
+  width: 48%;
+  align-items: start;
+  padding: 60px;
+  border: none;
+  background-color: #FFCCCC;
+}
+
+.Strategic_Alignment_div p {
+  text-align: left;
+  padding-top: 15px;
+}
+
+.Project_div {
+  background-color: #8DFDBA;
+}
+
+.Project_IMG {
+  width: 120px;
+}
+
+.Prioritization_div {
+  background-color: #FDDB8D;
+}
+
+.Prioritization_IMG {
+  width: 110px;
+  height: 79px;
+}
+
+.Project_b {
+  font-size: 20px;
+}
+
+/* end */
+
+/* Examples_Strategy_section */
+.Examples_Strategy_section {
+  background-color: #FCF7F7;
+  position: relative;
+}
+
+.Examples_Strategy_div {
+  border-radius: 30px;
+  border: 2px solid #FDECE5;
+  grid-template-columns: 40% auto;
+  gap: 10px;
+  background: #FFF;
+  padding: 0;
+  overflow: hidden;
+z-index: 9;
+position: relative;
+}
+
+.Process_div {
+  padding-right: 30px;
+}
+
+.Process_div p {
+  padding-top: 10px;
+}
+
+.Examples_Strategy_section .process_h3 {
+  line-height: 37px !important;
+}
+
+.vital_points_div {
+  border-radius: 60px;
+  border: 4px solid #D988E7;
+  background: #FFF;
+  grid-template-columns: repeat(1, 1fr);
+}
+.demonstrate_p{
+  padding-top: 50px;
+}
+
+
+ .bg-line_left{
+
+    position: absolute;
+    top: 10%;
+    z-index: 0;
+    opacity: 0.8;
+
+}
+ .bg-line_right{
+  position: absolute;
+    top: 10%;
+    z-index: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+/* end */
+
+
+/* Data Collection Plan Section css */
+
+

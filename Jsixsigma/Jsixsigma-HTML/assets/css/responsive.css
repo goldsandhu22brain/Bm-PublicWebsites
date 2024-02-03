@@ -36,17 +36,13 @@
   }
 
   .fourth-content {
-    background: url('../images/Six_Sigma.svg');
-    background-color: #31003E;
+    background: url("../images/Six_Sigma.svg");
+    background-color: #31003e;
     background-blend-mode: initial;
     background-repeat: no-repeat;
     background-size: 38%;
     background-position: bottom left;
   }
-
-  .content04_div_2 {
-    margin-top: -14px;
-}
 
   .measurementsystem {
     max-width: 600px;
@@ -64,18 +60,55 @@
 
   .bannerlady {
     margin: 27px 0 -91px 0;
-}
-.measure p {
-    font-size: 23px;
-}
+  }
 
   .Objectives_div_role {
     gap: 26px;
+  }
+
+  .fourth-content h2 {
+    font-size: 55px;
+  }
+
+  .fourth-content p {
+    font-size: 24px;
+  }
+
+  /* Strategy Development page start */
+  .Strategy_Development_img {
+    margin: 27px 0 -276px 0;
+  }
+
+  /*Data Collection and Types Section  */
+  .understanding_content {
+    margin-right: 163px;
+  }
+
+  .understanding {
+    margin-right: 66px;
+  }
+
+  .circumstances {
+    max-width: 632px !important;
+  }
+  .bg-line_left {
+    display: none;
+  }
+  .bg-line_right {
+    top: 10%;
+  }
+  .Strategy_Development_section {
+    overflow: hidden;
   }
 }
 
 /* X-Large devices (large desktops, 1200px and 1399px) */
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .Objectives_section {
+    padding: 80px;
+    display: grid;
+  }
+
   .contaiorX {
     padding: 90px;
   }
@@ -95,51 +128,46 @@
 
   .sub_Objectives_div h3 {
     font-size: 18px;
-    /* padding-right: 20%; */
+    padding-right: 20%;
   }
 
   .sub_Objectives_div p {
     font-size: 13px;
-    /* padding-right: 20px; */
+    padding-right: 20px;
   }
-
-  #objective_sigma h3, #objective_sigmaone h3, #objective_sigmatwo h3, #objective_sigmathree h3, #objective_sigmafour h3, #objective_sigmafive h3, #objective_sigmasix h3 {
-    font-size: 20px;
-}
-
-#objective_sigma p, #objective_sigmaone p, #objective_sigmatwo p, #objective_sigmathree p, #objective_sigmafour p, #objective_sigmafive p, #objective_sigmasix p {
-    font-size: 13px;
-}
-.measure p {
-    font-size: 22px;
-}
 
   .Components_h2 {
     padding: 0 15%;
   }
 
   .FMEA_h2 {
-    font-size: 42px;
-    line-height: 50px;
-}
-.Components_div h3 {
-    font-size: 37px;
-}
-
-.Components_h2 {
-    margin-bottom: 13px;
-}
+    font-size: 45px;
+  }
 
   .content04_div_1_img {
     height: 50px;
   }
 
- .content04_div_1_img img {
-    width: 70px;
+  /* .content04_div_1_img img {
+    width: 66px;
     height: 80px;
-    bottom: -31px;
-    right: 88px;
-}
+    bottom: 16px;
+    right: 18px;
+  } */
+  .content04_div_1_img img {
+    width: fit-content;
+    height: 70px;
+    bottom: 1px;
+    right: 18px;
+  }
+
+  .circumstances {
+    max-width: 496px !important;
+  }
+
+  .sub_obj h3 {
+    padding-right: 0;
+  }
 
   .content04_div_2 {
     padding: 30px;
@@ -181,13 +209,8 @@
     right: -236px;
   }
 
-  .lack_of h1 {
-    font-size: 28px;
-}
-
-
   .Examples_div {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 
   .Examples_right_div_1 {
@@ -215,8 +238,8 @@
   }
 
   .fourth-content {
-    background: url('../images/Six_Sigma.svg');
-    background-color: #31003E;
+    background: url("../images/Six_Sigma.svg");
+    background-color: #31003e;
     background-blend-mode: initial;
     background-repeat: no-repeat;
     background-size: 48%;
@@ -228,56 +251,7 @@
     margin-top: 20px;
   }
 
-  .evaluation h1 {
-    font-size: 42px;
-    line-height: 50px;
-}
-#sigma h4 {
-    font-size: 40px;
-    line-height: 50px;
-}
-.reproducibility h1 {
-    font-size: 34px;
-    line-height: 45px;
-}
-.measure h3 {
-    font-size: 30px;
-}
-.keycharacteristic_fonts p {
-    font-size: 17px;
-    line-height: 28px;
-}
-.Components_div p {
-    font-size: 14px;
-    line-height: 25px;
-    padding-right: 0;
-}
-.lack_paragraph p {
-    font-size: 15px;
-    line-height: 45px;
-}
-.lack_head h2{
-    font-size: 15px;
-}
-
-.keycharacteristicimg {
-    width: 500px;
-}
-.keycharacteristic_measurement {
-    gap: 30px;
-}
-.arrow {
-    width: 125px;
-}
-.common_challenges {
-    grid-template-columns: 35% auto;
-}
-.best_practiceimg {
-    width: 400px;
-}
-
   /*  */
-
 
   .measurementsystem p {
     font-size: 17px;
@@ -291,32 +265,24 @@
   }
 
   .importance h3 {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 29px;
   }
 
   .measurementsystem h1 {
-    font-size: 42px;
+    font-size: 40px;
     margin-bottom: 23px;
-    line-height: 50px;
-}
+    line-height: 55px;
+  }
 
   .measurementsystem {
     max-width: 480px;
     padding-left: 0px;
   }
 
-  .importance h1 {
-    font-size: 42px;
-    line-height: 50px;
-}
-
   .importanceimg {
-    width: 467px;
-}
-.goalimg {
-    max-width: 130px;
-}
+    width: 386px;
+  }
 
   .importancesection {
     padding: 100px 80px;
@@ -327,11 +293,6 @@
     gap: 45px;
   }
 
-  .keycharacteristic_fonts h1 {
-    font-size: 42px;
-    line-height: 50px;
-}
-
   .role_of {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -339,10 +300,6 @@
 
   #sigma {
     max-width: 570px;
-  }
-
-  .importance p {
-    padding-top: 17px;
   }
 
   .Objectives_div_role {
@@ -364,6 +321,251 @@
   #importance {
     max-width: 569px;
   }
+
+  .fourth-content h2 {
+    font-size: 45px;
+  }
+
+  .fourth-content p {
+    font-size: 20px;
+  }
+
+  /*Data Collection and Types  Section */
+  .understanding {
+    margin-right: 70px;
+  }
+
+  .understanding_content {
+    margin-right: 117px;
+  }
+
+  .understanding h1 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  .understanding_table {
+    padding: 37px;
+    height: 390px;
+  }
+
+  .data_sources h3 {
+    font-size: 23px;
+  }
+
+  .challengesdata {
+    font-size: 40px;
+    font-weight: 55px;
+  }
+
+  .role_of {
+    gap: 0px;
+  }
+
+  .Matrix_p {
+    font-size: 17px;
+  }
+
+  .sub_Effect_bottem_div {
+    padding: 50px 35px 50px 39px;
+  }
+
+  .Components_h2 {
+    font-size: 40px;
+  }
+
+  .role_sections {
+    gap: 158px;
+  }
+
+  .different {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+
+  .Components_div h3 {
+    font-size: 30px;
+  }
+
+  .Components_div p {
+    font-size: 16px;
+  }
+
+  .importance h1 {
+    font-size: 40px;
+  }
+
+  .best_starimg img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Strategy Development page start */
+  .Strategy_Development_section {
+    min-height: 568px;
+    overflow: hidden;
+  }
+
+  .Strategy_Development_img {
+    margin: 27px 0 -172px 0;
+  }
+
+  .Matrix_left_div-1 {
+    padding: 50px;
+  }
+
+  /* .Internal_div {
+    padding-top: 130px;
+  } */
+
+  .Matrix_left_div {
+    min-height: 850px;
+  }
+
+  .Formulation_img img {
+    width: 60%;
+    height: 70%;
+    object-fit: cover;
+  }
+
+  /*  */
+
+  .Examples_Strategy_div {
+    padding: 0;
+  }
+
+  .Strategy_aa {
+    padding: 40px 10px;
+  }
+  .bg-line_left {
+    display: none;
+  }
+  .bg-line_right {
+    top: 8%;
+  }
+  .Alignment_div_bottom {
+    padding: 30px;
+  }
+  #Use_Strategy_image {
+    display: flex;
+    justify-content: center;
+  }
+  .Strategic_Alignment_div {
+    padding: 40px;
+  }
+  .strategic_imgs h4 {
+    font-size: 30px;
+  }
+  .Project_IMG {
+    width: 140px;
+  }
+  .Prioritization_IMG {
+    width: 148px;
+    height: 79px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /*  */
+  .Strategy_div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Strategy_img {
+    display: none;
+  }
+
+  .Strategy_h2 {
+    text-align: center;
+  }
+
+  /* Strategy Development page start */
+  /* .Strategy_Development_section {
+    min-height: 100%;
+    max-height: 100%;
+  } */
+
+  .Matrix_arrow img {
+    display: none;
+  }
+
+  /*  */
+  .Strategy_div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Strategy_img {
+    display: none;
+  }
+
+  .Strategy_h2 {
+    text-align: center;
+  }
+
+  /*  */
+  .Six_Sigma_div {
+    order: 1 !important;
+  }
+
+  .Six_Sigma_img {
+    display: flex !important;
+    order: 0 !important;
+  }
+
+  .Six_Sigma_img img {
+    width: 70%;
+  }
+  .Effect_top_div {
+    max-height: 100%;
+    flex-direction: column;
+  }
+
+  .Six-Sigma_div_right {
+    width: 100%;
+  }
+  .strategic_imgs {
+    width: 100%;
+  }
+  .Use_Strategy_img {
+    display: none;
+  }
+  .Use_Strategy_text h2,
+  .Use_Strategy_text p {
+    text-align: center;
+  }
+  .strategic_imgs {
+    width: 100%;
+    flex-direction: column;
+  }
+  .Examples_Strategy_img {
+    display: none !important;
+  }
+  .Examples_right h1,
+  .Examples_right p {
+    text-align: center;
+  }
+  .Examples_right {
+    max-width: 100% !important;
+    /* padding: 40px; */
+  }
+
+  .bg-line_right {
+    top: 7%;
+  }
+  .bg-line_left {
+    display: none;
+  }
+  .measurementsystem p, .measurementsystem h1{
+    text-align: center;
+  }
+  .content04_div_1_image {
+    min-height: 100%;
+    width: 100%;
+}
+  /* .Process_div {
+  padding: 30px;
+} */
+  /*  */
 }
 
 /* Large devices (desktops, 992px and 1199px) */
@@ -376,9 +578,6 @@
     gap: 60px;
   }
 
-  /* .hero_section {
-    padding: 90px;
-  } */
   .Objectives_section {
     padding: 70px;
   }
@@ -389,23 +588,18 @@
   }
 
   .FMEA_h2 {
-    font-size: 35px;
+    font-size: 37px;
     line-height: 46px;
-}
-.common_challenges {
-    grid-template-columns: 36% auto;
-    gap: 36px;
-    margin-top: 38px;
-}
+  }
 
   .sub_Objectives_div h3 {
     font-size: 16px;
-    /* padding-right: 20%; */
+    padding-right: 20%;
   }
 
   .sub_Objectives_div p {
     font-size: 13px;
-    /* padding-right: 10px; */
+    padding-right: 10px;
   }
 
   .content04_div_1_img {
@@ -418,21 +612,15 @@
     bottom: 40px;
     right: 27px;
   }
-  #six_measurement {
-    padding: 60px 20px 60px 60px;
-}
-#importance {
-    max-width: 419px;
-}
 
   .content04_div_2 {
-    padding: 25px;
+    padding: 30px;
     margin-top: -44px;
-}
+  }
 
   .Effect_Analysis_div_1 {
-    padding: 22px;
-}
+    padding: 30px;
+  }
 
   .Effect_Analysis_div_1 h4 {
     font-size: 20px;
@@ -441,39 +629,6 @@
   .Effect_Analysis_div_1 p {
     font-size: 14px;
   }
-
-  .lack_of h1 {
-    font-size: 27px;
-}
-.sub_Components_section, .sub_Components_section-2 {
-    margin-top: 0;
-}
-.lack_section {
-    gap: 17px;
-    padding-bottom: 15px;
-}
-.best_practiceimg {
-    width: 340px;
-}
-.lackimg img {
-    padding: 14px;
-}
-.evaluation h1 {
-    font-size: 37px;
-    line-height: 45px;
-}
-.measure h3 {
-    font-size: 28px;
-}
-.goalimg {
-    max-width: 105px;
-}
-.measure p {
-    font-size: 18px;
-}
-.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
-    display: block !important;
-}
 
   /* Implementation section */
   .Forming_div_img {
@@ -505,7 +660,6 @@
     width: 36%;
   }
 
-
   .Effect_div {
     width: 100px;
     height: 100px;
@@ -518,6 +672,7 @@
 
   .Effect_bottem_div {
     gap: 80px;
+    margin-top: 80px;
   }
 
   .sub_Effect_bottem_div {
@@ -557,7 +712,6 @@
     right: -174px;
   }
 
-
   .Examples_div {
     margin-top: 50px;
   }
@@ -576,7 +730,7 @@
   }
 
   .Examples_right_div_1 h3 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .Example_UL li p,
@@ -590,15 +744,13 @@
   }
 
   .fourth-content {
-    background: url('../images/Six_Sigma.svg');
-    background-color: #31003E;
+    background: url("../images/Six_Sigma.svg");
+    background-color: #31003e;
     background-blend-mode: initial;
     background-repeat: no-repeat;
     background-size: 48%;
     background-position: bottom left;
   }
-
-
 
   /*  */
   #importance h1 {
@@ -609,7 +761,6 @@
     padding: 0px 70px;
     gap: 40px;
     margin-top: 88px;
-
   }
 
   .importancesection {
@@ -624,7 +775,6 @@
   .bannerlady {
     margin: 27px 0 -63px 0;
   }
-
 
   .measurementsystem h1 {
     font-size: 37px;
@@ -637,8 +787,6 @@
     line-height: 23px;
   }
 
-
-
   /*  */
   .Measurementsection {
     padding: 0px 70px;
@@ -656,9 +804,8 @@
   }
 
   .bannerlady {
-    margin: 27px 0 -63px 0;
+    margin: 27px 0 -64px 0;
   }
-
 
   .measurementsystem h1 {
     font-size: 37px;
@@ -689,7 +836,7 @@
   }
 
   .Objectives_div_role {
-    gap: 34px;
+    gap: 33px;
   }
 
   .sub_Objectives_div_role h3 {
@@ -697,12 +844,12 @@
   }
 
   .sub_Objectives_div_role p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
-  /* #importance {
+  #importance {
     max-width: 400px;
-  } */
+  }
 
   .importance h3 {
     font-size: 20px;
@@ -734,164 +881,258 @@
     line-height: 22px;
   }
 
-  .importance h1 {
-    font-size: 42px;
-    line-height: 50px;
-}
-
-  .importanceimg {
-    width: 354px;
-}
-.goalimg {
-    max-width: 130px;
-}
-
-  .importancesection {
-    padding: 100px 80px;
+  .fourth-content h2 {
+    font-size: 35px;
   }
 
-  .importance_measurement {
-    padding: 50px 55px;
-    gap: 45px;
-  }
-
-  .keycharacteristic_fonts h1 {
-    font-size: 42px;
-    line-height: 50px;
-}
-
-  .role_of {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  #sigma {
-    max-width: 570px;
-  }
-
-  .importance p {
-    padding-top: 17px;
-  }
-
-  .Objectives_div_role {
-    gap: 20px;
-  }
-
-  .sub_Objectives_div_role h3 {
-    font-size: 22px;
-  }
-
-  .sub_Objectives_div_role p {
-    font-size: 14px;
-  }
-
-  .bannerlady {
-    margin: 27px 0 -64px 0;
-  }
-
-  /* #importance {
-    max-width: 569px;
-  } */
-
-  .importanceimg {
-    width: 354px;
-}
-
-.importance h1 {
-    font-size: 37px;
-    line-height: 46px;
-}
-
- .importanceimg {
-    width: 392px;
-}
-.goalimg {
-    max-width: 130px;
-}
-
-  .importancesection {
-    padding: 100px 60px;
-}
-.keycharacteristic_fonts p {
+  .fourth-content p {
     font-size: 18px;
-    line-height: 30px;
-}
-  .importance_measurement {
-    padding: 45px 50px;
-    gap: 45px;
-}
+  }
 
-.arrow {
-    top: 68px;
-    width: 100px;
-}
+  .Matrix_img {
+    padding-bottom: 38px;
+  }
 
-  .keycharacteristic_fonts h1 {
+  .Matrix_arrow img {
+    display: none;
+  }
+
+  .Matrix_p {
+    padding-bottom: 30px;
+  }
+
+  /*Data Collection and Types Section  */
+  .understanding {
+    margin-right: 46px;
+  }
+
+  .understanding_content {
+    margin-right: 65px;
+    gap: 30px;
+  }
+
+  .understanding h1 {
     font-size: 37px;
     line-height: 46px;
-}
-
-  .role_of {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
 
-  #sigma {
-    max-width: 570px;
-  }
-  .keycharacteristic {
-    padding: 0 60px 100px 60px;
-}
-
-  .importance p {
-    padding-top: 17px;
-  }
-
-  .Objectives_div_role {
-    gap: 20px;
-  }
-
-  .sub_Objectives_div_role h3 {
-    font-size: 22px;
-  }
-
-  .sub_Objectives_div_role p {
+  .process_of {
     font-size: 14px;
+    line-height: 23px;
   }
 
-  .bannerlady {
-    margin: 27px 0 -64px 0;
-}
+  .understanding_table {
+    padding: 37px;
+    height: 360px;
+  }
 
-  /* #importance {
-    max-width: 569px;
-  } */
- .keycharacteristicimg {
-    width: 400px;
-}
-.lack_paragraph p {
+  .data_sources p {
     font-size: 13px;
-    line-height: 36px;
-}
+    line-height: 23px;
+  }
 
-.lack_head h2{
-font-size: 13px;
-}
-.keycharacteristic_measurement {
-    gap: 23px;
-}
-.Components_div h3 {
-    font-size: 30px;
-}
-.Components_div p {
+  .purpose {
+    font-size: 21px;
+    line-height: 32px;
+  }
+
+  .data_sources h3 {
+    font-size: 21px;
+  }
+
+  .different {
+    font-size: 13px;
+    line-height: 27px;
+  }
+
+  .Components_div h3 {
+    font-size: 27px;
+  }
+
+  .Components_div p {
+    font-size: 13px;
+    padding-right: 0;
+  }
+
+  .sub_Components_section,
+  .sub_Components_section-2 {
+    padding: 25px 0;
+  }
+
+  .importance h1 {
+    font-size: 37px;
+    line-height: 46px;
+  }
+
+  .methodologies {
+    font-size: 13px;
+    line-height: 26px;
+  }
+
+  .Matrix_p,
+  .Components_div p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .circumstances {
+    max-width: 400px !important;
+  }
+
+  .types_sigma_section {
+    font-size: 37px;
+    line-height: 46px;
+  }
+
+  .primary {
     font-size: 13px;
     line-height: 24px;
-    padding-right: 0;
-}
+  }
+
+  .numerical_one {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .types_sigma_section {
+    font-size: 37px;
+    line-height: 31px;
+  }
+
+  .Perform_SWOT_div h4 {
+    font-size: 19px;
+    line-height: 29px;
+  }
+
+  /* Strategy Development page start */
+  .Strategy_Development_section {
+    min-height: 472px;
+  }
+
+  .Strategy_Development_img {
+    margin: 27px 0 -175px 0;
+  }
+
+  .Matrix_left_div-1 {
+    padding: 30px;
+  }
+
+  /* .Internal_div {
+    padding-top: 130px;
+  } */
+
+  .Matrix_left_div {
+    min-height: 830px;
+  }
+
+  .Matrix_img {
+    padding-bottom: 38px;
+  }
+
+  .Matrix_arrow img {
+    display: none;
+  }
+
+  .Matrix_p {
+    padding-bottom: 30px;
+  }
+
+  /*  */
+  .Alignment_div {
+    width: 100%;
+    max-height: 350px;
+    background-color: #fff;
+    border-radius: 30px;
+    position: relative;
+  }
+
+  .Alignment_div_bottom {
+    padding: 30px;
+  }
+
+  .Examples_Strategy_div {
+    padding: 0;
+  }
+
+  .Effect_top_div {
+    max-height: fit-content;
+    gap: 20px;
+  }
+
+  .Use_Strategy_img img {
+    object-fit: cover;
+    width: 80%;
+  }
+
+  .Strategic_Alignment_div {
+    padding: 40px;
+  }
+
+  .Strategic_Alignment_div .strategic_imgs h4 {
+    font-size: 30px;
+    line-height: 35px;
+    word-wrap: break-word;
+    max-width: fit-content;
+  }
+
+  .sub_Objectives_imgs {
+    width: 110px;
+    height: 80px;
+  }
+
+  .Project_IMG {
+    width: 190px;
+  }
+
+  .strategic_imgs {
+    width: 100%;
+  }
+
+  .Alignment_div_bottom h5 {
+    font-size: 26px;
+  }
+  .Prioritization_IMG {
+    width: 210px;
+    height: 80px;
+  }
+
+  .Examples_Strategy_div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Examples_Strategy_img {
+    display: none;
+  }
+  .Examples_right {
+    max-width: 100% !important;
+    padding: 40px;
+  }
+  .Examples_right h1,
+  .Examples_right p {
+    text-align: center;
+  }
+
+  .Formulation_img img {
+    width: 80%;
+    height: 70%;
+    object-fit: cover;
+  }
+  .demonstrate_p h5 {
+    font-size: 26px;
+  }
+  .bg-line_left {
+    display: none;
+  }
+  .bg-line_right {
+    top: 6%;
+  }
 }
 
 /* Medium devices (tablets, 768px and 991px) */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .content04_div_1_img img {
+    display: none;
+  }
+
   .contaiorX {
     padding: 60px;
   }
@@ -913,12 +1154,10 @@ font-size: 13px;
     width: 60px;
     height: 60px;
   }
-  .arrow {
-    display: none;
-}
 
   .FMEA_h2 {
-    font-size: 30px;
+    font-size: 37px;
+    line-height: 45px;
   }
 
   .Components_h2 {
@@ -936,17 +1175,14 @@ font-size: 13px;
   }
 
   .Components_div p {
-    font-size: 13px;
+    font-size: 16px;
     padding-right: 10%;
-}
+  }
 
   .Effect_Analysis_div {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-  .best_practiceimg {
-    width: 400px;
-}
 
   .content04_div_1_img {
     height: 20px;
@@ -955,10 +1191,10 @@ font-size: 13px;
   .content04_div_1_img img {
     width: 70px;
     height: 80px;
-    bottom: -670px;
+    bottom: 68px;
     right: -27px;
     position: relative;
-}
+  }
 
   .content04_div_2 {
     padding: 20px;
@@ -1014,7 +1250,6 @@ font-size: 13px;
     padding-bottom: 20px;
   }
 
-
   .effect_top_text {
     width: 80%;
   }
@@ -1038,7 +1273,6 @@ font-size: 13px;
     gap: 70px;
     margin-top: 50px;
   }
-
 
   .sub_Effect_bottem_div {
     padding: 50px 22px 40px 30px;
@@ -1114,10 +1348,9 @@ font-size: 13px;
     font-size: 28px;
   }
 
-
   .fourth-content {
     background-image: none;
-    background-color: #31003E;
+    background-color: #31003e;
     background-blend-mode: initial;
     background-repeat: no-repeat;
     background-size: 50%;
@@ -1138,12 +1371,12 @@ font-size: 13px;
 
   /*  */
   .Measurementsection {
-    padding: 23px 60px;
+    padding: 23px 70px;
     display: grid;
     gap: 0;
     grid-template-columns: repeat(1, 1fr);
     margin-top: 0;
-}
+  }
 
   .Components_div h3 {
     font-size: 25px;
@@ -1154,14 +1387,10 @@ font-size: 13px;
   }
 
   .measurementsystem h1 {
-    font-size: 34px;
+    font-size: 37px;
     margin-bottom: 23px;
-    line-height: 48px;
-}
-.measurementsystem h1 {
-    font-size: 34px;
-    margin-top: -42px;
-}
+    line-height: 30px;
+  }
 
   .measurementsystem {
     max-width: 430px;
@@ -1171,7 +1400,6 @@ font-size: 13px;
     font-size: 13px;
     line-height: 24px;
   }
-
 
   .measurementsystem {
     max-width: 100%;
@@ -1190,23 +1418,13 @@ font-size: 13px;
   }
 
   .measurementsystem {
-    order: 2;
+    order: 1;
     padding-left: 0px;
   }
 
   .importancesection {
-    padding: 55px 60px;
-}
-.keycharacteristic {
-    padding: 0 60px 100px 60px;
-}
-
-.common_challenges {
-    grid-template-columns: repeat(1,1fr);
-}
-.best_practice_for {
-    grid-template-columns: repeat(1,1fr);
-}
+    padding: 60px;
+  }
 
   .role_of {
     display: flex;
@@ -1226,7 +1444,7 @@ font-size: 13px;
 
   .Objectives_div_role {
     gap: 24px;
-}
+  }
 
   .sub_Objectives_div_role h3 {
     font-size: 22px;
@@ -1234,6 +1452,8 @@ font-size: 13px;
 
   .sub_Objectives_div_role p {
     font-size: 14px;
+    text-align: center;
+    padding-top: 3px;
   }
 
   #six_measurement {
@@ -1278,72 +1498,19 @@ font-size: 13px;
 
   #conclution {
     grid-template-columns: repeat(1, 1fr);
-    gap: 33px;
+    gap: 40px;
   }
-.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
-    display: block !important;
-}
 
-.importanceimg {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-}
+  .importanceimg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
   .importance h1 {
-    font-size: 34px;
-    line-height: 45px;
-}
-.keycharacteristic_fonts h1 {
-    font-size: 34px;
-    line-height: 45px;
-    text-align: center;
-}
-.FMEA_h2 {
-  font-size: 34px;
-  line-height: 42px;
-  margin-bottom: 15px;
-}
-.lack_of h1 {
-    font-size: 33px;
-}
-.evaluation h1 {
     font-size: 37px;
     line-height: 45px;
-}
-.goalimg {
-    max-width: 95px;
-}
-.content04_div_1 {
-  display: grid;
-}
-.content04_div_1_text {
-  width: 100%;
-}
-.content04_div_1_image {
-  width: 100%;
-}
-.measure h3 {
-    font-size: 25px;
-}
-.measure p {
-    font-size: 13px;
-    line-height: 27px;
-}
-.measures {
-    padding: 33px;
-}
-#conclution_section {
-  margin-bottom: -223px;
-}
-.importance p {
-    font-size: 13px;
-    line-height: 24px;
-}
-.arrow {
-    width: 130px;
-}
+  }
 
   #six_measurement {
     display: grid;
@@ -1351,33 +1518,216 @@ font-size: 13px;
   }
 
   .importance_measurement {
-    padding: 40px 50px;
+    padding: 40px 60px;
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
   }
-.keycharacteristic_fonts p {
-    font-size: 13px;
-    line-height: 27px;
-    padding: 32px 0;
-    text-align: center;
-}
+
   .importanceimg img {
-    width: 75%;
-    height: 75%;
+    width: 70%;
+    height: 70%;
   }
 
   .sub_Components_section,
   .sub_Components_section-2 {
-    gap: 70px;
+    gap: 50px;
     padding: 10px 0;
+    padding-top: 20px;
   }
 
-  .keycharacteristic_measurement {
-    grid-template-columns: repeat(1, 1fr);
+  .fourth-content h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .fourth-content p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .Matrix_img {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    padding-bottom: 7px;
+  }
+
+  /*Data Collection and Types Section css */
+  .understanding {
+    margin-right: 29px;
+  }
+
+  .understanding_content {
+    margin-right: 0px;
+    gap: 30px;
+  }
+
+  .understanding h1 {
+    font-size: 37px;
+    line-height: 46px;
+  }
+
+  .process_of {
+    font-size: 13px;
+    line-height: 23px;
+  }
+
+  .understanding_table {
+    padding: 26px;
+    height: 390px;
+  }
+
+  .data_sources_img {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: -14px;
+  }
+
+  .data_sources p {
+    font-size: 13px;
+    line-height: 23px;
+  }
+
+  .purpose {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .data_sources h3 {
+    font-size: 19px;
+  }
+
+  .data_sources_img {
+    width: 160px;
+  }
+
+  .different {
+    font-size: 13px;
+    padding-top: 15px;
+  }
+
+  .content04_div_1_text {
+    width: 100%;
+  }
+
+  #conclution_section {
+    margin-bottom: -223px;
+  }
+
+  .circumstances h1 {
+    font-size: 37px !important;
+  }
+
+  .types_sigma_section {
+    font-size: 37px;
+    line-height: 45px;
+  }
+
+  .Perform_SWOT_div h4 {
+    font-size: 19px;
+    line-height: 29px;
+  }
+
+  .numerical_one,
+  .numerical {
+    font-size: 13px;
+  }
+
+  .Matrix_left_div-1 {
+    padding: 20px;
+  }
+
+  /* .Internal_div {
+    padding-top: 150px;
+  } */
+
+  .Matrix_left_div {
+    min-height: 820px;
+  }
+
+  .Internal_div h3 {
+    text-align: center;
+  }
+
+  .Matrix_img {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    padding-bottom: 7px;
+  }
+
+  /*  */
+  .Six_Sigma_div {
+    order: 1 !important;
+  }
+
+  .Six_Sigma_img {
+    display: flex !important;
+    order: 0 !important;
+  }
+
+  .Examples_Strategy_div {
+    padding: 0;
+  }
+
+  .Formulation_img img {
+    width: 80%;
+    height: 70%;
+  }
+  .strategic_imgs h4 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .sub_Objectives_imgs {
+    width: 100px;
+    height: 90px;
+  }
+  .Prioritization_IMG {
+    width: 100px;
+    height: 100px;
+  }
+
+  .vital_points_div {
+    padding: 20px;
+  }
+  .Examples_Strategy_div {
+    padding: 30px;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  /* changese */
+  .strategic_imgs h4 {
+    text-align: center;
+  }
+  /*  */
+  .importanceimg img {
+    width: 70%;
+    height: 100%;
+  }
+  .Six-Sigma-sub_div_left {
+    align-items: center;
+  }
+  .Six-Sigma-sub_div_left h2 {
+    text-align: center !important;
+  }
+  .Alignment_div {
+    max-height: max-content;
+  }
+  .Alignment_div_bottom {
+    padding: 20px;
+  }
+  #importance h1 {
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .Effect_h4 {
+    text-align: center;
 }
-.Measurementsection {
-    max-height: 780px;
+  .Implementation_p {
+    text-align: center;
 }
+  /*  */
 }
 
 /* Small devices (landscape phones, 576px and 767px) */
@@ -1385,10 +1735,6 @@ font-size: 13px;
   .Objectives_section {
     padding: 40px;
   }
-  .content04_div_1 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-}
 
   .FMEA_h2,
   .Components_div h3 {
@@ -1400,19 +1746,14 @@ font-size: 13px;
     padding-right: 0;
   }
 
-
   .Components_div h3 {
     padding-bottom: 10px;
   }
 
-  /* .content04_div_1{
-    display: grid;
-  } */
   .Effect_Analysis_div {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-
 
   .content04_div_1_img img {
     width: 40px;
@@ -1427,7 +1768,7 @@ font-size: 13px;
   }
 
   .content04_h2 {
-    font-size: 23px !important;
+    font-size: 30px !important;
     line-height: 47px;
   }
 
@@ -1442,12 +1783,10 @@ font-size: 13px;
 
   .Effect_Analysis_div_1 h4 {
     font-size: 18px;
-    text-align: center;
   }
 
   .Effect_Analysis_div_1 p {
     font-size: 12px;
-    text-align: center;
   }
 
   .Forming_div_img {
@@ -1484,13 +1823,10 @@ font-size: 13px;
     padding-bottom: 20px;
   }
 
-
   .effect_top_text {
     width: 100%;
     text-align: center;
   }
-
-
 
   .Effect_div {
     width: 90px;
@@ -1511,7 +1847,6 @@ font-size: 13px;
     gap: 70px;
     margin-top: 50px;
   }
-
 
   .sub_Effect_bottem_div {
     padding: 50px 22px 40px 30px;
@@ -1577,7 +1912,7 @@ font-size: 13px;
 
   .Example_UL li p,
   .Examples_Corrective_UL li p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .Examples_Corrective_div h4,
@@ -1587,7 +1922,7 @@ font-size: 13px;
 
   .fourth-content {
     background-image: none;
-    background-color: #31003E;
+    background-color: #31003e;
     background-blend-mode: initial;
     background-repeat: no-repeat;
   }
@@ -1606,14 +1941,9 @@ font-size: 13px;
   }
 
   .sub_Objectives_div h3 {
-    /* padding-right: 20%; */
+    padding-right: 0%;
     text-align: center;
-}
-.sub_Objectives_div p {
-    text-align: center;
-    font-size: 13px;
-    padding-top: 7px;
-}
+  }
 
   /*  */
   .Measurementsection {
@@ -1659,23 +1989,18 @@ font-size: 13px;
   .importanceimg {
     width: 100%;
     display: flex;
-    margin: 0 auto;
     justify-content: center;
-}
+  }
 
   #importanceimg img {
     width: 75%;
     height: 75%;
   }
 
- .importance h1 {
-    font-size: 27px;
-    line-height: 34px;
-    text-align: center;
-}
-.importance p {
-    text-align: center;
-}
+  .importance h1 {
+    font-size: 37px;
+    line-height: 45px;
+  }
 
   .role_of {
     grid-template-columns: repeat(1, 1fr);
@@ -1731,10 +2056,16 @@ font-size: 13px;
     gap: 40px;
   }
 
- #objective_sigma h3, #objective_sigmaone h3, #objective_sigmatwo h3, #objective_sigmathree h3, #objective_sigmafour h3, #objective_sigmafive h3, #objective_sigmasix h3 {
-    font-size: 17px;
+  #objective_sigma h3,
+  #objective_sigmaone h3,
+  #objective_sigmatwo h3,
+  #objective_sigmathree h3,
+  #objective_sigmafour h3,
+  #objective_sigmafive h3,
+  #objective_sigmasix h3 {
+    font-size: 20px;
     line-height: 26px;
-}
+  }
 
   #objective_sigma p,
   #objective_sigmaone p,
@@ -1752,7 +2083,6 @@ font-size: 13px;
     gap: 30px;
   }
 
-
   .FMEA_h2,
   .Components_div h3 {
     font-size: 27px;
@@ -1761,7 +2091,7 @@ font-size: 13px;
 
   .Components_div p {
     font-size: 14px;
-    padding-right: 0;
+    padding-right: 33px;
   }
 
   .Components_div h3 {
@@ -1784,11 +2114,11 @@ font-size: 13px;
     margin: 0 0 -53px 0;
   }
 
- .measurementsystem h1 {
-    font-size: 27px;
-    line-height: 34px;
+  .measurementsystem h1 {
+    font-size: 37px;
+    line-height: 45px;
     margin-bottom: 10px;
-}
+  }
 
   .measurementsystem p {
     padding-top: 5px;
@@ -1810,7 +2140,6 @@ font-size: 13px;
 
   .measurementsystem {
     order: 2;
-
   }
 
   .importancesection {
@@ -1843,6 +2172,7 @@ font-size: 13px;
   .sub_Objectives_div_role p {
     font-size: 14px;
     padding-top: 0;
+    text-align: center;
   }
 
   .sub_Objectives_imgs {
@@ -1863,41 +2193,159 @@ font-size: 13px;
   #importance h1 {
     font-size: 28px;
     line-height: 37px;
+    text-align: center;
   }
-.keycharacteristic_measurement {
+
+  .fourth-content h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .fourth-content p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .fourth-content h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .fourth-content p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /*Data Collection and Types Section  */
+  .understanding {
+    margin-right: 29px;
+  }
+
+  .understanding_content {
     grid-template-columns: repeat(1, 1fr);
-}
-.common_challenges {
-     grid-template-columns: repeat(1, 1fr);
-}
-.best_practice_for {
-    grid-template-columns: repeat(1, 1fr);
-}
-.keycharacteristicimg {
-    width: 400px;
-}
-.keycharacteristic {
-    padding: 0 30px 100px 30px;
-}
+    margin-right: 0px;
+    gap: 30px;
+  }
+
+  .understanding h1 {
+    font-size: 37px;
+    line-height: 46px;
+  }
+
+  .process_of {
+    font-size: 13px;
+    line-height: 23px;
+  }
+
+  .understanding_table {
+    padding: 26px;
+    height: 288px;
+  }
+
+  .data_sources_img {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: -14px;
+  }
+
+  .data_sources p {
+    font-size: 13px;
+    line-height: 23px;
+  }
+
+  .purpose {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .data_sources h3 {
+    font-size: 21px;
+  }
+
+  .data_sources_img {
+    width: 160px;
+  }
+
+  .Matrix_p {
+    font-size: 14px;
+    line-height: 27px;
+    text-align: center;
+  }
+
+  .circumstances h1 {
+    font-size: 30px !important;
+  }
+
+  .content04_div_1_text {
+    width: 100%;
+  }
+
+  .Matrix_div_2 {
+    width: 800px;
+  }
+
+  .Perform_SWOT_div h4 {
+    font-size: 19px;
+    line-height: 29px;
+  }
+
+  .numerical_one,
+  .numerical {
+    font-size: 13px;
+  }
+
+  .types_sigma_section {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .sub_Objectives_img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .Matrix_left_div-1 {
+    padding: 20px;
+  }
+
+  /* .Internal_div {
+    padding-top: 150px;
+  } */
+
+  .Matrix_left_div {
+    min-height: max-content;
+  }
+
+  .Internal_div h3 {
+    text-align: center;
+  }
+
+  .Matrix_left_div-1 {
+    background-position: center top;
+  }
+  .bg-line_left,
+  .bg-line_right {
+    display: none;
+  }
+
+  /* changes */
+  .text-start {
+    text-align: center !important;
+  }
+  .Formulation_img img {
+    width: 80%;
+    height: 70%;
+  }
+  .importanceimg img {
+    width: 80%;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .contaiorX {
-    padding: 30px;
-}
-.measures {
-  padding: 29px;
-}
-.content04_div_1 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-}
-.arrow img {
-  display: none;
-}
-.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
-  display: block !important;
-}
+    padding: 40px;
+  }
 
   .Objectives_div {
     gap: 40px;
@@ -1908,52 +2356,31 @@ font-size: 13px;
     padding: 0 5%;
   }
 
-  .sub_Components_section, .sub_Components_section-2 {
+  .sub_Components_section,
+  .sub_Components_section-2 {
     gap: 30px;
-    padding: 14px 0;
-    margin-top: 10px;
-}
+    padding: 30px 0;
+  }
+  .Applications_div_2,
+  .Applications_div_3 {
+    max-height: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  /* .Applications_div_2 {
+  grid-template-columns: inherit;
+  justify-items: center;
+} */
 
   .Effect_bottem_div {
     grid-template-columns: repeat(1, 1fr);
-
   }
-  .content04_div_1_img img {
-    width: 63px;
-    bottom: -623px;
-    right: 0px;
-}
-.content04_div_1_image{
-    width: 100%;
-    /* margin-top: -166px; */
-}
+
   .Effect_top_div {
     max-height: 100%;
     flex-direction: column;
   }
 
- .sub_Components_section, .sub_Components_section-2 {
-    max-height: 600px;
-}
-
-.Components_div p {
-    padding-right: 0;
-}
-.FMEA_h2 {
-    font-size: 27px;
-    line-height: 40px;
-}
-.content04_div_1_text {
-  width: 100%;
-}
-.Components_div h3 {
-    font-size: 27px;
-    line-height: 40px;
-}
-.Components_div p {
-    font-size: 13px;
-    line-height: 22px;
-}
   .Effect_h4 {
     text-align: center;
   }
@@ -1996,12 +2423,10 @@ font-size: 13px;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
-  
 
   .Measurementsection {
     gap: 30px;
     margin-top: 0;
-    max-height: 750px;
   }
 
   .measurementsystem {
@@ -2028,318 +2453,189 @@ font-size: 13px;
     align-items: center;
   }
 
-.importance_measurement {
+  /*Data Collection and Types Section  */
+  .understanding {
+    margin-right: 0px;
+  }
+
+  .understanding_content {
     grid-template-columns: repeat(1, 1fr);
-}
-.keycharacteristic_measurement {
-    grid-template-columns: repeat(1, 1fr);
-}
-.keycharacteristic_measurement {
-    grid-template-columns: repeat(1 ,1fr);
-}
-.keycharacteristic_fonts h1 {
-    font-size: 27px;
-    line-height: 34px;
-}
-.arrow {
-    width: 100px;
-}
-.keycharacteristic_fonts p {
-    font-size: 17px;
-    line-height: 28px;
-    padding: 30px 0 50px 0;
-}
-.Components_h2 {
-    margin-bottom: 13px;
-}
-.reproducibility h1 {
-    font-size: 25px;
-    margin-top: -45px;
-    line-height: 35px;
-}
-.goalimg {
-    max-width: 115px;
-}
-.measure h3 {
-    font-size: 25px;
-}
-.measure p {
-  font-size: 13px;
-  line-height: 27px;
-}
-#importance_conclution p {
-  font-size: 12px;
-  line-height: 27px;
-}
-.owl-nav {
-    margin-bottom: -54px;
-}
-.importance h3 {
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-}
-#conclution_section {
-    padding-bottom: 270px;
-}
-.best_practiceimg {
-    width: 304px;
-    margin: 0 auto;
-}
-.evaluation h1 {
-    font-size: 27px;
-    text-align: center;
-    line-height: 40px;
-}
-.importanceimg {
+    margin-right: 0px;
+    gap: 30px;
+  }
+
+  .importanceimg {
     max-width: 400px;
     margin: 0 auto;
-}
-.lack_of h1 {
-    font-size: 23px;
-}
-.sub_Objectives_div {
-    align-items: center;
-}
-.lack_section {
-    gap: 23px;
-}
-.lackimg img {
-    width: 82%;
-    height: 82%;
-    padding: 14px;
-    margin-bottom: -17px;
-}
-.lack_paragraph p {
-    font-size: 16px;
-    line-height: 43px;
-}
-.lack_head h2 {
-  font-size: 16px;
-}
-.Components_image {
-    display: flex;
-    justify-content: center;
-}
-.sub_Components_section, .sub_Components_section-2 {
-    grid-template-columns: repeat(1,1fr);
-}
-.sub_Components_section-2 {
-    grid-template-columns: repeat(1,1fr);
-}
-.Components_order_1 {
-    order: 1;
-}
-.Components_order_0 {
-    order: 2;
-}
-.common_challenges,.best_practice_for,#objective_div {
-    grid-template-columns: repeat(1,1fr);
-}
-.importancesection {
-    padding: 120px 30px 85px 30px;
-}
-.keycharacteristic {
-    padding: 0 30px 45px 30px;
-}
-.importancesection {
-    padding: 54px 30px 40px 30px;
-}
-.keycharacteristicimg {
-    width: 490px;
-}
+  }
 
-/* .keycharacteristicimg {
-    width: 282px;
-} */
-.arrow {
-    top: 21px;
-}
-.sub_Objectives_div_role {
-    width: 100%;
-}
-#conclution {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 40px;
-}
-.Measurementsection {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 0 30px;
-}
-.measurementsystem h1 {
-    font-size: 27px;
-    margin-top: 23px;
-    line-height: 40px;
-}
-.measurementsystem p {
+  .understanding h1 {
+    font-size: 37px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  .process_of {
     font-size: 13px;
-    line-height: 22px;
-    margin-bottom: 25px;
-}
-.importance_measurement {
-    gap: 40px;
-    padding: 40px;
-}
-.importance h1 {
-    font-size: 27px;
-    line-height: 40px;
-    text-align: center;
-}
-.Components_h2, .Applications_h2 {
-    font-size: 27px;
-}
-.Effect_Analysis_div {
-    grid-template-columns: repeat(1, 1fr);
-    display: grid;
-}
-#six_measurement{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  padding: 29px 40px 70px 40px;
-}
-.sub_Objectives_div p {
+    line-height: 20px;
+  }
+
+  .understanding_table {
+    padding: 18px;
+    height: 256px;
+  }
+
+  .data_sources_img {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: -14px;
+  }
+
+  .data_sources p {
+    font-size: 13px;
+    line-height: 23px;
+  }
+
+  .purpose {
     font-size: 14px;
-}
-#importance {
-    order: 2;
-}
-.sub_Objectives_img {
-    width: 70px;
-    height: 70px;
-}
+    line-height: 23px;
+  }
 
-.Effect_Analysis_div_1 h4,.Effect_Analysis_div_1 p,.importance p,.sub_Objectives_div h3,.sub_Objectives_div p,#sigma h4  {
+  .data_sources h3 {
+    font-size: 21px;
+  }
+
+  .data_sources_img {
+    width: 130px;
+  }
+
+  /* .Objectives_div_role {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  } */
+
+  .content04_div_1_img img {
+    display: none;
+  }
+
+  .different {
+    font-size: 13px;
+    line-height: 27px;
+    padding-top: 10px;
+  }
+
+  .Components_div h3 {
+    font-size: 24px;
+  }
+
+  .types_sigma_section {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .Perform_SWOT_div h4 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .numerical_one {
+    font-size: 13px;
+    padding-top: 22px;
+  }
+
+  .Components_image img {
+    width: 100%;
+  }
+
+  .Components_div p {
+    padding-right: 0;
+  }
+
+  /* Strategy Development page start */
+  .Strategy_Development_section {
+    min-height: 100%;
+    max-height: 100%;
+  }
+
+  .Matrix_left_div-1 {
+    padding: 20px;
+  }
+
+  /* .Internal_div {
+    padding-top: 150px;
+  } */
+
+  .Matrix_left_div {
+    min-height: max-content;
+  }
+
+  .Internal_div h3 {
     text-align: center;
-}
+  }
 
+  .Matrix_left_div-1 {
+    background-position: center top;
+  }
+
+  .Formulation_img_1 {
+    justify-content: center;
+  }
+
+  .Examples_Strategy_img {
+    display: none;
+  }
+  .Examples_right h1,
+  .Examples_right p {
+    text-align: center;
+  }
+  .Alignment_div {
+    max-height: fit-content !important;
+  }
+  .Six-Sigma-sub_div_left {
+    align-items: center !important;
+  }
+  .Six-Sigma-sub_div_left h2 {
+    text-align: center !important;
+  }
+
+  .strategic_imgs h4 {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 575px) {
   .contaiorX {
     padding: 30px;
   }
-  
-  .listsection {
-    padding: 18px;
-}
-.importance h1 {
-    line-height: 33px;
-    font-size: 23px;
-}
 
-.keycharacteristic_fonts h1,.keycharacteristic_fonts p {
-  text-align: center;
-  font-size: 23px;
-}
-.sub_Objectives_imgs {
-  width: 60px;
-  height: 60px;
-}
-.keycharacteristic_fonts p {
-  font-size: 12px;
-}
-.goalimg {
-  max-width: 96px;
-}
-.listicon {
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-}
-.list_icon{
-  margin: 0 auto;
-}
-.list_paregraph h2 {
-  text-align: center;
-}
-.list_paregraph p{
-  text-align: center;
-  padding-top: 5px;
-}
-.arrow {
-    top: 68px;
-    width: 70px;
-}
-.sub_Components_section, .sub_Components_section-2 {
-    padding: 0px 0 10px 0;
-}
-.FMEA_h2, .Components_div h3 {
-    font-size: 24px;
-}
-.keycharacteristicimg {
-  width: 282px;
-  margin: 0 auto;
-}
-
-/* .keycharacteristicimg {
-  width: 400px;
-} */
-.importance_measurement {
-    gap: 24px;
-    padding: 20px;
-}
   .Objectives_section {
     padding: 30px;
   }
-
-  .importanceimg {
-    max-width: 360px;
-    margin: 0 auto;
-}
 
   .Objectives_div {
     gap: 40px;
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .list_paregraph p {
-    font-size: 13px;
-    line-height: 26px;
-}
-
-.FMEA_h2, .Components_div h3 {
-  font-size: 23px;
-  line-height: 34px;
-  padding-top: 30px;
-  text-align: center;
-}
-.lack_of h1 {
-    font-size: 18px;
-}
-.lack_section {
-    gap: 2px;
-}
-.evaluation h1 {
-    font-size: 23px;
+  .FMEA_h2,
+  .Components_div h3 {
+    font-size: 28px;
     line-height: 40px;
-}
-#sigma h4 {
-    font-size: 23px;
-    line-height: 35px;
-}
-.sub_Objectives_div_role {
-    padding: 22px 22px 12px 22px;
-}
-.sub_Objectives_div_role h3 {
-    font-size: 18px;
-}
+    text-align: center;
+  }
 
-.Components_div p {
-  font-size: 12px;
-  padding-right: 0;
-}
+  .Components_div p {
+    font-size: 14px;
+    padding-right: 0;
+  }
 
   .Components_div h3 {
     padding-bottom: 10px;
-    padding-top: 0;
   }
 
   .sub_Objectives_div {
     gap: 8px;
   }
-  .list_paregraph h2 {
-    font-size: 17px;
-}
 
   .sub_Objectives_img {
     width: 60px;
@@ -2354,12 +2650,8 @@ font-size: 13px;
 
   .sub_Objectives_div p {
     font-size: 12px;
-    /* padding-right: 20px; */
+    padding-right: 20px;
   }
-
-  .measures {
-    padding: 27px;
-}
 
   .sub_Components_section,
   .sub_Components_section-2 {
@@ -2394,7 +2686,7 @@ font-size: 13px;
 
   .content04_div_1_image {
     width: 100%;
-    /* order: 0 !important; */
+    order: 0 !important;
   }
 
   .Effect_Analysis_div {
@@ -2405,19 +2697,9 @@ font-size: 13px;
   .content04_div_1_img img {
     width: 40px;
     height: 50px;
-    bottom: -532px;
+    bottom: -9px;
     right: 2px;
-}
-.lack_paragraph p {
-  line-height: 36px;
-  font-size: 13px;
-}
-.sub_Objectives_div_role p {
-  font-size: 12px;
-}
-.importance p {
-  font-size: 12px;
-}
+  }
 
   .content04_div_2 {
     padding: 20px;
@@ -2489,11 +2771,8 @@ font-size: 13px;
     padding-bottom: 20px;
   }
 
-
-
   .effect_top_text {
     width: 100%;
-
   }
 
   .Effect_div {
@@ -2516,7 +2795,6 @@ font-size: 13px;
     margin-top: 50px;
   }
 
-
   .sub_Effect_bottem_div {
     padding: 50px 22px 40px 30px;
   }
@@ -2527,23 +2805,28 @@ font-size: 13px;
   }
 
   .sub_Effect_bottem_div p {
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 24px;
   }
 
   .sub_Applications_div {
     padding: 20px;
     min-height: 100%;
     justify-content: center !important;
-    border-radius: 80px
+    border-radius: 80px;
   }
 
   .Applications_div_2,
   .Applications_div_3 {
     justify-items: center;
   }
+  .Applications_image_2 {
+    display: flex;
+    justify-content: center;
+  }
 
   .Applications_image_2 img {
-    width: 100%;
+    width: 60%;
     height: 100%;
     object-fit: cover;
   }
@@ -2581,10 +2864,7 @@ font-size: 13px;
     width: 15px;
   }
 
-  .Example_UL li p,
-  .Examples_Corrective_UL li p {
-    font-size: 12px;
-  }
+  /*  */
 
   .Examples_Corrective_div h4,
   .Examples_Effects_div h4 {
@@ -2593,9 +2873,19 @@ font-size: 13px;
 
   .fourth-content {
     background-image: none;
-    background-color: #31003E;
+    background-color: #31003e;
     background-blend-mode: initial;
     background-repeat: no-repeat;
+  }
+
+  .fourth-content h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .fourth-content p {
+    font-size: 14px;
+    text-align: center;
   }
 
   .fourth-content .c-margin-top {
@@ -2613,13 +2903,13 @@ font-size: 13px;
   }
 
   /*  */
-  .Measurementsection {
+  /* .Measurementsection {
     padding: 25px 30px;
     grid-template-columns: repeat(1, 1fr);
-  }
+  } */
 
   .measurementsystem h1 {
-    font-size: 23px;
+    font-size: 28px;
     line-height: 35px;
   }
 
@@ -2643,6 +2933,7 @@ font-size: 13px;
 
   #importance {
     order: 2;
+    max-width: 100%;
   }
 
   .importance h3 {
@@ -2682,9 +2973,9 @@ font-size: 13px;
   }
 
   #sigma h1 {
-    font-size: 23px;
+    font-size: 28px;
     line-height: 35px;
-}
+  }
 
   .Measurementsection {
     padding: 25px 30px;
@@ -2704,28 +2995,19 @@ font-size: 13px;
     width: 100%;
   }
 
-
   #six_measurement {
     display: grid;
-    padding: 25px 30px;
+    padding: 27px;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
-}
-.listsection {
-    margin-top: -48px;
-}
+  }
 
- #importance h1 {
-    font-size: 23px;
-    line-height: 35px;
-}
-.sex_sigma_object {
-    padding-top: 50px;
-}
-.content04_div_1_image {
-    margin-top: 0;
-    margin-bottom: -29px;
-}
+  #importance h1 {
+    font-size: 28px;
+    line-height: 37px;
+    text-align: center;
+  }
+
   #conclution {
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
@@ -2736,7 +3018,305 @@ font-size: 13px;
     gap: 30px;
     padding: 20px 0 10px 0;
   }
-  
-  
+
+  .Matrix_div_1 {
+    order: 0 !important;
+  }
+
+  .Matrix_div_2 {
+    order: 1 !important;
+    padding-bottom: 51px;
+  }
+
+  .understanding_content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Objectives_div_role {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Implementation_Matrix_div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content04_div_2 {
+    margin-top: -58px;
+  }
+
+  .understanding h1 {
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .circumstances h1 {
+    font-size: 28px !important;
+    line-height: 35px;
+  }
+
+  .circumstances p,
+  .Matrix_p {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .importance h1 {
+    font-size: 28px;
+  }
+
+  .methodologies {
+    font-size: 13px;
+  }
+
+  .different {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .Components_div p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .sub_Objectives_div_role p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  #sigma h1,
+  .methodologies {
+    text-align: center;
+  }
+
+  .content04_h2 {
+    text-align: center !important;
+  }
+
+  .methodologies {
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  .importance p {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  #importance_conclution h3,
+  .process_of,
+  .purpose,
+  .Effect_Analysis_div_1 h4,
+  .Effect_Analysis_div_1 p,
+  .sub_Effect_bottem_div h4,
+  .sub_Effect_bottem_div p,
+  .types_sigma_section,
+  .primary {
+    text-align: center;
+  }
+
+  .sub_Objectives_div_role h3 {
+    font-size: 18px;
+  }
+
+  .strategy_sigmas {
+    padding-right: 0;
+  }
+
+  .numerical,
+  .numerical_one {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .understanding_table {
+    height: 355px;
+  }
+
+  .Components_image img {
+    width: 70%;
+  }
+
+  /*  */
+  .sub_Strategy_div .Perform_div {
+    grid-template-columns: 70px auto;
+  }
+
+  .Matrix_div_1 {
+    order: 0 !important;
+  }
+
+  .Matrix_div_2 {
+    order: 1 !important;
+    padding-bottom: 52px;
+  }
+
+  /*  */
+  .sub_Strategy_div .Perform_div {
+    grid-template-columns: 70px auto;
+  }
+
+  /*  */
+  .Benefits_Strategy {
+    padding-bottom: 50px;
+  }
+
+  .Alignment_div_bottom {
+    padding: 20px;
+  }
+
+  .Alignment_div_top {
+    height: 40px;
+  }
+
+  .Alignment_div_top .Alignment_img {
+    width: 70px;
+    height: 70px;
+
+    top: -20px;
+    left: 40px;
+  }
+
+  .Six-Sigma_div {
+    order: 0 !important;
+  }
+
+  .Six-Sigma_div_right {
+    order: 1 !important;
+  }
+
+  .Alignment_div {
+    max-height: max-content;
+  }
+
+  /*  */
+  .Benefits_Strategy {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  .top_blank {
+    height: 0px;
+  }
+
+  /*  */
+
+  .Prioritization_IMG {
+    width: 80px !important;
+  }
+
+  .Strategic_bottom_div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /*  */
+
+  .Project_IMG {
+    width: 121px;
+  }
+
+  .Use_Strategy_img img {
+    width: 80%;
+    padding-top: 20px;
+  }
+
+  .Strategic_Alignment_div,
+  .strategic_imgs {
+    display: grid !important;
+    justify-items: center;
+  }
+
+  .Project_IMG {
+    width: 80px;
+  }
+
+  .strategic_imgs h4,
+  .demonstrate_p h5 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .Examples_Strategy_div {
+    padding: 0;
+  }
+
+  .Examples_right {
+    padding: 10px !important;
+  }
+  .Components_div p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .Examples_Strategy_div {
+    grid-template-columns: repeat(1, 1fr) !important;
+    padding: 30px;
+  }
+  .Examples_right {
+    max-width: 100% !important;
+    padding: 40px;
+  }
+  .Examples_right p {
+    text-align: center !important;
+  }
+  .Process_div p {
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .vital_points_div {
+    padding: 20px !important;
+  }
+  .Alignment_div {
+    max-height: fit-content !important;
+  }
+  .importance_measurement {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+    gap: 40px;
+  }
+  .Implementation_p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .Strategic_Alignment_div {
+    align-items: center;
+    padding: 20px;
+  }
+  .Innovation_img {
+    display: flex;
+    justify-content: center;
+  }
+  .Innovation_img img {
+    width: 70%;
+  }
+  .bg-line_left,
+  .bg-line_right {
+    display: none;
+  }
+  .Six_Sigma_img img {
+    width: 70%;
+    display: none;
+  }
+  .importanceimg {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .importanceimg img {
+    width: 70%;
+  }
+
+  /*  */
+  .content04_div_2 {
+    padding: 30px;
+  }
 }
+
 /*--------------------------------------*/
