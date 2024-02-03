@@ -455,17 +455,6 @@ a:hover {
   z-index: 2;
 }
 
-/* .sub_Effect_bottem_div {
-  padding: 50px 35px 70px 70px;
-  border-radius: 50px;
-  background: linear-gradient(138deg,
-    #9d4e69 17.88%,
-    rgba(79, 67, 222, 0) 68.36%);
-  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
-  position: relative;
-  z-index: 2;
-  height: 440px;
-} */
 
 .sub_Effect_bottem_div_1 {
   background: linear-gradient(
@@ -1146,6 +1135,7 @@ a:hover {
 .Percentage_div_img {
   gap: 20px;
   padding-bottom: 20px;
+  align-items: center;
 }
 
 /* end */
@@ -1181,18 +1171,12 @@ a:hover {
   margin: 0;
 }
 .Matrix_left_div-1 {
-  /* background-image: url("/assets/images/Internal_Factor.svg"); */
   background-position: 44px 16px;
   background-repeat: no-repeat;
-  /* padding-top: 200px; */
   padding-bottom: 60px;
 
 }
 
-.Matrix_right_div-1 {
-  /* background-image: url("/assets/images/External_Factor.svg"); */
-
-}
 
 .Internal_div h3 {
   color: #000;
@@ -1359,6 +1343,10 @@ a:hover {
   border-radius: 30px;
   position: relative;
 }
+.align {
+  height: 350px;
+  max-height: 350px;
+}
 
 .Alignment_div_top {
   height: 50px;
@@ -1515,5 +1503,376 @@ position: relative;
 
 
 /* Data Collection Plan Section css */
+.data_collection_plan{
+  background: radial-gradient(54.98% 59.38% at 50% 5.85%, #2FE7BB 0%, #4E0F9E 100%);
+}
+.crucial {
+color: #fff;
+font-size: 24px;
+font-weight: 500;
+margin-bottom: 20px;
+}
+.having{
+font-size: 16px;
+line-height: 27px;
+}
 
 
+/* Key Components of the Balanced Scorecard  */
+.challenges_datas {
+max-width: 100% !important;
+text-align: center;
+margin: 0 auto;
+width: 50%;
+}
+.key_component {
+justify-content: space-between;
+}
+.key_balance{
+width: 48%;
+height: 350px;
+align-items: start;
+}
+.key_balance p{
+text-align: start;
+}
+.key_one {
+border-radius: 10px;
+border: 1px solid #FB0;
+border-bottom: 10px solid #FB0;
+}
+.key_two{
+border-radius: 10px;
+border: 1px solid #C2ACFF;
+border-bottom: 10px solid #C2ACFF;
+}
+.define_purpose{
+font-size: 24px;
+font-weight: 700;
+line-height: 27px
+}
+.difine_aside {
+display: flex;
+justify-content: space-between;
+width: 100%;
+align-items: end;
+}
+
+
+/* Identifying the Data Sources Section css */
+.identi_data {
+color: #FFF;
+font-size: 50px;
+font-weight: 800;
+line-height: 60px;
+margin-bottom: 45px;
+}
+.primary_sources h4{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+/* Data Collection Methods css */
+.data_collection_methods{
+display: flex;
+justify-content: center;
+gap: 56px;
+margin: 25px auto;
+}
+
+.collect_method {
+width: 500px;
+}
+.data_head{
+text-align: center;
+}
+
+.identifyingimg{
+display: flex;
+align-items: center;
+justify-content: end;
+}
+
+/*  Sampling Strategies Section */
+.sample_strategies_section{
+  background: #64FDCF;
+  }
+#Force_Analysis_section .Benefits_img{
+ max-width: 302px;
+ max-height: 171px;
+ /* width: 100%; */
+}
+#Force_Analysis_section .FMEA_h2{
+  padding-top: 50px;
+}
+#Force_Analysis_section .Alignment_div{
+  border-radius: 30px;
+  background: #FFF;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.10);
+  max-height: fit-content;
+}
+#Force_Analysis_section .Alignment_img{
+  box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.sampling_head{
+  width: 50%;
+font-size: 50px;
+font-weight: 800;
+line-height: 60px;
+padding-top: 10px !important;
+}
+.frame{
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+}
+.decision{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px; /
+}
+
+
+
+/* end */
+
+
+/* Data Collection Procedures css  */
+.data_collect {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  padding: 50px 50px;
+}
+.training {
+  margin-left: 155px;
+}
+
+.training_one {
+  margin-right: 112px;
+}
+.rights{
+    top: 22%;
+}
+.data_head_section {
+  width: 48%;
+  margin: 0 auto;
+}
+
+.predata{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+}
+.predata p{
+font-size: 20px;
+font-weight: 400;
+line-height: 35px;
+}
+
+
+
+/* Data Management and Storage css */
+.security_div{
+  background: #C6D6FF;
+}
+.managedata h1{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+line-height: 60px; 
+}
+
+
+/* Data Analysis Plan  css */
+
+.inputdata{
+  background: #FDDB8D;
+}
+.data_analysis{
+background: #FFEFB1;
+}
+.data_analysis_meet{
+margin-top: 25px;
+}
+
+.describes_sec {
+max-width: 600px;
+}
+.upkeep{
+  font-weight: 700;
+}
+
+.data_paln_employee{
+display: flex;
+}
+.plan_analysis{
+font-size: 50px;
+font-weight: 600;
+line-height: 60px;
+padding-bottom: 30px;
+}
+.willbe{
+  background: #FFA78B;
+}
+
+/* Monitoring and quality assurance  css */
+.monitoring_quality{
+display: flex;
+gap: 20px;
+}
+.monitoring_img{
+background-color: transparent;
+}
+
+.monitorin_assurance{
+font-size: 50px;
+font-weight: 700;
+line-height: 62px;
+width: 50%;
+}
+.ensuring{
+  background: #3E1159;
+}
+.constant_back{
+  background: #2624A5;
+}
+
+.constant_back_one h4{
+  color: #fff;
+}
+.ensuring h4{
+  color: #fff;
+}
+.effects{
+    padding: 35px;
+    max-width: 339px;
+}
+.moni_img{
+  width: 103px;
+}
+.const h4{
+  font-size: 22px;
+font-weight: 700;
+line-height: 24px
+}
+
+/* Ethical Considerations Section  css */
+.ethical_considerations {
+display: grid;
+grid-template-columns: 60% auto;
+gap: 40px;
+}
+.ethical_objective{
+display: grid;
+grid-template-columns: repeat(1,1fr) !important;
+}
+.clearly_state{
+padding-right: 0 !important;
+}
+.Choose {
+padding-top: 60px;
+}
+
+.ethical_measurement {
+padding: 25px 50px !important;
+}
+.ethicalimg{
+height: 400px;
+}
+.imporatnce_ethicale{
+font-size: 42px;
+font-weight: 600;
+line-height: 60px;
+}
+
+/* Budget and Resources css */
+.budget{
+font-size: 50px;
+font-weight: 700;
+line-height: 62px; 
+}
+.budget_section {
+  display: flex;
+  gap: 100px;
+  margin-top: 82px;
+  align-items: center;
+}
+.setting_budget_img {
+  border-radius: 60px;
+  background: #FFF4CF;
+  max-width: 470px;
+  width: 100%;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settingimg img{
+  width: 140px;
+}
+.setimg img{
+  width: 230px;
+}
+.set_bud{
+  background: #DEFFF3;
+}
+
+.line_budget {
+  border: 1px solid black;
+  width: 123px;
+  margin-top: 35px;
+}
+.sets_bud h3{
+  font-weight: 800;
+}
+
+/*Data Collection and Six Sigma css  */
+.Analysis-content{
+  background: url('/assets/images/data_collectio_six_sigma.svg');
+  background-color: rgb(239, 99, 239);
+  background-blend-mode: initial;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center left;
+}
+.Analysis-content h2{
+  color: #fff;
+  text-align: left;
+}
+ .Analysis-content p{
+  color: #fff;
+}
+.Ay-60p{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Importance of Data Collection in Six Sigma */
+#Applications_Force_section{
+  background-color: #3431E2;
+  color: #fff;
+}
+.Applications_forces_p{
+  padding-top: 20px;
+}
+#Applications_Force_section .Strategy_img{
+  margin-top: 150px;
+}
+.importance_data_Set{
+  font-weight: 800;
+}
+.approach{
+  color: #FFF4F4;
+font-size: 18px !important;
+font-weight: 400 !important;
+line-height: 32px;
+}
+
+/* Importance of Data Collection css */
+.imporatnce_force{
+  padding-bottom: 283px;
+  margin-bottom: -188px;
+}

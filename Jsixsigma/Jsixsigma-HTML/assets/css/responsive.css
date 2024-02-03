@@ -100,6 +100,30 @@
   .Strategy_Development_section {
     overflow: hidden;
   }
+
+/*  Data Collection Plan css */
+  .measurementsystem h1 {
+    font-size: 57px;
+}
+
+/* Data Collection Methods Section */
+.understanding_content {
+  margin-right: 0;
+}
+
+
+/*  Data Collection Procedures Section */
+.rights {
+  top: 20%;
+}
+.training {
+  margin-left: 135px;
+}
+
+/*  Monitoring and quality assurance  */
+.effects {
+  width: 49%;
+}
 }
 
 /* X-Large devices (large desktops, 1200px and 1399px) */
@@ -393,7 +417,8 @@
 
   .importance h1 {
     font-size: 40px;
-  }
+    line-height: 45px;
+}
 
   .best_starimg img {
     width: 100%;
@@ -463,6 +488,114 @@
     width: 148px;
     height: 79px;
   }
+  /* Data Collection Methods Section */
+.understanding_content {
+  margin-right: 0;
+}
+
+/*  Data Collection Procedures Section */
+.rights {
+  top: 17%;
+}
+.training {
+  margin-left: 188px;
+}
+
+/*  Monitoring and quality assurance  */
+.effects {
+  width: 49%;
+}
+
+/* Sampling Strategies  */
+.decision {
+  font-size: 13px;
+}
+.frame {
+  font-size: 19px;
+}
+
+.imporatnce_force {
+  padding-bottom: 283px !important;
+  margin-bottom: -188px;
+}
+
+.Effect_Analysis_div_1 p {
+  font-size: 14px;
+}
+.moni_img {
+  width: 134px;
+}
+.const h4 {
+  font-size: 20px;
+}
+.data_paln_employee {
+  display: flex;
+  gap: 140px;
+}
+.licenses{
+  width: 400px;
+}
+.identi_data {
+  font-size: 40px;
+  line-height: 55px;
+}
+.primary_sources h4 {
+  font-size: 18px;
+}
+.numerical {
+  font-size: 13px;
+}
+.predata {
+  font-size: 26px;
+}
+.predata p {
+  font-size: 17px;
+  line-height: 28px;
+}
+.managedata h1 {
+  font-size: 40px;
+  line-height: 45px;
+}
+.strategic_imgs h4 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.plan_analysis {
+  font-size: 40px;
+  line-height: 45px;
+}
+.monitorin_assurance {
+  font-size: 40px;
+  line-height: 45px;
+}
+#importance h1 {
+  font-size: 40px;
+}
+.clearly_state{
+  font-size: 22px;
+}
+.ethical_measurement{
+  display: flex !important;
+  flex-direction: column!important;
+}
+.budget {
+  line-height: 61px;
+  font-size: 40px;
+  line-height: 45px;
+}
+.line_budget {
+  margin-top: 29px;
+}
+.setting_budget_img {
+  height: 320px;
+}
+
+.settingimg img {
+  width: 125px;
+}
+.setimg img {
+  width: 200px;
+}
 }
 
 @media screen and (max-width: 991px) {
@@ -1069,11 +1202,11 @@
   }
 
   .Strategic_Alignment_div .strategic_imgs h4 {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 35px;
     word-wrap: break-word;
     max-width: fit-content;
-  }
+}
 
   .sub_Objectives_imgs {
     width: 110px;
@@ -1125,6 +1258,175 @@
   .bg-line_right {
     top: 6%;
   }
+
+  /* DFata-collection-plan section */
+  .key_balance {
+    height: max-content;
+}
+.crucial {
+  font-size: 19px;
+}
+.challenges_datas {
+  width: 55%;
+}
+  /* Data Collection Methods Section */
+  .understanding_content {
+    margin-right: 0;
+  }
+  
+  /*  Data Collection Procedures Section */
+  .rights {
+    top: 14%;
+}
+.training {
+  margin-left: 172px;
+}
+  
+  /*  Monitoring and quality assurance  */
+  .effects {
+    width: 49%;
+  }
+  
+  /* Sampling Strategies  */
+  .decision {
+    font-size: 13px;
+    line-height: 21px;
+}
+  .frame {
+    font-size: 19px !important;
+  }
+  
+  .imporatnce_force {
+    padding-bottom: 283px !important;
+    margin-bottom: -188px;
+  }
+  
+  .Effect_Analysis_div_1 p {
+    font-size: 13px;
+}
+  .moni_img {
+    width: 134px;
+  }
+  .const h4 {
+    font-size: 18px;
+}
+  .data_paln_employee {
+    display: flex;
+    gap: 140px;
+  }
+  .licenses{
+    width: 400px;
+  }
+  .identi_data {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .primary_sources h4 {
+    font-size: 18px;
+  }
+  .numerical {
+    font-size: 13px;
+  }
+  .predata {
+    font-size: 22px;
+  }
+  .predata p {
+    font-size: 14px;
+    line-height: 28px;
+}
+.managedata h1 {
+  font-size: 37px;
+  line-height: 45px;
+}
+  .strategic_imgs h4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .plan_analysis {
+    font-size: 37px;
+    line-height: 45px;
+  }
+  .monitorin_assurance {
+    font-size: 37px;
+    line-height: 45px;
+    width: 100%;
+    margin-bottom: 47px;
+}
+  #importance h1 {
+    font-size: 37px;
+}
+  .clearly_state{
+    font-size: 22px;
+  }
+  .ethical_measurement{
+    display: flex !important;
+    flex-direction: column!important;
+  }
+  .budget {
+    line-height: 61px;
+    font-size: 37px;
+    line-height: 45px;
+  }
+  .line_budget {
+    margin-top: 29px;
+  }
+  .setting_budget_img {
+    height: 320px;
+  }
+  
+  .settingimg img {
+    width: 125px;
+  }
+  .setimg img {
+    width: 200px;
+  }
+  .define_sub{
+    width: 75px;
+    height: 75px;
+}
+.define_purpose {
+  font-size: 22px;
+  line-height: 21px;
+}
+.collect_method{
+  height: 390px;
+}
+
+.Analysis_mb{
+  margin-left: 0;
+}
+.Analysis-content{
+  background: none;
+  background: none;
+  background-color: #e741eb;
+  background-blend-mode: initial;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.fourth-content .c-margin-top{
+  margin-top: 39%;
+}
+.Analysis_mb{
+width: 100%;
+}
+.Analysis-content h2 {
+color: #fff;
+text-align: center;
+
+}
+
+.data_head_section {
+  width: 100%;
+  margin: 0 auto;
+}
+.key_balance  p{
+  font-size: 14px
+}
+.align {
+  height: 375px;
+  max-height: 375px;
+}
+
 }
 
 /* Medium devices (tablets, 768px and 991px) */
@@ -1728,6 +2030,156 @@
     text-align: center;
 }
   /*  */
+
+  .Analysis-content{
+    background: url('../images/strategy/content7-bg.png');
+    background: url('../images/strategy/content7-bg.png'),linear-gradient(to bottom, #d737e3, #e741e9, #e741eb);
+    background-color: #e741eb;
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Analysis-content .c-margin-top{
+    margin-top: 0%;
+}
+.Analysis-content h2 {
+  text-align: center;
+}
+
+.s-content-odd-wrapper{
+  border-radius: 0px;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Data-collection-plan */
+.key_balance {
+  height: max-content;
+}
+.ethical_considerations {
+  grid-template-columns: repeat(1 ,1fr);
+}
+.monitorin_assurance {
+  font-size: 37px;
+  line-height: 45px;
+  width: 100%;
+  text-align: center;
+}
+.effects {
+  max-width: 305px;
+}
+.budget {
+  font-size: 37px;
+  line-height: 45px;
+  text-align: center;
+}
+.line_budget {
+  margin: 16px auto;
+}
+.plan_analysis {
+  font-size: 37px;
+  line-height: 45px;
+  padding-bottom: 19px;
+  text-align: center;
+}
+.crucial {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.challenges_datas {
+  width: 100%;
+}
+.difine_aside {
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+.identi_data {
+  font-size: 37px;
+  line-height: 45px;
+  margin-bottom: 35px;
+}
+.collect_method{
+  height: 430px;
+}
+.sampling_head {
+  width: 100%;
+}
+.decision {
+  font-size: 13px;
+}
+.data_head_section {
+  width: 100%;
+}
+.bg-line_right {
+  top: 7%;
+}
+.data_collect {
+  padding: 30px;
+  flex-direction: column;
+  gap: 35px;
+}
+.licenses {
+  width: 120px;
+}
+.training_one {
+  margin-right: 0;
+}
+.training{
+  margin-left: 0;
+}
+.predata {
+  text-align: center;
+}
+.managedata h1 {
+  font-size: 37px;
+  line-height: 45px;
+}
+.imporatnce_ethicale {
+  font-size: 37px;
+}
+.budget_section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+}
+.sets_bud h3 {
+  text-align: center;
+}
+.sets_bud p{
+  text-align: center;
+  padding-right: 0;
+}
+.settingimg img {
+    width: 100px;
+}
+.setimg img {
+  width: 170px;
+}
+.setting_budget_img {
+  height: 290px;
+}
+.imporatnce_force {
+  padding-bottom: 283px !important;
+  margin-bottom: -222px;
+}
+.predata p {
+  font-size: 18px;
+  line-height: 28px;
+  padding-top: 13px;
+}
+.define_purpose {
+  font-size: 24px;
+  line-height: 27px;
+  padding-top: 19px;
+}
+.orders_one{
+  order: 2;
+}
+.orders{
+  order: 1;
+}
 }
 
 /* Small devices (landscape phones, 576px and 767px) */
@@ -2308,10 +2760,6 @@
     padding: 20px;
   }
 
-  /* .Internal_div {
-    padding-top: 150px;
-  } */
-
   .Matrix_left_div {
     min-height: max-content;
   }
@@ -2340,6 +2788,151 @@
     width: 80%;
     height: 100%;
   }
+  .Analysis-content{
+    background: url('../images/strategy/content7-bg.png');
+    background-color: #e741eb;
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Analysis-content .c-margin-top{
+    margin-top: 0%;
+}
+
+.s-content-odd-wrapper{
+  border-radius: 0px;
+  padding: 20px;
+  width: 100%;
+}
+
+.key_balance {
+  height: max-content;
+}
+.ethical_considerations {
+  grid-template-columns: repeat(1 ,1fr);
+}
+.monitorin_assurance {
+  font-size: 37px;
+  line-height: 45px;
+  width: 100%;
+  text-align: center;
+}
+
+.budget {
+  font-size: 37px;
+  line-height: 45px;
+  text-align: center;
+}
+.line_budget {
+  margin: 16px auto;
+}
+.plan_analysis {
+  font-size: 37px;
+  line-height: 45px;
+  padding-bottom: 19px;
+  text-align: center;
+}
+.crucial {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.challenges_datas {
+  width: 100%;
+}
+.difine_aside {
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+.identi_data {
+  font-size: 37px;
+  line-height: 45px;
+  margin-bottom: 35px;
+}
+.collect_method {
+  height: 337px;
+}
+.sampling_head {
+  width: 100%;
+}
+.decision {
+  font-size: 13px;
+}
+.data_head_section {
+  width: 100%;
+}
+.bg-line_right {
+  top: 7%;
+}
+.data_collect {
+  padding: 30px;
+  flex-direction: column;
+  gap: 35px;
+}
+.licenses {
+  width: 120px;
+}
+.training_one {
+  margin-right: 0;
+}
+.training{
+  margin-left: 0;
+}
+.predata {
+  text-align: center;
+}
+.managedata h1 {
+  font-size: 37px;
+  line-height: 45px;
+}
+.imporatnce_ethicale {
+  font-size: 37px;
+}
+.budget_section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+}
+.sets_bud h3 {
+  text-align: center;
+}
+.sets_bud p{
+  text-align: center;
+  padding-right: 0;
+}
+.settingimg img {
+    width: 100px;
+}
+.setimg img {
+  width: 170px;
+}
+.setting_budget_img {
+  height: 290px;
+}
+.imporatnce_force {
+  padding-bottom: 283px !important;
+  margin-bottom: -222px;
+}
+.predata p {
+  font-size: 18px;
+  line-height: 28px;
+  padding-top: 13px;
+}
+.define_purpose {
+  font-size: 24px;
+  line-height: 27px;
+  padding-top: 19px;
+}
+.orders_one{
+  order: 2;
+}
+.orders{
+  order: 1;
+}
+
+
+
 }
 
 @media screen and (max-width: 767px) {
@@ -2367,10 +2960,6 @@
     height: 100%;
     flex-direction: column;
   }
-  /* .Applications_div_2 {
-  grid-template-columns: inherit;
-  justify-items: center;
-} */
 
   .Effect_bottem_div {
     grid-template-columns: repeat(1, 1fr);
@@ -2459,10 +3048,12 @@
   }
 
   .understanding_content {
-    grid-template-columns: repeat(1, 1fr);
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
     margin-right: 0px;
     gap: 30px;
   }
+
 
   .importanceimg {
     max-width: 400px;
@@ -2480,10 +3071,6 @@
     line-height: 20px;
   }
 
-  .understanding_table {
-    padding: 18px;
-    height: 256px;
-  }
 
   .data_sources_img {
     width: 200px;
@@ -2508,11 +3095,6 @@
   .data_sources_img {
     width: 130px;
   }
-
-  /* .Objectives_div_role {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  } */
 
   .content04_div_1_img img {
     display: none;
@@ -2561,9 +3143,6 @@
     padding: 20px;
   }
 
-  /* .Internal_div {
-    padding-top: 150px;
-  } */
 
   .Matrix_left_div {
     min-height: max-content;
@@ -2600,6 +3179,24 @@
 
   .strategic_imgs h4 {
     text-align: center;
+  }
+  .monitoring_quality {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .effects {
+    max-width: 305px;
+  }
+  .banefit{
+    display: flex !important;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .orders_one{
+    order: 2;
+  }
+  .orders{
+    order: 1;
   }
 }
 
@@ -3313,10 +3910,170 @@
     width: 70%;
   }
 
-  /*  */
+  /* Sampling Strategies */
   .content04_div_2 {
     padding: 30px;
   }
+
+  #Force_Analysis_section .FMEA_h2 {
+    padding-top: 20px;
+  }
+  
+  #Force_Analysis_section .Sigma_div_right {
+  padding-top: 40px;
+  }
+
+  #Force_Analysis_section .Alignment_div {
+    margin-top: 30px;
+  }
+  #Force_Analysis_section .Benefits_Strategy_div {
+    width: 100%;
+    gap: 30px;
+  
+  }
+
+  .Analysis-content{
+    background: url('../images/strategy/content7-bg.png');
+    background-color: #e741eb;
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
+.Analysis-content .c-margin-top{
+    margin-top: 0%;
+}
+.Analysis-content h2 {
+  text-align: center;
+}
+.crucial {
+  font-size: 17px;
+  text-align: center;
+}
+.challenges_datas,.sampling_head,.data_head_section {
+  width: 100%;
+}
+.banefit{
+  gap: 60px;
+}
+.managedata h1 {
+  font-size: 25px;
+  line-height: 35px;
+  margin-bottom: -25px;
+}
+.plan_analysis {
+  font-size: 25px;
+  line-height: 35px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.monitorin_assurance {
+  font-size: 25px;
+  line-height: 35px;
+  padding-bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+.ethical_considerations {
+  display: flex;
+ flex-direction: column;
+}
+.budget_section {
+  flex-direction: column;
+  gap: 40px;
+}
+.budget {
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  width: 100%;
+}
+.ensuring_one,.constant_back_one{
+  flex-direction: column;
+}
+.line_budget {
+  width: 123px;
+  margin: 19px auto;
+}
+.data_collect {
+  flex-direction: column;
+  padding: 25px 0;
+  gap: 15px;
+}
+.training {
+  margin-left: 0;
+}
+.training_one{
+  margin-right: 0;
+}
+.predata {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: center;
+}
+.Examples_Strategy_section .process_h3 {
+  line-height: 27px !important;
+}
+.licenses{
+  width: 125px;
+}
+.predata p {
+  font-size: 14px;
+  line-height: 26px;
+  padding-top: 15px;
+}
+.difine_aside {
+  align-items: center;
+  flex-direction: column;
+}
+.setting_budget_img {
+  height: 300px;
+  margin-top: -37px;
+}
+
+.settingimg img {
+  width: 90px;
+}
+.setimg img {
+  width: 160px;
+}
+.identi_data {
+  font-size: 27px;
+  line-height: 35px;
+}
+.key_balance {
+  height: max-content;
+}
+.collect_method {
+  width: 300px;
+  padding: 25px;
+  height: 386px;
+}
+.define_purpose {
+  font-size: 20px;
+}
+.decision {
+  font-size: 13px;
+}
+.imporatnce_force {
+  padding-bottom: 283px !important;
+}
+.ethicalimg {
+  height: 200px;
+}
+.ethical_measurement {
+  padding: 20px !important;
+}
+.Choose {
+  padding-top: 0;
+}
+.data_head_section h1{
+  font-size: 24px !important;
+}
+.Analysis-content p {
+  text-align: center;
+}
+}
+
 
 /*--------------------------------------*/
