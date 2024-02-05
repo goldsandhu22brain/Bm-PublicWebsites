@@ -101,29 +101,44 @@
     overflow: hidden;
   }
 
-/*  Data Collection Plan css */
+  /*  Data Collection Plan css */
   .measurementsystem h1 {
     font-size: 57px;
-}
+  }
 
-/* Data Collection Methods Section */
-.understanding_content {
-  margin-right: 0;
-}
+  /* Data Collection Methods Section */
+  .understanding_content {
+    margin-right: 0;
+  }
 
+  /*  Data Collection Procedures Section */
+  .rights {
+    top: 20%;
+  }
+  .training {
+    margin-left: 135px;
+  }
 
-/*  Data Collection Procedures Section */
-.rights {
-  top: 20%;
-}
-.training {
-  margin-left: 135px;
-}
+  /*  Monitoring and quality assurance  */
+  .effects {
+    width: 49%;
+  }
 
-/*  Monitoring and quality assurance  */
-.effects {
-  width: 49%;
-}
+    /* Force Field page css start */
+    #Force_Field_section {
+      min-height: 660px;
+    }
+  
+    #Force_Field_section .Strategy_Development_img {
+  
+      margin: 27px 0 -233px 0;
+  
+    }
+    .second-content .d-image {
+      width: 708px;
+      height: 450px;
+  }
+    /* end */
 }
 
 /* X-Large devices (large desktops, 1200px and 1399px) */
@@ -172,12 +187,6 @@
     height: 50px;
   }
 
-  /* .content04_div_1_img img {
-    width: 66px;
-    height: 80px;
-    bottom: 16px;
-    right: 18px;
-  } */
   .content04_div_1_img img {
     width: fit-content;
     height: 70px;
@@ -418,7 +427,7 @@
   .importance h1 {
     font-size: 40px;
     line-height: 45px;
-}
+  }
 
   .best_starimg img {
     width: 100%;
@@ -438,10 +447,6 @@
   .Matrix_left_div-1 {
     padding: 50px;
   }
-
-  /* .Internal_div {
-    padding-top: 130px;
-  } */
 
   .Matrix_left_div {
     min-height: 850px;
@@ -489,113 +494,132 @@
     height: 79px;
   }
   /* Data Collection Methods Section */
-.understanding_content {
-  margin-right: 0;
+  .understanding_content {
+    margin-right: 0;
+  }
+
+  /*  Data Collection Procedures Section */
+  .rights {
+    top: 17%;
+  }
+  .training {
+    margin-left: 188px;
+  }
+
+  /*  Monitoring and quality assurance  */
+  .effects {
+    width: 49%;
+  }
+
+  /* Sampling Strategies  */
+  .decision {
+    font-size: 13px;
+  }
+  .frame {
+    font-size: 19px;
+  }
+
+  .imporatnce_force {
+    padding-bottom: 283px !important;
+    margin-bottom: -188px;
+  }
+
+  .Effect_Analysis_div_1 p {
+    font-size: 14px;
+  }
+  .moni_img {
+    width: 134px;
+  }
+  .const h4 {
+    font-size: 20px;
+  }
+  .data_paln_employee {
+    display: flex;
+    gap: 140px;
+  }
+  .licenses {
+    width: 400px;
+  }
+  .identi_data {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .primary_sources h4 {
+    font-size: 18px;
+  }
+  .numerical {
+    font-size: 13px;
+  }
+  .predata {
+    font-size: 26px;
+  }
+  .predata p {
+    font-size: 17px;
+    line-height: 28px;
+  }
+  .managedata h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .strategic_imgs h4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .plan_analysis {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .monitorin_assurance {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  #importance h1 {
+    font-size: 40px;
+  }
+  .clearly_state {
+    font-size: 22px;
+  }
+  .ethical_measurement {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .budget {
+    line-height: 61px;
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .line_budget {
+    margin-top: 29px;
+  }
+  .setting_budget_img {
+    height: 320px;
+  }
+
+  .settingimg img {
+    width: 125px;
+  }
+  .setimg img {
+    width: 200px;
+  }
+   /* Force Field page css start */
+   #Force_Field_section {
+    min-height: 520px;
+  }
+
+
+  #Force_Field_section .Strategy_Development_img {
+    margin: 27px 0 -122px 0;
+  }
+
+  .second-content .d-image{
+    width: 590px;
+    height: auto;
+}
+.s-content-odd-wrapper{
+    padding: 40px 30px;
 }
 
-/*  Data Collection Procedures Section */
-.rights {
-  top: 17%;
-}
-.training {
-  margin-left: 188px;
-}
-
-/*  Monitoring and quality assurance  */
-.effects {
-  width: 49%;
-}
-
-/* Sampling Strategies  */
-.decision {
-  font-size: 13px;
-}
-.frame {
-  font-size: 19px;
-}
-
-.imporatnce_force {
-  padding-bottom: 283px !important;
-  margin-bottom: -188px;
-}
-
-.Effect_Analysis_div_1 p {
-  font-size: 14px;
-}
-.moni_img {
-  width: 134px;
-}
-.const h4 {
-  font-size: 20px;
-}
-.data_paln_employee {
-  display: flex;
-  gap: 140px;
-}
-.licenses{
-  width: 400px;
-}
-.identi_data {
-  font-size: 40px;
-  line-height: 55px;
-}
-.primary_sources h4 {
-  font-size: 18px;
-}
-.numerical {
-  font-size: 13px;
-}
-.predata {
-  font-size: 26px;
-}
-.predata p {
-  font-size: 17px;
-  line-height: 28px;
-}
-.managedata h1 {
-  font-size: 40px;
-  line-height: 45px;
-}
-.strategic_imgs h4 {
-  font-size: 24px;
-  line-height: 30px;
-}
-.plan_analysis {
-  font-size: 40px;
-  line-height: 45px;
-}
-.monitorin_assurance {
-  font-size: 40px;
-  line-height: 45px;
-}
-#importance h1 {
-  font-size: 40px;
-}
-.clearly_state{
-  font-size: 22px;
-}
-.ethical_measurement{
-  display: flex !important;
-  flex-direction: column!important;
-}
-.budget {
-  line-height: 61px;
-  font-size: 40px;
-  line-height: 45px;
-}
-.line_budget {
-  margin-top: 29px;
-}
-.setting_budget_img {
-  height: 320px;
-}
-
-.settingimg img {
-  width: 125px;
-}
-.setimg img {
-  width: 200px;
-}
+  /* end */
 }
 
 @media screen and (max-width: 991px) {
@@ -611,12 +635,6 @@
   .Strategy_h2 {
     text-align: center;
   }
-
-  /* Strategy Development page start */
-  /* .Strategy_Development_section {
-    min-height: 100%;
-    max-height: 100%;
-  } */
 
   .Matrix_arrow img {
     display: none;
@@ -679,7 +697,6 @@
   }
   .Examples_right {
     max-width: 100% !important;
-    /* padding: 40px; */
   }
 
   .bg-line_right {
@@ -688,16 +705,21 @@
   .bg-line_left {
     display: none;
   }
-  .measurementsystem p, .measurementsystem h1{
+  .measurementsystem p,
+  .measurementsystem h1 {
     text-align: center;
   }
   .content04_div_1_image {
     min-height: 100%;
     width: 100%;
-}
-  /* .Process_div {
-  padding: 30px;
-} */
+  }
+
+    /* Force Field page css start */
+    #Challenges_Criticism_section .different {
+      padding: 20px 0 0 0;
+    }
+    /* end */
+
   /*  */
 }
 
@@ -1150,10 +1172,6 @@
     padding: 30px;
   }
 
-  /* .Internal_div {
-    padding-top: 130px;
-  } */
-
   .Matrix_left_div {
     min-height: 830px;
   }
@@ -1206,11 +1224,11 @@
     line-height: 35px;
     word-wrap: break-word;
     max-width: fit-content;
-}
+  }
 
   .sub_Objectives_imgs {
     width: 110px;
-    height: 80px;
+    height: 110px;
   }
 
   .Project_IMG {
@@ -1262,59 +1280,59 @@
   /* DFata-collection-plan section */
   .key_balance {
     height: max-content;
-}
-.crucial {
-  font-size: 19px;
-}
-.challenges_datas {
-  width: 55%;
-}
+  }
+  .crucial {
+    font-size: 19px;
+  }
+  .challenges_datas {
+    width: 55%;
+  }
   /* Data Collection Methods Section */
   .understanding_content {
     margin-right: 0;
   }
-  
+
   /*  Data Collection Procedures Section */
   .rights {
     top: 14%;
-}
-.training {
-  margin-left: 172px;
-}
-  
+  }
+  .training {
+    margin-left: 172px;
+  }
+
   /*  Monitoring and quality assurance  */
   .effects {
     width: 49%;
   }
-  
+
   /* Sampling Strategies  */
   .decision {
     font-size: 13px;
     line-height: 21px;
-}
+  }
   .frame {
     font-size: 19px !important;
   }
-  
+
   .imporatnce_force {
     padding-bottom: 283px !important;
     margin-bottom: -188px;
   }
-  
+
   .Effect_Analysis_div_1 p {
     font-size: 13px;
-}
+  }
   .moni_img {
     width: 134px;
   }
   .const h4 {
     font-size: 18px;
-}
+  }
   .data_paln_employee {
     display: flex;
     gap: 140px;
   }
-  .licenses{
+  .licenses {
     width: 400px;
   }
   .identi_data {
@@ -1333,11 +1351,11 @@
   .predata p {
     font-size: 14px;
     line-height: 28px;
-}
-.managedata h1 {
-  font-size: 37px;
-  line-height: 45px;
-}
+  }
+  .managedata h1 {
+    font-size: 37px;
+    line-height: 45px;
+  }
   .strategic_imgs h4 {
     font-size: 24px;
     line-height: 30px;
@@ -1351,16 +1369,16 @@
     line-height: 45px;
     width: 100%;
     margin-bottom: 47px;
-}
+  }
   #importance h1 {
     font-size: 37px;
-}
-  .clearly_state{
+  }
+  .clearly_state {
     font-size: 22px;
   }
-  .ethical_measurement{
+  .ethical_measurement {
     display: flex !important;
-    flex-direction: column!important;
+    flex-direction: column !important;
   }
   .budget {
     line-height: 61px;
@@ -1373,59 +1391,89 @@
   .setting_budget_img {
     height: 320px;
   }
-  
+
   .settingimg img {
     width: 125px;
   }
   .setimg img {
     width: 200px;
   }
-  .define_sub{
+  .define_sub {
     width: 75px;
     height: 75px;
-}
-.define_purpose {
-  font-size: 22px;
-  line-height: 21px;
-}
-.collect_method{
-  height: 390px;
-}
+  }
+  .define_purpose {
+    font-size: 22px;
+    line-height: 21px;
+  }
+  .collect_method {
+    height: 390px;
+  }
 
-.Analysis_mb{
-  margin-left: 0;
-}
-.Analysis-content{
-  background: none;
-  background: none;
-  background-color: #e741eb;
-  background-blend-mode: initial;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.fourth-content .c-margin-top{
-  margin-top: 39%;
-}
-.Analysis_mb{
-width: 100%;
-}
+  .Analysis_mb {
+    margin-left: 0;
+  }
+  .Analysis-content {
+    background: none;
+    background: none;
+    background-color: #e741eb;
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .fourth-content .c-margin-top {
+    margin-top: 39%;
+  }
+  .Analysis_mb {
+    width: 100%;
+  }
+  .Analysis-content h2 {
+    color: #fff;
+    text-align: center;
+  }
+
+  .data_head_section {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .key_balance p {
+    font-size: 14px;
+  }
+  .align {
+    height: 375px;
+    max-height: 375px;
+  }
+
+  .exaggerate {
+    font-size: 14px;
+  }
+   /* Force Field page css start */
+   #Force_Field_section {
+    min-height: 400px;
+  }
+
+
+  #Force_Field_section .Strategy_Development_img {
+
+    margin: 27px 0 -103px 0;
+  }
+  .Analysis_mb{
+    margin-left: 0;
+  }
+
 .Analysis-content h2 {
-color: #fff;
-text-align: center;
+  color: #fff;
+  text-align: center;
 
 }
-
-.data_head_section {
-  width: 100%;
-  margin: 0 auto;
+.second-content .d-image {
+  width: 490px;
+  height: auto;
 }
-.key_balance  p{
-  font-size: 14px
+.s-content-odd-wrapper{
+  padding: 40px 30px;
 }
-.align {
-  height: 375px;
-  max-height: 375px;
-}
+/* end */
 
 }
 
@@ -1642,7 +1690,7 @@ text-align: center;
 
   .Example_UL li p,
   .Examples_Corrective_UL li p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .Examples_Corrective_div h4,
@@ -1801,6 +1849,7 @@ text-align: center;
   #conclution {
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
+    justify-items: center;
   }
 
   .importanceimg {
@@ -1939,10 +1988,6 @@ text-align: center;
     padding: 20px;
   }
 
-  /* .Internal_div {
-    padding-top: 150px;
-  } */
-
   .Matrix_left_div {
     min-height: 820px;
   }
@@ -2025,161 +2070,187 @@ text-align: center;
 
   .Effect_h4 {
     text-align: center;
-}
+  }
   .Implementation_p {
     text-align: center;
-}
+  }
   /*  */
 
-  .Analysis-content{
-    background: url('../images/strategy/content7-bg.png');
-    background: url('../images/strategy/content7-bg.png'),linear-gradient(to bottom, #d737e3, #e741e9, #e741eb);
-    background-color: #e741eb;
-    background-blend-mode: initial;
-    background-repeat: no-repeat;
-    background-size: contain;
+
+
+  .s-content-odd-wrapper {
+    border-radius: 0px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  /* Data-collection-plan */
+  .key_balance {
+    height: max-content;
+  }
+  .ethical_considerations {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .monitorin_assurance {
+    font-size: 37px;
+    line-height: 45px;
+    width: 100%;
+    text-align: center;
+  }
+  .effects {
+    max-width: 305px;
+  }
+  .budget {
+    font-size: 37px;
+    line-height: 45px;
+    text-align: center;
+  }
+  .line_budget {
+    margin: 16px auto;
+  }
+  .plan_analysis {
+    font-size: 37px;
+    line-height: 45px;
+    padding-bottom: 19px;
+    text-align: center;
+  }
+  .crucial {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .challenges_datas {
+    width: 100%;
+  }
+  .difine_aside {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .identi_data {
+    font-size: 37px;
+    line-height: 45px;
+    margin-bottom: 35px;
+  }
+  .collect_method {
+    height: 430px;
+  }
+  .sampling_head {
+    width: 100%;
+  }
+  .decision {
+    font-size: 13px;
+  }
+  .data_head_section {
+    width: 100%;
+  }
+  .bg-line_right {
+    top: 7%;
+  }
+  .data_collect {
+    padding: 30px;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .licenses {
+    width: 120px;
+  }
+  .training_one {
+    margin-right: 0;
+  }
+  .training {
+    margin-left: 0;
+  }
+  .predata {
+    text-align: center;
+  }
+  .managedata h1 {
+    font-size: 37px;
+    line-height: 45px;
+  }
+  .imporatnce_ethicale {
+    font-size: 37px;
+  }
+  .budget_section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+  }
+  .sets_bud h3 {
+    text-align: center;
+  }
+  .sets_bud p {
+    text-align: center;
+    padding-right: 0;
+  }
+  .settingimg img {
+    width: 100px;
+  }
+  .setimg img {
+    width: 170px;
+  }
+  .setting_budget_img {
+    height: 290px;
+  }
+  .imporatnce_force {
+    padding-bottom: 283px !important;
+    margin-bottom: -222px;
+  }
+  .predata p {
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 13px;
+  }
+  .define_purpose {
+    font-size: 24px;
+    line-height: 27px;
+    padding-top: 19px;
+  }
+  .orders_one {
+    order: 2;
+  }
+  .orders {
+    order: 1;
+  }
+
+  .exaggerate {
+    font-size: 14px;
+  }
+
+  
+/* Force Field page css start */
+.Analysis-content{
+  background: none;
+  background-color: #e741eb;
+  background-blend-mode: initial;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .Analysis-content .c-margin-top{
-    margin-top: 0%;
+  margin-top: 0%;
 }
 .Analysis-content h2 {
-  text-align: center;
+text-align: center;
 }
 
 .s-content-odd-wrapper{
-  border-radius: 0px;
-  padding: 20px;
-  width: 100%;
+border-radius: 0px;
+padding: 20px;
+width: 100%;
 }
 
-/* Data-collection-plan */
-.key_balance {
-  height: max-content;
+.grid {
+grid-gap: 20px;
+grid-template-columns: repeat(auto-fill, minmax(40%,1fr));
+grid-auto-rows: 20px;
+margin-top: 30px;
+margin-bottom: 30px;
 }
-.ethical_considerations {
-  grid-template-columns: repeat(1 ,1fr);
+.Analysis_h2 {
+  padding: 0 0 30px;
 }
-.monitorin_assurance {
-  font-size: 37px;
-  line-height: 45px;
-  width: 100%;
-  text-align: center;
-}
-.effects {
-  max-width: 305px;
-}
-.budget {
-  font-size: 37px;
-  line-height: 45px;
-  text-align: center;
-}
-.line_budget {
-  margin: 16px auto;
-}
-.plan_analysis {
-  font-size: 37px;
-  line-height: 45px;
-  padding-bottom: 19px;
-  text-align: center;
-}
-.crucial {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.challenges_datas {
-  width: 100%;
-}
-.difine_aside {
-  width: 100%;
-  align-items: center;
-  flex-direction: column;
-}
-.identi_data {
-  font-size: 37px;
-  line-height: 45px;
-  margin-bottom: 35px;
-}
-.collect_method{
-  height: 430px;
-}
-.sampling_head {
-  width: 100%;
-}
-.decision {
-  font-size: 13px;
-}
-.data_head_section {
-  width: 100%;
-}
-.bg-line_right {
-  top: 7%;
-}
-.data_collect {
-  padding: 30px;
-  flex-direction: column;
-  gap: 35px;
-}
-.licenses {
-  width: 120px;
-}
-.training_one {
-  margin-right: 0;
-}
-.training{
-  margin-left: 0;
-}
-.predata {
-  text-align: center;
-}
-.managedata h1 {
-  font-size: 37px;
-  line-height: 45px;
-}
-.imporatnce_ethicale {
-  font-size: 37px;
-}
-.budget_section {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin-top: 50px;
-}
-.sets_bud h3 {
-  text-align: center;
-}
-.sets_bud p{
-  text-align: center;
-  padding-right: 0;
-}
-.settingimg img {
-    width: 100px;
-}
-.setimg img {
-  width: 170px;
-}
-.setting_budget_img {
-  height: 290px;
-}
-.imporatnce_force {
-  padding-bottom: 283px !important;
-  margin-bottom: -222px;
-}
-.predata p {
-  font-size: 18px;
-  line-height: 28px;
-  padding-top: 13px;
-}
-.define_purpose {
-  font-size: 24px;
-  line-height: 27px;
-  padding-top: 19px;
-}
-.orders_one{
-  order: 2;
-}
-.orders{
-  order: 1;
-}
+/* end */
+
 }
 
 /* Small devices (landscape phones, 576px and 767px) */
@@ -2788,151 +2859,160 @@ text-align: center;
     width: 80%;
     height: 100%;
   }
-  .Analysis-content{
-    background: url('../images/strategy/content7-bg.png');
+  .Analysis-content {
+    background: none;
     background-color: #e741eb;
     background-blend-mode: initial;
     background-repeat: no-repeat;
     background-size: contain;
-}
-.Analysis-content .c-margin-top{
+  }
+  .Analysis-content .c-margin-top {
     margin-top: 0%;
-}
+  }
+
+  .s-content-odd-wrapper {
+    border-radius: 0px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .key_balance {
+    height: max-content;
+  }
+  .ethical_considerations {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .monitorin_assurance {
+    font-size: 37px;
+    line-height: 45px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .budget {
+    font-size: 37px;
+    line-height: 45px;
+    text-align: center;
+  }
+  .line_budget {
+    margin: 16px auto;
+  }
+  .plan_analysis {
+    font-size: 37px;
+    line-height: 45px;
+    padding-bottom: 19px;
+    text-align: center;
+  }
+  .crucial {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .challenges_datas {
+    width: 100%;
+  }
+  .difine_aside {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .identi_data {
+    font-size: 37px;
+    line-height: 45px;
+    margin-bottom: 35px;
+  }
+  .collect_method {
+    height: 337px;
+  }
+  .sampling_head {
+    width: 100%;
+  }
+  .decision {
+    font-size: 13px;
+  }
+  .data_head_section {
+    width: 100%;
+  }
+  .bg-line_right {
+    top: 7%;
+  }
+  .data_collect {
+    padding: 30px;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .licenses {
+    width: 120px;
+  }
+  .training_one {
+    margin-right: 0;
+  }
+  .training {
+    margin-left: 0;
+  }
+  .predata {
+    text-align: center;
+  }
+  .managedata h1 {
+    font-size: 37px;
+    line-height: 45px;
+  }
+  .imporatnce_ethicale {
+    font-size: 37px;
+  }
+  .budget_section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+  }
+  .sets_bud h3 {
+    text-align: center;
+  }
+  .sets_bud p {
+    text-align: center;
+    padding-right: 0;
+  }
+  .settingimg img {
+    width: 100px;
+  }
+  .setimg img {
+    width: 170px;
+  }
+  .setting_budget_img {
+    height: 290px;
+  }
+  .imporatnce_force {
+    padding-bottom: 283px !important;
+    margin-bottom: -222px;
+  }
+  .predata p {
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 13px;
+  }
+  .define_purpose {
+    font-size: 24px;
+    line-height: 27px;
+    padding-top: 19px;
+  }
+  .orders_one {
+    order: 2;
+  }
+  .orders {
+    order: 1;
+  }
+  .exaggerate {
+    font-size: 13px;
+    text-align: center;
+  }
+
 
 .s-content-odd-wrapper{
   border-radius: 0px;
   padding: 20px;
   width: 100%;
 }
-
-.key_balance {
-  height: max-content;
-}
-.ethical_considerations {
-  grid-template-columns: repeat(1 ,1fr);
-}
-.monitorin_assurance {
-  font-size: 37px;
-  line-height: 45px;
-  width: 100%;
-  text-align: center;
-}
-
-.budget {
-  font-size: 37px;
-  line-height: 45px;
-  text-align: center;
-}
-.line_budget {
-  margin: 16px auto;
-}
-.plan_analysis {
-  font-size: 37px;
-  line-height: 45px;
-  padding-bottom: 19px;
-  text-align: center;
-}
-.crucial {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.challenges_datas {
-  width: 100%;
-}
-.difine_aside {
-  width: 100%;
-  align-items: center;
-  flex-direction: column;
-}
-.identi_data {
-  font-size: 37px;
-  line-height: 45px;
-  margin-bottom: 35px;
-}
-.collect_method {
-  height: 337px;
-}
-.sampling_head {
-  width: 100%;
-}
-.decision {
-  font-size: 13px;
-}
-.data_head_section {
-  width: 100%;
-}
-.bg-line_right {
-  top: 7%;
-}
-.data_collect {
-  padding: 30px;
-  flex-direction: column;
-  gap: 35px;
-}
-.licenses {
-  width: 120px;
-}
-.training_one {
-  margin-right: 0;
-}
-.training{
-  margin-left: 0;
-}
-.predata {
-  text-align: center;
-}
-.managedata h1 {
-  font-size: 37px;
-  line-height: 45px;
-}
-.imporatnce_ethicale {
-  font-size: 37px;
-}
-.budget_section {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin-top: 50px;
-}
-.sets_bud h3 {
-  text-align: center;
-}
-.sets_bud p{
-  text-align: center;
-  padding-right: 0;
-}
-.settingimg img {
-    width: 100px;
-}
-.setimg img {
-  width: 170px;
-}
-.setting_budget_img {
-  height: 290px;
-}
-.imporatnce_force {
-  padding-bottom: 283px !important;
-  margin-bottom: -222px;
-}
-.predata p {
-  font-size: 18px;
-  line-height: 28px;
-  padding-top: 13px;
-}
-.define_purpose {
-  font-size: 24px;
-  line-height: 27px;
-  padding-top: 19px;
-}
-.orders_one{
-  order: 2;
-}
-.orders{
-  order: 1;
-}
-
-
-
+  /* end */
 }
 
 @media screen and (max-width: 767px) {
@@ -3054,7 +3134,6 @@ text-align: center;
     gap: 30px;
   }
 
-
   .importanceimg {
     max-width: 400px;
     margin: 0 auto;
@@ -3070,7 +3149,6 @@ text-align: center;
     font-size: 13px;
     line-height: 20px;
   }
-
 
   .data_sources_img {
     width: 200px;
@@ -3143,7 +3221,6 @@ text-align: center;
     padding: 20px;
   }
 
-
   .Matrix_left_div {
     min-height: max-content;
   }
@@ -3187,17 +3264,23 @@ text-align: center;
   .effects {
     max-width: 305px;
   }
-  .banefit{
+  .banefit {
     display: flex !important;
     flex-direction: column;
     gap: 60px;
   }
-  .orders_one{
+  .orders_one {
     order: 2;
   }
-  .orders{
+  .orders {
     order: 1;
   }
+  .exaggerate {
+    font-size: 13px;
+    text-align: center;
+  }
+
+
 }
 
 @media screen and (max-width: 575px) {
@@ -3243,6 +3326,7 @@ text-align: center;
   .sub_Objectives_div h3 {
     font-size: 16px;
     padding-right: 0%;
+    text-align: center;
   }
 
   .sub_Objectives_div p {
@@ -3278,12 +3362,12 @@ text-align: center;
 
   .content04_div_1_text {
     width: 100%;
-    order: 1 !important;
   }
 
   .content04_div_1_image {
     width: 100%;
     order: 0 !important;
+    padding-bottom: 51px;
   }
 
   .Effect_Analysis_div {
@@ -3500,10 +3584,6 @@ text-align: center;
   }
 
   /*  */
-  /* .Measurementsection {
-    padding: 25px 30px;
-    grid-template-columns: repeat(1, 1fr);
-  } */
 
   .measurementsystem h1 {
     font-size: 28px;
@@ -3918,9 +3998,9 @@ text-align: center;
   #Force_Analysis_section .FMEA_h2 {
     padding-top: 20px;
   }
-  
+
   #Force_Analysis_section .Sigma_div_right {
-  padding-top: 40px;
+    padding-top: 40px;
   }
 
   #Force_Analysis_section .Alignment_div {
@@ -3929,151 +4009,246 @@ text-align: center;
   #Force_Analysis_section .Benefits_Strategy_div {
     width: 100%;
     gap: 30px;
-  
   }
 
-  .Analysis-content{
-    background: url('../images/strategy/content7-bg.png');
+  .Analysis-content {
+    background: none;
     background-color: #e741eb;
     background-blend-mode: initial;
     background-repeat: no-repeat;
     background-size: contain;
-}
-.Analysis-content .c-margin-top{
+  }
+  .Analysis-content .c-margin-top {
     margin-top: 0%;
-}
-.Analysis-content h2 {
-  text-align: center;
-}
-.crucial {
-  font-size: 17px;
-  text-align: center;
-}
-.challenges_datas,.sampling_head,.data_head_section {
-  width: 100%;
-}
-.banefit{
-  gap: 60px;
-}
-.managedata h1 {
-  font-size: 25px;
-  line-height: 35px;
-  margin-bottom: -25px;
-}
-.plan_analysis {
-  font-size: 25px;
-  line-height: 35px;
-  padding-bottom: 30px;
-  text-align: center;
-}
-.monitorin_assurance {
-  font-size: 25px;
-  line-height: 35px;
-  padding-bottom: 30px;
-  text-align: center;
-  width: 100%;
-}
-.ethical_considerations {
-  display: flex;
- flex-direction: column;
-}
-.budget_section {
-  flex-direction: column;
-  gap: 40px;
-}
-.budget {
-  font-size: 24px;
-  line-height: 35px;
-  text-align: center;
-  width: 100%;
-}
-.ensuring_one,.constant_back_one{
-  flex-direction: column;
-}
-.line_budget {
-  width: 123px;
-  margin: 19px auto;
-}
-.data_collect {
-  flex-direction: column;
-  padding: 25px 0;
-  gap: 15px;
-}
-.training {
-  margin-left: 0;
-}
-.training_one{
-  margin-right: 0;
-}
-.predata {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 35px;
-  text-align: center;
-}
-.Examples_Strategy_section .process_h3 {
-  line-height: 27px !important;
-}
-.licenses{
-  width: 125px;
-}
-.predata p {
-  font-size: 14px;
-  line-height: 26px;
-  padding-top: 15px;
-}
-.difine_aside {
-  align-items: center;
-  flex-direction: column;
-}
-.setting_budget_img {
-  height: 300px;
-  margin-top: -37px;
+  }
+  .Analysis-content h2 {
+    text-align: center;
+  }
+  .crucial {
+    font-size: 17px;
+    text-align: center;
+  }
+  .challenges_datas,
+  .sampling_head,
+  .data_head_section {
+    width: 100%;
+  }
+  .banefit {
+    gap: 60px;
+  }
+  .managedata h1 {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: -25px;
+  }
+  .plan_analysis {
+    font-size: 25px;
+    line-height: 35px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .monitorin_assurance {
+    font-size: 25px;
+    line-height: 35px;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  .ethical_considerations {
+    display: flex;
+    flex-direction: column;
+  }
+  .budget_section {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .budget {
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    width: 100%;
+  }
+  .ensuring_one,
+  .constant_back_one {
+    flex-direction: column;
+  }
+  .line_budget {
+    width: 123px;
+    margin: 19px auto;
+  }
+  .data_collect {
+    flex-direction: column;
+    padding: 25px 0;
+    gap: 15px;
+  }
+  .training {
+    margin-left: 0;
+  }
+  .training_one {
+    margin-right: 0;
+  }
+  .predata {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+  }
+  .Examples_Strategy_section .process_h3 {
+    line-height: 27px !important;
+  }
+  .licenses {
+    width: 125px;
+  }
+  .predata p {
+    font-size: 14px;
+    line-height: 26px;
+    padding-top: 15px;
+  }
+  .difine_aside {
+    align-items: center;
+    flex-direction: column;
+  }
+  .setting_budget_img {
+    height: 300px;
+    margin-top: -37px;
+  }
+
+  .settingimg img {
+    width: 90px;
+  }
+  .setimg img {
+    width: 160px;
+  }
+  .identi_data {
+    font-size: 27px;
+    line-height: 35px;
+  }
+  .key_balance {
+    height: max-content;
+  }
+  .collect_method {
+    width: 300px;
+    padding: 25px;
+    height: 386px;
+  }
+  .define_purpose {
+    font-size: 20px;
+  }
+  .decision {
+    font-size: 13px;
+  }
+  .imporatnce_force {
+    padding-bottom: 283px !important;
+  }
+  .ethicalimg {
+    height: 200px;
+  }
+  .ethical_measurement {
+    padding: 20px !important;
+  }
+  .Choose {
+    padding-top: 0;
+  }
+  .data_head_section h1 {
+    font-size: 24px !important;
+  }
+  .Analysis-content p {
+    text-align: center;
+  }
+  .clearly_state{
+    text-align: start !important;
+  }
+  
+   /* Force Field page css start */
+   #Force_Field_section {
+    min-height: max-content;
+  }
+
+  #Force_Analysis_section .FMEA_h2 {
+    padding-top: 20px;
+  }
+
+  #Force_Analysis_section .Sigma_div_right {
+    padding-top: 40px;
+  }
+
+  #Force_Analysis_section .Alignment_div {
+    margin-top: 30px;
+  }
+
+  #Force_Analysis_section .Benefits_Strategy_div {
+    width: 100%;
+    gap: 30px;
+  }
+
+
+  #Advantages_Force_section .importance_measurement {
+    padding: 30px;
+  }
+
+  #Advantages_Force_section .sex_sigma_object {
+    padding-top: 40px;
+  }
+
+  .Analysis_h2 {
+    padding: 0 0 20px 0;
+  }
+  #Force_Analysis_section .Benefits_img {
+    max-width: 280px;
+    max-height: 165px;
+    width: 75%;
 }
 
-.settingimg img {
-  width: 90px;
+
+.s-content-odd-wrapper{
+  border-radius: 0px;
+  padding: 20px;
+  width: 100%;
+} 
+#Examples_of_Force_section h4 {
+  font-size: 28px;
 }
-.setimg img {
-  width: 160px;
+
+.grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: 15px;
+  margin-top: 20px;
 }
-.identi_data {
-  font-size: 27px;
-  line-height: 35px;
+
+#importance_conclution h1 {
+  font-weight: 800;
+  padding-bottom: 8px;
 }
-.key_balance {
-  height: max-content;
+
+#conclution_section {
+  padding-bottom: 250px;
 }
+
 .collect_method {
-  width: 300px;
-  padding: 25px;
-  height: 386px;
+  width: 100%;
+  height: 410px;
 }
-.define_purpose {
-  font-size: 20px;
+#objective_sigma h3, #objective_sigmaone h3{
+  text-align: start !important;
 }
-.decision {
-  font-size: 13px;
-}
-.imporatnce_force {
-  padding-bottom: 283px !important;
-}
-.ethicalimg {
-  height: 200px;
-}
-.ethical_measurement {
-  padding: 20px !important;
-}
-.Choose {
-  padding-top: 0;
-}
-.data_head_section h1{
-  font-size: 24px !important;
-}
-.Analysis-content p {
-  text-align: center;
-}
+#objective_sigmaone,#objective_sigmafour{
+  padding: 0 0 0 25px;
 }
 
+#objective_sigmathree {
+  padding: 0 0 0 25px;
+}
+.approach{
+  text-align: center;
+}
+.table_one,.table_two,.table_three{
+  height: max-content;
+  padding: 25px;
+}
+
+  /* end */
+}
 
 /*--------------------------------------*/

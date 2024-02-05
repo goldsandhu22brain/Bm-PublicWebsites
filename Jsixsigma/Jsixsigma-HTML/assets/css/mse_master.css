@@ -1724,10 +1724,7 @@ a:hover {
   }
 
   .content04_div_1_img img {
-    width: 70px;
-    height: 80px;
-    bottom: 40px;
-    right: 27px;
+    display: none;
   }
   #six_measurement {
     padding: 60px 20px 60px 60px;
@@ -2264,11 +2261,7 @@ font-size: 13px;
   }
 
   .content04_div_1_img img {
-    width: 70px;
-    height: 80px;
-    bottom: -670px;
-    right: -27px;
-    position: relative;
+    display: none;
 }
 
   .content04_div_2 {
@@ -2689,6 +2682,9 @@ font-size: 13px;
 .Measurementsection {
     max-height: 780px;
 }
+.content04_div_1_image {
+  display: none;
+}
 }
 
 /* Small devices (landscape phones, 576px and 767px) */
@@ -2715,7 +2711,9 @@ font-size: 13px;
   .Components_div h3 {
     padding-bottom: 10px;
   }
-
+  .aided{
+    align-items: start !important;
+  }
   /* .content04_div_1{
     display: grid;
   } */
@@ -3190,6 +3188,9 @@ font-size: 13px;
 .keycharacteristic {
     padding: 0 30px 100px 30px;
 }
+.content04_div_1_image {
+  display: none;
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -3230,10 +3231,9 @@ font-size: 13px;
 
   }
   .content04_div_1_img img {
-    width: 63px;
-    bottom: -623px;
-    right: 0px;
+    display: none;
 }
+
 .content04_div_1_image{
     width: 100%;
     /* margin-top: -166px; */
@@ -3312,7 +3312,7 @@ font-size: 13px;
   .Measurementsection {
     gap: 30px;
     margin-top: 0;
-    max-height: 750px;
+    max-height: max-content;
   }
 
   .measurementsystem {
@@ -3523,7 +3523,9 @@ font-size: 13px;
 .Effect_Analysis_div_1 h4,.Effect_Analysis_div_1 p,.importance p,.sub_Objectives_div h3,.sub_Objectives_div p,#sigma h4  {
     text-align: start;
 }
-
+.content04_div_1_image {
+  display: none;
+}
 }
 
 @media screen and (max-width: 575px) {
@@ -4015,6 +4017,26 @@ font-size: 13px;
   .sub_Objectives_div_role {
     width: 100%;
   }
+  .sub_Components_section,
+  .sub_Components_section-2 {
+    gap: 30px;
+    padding: 20px 0 10px 0;
+  }
+  #objective_sigmaone,#objective_sigmafour,#objective_sigmafive,#objective_sigmathree,#objective_sigmatwo,#objective_sigmasix{
+    padding: 0 0 0 25px;
+  }
+  #objective_sigmaone p,#objective_sigmafour p,#objective_sigmafive p,#objective_sigmathree p,#objective_sigmatwo p,#objective_sigmasix p,#objective_sigma p{
+    text-align: start !important;
+  }
+  #objective_sigmaone h3,#objective_sigmafour h3,#objective_sigmafive h3,#objective_sigmathree h3,#objective_sigmatwo h3,#objective_sigmasix h3 ,#objective_sigma h3{
+    text-align: start !important;
+  }
+  .sub_Objectives_div h3 , .sub_Objectives_div p ,#sigma h4 ,#sigma p,.importance p{
+    text-align: center;
+  }
+  .aided{
+    align-items: start !important;
+  }
 
 
   #six_measurement {
@@ -4043,12 +4065,6 @@ font-size: 13px;
     gap: 30px;
   }
 
-  .sub_Components_section,
-  .sub_Components_section-2 {
-    gap: 30px;
-    padding: 20px 0 10px 0;
-  }
-  
   
 }
 /*--------------------------------------*/

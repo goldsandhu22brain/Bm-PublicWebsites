@@ -684,7 +684,7 @@ a:hover {
 
 /* Content 4 */
 .fourth-content {
-  background: url("../images/Six_Sigma.svg");
+  background: url("../images/six_Sigma.svg");
   background-color: #31003e;
   background-blend-mode: initial;
   background-repeat: no-repeat;
@@ -869,6 +869,7 @@ a:hover {
 
 #importance_conclution h1 {
   font-weight: 800;
+  padding-bottom: 20px;
 }
 
 #importance_conclution h3 {
@@ -957,6 +958,9 @@ a:hover {
 
 .step_create {
   background: #3a1d60;
+}
+.step_creates{
+  background: #3A0D50;
 }
 .understanding h1 {
   font-size: 50px;
@@ -1601,7 +1605,6 @@ justify-content: end;
 #Force_Analysis_section .Benefits_img{
  max-width: 302px;
  max-height: 171px;
- /* width: 100%; */
 }
 #Force_Analysis_section .FMEA_h2{
   padding-top: 50px;
@@ -1671,6 +1674,12 @@ font-weight: 400;
 line-height: 35px;
 }
 
+
+/* Importance of Data Collection Plan css */
+.exaggerate{
+  font-size: 16px;
+  color: #fff;
+}
 
 
 /* Data Management and Storage css */
@@ -1831,7 +1840,7 @@ line-height: 62px;
 
 /*Data Collection and Six Sigma css  */
 .Analysis-content{
-  background: url('/assets/images/data_collectio_six_sigma.svg');
+  background: url('../images/data_collectio_six_sigma.svg');
   background-color: rgb(239, 99, 239);
   background-blend-mode: initial;
   background-repeat: no-repeat;
@@ -1864,15 +1873,207 @@ line-height: 62px;
 .importance_data_Set{
   font-weight: 800;
 }
-.approach{
-  color: #FFF4F4;
-font-size: 18px !important;
-font-weight: 400 !important;
-line-height: 32px;
-}
+
 
 /* Importance of Data Collection css */
 .imporatnce_force{
   padding-bottom: 283px;
   margin-bottom: -188px;
+}
+
+/* Force Field page css start */
+
+/* Force Field Section */
+#Force_Field_section {
+  background: radial-gradient(
+    54.98% 59.38% at 50% 5.85%,
+    #ec1a65 0%,
+    #63003b 100%
+  );
+  min-height: 700px;
+}
+/* end */
+
+/* Force Field Analysis section */
+#Force_Analysis_section {
+  background: #fff;
+}
+#Force_Analysis_section .Benefits_img {
+  max-width: 302px;
+  max-height: 171px;
+  width: 100%;
+}
+#Force_Analysis_section .FMEA_h2 {
+  padding-top: 50px;
+}
+#Force_Analysis_section .Alignment_div {
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  max-height: fit-content;
+}
+#Force_Analysis_section .Alignment_img {
+  box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.frame {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.decision {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* end */
+
+/* Applications_Force_section start */
+#Applications_Force_section {
+  background-color: #3431e2;
+  color: #fff;
+}
+.Applications_forces_p {
+  padding-top: 20px;
+}
+#Applications_Force_section .Strategy_img {
+  margin-top: 150px;
+}
+
+/* end */
+
+/* Advantages Force Field Analysis section css start */
+#Advantages_Force_section .importance_measurement {
+  padding: 70px 100px 20px;
+}
+#Advantages_Force_section .sub_Objectives_div h3 {
+  padding-right: 0;
+}
+/* end */
+
+/*  */
+#Challenges_Criticism_section .different {
+  padding: 0 150px;
+}
+/* end */
+
+/*  */
+.Analysis_h2 {
+  padding: 0 230px 30px;
+}
+
+/* end */
+
+/*  */
+.Ay-60p {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+/* Content 2 */
+.second-content p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.s-content-odd-wrapper {
+  border-radius: 40px;
+  padding: 60px;
+  width: 80%;
+  padding-right: 0;
+}
+.second-content .bg-content1 {
+  background-color: #b5e5f5;
+}
+.second-content .bg-content2 {
+  background-color: #fff5f0;
+}
+.second-content .bg-content3 {
+  background-color: #f4f0ff;
+}
+.second-content h3 {
+  font-weight: 600;
+}
+.second-content img {
+  max-width: 715px;
+  max-height: 450px;
+}
+.second-content .d-image {
+  width: 715px;
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+.second-content .c-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.second-content .c-wrapper .d-image {
+  top: 50%;
+  left: 50%;
+  transform: translate(-70%, -50%);
+}
+#Examples_of_Force_section h4 {
+  font-size: 40px;
+}
+#Examples_of_Force_section p {
+  font-size: 16px;
+  color: #000;
+}
+#Examples_of_Force_section h5 {
+  font-size: 24px;
+  color: #000;
+}
+
+.Advantages_force_div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 100px;
+}
+.Advantages_force_div-1 {
+  width: 100%;
+
+  padding: 40px;
+  max-height: fit-content;
+  background-color: #ffca38;
+  border-radius: 20px;
+  height: fit-content;
+  border: 0;
+}
+.Advantages_force_div-1 p {
+  font-size: 16px;
+}
+.Advantages_div_color {
+  background-color: #85fe7b;
+}
+.Advantages_div_color_1{
+  background-color: #D4C5FF;
+}
+.Advantages_div_color_2{
+  background-color: #6967FF;
+}
+.Advantages_div_color_3{
+  background-color: #41F4DF;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(30%,1fr));
+  grid-auto-rows: 20px;
+  margin-top: 62px;
+}
+.Percentage_div_img {
+  justify-content: center;
+}
+.primary_sources h4,.numerical,.numerical_one,.identi_data{
+  text-align: center;
+}
+
+.item {
+  border-radius: 20px;
+  height: fit-content;
 }
