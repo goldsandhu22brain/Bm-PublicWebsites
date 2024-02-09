@@ -42,6 +42,11 @@
     height: max-content;
   }
 
+  .step10 .testDiv .answer-img-md {
+    width: 232px;
+    height: 140px;
+  }
+
   /* BM Test Platform */
   .doc-wrapper {
     padding: 30px 15px;
@@ -85,6 +90,11 @@
     > .row
     > .col-12.col-md-6.m-auto.text-start {
     margin-bottom: 0 !important;
+  }
+
+  .step10 .testDiv .answer-img-large {
+    width: 613px;
+    height: 280px;
   }
 
   /* step 1*/
@@ -302,6 +312,16 @@
     width: 100%;
   }
 
+  .row.mx-0 > .col.px-0 {
+    overflow-x: scroll;
+  }
+
+  .info-image-wrapper .camera-icon {
+    position: relative;
+    top: -27px;
+    left: 65px;
+  }
+
   .tileCardSection > .row.mx-0.justify-content-end > .col-10.pe-0.mt-7rem {
     margin-top: 32px;
   }
@@ -329,6 +349,20 @@
 
   .step3 > .container > .wrapper > .position-relative {
     margin: 55px 0 41px 0;
+  }
+
+  .step10 .testDiv .answer-img-md {
+    width: 150px;
+    height: 140px;
+  }
+
+  .step10 .testDiv .answer-img-large {
+    width: 434px;
+    height: 280px;
+  }
+
+  .step10 .testDiv .drop-answer button {
+    min-width: 106px;
   }
 
   /* step 2 */
@@ -393,10 +427,20 @@
     display: none;
   }
 
+  .container > .wrapper > .content > .row > .col-4.text-start {
+    display: flex;
+    justify-content: center;
+  }
+
   .step2 > .container > .wrapper > .content > .row.mx-0 > .col.text-start {
     width: 100%;
     display: flex;
     align-items: center;
+  }
+
+  .row.mx-0.my-3 > .col-12 {
+    display: flex;
+    justify-content: center;
   }
 
   .col-4.px-0.position-relative > img {
@@ -457,9 +501,7 @@
   .info-image-wrapper .main-image {
     height: 190px;
   }
-  .info-image-wrapper .camera-icon {
-    top: 190px;
-  }
+
   .upload-photo:before {
     bottom: -580px;
   }
@@ -471,8 +513,9 @@
   .content p {
     text-align: center;
   }
+
   .info-image-wrapper .camera-icon {
-    top: 165px;
+    left: 198px;
   }
 
   /* Modal */
@@ -578,6 +621,14 @@
     position: relative;
     top: 0;
   }
+
+  .info-image-wrapper .camera-icon {
+    left: 185px;
+  }
+  .step10 .testDiv .answer-img-md {
+    width: 130px;
+    height: 129px;
+  }
 }
 
 @media screen and (max-width: 470px) {
@@ -602,6 +653,22 @@
     position: relative;
     top: 52px;
   }
+
+  .step10 .testDiv .answer-img-large {
+    width: 314px;
+    height: 261px;
+  }
+  .step10 .testDiv .drop-answer button {
+    min-width: 85px;
+  }
+
+  .info-image-wrapper .camera-icon {
+    left: 150px;
+  }
+  .step10 .testDiv .answer-img-md {
+    width: 128px;
+    height: 130px;
+  }
 }
 
 @media screen and (max-width: 449px) {
@@ -612,20 +679,93 @@
   .action-btn {
     width: max-content;
   }
+  .step10 .testDiv .answer-img-md {
+    width: 115px;
+    height: 123px;
+  }
+  .info-image-wrapper .camera-icon {
+    left: 142px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .step10 .testDiv .answer-30wd {
+    width: 44%;
+  }
+  .step10 .testDiv .answer-img-small {
+    width: 113px;
+    height: 107px;
+  }
+  .step10 .testDiv .drop-answer button {
+    min-width: 75px;
+  }
+  .info-image-wrapper .camera-icon {
+    left: 137px;
+  }
+}
+@media screen and (max-width: 413px) {
+  .step10 .testDiv .answer-50wd {
+    width: 100%;
+  }
+  .step10 .testDiv .answer-30wd {
+    width: 100%;
+  }
+  .step10 .testDiv .answer-img-large {
+    width: 300px;
+  }
+  .step10 .testDiv .drop-answer button {
+    min-width: 170px;
+  }
+  .step10 .testDiv .ulList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .step10 .testDiv .answer-50wd {
+    width: 100%;
+  }
+  .info-image-wrapper .camera-icon {
+    left: 124px;
+  }
 }
 
 @media screen and (max-width: 407px) {
-  .next-btn {
-    margin-top: 106px;
+  .step10 .testDiv .answer-50wd {
+    width: 99%;
+  }
+  .step10 .testDiv .answer-img-large {
+    width: 270px;
+    height: 240px;
+  }
+  .step10 .testDiv .drop-answer button {
+    min-width: 135px;
+  }
+  .step1 .overlay {
+    top: -37px;
+  }
+
+  .info-image-wrapper .camera-icon {
+    left: 119px;
   }
 }
 
 @media screen and (max-width: 376px) {
-  .next-btn {
-    margin-top: 130px;
-  }
   .step1 .overlay {
     width: 84%;
+    padding: 18px;
+  }
+  .step10 .testDiv .drop-answer button {
+    min-width: 117px;
+  }
+  .step10 .testDiv .answer-img-large {
+    width: 240px;
+    height: 224px;
+  }
+
+  .info-image-wrapper .camera-icon {
+    left: 106px;
+  }
+  .step1 .range-bubble {
+    right: 63.5%;
   }
 }
 
@@ -660,11 +800,7 @@
   .table th {
     font-size: 15px;
   }
-  .step10 .testDiv .answer-img-large {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+
   .step10 .testDiv {
     height: max-content;
   }
@@ -693,8 +829,9 @@
   .info-image-wrapper .main-image {
     height: 175px;
   }
+
   .info-image-wrapper .camera-icon {
-    top: 150px;
+    left: 101px;
   }
   .upload-photo:before {
     bottom: -580px;
@@ -743,16 +880,16 @@
     right: 59%;
   }
   .step1 .content {
-    height: 550px;
+    height: 470px;
   }
 
   .step1 .overlay {
     position: relative;
     bottom: 0;
     left: 0;
-    top: 0;
+    top: -26px;
     transform: translateX(0);
-    padding: 25px;
+    padding: 18px;
     width: 88%;
     margin: 0 auto;
   }
@@ -767,9 +904,6 @@
   }
   .step1 .container .wrapper {
     margin-top: 44px;
-  }
-  .next-btn {
-    margin-top: 43px;
   }
 
   /* step 2 */
