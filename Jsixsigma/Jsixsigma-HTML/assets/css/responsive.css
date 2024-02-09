@@ -91,19 +91,22 @@
   .circumstances {
     max-width: 632px !important;
   }
+
   .bg-line_left {
     display: none;
   }
+
   .bg-line_right {
     top: 10%;
   }
+
   .Strategy_Development_section {
     overflow: hidden;
   }
 
   /*  Data Collection Plan css */
   .measurementsystem h1 {
-    font-size: 57px;
+    font-size: 55px;
   }
 
   /* Data Collection Methods Section */
@@ -115,6 +118,7 @@
   .rights {
     top: 20%;
   }
+
   .training {
     margin-left: 135px;
   }
@@ -124,21 +128,138 @@
     width: 49%;
   }
 
-    /* Force Field page css start */
-    #Force_Field_section {
-      min-height: 660px;
-    }
-  
-    #Force_Field_section .Strategy_Development_img {
-  
-      margin: 27px 0 -233px 0;
-  
-    }
-    .second-content .d-image {
-      width: 708px;
-      height: 450px;
+  /* Force Field page css start */
+  #Force_Field_section {
+    min-height: 660px;
   }
-    /* end */
+
+  #Force_Field_section .Strategy_Development_img {
+    margin: 27px 0 -233px 0;
+  }
+
+  .second-content .d-image {
+    width: 708px;
+    height: 450px;
+  }
+
+  /* end */
+
+  /*Essence of Six Sigma css  */
+  .essence_img {
+    margin-bottom: -126px;
+  }
+
+  .role_of {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+  }
+
+  .measure {
+    height: 570px;
+  }
+
+  .banners_lady {
+    margin: 27px 0 -143px 0;
+  }
+
+  /* Importance of Reducing page css start */
+
+  #Reducing_Variation_section {
+    background-color: #fbeeee !important;
+    min-height: 580px;
+    background: url("../images/six_Sigma.svg");
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 42%;
+    background-position: bottom left;
+  }
+
+  #Examples_Reducing_section .understanding h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+
+  .environts {
+    height: 96px;
+  }
+
+  .pro_img {
+    width: 160px;
+  }
+
+  /* end */
+
+  /* Lean- Waste in Digital page css start */
+  #Organizations_overlay .subscribe-wrapper {
+    width: 90%;
+    padding: 70px 30px;
+  }
+
+  #Lean_Digital_section {
+
+    height: 650px;
+
+  }
+
+  #Lean_Digital_section .banners_lady {
+    margin: 27px 0 -224px 0;
+
+  }
+
+  /* end */
+
+
+  /* Multi-voting section start */
+  #Examples_Multi_Voting_section .better_div {
+    padding-top: 30px;
+  }
+
+  /* end */
+
+  /* Lean- Waste in Digital Solution page css start */
+  .Overcoming_section .container .role_of {
+    gap: 90px;
+  }
+
+  .Over_p_div p {
+    font-size: 16px;
+  }
+
+  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div_img {
+    width: 70%;
+    height: 40%;
+  }
+
+  #Optimizing_Digital_section {
+    background: url("../images/data_collectio_six_sigma.svg");
+    background-color: rgb(239, 99, 239);
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center left;
+  }
+
+
+  /* Lean- Waste in Digital Solution page end */
+
+  /* Nominal-Group-Technique  page css start */
+  .applications_six{
+    padding: 30px 70px !important;
+}
+.follow{
+  display: flex !important;
+  justify-content: flex-end;
+  }
+
+  .tech {
+    width: 100%;
+  }
+
+  .sub_Objectives_div h3 {
+    padding-right: 39%;
+  }
+/* end */
 }
 
 /* X-Large devices (large desktops, 1200px and 1399px) */
@@ -336,7 +457,7 @@
   }
 
   .Objectives_div_role {
-    gap: 20px;
+    gap: 40px;
   }
 
   .sub_Objectives_div_role h3 {
@@ -467,32 +588,41 @@
   .Strategy_aa {
     padding: 40px 10px;
   }
+
   .bg-line_left {
     display: none;
   }
+
   .bg-line_right {
-    top: 8%;
+    top: 10%;
   }
+
   .Alignment_div_bottom {
     padding: 30px;
   }
+
   #Use_Strategy_image {
     display: flex;
     justify-content: center;
   }
+
   .Strategic_Alignment_div {
     padding: 40px;
   }
+
   .strategic_imgs h4 {
     font-size: 30px;
   }
+
   .Project_IMG {
     width: 140px;
   }
+
   .Prioritization_IMG {
     width: 148px;
     height: 79px;
   }
+
   /* Data Collection Methods Section */
   .understanding_content {
     margin-right: 0;
@@ -502,6 +632,7 @@
   .rights {
     top: 17%;
   }
+
   .training {
     margin-left: 188px;
   }
@@ -515,6 +646,7 @@
   .decision {
     font-size: 13px;
   }
+
   .frame {
     font-size: 19px;
   }
@@ -527,70 +659,89 @@
   .Effect_Analysis_div_1 p {
     font-size: 14px;
   }
+
   .moni_img {
     width: 134px;
   }
+
   .const h4 {
     font-size: 20px;
   }
+
   .data_paln_employee {
     display: flex;
     gap: 140px;
   }
+
   .licenses {
     width: 400px;
   }
+
   .identi_data {
     font-size: 40px;
     line-height: 55px;
   }
+
   .primary_sources h4 {
     font-size: 18px;
   }
+
   .numerical {
     font-size: 13px;
   }
+
   .predata {
     font-size: 26px;
   }
+
   .predata p {
     font-size: 17px;
     line-height: 28px;
   }
+
   .managedata h1 {
     font-size: 40px;
     line-height: 45px;
   }
+
   .strategic_imgs h4 {
     font-size: 24px;
     line-height: 30px;
   }
+
   .plan_analysis {
     font-size: 40px;
     line-height: 45px;
   }
+
   .monitorin_assurance {
     font-size: 40px;
     line-height: 45px;
   }
+
   #importance h1 {
     font-size: 40px;
   }
+
   .clearly_state {
     font-size: 22px;
   }
+
   .ethical_measurement {
     display: flex !important;
     flex-direction: column !important;
   }
+
   .budget {
     line-height: 61px;
     font-size: 40px;
     line-height: 45px;
   }
+
   .line_budget {
     margin-top: 29px;
   }
+
   .setting_budget_img {
     height: 320px;
   }
@@ -598,31 +749,290 @@
   .settingimg img {
     width: 125px;
   }
+
   .setimg img {
     width: 200px;
   }
-   /* Force Field page css start */
-   #Force_Field_section {
+
+  /* Force Field page css start */
+  #Force_Field_section {
     min-height: 520px;
   }
-
 
   #Force_Field_section .Strategy_Development_img {
     margin: 27px 0 -122px 0;
   }
 
-  .second-content .d-image{
+  .second-content .d-image {
     width: 590px;
     height: auto;
-}
-.s-content-odd-wrapper{
+  }
+
+  .s-content-odd-wrapper {
     padding: 40px 30px;
-}
+  }
+
+  /* Goals of Six Sigma css */
+
+  .excellence {
+    font-size: 19px;
+  }
+
+  .locating,
+  .healthcare {
+    line-height: 27px;
+    font-size: 18px;
+  }
+
+  .essences {
+    padding-top: 0px;
+  }
+
+  .principles {
+    padding: 0;
+  }
+
+  .foals_head {
+    line-height: 45px;
+    font-size: 40px;
+  }
+
+  .effects_bottom {
+    gap: 70px;
+  }
+
+  .clarity h4 {
+    line-height: 36px;
+    padding-top: 10px;
+  }
+
+  .clarity,
+  .optimisation {
+    height: 330px;
+  }
+
+  .better h3,
+  .better p {
+    padding-right: 0;
+  }
+
+  .better h3 {
+    line-height: 27px;
+  }
+
+  .better {
+    padding: 33px;
+  }
+
+  .environts {
+    height: 87px;
+  }
+
+  .still {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .essence_img {
+    margin-bottom: -137px;
+    margin-left: 14px;
+  }
+
+  .futures {
+    padding-bottom: 17px;
+  }
+
+  .advantage {
+    font-size: 26px !important;
+  }
+
+  .advantage_Section p {
+    line-height: 30px;
+  }
+
+  .variances {
+    font-size: 20px;
+  }
+
+  .itself,
+  .rate {
+    font-size: 14px;
+  }
+
+  .reals {
+    width: 470px;
+  }
+
+  .reals_div {
+    gap: 75px;
+  }
+
+  .better_div {
+    gap: 40px;
+  }
+
+  .measure {
+    height: 570px;
+  }
+
+  .banners_lady {
+    margin: 27px 0 -172px 0;
+  }
+
+  .better_div {
+    padding-top: 60px;
+  }
+
+  /* end */
+
+  /* Importance of Reducing page css start */
+  #Reducing_Variation_section {
+    background-color: #fbeeee !important;
+    min-height: max-content;
+    background: url("../images/six_Sigma.svg");
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: bottom left;
+  }
+
+  #Reducing_Variation_section .Importance_d {
+    padding-top: 50px;
+  }
+
+  #Reducing_Variation_section h2 {
+    font-size: 40px;
+  }
+
+  #Reducing_Variation_section p {
+    font-size: 16px;
+  }
+
+  #Examples_Reducing_section .understanding {
+    padding: 0 10%;
+  }
+
+  .future_img {
+    justify-content: flex-end !important;
+  }
+
+  #Examples_Reducing_section .understanding_content {
+    margin-right: 0;
+    gap: 30px;
+  }
+
+  /* end */
+
+  /* Lean- Waste in Digital page css start */
+  .Analysis-content {
+    background: url("../images/data_collectio_six_sigma.svg");
+    background-color: rgb(239, 99, 239);
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center left;
+  }
+
+  #Organizations_overlay .subscribe-wrapper {
+    width: 90%;
+    padding: 60px 30px;
+  }
+
+  #Organizations_overlay .subscribe-wrapper h5 {
+    font-size: 26px;
+  }
+
+  /* end */
+
+  /* Multi-voting section start */
+
+  #Examples_Multi_Voting_section .sub_Objectives_div h3 {
+    font-size: 20px;
+  }
+
+  /* end */
+  /* Lean- Waste in Digital Solution page css start */
+  .Overcoming_section .container .role_of {
+    gap: 90px;
+  }
+
+  .Tackling_txt h4 {
+    font-size: 45px;
+  }
+
+  .Over_p_div p {
+    font-size: 16px;
+  }
+
+  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div_img {
+    width: max-content;
+    height: 30%;
+  }
+
+  #Optimizing_Digital_section {
+    background: url("../images/data_collectio_six_sigma.svg");
+    background-color: rgb(239, 99, 239);
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 128%;
+    background-position: center left;
+  }
+
+  .Lean_Principles_Digital_section .FMEA_h2 {
+    font-size: 38px;
+  }
+
+  /* Lean- Waste in Digital Solution page end */
+
+  /* Nominal-Group-Technique  page css start */
+
+  .Overcoming_section .container .role_of {
+    gap: 90px;
+  }
+
+  .Tackling_txt h4 {
+    font-size: 45px;
+  }
+
+  .Over_p_div p {
+    font-size: 16px;
+  }
+
+  .Types_Digital_Solution_section
+    .Implementation_div
+    .sub_Implementation_div
+    .Forming_div_img {
+    width: max-content;
+    height: 30%;
+  }
+
+  .problem {
+    gap: 35px;
+  }
+  .solve,
+  .includes_ngt {
+    width: 80%;
+  }
+  .think {
+    width: 85%;
+  }
+ 
+  .locating {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+  .goal_set p {
+    width: 100%;
+  }
+  .technique{
+    width: 100%;
+  }
 
   /* end */
 }
 
 @media screen and (max-width: 991px) {
+
   /*  */
   .Strategy_div {
     grid-template-columns: repeat(1, 1fr);
@@ -666,6 +1076,7 @@
   .Six_Sigma_img img {
     width: 70%;
   }
+
   .Effect_top_div {
     max-height: 100%;
     flex-direction: column;
@@ -674,27 +1085,34 @@
   .Six-Sigma_div_right {
     width: 100%;
   }
+
   .strategic_imgs {
     width: 100%;
   }
+
   .Use_Strategy_img {
     display: none;
   }
+
   .Use_Strategy_text h2,
   .Use_Strategy_text p {
     text-align: center;
   }
+
   .strategic_imgs {
     width: 100%;
     flex-direction: column;
   }
+
   .Examples_Strategy_img {
     display: none !important;
   }
+
   .Examples_right h1,
   .Examples_right p {
     text-align: center;
   }
+
   .Examples_right {
     max-width: 100% !important;
   }
@@ -702,25 +1120,130 @@
   .bg-line_right {
     top: 7%;
   }
+
   .bg-line_left {
     display: none;
   }
+
   .measurementsystem p,
   .measurementsystem h1 {
     text-align: center;
   }
+
   .content04_div_1_image {
     min-height: 100%;
     width: 100%;
   }
 
-    /* Force Field page css start */
-    #Challenges_Criticism_section .different {
-      padding: 20px 0 0 0;
-    }
-    /* end */
+  /* Force Field page css start */
+  #Challenges_Criticism_section .different {
+    padding: 20px 0 0 0;
+  }
 
-  /*  */
+  /* end */
+
+  /* Importance of Reducing page css start */
+  #Examples_Reducing_img img {
+    width: 50%;
+    padding-bottom: 161px;
+  }
+
+  #Reducing_Variation_section {
+    background-color: #fbeeee !important;
+    min-height: max-content;
+    background: none;
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 42%;
+    background-position: bottom left;
+  }
+
+  #Reducing_Variation_section .Importance_d {
+    padding-top: 10px;
+  }
+
+  #Reducing_Variation_section h2 {
+    font-size: 32px;
+  }
+
+  /* end */
+
+  /* Lean- Waste in Digital page css start */
+  #Type_Waste_section .optimisation #Type_Waste_section .clarity {
+    height: fit-content;
+  }
+
+  .Within_p {
+    text-align: center;
+  }
+
+  .Describe_div {
+    padding-top: 0px;
+  }
+
+  /* end */
+
+  /* Multi-voting section start */
+  #Examples_Multi_Voting_section .sub_Objectives_div h3 {
+    font-size: 20px;
+  }
+
+  /* end */
+
+  /* Lean- Waste in Digital Solution page css start */
+  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: start;
+  }
+
+  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div {
+    order: 1 !important;
+  }
+
+  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div_img {
+    order: 0 !important;
+  }
+
+  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div h4 {
+
+    text-align: center;
+  }
+
+  #Solution_Transportation_section .define_purpose {
+    text-align: center;
+  }
+
+
+  .Case_Studies_section .Case-div p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .case_span {
+    display: block;
+    text-align: center;
+  }
+
+  .Lean_Principles_Digital_section .sampling_head,
+  .Lean_Principles_Digital_section .Six-Sigma-sub_div_left p {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .motion_p {
+    text-align: center;
+  }
+
+  .Case_Studies_section .Components_div {
+    width: 100%;
+  }
+
+  .Analysis-content p {
+    text-align: center;
+  }
+
+  /* Lean- Waste in Digital Solution page end */
 }
 
 /* Large devices (desktops, 992px and 1199px) */
@@ -1105,7 +1628,7 @@
   }
 
   .Components_div p {
-    font-size: 13px;
+    font-size: 14px;
     padding-right: 0;
   }
 
@@ -1117,6 +1640,8 @@
   .importance h1 {
     font-size: 37px;
     line-height: 46px;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .methodologies {
@@ -1227,8 +1752,8 @@
   }
 
   .sub_Objectives_imgs {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 80px;
   }
 
   .Project_IMG {
@@ -1242,6 +1767,7 @@
   .Alignment_div_bottom h5 {
     font-size: 26px;
   }
+
   .Prioritization_IMG {
     width: 210px;
     height: 80px;
@@ -1250,13 +1776,16 @@
   .Examples_Strategy_div {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .Examples_Strategy_img {
     display: none;
   }
+
   .Examples_right {
     max-width: 100% !important;
     padding: 40px;
   }
+
   .Examples_right h1,
   .Examples_right p {
     text-align: center;
@@ -1267,26 +1796,32 @@
     height: 70%;
     object-fit: cover;
   }
+
   .demonstrate_p h5 {
     font-size: 26px;
   }
+
   .bg-line_left {
     display: none;
   }
+
   .bg-line_right {
-    top: 6%;
+    top: 10%;
   }
 
   /* DFata-collection-plan section */
   .key_balance {
     height: max-content;
   }
+
   .crucial {
     font-size: 19px;
   }
+
   .challenges_datas {
     width: 55%;
   }
+
   /* Data Collection Methods Section */
   .understanding_content {
     margin-right: 0;
@@ -1296,6 +1831,7 @@
   .rights {
     top: 14%;
   }
+
   .training {
     margin-left: 172px;
   }
@@ -1310,6 +1846,7 @@
     font-size: 13px;
     line-height: 21px;
   }
+
   .frame {
     font-size: 19px !important;
   }
@@ -1322,72 +1859,91 @@
   .Effect_Analysis_div_1 p {
     font-size: 13px;
   }
+
   .moni_img {
     width: 134px;
   }
+
   .const h4 {
     font-size: 18px;
   }
+
   .data_paln_employee {
     display: flex;
     gap: 140px;
   }
+
   .licenses {
     width: 400px;
   }
+
   .identi_data {
     font-size: 40px;
     line-height: 55px;
   }
+
   .primary_sources h4 {
     font-size: 18px;
   }
+
   .numerical {
     font-size: 13px;
   }
+
   .predata {
     font-size: 22px;
   }
+
   .predata p {
     font-size: 14px;
     line-height: 28px;
   }
+
   .managedata h1 {
     font-size: 37px;
     line-height: 45px;
   }
+
   .strategic_imgs h4 {
     font-size: 24px;
     line-height: 30px;
   }
+
   .plan_analysis {
     font-size: 37px;
     line-height: 45px;
   }
+
   .monitorin_assurance {
     font-size: 37px;
     line-height: 45px;
     width: 100%;
     margin-bottom: 47px;
   }
+
   #importance h1 {
     font-size: 37px;
   }
+
   .clearly_state {
     font-size: 22px;
   }
+
   .ethical_measurement {
     display: flex !important;
     flex-direction: column !important;
   }
+
   .budget {
     line-height: 61px;
     font-size: 37px;
     line-height: 45px;
   }
+
   .line_budget {
     margin-top: 29px;
   }
+
   .setting_budget_img {
     height: 320px;
   }
@@ -1395,17 +1951,21 @@
   .settingimg img {
     width: 125px;
   }
+
   .setimg img {
     width: 200px;
   }
+
   .define_sub {
     width: 75px;
     height: 75px;
   }
+
   .define_purpose {
     font-size: 22px;
     line-height: 21px;
   }
+
   .collect_method {
     height: 390px;
   }
@@ -1413,6 +1973,7 @@
   .Analysis_mb {
     margin-left: 0;
   }
+
   .Analysis-content {
     background: none;
     background: none;
@@ -1421,12 +1982,15 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+
   .fourth-content .c-margin-top {
     margin-top: 39%;
   }
+
   .Analysis_mb {
     width: 100%;
   }
+
   .Analysis-content h2 {
     color: #fff;
     text-align: center;
@@ -1436,9 +2000,11 @@
     width: 100%;
     margin: 0 auto;
   }
+
   .key_balance p {
     font-size: 14px;
   }
+
   .align {
     height: 375px;
     max-height: 375px;
@@ -1447,33 +2013,299 @@
   .exaggerate {
     font-size: 14px;
   }
-   /* Force Field page css start */
-   #Force_Field_section {
+
+  /* Force Field page css start */
+  #Force_Field_section {
     min-height: 400px;
   }
 
-
   #Force_Field_section .Strategy_Development_img {
-
     margin: 27px 0 -103px 0;
   }
-  .Analysis_mb{
+
+  .Analysis_mb {
     margin-left: 0;
   }
 
-.Analysis-content h2 {
-  color: #fff;
-  text-align: center;
+  .Analysis-content h2 {
+    color: #fff;
+    text-align: center;
+  }
 
-}
-.second-content .d-image {
-  width: 490px;
-  height: auto;
-}
-.s-content-odd-wrapper{
-  padding: 40px 30px;
-}
-/* end */
+  .second-content .d-image {
+    width: 490px;
+    height: auto;
+  }
+
+  .s-content-odd-wrapper {
+    padding: 40px 30px;
+  }
+
+  .locating,
+  .healthcare {
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  /* Goals of Six Sigma css */
+
+  .excellence {
+    font-size: 19px;
+  }
+
+  .locating,
+  .healthcare {
+    font-size: 20px;
+  }
+
+  .essences {
+    padding-top: 0px;
+  }
+
+  .principles {
+    padding: 0;
+  }
+
+  .foals_head {
+    line-height: 45px;
+    font-size: 40px;
+  }
+
+  .effects_bottom {
+    gap: 70px;
+  }
+
+  .clarity h4 {
+    line-height: 36px;
+    padding-top: 10px;
+  }
+
+  .clarity,
+  .optimisation {
+    height: 436px;
+  }
+
+  .better h3,
+  .better p {
+    padding-right: 0;
+  }
+
+  .better h3 {
+    line-height: 27px;
+  }
+
+  .better {
+    padding: 28px;
+  }
+
+  .environts {
+    height: 87px;
+  }
+
+  .still {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .essence_img {
+    display: none;
+  }
+
+  .essence {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .essence_of {
+    text-align: center;
+  }
+
+  .futures {
+    padding-bottom: 17px;
+  }
+
+  .advantage {
+    font-size: 26px !important;
+  }
+
+  .advantage_Section p {
+    line-height: 30px;
+  }
+
+  .variances {
+    font-size: 20px;
+  }
+
+  .itself,
+  .rate {
+    font-size: 14px;
+  }
+
+  .reals {
+    width: 470px;
+  }
+
+  .reals_div {
+    gap: 75px;
+  }
+
+  .better_div {
+    gap: 40px;
+    padding-top: 40px;
+  }
+
+  .locating,
+  .healthcare {
+    line-height: 27px;
+    font-size: 16px;
+  }
+
+  .implements {
+    font-size: 36px;
+  }
+
+  .measure {
+    min-height: 449px;
+  }
+
+  .banners_lady {
+    margin: 27px 0 -152px 0;
+  }
+
+  .rols_of {
+    gap: 60px;
+  }
+
+  .future_effect {
+    width: 65%;
+  }
+
+  .forming_img {
+    width: 151px;
+    height: 87px;
+  }
+
+  .pro_img {
+    width: 147px;
+    height: 72px;
+  }
+
+  .excellence {
+    font-size: 19px;
+  }
+
+  /* Importance of Reducing page css start */
+
+  #Reducing_Variation_section {
+    background-color: #fbeeee !important;
+    min-height: max-content;
+    background: url("../images/six_Sigma.svg");
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: bottom left;
+  }
+
+  #Reducing_Variation_section .Importance_d {
+    padding-top: 10px;
+    margin-top: 0%;
+  }
+
+  #Reducing_Variation_section h2 {
+    font-size: 34px;
+  }
+
+  #Reducing_Variation_section p {
+    font-size: 16px;
+  }
+
+  #Examples_Reducing_section .understanding_table {
+    padding: 30px;
+    height: max-content;
+  }
+
+  #Advantages_Force_section .importance_measurement {
+    padding: 70px 60px 20px;
+  }
+
+  .summary h6 {
+    font-size: 18px;
+  }
+
+  /* end */
+
+  /* Lean- Waste in Digital page css start */
+  .critical_div p,
+  .critical_div h2 {
+    text-align: center;
+  }
+
+  #Organizations_overlay .subscribe-wrapper {
+    width: 90%;
+    padding: 50px 30px;
+  }
+
+  #Organizations_overlay .subscribe-wrapper h5 {
+    font-size: 24px;
+  }
+
+  /* end */
+
+  /* Lean- Waste in Digital Solution page css start */
+  .Understanding_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Understanding_img img {
+    width: 60%;
+  }
+
+  .Tackling_txt h4 {
+    font-size: 40px;
+  }
+
+  .Types_Digital_Solution_section h2 {
+    padding: 0;
+  }
+
+  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div_img {
+    width: max-content;
+    height: 20%;
+  }
+
+  .better h3 {
+    line-height: 27px;
+    font-size: 20px;
+  }
+
+  /* Lean- Waste in Digital Solution page end */
+  .Lean_Principles_Digital_section .FMEA_h2 {
+    font-size: 32px;
+  }
+
+  /* end */
+
+  /* Nominal-Group-Technique  page css start */
+  .solve,
+  .includes_ngt {
+    width: 80%;
+  }
+  .think {
+    width: 85%;
+  }
+  .some {
+    padding-right: 10% !important;
+  }
+  .locating {
+    font-size: 18px !important;
+    line-height: 30px !important;
+  }
+  .goal_set p {
+    width: 100%;
+  }
+
+  /* end */
 
 }
 
@@ -1520,7 +2352,7 @@
   }
 
   .sub_Objectives_div p {
-    font-size: 13px;
+    font-size: 14px;
     padding-right: 10px;
   }
 
@@ -1858,9 +2690,15 @@
     justify-content: center;
   }
 
-  .importance h1 {
+  .essence_of {
+    text-align: center;
+  }
+
+  .essence_of h1 {
     font-size: 37px;
-    line-height: 45px;
+    line-height: 46px;
+    margin: 0 auto;
+    width: 100%;
   }
 
   #six_measurement {
@@ -1953,7 +2791,7 @@
   }
 
   .different {
-    font-size: 13px;
+    font-size: 16px;
     padding-top: 15px;
   }
 
@@ -1962,7 +2800,7 @@
   }
 
   #conclution_section {
-    margin-bottom: -223px;
+    margin-bottom: -278px;
   }
 
   .circumstances h1 {
@@ -2021,14 +2859,17 @@
     width: 80%;
     height: 70%;
   }
+
   .strategic_imgs h4 {
     font-size: 24px;
     text-align: center;
   }
+
   .sub_Objectives_imgs {
-    width: 100px;
+    width: 90px;
     height: 90px;
   }
+
   .Prioritization_IMG {
     width: 100px;
     height: 100px;
@@ -2037,6 +2878,7 @@
   .vital_points_div {
     padding: 20px;
   }
+
   .Examples_Strategy_div {
     padding: 30px;
     grid-template-columns: repeat(1, 1fr) !important;
@@ -2046,37 +2888,49 @@
   .strategic_imgs h4 {
     text-align: center;
   }
+
   /*  */
   .importanceimg img {
     width: 70%;
     height: 100%;
   }
+
   .Six-Sigma-sub_div_left {
     align-items: center;
   }
+
   .Six-Sigma-sub_div_left h2 {
     text-align: center !important;
   }
+
   .Alignment_div {
     max-height: max-content;
   }
+
   .Alignment_div_bottom {
     padding: 20px;
   }
+
   #importance h1 {
+    font-size: 37px;
     font-weight: 700;
     text-align: center;
+    line-height: 45px;
+  }
+
+  .summary h1 {
+    font-size: 37px;
   }
 
   .Effect_h4 {
     text-align: center;
   }
+
   .Implementation_p {
     text-align: center;
   }
+
   /*  */
-
-
 
   .s-content-odd-wrapper {
     border-radius: 0px;
@@ -2088,127 +2942,160 @@
   .key_balance {
     height: max-content;
   }
+
   .ethical_considerations {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .monitorin_assurance {
     font-size: 37px;
     line-height: 45px;
     width: 100%;
     text-align: center;
   }
+
   .effects {
     max-width: 305px;
   }
+
   .budget {
     font-size: 37px;
     line-height: 45px;
     text-align: center;
   }
+
   .line_budget {
     margin: 16px auto;
   }
+
   .plan_analysis {
     font-size: 37px;
     line-height: 45px;
     padding-bottom: 19px;
     text-align: center;
   }
+
   .crucial {
     text-align: center;
     margin-bottom: 20px;
   }
+
   .challenges_datas {
     width: 100%;
   }
+
   .difine_aside {
     width: 100%;
     align-items: center;
     flex-direction: column;
   }
+
   .identi_data {
     font-size: 37px;
     line-height: 45px;
     margin-bottom: 35px;
   }
+
   .collect_method {
     height: 430px;
   }
+
   .sampling_head {
     width: 100%;
   }
+
   .decision {
     font-size: 13px;
   }
+
   .data_head_section {
     width: 100%;
   }
+
   .bg-line_right {
     top: 7%;
   }
+
   .data_collect {
     padding: 30px;
     flex-direction: column;
     gap: 35px;
   }
+
   .licenses {
     width: 120px;
   }
+
   .training_one {
     margin-right: 0;
   }
+
   .training {
     margin-left: 0;
   }
+
   .predata {
     text-align: center;
   }
+
   .managedata h1 {
     font-size: 37px;
     line-height: 45px;
   }
+
   .imporatnce_ethicale {
     font-size: 37px;
   }
+
   .budget_section {
     display: flex;
     flex-direction: column;
     gap: 50px;
     margin-top: 50px;
   }
+
   .sets_bud h3 {
     text-align: center;
   }
+
   .sets_bud p {
     text-align: center;
     padding-right: 0;
   }
+
   .settingimg img {
     width: 100px;
   }
+
   .setimg img {
     width: 170px;
   }
+
   .setting_budget_img {
     height: 290px;
   }
+
   .imporatnce_force {
     padding-bottom: 283px !important;
     margin-bottom: -222px;
   }
+
   .predata p {
     font-size: 18px;
     line-height: 28px;
     padding-top: 13px;
   }
+
   .define_purpose {
     font-size: 24px;
     line-height: 27px;
     padding-top: 19px;
   }
+
   .orders_one {
     order: 2;
   }
+
   .orders {
     order: 1;
   }
@@ -2217,40 +3104,241 @@
     font-size: 14px;
   }
 
-  
-/* Force Field page css start */
-.Analysis-content{
-  background: none;
-  background-color: #e741eb;
-  background-blend-mode: initial;
-  background-repeat: no-repeat;
-  background-size: contain;
+  /* Force Field page css start */
+  .Analysis-content {
+    background: none;
+    background-color: #e741eb;
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .Analysis-content .c-margin-top {
+    margin-top: 0%;
+  }
+
+  .Analysis-content h2 {
+    text-align: center;
+  }
+
+  .s-content-odd-wrapper {
+    border-radius: 0px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .grid {
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    grid-auto-rows: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .Analysis_h2 {
+    padding: 0 0 30px;
+  }
+
+  .causes {
+    text-align: center;
+  }
+
+  .locating,
+  .healthcare {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .essence_img {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .clarity,
+  .optimisation {
+    height: 466px;
+  }
+
+  .better {
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .better h3,
+  .better p {
+    padding-right: 0;
+  }
+
+  .better h3 {
+    line-height: 27px;
+  }
+
+  .future_effect {
+    width: 100%;
+  }
+
+  .still {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .better_div {
+    padding-top: 0;
+    gap: 30px;
+  }
+
+  .importance_sigma {
+    text-align: center;
+  }
+
+  .works {
+    width: 100%;
+  }
+
+  .summary,
+  .get {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .goal_measure {
+    padding-bottom: 30px;
+  }
+
+  .challengesdata {
+    font-size: 37px !important;
+    line-height: 45px !important;
+  }
+
+  .essences {
+    padding-top: 0;
+  }
+
+  .implements {
+    width: 100%;
+  }
+
+  /* end */
+
+  /* Importance of Reducing page css start */
+  #Examples_Reducing_section .understanding {
+    padding: 0;
+  }
+
+  #Examples_Reducing_section .understanding_table {
+    padding: 30px;
+    height: max-content;
+  }
+
+  .summary h6 {
+    font-size: 18px;
+  }
+
+  #Advantages_Force_section .importance_measurement {
+    padding: 40px;
+  }
+
+  .importance p {
+    text-align: center;
+  }
+
+  /* end */
+
+  /* Lean- Waste in Digital page css start */
+  #Type_Waste_section .optimisation,
+  #Type_Waste_section .clarity {
+    height: fit-content;
+  }
+
+  #Type_Waste_section .optimisation {
+    height: max-content;
+  }
+
+  #Type_Waste_section .Effect_bottem_div {
+
+    margin-top: 90px;
+  }
+
+  .key_principle {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #Organizations_overlay .subscribe-wrapper {
+    width: 90%;
+    padding: 50px 30px;
+  }
+
+  #Organizations_overlay .subscribe-wrapper h5 {
+    font-size: 20px;
+  }
+
+  .pb_bottom {
+    padding-bottom: 100px;
+    margin-bottom: -115px;
+  }
+
+  .Advantages_force_div-1 {
+    padding: 30px;
+  }
+
+  /* end */
+
+  /* Multi-voting section start */
+  #Examples_Multi_Voting_section .better {
+
+    justify-content: start;
+  }
+
+  .Tackling_txt h4 {
+    font-size: 35px;
+  }
+
+  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div_img {
+    width: 35%;
+    height: 100%;
+  }
+
+
+  #Solution_Transportation_section .sub_Objectives_div_role {
+    padding: 30px;
+  }
+
+  .better {
+    height: max-content;
+    padding: 30px;
+  }
+
+  /* end */
+
+  /* Nominal-Group-Technique  section start */
+
+  .goal_set p,.includes_ngt {
+    width: 100%;
 }
-.Analysis-content .c-margin-top{
-  margin-top: 0%;
+.solve,.technique{
+  width: 100%;
+  text-align: center;
 }
-.Analysis-content h2 {
-text-align: center;
+.think{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.locating {
+  font-size: 18px !important;
+  line-height: 30px !important;
+}
+.some{
+  padding-left: 0;
+}
+.applications_six{
+  padding: 50px 30px !important ;
 }
 
-.s-content-odd-wrapper{
-border-radius: 0px;
-padding: 20px;
-width: 100%;
-}
-
-.grid {
-grid-gap: 20px;
-grid-template-columns: repeat(auto-fill, minmax(40%,1fr));
-grid-auto-rows: 20px;
-margin-top: 30px;
-margin-bottom: 30px;
-}
-.Analysis_h2 {
-  padding: 0 0 30px;
-}
 /* end */
-
 }
 
 /* Small devices (landscape phones, 576px and 767px) */
@@ -2520,9 +3608,16 @@ margin-bottom: 30px;
     height: 75%;
   }
 
+  .essence_of {
+    text-align: center;
+  }
+
   .importance h1 {
     font-size: 37px;
     line-height: 45px;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 15px;
   }
 
   .role_of {
@@ -2842,6 +3937,7 @@ margin-bottom: 30px;
   .Matrix_left_div-1 {
     background-position: center top;
   }
+
   .bg-line_left,
   .bg-line_right {
     display: none;
@@ -2851,14 +3947,17 @@ margin-bottom: 30px;
   .text-start {
     text-align: center !important;
   }
+
   .Formulation_img img {
     width: 80%;
     height: 70%;
   }
+
   .importanceimg img {
     width: 80%;
     height: 100%;
   }
+
   .Analysis-content {
     background: none;
     background-color: #e741eb;
@@ -2866,6 +3965,7 @@ margin-bottom: 30px;
     background-repeat: no-repeat;
     background-size: contain;
   }
+
   .Analysis-content .c-margin-top {
     margin-top: 0%;
   }
@@ -2879,9 +3979,11 @@ margin-bottom: 30px;
   .key_balance {
     height: max-content;
   }
+
   .ethical_considerations {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .monitorin_assurance {
     font-size: 37px;
     line-height: 45px;
@@ -2894,125 +3996,342 @@ margin-bottom: 30px;
     line-height: 45px;
     text-align: center;
   }
+
   .line_budget {
     margin: 16px auto;
   }
+
   .plan_analysis {
     font-size: 37px;
     line-height: 45px;
     padding-bottom: 19px;
     text-align: center;
   }
+
   .crucial {
     text-align: center;
     margin-bottom: 20px;
   }
+
   .challenges_datas {
     width: 100%;
   }
+
   .difine_aside {
     width: 100%;
     align-items: center;
     flex-direction: column;
   }
+
   .identi_data {
     font-size: 37px;
     line-height: 45px;
     margin-bottom: 35px;
   }
+
   .collect_method {
     height: 337px;
   }
+
   .sampling_head {
     width: 100%;
   }
+
   .decision {
     font-size: 13px;
   }
+
   .data_head_section {
     width: 100%;
   }
+
   .bg-line_right {
     top: 7%;
   }
+
   .data_collect {
     padding: 30px;
     flex-direction: column;
     gap: 35px;
   }
+
   .licenses {
     width: 120px;
   }
+
   .training_one {
     margin-right: 0;
   }
+
   .training {
     margin-left: 0;
   }
+
   .predata {
     text-align: center;
   }
+
   .managedata h1 {
     font-size: 37px;
     line-height: 45px;
   }
+
   .imporatnce_ethicale {
     font-size: 37px;
   }
+
   .budget_section {
     display: flex;
     flex-direction: column;
     gap: 50px;
     margin-top: 50px;
   }
+
   .sets_bud h3 {
     text-align: center;
   }
+
   .sets_bud p {
     text-align: center;
     padding-right: 0;
   }
+
   .settingimg img {
     width: 100px;
   }
+
   .setimg img {
     width: 170px;
   }
+
   .setting_budget_img {
     height: 290px;
   }
+
   .imporatnce_force {
     padding-bottom: 283px !important;
     margin-bottom: -222px;
   }
+
   .predata p {
     font-size: 18px;
     line-height: 28px;
     padding-top: 13px;
   }
+
   .define_purpose {
     font-size: 24px;
     line-height: 27px;
     padding-top: 19px;
   }
+
   .orders_one {
     order: 2;
   }
+
   .orders {
     order: 1;
   }
+
   .exaggerate {
     font-size: 13px;
     text-align: center;
   }
 
+  .s-content-odd-wrapper {
+    border-radius: 0px;
+    padding: 20px;
+    width: 100%;
+  }
 
-.s-content-odd-wrapper{
-  border-radius: 0px;
-  padding: 20px;
-  width: 100%;
-}
+  .causes {
+    text-align: center;
+  }
+
+  .locating,
+  .healthcare {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .essence_img {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .clarity,
+  .optimisation {
+    height: max-content;
+  }
+
+  .better {
+    height: max-content;
+  }
+
+  .objects {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .goal_measure {
+    padding-bottom: 30px;
+  }
+
+  .workers {
+    height: 445px;
+  }
+
+  .importance_sigma {
+    text-align: center;
+  }
+
+  .works {
+    width: 100%;
+    height: max-content;
+  }
+
+  .summary,
+  .get {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .better_div {
+    grid-template-columns: repeat(1, 1fr) !important;
+    padding-top: 0;
+  }
+
+  .essences {
+    padding: 35px 30px;
+    margin-top: -50px;
+  }
+
+  .variances {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .itself,
+  .rate {
+    font-size: 14px;
+    line-height: 27px;
+  }
+
+  .still {
+    font-size: 17px;
+    line-height: 27px;
+    margin: -14px 0 -43px 0;
+  }
+
+  #conclution_section {
+    padding-bottom: 270px;
+  }
+
+  .better h2,
+  .better h3 {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
   /* end */
+
+  /* Importance of Reducing page css start */
+  #Examples_Reducing_img img {
+    width: 50%;
+    padding-bottom: 161px;
+  }
+
+  .Six_Sigma_p {
+    font-size: 14px;
+  }
+
+  #Reducing_Variation_section p {
+    font-size: 16px;
+  }
+
+  #Examples_Reducing_section .understanding_table {
+    padding: 30px;
+    height: max-content;
+  }
+
+  #Examples_Reducing_section .understanding {
+    padding: 0;
+  }
+
+  #Examples_Reducing_section .understanding h1 {
+    font-size: 30px;
+  }
+
+  /* end */
+  #Challenges_Criticism_section .sub_Components_section h3 {
+    font-size: 26px;
+  }
+
+  #Advantages_Force_section .importance_measurement {
+    padding: 30px;
+  }
+
+  #Increased_Productivity_section p {
+    padding-right: 0%;
+    text-align: left;
+  }
+
+  .Examples_Strategy_section .process_h3 {
+    line-height: 37px !important;
+    text-align: left;
+  }
+
+  /* Lean- Waste in Digital page css start */
+
+  /* end */
+
+  /* Lean- Waste in Digital Solution page css start */
+  .Tackling_txt h4 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .second-content p {
+    font-size: 14px;
+  }
+
+  .Case_Studies_section .sets_bud h3 {
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .Case_Studies_section .Components_div p {
+    text-align: center;
+  }
+
+  /* Lean- Waste in Digital Solution page end */
+
+  /* Nominal-Group-Technique css start */
+
+  .goal_set p,.includes_ngt {
+    width: 100%;
+}
+.solve,.technique{
+  width: 100%;
+  text-align: center;
+}
+.think{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.locating {
+  font-size: 18px !important;
+  line-height: 30px !important;
+}
+.some{
+  padding-left: 0;
+}
+.applications_six{
+  padding: 30px !important;
+}
+
+/* end */
 }
 
 @media screen and (max-width: 767px) {
@@ -3034,6 +4353,7 @@ margin-bottom: 30px;
     gap: 30px;
     padding: 30px 0;
   }
+
   .Applications_div_2,
   .Applications_div_3 {
     max-height: 100%;
@@ -3103,14 +4423,18 @@ margin-bottom: 30px;
     padding-left: 0px;
   }
 
+  .Components_div h3,
+  .Components_div p {
+    text-align: start;
+  }
+
   .measurementsystem h1,
   .measurementsystem p,
   .sub_Objectives_div_1 p,
-  .Components_div h3,
+
   .fourth-content h2,
   .fourth-content p,
-  #importance_conclution h1,
-  .Components_div p {
+  #importance_conclution h1 {
     text-align: center;
   }
 
@@ -3157,7 +4481,7 @@ margin-bottom: 30px;
   }
 
   .data_sources p {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 23px;
   }
 
@@ -3240,47 +4564,225 @@ margin-bottom: 30px;
   .Examples_Strategy_img {
     display: none;
   }
+
   .Examples_right h1,
   .Examples_right p {
     text-align: center;
   }
+
   .Alignment_div {
     max-height: fit-content !important;
+    height: max-content;
   }
+
   .Six-Sigma-sub_div_left {
     align-items: center !important;
   }
+
   .Six-Sigma-sub_div_left h2 {
     text-align: center !important;
   }
 
   .strategic_imgs h4 {
     text-align: center;
+    font-size: 26px;
   }
+
   .monitoring_quality {
     flex-direction: column;
     margin: 0 auto;
   }
+
   .effects {
     max-width: 305px;
   }
+
   .banefit {
     display: flex !important;
     flex-direction: column;
     gap: 60px;
   }
+
   .orders_one {
     order: 2;
   }
+
   .orders {
     order: 1;
   }
+
   .exaggerate {
     font-size: 13px;
     text-align: center;
   }
 
+  .workers {
+    height: 450px;
+  }
 
+  /* Importance of Reducing page css start */
+
+  #Examples_Reducing_img img {
+    display: block;
+    width: 50%;
+    padding-bottom: 161px;
+  }
+
+  .importance p {
+    text-align: center;
+  }
+
+  #Advantages_Force_section .sub_Objectives_div h3 {
+    padding-right: 0;
+    text-align: start;
+  }
+
+  /* end */
+
+  /* Lean- Waste in Digital page css start */
+  #Type_Waste_section .Effect_bottem_div {
+    margin-top: 90px;
+  }
+
+  #Type_Waste_section .optimisation {
+    height: fit-content;
+  }
+
+  .critical_div p,
+  .critical_div h2 {
+    text-align: center;
+  }
+
+  .key_principle {
+    width: 100%;
+  }
+
+  #Organizations_overlay .subscribe-wrapper {
+
+    padding: 50px 15px;
+  }
+
+  #Organizations_overlay .subscribe-wrapper h5 {
+    font-size: 20px;
+  }
+
+  .Within_p {
+    text-align: center;
+  }
+
+  .Advantages_force_div-1 {
+    padding: 20px;
+  }
+
+  /* end */
+
+  /* Multi-voting section start */
+  .Methodology_p {
+    width: 100%;
+  }
+
+  .An_organized_p {
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .Benefits_Multi-Voting_div {
+    gap: 20px;
+    padding-top: 10px;
+  }
+
+  .Multi-Voting_h2 {
+    font-size: 30px;
+  }
+
+  /* ernd */
+
+  /* Lean- Waste in Digital Solution page css start */
+  .Types_Digital_Solution_section h2 {
+    padding: 0;
+  }
+
+  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: start;
+    gap: 20px;
+  }
+
+  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div_img {
+    width: 40%;
+    height: 100%;
+  }
+
+  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div h4 {
+
+    text-align: center;
+  }
+
+  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div {
+    order: 1;
+  }
+
+  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div_1 {
+    order: 0;
+  }
+
+  #Solution_Transportation_section .key_balance {
+    width: 100%;
+
+  }
+
+  #Solution_Transportation_section .define_purpose {
+    order: 1 !important;
+  }
+
+  #Solution_Transportation_section .sub_Objectives_imgs {
+    order: 0 !important;
+  }
+
+  #Solution_Transportation_section .sub_Objectives_div_role {
+    padding: 20px;
+  }
+
+  .Case_Studies_section .Components_div {
+    width: 100%;
+  }
+
+  .Lean_Principles_Digital_section .sampling_head,
+  .Lean_Principles_Digital_section .Six-Sigma-sub_div_left p {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  #Solution_Transportation_section .Objectives_div_role .sub_Objectives_div_role p {
+    text-align: start;
+}
+
+  /* Lean- Waste in Digital Solution page end */
+
+  /* Nominal-Group-Technique css start */
+  .goal_set p,.includes_ngt {
+    width: 100%;
+}
+.solve,.technique{
+  width: 100%;
+  text-align: center;
+}
+.think{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.locating {
+  font-size: 18px !important;
+  line-height: 30px !important;
+}
+.some{
+  padding-left: 0;
+}
+.Business_txt{
+  text-align: start !important;
+}
+/* end */
 }
 
 @media screen and (max-width: 575px) {
@@ -3324,13 +4826,13 @@ margin-bottom: 30px;
   }
 
   .sub_Objectives_div h3 {
-    font-size: 16px;
+    font-size: 20px;
     padding-right: 0%;
     text-align: center;
   }
 
   .sub_Objectives_div p {
-    font-size: 12px;
+    font-size: 14px;
     padding-right: 20px;
   }
 
@@ -3367,7 +4869,7 @@ margin-bottom: 30px;
   .content04_div_1_image {
     width: 100%;
     order: 0 !important;
-    padding-bottom: 51px;
+    padding-bottom: 30px;
   }
 
   .Effect_Analysis_div {
@@ -3486,7 +4988,7 @@ margin-bottom: 30px;
   }
 
   .sub_Effect_bottem_div p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 24px;
   }
 
@@ -3501,6 +5003,7 @@ margin-bottom: 30px;
   .Applications_div_3 {
     justify-items: center;
   }
+
   .Applications_image_2 {
     display: flex;
     justify-content: center;
@@ -3591,8 +5094,12 @@ margin-bottom: 30px;
   }
 
   .measurementsystem p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
+  }
+
+  .excellence {
+    font-size: 19px;
   }
 
   .bannerlady {
@@ -3739,8 +5246,13 @@ margin-bottom: 30px;
     text-align: center;
   }
 
-  .importance h1 {
+  .essence_of h1 {
     font-size: 28px;
+    line-height: 40px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0;
   }
 
   .methodologies {
@@ -3917,6 +5429,7 @@ margin-bottom: 30px;
   .demonstrate_p h5 {
     font-size: 20px;
     text-align: center;
+    line-height: 27px;
   }
 
   .Examples_Strategy_div {
@@ -3926,21 +5439,27 @@ margin-bottom: 30px;
   .Examples_right {
     padding: 10px !important;
   }
+
   .Components_div p {
     font-size: 14px;
     line-height: 20px;
+    text-align: center;
   }
+
   .Examples_Strategy_div {
     grid-template-columns: repeat(1, 1fr) !important;
     padding: 30px;
   }
+
   .Examples_right {
     max-width: 100% !important;
     padding: 40px;
   }
+
   .Examples_right p {
     text-align: center !important;
   }
+
   .Process_div p {
     text-align: left;
     font-size: 14px;
@@ -3949,43 +5468,54 @@ margin-bottom: 30px;
   .vital_points_div {
     padding: 20px !important;
   }
+
   .Alignment_div {
     max-height: fit-content !important;
+    height: max-content;
   }
+
   .importance_measurement {
     grid-template-columns: repeat(1, 1fr);
     padding: 20px;
     gap: 40px;
   }
+
   .Implementation_p {
     font-size: 14px;
     text-align: center;
   }
+
   .Strategic_Alignment_div {
     align-items: center;
     padding: 20px;
   }
+
   .Innovation_img {
     display: flex;
     justify-content: center;
   }
+
   .Innovation_img img {
     width: 70%;
   }
+
   .bg-line_left,
   .bg-line_right {
     display: none;
   }
+
   .Six_Sigma_img img {
     width: 70%;
     display: none;
   }
+
   .importanceimg {
     max-width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
   }
+
   .importanceimg img {
     width: 70%;
   }
@@ -4006,6 +5536,7 @@ margin-bottom: 30px;
   #Force_Analysis_section .Alignment_div {
     margin-top: 30px;
   }
+
   #Force_Analysis_section .Benefits_Strategy_div {
     width: 100%;
     gap: 30px;
@@ -4018,35 +5549,43 @@ margin-bottom: 30px;
     background-repeat: no-repeat;
     background-size: contain;
   }
+
   .Analysis-content .c-margin-top {
     margin-top: 0%;
   }
+
   .Analysis-content h2 {
     text-align: center;
   }
+
   .crucial {
-    font-size: 17px;
+    font-size: 18px;
     text-align: center;
   }
+
   .challenges_datas,
   .sampling_head,
   .data_head_section {
     width: 100%;
   }
+
   .banefit {
     gap: 60px;
   }
+
   .managedata h1 {
     font-size: 25px;
     line-height: 35px;
     margin-bottom: -25px;
   }
+
   .plan_analysis {
     font-size: 25px;
     line-height: 35px;
     padding-bottom: 30px;
     text-align: center;
   }
+
   .monitorin_assurance {
     font-size: 25px;
     line-height: 35px;
@@ -4054,60 +5593,74 @@ margin-bottom: 30px;
     text-align: center;
     width: 100%;
   }
+
   .ethical_considerations {
     display: flex;
     flex-direction: column;
   }
+
   .budget_section {
     flex-direction: column;
     gap: 40px;
   }
+
   .budget {
     font-size: 24px;
     line-height: 35px;
     text-align: center;
     width: 100%;
   }
+
   .ensuring_one,
   .constant_back_one {
     flex-direction: column;
   }
+
   .line_budget {
     width: 123px;
     margin: 19px auto;
   }
+
   .data_collect {
     flex-direction: column;
     padding: 25px 0;
     gap: 15px;
   }
+
   .training {
     margin-left: 0;
   }
+
   .training_one {
     margin-right: 0;
   }
+
   .predata {
     font-size: 22px;
     font-weight: 700;
     line-height: 35px;
     text-align: center;
   }
+
   .Examples_Strategy_section .process_h3 {
     line-height: 27px !important;
   }
+
   .licenses {
     width: 125px;
   }
+
   .predata p {
     font-size: 14px;
     line-height: 26px;
     padding-top: 15px;
   }
+
   .difine_aside {
     align-items: center;
     flex-direction: column;
   }
+
   .setting_budget_img {
     height: 300px;
     margin-top: -37px;
@@ -4116,51 +5669,64 @@ margin-bottom: 30px;
   .settingimg img {
     width: 90px;
   }
+
   .setimg img {
     width: 160px;
   }
+
   .identi_data {
     font-size: 27px;
     line-height: 35px;
   }
+
   .key_balance {
     height: max-content;
   }
+
   .collect_method {
     width: 300px;
     padding: 25px;
     height: 386px;
   }
+
   .define_purpose {
     font-size: 20px;
   }
+
   .decision {
     font-size: 13px;
   }
+
   .imporatnce_force {
     padding-bottom: 283px !important;
   }
+
   .ethicalimg {
     height: 200px;
   }
+
   .ethical_measurement {
     padding: 20px !important;
   }
+
   .Choose {
     padding-top: 0;
   }
+
   .data_head_section h1 {
     font-size: 24px !important;
   }
+
   .Analysis-content p {
     text-align: center;
   }
-  .clearly_state{
+
+  .clearly_state {
     text-align: start !important;
   }
-  
-   /* Force Field page css start */
-   #Force_Field_section {
+
+  /* Force Field page css start */
+  #Force_Field_section {
     min-height: max-content;
   }
 
@@ -4181,9 +5747,8 @@ margin-bottom: 30px;
     gap: 30px;
   }
 
-
   #Advantages_Force_section .importance_measurement {
-    padding: 30px;
+    padding: 30px !important;
   }
 
   #Advantages_Force_section .sex_sigma_object {
@@ -4193,62 +5758,342 @@ margin-bottom: 30px;
   .Analysis_h2 {
     padding: 0 0 20px 0;
   }
+
   #Force_Analysis_section .Benefits_img {
     max-width: 280px;
     max-height: 165px;
     width: 75%;
-}
+  }
 
+  .s-content-odd-wrapper {
+    border-radius: 0px;
+    padding: 20px;
+    width: 100%;
+  }
 
-.s-content-odd-wrapper{
-  border-radius: 0px;
-  padding: 20px;
-  width: 100%;
-} 
-#Examples_of_Force_section h4 {
-  font-size: 28px;
-}
+  #Examples_of_Force_section h4 {
+    font-size: 28px;
+  }
 
-.grid {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(1, 1fr);
-  grid-auto-rows: 15px;
-  margin-top: 20px;
-}
+  .grid {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 15px;
+    margin-top: 20px;
+  }
 
-#importance_conclution h1 {
-  font-weight: 800;
-  padding-bottom: 8px;
-}
+  #importance_conclution h1 {
+    font-weight: 800;
+    padding-bottom: 8px;
+  }
 
-#conclution_section {
-  padding-bottom: 250px;
-}
+  #conclution_section {
+    padding-bottom: 250px;
+  }
 
-.collect_method {
-  width: 100%;
-  height: 410px;
-}
-#objective_sigma h3, #objective_sigmaone h3{
-  text-align: start !important;
-}
-#objective_sigmaone,#objective_sigmafour{
-  padding: 0 0 0 25px;
-}
+  .collect_method {
+    width: 100%;
+    height: 410px;
+  }
 
-#objective_sigmathree {
-  padding: 0 0 0 25px;
-}
-.approach{
-  text-align: center;
-}
-.table_one,.table_two,.table_three{
-  height: max-content;
-  padding: 25px;
-}
+  #objective_sigma h3,
+  #objective_sigmaone h3 {
+    text-align: start !important;
+  }
+
+  #objective_sigmaone,
+  #objective_sigmafour {
+    padding: 0 0 0 25px;
+  }
+
+  #objective_sigmathree {
+    padding: 0 0 0 25px;
+  }
+
+  .approach {
+    text-align: center;
+  }
+
+  .table_one,
+  .table_two,
+  .table_three {
+    height: max-content;
+    padding: 25px;
+  }
+
+  .Percentage_div_img {
+    justify-content: center;
+  }
+
+  .primary_sources h4,
+  .numerical,
+  .numerical_one,
+  .identi_data {
+    text-align: center;
+  }
+
+  .locating,
+  .healthcare {
+    font-size: 15px !important;
+    line-height: 24px;
+  }
+
+  .essences {
+    padding-top: 0;
+  }
+
+  .essence_img {
+    margin: 23px -8px -29px 10px;
+  }
+
+  .rate,
+  .itself {
+    font-size: 14px !important;
+    line-height: 27px;
+  }
+
+  .better_div {
+    padding-top: 0;
+    gap: 30px;
+  }
+
+  .better {
+    height: 265px;
+  }
+
+  .develops {
+    font-size: 14px !important;
+    margin-top: -21px;
+  }
+
+  .environts {
+    width: 95px !important;
+    height: 95px;
+  }
+
+  .still {
+    font-size: 14px;
+    line-height: 27px;
+  }
+
+  .workers {
+    height: max-content;
+  }
+
+  .get {
+    text-align: center;
+  }
+
+  .variances {
+    font-size: 16px !important;
+  }
+
+  .customer_focus h3 {
+    font-size: 22px;
+  }
+
+  .essence {
+    border-radius: 40px;
+  }
+
+  .role_forming {
+    padding-top: 0;
+  }
+
+  .optimisation,
+  .clarity {
+    height: max-content;
+  }
+
+  .better {
+    padding: 50px 20px;
+    height: max-content;
+  }
+
+  .get {
+    font-size: 16px;
+    line-height: 27px;
+    padding-bottom: 20px;
+  }
+
+  .key_principle {
+    width: 100%;
+  }
+
+  .advantage {
+    font-size: 27px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .better h2,
+  .better h3 {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  .better p {
+    line-height: 23px;
+  }
+
+  .futures {
+    padding-bottom: 10px;
+  }
+
+  .essence_of h1 {
+    font-size: 28px;
+  }
+
+  .importance h1 {
+    font-size: 28px;
+  }
+
+  .step_creates {
+    display: flex;
+  }
+
+  .pro_img {
+    width: 100px;
+  }
 
   /* end */
+
+  .Six_Sigma_p {
+    font-size: 14px !important;
+    text-align: center;
+  }
+
+  #Reducing_Variation_section h2 {
+    font-size: 28px;
+  }
+
+  #Reducing_Variation_section p {
+    font-size: 14px;
+  }
+
+  #Examples_Reducing_section .understanding {
+    padding: 0;
+  }
+
+  #Examples_Reducing_section .understanding_table {
+    padding: 20px;
+    height: fit-content;
+  }
+
+  #Challenges_Criticism_section .sub_Components_section h3 {
+    font-size: 24px;
+  }
+
+  .summary h6 {
+    text-align: center;
+    line-height: 27px;
+    font-size: 18px;
+  }
+
+  /* end */
+
+  /* Lean- Waste in Digital page css start */
+  .Diverse_p {
+    text-align: center;
+  }
+
+  .sub_Components_section,
+  .sub_Components_section-2 {
+    gap: 30px;
+    padding: 0;
+  }
+
+  .pb_bottom {
+    margin-bottom: -116px;
+  }
+
+  .Advantages_force_div-1 p {
+    font-size: 15px;
+  }
+
+  .Execute_txt {
+    text-align: center;
+  }
+
+  .Combat_Lean_div {
+    margin-bottom: 2px;
+  }
+
+  /* end */
+
+  /* Multi-voting section start */
+  .Methodology_p {
+    width: 100%;
+  }
+
+  .An_organized_p {
+    padding: 0;
+    font-size: 16px;
+  }
+
+  /* ernd */
+
+  /* Lean- Waste in Digital Solution page css start */
+  .Tackling_txt h4 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .second-content p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div h4 {
+    font-size: 22px;
+  }
+
+
+  #Solution_Transportation_section .sub_Objectives_div_role {
+    padding: 20px;
+  }
+
+  #Solution_Transportation_section .Objectives_div_role .sub_Objectives_div_role p{
+    text-align: start;
+  }
+
+  .Lean_Principles_Digital_section .sampling_head,
+  .Lean_Principles_Digital_section .Six-Sigma-sub_div_left p {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .motion_div_ss {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .motion_p {
+    text-align: center;
+  }
+
+  .Over_circle {
+    width: 20px;
+    height: 20px;
+  }
+
+  .Over_p_div h6 {
+    font-size: 18px;
+  }
+
+  .Case_Studies_section .settingimg img {
+    width: 140px;
+}
+.applications_six {
+  padding: 25px !important;
+}
+.goal_set h3{
+line-height: 30px;
+}
+
+
+  /* Lean- Waste in Digital Solution page end */
 }
 
 /*--------------------------------------*/
