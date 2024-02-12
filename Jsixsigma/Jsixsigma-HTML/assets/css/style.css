@@ -88,6 +88,7 @@ a:hover {
       #b92419 100%);
   margin-top: 70px;
   height: max-content;
+  overflow: hidden;
 }
 
 .measurementsystem {
@@ -110,6 +111,7 @@ a:hover {
 .bannerlady {
   max-width: 885px;
   margin: 27px 0 -118px 0;
+  display: block;
 }
 
 .bannerlady img {
@@ -2139,7 +2141,6 @@ a:hover {
 
 .Advantages_div_color_2 {
   background-color: #6967ff;
-
 }
 
 .Advantages_div_color_3 {
@@ -2480,19 +2481,22 @@ a:hover {
   background-position: bottom left;
 }
 
-#Reducing_Variation_section h2 {
+#Reducing_Variation_section h2,
+.Uncovering_Knowledge_section h2 {
   font-size: 50px;
   color: #000;
   font-weight: 800;
 }
 
-#Reducing_Variation_section p {
+#Reducing_Variation_section p,
+.Uncovering_Knowledge_section p {
   font-size: 18px;
   line-height: 27px;
   color: #000;
 }
 
-#Reducing_Variation_section .Importance_d {
+#Reducing_Variation_section .Importance_d,
+.Uncovering_Knowledge_section .Importance_d {
   padding-top: 110px;
 }
 
@@ -2526,14 +2530,12 @@ a:hover {
   font-size: 30px;
 }
 
-
 /* Lean- Waste in Digital page css start */
 #Understanding_Lean_section {
-  background-color: #F6F2FF;
+  background-color: #f6f2ff;
 }
 
 #Waste_Digital_section .container .Strategic_Alignment_div {
-
   min-height: 400px;
 }
 
@@ -2557,7 +2559,7 @@ a:hover {
 }
 
 #Organizations_overlay .subscribe-wrapper {
-  background-color: #F9CC73;
+  background-color: #f9cc73;
   border-radius: 0px;
   width: 100%;
   padding: 80px;
@@ -2569,11 +2571,11 @@ a:hover {
 }
 
 .Advantages_div_color_4 {
-  background-color: #CF92FF;
+  background-color: #cf92ff;
 }
 
 .Advantages_div_color_5 {
-  background-color: #FFDE05;
+  background-color: #ffde05;
 }
 
 .Describe_div {
@@ -2584,7 +2586,7 @@ a:hover {
 
 /* Multi-voting section start */
 .Origins_section {
-  background: #F4F0FF;
+  background: #f4f0ff;
 }
 
 .An_organized_p {
@@ -2605,11 +2607,11 @@ a:hover {
 }
 
 .Inclusivity_color {
-  background-color: #F8D0FF;
+  background-color: #f8d0ff;
 }
 
 .Building_color {
-  background-color: #CFF7FF;
+  background-color: #cff7ff;
 }
 
 .Time_div_txt p {
@@ -2625,7 +2627,7 @@ a:hover {
 }
 
 #Examples_Multi_Voting_section {
-  background-color: #453D5F;
+  background-color: #453d5f;
 }
 
 #Examples_Multi_Voting_section .effect_top_text h2 {
@@ -2637,7 +2639,7 @@ a:hover {
 }
 
 .Project_color {
-  background: #FFCA38;
+  background: #ffca38;
 }
 
 #Examples_Multi_Voting_section .Objectives_div .sub_Objectives_div {
@@ -2645,27 +2647,27 @@ a:hover {
 }
 
 #Cost_color {
-  background: #85FE7B;
+  background: #85fe7b;
 }
 
 #Solution_color {
-  background: #D4C5FF;
+  background: #d4c5ff;
 }
 
 #Team_color {
-  background: #F672E9;
+  background: #f672e9;
 }
 
 #Product_color {
-  background: #41F4DF;
+  background: #41f4df;
 }
 
 .important_color {
-  background: #FFDE47 !important;
+  background: #ffde47 !important;
 }
 
 .Prioritization_color {
-  background: #10A80D;
+  background: #10a80d;
 }
 
 /* Multi-voting css end */
@@ -2673,7 +2675,7 @@ a:hover {
 /* Lean- Waste in Digital Solution page css start */
 .Understanding_srction .essence {
   border-radius: 40px;
-  background: #8AFFE3;
+  background: #8affe3;
 }
 
 .Understanding_srction .essence .essence_of h1 {
@@ -2682,7 +2684,7 @@ a:hover {
 }
 
 .Overcoming_section {
-  background: #F6F2FF;
+  background: #f6f2ff;
 }
 
 .Tackling_txt h4 {
@@ -2692,9 +2694,8 @@ a:hover {
   line-height: 50px;
 }
 
-
 .Types_Digital_Solution_section {
-  background: #2D2348;
+  background: #2d2348;
   color: #fff;
 }
 
@@ -2736,15 +2737,15 @@ a:hover {
 }
 
 .Inventory_Management_div {
-  background-color: #F9CC73;
+  background-color: #f9cc73;
 }
 
 .Motion_Solutions_div {
-  background-color: #E49DFD;
+  background-color: #e49dfd;
 }
 
 #Solution_Transportation_section {
-  background: #F3EFFF;
+  background: #f3efff;
 }
 
 #Solution_Transportation_section .challenges_datas {
@@ -2775,29 +2776,24 @@ a:hover {
 }
 
 #Opposition_Technology_div.key_two {
-
-  border: 1px solid #66E27A;
-  border-bottom: 10px solid #66E27A;
+  border: 1px solid #66e27a;
+  border-bottom: 10px solid #66e27a;
 }
 
 #Limited_Ability_div.key_two {
-
-  border: 1px solid #ED9964;
-  border-bottom: 10px solid #ED9964;
+  border: 1px solid #ed9964;
+  border-bottom: 10px solid #ed9964;
 }
 
 #Legal_Regulatory_div.key_two {
-
-  border: 1px solid #6967FF;
-  border-bottom: 10px solid #6967FF;
+  border: 1px solid #6967ff;
+  border-bottom: 10px solid #6967ff;
 }
 
 #Insufficient_Progress_div.key_two {
-
-  border: 1px solid #F33558;
-  border-bottom: 10px solid #F33558;
+  border: 1px solid #f33558;
+  border-bottom: 10px solid #f33558;
 }
-
 
 /* Case Studies css */
 .Case_Studies_section .Case-div p {
@@ -2814,7 +2810,7 @@ a:hover {
 }
 
 .case_span {
-  color: #6967FF;
+  color: #6967ff;
   font-size: 24px;
   font-weight: 800;
   line-height: 45px;
@@ -2833,7 +2829,7 @@ a:hover {
 }
 
 .Lean_Principles_Digital_section {
-  background: #FFE9DD;
+  /* background: #ffe9dd; */
 }
 
 .Lean_Principles_Digital_section .sampling_head,
@@ -2847,7 +2843,7 @@ a:hover {
 }
 
 .motion_s {
-  color: #F9CC73;
+  color: #f9cc73;
 }
 
 .motion_div_ss {
@@ -2861,28 +2857,31 @@ a:hover {
 
 /* Lean- Waste in Digital Solution page end */
 
-
 /* Origins of the Nominal Group Technique css */
 .origins {
   background: #f6f2ff;
 }
+
 /* Principles of the Nominal Group Technique css */
-.locatings{
+.locatings {
   padding-top: 0;
 }
-.contribute{
-font-size: 15px;
-line-height: 22px;
+
+.contribute {
+  font-size: 15px;
+  line-height: 22px;
 }
-.solve{
+
+.solve {
   width: 57%;
 }
 
 /* The Nominal Group Technique Process  css */
-.technique{
+.technique {
   width: 86%;
 }
-.includes_ngt{
+
+.includes_ngt {
   width: 44%;
   margin-top: 20px;
 }
@@ -2891,25 +2890,29 @@ line-height: 22px;
 .research {
   border-left: 5px solid #aea705 !important;
 }
+
 .Challenges_Reducing_sections {
   background: #ffe6e3;
 }
-.ngt_has{
-font-size: 16px !important;
-line-height: 24px !important;
-margin-top: 20px;
+
+.ngt_has {
+  font-size: 16px !important;
+  line-height: 24px !important;
+  margin-top: 20px;
 }
-.process{
-text-align: center;
-font-size: 20px;
-font-weight: 400;
-line-height: 30px;
+
+.process {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
 }
-.goal_set p{
+
+.goal_set p {
   width: 82%;
 }
 
-.end_img{
+.end_img {
   display: flex;
   justify-content: flex-end;
 }
@@ -2919,14 +2922,16 @@ line-height: 30px;
 .nominals {
   background: #df4b2d;
 }
-.abouts{
+
+.abouts {
   margin-top: 0;
 }
-.think{
+
+.think {
   width: 62%;
 }
 
-.applications_six{
+.applications_six {
   padding: 10px 70px !important;
 }
 
@@ -2940,18 +2945,20 @@ line-height: 30px;
   width: 72%;
   margin: 80px auto 30px auto;
 }
-.conjunction{
-text-align: center;
-font-size: 16px;
-font-weight: 400;
-line-height: 27px;
-width: 59%;
+
+.conjunction {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  width: 59%;
   margin: 0 auto;
 }
 
-.some{
+.some {
   padding-left: 0px;
 }
+
 /* Overcoming Challenges in the Implementation of Nominal Group Technique in Six Sigma css */
 
 .over_coming {
@@ -2961,6 +2968,7 @@ width: 59%;
 .over_key {
   background-color: #fff;
 }
+
 .difines {
   align-items: center;
 }
@@ -2969,25 +2977,30 @@ width: 59%;
 #artificial {
   background: #fddb8d;
 }
+
 #artificial_one {
   background: #f8d0ff;
 }
+
 #artificial_two {
   background: #9dfd8d;
 }
+
 #artificial_three {
   background: #cff7ff;
 }
-.gami{
-font-size: 30px;
-font-weight: 700;
-line-height: 40px;
+
+.gami {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
 }
-.nominal_group{
-text-align: center;
-font-size: 50px;
-font-weight: 700;
-line-height: 60px;
+
+.nominal_group {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
 }
 
 .locatings {
@@ -2999,5 +3012,732 @@ line-height: 60px;
   padding-top: 0px;
   line-height: 35px !important;
 }
+
+/* end */
+
+/* OLAP, Data Mining page css start */
+.Features_OLAP_div {
+  justify-items: end;
+}
+
+/* Types_OLAP_section */
+#Types_OLAP_section,
+#Steps_create_Breakdown {
+  background-color: #fff;
+}
+
+#Types_OLAP_section .Objectives_div_role,
+#Steps_create_Breakdown .Objectives_div_role {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+#Types_OLAP_section .Objectives_div_role .key_balance,
+#Steps_create_Breakdown .Objectives_div_role .key_balance {
+  width: fit-content;
+  height: 100%;
+  align-items: start;
+}
+
+#Types_OLAP_section .Objectives_div_role .sub_Objectives_div_role {
+  border: none;
+  min-height: 471px;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+#Types_OLAP_section .Objectives_div_role .sub_Objectives_div_role p,
+#Steps_create_Breakdown .Objectives_div_role .sub_Objectives_div_role p {
+  font-size: 16px;
+}
+
+#Types_OLAP_section .Objectives_div_role .sub_Objectives_div_role .define_purpose {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.MOLAP_div {
+  background: #677990;
+}
+
+.ROLAP_div {
+  background-color: #2624a5;
+}
+
+.HOLAP_div {
+  background-color: #4d156f;
+}
+
+#Types_OLAP_section .role_of .importance h1 {
+  font-weight: 700;
+}
+
+/*  */
+
+.Uncovering_Knowledge_section {
+  background-color: #2f4956 !important;
+  min-height: 580px;
+  background: url("../images/six_Sigma.svg");
+  background-blend-mode: initial;
+  background-repeat: no-repeat;
+  background-size: 32%;
+  background-position: bottom left;
+}
+
+#Key_Techniques_Data_section {
+  background-color: #fff;
+}
+
+.Defining_Data_section .role_of {
+  justify-items: end;
+}
+
+.Emerging_Trends_section .contaiorX .sub_Components_section p {
+  font-size: 20px;
+}
+
+.ay-Understanding {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+#DMAIC_Methodology_section {
+  background-color: #051920;
+}
+
+#DMAIC_Methodology_section .Objectives_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+#DMAIC_Methodology_section .Objectives_div .sub_Objectives_div {
+  width: 31%;
+  min-height: 340px;
+}
+
+#DMAIC_Methodology_section .Objectives_div .sub_Objectives_div p {
+  font-size: 20px;
+}
+
+#Define_color {
+  background-color: #ffca38;
+}
+
+#Measure_color {
+  background-color: #85fe7b;
+}
+
+#Analyse_color {
+  background-color: #d4c5ff;
+}
+
+#Enhance_color {
+  background-color: #f990b4;
+}
+
+.Applications_ss_section .container .data_collect .licenses {
+  min-width: 195px;
+  min-height: 195px;
+}
+
+.Challenges_future_section {
+  background-color: #fff;
+}
+
+.Challenges_future_section .sub_Objectives_div {
+  border-radius: 20px;
+  padding: 30px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Cultural_div {
+  border: 1px solid #ffbb00;
+  border-bottom: 5px solid #ffbb00;
+}
+
+.Integration_tech_div {
+  border: 1px solid #f33558;
+  border-bottom: 5px solid #f33558;
+}
+
+.Agile_Six_div {
+  border: 1px solid #c2acff;
+  border-bottom: 5px solid #c2acff;
+}
+
+.Combining_Sigma_section {
+  padding: 0px;
+  background-color: #220c4d;
+  position: relative;
+
+}
+
+.Combining_Sigma_section .essence {
+  background-color: #220c4d;
+  border-radius: 0px;
+  padding: 100px 0 0 210px;
+}
+
+.Combining_Sigma_section .essence_of {
+  padding: 100px 0;
+  position: relative;
+}
+
+.Combining_Sigma_section .essence_of h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 65px;
+  padding-bottom: 25px;
+  width: fit-content;
+}
+
+.Combining_Sigma_section .essence_img {
+  max-width: fit-content;
+  margin-bottom: 0;
+  margin-left: 0;
+  position: relative;
+  right: -8%;
+  bottom: 0;
+  transform: translate(9%, 1.5%);
+}
+
+.Major_Synergies_section {
+  background-color: #fff;
+  color: #000;
+}
+
+.Major_Synergies_section .Example_UL p {
+  color: #000;
+  padding-top: 0px;
+}
+
+.Example-Study,
+.Example-Study .essence {
+  background: #7741BB;
+}
+
+.Example-Study .essence {
+  padding: 100px 210px 0 0;
+}
+
+.Example-Study .essence_img {
+  position: relative;
+  margin-bottom: -23px;
+  left: -57px;
+}
+
+.Combining_Sigma {
+  background-color: #220c4d;
+}
+
+/* OLAP, Data Mining css end */
+
+/* Understanding Lean Principles css */
+.principals h1 {
+  width: 100%;
+}
+
+/* Lean Waste in Digital Solutions css */
+.digital_solution {
+  font-size: 50px !important;
+  font-weight: 800;
+  line-height: 60px;
+}
+
+/* Failure Mode and Effect Analysis css */
+#fourth {
+  background-color: #2c1a2e;
+  background-size: 32%;
+  padding-top: 190px;
+  padding-bottom: 130px;
+}
+
+/* Addressing Extra Processing */
+.addressing {
+  background: #64fdcf;
+}
+
+.addressing_extra {
+  width: 100%;
+}
+
+.sample_strategies_addressing {
+  background: #f33558;
+}
+
+/* .decision li{
+  font-size: 15px;
+} */
+
+.superfluous {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.Alignment_div_bottom>ul>li {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+/*  */
+.key_ones {
+  border-radius: 10px;
+  border: 1px solid #fb0;
+}
+
+.key_twos {
+  border-radius: 10px;
+  border: 1px solid #c2acff;
+}
+
+.key_threes {
+  border-radius: 10px;
+  border: 1px solid #b2f0bc;
+}
+
+/* Extra Processing in Digital Solutions css */
+.mistakes {
+  width: 75%;
+  margin-top: -27px;
+}
+
+.extra_process {
+  padding: 75px 0 170px 0;
+}
+
+/* Benefits of Extra Processing Optimization css */
+.benefits {
+  background: #253364 !important;
+}
+
+.optimization {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: -75px;
+}
+
+.better>ul>li {
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.refactoring h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+/* The Impact of Extra Processing css */
+.noteworthy {
+  width: 67%;
+  margin: 0 auto;
+}
+
+.cycle {
+  font-size: 30px !important;
+}
+
+/* Eight Lean Wastes in Six Sigma css */
+.eight_lean {
+  background: #111127;
+}
+
+.effect_top_texts {
+  width: 37%;
+}
+
+/* end */
+
+/* Implementing Six Sigma to Eliminate Extra Processing css  */
+.implementings {
+  padding-top: 100px !important;
+}
+
+.extra_six {
+  width: 80%;
+}
+
+.keycharacteristic {
+  padding: 0 100px 100px 100px;
+}
+
+.keycharacteristic_measurement {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  align-items: center;
+}
+
+.keycharacteristicimg {
+  width: 600px;
+}
+
+.keycharacteristicimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.keycharacteristic_fonts {
+  position: relative;
+}
+
+.implementings .arrow {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 170px;
+}
+
+.implementings .arrow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.keycharacteristic_fonts h1 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60px;
+  text-transform: capitalize;
+}
+
+.keycharacteristic_fonts p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  padding: 45px 0;
+}
+
+.implementings .listsection {
+  border-radius: 10px;
+  border: 10px solid #df4b2d;
+  background: #fff;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+}
+
+.implementings .listicon {
+  border-bottom: 1px solid #d9d9d9;
+  display: flex;
+  gap: 22px;
+  margin-bottom: 20px;
+  padding: 15px 0;
+}
+
+.implementings #listicon {
+  border-bottom: 0;
+}
+
+.implementings .list_icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.implementings .list_paregraph h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.implementings .list_paregraph p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* end */
+
+/* Case Study: Streamlining Data Entry in a CRM System css */
+.case_stydy {
+  position: relative;
+  top: -140px;
+}
+
+.guarantee {
+  background: #ff9be9;
+}
+
+.define {
+  display: flex !important;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.cutting {
+  width: 49%;
+}
+
+.crm_system {
+  width: 84%;
+}
+
+.areas {
+  width: 80%;
+}
+
+/* conclusion */
+.eventually {
+  background: #1be76c !important;
+}
+
+.put {
+  line-height: 27px !important;
+}
+
+/* end */
+
+/* Work Breakdown page css start */
+.Understanding_Work .essence {
+  background-color: #DEFFF7;
+}
+
+.Work_Breakdown_Structures .Benefits_Strategy .Benefits_Strategy_div .align {
+  height: max-content;
+  max-height: fit-content;
+}
+
+.Work_Breakdown_Structures .Benefits_Strategy .Benefits_Strategy_div {
+  gap: 35px;
+}
+
+.Work_Breakdown_Structures .Strategy_img {
+  margin-top: 0 !important;
+}
+
+.Hierarchy_color {
+  background-color: #FFF386;
+}
+
+.Packages_color {
+  background-color: #84FF97;
+}
+
+.Deliverables_color {
+  background-color: #FFB5CF;
+}
+
+.Creating_Effective h1 {
+  width: 70%;
+}
+
+
+/* Steps to create Work Breakdown section */
+.lucidity_border {
+  border: 1px solid #33F2C4;
+  border-bottom: 1px solid #33F2C4;
+}
+
+.Allocation_border {
+  border: 1px solid #DEC13C;
+  border-bottom: 1px solid #DEC13C;
+}
+
+.Planning_border {
+  border: 1px solid #809FA9;
+  border-bottom: 1px solid #809FA9;
+}
+
+.Divide_div {
+  border-right: 1px solid #D9D9D9;
+}
+
+.grid1 {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  grid-auto-rows: 25px;
+}
+
+.Development_color {
+  background: #12DB7B;
+}
+
+.Popularisation_color {
+  background: #C2ACFF;
+}
+
+.Modern_color {
+  background: #FFCFA4;
+}
+
+
+/* Contemporary Project */
+.Contemporary_Project {
+  background: #fff;
+}
+
+.Contemporary_Project .importanceimg {
+  max-width: max-content;
+}
+
+/*  */
+.Examples_section {
+  background-color: #F6F3FF !important;
+}
+
+.Examples_section .better {
+  border-radius: 20px;
+  padding: 40px;
+  height: max-content;
+}
+.Examples_section .Objectives_div .sub_Objectives_div p {
+  font-size: 16px !important;
+}
+
+
+#Healthcare_color {
+  background-color: #EE4B69;
+}
+
+.pb_bottom_a {
+  padding-bottom: 230px;
+  margin-bottom: -153px;
+}
+.pt_top_a{
+  padding: 170px 100px 85px 100px;
+}
+
+.work_arrow{
+  max-width: 35px;
+  max-height: 55px;
+}
+.work_arrow img{
+  width: max-content;
+}
+
+
+.Breakdown_Structure_WBS {
+  background-color: #FFDFA0 !important;
+  background-image: url("../images/work-elips.svg") ;
+  background-blend-mode: initial;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 40%;
+}
+
+.How_Create_div{
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+}
+.How_Create_div p{
+  font-size: 16px;
+}
+
+/* end */
+
+/* Project Charactyer css */
+/* Preparation of a Six Sigma Project Charter css */
+.Overcoming_sections {
+  background: #fff;
+}
+.characters{
+  color: #000 !important;
+}
+
+.seens{
+  padding-bottom: 45px;
+}
+.charts {
+  line-height: 44px;
+  width: 80%;
+  margin: 0 auto;
+}
+.impact{
+  background-color: #f4f0ff !important;
+}
+.happiness{
+  margin: 0;
+  padding: 0;
+}
+.detrimental{
+  padding-bottom: 20px;
+}
+.business_case{
+  gap: 30px;
+}
+.costs h3{
+  padding-right: 0;
+}
+.plan_both{
+  width: 100%;
+  background-color: #C8BFFF;
+}
+.found{
+  font-size: 42px;
+}
+.efforts{
+  width: 85%;
+  margin: 0 auto;
+}
+.pick{
+  margin: 70px 0;
+}
+.possible{
+  padding: 40px 0 0 0;
+}
+.possible h3{
+  font-weight: 600;
+  font-size: 36px !important;
+  line-height: 50px;
+}
+.possible p{
+  font-size: 24px;
+  line-height: 42px;
+}
+.low_img{
+  display: flex;
+  justify-content: flex-end;
+}
+.high{
+  padding-left: 125px;
+}
+.preparations{
+  padding-top: 0;
+}
+#brought{
+  color: #000 !important;
+}
+
+.process_defect{
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  line-height: 27px;
+  padding-top: 20px;
+}
+.once_section{
+  background-color: #6967FF;
+  color: #fff;
+}
+.learning {
+  color: #fff !important;
+  width: 60%;
+}
+.gathers{
+  width: 85%;
+}
+.updates{
+  width: 93%;
+}
+.once_img{
+  width: 150px;
+}
+.once_teams{
+  width: 75%;
+  margin: 0 auto;
+}
+.official_inform{
+    width: 246px;
+    height: 74px;
+}
+.Preparation_div p{ 
+  font-size: 16px;
+  }
 
 /* end */

@@ -2,6 +2,12 @@
 
 /* Responsive
 /*--------------------------------------*/
+@media screen and (min-width: 1700px) and (max-width: 1900px) {
+  .Strategy_Development_img {
+    margin: 27px 0 -264px 0;
+  }
+}
+
 /* XX-Large devices (larger desktops, 1400px and 1699px) */
 @media screen and (min-width: 1400px) and (max-width: 1699px) {
   .content04_div_1_img img {
@@ -36,7 +42,7 @@
   }
 
   .fourth-content {
-    background: url("../images/Six_Sigma.svg");
+    background: url("../images/six_Sigma.svg");
     background-color: #31003e;
     background-blend-mode: initial;
     background-repeat: no-repeat;
@@ -197,18 +203,14 @@
   }
 
   #Lean_Digital_section {
-
     height: 650px;
-
   }
 
   #Lean_Digital_section .banners_lady {
     margin: 27px 0 -224px 0;
-
   }
 
   /* end */
-
 
   /* Multi-voting section start */
   #Examples_Multi_Voting_section .better_div {
@@ -240,16 +242,16 @@
     background-position: center left;
   }
 
-
   /* Lean- Waste in Digital Solution page end */
 
   /* Nominal-Group-Technique  page css start */
-  .applications_six{
+  .applications_six {
     padding: 30px 70px !important;
-}
-.follow{
-  display: flex !important;
-  justify-content: flex-end;
+  }
+
+  .follow {
+    display: flex !important;
+    justify-content: flex-end;
   }
 
   .tech {
@@ -259,7 +261,169 @@
   .sub_Objectives_div h3 {
     padding-right: 39%;
   }
-/* end */
+
+  /* end */
+
+  /* OLAP, Data Mining page css start */
+  .Combining_Sigma_section .essence {
+    padding: 100px 0 0 110px;
+  }
+
+  .Combining_Sigma_section .essence_img {
+    margin-bottom: -42px;
+    right: 9%;
+  }
+
+  .Example-Study .essence {
+    padding: 0px 210px 0 0;
+  }
+
+  .Example-Study .essence_img {
+    position: relative;
+    margin-bottom: -22px;
+    left: -53px;
+  }
+
+  .Effective_Work_section .understanding_table {
+    height: 390px;
+  }
+
+  /* OLAP, Data Mining css end */
+
+  /* Work Breakdown page css start */
+  .Breakdown_Structure_Six {
+    background: url("../images/data_collectio_six_sigma.svg");
+    background-color: rgb(239, 99, 239);
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 69% !important;
+    background-position: center left;
+  }
+
+  /* end */
+
+  #understand_clarity {
+    margin-right: 130px;
+  }
+
+  .preparations {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
+  .charts {
+    width: 100%;
+  }
+
+  .high {
+    padding-left: 105px;
+  }
+
+  .incorporate {
+    width: 94%;
+  }
+
+  .once_teams {
+    width: 85%;
+  }
+
+  .learning {
+    width: 72%;
+  }
+
+  .gathers {
+    width: 90%;
+  }
+
+  .Understanding_Work .essence_of h1 {
+    
+    width: 100%;
+  }
+
+  /*  */
+  .Solution_Extra_div {
+    background: url("../images/data_collectio_six_sigma.svg");
+    background-color: rgb(239, 99, 239);
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 73% !important;
+    background-position: center left;
+  }
+
+  .align {
+    height: max-content;
+    max-height: max-content;
+  }
+
+  .essence_img {
+    margin-bottom: -79px;
+  }
+
+  .principals_img {
+    margin-bottom: -79px;
+  }
+
+  .importancesection {
+    padding: 100px 80px;
+  }
+
+  .addressing_section {
+    max-height: max-content;
+    height: auto;
+  }
+
+  .case_stydy {
+    position: relative;
+    top: -10px;
+  }
+
+  .crm_system {
+    width: 95%;
+  }
+
+  .areas {
+    width: 87%;
+  }
+
+  .contents {
+    margin-top: 50px;
+  }
+
+  .case_stydys {
+    margin-bottom: -57px;
+  }
+
+  .optimization {
+    margin-bottom: 0;
+  }
+
+  .equally {
+    width: 80%;
+  }
+
+  #fourth {
+    background-size: 43%;
+  }
+
+  .implementings .keycharacteristicimg {
+    width: 560px;
+  }
+
+  .benefit_section h3 {
+    padding-right: 0;
+  }
+
+  .waste_in {
+    background-size: 73% !important;
+  }
+
+  .contents {
+    margin-top: 50px;
+  }
+
+  .case_stydys {
+    margin-bottom: -57px;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and 1399px) */
@@ -392,7 +556,7 @@
   }
 
   .fourth-content {
-    background: url("../images/Six_Sigma.svg");
+    background: url("../images/six_Sigma.svg");
     background-color: #31003e;
     background-blend-mode: initial;
     background-repeat: no-repeat;
@@ -896,11 +1060,13 @@
     background-position: bottom left;
   }
 
-  #Reducing_Variation_section .Importance_d {
+  #Reducing_Variation_section .Importance_d,
+  .Uncovering_Knowledge_section .Importance_d {
     padding-top: 50px;
   }
 
-  #Reducing_Variation_section h2 {
+  #Reducing_Variation_section h2,
+  .Uncovering_Knowledge_section h2 {
     font-size: 40px;
   }
 
@@ -998,10 +1164,7 @@
     font-size: 16px;
   }
 
-  .Types_Digital_Solution_section
-    .Implementation_div
-    .sub_Implementation_div
-    .Forming_div_img {
+  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div_img {
     width: max-content;
     height: 30%;
   }
@@ -1009,26 +1172,311 @@
   .problem {
     gap: 35px;
   }
+
   .solve,
   .includes_ngt {
     width: 80%;
   }
+
   .think {
     width: 85%;
   }
- 
+
   .locating {
     font-size: 20px !important;
     line-height: 30px !important;
   }
+
   .goal_set p {
     width: 100%;
   }
-  .technique{
+
+  .technique {
     width: 100%;
   }
 
   /* end */
+
+  /* OLAP, Data Mining page css start */
+  .Understanding_OLAP_section .essence_img {
+    margin-bottom: -102px;
+    margin-left: 19px;
+  }
+
+  #Types_OLAP_section .Objectives_div_role,
+  #Steps_create_Breakdown .Objectives_div_role {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .Emerging_Trends_section .contaiorX .sub_Components_section p {
+    font-size: 18px;
+  }
+
+  #Understanding_Six_Sigma {
+    background: url("../images/data_collectio_six_sigma.svg");
+    background-color: rgb(239, 99, 239);
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 82%;
+    background-position: center left;
+  }
+
+  #DMAIC_Methodology_section .Objectives_div .sub_Objectives_div {
+    width: 30%;
+    min-height: 340px;
+  }
+
+  #DMAIC_Methodology_section .Objectives_div {
+    gap: 30px;
+  }
+
+  #DMAIC_Methodology_section .Objectives_div .sub_Objectives_div h3 {
+    font-size: 26px;
+  }
+
+  #DMAIC_Methodology_section .Objectives_div .sub_Objectives_div p {
+    font-size: 18px;
+  }
+
+  .Applications_ss_section .container .data_collect .licenses {
+    min-width: 180px;
+    min-height: 180px;
+  }
+
+  .Combining_Sigma_section {
+    padding: 0;
+  }
+
+  .Combining_Sigma_section .essence {
+    padding: 80px 0 0 80px;
+  }
+
+  .Combining_Sigma_section .essence_img {
+    margin-bottom: -34px;
+  }
+
+  .Combining_Sigma_section .essence_of h1 {
+    font-size: 42px;
+  }
+
+  .Combining_Sigma_section .essence_img {
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    right: 57px;
+  }
+
+  .Combining_Sigma_section .essence_of {
+    padding: 50px 0;
+    position: relative;
+  }
+
+  .Example-Study .essence {
+    padding: 0px 80px 0 0;
+  }
+
+  .Example-Study .essence_img {
+    position: relative;
+    margin-bottom: -14px;
+    width: 100%;
+    height: 100%;
+    left: -51px;
+  }
+
+  /* OLAP, Data Mining css end */
+
+  /* Work Breakdown page css start */
+  .Every_example h6 {
+    font-size: 20px;
+  }
+
+  .pb_bottom_a {
+    padding-bottom: 190px;
+  }
+
+  .pt_top_a {
+    padding: 170px 100px 85px 100px;
+  }
+  .Understanding_Work .essence_of h1 {
+    
+    width: 100%;
+  }
+
+  /* end */
+
+  /* project charter */
+  #understand_clarity {
+    margin-right: 117px;
+  }
+
+  .project_duties {
+    width: 47%;
+    height: max-content;
+  }
+
+  .charts {
+    width: 100%;
+  }
+
+  .preparations {
+    padding: 0 0 20px 0;
+  }
+
+  .high p {
+    line-height: 35px;
+  }
+
+  .possible h3 {
+    font-size: 32px !important;
+  }
+
+  .incorporate {
+    width: 100%;
+  }
+
+  .principles {
+    padding-bottom: 20px;
+  }
+
+  .once_img {
+    width: 150px;
+  }
+
+  .process_defect {
+    font-size: 16px !important;
+  }
+
+  .once_teams {
+    width: 90%;
+  }
+
+  .gathers {
+    width: 92%;
+  }
+
+  .impact {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .business_case {
+    gap: 40px;
+  }
+
+  .high {
+    padding-left: 84px;
+  }
+
+  .official_inform {
+    width: 304px;
+    height: 70px;
+  }
+
+  .Lean_Six_Sigma {
+    background: url("../images/data_collectio_six_sigma.svg");
+    background-color: rgb(239, 99, 239);
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 96% !important;
+    background-position: center left;
+  }
+
+  /*  */
+
+  /* Extra processing */
+  .principals_img {
+    margin-bottom: -122px;
+  }
+
+  .equally {
+    width: 85%;
+  }
+
+  #fourth {
+    padding-top: 132px;
+    padding-bottom: 116px;
+  }
+
+  .digital_solution {
+    font-size: 40px !important;
+    line-height: 45px;
+  }
+
+  #fourth {
+    background-size: 46%;
+  }
+
+  .addressing_section {
+    max-height: max-content;
+    height: auto;
+  }
+
+  .case_stydy {
+    position: relative;
+    top: -7px;
+  }
+
+  .crm_system {
+    width: 114%;
+  }
+
+  .areas {
+    width: 100%;
+  }
+
+  .cutting {
+    width: 48%;
+  }
+
+  .contents {
+    margin-top: 30px;
+  }
+
+  .case_stydys {
+    margin-bottom: -37px;
+  }
+
+  .implementings .keycharacteristic_fonts h1 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .implementings .keycharacteristic_fonts p {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .implementings .keycharacteristicimg {
+    width: 500px;
+  }
+
+  .implementings.keycharacteristic_measurement {
+    gap: 30px;
+  }
+
+  .implementings .arrow {
+    width: 125px;
+    top: 100px;
+  }
+
+  .optimization {
+    margin-bottom: -50px;
+  }
+
+  .mistakes {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .Solution_Extra_div {
+    background: url("../images/data_collectio_six_sigma.svg");
+    background-color: rgb(239, 99, 239);
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 103% !important;
+    background-position: center left;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1158,7 +1606,8 @@
     background-position: bottom left;
   }
 
-  #Reducing_Variation_section .Importance_d {
+  #Reducing_Variation_section .Importance_d,
+  .Uncovering_Knowledge_section .Importance_d {
     padding-top: 10px;
   }
 
@@ -1205,14 +1654,12 @@
   }
 
   .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div h4 {
-
     text-align: center;
   }
 
   #Solution_Transportation_section .define_purpose {
     text-align: center;
   }
-
 
   .Case_Studies_section .Case-div p {
     width: 100%;
@@ -1244,6 +1691,122 @@
   }
 
   /* Lean- Waste in Digital Solution page end */
+
+  /* OLAP, Data Mining page css start */
+  .Features_OLAP_div {
+    justify-items: center;
+  }
+
+  .Uncovering_Knowledge_section {
+    background-color: #2f4956 !important;
+    min-height: max-content;
+    background: url("../images/six_Sigma.svg");
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: 32%;
+    background-position: bottom left;
+  }
+
+  .Defining_Data_section .role_of {
+    display: flex;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .Defining_Data_section .role_of .orders_one p {
+    text-align: center;
+  }
+
+  .text-start {
+    text-align: center !important;
+  }
+
+  .ay-Understanding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .Applications_ss_section .container .data_collect .licenses {
+    min-width: 150px;
+    min-height: 150px;
+  }
+
+  .Combining_Sigma_section {
+    padding: 0;
+  }
+
+  .Combining_Sigma_section .essence {
+    padding: 0px;
+  }
+
+  .Combining_Sigma_section .essence_of h1 {
+    color: #fff;
+    font-size: 32px;
+    padding-bottom: 15px;
+    width: fit-content;
+  }
+
+  .Combining_Sigma_section .essence_of p {
+    font-size: 16px;
+  }
+
+  .Combining_Sigma_section .essence_of {
+    padding: 0;
+  }
+
+  .Combining_Sigma_section .essence_img {
+    display: none;
+  }
+
+  .Major_Synergies_section .Six-Sigma_div_left {
+    order: 1;
+  }
+
+  .Major_Synergies_section .Six-Sigma_div_right {
+    order: 0;
+  }
+
+  .Major_Synergies_section .Six-Sigma_div_right .Strategy_img {
+    display: block;
+  }
+
+  .Major_Synergies_section .Six-Sigma_div_right .Strategy_img img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+  .goal_measure h6{
+    text-align: center;
+  }
+
+  /* OLAP, Data Mining css end */
+
+  /* Work Breakdown page css start */
+  .Principles_Work_Breakdown .effect_top_texts {
+    width: 100%;
+  }
+
+  .Work_Breakdown_p {
+    text-align: center;
+  }
+
+  .Breakdown_Structure_WBS .effect_top_text h2 {
+    width: 100% !important;
+  }
+
+  .Breakdown_Structure_WBS {
+    background-image: none;
+  }
+
+  .work_arrow,
+  .effect_top_img {
+    display: none;
+  }
+
+ 
+  /* end */
 }
 
 /* Large devices (desktops, 992px and 1199px) */
@@ -1253,7 +1816,7 @@
   }
 
   .Objectives_div {
-    gap: 60px;
+    gap: 40px;
   }
 
   .Objectives_section {
@@ -1276,7 +1839,7 @@
   }
 
   .sub_Objectives_div p {
-    font-size: 13px;
+    font-size: 14px;
     padding-right: 10px;
   }
 
@@ -1422,7 +1985,7 @@
   }
 
   .fourth-content {
-    background: url("../images/Six_Sigma.svg");
+    background: url("../images/six_Sigma.svg");
     background-color: #31003e;
     background-blend-mode: initial;
     background-repeat: no-repeat;
@@ -1473,7 +2036,7 @@
   }
 
   .importancesection {
-    padding: 90px 70px;
+    padding: 50px 70px;
   }
 
   .importance_measurement {
@@ -1642,10 +2205,11 @@
     line-height: 46px;
     margin: 0 auto;
     width: 100%;
+    padding-bottom: 10px;
   }
 
   .methodologies {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 26px;
   }
 
@@ -1717,7 +2281,7 @@
   .Alignment_div {
     width: 100%;
     max-height: 350px;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 30px;
     position: relative;
   }
@@ -1984,7 +2548,7 @@
   }
 
   .fourth-content .c-margin-top {
-    margin-top: 39%;
+    margin-top: 0%;
   }
 
   .Analysis_mb {
@@ -2291,22 +2855,326 @@
   .includes_ngt {
     width: 80%;
   }
+
   .think {
     width: 85%;
   }
+
   .some {
     padding-right: 10% !important;
   }
+
   .locating {
     font-size: 18px !important;
     line-height: 30px !important;
   }
+
   .goal_set p {
     width: 100%;
   }
 
   /* end */
 
+  /* OLAP, Data Mining page css start */
+  #Types_OLAP_section .Objectives_div_role,
+  #Steps_create_Breakdown .Objectives_div_role {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  #Types_OLAP_section .Objectives_div_role .sub_Objectives_div_role .define_purpose {
+    font-size: 20px;
+  }
+
+  .Uncovering_Knowledge_section .c-margin-top {
+    margin-top: 0;
+  }
+
+  .Uncovering_Knowledge_section .Importance_d {
+    padding-top: 10px;
+  }
+
+  .Emerging_Trends_section .contaiorX .sub_Components_section p {
+    font-size: 18px;
+  }
+
+  #DMAIC_Methodology_section .Objectives_div .sub_Objectives_div {
+    width: 47%;
+    min-height: 280px;
+  }
+
+  #DMAIC_Methodology_section .Objectives_div .sub_Objectives_div h3 {
+    font-size: 26px;
+  }
+
+  #DMAIC_Methodology_section .Objectives_div .sub_Objectives_div p {
+    font-size: 18px;
+  }
+
+  #DMAIC_Methodology_section .Objectives_div {
+    gap: 20px;
+  }
+
+  .Applications_ss_section .container .data_collect .licenses {
+    min-width: 160px;
+    min-height: 160px;
+  }
+
+  .Combining_Sigma_section {
+    padding: 0;
+  }
+
+  .Combining_Sigma_section .essence {
+    padding: 40px;
+  }
+
+  .Combining_Sigma_section .essence_of h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 65px;
+    padding-bottom: 25px;
+    width: fit-content;
+  }
+
+  .Combining_Sigma_section .essence_of {
+    padding: 30px 0;
+  }
+
+  /* OLAP, Data Mining css end */
+
+  /* Work Breakdown page css start */
+  .Every_example h6 {
+    font-size: 18px;
+  }
+
+  .pb_bottom_a {
+    padding-bottom: 190px;
+  }
+
+  .pt_top_a {
+    padding: 170px 100px 85px 100px;
+  }
+
+  .Lucidity_div{
+    gap: 30px;
+  }
+
+  /* end */
+
+  /* project charter */
+  #understand_clarity {
+    margin-right: 65px;
+  }
+
+  .project_duties {
+    width: 47%;
+    height: max-content;
+  }
+
+  .charts {
+    font-size: 26px;
+    line-height: 35px;
+  }
+
+  .preparations {
+    padding: 0 0 20px 0;
+  }
+
+  .high p {
+    line-height: 35px;
+  }
+
+  .possible h3 {
+    font-size: 30px !important;
+  }
+
+  .incorporate {
+    width: 100%;
+  }
+
+  .principles {
+    padding-bottom: 20px;
+    font-size: 35px;
+  }
+
+  .once_img {
+    width: 150px;
+  }
+
+  .process_defect {
+    font-size: 16px !important;
+  }
+
+  .once_teams {
+    width: 90%;
+  }
+
+  .gathers {
+    width: 92%;
+  }
+
+  .gathers h3 {
+    font-size: 25px !important;
+    line-height: 35px;
+  }
+
+  .impact {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .business_case {
+    gap: 40px;
+  }
+
+  .high {
+    padding-left: 70px;
+  }
+
+  .incorporate h6 {
+    font-size: 18px;
+  }
+
+  .plan_both {
+    width: 100% !important;
+  }
+
+  .official_inform {
+    width: 454px;
+  }
+
+  .orders_one h6 {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .learning {
+    width: 76%;
+    font-size: 16px;
+  }
+
+  .pick {
+    margin: 30px 0;
+  }
+
+  .Preparation_div p {
+    font-size: 16px;
+  }
+
+  .circumstances h1 {
+    font-size: 37px !important;
+    padding-bottom: 4px;
+  }
+
+  /*  */
+
+  /* extra processing */
+  #fourth {
+    background-size: 47%;
+    padding-top: 74px;
+    padding-bottom: 74px;
+  }
+
+  .waste {
+    margin-top: 0 !important;
+  }
+
+  .digital_solution {
+    font-size: 37px !important;
+    line-height: 46px;
+  }
+
+  .addressing_section {
+    max-height: max-content;
+    height: auto;
+  }
+
+  .Alignment_div_bottom>ul>li {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .better_div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .optimization {
+    margin-bottom: -30px;
+  }
+
+  .cutting {
+    width: 48%;
+  }
+
+  .case_stydy {
+    position: relative;
+    top: -5px;
+  }
+
+  .crm_system {
+    width: 100%;
+  }
+
+  .areas {
+    width: 100%;
+  }
+
+  .content04_div_2 {
+    margin-top: -7px;
+  }
+
+  .case_stydys {
+    padding-bottom: 0 !important;
+  }
+
+  .implementings .keycharacteristic_fonts h1 {
+    font-size: 37px;
+    line-height: 46px;
+  }
+
+  .implementings .keycharacteristic_fonts p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .implementings .arrow {
+    position: absolute;
+    top: 105px;
+    right: 0;
+    width: 106px;
+  }
+
+  .implementings .keycharacteristic_fonts h1 {
+    font-size: 37px;
+    line-height: 46px;
+  }
+
+  .keycharacteristic {
+    padding: 0 60px 100px 60px;
+  }
+
+  .implementings .keycharacteristic_measurement {
+    gap: 23px;
+  }
+
+  .implementings .keycharacteristicimg {
+    width: 400px;
+  }
+
+  .mistakes {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .noteworthy {
+    padding-right: 0 !important;
+  }
+
+  .addressing_section {
+    max-height: max-content;
+    height: auto;
+  }
 }
 
 /* Medium devices (tablets, 768px and 991px) */
@@ -2395,7 +3263,7 @@
   }
 
   .Effect_Analysis_div_1 p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .Forming_div_img {
@@ -2571,7 +3439,7 @@
   .measurementsystem h1 {
     font-size: 37px;
     margin-bottom: 23px;
-    line-height: 30px;
+    line-height: 45px;
   }
 
   .measurementsystem {
@@ -2703,6 +3571,7 @@
 
   #six_measurement {
     display: grid;
+    justify-items: center;
     padding: 40px 60px;
   }
 
@@ -3087,9 +3956,10 @@
   }
 
   .define_purpose {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 27px;
     padding-top: 19px;
+    text-align: center;
   }
 
   .orders_one {
@@ -3257,7 +4127,6 @@
   }
 
   #Type_Waste_section .Effect_bottem_div {
-
     margin-top: 90px;
   }
 
@@ -3288,7 +4157,6 @@
 
   /* Multi-voting section start */
   #Examples_Multi_Voting_section .better {
-
     justify-content: start;
   }
 
@@ -3300,7 +4168,6 @@
     width: 35%;
     height: 100%;
   }
-
 
   #Solution_Transportation_section .sub_Objectives_div_role {
     padding: 30px;
@@ -3315,30 +4182,351 @@
 
   /* Nominal-Group-Technique  section start */
 
-  .goal_set p,.includes_ngt {
+  .goal_set p,
+  .includes_ngt {
     width: 100%;
-}
-.solve,.technique{
-  width: 100%;
-  text-align: center;
-}
-.think{
-  width: 100%;
-  text-align: center;
-  margin-bottom: 35px;
-}
-.locating {
-  font-size: 18px !important;
-  line-height: 30px !important;
-}
-.some{
-  padding-left: 0;
-}
-.applications_six{
-  padding: 50px 30px !important ;
-}
+  }
 
-/* end */
+  .solve,
+  .technique {
+    width: 100%;
+    text-align: center;
+  }
+
+  .think {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .locating {
+    font-size: 18px !important;
+    line-height: 30px !important;
+  }
+
+  .some {
+    padding-left: 0;
+  }
+
+  .applications_six {
+    padding: 50px 30px !important;
+  }
+
+  /* end */
+
+  /* OLAP, Data Mining page css start */
+  #Types_OLAP_section .Objectives_div_role,
+  #Steps_create_Breakdown .Objectives_div_role {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  #Types_OLAP_section .role_of {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+    justify-items: center;
+  }
+
+  #Types_OLAP_section .role_of .importance h1 {
+    font-size: 39px;
+  }
+
+  #Types_OLAP_section .Objectives_div_role .sub_Objectives_div_role {
+    min-height: max-content;
+    border-radius: 10px;
+    padding: 30px;
+    gap: 0px;
+  }
+
+  #Types_OLAP_section .Objectives_div_role .sub_Objectives_div_role .define_purpose {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .Emerging_Trends_section .contaiorX .sub_Components_section p {
+    font-size: 16px;
+  }
+
+  #DMAIC_Methodology_section .Objectives_div .sub_Objectives_div {
+    width: 48%;
+    min-height: 280px;
+  }
+
+  #DMAIC_Methodology_section .Objectives_div .sub_Objectives_div h3 {
+    font-size: 26px;
+  }
+
+  #DMAIC_Methodology_section .Objectives_div .sub_Objectives_div p {
+    font-size: 18px;
+  }
+
+  #DMAIC_Methodology_section .Objectives_div {
+    gap: 20px;
+  }
+
+  /* OLAP, Data Mining css end */
+
+  /* Work Breakdown page css start */
+  .Every_example h6 {
+    font-size: 18px;
+  }
+
+  .pb_bottom_a {
+    padding-bottom: 190px;
+  }
+
+  .pt_top_a {
+    padding: 170px 100px 85px 100px;
+  }
+
+  /* end */
+
+  /* project charter */
+  .project_duties {
+    width: 47%;
+    height: max-content;
+  }
+
+  .charts {
+    font-size: 26px;
+    line-height: 35px;
+  }
+
+  .preparations {
+    padding: 0 0 20px 0;
+  }
+
+  .high p {
+    line-height: 35px;
+  }
+
+  .possible h3 {
+    font-size: 30px !important;
+  }
+
+  .incorporate {
+    width: 100%;
+  }
+
+  .principles {
+    padding-bottom: 20px;
+    font-size: 26px;
+    line-height: 33px;
+  }
+
+  .incorporate h2 {
+    padding-bottom: 20px;
+  }
+
+  .once_img {
+    width: 150px;
+  }
+
+  .process_defect {
+    font-size: 16px !important;
+  }
+
+  .once_teams {
+    width: 90%;
+  }
+
+  .gathers {
+    width: 100%;
+  }
+
+  .gathers h3 {
+    font-size: 25px !important;
+    line-height: 35px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .impact {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .business_case {
+    gap: 40px;
+  }
+
+  .high {
+    padding-left: 11px;
+  }
+
+  .pick {
+    margin: 70px 0;
+    gap: 37px;
+  }
+
+  .incorporate h6 {
+    font-size: 18px;
+  }
+
+  .updates {
+    width: 100%;
+  }
+
+  .possible p {
+    line-height: 34px;
+  }
+
+  .once_img {
+    display: none;
+  }
+
+  .plan_both {
+    width: 100% !important;
+  }
+
+  .official_inform {
+    width: 100%;
+  }
+
+  .orders_one h6 {
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .learning {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .importance h1 {
+    font-size: 37px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  .charts {
+    width: 100%;
+  }
+
+  .principles {
+    padding: 0;
+  }
+
+  .among h1,
+  .among p {
+    text-align: center;
+  }
+
+  .effect_top_texts {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  #importance_conclution h3 {
+    font-weight: 400;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  /*  */
+
+  /*  */
+  .implementings .keycharacteristic_fonts h1 {
+    font-size: 34px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  .implementings .keycharacteristic_fonts p {
+    font-size: 13px;
+    line-height: 27px;
+    padding: 32px 0;
+    text-align: center;
+  }
+
+  .implementings .arrow {
+    display: none;
+  }
+
+  .implementings .keycharacteristic_fonts h1 {
+    font-size: 37px;
+    line-height: 46px;
+  }
+
+  .keycharacteristic_measurement {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .keycharacteristic {
+    padding: 0 60px 100px 60px;
+  }
+
+  .implementings .keycharacteristic_measurement {
+    gap: 23px;
+  }
+
+  .cutting {
+    width: 48%;
+  }
+
+  .case_stydy {
+    position: relative;
+    top: 0;
+  }
+
+  .areas {
+    width: 100%;
+    text-align: center;
+  }
+
+  .crm_system,
+  .extra_six {
+    width: 100%;
+  }
+
+  .effect_top_texts {
+    width: 100%;
+  }
+
+  .effect_top_texts p {
+    text-align: center;
+  }
+
+  .optimization {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #fourth {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .digital_solution {
+    font-size: 37px !important;
+    line-height: 45px;
+  }
+
+  .addressing_section {
+    height: auto;
+  }
+
+  .mistakes {
+    width: 100%;
+  }
+
+  .difines h4 {
+    padding-bottom: 0px;
+  }
+
+  .noteworthy {
+    width: 100%;
+  }
+
+  .ROLAP_div>ul>li,
+  .MOLAP_div>ul>li,
+  .HOLAP_div>ul>li {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
 }
 
 /* Small devices (landscape phones, 576px and 767px) */
@@ -3397,7 +4585,7 @@
   }
 
   .Effect_Analysis_div_1 p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .Forming_div_img {
@@ -3692,7 +4880,7 @@
   #objective_sigmafour p,
   #objective_sigmafive p,
   #objective_sigmasix p {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 22px;
   }
 
@@ -4308,30 +5496,286 @@
 
   /* Nominal-Group-Technique css start */
 
-  .goal_set p,.includes_ngt {
+  .goal_set p,
+  .includes_ngt {
     width: 100%;
-}
-.solve,.technique{
-  width: 100%;
-  text-align: center;
-}
-.think{
-  width: 100%;
-  text-align: center;
-  margin-bottom: 35px;
-}
-.locating {
-  font-size: 18px !important;
-  line-height: 30px !important;
-}
-.some{
-  padding-left: 0;
-}
-.applications_six{
-  padding: 30px !important;
-}
+  }
 
-/* end */
+  .solve,
+  .technique {
+    width: 100%;
+    text-align: center;
+  }
+
+  .think {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .locating {
+    font-size: 18px !important;
+    line-height: 30px !important;
+  }
+
+  .some {
+    padding-left: 0;
+  }
+
+  .applications_six {
+    padding: 30px !important;
+  }
+
+  /* end */
+
+  /* OLAP, Data Mining page css start */
+  .Combining_Sigma_section .essence_of h1 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .Combining_Sigma_section .essence_of p {
+    font-size: 16px;
+  }
+
+  .Combining_Sigma_section .essence_of {
+    padding: 0;
+  }
+
+  /* OLAP, Data Mining css end */
+
+  /* Work Breakdown page css start */
+  .Every_example h6 {
+    font-size: 18px;
+  }
+
+  .pb_bottom_a {
+    padding-bottom: 190px;
+  }
+
+  .pt_top_a {
+    padding: 170px 10px 85px 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(34%, 1fr));
+    grid-auto-rows: 20px;
+    margin-top: 62px;
+  }
+
+  .Analysis_h2 {
+    padding: 20px 0 0 0;
+  }
+
+  .effect_top_img {
+    order: 0 !important;
+  }
+  .Examples_Strategy_section .process_h3 {
+    line-height: 28px !important;
+    text-align: center;
+}
+  /* end */
+
+  /* project charter */
+
+  .charts {
+    line-height: 35px;
+    width: 100%;
+  }
+
+  .champion_data {
+    padding-bottom: 0;
+  }
+
+  .img_tasks {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .possible h3,
+  .possible p {
+    text-align: center !important;
+  }
+
+  #importance_conclution h3 {
+    text-align: center;
+  }
+
+  .process_defect {
+    font-size: 15px !important;
+    line-height: 23px;
+  }
+
+  .once_img {
+    display: none;
+  }
+
+  .once_teams,
+  .gathers {
+    width: 100%;
+  }
+
+  .possible h3 {
+    font-size: 24px !important;
+    line-height: 37px;
+    text-align: center;
+  }
+
+  .gathers {
+    padding-top: 0;
+  }
+
+  .learning {
+    width: 100%;
+  }
+
+  .orders_one {
+    padding-top: 30px;
+  }
+
+  .orders_one h6 {
+    text-align: center;
+  }
+
+  .incorporate {
+    width: 100%;
+  }
+
+  .incorporate h6 {
+    font-size: 17px;
+  }
+
+  .official_inform {
+    margin: 0 auto;
+  }
+
+  .high {
+    padding-left: 0;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .possible p {
+    line-height: 30px;
+  }
+
+  .payoff {
+    padding-top: 45px;
+  }
+
+  #importance_conclution h3 {
+    text-align: center;
+    padding-top: 0;
+    line-height: 1.5;
+  }
+
+  #importance_conclution p {
+    font-size: 14px;
+  }
+
+  .success_project_section .Objectives_div .sub_Objectives_div p {
+    font-size: 14px !important;
+    margin-top: 0 !important;
+  }
+
+  .preparations {
+    padding-top: 0;
+  }
+
+  /*  */
+
+  /* extra processing */
+  .cutting {
+    width: 100%;
+  }
+
+  .case_stydy {
+    position: relative;
+    top: 0;
+  }
+
+  .keycharacteristic_measurement {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .implementings .keycharacteristicimg {
+    width: 400px;
+  }
+
+  .keycharacteristic {
+    padding: 0 30px 100px 30px;
+  }
+
+  .implementings .keycharacteristic_fonts h1 {
+    font-size: 27px;
+    line-height: 34px;
+  }
+
+  .implementings .arrow {
+    display: none;
+  }
+
+  .implementings .keycharacteristic_fonts p {
+    font-size: 17px;
+    line-height: 28px;
+    padding: 30px 0 50px 0;
+  }
+
+  .implementings .content04_div_1_image {
+    display: none;
+  }
+
+  #fourth {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .digital_solution {
+    font-size: 37px !important;
+    line-height: 45px;
+  }
+
+  .importance h1 {
+    text-align: center;
+  }
+
+  .mistakes {
+    width: 100%;
+    text-align: center !important;
+    margin-top: 0;
+  }
+
+  .noteworthy {
+    width: 100%;
+  }
+
+  .optimization {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .effect_top_texts {
+    width: 100%;
+    text-align: center;
+  }
+
+  .crm_system,
+  .areas {
+    width: 100%;
+  }
+
+  .among p {
+    text-align: center;
+  }
+
+  .preparations {
+    padding-top: 0;
+  }
+
+  /* end */
+
 }
 
 @media screen and (max-width: 767px) {
@@ -4431,7 +5875,6 @@
   .measurementsystem h1,
   .measurementsystem p,
   .sub_Objectives_div_1 p,
-
   .fourth-content h2,
   .fourth-content p,
   #importance_conclution h1 {
@@ -4658,7 +6101,6 @@
   }
 
   #Organizations_overlay .subscribe-wrapper {
-
     padding: 50px 15px;
   }
 
@@ -4714,7 +6156,6 @@
   }
 
   .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div h4 {
-
     text-align: center;
   }
 
@@ -4728,7 +6169,6 @@
 
   #Solution_Transportation_section .key_balance {
     width: 100%;
-
   }
 
   #Solution_Transportation_section .define_purpose {
@@ -4753,36 +6193,365 @@
     text-align: center;
     padding-bottom: 40px;
   }
+
   #Solution_Transportation_section .Objectives_div_role .sub_Objectives_div_role p {
     text-align: start;
-}
+  }
 
   /* Lean- Waste in Digital Solution page end */
 
   /* Nominal-Group-Technique css start */
-  .goal_set p,.includes_ngt {
+  .goal_set p,
+  .includes_ngt {
     width: 100%;
-}
-.solve,.technique{
-  width: 100%;
-  text-align: center;
-}
-.think{
-  width: 100%;
-  text-align: center;
-  margin-bottom: 35px;
-}
-.locating {
-  font-size: 18px !important;
-  line-height: 30px !important;
-}
-.some{
-  padding-left: 0;
-}
-.Business_txt{
-  text-align: start !important;
-}
-/* end */
+  }
+
+  .solve,
+  .technique {
+    width: 100%;
+    text-align: center;
+  }
+
+  .think {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .locating {
+    font-size: 18px !important;
+    line-height: 30px !important;
+  }
+
+  .some {
+    padding-left: 0;
+  }
+
+  .Business_txt {
+    text-align: start !important;
+  }
+
+  /* end */
+
+  /* OLAP, Data Mining page css start */
+  #Types_OLAP_section .Objectives_div_role,
+  #Steps_create_Breakdown .Objectives_div_role {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  #Types_OLAP_section .Objectives_div_role .sub_Objectives_div_role,
+  #Steps_create_Breakdown .Objectives_div_role .sub_Objectives_div_role {
+    min-height: max-content;
+    border-radius: 10px;
+    padding: 30px;
+    gap: 0px;
+  }
+
+  #Types_OLAP_section .Objectives_div_role .sub_Objectives_div_role .define_purpose,
+  #Steps_create_Breakdown .Objectives_div_role .sub_Objectives_div_role .define_purpose {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #Types_OLAP_section .role_of {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+    justify-items: center;
+  }
+
+  .Emerging_Trends_section .contaiorX .sub_Components_section p {
+    font-size: 16px;
+  }
+
+  #DMAIC_Methodology_section .Objectives_div .sub_Objectives_div {
+    width: 100%;
+    min-height: fit-content;
+  }
+
+  #DMAIC_Methodology_section .Objectives_div .sub_Objectives_div h3 {
+    font-size: 26px;
+  }
+
+  #DMAIC_Methodology_section .Objectives_div .sub_Objectives_div p {
+    font-size: 18px;
+  }
+
+  #DMAIC_Methodology_section .Objectives_div {
+    gap: 20px;
+  }
+
+  /* OLAP, Data Mining css end */
+
+  /* Work Breakdown page css start */
+  .Work_Breakdown_Structures .Benefits_Strategy .Benefits_Strategy_div,
+  .Work_Breakdown_Structures .banefit {
+    gap: 35px;
+  }
+
+  .Principles_Work_Breakdown .effect_top_texts {
+    width: 100%;
+  }
+
+  .Work_Breakdown_p {
+    text-align: center;
+  }
+
+  .Creating_Effective h1 {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .Examples_section .Objectives_div .sub_Objectives_div p {
+    font-size: 16px;
+    text-align: start;
+  }
+
+  .Examples_section .Objectives_div .sub_Objectives_div p {
+    font-size: 16px;
+  }
+
+  .Breakdown_Structure_WBS {
+    background-image: none;
+
+  }
+
+  .Breakdown_Structure_WBS .effect_top_text h2 {
+    width: 100% !important;
+  }
+
+  .work_arrow {
+    display: none;
+  }
+
+  .effect_top_text {
+    order: 1 !important;
+  }
+
+  .effect_top_img {
+    order: 0 !important;
+  }
+
+  .main_How_Create {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Divide_div {
+    border-right: none;
+  }
+
+  /* end */
+
+  /* project charter */
+  .charts {
+    line-height: 35px;
+    width: 100%;
+  }
+
+  .champion_data {
+    padding-bottom: 0;
+  }
+
+  .img_tasks {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .possible h3,
+  .possible p {
+    text-align: center !important;
+  }
+
+  #importance_conclution h3 {
+    text-align: center;
+  }
+
+  .process_defect {
+    font-size: 15px !important;
+    line-height: 23px;
+  }
+
+  .once_img {
+    display: none;
+  }
+
+  .once_teams,
+  .gathers {
+    width: 100%;
+  }
+
+  .possible h3 {
+    font-size: 24px !important;
+    line-height: 37px;
+    text-align: center;
+  }
+
+  .gathers {
+    padding-top: 0;
+  }
+
+  .learning {
+    width: 100%;
+  }
+
+  .orders_one {
+    padding-top: 30px;
+  }
+
+  .orders_one h6 {
+    text-align: center;
+  }
+
+  .incorporate {
+    width: 100%;
+  }
+
+  .incorporate h6 {
+    font-size: 17px;
+  }
+
+  .official_inform {
+    margin: 0 auto;
+  }
+
+  .high {
+    padding-left: 0;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .possible p {
+    line-height: 30px;
+  }
+
+  .payoff {
+    padding-top: 45px;
+  }
+
+  .champion_data .define_purpose {
+    order: 1 !important;
+    text-align: center;
+  }
+
+  .champion_data .sub_Objectives_imgs {
+    order: 0 !important;
+  }
+
+  .effect_top_texts {
+    width: 100%;
+    text-align: center;
+  }
+
+  .preparations {
+    padding-bottom: 0 !important;
+  }
+
+  .preparations .Objectives_div_role {
+    padding-top: 0 !important;
+  }
+
+  .sex_sigma_object {
+    padding-top: 44px;
+  }
+
+  .champion_data,
+  .impact {
+    padding: 50px 0;
+  }
+
+  /* end */
+
+  /*  */
+  .cutting {
+    width: 100%;
+  }
+
+  .case_stydy {
+    position: relative;
+    top: 0;
+  }
+
+  .keycharacteristic_measurement {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .implementings .keycharacteristicimg {
+    width: 400px;
+  }
+
+  .keycharacteristic {
+    padding: 0 30px 100px 30px;
+  }
+
+  .implementings .keycharacteristic_fonts h1 {
+    font-size: 27px;
+    line-height: 34px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .implementings .arrow {
+    display: none;
+  }
+
+  .implementings .keycharacteristic_fonts p {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .implementings .content04_div_1_image {
+    display: none;
+  }
+
+  #fourth {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .digital_solution {
+    font-size: 37px !important;
+    line-height: 45px;
+  }
+
+  .importance h1 {
+    text-align: center;
+  }
+
+  .mistakes {
+    width: 100%;
+    text-align: center !important;
+    margin-top: 0;
+  }
+
+  .noteworthy {
+    width: 100%;
+  }
+
+  .optimization {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .effect_top_texts {
+    width: 100%;
+    text-align: center;
+  }
+
+  .crm_system,
+  .areas {
+    width: 100%;
+  }
+
+  .champion_data .define_purpose {
+    order: 1 !important;
+  }
+
+  .champion_data .sub_Objectives_imgs {
+    order: 0 !important;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -4869,7 +6638,7 @@
   .content04_div_1_image {
     width: 100%;
     order: 0 !important;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
   }
 
   .Effect_Analysis_div {
@@ -4903,7 +6672,7 @@
   }
 
   .Effect_Analysis_div_1 p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .Implementation_div,
@@ -5127,6 +6896,7 @@
   .importance h3 {
     font-size: 16px;
     line-height: 24px;
+    padding-top: 4px;
   }
 
   #objective_div {
@@ -5241,7 +7011,7 @@
 
   .circumstances p,
   .Matrix_p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     text-align: center;
   }
@@ -5260,12 +7030,12 @@
   }
 
   .different {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
   }
 
   .Components_div p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
   }
 
@@ -5285,7 +7055,7 @@
   }
 
   .methodologies {
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     line-height: 20px;
   }
@@ -5293,7 +7063,7 @@
   .importance p {
     text-align: center;
     padding-top: 10px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
   }
 
@@ -5324,7 +7094,7 @@
   }
 
   .understanding_table {
-    height: 355px;
+    height: max-content;
   }
 
   .Components_image img {
@@ -5488,6 +7258,7 @@
   .Strategic_Alignment_div {
     align-items: center;
     padding: 20px;
+    gap: 0;
   }
 
   .Innovation_img {
@@ -6048,12 +7819,11 @@
     font-size: 22px;
   }
 
-
   #Solution_Transportation_section .sub_Objectives_div_role {
     padding: 20px;
   }
 
-  #Solution_Transportation_section .Objectives_div_role .sub_Objectives_div_role p{
+  #Solution_Transportation_section .Objectives_div_role .sub_Objectives_div_role p {
     text-align: start;
   }
 
@@ -6084,16 +7854,230 @@
 
   .Case_Studies_section .settingimg img {
     width: 140px;
-}
-.applications_six {
-  padding: 25px !important;
-}
-.goal_set h3{
-line-height: 30px;
-}
+  }
 
+  .applications_six {
+    padding: 25px !important;
+  }
+
+  .goal_set h3 {
+    line-height: 30px;
+  }
 
   /* Lean- Waste in Digital Solution page end */
+
+  /* OLAP, Data Mining page css start */
+  .Superfluous_img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .Defining_Data_section .role_of .orders_one p {
+    font-size: 14px;
+  }
+
+  .Defining_Data_section .role_of .plan_analysis {
+    padding-bottom: 10px;
+  }
+
+  .Emerging_Trends_section .contaiorX .sub_Components_section p {
+    font-size: 14px;
+  }
+
+  #DMAIC_Methodology_section .Objectives_div .sub_Objectives_div h3 {
+    font-size: 20px;
+  }
+
+  #DMAIC_Methodology_section .Objectives_div .sub_Objectives_div p {
+    font-size: 14px;
+  }
+
+  .Combining_Sigma_section .essence_of h1 {
+    font-size: 28px;
+    line-height: 42px;
+    padding-bottom: 0;
+  }
+
+  .Combining_Sigma_section .essence_of p {
+    font-size: 16px;
+  }
+
+  .Combining_Sigma_section .essence_of {
+    padding: 0;
+  }
+
+  .Major_Synergies_section .Six-Sigma_div_left {
+    order: 1 !important;
+  }
+
+  .Major_Synergies_section .Six-Sigma_div_left .Six-Sigma-sub_div_left h2 {
+    padding-bottom: 0;
+  }
+
+  .Major_Synergies_section .Six-Sigma_div_right {
+    order: 0 !important;
+  }
+
+  .Challenges_regarding_section .Objectives_div_role {
+    padding-top: 0px;
+  }
+
+  .Challenges_regarding_section .sub_Objectives_div_role p {
+    padding-top: 12px;
+    width: 100%;
+  }
+
+  #Waste_Digital_section .container .Strategic_bottom_div .Strategic_Alignment_div p {
+    padding: 0px !important;
+  }
+
+  .Strategic_Alignment_div p {
+    padding-top: 0;
+  }
+
+  .OLAP_main_section .measurementsystem h6 {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .Applications_ss_section .container .data_collect .licenses {
+    min-width: 120px;
+    min-height: 120px;
+  }
+
+  /* OLAP, Data Mining css end */
+
+  /* Work Breakdown page css start */
+  .Work_Breakdown_Structures .Benefits_Strategy {
+    padding-bottom: 0;
+  }
+
+  .Work_Breakdown_Structures .Benefits_Strategy .Benefits_Strategy_div {
+    gap: 20px;
+  }
+
+  .Work_Breakdown_Structures .banefit {
+    gap: 20px;
+  }
+
+  .Allocate_div,
+  .Divide_main_div {
+    margin-top: 20px;
+  }
+
+  .grid1 {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(51%, 1fr));
+    grid-auto-rows: 31px;
+  }
+
+  .Every_example h6 {
+    font-size: 16px;
+  }
+
+  .pb_bottom_a {
+    padding-bottom: 190px;
+  }
+
+  .pt_top_a {
+    padding: 170px 10px 85px 10px;
+  }
+
+  .How_Create_div h6 {
+    font-size: 18px;
+  }
+
+  .How_Create_div p {
+    font-size: 14px;
+  }
+
+  /* end */
+
+  /* project charter */
+  .img_tasks {
+    display: grid;
+  }
+
+  .img_tasks img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .pick {
+    margin: 42px 0;
+  }
+
+  .once_img {
+    display: none;
+  }
+
+  .ngt_has {
+    margin-top: 0;
+    font-size: 14px !important;
+  }
+
+  .champion_data,
+  .impact {
+    padding: 50px 0;
+  }
+
+  /* end */
+
+  /* extra processing */
+  .implementings .list_icon {
+    margin: 0 auto;
+  }
+
+  .implementings .keycharacteristicimg {
+    width: 282px;
+    margin: 0 auto;
+  }
+
+  .implementings .listicon {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .implementings .list_paregraph h2 {
+    text-align: center;
+  }
+
+  .keycharacteristic {
+    padding: 0 30px 100px 30px;
+  }
+
+  .list_paregraph p {
+    font-size: 13px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .implementings .keycharacteristic_fonts p {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  .digital_solution {
+    font-size: 28px !important;
+    line-height: 35px;
+  }
+
+  .implementings .listsection {
+    padding: 18px;
+  }
+
+  .frame {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  #Types_OLAP_section .Objectives_div_role .sub_Objectives_div_role p,
+  #Steps_create_Breakdown .Objectives_div_role .sub_Objectives_div_role p {
+    font-size: 14px;
+  }
 }
 
 /*--------------------------------------*/
