@@ -77,18 +77,20 @@ a:hover {
   padding: 100px;
 }
 
-/* Measurement Systems Evaluation Section css */
 .Measurementsection {
   padding: 0 100px;
   display: flex;
   align-items: center;
   gap: 140px;
-  background: radial-gradient(54.98% 59.38% at 50% 5.85%,
-      #f94f42 0%,
-      #b92419 100%);
-  margin-top: 70px;
-  height: max-content;
+  background: radial-gradient(
+    54.98% 59.38% at 50% 5.85%,
+    #f94f42 0%,
+    #b92419 100%
+  );
+  margin-top: 100px;
+  height: 650px;
   overflow: hidden;
+  max-height: 650px;
 }
 
 .measurementsystem {
@@ -109,8 +111,9 @@ a:hover {
 }
 
 .bannerlady {
-  max-width: 885px;
-  margin: 27px 0 -118px 0;
+  max-width: 637px;
+  max-height: 650px;
+  margin: 0 0 -100px 0;
   display: block;
 }
 
@@ -365,6 +368,12 @@ a:hover {
   line-height: 30px;
   padding-bottom: 25px;
 }
+.Applications_text h3{
+  line-height: 45px;
+}
+.Applications_text p{
+  font-size: 16px;
+}
 
 .Forming_div p,
 .FMEA_div p {
@@ -445,19 +454,23 @@ a:hover {
 .sub_Effect_bottem_div {
   padding: 50px 35px 70px 70px;
   border-radius: 50px;
-  background: linear-gradient(138deg,
-      #9d4e69 17.88%,
-      rgba(79, 67, 222, 0) 68.36%);
+  background: linear-gradient(
+    138deg,
+    #9d4e69 17.88%,
+    rgba(79, 67, 222, 0) 68.36%
+  );
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
   position: relative;
   z-index: 2;
 }
 
 .sub_Effect_bottem_div_1 {
-  background: linear-gradient(148deg,
-      #255c70 16.21%,
-      rgba(57, 67, 157, 0.45) 43.39%,
-      rgba(79, 67, 222, 0) 76.11%);
+  background: linear-gradient(
+    148deg,
+    #255c70 16.21%,
+    rgba(57, 67, 157, 0.45) 43.39%,
+    rgba(79, 67, 222, 0) 76.11%
+  );
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -677,7 +690,7 @@ a:hover {
   background-color: #31003e;
   background-blend-mode: initial;
   background-repeat: no-repeat;
-  background-size: 38%;
+  background-size: 30%;
   background-position: bottom left;
 }
 
@@ -781,7 +794,7 @@ a:hover {
 
 #objective_sigma {
   border-left: 5px solid #6967ff;
-  padding: 0 0 0 25px;
+  padding: 0 0 0 35px;
 }
 
 #objective_sigmaone {
@@ -870,6 +883,7 @@ a:hover {
 
 .importanceimg {
   max-width: 500px;
+  margin-bottom: -10px;
 }
 
 #importance_conclution h3 {
@@ -905,14 +919,16 @@ a:hover {
 
 .fourth-content h2 {
   color: #fff;
-  font-size: 60px;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60px;
   padding-bottom: 20px;
 }
 
 .fourth-content p {
   color: #fff;
-  font-size: 27px;
-  line-height: 40px;
+  font-size: 16px;
+  line-height: 27px;
 }
 
 /* Implementation css */
@@ -1063,6 +1079,7 @@ a:hover {
 .circumstances h1 {
   font-size: 42px !important;
   padding-bottom: 14px;
+  font-weight: 600 !important;
 }
 
 .to_discover {
@@ -1136,7 +1153,7 @@ a:hover {
 
 .categories {
   color: #fff;
-  padding: 21px 0;
+  padding: 21px 0 0 0;
   font-size: 15px;
 }
 
@@ -1168,9 +1185,11 @@ a:hover {
 
 /* Strategy Development page start */
 .Strategy_Development_section {
-  background: radial-gradient(54.98% 59.38% at 50% 5.85%,
-      #c521c9 0%,
-      #530f73 100%);
+  background: radial-gradient(
+    54.98% 59.38% at 50% 5.85%,
+    #c521c9 0%,
+    #530f73 100%
+  );
   min-height: 700px;
   position: relative;
 }
@@ -1234,9 +1253,9 @@ a:hover {
 
 .Matrix_arrow img {
   width: 100px;
-  height: 100px;
+  height: 75px;
   position: absolute;
-  bottom: 3px;
+  bottom: 35px;
   right: 115px;
 }
 
@@ -1526,9 +1545,11 @@ a:hover {
 
 /* Data Collection Plan Section css */
 .data_collection_plan {
-  background: radial-gradient(54.98% 59.38% at 50% 5.85%,
-      #2fe7bb 0%,
-      #4e0f9e 100%);
+  background: radial-gradient(
+    54.98% 59.38% at 50% 5.85%,
+    #2fe7bb 0%,
+    #4e0f9e 100%
+  );
 }
 
 .crucial {
@@ -1946,9 +1967,11 @@ a:hover {
 
 /* Force Field Section */
 #Force_Field_section {
-  background: radial-gradient(54.98% 59.38% at 50% 5.85%,
-      #ec1a65 0%,
-      #63003b 100%);
+  background: radial-gradient(
+    54.98% 59.38% at 50% 5.85%,
+    #ec1a65 0%,
+    #63003b 100%
+  );
   min-height: 700px;
 }
 
@@ -2162,9 +2185,11 @@ a:hover {
 
 /* Goals-of-Six-Sigma css */
 .Goals_of_six_sigma {
-  background: radial-gradient(54.98% 59.38% at 50% 5.85%,
-      #0cada3 0%,
-      #2713a3 100%);
+  background: radial-gradient(
+    54.98% 59.38% at 50% 5.85%,
+    #0cada3 0%,
+    #2713a3 100%
+  ) !important;
 }
 
 .excellence {
@@ -2193,6 +2218,7 @@ a:hover {
 .essence {
   border-radius: 80px;
   background: #9a32ff;
+  overflow: hidden;
 }
 
 .essence_of h1 {
@@ -2253,8 +2279,8 @@ a:hover {
 .customer_focus h3 {
   font-size: 30px;
   font-weight: 600;
-  line-height: 70px;
-  padding-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 15px;
 }
 
 .customer_focus p {
@@ -2314,7 +2340,7 @@ a:hover {
 }
 
 .better p {
-  font-size: 16px;
+  font-size: 16px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -2435,9 +2461,11 @@ a:hover {
 
 /* Importance of Reducing page css start */
 .Importance_Reducing_section {
-  background: radial-gradient(54.98% 59.38% at 50% 5.85%,
-      #f94f42 0%,
-      #b92419 100%) !important;
+  background: radial-gradient(
+    54.98% 59.38% at 50% 5.85%,
+    #f94f42 0%,
+    #b92419 100%
+  ) !important;
 }
 
 /*  */
@@ -2723,7 +2751,10 @@ a:hover {
   justify-content: space-between;
 }
 
-.Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div_img {
+.Types_Digital_Solution_section
+  .Implementation_div
+  .sub_Implementation_div
+  .Forming_div_img {
   width: max-content;
   height: max-content;
   display: flex;
@@ -2731,7 +2762,11 @@ a:hover {
   justify-content: center;
 }
 
-.Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div_img img {
+.Types_Digital_Solution_section
+  .Implementation_div
+  .sub_Implementation_div
+  .Forming_div_img
+  img {
   width: 100%;
   height: 100%;
 }
@@ -2828,10 +2863,6 @@ a:hover {
   width: 300px;
 }
 
-.Lean_Principles_Digital_section {
-  /* background: #ffe9dd; */
-}
-
 .Lean_Principles_Digital_section .sampling_head,
 .Lean_Principles_Digital_section .Six-Sigma-sub_div_left p {
   width: 80%;
@@ -2913,8 +2944,8 @@ a:hover {
 }
 
 .end_img {
-  display: flex;
-  justify-content: flex-end;
+  display: flex !important;
+  justify-content: flex-end !important;
 }
 
 /* Nominal-Group-Technique page css start */
@@ -3051,7 +3082,10 @@ a:hover {
   font-size: 16px;
 }
 
-#Types_OLAP_section .Objectives_div_role .sub_Objectives_div_role .define_purpose {
+#Types_OLAP_section
+  .Objectives_div_role
+  .sub_Objectives_div_role
+  .define_purpose {
   font-size: 22px;
   font-weight: 700;
   line-height: 27px;
@@ -3139,8 +3173,10 @@ a:hover {
 }
 
 .Applications_ss_section .container .data_collect .licenses {
-  min-width: 195px;
-  min-height: 195px;
+  min-width: 135px;
+  min-height: 135px;
+  width: 135px;
+  height: 135px;
 }
 
 .Challenges_future_section {
@@ -3173,7 +3209,6 @@ a:hover {
   padding: 0px;
   background-color: #220c4d;
   position: relative;
-
 }
 
 .Combining_Sigma_section .essence {
@@ -3218,7 +3253,7 @@ a:hover {
 
 .Example-Study,
 .Example-Study .essence {
-  background: #7741BB;
+  background: #7741bb;
 }
 
 .Example-Study .essence {
@@ -3240,6 +3275,16 @@ a:hover {
 /* Understanding Lean Principles css */
 .principals h1 {
   width: 100%;
+}
+
+.depth {
+  background-color: #ffe7da;
+}
+.olaps {
+  width: 68%;
+}
+.major {
+  justify-content: flex-end;
 }
 
 /* Lean Waste in Digital Solutions css */
@@ -3279,7 +3324,7 @@ a:hover {
   padding-left: 20px;
 }
 
-.Alignment_div_bottom>ul>li {
+.Alignment_div_bottom > ul > li {
   font-size: 15px;
   line-height: 24px;
 }
@@ -3321,7 +3366,7 @@ a:hover {
   margin-bottom: -75px;
 }
 
-.better>ul>li {
+.better > ul > li {
   font-size: 16px;
   line-height: 27px;
 }
@@ -3494,7 +3539,7 @@ a:hover {
 
 /* Work Breakdown page css start */
 .Understanding_Work .essence {
-  background-color: #DEFFF7;
+  background-color: #defff7;
 }
 
 .Work_Breakdown_Structures .Benefits_Strategy .Benefits_Strategy_div .align {
@@ -3511,40 +3556,39 @@ a:hover {
 }
 
 .Hierarchy_color {
-  background-color: #FFF386;
+  background-color: #fff386;
 }
 
 .Packages_color {
-  background-color: #84FF97;
+  background-color: #84ff97;
 }
 
 .Deliverables_color {
-  background-color: #FFB5CF;
+  background-color: #ffb5cf;
 }
 
 .Creating_Effective h1 {
   width: 70%;
 }
 
-
 /* Steps to create Work Breakdown section */
 .lucidity_border {
-  border: 1px solid #33F2C4;
-  border-bottom: 1px solid #33F2C4;
+  border: 1px solid #33f2c4;
+  border-bottom: 1px solid #33f2c4;
 }
 
 .Allocation_border {
-  border: 1px solid #DEC13C;
-  border-bottom: 1px solid #DEC13C;
+  border: 1px solid #dec13c;
+  border-bottom: 1px solid #dec13c;
 }
 
 .Planning_border {
-  border: 1px solid #809FA9;
-  border-bottom: 1px solid #809FA9;
+  border: 1px solid #809fa9;
+  border-bottom: 1px solid #809fa9;
 }
 
 .Divide_div {
-  border-right: 1px solid #D9D9D9;
+  border-right: 1px solid #d9d9d9;
 }
 
 .grid1 {
@@ -3555,17 +3599,16 @@ a:hover {
 }
 
 .Development_color {
-  background: #12DB7B;
+  background: #12db7b;
 }
 
 .Popularisation_color {
-  background: #C2ACFF;
+  background: #c2acff;
 }
 
 .Modern_color {
-  background: #FFCFA4;
+  background: #ffcfa4;
 }
-
 
 /* Contemporary Project */
 .Contemporary_Project {
@@ -3578,7 +3621,7 @@ a:hover {
 
 /*  */
 .Examples_section {
-  background-color: #F6F3FF !important;
+  background-color: #f6f3ff !important;
 }
 
 .Examples_section .better {
@@ -3590,43 +3633,41 @@ a:hover {
   font-size: 16px !important;
 }
 
-
 #Healthcare_color {
-  background-color: #EE4B69;
+  background-color: #ee4b69;
 }
 
 .pb_bottom_a {
   padding-bottom: 230px;
   margin-bottom: -153px;
 }
-.pt_top_a{
+.pt_top_a {
   padding: 170px 100px 85px 100px;
 }
 
-.work_arrow{
+.work_arrow {
   max-width: 35px;
   max-height: 55px;
 }
-.work_arrow img{
+.work_arrow img {
   width: max-content;
 }
 
-
 .Breakdown_Structure_WBS {
-  background-color: #FFDFA0 !important;
-  background-image: url("../images/work-elips.svg") ;
+  background-color: #ffdfa0 !important;
+  background-image: url("../images/work-elips.svg");
   background-blend-mode: initial;
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 40%;
 }
 
-.How_Create_div{
+.How_Create_div {
   background-color: #fff;
   border-radius: 20px;
   padding: 40px;
 }
-.How_Create_div p{
+.How_Create_div p {
   font-size: 16px;
 }
 
@@ -3637,11 +3678,11 @@ a:hover {
 .Overcoming_sections {
   background: #fff;
 }
-.characters{
+.characters {
   color: #000 !important;
 }
 
-.seens{
+.seens {
   padding-bottom: 45px;
 }
 .charts {
@@ -3649,95 +3690,321 @@ a:hover {
   width: 80%;
   margin: 0 auto;
 }
-.impact{
+.impact {
   background-color: #f4f0ff !important;
 }
-.happiness{
+.happiness {
   margin: 0;
   padding: 0;
 }
-.detrimental{
+.detrimental {
   padding-bottom: 20px;
 }
-.business_case{
+.business_case {
   gap: 30px;
 }
-.costs h3{
+.costs h3 {
   padding-right: 0;
 }
-.plan_both{
+.plan_both {
   width: 100%;
-  background-color: #C8BFFF;
+  background-color: #c8bfff;
 }
-.found{
+.found {
   font-size: 42px;
 }
-.efforts{
+.efforts {
   width: 85%;
   margin: 0 auto;
 }
-.pick{
+.pick {
   margin: 70px 0;
 }
-.possible{
+.possible {
   padding: 40px 0 0 0;
 }
-.possible h3{
+.possible h3 {
   font-weight: 600;
   font-size: 36px !important;
   line-height: 50px;
 }
-.possible p{
+.possible p {
   font-size: 24px;
   line-height: 42px;
 }
-.low_img{
+.low_img {
   display: flex;
   justify-content: flex-end;
 }
-.high{
+.high {
   padding-left: 125px;
 }
-.preparations{
+.preparations {
   padding-top: 0;
 }
-#brought{
+#brought {
   color: #000 !important;
 }
 
-.process_defect{
+.process_defect {
   font-size: 20px !important;
   font-weight: 700 !important;
   line-height: 27px;
   padding-top: 20px;
 }
-.once_section{
-  background-color: #6967FF;
+.once_section {
+  background-color: #6967ff;
   color: #fff;
 }
 .learning {
   color: #fff !important;
   width: 60%;
 }
-.gathers{
+.gathers {
   width: 85%;
 }
-.updates{
+.updates {
   width: 93%;
 }
-.once_img{
+.once_img {
   width: 150px;
 }
-.once_teams{
+.once_teams {
   width: 75%;
   margin: 0 auto;
 }
-.official_inform{
-    width: 246px;
-    height: 74px;
+.official_inform {
+  width: 246px;
+  height: 74px;
 }
-.Preparation_div p{ 
+.Preparation_div p {
   font-size: 16px;
-  }
+}
+
+.devlop_best {
+  width: 73%;
+}
+
+.gathers h3 {
+  font-weight: 500;
+}
+.orders_oneh6 {
+  margin-bottom: 0;
+}
+.technologys {
+  margin-bottom: 30px;
+}
+.pracimg {
+  justify-content: start;
+}
+.advantagesone {
+  background-color: #c8bfff;
+}
+.smaller h1 {
+  width: 448px;
+}
+.obtain {
+  width: 80%;
+  margin: 0 auto;
+}
+.breaks {
+  width: 78%;
+}
+.application_head {
+  width: 90%;
+}
+.being {
+  background-color: #fddb8d;
+}
+.multi_voting_section {
+  background: url("../images/multi_v.svg");
+  background-color: rgb(239, 99, 239);
+  background-blend-mode: initial;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 72px 0;
+}
+.concepts {
+  background-color: #33f2e7 !important;
+}
+.component_one {
+  width: 83%;
+  font-weight: 800;
+  font-weight: 50px !important;
+}
+.pvr {
+  background-color: #fff6ff;
+}
+.offers_one {
+  padding-bottom: 20px;
+}
+#fails_section {
+  background-color: #ffde05 !important;
+}
+.training_section {
+  margin-left: 185px;
+}
+.training_section_one {
+  margin-right: 212px;
+}
+.product_section {
+  margin-bottom: -10px;
+}
+.right_appliaction {
+  top: 18%;
+}
 
 /* end */
+
+/* banner */
+
+.hero_section_a {
+  background: radial-gradient(
+    54.98% 59.38% at 50% 5.85%,
+    #f94f42 0%,
+    #b92419 100%
+  );
+  max-height: 650px;
+  /* height: 650px; */
+  margin-top: 100px;
+  padding: 0 100px;
+}
+.hero_div {
+  /* height: 650px; */
+  min-height: 650px;
+  position: relative;
+}
+.hero_section_a h1 {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.hero_section_a p {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #fff;
+}
+.hero_img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.hero_img img {
+  margin-bottom: -7px;
+  max-width: 630px;
+  max-height: 650px;
+}
+
+.content_div {
+  width: 90%;
+  padding: 20px 0;
+}
+
+#Work_Breakdown {
+  background: radial-gradient(
+    54.98% 59.38% at 50% 5.85%,
+    #ec1a65 0%,
+    #63003b 100%
+  );
+}
+
+.multi_voting_section {
+  background: url("../images/multi_v.svg");
+  background-color: rgb(239, 99, 239);
+  background-blend-mode: initial;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 72px 0;
+}
+.olap_h6 {
+  font-weight: 400;
+}
+
+.multi-voting-section {
+  background: radial-gradient(
+    54.98% 59.38% at 50% 5.85%,
+    #2fe7bb 0%,
+    #4e0f9e 100%
+  );
+}
+#Strategy_Development_section {
+  background: radial-gradient(
+    54.98% 59.38% at 50% 5.85%,
+    #c521c9 0%,
+    #530f73 100%
+  );
+}
+
+#Optimizing_Digital_section {
+  background: url("../images/opt_digital.svg");
+  background-color: rgb(239, 99, 239);
+  background-blend-mode: initial;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center left;
+}
+
+.h_div {
+  margin-left: 240px;
+}
+#sex_sigma_ethical, .preventives{
+  background-color: #F7D6D2 !important;
+}
+.Applications_text{
+  font-size: 40px;
+}
+.analysis_one{
+  background-color: #fff;
+}
+.issues_one {
+  box-shadow: rgb(100 100 111 / 47%) 0px 20px 29px 0px;
+}
+.challane_one{
+  background-color: #F8F6FC;
+}
+
+.Eliminating_div {
+  background-color: #EEE5FF !important;
+}
+.Lean_Principles_Digital_section {
+  background: #FFE9DD;
+}
+
+#Redundancy {
+  background: #85FE7B;
+}
+#difficults{
+  background-color: #FFCA38;
+}
+.multi_voting{
+  font-weight: 600 !important;
+}
+.effectives{
+  font-weight: 700 !important;
+}
+.grate{
+  font-weight: 800 !important;
+}
+.Project_divs{
+  background-color: #9DFD8D;
+}
+.Challenges_c_p{
+  font-size: 20px;
+  line-height: 30px;
+}
+.cutting_lead{
+  font-size: 30px !important;
+}
+.mosteffect{
+  width: 80%;
+}
+.right_div{
+  top: 8%;
+}
+.alignment_p{
+  font-size: 15px;
+  line-height: 24px;
+}

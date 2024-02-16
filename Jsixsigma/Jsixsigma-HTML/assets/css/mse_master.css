@@ -74,7 +74,7 @@ a:hover {
 }
 
 .contaiorX {
-  padding: 100px;
+    padding: 100px;
 }
 
 /* Measurement Systems Evaluation Section css */
@@ -183,7 +183,7 @@ a:hover {
   position: absolute;
   top: 50px;
   right: 0;
-  width: 170px;
+  width: 125px;
 }
 .arrow img {
   width: 100%;
@@ -369,7 +369,9 @@ a:hover {
 .content04_div {
   background: #ffd65c;
 }
-
+.common_images_section {
+  display: none;
+}
 .content04_div_1 {
   display: flex;
   align-items: center;
@@ -403,10 +405,10 @@ a:hover {
 }
 
 .content04_div_1_img img {
-  width: 150px;
-  height: 150px;
+  width: 146px;
+  height: 98px;
   position: absolute;
-  bottom: -64px;
+  bottom: -12px;
   right: 115px;
 }
 
@@ -676,6 +678,10 @@ a:hover {
   padding: 0 0 0 25px;
 }
 #objective_sigmaone {
+  border-left: 5px solid #3abe73;
+  padding: 0 0 0 35px;
+}
+#objective_sigmaten {
   border-left: 5px solid #3abe73;
   padding: 0 0 0 35px;
 }
@@ -1161,7 +1167,8 @@ a:hover {
 #objective_sigmathree h3,
 #objective_sigmafour h3,
 #objective_sigmafive h3,
-#objective_sigmasix h3 {
+#objective_sigmasix h3,
+#objective_sigmaten h3 {
   font-size: 24px;
   font-weight: 600;
   line-height: 30px;
@@ -1174,7 +1181,8 @@ a:hover {
 #objective_sigmathree p,
 #objective_sigmafour p,
 #objective_sigmafive p,
-#objective_sigmasix p {
+#objective_sigmasix p,
+#objective_sigmaten p {
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
@@ -1308,6 +1316,63 @@ a:hover {
   object-fit: cover;
 }
 
+/* banner */
+.hero_section_a {
+  background: radial-gradient(
+    54.98% 59.38% at 50% 5.85%,
+    #f94f42 0%,
+    #b92419 100%
+  );
+  max-height: 650px;
+  /* height: 650px; */
+  margin-top: 100px;
+  padding: 0 100px;
+}
+.hero_div {
+  /* height: 650px; */
+  min-height: 650px;
+  position: relative;
+}
+.hero_section_a h1 {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.hero_section_a p {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #fff;
+}
+.hero_img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.hero_img img {
+  margin-bottom: -7px;
+  max-width: 630px;
+  max-height: 650px;
+}
+
+.content_div {
+  width: 90%;
+  padding: 20px 0;
+}
+
+.olap_h6 {
+  font-weight: 400;
+}
+
+.h_div {
+  margin-left: 240px;
+}
+.role_function{
+  font-size: 50px;
+  font-weight: 600;
+}
 
 /*--------------------------------------*/
 
@@ -1315,6 +1380,9 @@ a:hover {
 /*--------------------------------------*/
 /* XX-Large devices (larger desktops, 1400px and 1699px) */
 @media screen and (min-width: 1400px) and (max-width: 1699px) {
+  .measurementsystem h1 {
+    font-size: 58px;
+  }
   .content04_div_1_img img {
     width: 130px;
     height: 130px;
@@ -1347,8 +1415,8 @@ a:hover {
   }
 
   .fourth-content {
-    background: url('../images/Six_Sigma.svg');
-    background-color: #31003E;
+    background: url("../images/Six_Sigma.svg");
+    background-color: #31003e;
     background-blend-mode: initial;
     background-repeat: no-repeat;
     background-size: 38%;
@@ -1357,7 +1425,7 @@ a:hover {
 
   .content04_div_2 {
     margin-top: -14px;
-}
+  }
 
   .measurementsystem {
     max-width: 600px;
@@ -1375,13 +1443,40 @@ a:hover {
 
   .bannerlady {
     margin: 27px 0 -91px 0;
-}
-.measure p {
+  }
+  .measure p {
     font-size: 23px;
-}
+  }
 
   .Objectives_div_role {
     gap: 26px;
+  }
+
+  /* banner */
+  .hero_div {
+    min-height: 650px;
+    /* height: 650px; */
+  }
+
+  .content_div {
+    width: 90%;
+  }
+
+  .hero_img {
+    position: absolute;
+    bottom: 0;
+    right: 1%;
+  }
+
+  .hero_img_div {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero_img img {
+    margin-bottom: -7px;
+    width: 120%;
+    height: 110%;
   }
 }
 
@@ -1414,16 +1509,28 @@ a:hover {
     /* padding-right: 20px; */
   }
 
-  #objective_sigma h3, #objective_sigmaone h3, #objective_sigmatwo h3, #objective_sigmathree h3, #objective_sigmafour h3, #objective_sigmafive h3, #objective_sigmasix h3 {
+  #objective_sigma h3,
+  #objective_sigmaone h3,
+  #objective_sigmatwo h3,
+  #objective_sigmathree h3,
+  #objective_sigmafour h3,
+  #objective_sigmafive h3,
+  #objective_sigmasix h3 {
     font-size: 20px;
-}
+  }
 
-#objective_sigma p, #objective_sigmaone p, #objective_sigmatwo p, #objective_sigmathree p, #objective_sigmafour p, #objective_sigmafive p, #objective_sigmasix p {
+  #objective_sigma p,
+  #objective_sigmaone p,
+  #objective_sigmatwo p,
+  #objective_sigmathree p,
+  #objective_sigmafour p,
+  #objective_sigmafive p,
+  #objective_sigmasix p {
     font-size: 13px;
-}
-.measure p {
+  }
+  .measure p {
     font-size: 22px;
-}
+  }
 
   .Components_h2 {
     padding: 0 15%;
@@ -1432,25 +1539,25 @@ a:hover {
   .FMEA_h2 {
     font-size: 42px;
     line-height: 50px;
-}
-.Components_div h3 {
+  }
+  .Components_div h3 {
     font-size: 37px;
-}
+  }
 
-.Components_h2 {
+  .Components_h2 {
     margin-bottom: 13px;
-}
+  }
 
   .content04_div_1_img {
     height: 50px;
   }
 
- .content04_div_1_img img {
+  .content04_div_1_img img {
     width: 70px;
     height: 80px;
     bottom: -31px;
     right: 88px;
-}
+  }
 
   .content04_div_2 {
     padding: 30px;
@@ -1494,8 +1601,7 @@ a:hover {
 
   .lack_of h1 {
     font-size: 28px;
-}
-
+  }
 
   .Examples_div {
     margin-top: 70px;
@@ -1526,8 +1632,8 @@ a:hover {
   }
 
   .fourth-content {
-    background: url('../images/Six_Sigma.svg');
-    background-color: #31003E;
+    background: url("../images/Six_Sigma.svg");
+    background-color: #31003e;
     background-blend-mode: initial;
     background-repeat: no-repeat;
     background-size: 48%;
@@ -1542,53 +1648,54 @@ a:hover {
   .evaluation h1 {
     font-size: 42px;
     line-height: 50px;
-}
-#sigma h4 {
+  }
+  #sigma h4 {
     font-size: 40px;
     line-height: 50px;
-}
-.reproducibility h1 {
+  }
+  .reproducibility h1 {
     font-size: 34px;
     line-height: 45px;
-}
-.measure h3 {
+  }
+  .measure h3 {
     font-size: 30px;
-}
-.keycharacteristic_fonts p {
+  }
+  .keycharacteristic_fonts p {
     font-size: 17px;
     line-height: 28px;
-}
-.Components_div p {
+  }
+  .Components_div p {
     font-size: 14px;
     line-height: 25px;
     padding-right: 0;
-}
-.lack_paragraph p {
+  }
+  .lack_paragraph p {
     font-size: 15px;
     line-height: 45px;
-}
-.lack_head h2{
+  }
+  .lack_head h2 {
     font-size: 15px;
-}
+  }
 
-.keycharacteristicimg {
+  .keycharacteristicimg {
     width: 500px;
-}
-.keycharacteristic_measurement {
+  }
+  .keycharacteristic_measurement {
+    display: flex;
+    align-items: start;
     gap: 30px;
-}
-.arrow {
+  }
+  .arrow {
     width: 125px;
-}
-.common_challenges {
+  }
+  .common_challenges {
     grid-template-columns: 35% auto;
-}
-.best_practiceimg {
+  }
+  .best_practiceimg {
     width: 400px;
-}
+  }
 
   /*  */
-
 
   .measurementsystem p {
     font-size: 17px;
@@ -1610,7 +1717,7 @@ a:hover {
     font-size: 42px;
     margin-bottom: 23px;
     line-height: 50px;
-}
+  }
 
   .measurementsystem {
     max-width: 480px;
@@ -1620,14 +1727,14 @@ a:hover {
   .importance h1 {
     font-size: 42px;
     line-height: 50px;
-}
+  }
 
   .importanceimg {
     width: 467px;
-}
-.goalimg {
+  }
+  .goalimg {
     max-width: 130px;
-}
+  }
 
   .importancesection {
     padding: 100px 80px;
@@ -1641,7 +1748,7 @@ a:hover {
   .keycharacteristic_fonts h1 {
     font-size: 42px;
     line-height: 50px;
-}
+  }
 
   .role_of {
     display: grid;
@@ -1675,6 +1782,110 @@ a:hover {
   #importance {
     max-width: 569px;
   }
+
+  /* banner */
+  .hero_section_a {
+    padding: 0 80px;
+  }
+
+  .hero_section_a h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  .hero_section_a p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .hero_img img {
+    /* margin-bottom: -24px; */
+    width: 120%;
+    height: 120%;
+  }
+
+  .content_div {
+    width: 90%;
+    padding: 30px 0;
+  }
+
+  .hero_div {
+    position: relative;
+    min-height: 500px;
+  }
+
+  .hero_img {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+  }
+  .role_function {
+    font-size: 42px;
+    font-weight: 600;
+}
+}
+
+/*  */
+@media screen and (max-width: 991px) {
+  /* banner */
+  .hero_section_a {
+    max-height: max-content;
+    margin-top: 0;
+    padding: 0 50px;
+  }
+
+  .hero_div {
+    display: grid !important;
+    align-content: center;
+    justify-content: center;
+    min-height: max-content;
+    height: max-content;
+    padding: 30px 0 0 0;
+  }
+
+  .hero_txt {
+    order: 1 !important;
+    width: 100% !important;
+  }
+
+  .hero_img {
+    width: 60% !important;
+    order: 0 !important;
+    margin: 0 auto;
+  }
+
+  .hero_img img {
+    margin: 0 auto;
+  }
+
+  .hero_section_a h1 {
+    font-size: 30px;
+    line-height: 40px;
+
+    text-align: center;
+  }
+
+  .hero_section_a p {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .content_div {
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .hero_img {
+    position: relative;
+  }
+
+  .olap_h6 {
+    text-align: center;
+  }
+
+  /* end */
 }
 
 /* Large devices (desktops, 992px and 1199px) */
@@ -1702,12 +1913,12 @@ a:hover {
   .FMEA_h2 {
     font-size: 35px;
     line-height: 46px;
-}
-.common_challenges {
+  }
+  .common_challenges {
     grid-template-columns: 36% auto;
     gap: 36px;
     margin-top: 38px;
-}
+  }
 
   .sub_Objectives_div h3 {
     font-size: 16px;
@@ -1728,19 +1939,19 @@ a:hover {
   }
   #six_measurement {
     padding: 60px 20px 60px 60px;
-}
-#importance {
+  }
+  #importance {
     max-width: 419px;
-}
+  }
 
   .content04_div_2 {
     padding: 25px;
     margin-top: -44px;
-}
+  }
 
   .Effect_Analysis_div_1 {
     padding: 22px;
-}
+  }
 
   .Effect_Analysis_div_1 h4 {
     font-size: 20px;
@@ -1752,36 +1963,38 @@ a:hover {
 
   .lack_of h1 {
     font-size: 27px;
-}
-.sub_Components_section, .sub_Components_section-2 {
+  }
+  .sub_Components_section,
+  .sub_Components_section-2 {
     margin-top: 0;
-}
-.lack_section {
+  }
+  .lack_section {
     gap: 17px;
     padding-bottom: 15px;
-}
-.best_practiceimg {
+  }
+  .best_practiceimg {
     width: 340px;
-}
-.lackimg img {
+  }
+  .lackimg img {
     padding: 14px;
-}
-.evaluation h1 {
+  }
+  .evaluation h1 {
     font-size: 37px;
     line-height: 45px;
-}
-.measure h3 {
+  }
+  .measure h3 {
     font-size: 28px;
-}
-.goalimg {
+  }
+  .goalimg {
     max-width: 105px;
-}
-.measure p {
+  }
+  .measure p {
     font-size: 18px;
-}
-.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+  }
+  .owl-carousel .owl-nav.disabled,
+  .owl-carousel .owl-dots.disabled {
     display: block !important;
-}
+  }
 
   /* Implementation section */
   .Forming_div_img {
@@ -1812,7 +2025,6 @@ a:hover {
   .right_img {
     width: 36%;
   }
-
 
   .Effect_div {
     width: 100px;
@@ -1865,7 +2077,6 @@ a:hover {
     right: -174px;
   }
 
-
   .Examples_div {
     margin-top: 50px;
   }
@@ -1898,15 +2109,13 @@ a:hover {
   }
 
   .fourth-content {
-    background: url('../images/Six_Sigma.svg');
-    background-color: #31003E;
+    background: url("../images/Six_Sigma.svg");
+    background-color: #31003e;
     background-blend-mode: initial;
     background-repeat: no-repeat;
     background-size: 48%;
     background-position: bottom left;
   }
-
-
 
   /*  */
   #importance h1 {
@@ -1917,7 +2126,6 @@ a:hover {
     padding: 0px 70px;
     gap: 40px;
     margin-top: 88px;
-
   }
 
   .importancesection {
@@ -1932,7 +2140,6 @@ a:hover {
   .bannerlady {
     margin: 27px 0 -63px 0;
   }
-
 
   .measurementsystem h1 {
     font-size: 37px;
@@ -1945,8 +2152,6 @@ a:hover {
     line-height: 23px;
   }
 
-
-
   /*  */
   .Measurementsection {
     padding: 0px 70px;
@@ -1966,7 +2171,6 @@ a:hover {
   .bannerlady {
     margin: 27px 0 -63px 0;
   }
-
 
   .measurementsystem h1 {
     font-size: 37px;
@@ -2045,14 +2249,14 @@ a:hover {
   .importance h1 {
     font-size: 42px;
     line-height: 50px;
-}
+  }
 
   .importanceimg {
     width: 354px;
-}
-.goalimg {
+  }
+  .goalimg {
     max-width: 130px;
-}
+  }
 
   .importancesection {
     padding: 100px 80px;
@@ -2066,7 +2270,7 @@ a:hover {
   .keycharacteristic_fonts h1 {
     font-size: 42px;
     line-height: 50px;
-}
+  }
 
   .role_of {
     display: grid;
@@ -2103,41 +2307,41 @@ a:hover {
 
   .importanceimg {
     width: 354px;
-}
+  }
 
-.importance h1 {
+  .importance h1 {
     font-size: 37px;
     line-height: 46px;
-}
+  }
 
- .importanceimg {
+  .importanceimg {
     width: 392px;
-}
-.goalimg {
+  }
+  .goalimg {
     max-width: 130px;
-}
+  }
 
   .importancesection {
     padding: 100px 60px;
-}
-.keycharacteristic_fonts p {
-    font-size: 18px;
+  }
+  .keycharacteristic_fonts p {
+    font-size: 17px;
     line-height: 30px;
-}
+  }
   .importance_measurement {
     padding: 45px 50px;
     gap: 45px;
-}
+  }
 
-.arrow {
+  .arrow {
     top: 68px;
     width: 100px;
-}
+  }
 
   .keycharacteristic_fonts h1 {
     font-size: 37px;
     line-height: 46px;
-}
+  }
 
   .role_of {
     display: grid;
@@ -2149,7 +2353,7 @@ a:hover {
   }
   .keycharacteristic {
     padding: 0 60px 100px 60px;
-}
+  }
 
   .importance p {
     padding-top: 17px;
@@ -2169,33 +2373,74 @@ a:hover {
 
   .bannerlady {
     margin: 27px 0 -64px 0;
-}
+  }
 
-  /* #importance {
-    max-width: 569px;
-  } */
- .keycharacteristicimg {
+  .keycharacteristicimg {
     width: 400px;
-}
-.lack_paragraph p {
+  }
+  .lack_paragraph p {
     font-size: 13px;
     line-height: 36px;
-}
+  }
 
-.lack_head h2{
-font-size: 13px;
-}
-.keycharacteristic_measurement {
+  .lack_head h2 {
+    font-size: 13px;
+  }
+  .keycharacteristic_measurement {
+    display: flex;
+    align-items: start;
     gap: 23px;
-}
-.Components_div h3 {
+  }
+  .Components_div h3 {
     font-size: 30px;
-}
-.Components_div p {
+  }
+  .Components_div p {
     font-size: 13px;
     line-height: 24px;
     padding-right: 0;
+  }
+  .role_function {
+    font-size: 36px;
 }
+  /* banner */
+  .hero_section_a {
+    padding: 0 60px;
+    max-height: max-content;
+    height: max-content;
+  }
+
+  .hero_section_a h1 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .hero_section_a p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .content_div {
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .hero_div {
+    position: relative;
+    /* height: 400px; */
+    min-height: 440px;
+  }
+
+  .hero_img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1050px) {
+  .hero_img img {
+    width: 110%;
+  }
 }
 
 /* Medium devices (tablets, 768px and 991px) */
@@ -2223,7 +2468,7 @@ font-size: 13px;
   }
   .arrow {
     display: none;
-}
+  }
 
   .FMEA_h2 {
     font-size: 30px;
@@ -2246,7 +2491,7 @@ font-size: 13px;
   .Components_div p {
     font-size: 13px;
     padding-right: 10%;
-}
+  }
 
   .Effect_Analysis_div {
     grid-template-columns: repeat(2, 1fr);
@@ -2254,7 +2499,8 @@ font-size: 13px;
   }
   .best_practiceimg {
     width: 400px;
-}
+    display: none;
+  }
 
   .content04_div_1_img {
     height: 20px;
@@ -2262,7 +2508,7 @@ font-size: 13px;
 
   .content04_div_1_img img {
     display: none;
-}
+  }
 
   .content04_div_2 {
     padding: 20px;
@@ -2318,7 +2564,6 @@ font-size: 13px;
     padding-bottom: 20px;
   }
 
-
   .effect_top_text {
     width: 80%;
   }
@@ -2342,7 +2587,6 @@ font-size: 13px;
     gap: 70px;
     margin-top: 50px;
   }
-
 
   .sub_Effect_bottem_div {
     padding: 50px 22px 40px 30px;
@@ -2418,10 +2662,9 @@ font-size: 13px;
     font-size: 28px;
   }
 
-
   .fourth-content {
     background-image: none;
-    background-color: #31003E;
+    background-color: #31003e;
     background-blend-mode: initial;
     background-repeat: no-repeat;
     background-size: 50%;
@@ -2447,7 +2690,7 @@ font-size: 13px;
     gap: 0;
     grid-template-columns: repeat(1, 1fr);
     margin-top: 0;
-}
+  }
 
   .Components_div h3 {
     font-size: 25px;
@@ -2461,11 +2704,11 @@ font-size: 13px;
     font-size: 34px;
     margin-bottom: 23px;
     line-height: 48px;
-}
-.measurementsystem h1 {
+  }
+  .measurementsystem h1 {
     font-size: 34px;
     margin-top: -42px;
-}
+  }
 
   .measurementsystem {
     max-width: 430px;
@@ -2475,7 +2718,6 @@ font-size: 13px;
     font-size: 13px;
     line-height: 24px;
   }
-
 
   .measurementsystem {
     max-width: 100%;
@@ -2500,17 +2742,17 @@ font-size: 13px;
 
   .importancesection {
     padding: 55px 60px;
-}
-.keycharacteristic {
+  }
+  .keycharacteristic {
     padding: 0 60px 100px 60px;
-}
+  }
 
-.common_challenges {
-    grid-template-columns: repeat(1,1fr);
-}
-.best_practice_for {
-    grid-template-columns: repeat(1,1fr);
-}
+  .common_challenges {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .best_practice_for {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
   .role_of {
     display: flex;
@@ -2530,7 +2772,7 @@ font-size: 13px;
 
   .Objectives_div_role {
     gap: 24px;
-}
+  }
 
   .sub_Objectives_div_role h3 {
     font-size: 22px;
@@ -2584,70 +2826,71 @@ font-size: 13px;
     grid-template-columns: repeat(1, 1fr);
     gap: 33px;
   }
-.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+  .owl-carousel .owl-nav.disabled,
+  .owl-carousel .owl-dots.disabled {
     display: block !important;
-}
+  }
 
-.importanceimg {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-}
+  .importanceimg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
 
   .importance h1 {
     font-size: 34px;
     line-height: 45px;
-}
-.keycharacteristic_fonts h1 {
+  }
+  .keycharacteristic_fonts h1 {
     font-size: 34px;
     line-height: 45px;
     text-align: center;
-}
-.FMEA_h2 {
-  font-size: 34px;
-  line-height: 42px;
-  margin-bottom: 15px;
-}
-.lack_of h1 {
+  }
+  .FMEA_h2 {
+    font-size: 34px;
+    line-height: 42px;
+    margin-bottom: 15px;
+  }
+  .lack_of h1 {
     font-size: 33px;
-}
-.evaluation h1 {
+  }
+  .evaluation h1 {
     font-size: 37px;
     line-height: 45px;
-}
-.goalimg {
+  }
+  .goalimg {
     max-width: 95px;
-}
-.content04_div_1 {
-  display: grid;
-}
-.content04_div_1_text {
-  width: 100%;
-}
-.content04_div_1_image {
-  width: 100%;
-}
-.measure h3 {
+  }
+  .content04_div_1 {
+    display: grid;
+  }
+  .content04_div_1_text {
+    width: 100%;
+  }
+  .content04_div_1_image {
+    width: 100%;
+  }
+  .measure h3 {
     font-size: 25px;
-}
-.measure p {
+  }
+  .measure p {
     font-size: 13px;
     line-height: 27px;
-}
-.measures {
+  }
+  .measures {
     padding: 33px;
+  }
+ #conclution_section {
+    margin-bottom: -270px;
 }
-#conclution_section {
-  margin-bottom: -223px;
-}
-.importance p {
+  .importance p {
     font-size: 13px;
     line-height: 24px;
-}
-.arrow {
+  }
+  .arrow {
     width: 130px;
-}
+  }
 
   #six_measurement {
     display: grid;
@@ -2659,12 +2902,12 @@ font-size: 13px;
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
   }
-.keycharacteristic_fonts p {
-    font-size: 13px;
+  .keycharacteristic_fonts p {
+    font-size: 18px;
     line-height: 27px;
-    padding: 32px 0;
+    padding: 17px 0;
     text-align: center;
-}
+  }
   .importanceimg img {
     width: 75%;
     height: 75%;
@@ -2678,12 +2921,48 @@ font-size: 13px;
 
   .keycharacteristic_measurement {
     grid-template-columns: repeat(1, 1fr);
-}
-.Measurementsection {
+  }
+  .Measurementsection {
     max-height: 780px;
+  }
+  .content04_div_1_image {
+    display: none;
+  }
+  .keycharacteristicimg {
+    width: 450px;
+    margin: 0 auto;
+  }
+  #importance_conclution h1,
+  #importance_conclution h3,
+  #importance_conclution p,
+  .importance p,
+  #sigma h1,
+  #importance h1,
+  .importance h3,
+  #sigma h4,
+  .evaluation h1,
+  .importance h1 {
+    text-align: center;
+  }
+  .common_images_section {
+    display: block;
+  }
+  .keys_section {
+    display: none !important;
+  }
+  .keycharacteristic_fonts h1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .best_practice_for {
+    gap: 40px;
+  }
+  .reproducibility {
+    padding: 45px 0 60px 0;
 }
-.content04_div_1_image {
-  display: none;
+.role_function {
+  font-size: 36px;
+  text-align: center;
 }
 }
 
@@ -2695,7 +2974,7 @@ font-size: 13px;
   .content04_div_1 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-}
+  }
 
   .FMEA_h2,
   .Components_div h3 {
@@ -2707,11 +2986,10 @@ font-size: 13px;
     padding-right: 0;
   }
 
-
   .Components_div h3 {
     padding-bottom: 10px;
   }
-  .aided{
+  .aided {
     align-items: start !important;
   }
   /* .content04_div_1{
@@ -2721,7 +2999,6 @@ font-size: 13px;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-
 
   .content04_div_1_img img {
     width: 40px;
@@ -2793,13 +3070,10 @@ font-size: 13px;
     padding-bottom: 20px;
   }
 
-
   .effect_top_text {
     width: 100%;
     text-align: center;
   }
-
-
 
   .Effect_div {
     width: 90px;
@@ -2820,7 +3094,6 @@ font-size: 13px;
     gap: 70px;
     margin-top: 50px;
   }
-
 
   .sub_Effect_bottem_div {
     padding: 50px 22px 40px 30px;
@@ -2896,7 +3169,7 @@ font-size: 13px;
 
   .fourth-content {
     background-image: none;
-    background-color: #31003E;
+    background-color: #31003e;
     background-blend-mode: initial;
     background-repeat: no-repeat;
   }
@@ -2917,12 +3190,12 @@ font-size: 13px;
   .sub_Objectives_div h3 {
     /* padding-right: 20%; */
     text-align: center;
-}
-.sub_Objectives_div p {
+  }
+  .sub_Objectives_div p {
     text-align: center;
     font-size: 13px;
     padding-top: 7px;
-}
+  }
 
   /*  */
   .Measurementsection {
@@ -2970,21 +3243,21 @@ font-size: 13px;
     display: flex;
     margin: 0 auto;
     justify-content: center;
-}
+  }
 
   #importanceimg img {
     width: 75%;
     height: 75%;
   }
 
- .importance h1 {
+  .importance h1 {
     font-size: 27px;
     line-height: 34px;
     text-align: center;
-}
-.importance p {
+  }
+  .importance p {
     text-align: center;
-}
+  }
 
   .role_of {
     grid-template-columns: repeat(1, 1fr);
@@ -3040,10 +3313,16 @@ font-size: 13px;
     gap: 40px;
   }
 
- #objective_sigma h3, #objective_sigmaone h3, #objective_sigmatwo h3, #objective_sigmathree h3, #objective_sigmafour h3, #objective_sigmafive h3, #objective_sigmasix h3 {
+  #objective_sigma h3,
+  #objective_sigmaone h3,
+  #objective_sigmatwo h3,
+  #objective_sigmathree h3,
+  #objective_sigmafour h3,
+  #objective_sigmafive h3,
+  #objective_sigmasix h3 {
     font-size: 17px;
     line-height: 26px;
-}
+  }
 
   #objective_sigma p,
   #objective_sigmaone p,
@@ -3060,7 +3339,6 @@ font-size: 13px;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
-
 
   .FMEA_h2,
   .Components_div h3 {
@@ -3093,11 +3371,11 @@ font-size: 13px;
     margin: 0 0 -53px 0;
   }
 
- .measurementsystem h1 {
+  .measurementsystem h1 {
     font-size: 27px;
     line-height: 34px;
     margin-bottom: 10px;
-}
+  }
 
   .measurementsystem p {
     padding-top: 5px;
@@ -3119,7 +3397,6 @@ font-size: 13px;
 
   .measurementsystem {
     order: 2;
-
   }
 
   .importancesection {
@@ -3173,43 +3450,73 @@ font-size: 13px;
     font-size: 28px;
     line-height: 37px;
   }
-.keycharacteristic_measurement {
+  .keycharacteristic_measurement {
     grid-template-columns: repeat(1, 1fr);
-}
-.common_challenges {
-     grid-template-columns: repeat(1, 1fr);
-}
-.best_practice_for {
+  }
+  .common_challenges {
     grid-template-columns: repeat(1, 1fr);
-}
-.keycharacteristicimg {
+  }
+  .best_practice_for {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .keycharacteristicimg {
     width: 400px;
-}
-.keycharacteristic {
+  }
+  .keycharacteristic {
     padding: 0 30px 100px 30px;
+  }
+  .content04_div_1_image {
+    display: none;
+  }
+  .common_images_section {
+    display: block;
+  }
+  .content04_div_2 {
+    margin-top: -7px;
+  }
+  .importance h1,
+  .importance p {
+    text-align: center !important;
+  }
+  .keys_section {
+    display: none !important;
+  }
+  .keycharacteristic_fonts h1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .best_practice_for {
+    gap: 40px;
+  }
+  .role_function {
+    font-size: 36px;
+    text-align: center;
 }
-.content04_div_1_image {
-  display: none;
-}
+
+  /* banner */
+  .hero_section_a {
+    padding: 0 40px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .contaiorX {
     padding: 30px;
-}
-.measures {
-  padding: 29px;
-}
-.content04_div_1 {
+  }
+  .measures {
+    padding: 29px;
+  }
+  .content04_div_1 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-}
-.arrow img {
-  display: none;
-}
-.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
-  display: block !important;
-}
+  }
+  .arrow img {
+    display: none;
+  }
+  .owl-carousel .owl-nav.disabled,
+  .owl-carousel .owl-dots.disabled {
+    display: block !important;
+  }
 
   .Objectives_div {
     gap: 40px;
@@ -3220,51 +3527,52 @@ font-size: 13px;
     padding: 0 5%;
   }
 
-  .sub_Components_section, .sub_Components_section-2 {
+  .sub_Components_section,
+  .sub_Components_section-2 {
     gap: 30px;
     padding: 14px 0;
     margin-top: 10px;
-}
+  }
 
   .Effect_bottem_div {
     grid-template-columns: repeat(1, 1fr);
-
   }
   .content04_div_1_img img {
     display: none;
-}
+  }
 
-.content04_div_1_image{
+  .content04_div_1_image {
     width: 100%;
     /* margin-top: -166px; */
-}
+  }
   .Effect_top_div {
     max-height: 100%;
     flex-direction: column;
   }
 
- .sub_Components_section, .sub_Components_section-2 {
+  .sub_Components_section,
+  .sub_Components_section-2 {
     max-height: 600px;
-}
+  }
 
-.Components_div p {
+  .Components_div p {
     padding-right: 0;
-}
-.FMEA_h2 {
+  }
+  .FMEA_h2 {
     font-size: 27px;
     line-height: 40px;
-}
-.content04_div_1_text {
-  width: 100%;
-}
-.Components_div h3 {
+  }
+  .content04_div_1_text {
+    width: 100%;
+  }
+  .Components_div h3 {
     font-size: 27px;
     line-height: 40px;
-}
-.Components_div p {
+  }
+  .Components_div p {
     font-size: 13px;
     line-height: 22px;
-}
+  }
   .Effect_h4 {
     text-align: center;
   }
@@ -3307,7 +3615,6 @@ font-size: 13px;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
-  
 
   .Measurementsection {
     gap: 30px;
@@ -3339,192 +3646,227 @@ font-size: 13px;
     align-items: center;
   }
 
-.importance_measurement {
+  .importance_measurement {
     grid-template-columns: repeat(1, 1fr);
-}
-.keycharacteristic_measurement {
+  }
+  .keycharacteristic_measurement {
     grid-template-columns: repeat(1, 1fr);
-}
-.keycharacteristic_measurement {
-    grid-template-columns: repeat(1 ,1fr);
-}
-.keycharacteristic_fonts h1 {
+  }
+  .keycharacteristic_measurement {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .keycharacteristic_fonts h1 {
     font-size: 27px;
     line-height: 34px;
-}
-.arrow {
+    text-align: center;
+  }
+  .arrow {
     width: 100px;
-}
-.keycharacteristic_fonts p {
-    font-size: 17px;
+  }
+  .keycharacteristic_fonts p {
+    font-size: 14px;
     line-height: 28px;
     padding: 30px 0 50px 0;
-}
-.Components_h2 {
+    text-align: center;
+  }
+  .Components_h2 {
     margin-bottom: 13px;
-}
-.reproducibility h1 {
+  }
+  .reproducibility h1 {
     font-size: 25px;
     margin-top: -45px;
     line-height: 35px;
-}
-.goalimg {
+  }
+  .goalimg {
     max-width: 115px;
-}
-.measure h3 {
+  }
+  .measure h3 {
     font-size: 25px;
-}
-.measure p {
-  font-size: 13px;
-  line-height: 27px;
-}
-#importance_conclution p {
-  font-size: 12px;
-  line-height: 27px;
-}
-.owl-nav {
+  }
+  .measure p {
+    font-size: 13px;
+    line-height: 27px;
+  }
+  #importance_conclution p {
+    font-size: 12px;
+    line-height: 27px;
+  }
+  .owl-nav {
     margin-bottom: -54px;
-}
-.importance h3 {
+  }
+  .importance h3 {
     font-size: 18px;
     line-height: 25px;
     text-align: center;
-}
-#conclution_section {
+  }
+  #conclution_section {
     padding-bottom: 270px;
-}
-.best_practiceimg {
+  }
+  .best_practiceimg {
     width: 304px;
     margin: 0 auto;
-}
-.evaluation h1 {
+    display: none;
+  }
+  .evaluation h1 {
     font-size: 27px;
     text-align: center;
     line-height: 40px;
-}
-.importanceimg {
+  }
+  .importanceimg {
     max-width: 400px;
     margin: 0 auto;
-}
-.lack_of h1 {
+  }
+  .lack_of h1 {
     font-size: 23px;
-}
-.sub_Objectives_div {
+  }
+  /* .sub_Objectives_div {
     align-items: center;
-}
-.lack_section {
+} */
+  .lack_section {
     gap: 23px;
-}
-.lackimg img {
+  }
+  .lackimg img {
     width: 82%;
     height: 82%;
     padding: 14px;
     margin-bottom: -17px;
-}
-.lack_paragraph p {
+  }
+  .lack_paragraph p {
     font-size: 16px;
     line-height: 43px;
-}
-.lack_head h2 {
-  font-size: 16px;
-}
-.Components_image {
+  }
+  .lack_head h2 {
+    font-size: 16px;
+  }
+  .Components_image {
     display: flex;
     justify-content: center;
-}
-.sub_Components_section, .sub_Components_section-2 {
-    grid-template-columns: repeat(1,1fr);
-}
-.sub_Components_section-2 {
-    grid-template-columns: repeat(1,1fr);
-}
-.Components_order_1 {
+  }
+  .sub_Components_section,
+  .sub_Components_section-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sub_Components_section-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Components_order_1 {
     order: 1;
-}
-.Components_order_0 {
+  }
+  .Components_order_0 {
     order: 2;
-}
-.common_challenges,.best_practice_for,#objective_div {
-    grid-template-columns: repeat(1,1fr);
-}
-.importancesection {
+  }
+  .common_challenges,
+  .best_practice_for,
+  #objective_div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .importancesection {
     padding: 120px 30px 85px 30px;
-}
-.keycharacteristic {
+  }
+  .keycharacteristic {
     padding: 0 30px 45px 30px;
-}
-.importancesection {
+  }
+  .importancesection {
     padding: 54px 30px 40px 30px;
-}
-.keycharacteristicimg {
-    width: 490px;
-}
+  }
+  .keycharacteristicimg {
+    width: 450px;
+    margin: 0 auto;
+  }
 
-/* .keycharacteristicimg {
+  /* .keycharacteristicimg {
     width: 282px;
 } */
-.arrow {
+  .arrow {
     top: 21px;
-}
-.sub_Objectives_div_role {
+  }
+  .sub_Objectives_div_role {
     width: 100%;
-}
-#conclution {
+  }
+  #conclution {
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
-}
-.Measurementsection {
+  }
+  .Measurementsection {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 0 30px;
-}
-.measurementsystem h1 {
+  }
+  .measurementsystem h1 {
     font-size: 27px;
     margin-top: 23px;
     line-height: 40px;
-}
-.measurementsystem p {
+  }
+  .measurementsystem p {
     font-size: 13px;
     line-height: 22px;
     margin-bottom: 25px;
-}
-.importance_measurement {
+  }
+  .importance_measurement {
     gap: 40px;
     padding: 40px;
-}
-.importance h1 {
+  }
+  .importance h1 {
     font-size: 27px;
     line-height: 40px;
     text-align: center;
-}
-.Components_h2, .Applications_h2 {
+  }
+  .Components_h2,
+  .Applications_h2 {
     font-size: 27px;
-}
-.Effect_Analysis_div {
+  }
+  .Effect_Analysis_div {
     grid-template-columns: repeat(1, 1fr);
     display: grid;
-}
-#six_measurement{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  padding: 29px 40px 70px 40px;
-}
-.sub_Objectives_div p {
+  }
+  #six_measurement {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 29px 40px 70px 40px;
+  }
+  .sub_Objectives_div p {
     font-size: 14px;
-}
-#importance {
+  }
+  #importance {
     order: 2;
-}
-.sub_Objectives_img {
+  }
+  .sub_Objectives_img {
     width: 70px;
     height: 70px;
-}
+  }
 
-.Effect_Analysis_div_1 h4,.Effect_Analysis_div_1 p,.importance p,.sub_Objectives_div h3,.sub_Objectives_div p,#sigma h4  {
+  .Effect_Analysis_div_1 h4,
+  .Effect_Analysis_div_1 p,
+  .importance p,
+  .sub_Objectives_div h3,
+  .sub_Objectives_div p,
+  #sigma h4 {
     text-align: start;
-}
-.content04_div_1_image {
-  display: none;
+  }
+  .content04_div_1_image {
+    display: none;
+  }
+  .common_images_section {
+    display: block;
+  }
+  .common_challenges {
+    gap: 25px;
+  }
+  .keys_section {
+    display: none !important;
+  }
+  .keycharacteristic_fonts h1 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .role_function {
+    text-align: center !important;
+  }
+  .best_practice_for {
+    gap: 40px;
+  }
+  .role_function {
+    font-size: 26px;
 }
 }
 
@@ -3532,65 +3874,69 @@ font-size: 13px;
   .contaiorX {
     padding: 30px;
   }
-  
+
   .listsection {
     padding: 18px;
-}
-.importance h1 {
+  }
+  .importance h1 {
     line-height: 33px;
     font-size: 23px;
-}
+  }
 
-.keycharacteristic_fonts h1,.keycharacteristic_fonts p {
-  text-align: center;
-  font-size: 23px;
-}
-.sub_Objectives_imgs {
-  width: 60px;
-  height: 60px;
-}
-.keycharacteristic_fonts p {
-  font-size: 12px;
-}
-.goalimg {
-  max-width: 96px;
-}
-.listicon {
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-}
-.list_icon{
-  margin: 0 auto;
-}
-.list_paregraph h2 {
-  text-align: center;
-}
-.list_paregraph p{
-  text-align: center;
-  padding-top: 5px;
-}
-.arrow {
+  .keycharacteristic_fonts h1,
+  .keycharacteristic_fonts p {
+    text-align: center;
+    font-size: 23px;
+  }
+  .sub_Objectives_imgs {
+    width: 60px;
+    height: 60px;
+  }
+  .keycharacteristic_fonts p {
+    font-size: 14px;
+  }
+
+  .goalimg {
+    max-width: 96px;
+  }
+  .listicon {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .list_icon {
+    margin: 0 auto;
+  }
+  .list_paregraph h2 {
+    text-align: center;
+  }
+  .list_paregraph p {
+    text-align: center;
+    padding-top: 5px;
+  }
+  .arrow {
     top: 68px;
     width: 70px;
-}
-.sub_Components_section, .sub_Components_section-2 {
+  }
+  .sub_Components_section,
+  .sub_Components_section-2 {
     padding: 0px 0 10px 0;
-}
-.FMEA_h2, .Components_div h3 {
+  }
+  .FMEA_h2,
+  .Components_div h3 {
     font-size: 24px;
-}
-.keycharacteristicimg {
-  width: 282px;
-  margin: 0 auto;
-}
+  }
+  .keycharacteristicimg {
+    width: 282px;
+    margin: 0 auto;
+  }
 
-/* .keycharacteristicimg {
+  /* .keycharacteristicimg {
   width: 400px;
 } */
-.importance_measurement {
+  .importance_measurement {
     gap: 24px;
     padding: 20px;
-}
+  }
   .Objectives_section {
     padding: 30px;
   }
@@ -3598,7 +3944,7 @@ font-size: 13px;
   .importanceimg {
     max-width: 360px;
     margin: 0 auto;
-}
+  }
 
   .Objectives_div {
     gap: 40px;
@@ -3608,39 +3954,40 @@ font-size: 13px;
   .list_paregraph p {
     font-size: 13px;
     line-height: 26px;
-}
+  }
 
-.FMEA_h2, .Components_div h3 {
-  font-size: 23px;
-  line-height: 34px;
-  padding-top: 30px;
-  text-align: center;
-}
-.lack_of h1 {
+  .FMEA_h2,
+  .Components_div h3 {
+    font-size: 23px;
+    line-height: 34px;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .lack_of h1 {
     font-size: 18px;
-}
-.lack_section {
+  }
+  .lack_section {
     gap: 2px;
-}
-.evaluation h1 {
+  }
+  .evaluation h1 {
     font-size: 23px;
     line-height: 40px;
-}
-#sigma h4 {
+  }
+  #sigma h4 {
     font-size: 23px;
     line-height: 35px;
-}
-.sub_Objectives_div_role {
+  }
+  .sub_Objectives_div_role {
     padding: 22px 22px 12px 22px;
-}
-.sub_Objectives_div_role h3 {
+  }
+  .sub_Objectives_div_role h3 {
     font-size: 18px;
-}
+  }
 
-.Components_div p {
-  font-size: 12px;
-  padding-right: 0;
-}
+  .Components_div p {
+    font-size: 12px;
+    padding-right: 0;
+  }
 
   .Components_div h3 {
     padding-bottom: 10px;
@@ -3652,7 +3999,7 @@ font-size: 13px;
   }
   .list_paregraph h2 {
     font-size: 17px;
-}
+  }
 
   .sub_Objectives_img {
     width: 60px;
@@ -3672,7 +4019,7 @@ font-size: 13px;
 
   .measures {
     padding: 27px;
-}
+  }
 
   .sub_Components_section,
   .sub_Components_section-2 {
@@ -3721,20 +4068,21 @@ font-size: 13px;
     bottom: -532px;
     right: 2px;
     display: none;
-}
-.lack_paragraph p {
-  line-height: 36px;
-  font-size: 13px;
-}
-.sub_Objectives_div_role p {
-  font-size: 12px;
-}
-.importance p {
-  font-size: 12px;
-}
+  }
+  .lack_paragraph p {
+    line-height: 36px;
+    font-size: 13px;
+  }
+  .sub_Objectives_div_role p {
+    font-size: 12px;
+  }
+  .importance p {
+    font-size: 12px;
+  }
 
   .content04_div_2 {
     padding: 20px;
+    margin-top: 22px;
   }
 
   .content04_div_1_img {
@@ -3803,11 +4151,8 @@ font-size: 13px;
     padding-bottom: 20px;
   }
 
-
-
   .effect_top_text {
     width: 100%;
-
   }
 
   .Effect_div {
@@ -3824,12 +4169,14 @@ font-size: 13px;
     top: -42px;
     left: 59px;
   }
+  .sub_Objectives_div {
+    align-items: center;
+  }
 
   .Effect_bottem_div {
     gap: 70px;
     margin-top: 50px;
   }
-
 
   .sub_Effect_bottem_div {
     padding: 50px 22px 40px 30px;
@@ -3848,7 +4195,7 @@ font-size: 13px;
     padding: 20px;
     min-height: 100%;
     justify-content: center !important;
-    border-radius: 80px
+    border-radius: 80px;
   }
 
   .Applications_div_2,
@@ -3907,7 +4254,7 @@ font-size: 13px;
 
   .fourth-content {
     background-image: none;
-    background-color: #31003E;
+    background-color: #31003e;
     background-blend-mode: initial;
     background-repeat: no-repeat;
   }
@@ -3998,7 +4345,7 @@ font-size: 13px;
   #sigma h1 {
     font-size: 23px;
     line-height: 35px;
-}
+  }
 
   .Measurementsection {
     padding: 25px 30px;
@@ -4022,49 +4369,85 @@ font-size: 13px;
     gap: 30px;
     padding: 20px 0 10px 0;
   }
-  #objective_sigmaone,#objective_sigmafour,#objective_sigmafive,#objective_sigmathree,#objective_sigmatwo,#objective_sigmasix{
+  #objective_sigmaone,
+  #objective_sigmafour,
+  #objective_sigmafive,
+  #objective_sigmathree,
+  #objective_sigmatwo,
+  #objective_sigmasix {
     padding: 0 0 0 25px;
   }
-  #objective_sigmaone p,#objective_sigmafour p,#objective_sigmafive p,#objective_sigmathree p,#objective_sigmatwo p,#objective_sigmasix p,#objective_sigma p{
+  #objective_sigmaone p,
+  #objective_sigmafour p,
+  #objective_sigmafive p,
+  #objective_sigmathree p,
+  #objective_sigmatwo p,
+  #objective_sigmasix p,
+  #objective_sigma p {
     text-align: start !important;
   }
-  #objective_sigmaone h3,#objective_sigmafour h3,#objective_sigmafive h3,#objective_sigmathree h3,#objective_sigmatwo h3,#objective_sigmasix h3 ,#objective_sigma h3{
+  #objective_sigmaone h3,
+  #objective_sigmafour h3,
+  #objective_sigmafive h3,
+  #objective_sigmathree h3,
+  #objective_sigmatwo h3,
+  #objective_sigmasix h3,
+  #objective_sigma h3 {
     text-align: start !important;
   }
-  .sub_Objectives_div h3 , .sub_Objectives_div p ,#sigma h4 ,#sigma p,.importance p{
+  .sub_Objectives_div h3,
+  .sub_Objectives_div p,
+  #sigma h4,
+  #sigma p,
+  .importance p {
     text-align: center;
   }
-  .aided{
+  .aided {
     align-items: start !important;
   }
-
 
   #six_measurement {
     display: grid;
     padding: 25px 30px;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
-}
-.listsection {
+  }
+  .listsection {
     margin-top: -48px;
-}
+  }
 
- #importance h1 {
+  #importance h1 {
     font-size: 23px;
     line-height: 35px;
-}
-.sex_sigma_object {
+  }
+  .sex_sigma_object {
     padding-top: 50px;
-}
-.content04_div_1_image {
+  }
+  .content04_div_1_image {
     margin-top: 0;
     margin-bottom: -29px;
-}
+  }
   #conclution {
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
+  .common_images_section {
+    display: none;
+  }
+  .lack_common {
+    padding-top: 0;
+  }
+  /* banner */
+  .hero_section_a {
+    padding: 0 20px;
+  }
 
-  
+  .hero_img {
+    width: 80% !important;
+    order: 0 !important;
+    margin: 0 auto;
+  }
+
 }
+
 /*--------------------------------------*/
