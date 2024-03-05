@@ -8,14 +8,11 @@
   }
   .Measurementsection {
     gap: 0;
+  }
 }
-
-}
-
 
 /* XX-Large devices (larger desktops, 1400px and 1699px) */
 @media screen and (min-width: 1400px) and (max-width: 1699px) {
-
   .content04_div_1_img img {
     width: 130px;
     height: 130px;
@@ -73,16 +70,14 @@
   .Measurementsection {
     margin-top: 0;
     gap: 38px;
-}
-.bannerlady {
-  margin: 0px 0 -160px 0;
-}
-
+  }
+  .bannerlady {
+    margin: 0px 0 -160px 0;
+  }
 
   .Objectives_div_role {
     gap: 26px;
   }
-
 
   /* Strategy Development page start */
   .Strategy_Development_img {
@@ -232,7 +227,10 @@
     font-size: 16px;
   }
 
-  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div_img {
+  .Types_Digital_Solution_section
+    .Implementation_div
+    .sub_Implementation_div
+    .Forming_div_img {
     width: 70%;
     height: 40%;
   }
@@ -340,7 +338,6 @@
   }
 
   .Understanding_Work .essence_of h1 {
-    
     width: 100%;
   }
 
@@ -429,91 +426,88 @@
     margin-bottom: -57px;
   }
 
-
-
   /* changes */
 
   .goal_set p {
     width: 100%;
-}
-.Matrix_arrow img {
-  width: 100px;
-  height: 75px;
-  position: absolute;
-  bottom: 35px;
-  right: 115px;
-}
+  }
+  .Matrix_arrow img {
+    width: 100px;
+    height: 75px;
+    position: absolute;
+    bottom: 35px;
+    right: 115px;
+  }
 
-.orders_one h6{
-  margin-bottom: 0;
-}
-.impact {
-  padding: 100px 0 !important;
-}
-.variances_one{
-  padding: 40px 80px 100px 80px;
-}
-.better h3{
-  padding-right: 0;
-}
-.variances_img{
-  margin-bottom: -110px;
-}
-.tableimg{
-  margin-bottom: -112px;
-}
-.right_appliaction{
-  top: 18%;
-}
-.process_one {
-  padding-top: 175px;
-  padding-bottom: 280px;
-}
-.training_section {
-  margin-left: 185px;
-}
-.second-content .c-wrapper .d-image {
-  top: 50%;
-  left: 50%;
-  transform: translate(-88%, -50%);
-}
-#Optimizing_Digital_section {
-  background: url("../images/opt_digital.svg");
-  background-color: rgb(239, 99, 239);
-  background-blend-mode: initial;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center left;
-}
-.right_div {
-  top: 8%;
-}
-/* banner */
-.hero_div {
-  min-height: 650px;
-}
+  .orders_one h6 {
+    margin-bottom: 0;
+  }
+  .impact {
+    padding: 100px 0 !important;
+  }
+  .variances_one {
+    padding: 40px 80px 100px 80px;
+  }
+  .better h3 {
+    padding-right: 0;
+  }
+  .variances_img {
+    margin-bottom: -110px;
+  }
+  .tableimg {
+    margin-bottom: -112px;
+  }
+  .right_appliaction {
+    top: 18%;
+  }
+  .process_one {
+    padding-top: 175px;
+    padding-bottom: 280px;
+  }
+  .training_section {
+    margin-left: 185px;
+  }
+  .second-content .c-wrapper .d-image {
+    top: 50%;
+    left: 50%;
+    transform: translate(-88%, -50%);
+  }
+  #Optimizing_Digital_section {
+    background: url("../images/opt_digital.svg");
+    background-color: rgb(239, 99, 239);
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center left;
+  }
+  .right_div {
+    top: 8%;
+  }
+  /* banner */
+  .hero_div {
+    min-height: 650px;
+  }
 
-.content_div {
-  width: 90%;
-}
+  .content_div {
+    width: 90%;
+  }
 
+  .hero_img {
+    position: absolute;
+    bottom: 0;
+    right: 1%;
+  }
 
-.hero_img {
-  position: absolute;
-  bottom: 0;
-  right: 1%;
-}
+  .hero_img_div {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-.hero_img_div {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.hero_img img {
-  margin-bottom: -7px;
-  width: 120%;
-  height: 110%;
-}
+  .hero_img img {
+    margin-bottom: -7px;
+    width: 120%;
+    height: 110%;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and 1399px) */
@@ -569,9 +563,10 @@
     bottom: 1px;
     right: 18px;
   }
-  .Effect_text span, .sub_Effect_bottem_div h4 {
+  .Effect_text span,
+  .sub_Effect_bottem_div h4 {
     font-size: 26px;
-}
+  }
 
   .circumstances {
     max-width: 496px !important;
@@ -592,7 +587,6 @@
   .Forming_div_img {
     width: 70%;
   }
- 
 
   .Forming_div h4,
   .FMEA_div h4 {
@@ -719,9 +713,9 @@
     gap: 40px;
   }
 
-  .rol_object{
+  .rol_object {
     gap: 35px;
-}
+  }
 
   .sub_Objectives_div_role h3 {
     font-size: 22px;
@@ -742,7 +736,7 @@
   .fourth-content h2 {
     font-size: 45px;
   }
-  
+
   /*Data Collection and Types  Section */
   .understanding {
     margin-right: 70px;
@@ -794,6 +788,9 @@
   .different {
     font-size: 16px;
     padding-top: 10px;
+  }
+  .d_consist {
+    width: 70%;
   }
 
   .Components_div h3 {
@@ -892,6 +889,10 @@
     top: 17%;
   }
 
+  .utility {
+    width: 86%;
+  }
+
   .training {
     margin-left: 188px;
   }
@@ -910,10 +911,22 @@
     font-size: 19px;
   }
 
-  .imporatnce_force {
-    padding-bottom: 283px !important;
-    margin-bottom: -188px;
+
+  .text_50 {
+    font-size: 44px;
+    line-height: 55px;
+    width: 80%;
+    margin: 0 auto;
   }
+  .steps {
+    font-size: 14px;
+  }
+  .text_20 {
+    font-size: 22px;
+  }
+  .Choose_Brainmeasures_section {
+    padding-bottom: 90px;
+}
 
   .Effect_Analysis_div_1 p {
     font-size: 14px;
@@ -1095,7 +1108,7 @@
   .essence_img {
     margin-bottom: -123px;
     margin-left: 15px;
-}
+  }
 
   .futures {
     padding-bottom: 17px;
@@ -1225,7 +1238,10 @@
     font-size: 16px;
   }
 
-  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div_img {
+  .Types_Digital_Solution_section
+    .Implementation_div
+    .sub_Implementation_div
+    .Forming_div_img {
     width: max-content;
     height: 30%;
   }
@@ -1259,7 +1275,10 @@
     font-size: 16px;
   }
 
-  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div_img {
+  .Types_Digital_Solution_section
+    .Implementation_div
+    .sub_Implementation_div
+    .Forming_div_img {
     width: max-content;
     height: 30%;
   }
@@ -1396,7 +1415,6 @@
     padding: 170px 100px 85px 100px;
   }
   .Understanding_Work .essence_of h1 {
-    
     width: 100%;
   }
 
@@ -1575,129 +1593,138 @@
     background-position: center left;
   }
 
-
   /* changes */
   .keycharacteristic_measurement {
     align-items: start;
-}
-.orders_one h6{
-  margin-bottom: 0;
-}
-.impact {
-  padding: 100px 0 !important;
-}
-.Matrix_arrow img {
-  width: 100px;
-  height: 75px;
-  position: absolute;
-  bottom: 35px;
-  right: 16px;
-}
-.devlop_best {
-  width: 82%;
-}
-.workers {
-  width: 30%;
-}
-.variances_img{
-  margin-bottom: -138px;
-}
-.woked{
-  width: 30%;
-}
-.lefts img{
-  bottom: 13px;
-}
-.andthe{
+  }
+  .orders_one h6 {
+    margin-bottom: 0;
+  }
+  .impact {
+    padding: 100px 0 !important;
+  }
+  .Matrix_arrow img {
+    width: 100px;
+    height: 75px;
+    position: absolute;
+    bottom: 35px;
+    right: 16px;
+  }
+  .devlop_best {
+    width: 82%;
+  }
+  .workers {
+    width: 30%;
+  }
+  .variances_img {
+    margin-bottom: -138px;
+  }
+  .woked {
+    width: 30%;
+  }
+  .lefts img {
+    bottom: 13px;
+  }
+  .andthe {
     width: 464px;
-}
-.andone{
-  gap: 0 !important;
-}
-.obtain {
-  width: 100%;
-}
-.tableimg{
-  margin-bottom: -143px !important;
-}
-.demonstrate_p h5{
+  }
+  .andone {
+    gap: 0 !important;
+  }
+  .obtain {
+    width: 100%;
+  }
+  .tableimg {
+    margin-bottom: -143px !important;
+  }
+  .demonstrate_p h5 {
     font-size: 26px;
     line-height: 37px;
-}
-.training_section {
-  margin-left: 179px;
-}
-.method_section{
+  }
+  .training_section {
+    margin-left: 179px;
+  }
+  .method_section {
     background-size: 96% !important;
-}
-.olaps_one{
-  width: 100%;
-}
-#Optimizing_Digital_section {
-  background: url("../images/opt_digital.svg");
-  background-color: rgb(239, 99, 239);
-  background-blend-mode: initial;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center left;
-}
+  }
+  .olaps_one {
+    width: 100%;
+  }
+  #Optimizing_Digital_section {
+    background: url("../images/opt_digital.svg");
+    background-color: rgb(239, 99, 239);
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center left;
+  }
 
-/* banner */
-.hero_section_a {
+  /* banner */
+  .hero_section_a {
+    padding: 0 80px;
+  }
 
-  padding: 0 80px;
-}
+  .hero_section_a h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
 
-.hero_section_a h1 {
-  font-size: 42px;
-  line-height: 52px;
+  .hero_section_a p {
+    font-size: 16px;
+    line-height: 23px;
+  }
 
-}
+  .hero_img img {
+    /* margin-bottom: -24px; */
+    width: 120%;
+    height: 120%;
+  }
 
-.hero_section_a p {
-  font-size: 16px;
-  line-height: 23px;
-}
+  .content_div {
+    width: 90%;
+    padding: 30px 0;
+  }
 
-.hero_img img {
-  /* margin-bottom: -24px; */
-  width: 120%;
-  height: 120%;
-}
+  .hero_div {
+    position: relative;
+    /* height: 500px; */
+    min-height: 500px;
+  }
 
-.content_div {
-  width: 90%;
-  padding: 30px 0;
-}
-
-.hero_div {
-  position: relative;
-  /* height: 500px; */
-  min-height: 500px;
-}
-
-.hero_img {
-  position: absolute;
-  right: 5%;
-  bottom: 0;
-}
-.Challenges_c_p{
-  font-size: 18px;
-  line-height: 28px;
-}
-.Applications_text h3{
-  line-height: 35px;
-}
-.cutting_lead {
-  font-size: 27px !important;
-}
-.right_div {
-  top: 7%;
-}
+  .hero_img {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+  }
+  .Challenges_c_p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .Applications_text h3 {
+    line-height: 35px;
+  }
+  .Applications_text p {
+    line-height: 26px;
+  }
+  .cutting_lead {
+    font-size: 27px !important;
+  }
+  .right_div {
+    top: 7%;
+  }
+  .challane_one .Challenges_h3 {
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
+  .Examples_Strategy_section .effectives {
+    width: 100%;
+  }
+  .Examples_Strategy_section .some {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 991px) {
-
   /*  */
   .Strategy_div {
     grid-template-columns: repeat(1, 1fr);
@@ -1862,15 +1889,25 @@
     align-items: start;
   }
 
-  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div {
+  .Types_Digital_Solution_section
+    .Implementation_div
+    .sub_Implementation_div
+    .Forming_div {
     order: 1 !important;
   }
 
-  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div_img {
+  .Types_Digital_Solution_section
+    .Implementation_div
+    .sub_Implementation_div
+    .Forming_div_img {
     order: 0 !important;
   }
 
-  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div h4 {
+  .Types_Digital_Solution_section
+    .Implementation_div
+    .sub_Implementation_div
+    .Forming_div
+    h4 {
     text-align: center;
   }
 
@@ -1996,7 +2033,7 @@
     height: 70%;
     object-fit: cover;
   }
-  .goal_measure h6{
+  .goal_measure h6 {
     text-align: center;
   }
 
@@ -2086,11 +2123,20 @@
     position: relative;
   }
 
-  .olap_h6{
+  .olap_h6 {
     text-align: center;
   }
- 
+  .d_consist {
+    width: 100%;
+  }
   /* end */
+
+  .Examples_Strategy_section .effectives {
+    width: 100%;
+  }
+  .Examples_Strategy_section .some {
+    width: 100%;
+  }
 }
 
 /* Large devices (desktops, 992px and 1199px) */
@@ -2212,6 +2258,10 @@
 
   .sub_Effect_bottem_div p {
     font-size: 16px;
+  }
+  .challane_one .Challenges_h3 {
+    font-size: 20px !important;
+    line-height: 24px !important;
   }
 
   .Applications_image_2 img {
@@ -2410,7 +2460,7 @@
   .fourth-content h2 {
     font-size: 32px;
     line-height: 45px;
-}
+  }
 
   .fourth-content p {
     font-size: 18px;
@@ -2470,6 +2520,10 @@
   .different {
     font-size: 13px;
     line-height: 27px;
+  }
+
+  .d_consist {
+    width: 70%;
   }
 
   .Components_div h3 {
@@ -2682,6 +2736,10 @@
     top: 14%;
   }
 
+  .utility {
+    width: 86%;
+  }
+
   .training {
     margin-left: 172px;
   }
@@ -2701,10 +2759,22 @@
     font-size: 19px !important;
   }
 
-  .imporatnce_force {
-    padding-bottom: 283px !important;
-    margin-bottom: -188px;
-  }
+
+  .text_50 {
+    font-size: 44px;
+    line-height: 55px;
+    width: 80%;
+    margin: 0 auto;
+}
+.steps {
+  font-size: 14px;
+}
+.text_20 {
+  font-size: 22px;
+}
+.Choose_Brainmeasures_section {
+  padding-bottom: 90px;
+}
 
   .Effect_Analysis_div_1 p {
     font-size: 13px;
@@ -3119,7 +3189,10 @@
     padding: 0;
   }
 
-  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div_img {
+  .Types_Digital_Solution_section
+    .Implementation_div
+    .sub_Implementation_div
+    .Forming_div_img {
     width: max-content;
     height: 20%;
   }
@@ -3168,7 +3241,10 @@
     gap: 30px;
   }
 
-  #Types_OLAP_section .Objectives_div_role .sub_Objectives_div_role .define_purpose {
+  #Types_OLAP_section
+    .Objectives_div_role
+    .sub_Objectives_div_role
+    .define_purpose {
     font-size: 20px;
   }
 
@@ -3244,7 +3320,7 @@
     padding: 170px 100px 85px 100px;
   }
 
-  .Lucidity_div{
+  .Lucidity_div {
     gap: 30px;
   }
 
@@ -3378,7 +3454,7 @@
     height: auto;
   }
 
-  .Alignment_div_bottom>ul>li {
+  .Alignment_div_bottom > ul > li {
     font-size: 14px;
     line-height: 21px;
   }
@@ -3467,101 +3543,105 @@
   /* changes */
   .customer_focus h3 {
     line-height: 37px;
-}
+  }
 
   .keycharacteristic_measurement {
     align-items: start;
-}
-.devlop_best {
-  width: 90%;
-}
-.applications_six {
-  padding: 40px 70px !important;
-}
-.pracimg img{
-  width: 100%;
-  height: 100%;
-}
-#Type_Waste_section .optimisation {
-  height: max-content;
-}
-.obtain {
-  width: 100%;
-}
-.right_line{
-  top: 5%;
-}
-.training_section {
-  margin-left: 165px;
-}
-#Optimizing_Digital_section {
-  background: none;
-  background-color: rgb(239, 99, 239);
-  background-blend-mode: initial;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center left;
-}
-.Challenges_c_p{
-  font-size: 18px;
-  line-height: 28px;
-}
-/* banner */
-.hero_section_a {
-  padding: 0 60px;
-  max-height: max-content;
-  height: max-content;
-}
+  }
+  .devlop_best {
+    width: 90%;
+  }
+  .applications_six {
+    padding: 40px 70px !important;
+  }
+  .pracimg img {
+    width: 100%;
+    height: 100%;
+  }
+  #Type_Waste_section .optimisation {
+    height: max-content;
+  }
+  .obtain {
+    width: 100%;
+  }
+  .right_line {
+    top: 5%;
+  }
+  .training_section {
+    margin-left: 165px;
+  }
+  #Optimizing_Digital_section {
+    background: none;
+    background-color: rgb(239, 99, 239);
+    background-blend-mode: initial;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center left;
+  }
+  .Challenges_c_p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  /* banner */
+  .hero_section_a {
+    padding: 0 60px;
+    max-height: max-content;
+    height: max-content;
+  }
 
-.hero_section_a h1 {
-  font-size: 34px;
-  line-height: 40px;
+  .hero_section_a h1 {
+    font-size: 34px;
+    line-height: 40px;
+  }
 
-}
+  .hero_section_a p {
+    font-size: 15px;
+    line-height: 21px;
+  }
 
-.hero_section_a p {
-  font-size: 15px;
-  line-height: 21px;
-}
+  .content_div {
+    width: 100%;
+    padding: 30px 0;
+  }
 
-.content_div {
-  width: 100%;
-  padding: 30px 0;
-}
+  .hero_div {
+    position: relative;
+    /* height: 400px; */
+    min-height: 440px;
+  }
 
-.hero_div {
-  position: relative;
-  /* height: 400px; */
-  min-height: 440px;
-}
-
-.hero_img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-.right_appliaction{
-  top: 9%;
-}
-.Applications_text h3{
-  line-height: 35px;
-}
-.cutting_lead {
-  font-size: 27px !important;
-}
-.Challenges_c_p {
-  font-size: 18px !important;
-}
-.difinesection{
+  .hero_img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .right_appliaction {
+    top: 9%;
+  }
+  .Applications_text h3 {
+    line-height: 35px;
+  }
+  .cutting_lead {
+    font-size: 27px !important;
+  }
+  .Challenges_c_p {
+    font-size: 18px !important;
+  }
+  .difinesection {
     margin-top: -45px;
-}
+  }
+  .Examples_Strategy_section .effectives {
+    width: 100%;
+  }
+  .Examples_Strategy_section .some {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1050px) {
   .hero_img img {
     width: 110%;
   }
-  
 }
 
 /* Medium devices (tablets, 768px and 991px) */
@@ -4332,10 +4412,22 @@
     height: 290px;
   }
 
-  .imporatnce_force {
-    padding-bottom: 283px !important;
-    margin-bottom: -222px;
-  }
+
+  .text_50 {
+    font-size: 40px;
+    line-height: 52px;
+    width: 100%;
+}
+.steps {
+  font-size: 14px;
+}
+.text_20 {
+  font-size: 20px;
+}
+
+.Choose_Brainmeasures_section {
+  padding-bottom: 90px;
+}
 
   .predata p {
     font-size: 18px;
@@ -4469,13 +4561,13 @@
     font-size: 37px !important;
     line-height: 45px !important;
     margin-bottom: 20px;
-}
-.devlop_best {
-  width: 100%;
-}
-.Matrix_p{
-  text-align: center;
-}
+  }
+  .devlop_best {
+    width: 100%;
+  }
+  .Matrix_p {
+    text-align: center;
+  }
 
   .essences {
     padding-top: 0;
@@ -4559,7 +4651,10 @@
     font-size: 35px;
   }
 
-  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div_img {
+  .Types_Digital_Solution_section
+    .Implementation_div
+    .sub_Implementation_div
+    .Forming_div_img {
     width: 35%;
     height: 100%;
   }
@@ -4633,7 +4728,10 @@
     gap: 0px;
   }
 
-  #Types_OLAP_section .Objectives_div_role .sub_Objectives_div_role .define_purpose {
+  #Types_OLAP_section
+    .Objectives_div_role
+    .sub_Objectives_div_role
+    .define_purpose {
     font-size: 18px;
     line-height: 24px;
     text-align: center;
@@ -4915,9 +5013,9 @@
     width: 100%;
   }
 
-  .ROLAP_div>ul>li,
-  .MOLAP_div>ul>li,
-  .HOLAP_div>ul>li {
+  .ROLAP_div > ul > li,
+  .MOLAP_div > ul > li,
+  .HOLAP_div > ul > li {
     font-size: 14px;
     line-height: 24px;
   }
@@ -4925,65 +5023,69 @@
   /* changes */
   .customer_focus h3 {
     line-height: 37px;
-}
-.keycharacteristicimg {
-  width: 450px;
-  margin: 0 auto;
-}
+  }
+  .keycharacteristicimg {
+    width: 450px;
+    margin: 0 auto;
+  }
 
-/* changes */
-.orders_one h6{
-  margin-bottom: 0;
-}
-.essence_img {
-  display: none;
-}
-.obtain {
-  width: 100%;
-}
-.demonstrate_p h5 {
-  font-size: 20px;
-  line-height: 30px;
-  text-align: center;
-}
-.olaps_one{
-  width: 100%;
-}
-.right_appliaction{
-  top: 6%;
-}
-.Combining_Sigma_section .essence_of {
-  padding: 20px;
-}
-.Challenges_c_p{
-  font-size: 18px;
-  line-height: 28px;
-}
-.principles {
-  padding-bottom: 20px;
-  font-size: 35px;
-  line-height: 40px;
-}
-.mosteffect{
-  width: 100%;
-  text-align: center;
-}
-.Applications_text h3{
-  line-height: 35px;
-}
-.remembersone{
-  text-align: center;
-}
-.vital_points_div{
-  margin-top: 15px;
-}
-.cutting_lead {
-  font-size: 25px !important;
-}
-.alignment_p {
-  font-size: 14px;
-  line-height: 23px;
-}
+  /* changes */
+  .orders_one h6 {
+    margin-bottom: 0;
+  }
+  .essence_img {
+    display: none;
+  }
+  .obtain {
+    width: 100%;
+  }
+  .demonstrate_p h5 {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .olaps_one {
+    width: 100%;
+  }
+  .right_appliaction {
+    top: 6%;
+  }
+  .Combining_Sigma_section .essence_of {
+    padding: 20px;
+  }
+  .Challenges_c_p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .principles {
+    padding-bottom: 20px;
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .mosteffect {
+    width: 100%;
+    text-align: center;
+  }
+  .Applications_text h3 {
+    line-height: 35px;
+  }
+  .remembersone {
+    text-align: center;
+  }
+  .vital_points_div {
+    margin-top: 15px;
+  }
+  .cutting_lead {
+    font-size: 25px !important;
+  }
+  .alignment_p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .challane_one .Challenges_h3 {
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
 }
 
 /* Small devices (landscape phones, 576px and 767px) */
@@ -5753,10 +5855,25 @@
     height: 290px;
   }
 
-  .imporatnce_force {
-    padding-bottom: 283px !important;
-    margin-bottom: -222px;
-  }
+  .text_50 {
+    font-size: 38px;
+    line-height: 50px;
+    width: 100%;
+}
+.steps {
+  font-size: 14px;
+}
+.text_20 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.Choose_Brainmeasures_section {
+  padding-bottom: 80px;
+}
+.Choose_Brainmeasures_section .card-body {
+  padding: 22px;
+}
 
   .predata p {
     font-size: 18px;
@@ -6032,7 +6149,7 @@
   .Examples_Strategy_section .process_h3 {
     line-height: 28px !important;
     text-align: center;
-}
+  }
   /* end */
 
   /* project charter */
@@ -6233,13 +6350,13 @@
   .devlop_best {
     width: 100%;
   }
-  .Matrix_p{
+  .Matrix_p {
     text-align: center;
   }
-  .orders_one h6{
+  .orders_one h6 {
     margin-bottom: 0;
   }
-  .found{
+  .found {
     margin-bottom: 10px;
   }
 
@@ -6254,17 +6371,21 @@
   .alignment_p {
     font-size: 14px;
     line-height: 23px;
-}
- 
- 
+  }
+
   /* end */
-/* banner */
-.hero_section_a {
-  padding: 0 40px;
-}
-.Combining_Sigma_section .essence_of {
-  padding: 20px;
-}
+  /* banner */
+  .hero_section_a {
+    padding: 0 40px;
+  }
+  .Combining_Sigma_section .essence_of {
+    padding: 20px;
+  }
+
+  .challane_one .Challenges_h3 {
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -6599,8 +6720,8 @@
 
   .Within_p {
     text-align: center;
-      padding-bottom: 20px;
-      margin-top: -22px;
+    padding-bottom: 20px;
+    margin-top: -22px;
   }
 
   .Advantages_force_div-1 {
@@ -6641,20 +6762,33 @@
     gap: 20px;
   }
 
-  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div_img {
+  .Types_Digital_Solution_section
+    .Implementation_div
+    .sub_Implementation_div
+    .Forming_div_img {
     width: 40%;
     height: 100%;
   }
 
-  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div h4 {
+  .Types_Digital_Solution_section
+    .Implementation_div
+    .sub_Implementation_div
+    .Forming_div
+    h4 {
     text-align: center;
   }
 
-  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div {
+  .Types_Digital_Solution_section
+    .Implementation_div
+    .sub_Implementation_div
+    .Forming_div {
     order: 1;
   }
 
-  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div_1 {
+  .Types_Digital_Solution_section
+    .Implementation_div
+    .sub_Implementation_div
+    .Forming_div_1 {
     order: 0;
   }
 
@@ -6685,7 +6819,10 @@
     padding-bottom: 40px;
   }
 
-  #Solution_Transportation_section .Objectives_div_role .sub_Objectives_div_role p {
+  #Solution_Transportation_section
+    .Objectives_div_role
+    .sub_Objectives_div_role
+    p {
     text-align: start;
   }
 
@@ -6739,8 +6876,14 @@
     gap: 0px;
   }
 
-  #Types_OLAP_section .Objectives_div_role .sub_Objectives_div_role .define_purpose,
-  #Steps_create_Breakdown .Objectives_div_role .sub_Objectives_div_role .define_purpose {
+  #Types_OLAP_section
+    .Objectives_div_role
+    .sub_Objectives_div_role
+    .define_purpose,
+  #Steps_create_Breakdown
+    .Objectives_div_role
+    .sub_Objectives_div_role
+    .define_purpose {
     font-size: 18px;
     text-align: center;
   }
@@ -6805,7 +6948,6 @@
 
   .Breakdown_Structure_WBS {
     background-image: none;
-
   }
 
   .Breakdown_Structure_WBS .effect_top_text h2 {
@@ -7049,60 +7191,61 @@
   }
   .Examples_section .sub_Objectives_div_1 {
     align-items: baseline;
-}
-.Lucidity_div {
-  grid-template-columns: repeat(1 ,1fr);
-}
-.grid1 {
-  grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
-}
-.obtain {
-  width: 100%;
-}
-.breaks {
-  width: 100%;
-}
-.made{
-  grid-template-columns: repeat(1 ,1fr);
-}
-.onject_div_Section,.drivings{
-  grid-template-columns: repeat(1 ,1fr);
-}
-#Examples_of_Force_section h4 {
-  font-size: 28px;
-}
-.drivings{
-  gap: 50px;
-}
-.impac_one{
-  margin-top: -208px;
-}
-.quants{
-  display: none;
-}
-.Challenges_c_p{
-  font-size: 16px;
-  line-height: 24px;
-}
-.principles {
-  padding-bottom: 20px;
-  font-size: 35px;
-  line-height: 40px;
-}
-.mosteffect{
-  width: 100%;
-  text-align: center;
-}
-.Applications_text h3{
-  line-height: 30px;
-}
-.remembersone{
-  text-align: center;
-}
-.cutting_lead {
-  font-size: 25px !important;
-  text-align: start !important;
-}
+  }
+  .Lucidity_div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid1 {
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+  }
+  .obtain {
+    width: 100%;
+  }
+  .breaks {
+    width: 100%;
+  }
+  .made {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .onject_div_Section,
+  .drivings {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #Examples_of_Force_section h4 {
+    font-size: 28px;
+  }
+  .drivings {
+    gap: 50px;
+  }
+  .impac_one {
+    margin-top: -208px;
+  }
+  .quants {
+    display: none;
+  }
+  .Challenges_c_p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .principles {
+    padding-bottom: 20px;
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .mosteffect {
+    width: 100%;
+    text-align: center;
+  }
+  .Applications_text h3 {
+    line-height: 30px;
+  }
+  .remembersone {
+    text-align: center;
+  }
+  .cutting_lead {
+    font-size: 25px !important;
+    text-align: start !important;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -7119,12 +7262,13 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .FMEA_h2, .Components_div h3 {
+  .FMEA_h2,
+  .Components_div h3 {
     font-size: 26px;
     line-height: 33px;
     text-align: center;
     margin-bottom: 17px;
-}
+  }
 
   .Components_div p {
     font-size: 14px;
@@ -7791,7 +7935,7 @@
   .vital_points_div {
     padding: 20px !important;
     margin-top: 30px;
-}
+  }
 
   .Alignment_div {
     max-height: fit-content !important;
@@ -7974,7 +8118,7 @@
 
   .licenses {
     width: 100px;
-}
+  }
 
   .predata p {
     font-size: 14px;
@@ -8023,9 +8167,25 @@
     font-size: 13px;
   }
 
-  .imporatnce_force {
-    padding-bottom: 283px !important;
-  }
+  .text_50 {
+    font-size: 36px;
+    line-height: 40px;
+    width: 100%;
+}
+.steps {
+  font-size: 14px;
+}
+.text_20 {
+  font-size: 18px;
+  line-height: 22px;
+}
+.Choose_Brainmeasures_section .card-body {
+  padding: 22px;
+}
+
+.Choose_Brainmeasures_section {
+  padding-bottom: 80px;
+}
 
   .ethicalimg {
     height: 200px;
@@ -8371,7 +8531,11 @@
     text-align: center;
   }
 
-  .Types_Digital_Solution_section .Implementation_div .sub_Implementation_div .Forming_div h4 {
+  .Types_Digital_Solution_section
+    .Implementation_div
+    .sub_Implementation_div
+    .Forming_div
+    h4 {
     font-size: 22px;
   }
 
@@ -8379,7 +8543,10 @@
     padding: 20px;
   }
 
-  #Solution_Transportation_section .Objectives_div_role .sub_Objectives_div_role p {
+  #Solution_Transportation_section
+    .Objectives_div_role
+    .sub_Objectives_div_role
+    p {
     text-align: start;
   }
 
@@ -8483,7 +8650,11 @@
     width: 100%;
   }
 
-  #Waste_Digital_section .container .Strategic_bottom_div .Strategic_Alignment_div p {
+  #Waste_Digital_section
+    .container
+    .Strategic_bottom_div
+    .Strategic_Alignment_div
+    p {
     padding: 0px !important;
   }
 
@@ -8639,98 +8810,104 @@
 
   .devlop_best {
     width: 100%;
-}
-.orders_one h6{
-  margin-bottom: 0;
-}
-.essence_img {
-  display: none;
-}
-.categories {
-  text-align: center;
-}
-.quant{
-  display: none;
-}
-.quants{
-  display: none;
-}
-.rises p{
-  text-align: start;
-};
-.breaks {
-  width: 100%;
-}
-.saved{
-  padding-top: 25px !important;
-}
-.drivings{
-  gap: 50px;
-}
-.impac_one{
-  margin-top: -111px;
-}
-.factors{
-  padding: 20px;
-}
-.must_section p{
-  padding-top: 15px;
-}
-.Process_div h5 , .Process_div p{
-  text-align: center;
-}
-.Project_b {
-  font-size: 17px;
-}
-.matrix_section{
-  padding-bottom: 0;
-}
-.Combining_Sigma_section .essence_of {
-  padding: 20px;
-}
-.Challenges_c_p {
-  font-size: 14px;
-  line-height: 24px;
-}
-.principles {
-  padding-bottom: 0;
-  font-size: 35px;
-  line-height: 40px;
-}
-.moniters{
-  padding-bottom: 0 !important;
-}
-.sub_Strategy_div .Perform_div {
-  grid-template-columns: repeat(1, 1fr);
-  justify-items: center;
-}
-.Perform_SWOT_div h4 {
-  font-size: 18px;
-  line-height: 27px;
-  text-align: center;
-}
-/* banner */
-.hero_section_a {
-  padding: 0 20px;
-}
+  }
+  .orders_one h6 {
+    margin-bottom: 0;
+  }
+  .essence_img {
+    display: none;
+  }
+  .categories {
+    text-align: center;
+  }
+  .quant {
+    display: none;
+  }
+  .quants {
+    display: none;
+  }
+  .rises p {
+    text-align: start;
+  }
+  .breaks {
+    width: 100%;
+  }
+  .saved {
+    padding-top: 25px !important;
+  }
+  .drivings {
+    gap: 50px;
+  }
+  .impac_one {
+    margin-top: -111px;
+  }
+  .factors {
+    padding: 20px;
+  }
+  .must_section p {
+    padding-top: 15px;
+  }
+  .Process_div h5,
+  .Process_div p {
+    text-align: center;
+  }
+  .Project_b {
+    font-size: 17px;
+  }
+  .matrix_section {
+    padding-bottom: 0;
+  }
+  .Combining_Sigma_section .essence_of {
+    padding: 20px;
+  }
+  .Challenges_c_p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .principles {
+    padding-bottom: 0;
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .moniters {
+    padding-bottom: 0 !important;
+  }
+  .sub_Strategy_div .Perform_div {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .Perform_SWOT_div h4 {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+  }
+  /* banner */
+  .hero_section_a {
+    padding: 0 20px;
+  }
 
-.hero_img {
-  width: 80% !important;
-  order: 0 !important;
-  margin: 0 auto;
-}
-.matrix_one_Section{
-  margin-bottom: 0;
-}
-.cutting_lead {
-  font-size: 22px !important;
-  text-align: center !important;
-}
-.alignment_p {
-  font-size: 14px;
-  line-height: 23px;
-}
-}
+  .hero_img {
+    width: 80% !important;
+    order: 0 !important;
+    margin: 0 auto;
+  }
+  .matrix_one_Section {
+    margin-bottom: 0;
+  }
+  .cutting_lead {
+    font-size: 22px !important;
+    text-align: center !important;
+  }
+  .alignment_p {
+    font-size: 14px;
+    line-height: 23px;
+  }
 
+  .challane_one .Challenges_h3 {
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
+
+}
 
 /*--------------------------------------*/

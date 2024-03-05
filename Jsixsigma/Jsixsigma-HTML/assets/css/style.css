@@ -163,6 +163,10 @@ a:hover {
   overflow: hidden;
 }
 
+.sub_Objectives_div_1 .sub_Objectives_img {
+  box-shadow: rgba(100, 98, 111, 0.2) 0px -9px 17px 0px;
+}
+
 .sub_Objectives_img img {
   width: 100%;
   height: 100%;
@@ -208,7 +212,6 @@ a:hover {
   gap: 100px;
   padding: 50px 0;
   min-height: 200px;
-  /* max-height: 370px; */
   margin-top: 40px;
   align-items: center;
 }
@@ -535,9 +538,11 @@ a:hover {
   background-color: #fff !important;
 }
 
-.Challenges_h3 {
+.challane_one .Challenges_h3 {
   padding-right: 0% !important;
   text-align: center;
+    font-size: 24px !important;
+    line-height: 30px !important;
 }
 
 .Challenges_p {
@@ -583,6 +588,10 @@ a:hover {
 .Applications_text h3,
 .Applications_text p {
   color: #000 !important;
+}
+.Applications_text p {
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .Applications_image_2 img {
@@ -645,7 +654,8 @@ a:hover {
 }
 
 .Examples_tic_img {
-  width: 20px;
+  width: 15px;
+  height: 15px;
 }
 
 .Examples__UL {
@@ -954,6 +964,9 @@ a:hover {
 .different {
   color: #fff;
   text-align: center;
+}
+.d_consist{
+  width: 50%;
 }
 
 .types_data {
@@ -1957,10 +1970,62 @@ a:hover {
   font-weight: 800;
 }
 
-/* Importance of Data Collection css */
-.imporatnce_force {
-  padding-bottom: 283px;
-  margin-bottom: -188px;
+.utility{
+  width: 86%;
+}
+
+.implementation_section{
+  background-color: #EDF2FF;
+}
+
+#qualitys{
+  background-color: #FFCA38;
+}
+#increases{
+  background-color: #85FE7B;
+}
+#reductions{
+  background-color: #D4C5FF;
+}
+
+.Choose_Brainmeasures_section {
+  /* background-color: #EDF2FB; */
+  padding-bottom: 120px;
+}
+
+/* Creating a comprehensive Data Collection Plan css */
+.text_50 {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 800;
+  width: 70%;
+  margin: 0 auto;
+}
+.text_20{
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: 700;
+}
+.steps{
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.Choose_Brainmeasures_section .card-body {
+  padding: 30px;
+}
+
+.Choose_Brainmeasures_section .card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: none;
+}
+
+.Choose_Brainmeasures_section .card .card-footer {
+  border: none;
+  background: transparent;
+  padding: 5px 30px 30px;
+  /* margin-top: 20px; */
 }
 
 /* Force Field page css start */
@@ -2673,6 +2738,9 @@ a:hover {
 #Examples_Multi_Voting_section .Objectives_div .sub_Objectives_div {
   height: 100%;
 }
+#Examples_Multi_Voting_section .get{
+  line-height: 27px;
+}
 
 #Cost_color {
   background: #85fe7b;
@@ -2975,6 +3043,12 @@ a:hover {
   line-height: 60px;
   width: 72%;
   margin: 80px auto 30px auto;
+}
+.Examples_Strategy_section .effectives{
+  width: 72%;
+}
+.Examples_Strategy_section .some{
+  width: 72%;
 }
 
 .conjunction {
@@ -3865,12 +3939,10 @@ a:hover {
     #b92419 100%
   );
   max-height: 650px;
-  /* height: 650px; */
   margin-top: 100px;
   padding: 0 100px;
 }
 .hero_div {
-  /* height: 650px; */
   min-height: 650px;
   position: relative;
 }
@@ -4008,3 +4080,4 @@ a:hover {
   font-size: 15px;
   line-height: 24px;
 }
+
