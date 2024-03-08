@@ -1459,7 +1459,8 @@ img.vert-move {
 
 header {
 	padding: 20px 0;
-	position: absolute;
+	/* position: absolute; */
+	position: sticky;
 	left: 0;
 	width: 100%;
 	top: 0;
@@ -1468,9 +1469,9 @@ header {
 }
 
 @media(max-width: 991px) {
-	header {
-		position: relative
-	}
+	/* header {
+		position: relative;
+	} */
 }
 
 header .logo img {
