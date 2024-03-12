@@ -911,7 +911,6 @@
     font-size: 19px;
   }
 
-
   .text_50 {
     font-size: 44px;
     line-height: 55px;
@@ -926,7 +925,7 @@
   }
   .Choose_Brainmeasures_section {
     padding-bottom: 90px;
-}
+  }
 
   .Effect_Analysis_div_1 p {
     font-size: 14px;
@@ -1722,6 +1721,422 @@
   .Examples_Strategy_section .some {
     width: 100%;
   }
+
+  /* Janam Sandhu Lean Six Sigma Guru css */
+  .heading_h {
+    font-size: 66px;
+    line-height: 55px;
+    width: 77%;
+  }
+  .banner-section .caption span {
+    font-size: 44px;
+  }
+  .leading .caption p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .banner-section .caption {
+    margin-top: 185px;
+  }
+  .bannerbutton {
+    width: 284px;
+    height: 64px;
+    font-size: 18px;
+  }
+  .banner-section .banner-wrap {
+    background-size: 78%;
+    height: 790px;
+  }
+  /*  Up-Skill and Excel css */
+  .upskill .caption {
+    margin-top: 63px;
+  }
+  .Basics .caption .heading_h {
+    font-size: 44px;
+  }
+  .upskill .Basics .best {
+    padding: 22px 2px 29px 17px;
+  }
+  .lingual {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .million {
+    font-size: 34px;
+    line-height: 52px;
+  }
+  .Worldwide {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .coach {
+    font-size: 34px;
+    line-height: 47px;
+  }
+  .financial {
+    font-size: 18px;
+    line-height: 31px;
+  }
+  .after-banner-section .specialities-details {
+    padding: 82px 70px 70px;
+  }
+  .spec {
+    font-size: 42px;
+    line-height: 41px;
+  }
+  .learn_exel {
+    font-size: 18px;
+  }
+  .after-banner-section .specialities-details .slider-cell {
+    padding: 16px;
+  }
+  .upskillheads {
+    font-size: 58px;
+    line-height: 55px;
+  }
+  /* How lean six-sigma modules css */
+  .modulesimg {
+    width: 523px;
+    height: 395px;
+  }
+
+  /* Enhanced Production Processes css */
+  .eppimg {
+    width: 60px;
+    height: 60px;
+  }
+  .product_p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .tooltip::before {
+    top: -14px;
+    left: 46%;
+  }
+  .tooltip {
+    left: 57%;
+  }
+  /*  Why is Six-Sigma Certification css */
+  .cardone {
+    padding: 27px;
+  }
+  .romilsimg {
+    padding-left: 26px;
+  }
+  .oriented h1 {
+    font-size: 36px;
+    line-height: 52px;
+    width: 70%;
+  }
+  .certificateimg {
+    height: 342px;
+  }
+  .certification .Basics .caption .heading_h {
+    width: 90%;
+  }
+  .cardone .prod .product_p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .cardone .prod .strengthen {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  #containers .ar {
+    font-size: 14px;
+    margin-top: 7px;
+  }
+  #containers .cardscontainersset {
+    margin-top: -124px;
+  }
+
+  /* Choose the appropriate css */
+  .belt h6 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .belt p {
+    font-size: 18px;
+    line-height: 25px;
+    width: 60px;
+    height: 46px;
+  }
+  .cardcerti {
+    height: 145px;
+  }
+  .choosearea .banner-wrap {
+    height: 620px;
+  }
+  /* Jsixsigma is a globally recognized css */
+  .globally {
+    padding-bottom: 50px;
+  }
+  /* Next-level Learning With Smart Learning Options css */
+  .nextlevel .banner-wrap {
+    height: 565px;
+  }
+  .nextlevel .product_p {
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .nextlevel .relevant {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .nextlevel .card-container {
+    gap: 20px;
+  }
+  .nextlevel {
+    padding-bottom: 70px !important;
+  }
+
+  /* Globally Recognized Courses... Just A Click Away! css */
+  .videostream iframe {
+    border-radius: 15px;
+    height: 128px;
+  }
+  .posted h6 {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .recognized .upskillheads {
+    width: 80%;
+    line-height: 70px;
+  }
+  .highest .card-container .product_p {
+    font-size: 80px;
+    line-height: 56px;
+  }
+  .highest .card-container .relevant {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  /* JSixSigma for Corporates! css */
+  .corporates .heading_h {
+    width: 100% !important;
+  }
+  .Propel {
+    font-size: 20px !important;
+    line-height: 26px !important;
+  }
+  .corporates .learnersection {
+    grid-template-columns: 45% auto;
+  }
+  .corporates #containers .cardscontainersset {
+    margin-top: 0;
+  }
+  .corpoimg {
+    width: 550px;
+    height: 550px;
+    margin: 0 auto;
+  }
+
+  /* Enhance Workplace Efficiency css */
+  .enhance .hows {
+    width: 60px;
+    height: 60px;
+  }
+  .enhance .cardone .prod h6 {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .enhance #cardonestag {
+    padding: 21px;
+  }
+
+  .enhance #containers .cardscontainersset {
+    margin-top: 57px;
+  }
+
+  .enhance #containers .eppimg {
+    width: 66px;
+    height: 80px;
+  }
+  .enhance .belt .cardone .prod h6 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .enhance .learnersection {
+    grid-template-columns: 20% auto;
+  }
+  .enhance {
+    padding-bottom: 0;
+  }
+
+  /* Live Interactive Training Programs css */
+  .live .livetrained {
+    height: max-content;
+  }
+  .live .Basics {
+    height: max-content;
+  }
+  .live .learnersection {
+    grid-template-columns: 21% auto;
+  }
+  .livecard .attain {
+    padding: 25px 19px;
+  }
+  .livecard .attain p {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  /* Live Chat 24x7 css */
+  .chatlive .nextlevelimg {
+    width: 470px;
+  }
+  .chatlive .nextlevelimg {
+    margin-bottom: -37px;
+  }
+
+  /* Know more about our Founder css */
+  .know .banner-wrap {
+    height: 593px;
+  }
+  .janamsection {
+    width: 56%;
+  }
+
+  /* 24x7 Virtual Assistants Available css */
+  .assistant {
+    margin-top: 80px;
+  }
+  .assistant .caption {
+    margin-top: 110px;
+  }
+  .assistant .learnersection {
+    grid-template-columns: 34% auto;
+    gap: 0px;
+  }
+  .assistant .card {
+    padding: 20px;
+  }
+  .assistant #ca2 h6 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .assistant #containers .eppimg {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Latest Youtube Video css */
+  .latest .videostream {
+    margin-top: 70px;
+    padding: 0 20px;
+  }
+  .latest .videostream iframe {
+    height: 543px;
+  }
+  .cycle_time {
+    padding: 20px;
+  }
+  .cycle_time h3 {
+    font-size: 36px;
+    line-height: 49px;
+  }
+  .suscribe_section {
+    gap: 29px;
+  }
+  .sandhu_h {
+    font-size: 22px;
+  }
+  .pesoncommentimg {
+    width: 60px;
+    height: 60px;
+  }
+  .sharebtn button {
+    font-size: 18px;
+    padding: 10px 38px;
+  }
+  .year_heads {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .shared_p {
+    font-size: 18px;
+  }
+  .likeimg {
+    width: 26px;
+    height: 26px;
+  }
+  .subsection {
+    margin-bottom: 60px;
+  }
+  .latest .bannerbutton {
+    width: 246px;
+    height: 55px;
+    font-size: 18px;
+  }
+
+  /* Career and Financial css */
+  .carrers .financial {
+    font-size: 26px;
+    line-height: 42px;
+    width: 60%;
+  }
+  /* Worldwide css */
+  .worldtext p {
+    font-size: 26px;
+    line-height: 70px;
+  }
+  .worldtext .coach {
+    font-size: 45px;
+    line-height: 60px;
+    width: 90%;
+  }
+
+  .messageimg {
+    width: 340px;
+    height: 80px;
+    right: 16px;
+  }
+
+  .jxhead .hambles {
+		display: block !important;
+		opacity: 1;
+		visibility: visible;
+	}
+
+.hambles {
+  left: -21%;
+}
+
+.jxhead .nav .navbar-nav.is-active {
+  opacity: 1;
+  display: block;
+  visibility: visible;
+  transform: translate(0%, 0);
+  transition: all .5s ease-in-out;
+  padding: 70px 10px;
+}
+
+.jxhead .nav .navbar-nav {
+  width: 100%;
+  height: 100vh;
+  padding: 20px 10px;
+  opacity: 1;
+  visibility: visible;
+  transition: all .5s ease-in-out;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  background-color: #1A1B20;
+  top: 0px;
+  transform: translate(100%, 0);
+}
+
+.jxhead .nav .navbar-nav.is-active li a {
+  color: #93A1A8 !important;
+}
+.jxhead .logo {
+  width: 240px;
+}
+
+.traind_live .moderbns {
+  margin-top: 710px;
+}
 }
 
 @media screen and (max-width: 991px) {
@@ -2139,7 +2554,6 @@
   }
 }
 
-/* Large devices (desktops, 992px and 1199px) */
 /* @media screen and (min-width: 991px) and (max-width: 1199px) { */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .contaiorX {
@@ -2759,22 +3173,21 @@
     font-size: 19px !important;
   }
 
-
   .text_50 {
     font-size: 44px;
     line-height: 55px;
     width: 80%;
     margin: 0 auto;
-}
-.steps {
-  font-size: 14px;
-}
-.text_20 {
-  font-size: 22px;
-}
-.Choose_Brainmeasures_section {
-  padding-bottom: 90px;
-}
+  }
+  .steps {
+    font-size: 14px;
+  }
+  .text_20 {
+    font-size: 22px;
+  }
+  .Choose_Brainmeasures_section {
+    padding-bottom: 90px;
+  }
 
   .Effect_Analysis_div_1 p {
     font-size: 13px;
@@ -3636,6 +4049,516 @@
   .Examples_Strategy_section .some {
     width: 100%;
   }
+
+  /* Janam Sandhu Lean Six Sigma Guru css */
+  .banner-section .banner-wrap {
+    background-size: 73%;
+    height: 615px;
+  }
+  .heading_h {
+    font-size: 60px;
+    line-height: 52px;
+    width: 70%;
+  }
+  .banner-section .caption span {
+    font-size: 40px;
+  }
+  .leading .caption p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .banner-section .caption {
+    margin-top: 112px;
+  }
+  .bannerbutton {
+    width: 280px;
+    height: 56px;
+    font-size: 18px;
+  }
+  .banner-section .banner-wrap {
+    background-size: 78%;
+  }
+
+  /*  Up-Skill and Excel css */
+  .upskill .caption {
+    margin-top: 63px;
+  }
+  .Basics .caption .heading_h {
+    font-size: 38px;
+  }
+  .upskill .Basics .best {
+    padding: 22px 2px 29px 17px;
+  }
+  .lingual {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .million {
+    font-size: 28px;
+    line-height: 50px;
+  }
+  .Worldwide {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .coach {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .financial {
+    font-size: 18px;
+    line-height: 31px;
+  }
+  .after-banner-section .specialities-details {
+    padding: 82px 70px 70px;
+  }
+  .spec {
+    font-size: 32px;
+    line-height: 41px;
+  }
+  .learn_exel {
+    font-size: 18px;
+  }
+  .after-banner-section .specialities-details .slider-cell {
+    padding: 16px;
+  }
+  .views {
+    margin-top: 50px;
+  }
+  .viewbtn {
+    width: 194px !important;
+  }
+  .upskillheads {
+    font-size: 52px;
+    line-height: 48px;
+  }
+
+  /* How lean six-sigma modules css */
+  .modulesimg {
+    width: 399px;
+    height: 294px;
+  }
+
+  /* Enhanced Production Processes css */
+  .eppimg {
+    width: 60px;
+    height: 60px;
+  }
+  .product_p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .card-container {
+    margin-top: 50px;
+  }
+  .product_p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .tooltip {
+    position: absolute;
+    top: 92%;
+    width: 100%;
+    left: 95%;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .tooltip::before {
+    top: -14px;
+    left: 65%;
+  }
+  .tooltip {
+    top: 95%;
+    left: 46%;
+  }
+  /*  Why is Six-Sigma Certification css */
+  .cardone {
+    padding: 37px;
+  }
+  .romilsimg {
+    padding-left: 26px;
+  }
+  .oriented h1 {
+    font-size: 36px;
+    line-height: 52px;
+    width: 70%;
+  }
+  .certificateimg {
+    height: 269px;
+  }
+  .certification .Basics .caption .heading_h {
+    width: 90%;
+  }
+  .cardone .prod .product_p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .cardone .prod .strengthen {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  #containers .ar {
+    font-size: 14px;
+    margin-top: 7px;
+  }
+  #containers .cardscontainersset {
+    margin-top: -17px;
+  }
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #cardfour {
+    margin-top: 55px;
+  }
+  .certification .banner-wrap {
+    margin-top: 184px;
+  }
+
+  /* Choose the appropriate css */
+  .belt h6 {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .belt {
+    gap: 7px;
+  }
+  .belt p {
+    font-size: 18px;
+    line-height: 25px;
+    width: 60px;
+    height: 46px;
+  }
+  .cardcerti {
+    height: 145px;
+  }
+  .choosearea {
+    padding-bottom: 75px;
+  }
+  .choosearea .banner-wrap {
+    height: 496px !important;
+  }
+  .multicard {
+    margin-top: 30px;
+  }
+  /* Jsixsigma is a globally recognized css */
+  .globally {
+    padding-bottom: 50px;
+  }
+  /* Next-level Learning With Smart Learning Options css */
+  .nextlevel .banner-wrap {
+    height: 565px;
+  }
+  .nextlevel .product_p {
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .nextlevel .relevant {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .nextlevel .card-container {
+    gap: 20px;
+  }
+  .nextlevel {
+    padding-bottom: 70px !important;
+  }
+  /* Globally Recognized Courses... Just A Click Away! css */
+  .videostream iframe {
+    border-radius: 15px;
+    height: 128px;
+  }
+  .posted h6 {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .recognized .upskillheads {
+    width: 90%;
+    line-height: 70px;
+  }
+  .highest .card-container .product_p {
+    font-size: 60px;
+    line-height: 56px;
+    padding-top: 0 !important;
+  }
+  .highest .card-container .relevant {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  /* JSixSigma for Corporates! css */
+  .corporates .heading_h {
+    width: 100% !important;
+  }
+  .Propel {
+    font-size: 20px !important;
+    line-height: 26px !important;
+  }
+  .corporates .learnersection {
+    grid-template-columns: 56% auto;
+  }
+  .corporates #containers .cardscontainersset {
+    margin-top: 95px;
+  }
+  .corpoimg {
+    width: 398px;
+    height: 344px;
+    margin: 0 auto;
+  }
+  .corporates .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .corporates .banner-wrap {
+    margin-top: -85px;
+  }
+  .corporates {
+    padding-bottom: 74px;
+  }
+
+  /* Enhance Workplace Efficiency css */
+  .enhance .hows {
+    width: 60px;
+    height: 60px;
+  }
+  .enhance .cardone .prod h6 {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .enhance #cardonestag {
+    padding: 21px;
+  }
+
+  .enhance #containers .cardscontainersset {
+    margin-top: 57px;
+  }
+
+  .enhance #containers .eppimg {
+    width: 66px;
+    height: 80px;
+  }
+  .enhance .belt .cardone .prod h6 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .enhance .banner-wrap {
+    margin-top: 10px;
+  }
+  .enhance .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .enhance .belt .cardscontainersset {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .enhance .learnersection {
+    grid-template-columns: 23% auto;
+  }
+  .enhance .belt .posted {
+    height: max-content;
+  }
+  .enhance .banner-wrap {
+    height: max-content;
+  }
+  .enhance #containers .cardscontainersset {
+    padding: 0;
+    padding-bottom: 0;
+  }
+  .enhance {
+    padding-bottom: 0;
+  }
+
+  /* Live Interactive Training Programs css */
+  .live .livetrained {
+    height: max-content;
+  }
+  .live .Basics {
+    height: max-content !important;
+  }
+  .live .learnersection {
+    grid-template-columns: 27% auto;
+  }
+  .livecard .attain {
+    padding: 25px 19px;
+  }
+  .livecard .attain p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .livecard .banner-wrap {
+    padding: 0 55px !important;
+  }
+  .livecard {
+    padding: 50px 75px;
+  }
+  .live .learnersection {
+    padding: 0 75px;
+  }
+
+  /* Live Chat 24x7 css */
+  .chatlive .nextlevelimg {
+    width: 470px;
+  }
+  .chatlive .nextlevelimg {
+    margin-bottom: -37px;
+  }
+
+  /* Know more about our Founder css */
+  .know .banner-wrap {
+    height: 593px;
+  }
+  .janamsection {
+    width: 54%;
+    height: 307px;
+    padding-right: 20px;
+  }
+  .know .caption .wastes {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  /* 24x7 Virtual Assistants Available css */
+  .assistant {
+    margin-top: 80px;
+  }
+  .assistant .caption {
+    margin-top: 110px;
+  }
+  .assistant .learnersection {
+    grid-template-columns: 34% auto;
+    gap: 0px;
+  }
+  .assistant .card {
+    padding: 15px;
+  }
+  .assistant #ca2 h6 {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .assistant #containers .eppimg {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Latest Youtube Video css */
+  .latest .videostream {
+    margin-top: 70px;
+    padding: 0 20px;
+  }
+  .latest .videostream iframe {
+    height: 421px;
+  }
+  .cycle_time {
+    padding: 20px;
+  }
+  .cycle_time h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .viewvideo {
+    width: 100%;
+  }
+
+  .sandhu_h {
+    font-size: 22px;
+  }
+  .pesoncommentimg {
+    width: 60px;
+    height: 60px;
+  }
+  .sharebtn button {
+    font-size: 18px;
+    padding: 10px 38px;
+  }
+  .year_heads {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .shared_p {
+    font-size: 18px;
+  }
+  .likeimg {
+    width: 26px;
+    height: 26px;
+  }
+  .subsection {
+    margin-bottom: 60px;
+  }
+  .latest .bannerbutton {
+    width: 246px;
+    height: 55px;
+    font-size: 18px;
+  }
+  .suscribe_section {
+    display: flex;
+    align-items: start;
+    gap: 29px;
+    flex-direction: column;
+  }
+
+  /* Career and Financial css */
+  .carrers .financial {
+    font-size: 26px;
+    line-height: 42px;
+    width: 70%;
+  }
+
+  /* Worldwide css */
+  .worldtext p {
+    font-size: 24px;
+    line-height: 60px;
+  }
+  .worldtext .coach {
+    font-size: 40px;
+    line-height: 50px;
+    width: 100%;
+  }
+  .messageimg {
+    width: 340px;
+    height: 80px;
+    right: 16px;
+  }
+
+  .jxhead .hambles {
+		display: block !important;
+		opacity: 1;
+		visibility: visible;
+	}
+
+.hambles {
+  left: -21%;
+}
+
+.jxhead .nav .navbar-nav.is-active {
+  opacity: 1;
+  display: block;
+  visibility: visible;
+  transform: translate(0%, 0);
+  transition: all .5s ease-in-out;
+  padding: 70px 10px;
+}
+
+.jxhead .nav .navbar-nav {
+  width: 100%;
+  height: 100vh;
+  padding: 20px 10px;
+  opacity: 1;
+  visibility: visible;
+  transition: all .5s ease-in-out;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  background-color: #1A1B20;
+  top: 0px;
+  transform: translate(100%, 0);
+}
+
+.jxhead .nav .navbar-nav.is-active li a {
+  color: #93A1A8 !important;
+}
+
+.jxhead .logo {
+  width: 220px;
+}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1050px) {
@@ -4412,22 +5335,21 @@
     height: 290px;
   }
 
-
   .text_50 {
     font-size: 40px;
     line-height: 52px;
     width: 100%;
-}
-.steps {
-  font-size: 14px;
-}
-.text_20 {
-  font-size: 20px;
-}
+  }
+  .steps {
+    font-size: 14px;
+  }
+  .text_20 {
+    font-size: 20px;
+  }
 
-.Choose_Brainmeasures_section {
-  padding-bottom: 90px;
-}
+  .Choose_Brainmeasures_section {
+    padding-bottom: 90px;
+  }
 
   .predata p {
     font-size: 18px;
@@ -5086,6 +6008,670 @@
     font-size: 20px !important;
     line-height: 24px !important;
   }
+
+  /* Janam Sandhu Lean Six Sigma Guru css */
+  .banner-section .banner-wrap {
+    background-image: none;
+    height: 485px;
+  }
+  .heading_h {
+    font-size: 54px;
+    line-height: 46px;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .banner-section .caption span {
+    font-size: 36px;
+  }
+  .leading .caption p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 20px auto;
+  }
+  .banner-section .caption {
+    margin-top: 60px;
+    text-align: center;
+  }
+  .bannerbutton {
+    width: 265px;
+    height: 50px;
+    font-size: 16px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  .banner-section .banner-wrap {
+    background-size: 78%;
+    height: 407px;
+  }
+  .banner-section {
+    padding: 0;
+  }
+
+  /*  Up-Skill and Excel css */
+  .upskill .caption {
+    margin-top: 63px;
+  }
+  .Basics .caption .heading_h {
+    font-size: 38px;
+    width: 100%;
+  }
+  .upskill .Basics .best {
+    padding: 22px 2px 29px 17px;
+    background-position: center;
+  }
+  .upskill .banner-wrap {
+    height: 611px !important;
+    padding: 0 50px;
+  }
+  .lingual {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .million {
+    font-size: 26px;
+    line-height: 48px;
+  }
+  .learnersection p {
+    font-size: 14px !important;
+    line-height: 27px !important;
+  }
+  .Worldwide {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .coach {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .financial {
+    font-size: 18px;
+    line-height: 31px;
+  }
+  .after-banner-section .specialities-details {
+    padding: 82px 70px 70px;
+  }
+  .spec {
+    font-size: 32px;
+    line-height: 41px;
+  }
+  .learn_exel {
+    font-size: 18px;
+  }
+  .after-banner-section .specialities-details .slider-cell {
+    padding: 16px;
+  }
+  .views {
+    margin-top: 58px;
+  }
+  .linesset {
+    margin-top: 49px;
+  }
+  .view_section {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .toolsigma {
+    text-align: center;
+  }
+  .viewbtn {
+    width: 194px !important;
+  }
+  .after-banner-section .specialities-details {
+    padding: 26px 70px 70px;
+  }
+  .after-banner-section .specialities-details .slick-list {
+    margin: 21px -15px;
+  }
+  .upskillheads {
+    font-size: 46px;
+    line-height: 0px;
+    margin-top: 47px;
+  }
+  .ind_best {
+    font-size: 16px !important;
+    line-height: 35px !important;
+  }
+  /* How lean six-sigma modules css */
+  .modulesimg {
+    width: 387px;
+    height: 274px;
+  }
+  .assist .upskillheads {
+    padding-top: 92px;
+    line-height: 62px;
+  }
+  .assist .specialities-details {
+    padding-bottom: 50px !important;
+  }
+  .modulesimg {
+    margin: 0 auto;
+  }
+  .ascend {
+    width: 65%;
+    line-height: 50px;
+  }
+  .assist {
+    padding-bottom: 100px;
+  }
+
+  /* Enhanced Production Processes css */
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .eppimg {
+    width: 55px;
+    height: 64px;
+  }
+  .card {
+    align-items: center;
+  }
+  .product_p {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .card-container {
+    margin-top: 50px;
+  }
+  .product_p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .tooltip {
+    position: absolute;
+    top: 98%;
+    width: 100%;
+    left: 47%;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .tooltip::before {
+    top: -14px;
+  }
+
+  /*  Why is Six-Sigma Certification css */
+  .cardone {
+    padding: 37px;
+  }
+  .romilsimg {
+    padding-left: 26px;
+  }
+  .oriented h1 {
+    font-size: 36px;
+    line-height: 52px;
+    width: 70%;
+  }
+  .certificateimg {
+    height: 269px;
+  }
+  .certification .Basics .caption .heading_h {
+    width: 90%;
+  }
+  .cardone .prod .product_p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .cardone .prod .strengthen {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  #containers .ar {
+    font-size: 14px;
+    margin-top: 7px;
+  }
+  #containers .cardscontainersset {
+    margin-top: 200px;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #cardfour {
+    margin-top: 55px;
+  }
+  .certification .banner-wrap {
+    margin-top: 184px;
+  }
+  #containers .must {
+    flex-direction: column;
+  }
+  .certificateimg {
+    height: 271px;
+    width: 386px;
+    margin: 65px auto 0 auto;
+  }
+  .certification {
+    padding-bottom: 93px;
+  }
+
+  /* Choose the appropriate css */
+  .belt h6 {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .belt {
+    gap: 10px;
+  }
+  .belt p {
+    font-size: 18px;
+    line-height: 25px;
+    width: 60px;
+    height: 46px;
+  }
+  .cardcerti {
+    height: 145px;
+  }
+  .upskillheads {
+    font-size: 46px;
+    line-height: 49px;
+    margin-bottom: -10px;
+  }
+  .choosearea .learnersection {
+    margin-top: 44px;
+  }
+  .multicard {
+    padding: 0 45px;
+    margin-top: -165px;
+  }
+  /* .choosearea {
+  padding-bottom: 75px;
+} */
+  .globally .banner-wrap {
+    height: 378px !important;
+  }
+  /* Next-level Learning With Smart Learning Options css */
+  .nextlevel .banner-wrap {
+    height: 875px !important;
+    padding: 0 50px;
+  }
+
+  .nextlevel .product_p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .nextlevel .relevant {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .nextlevel .card-container {
+    gap: 20px;
+    margin-top: -130px;
+  }
+  .nextlevelimg {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .nextlevel .caption {
+    margin-top: 0;
+  }
+  .nextlevel .capone {
+    margin-top: -50px;
+  }
+  .nextlevel .capone {
+    margin-top: -170px;
+  }
+  .nextlevel {
+    padding-bottom: 70px !important;
+  }
+  /* Globally Recognized Courses... Just A Click Away! css */
+  .recognized #containers .cardscontainersset {
+    margin-top: 0px;
+  }
+  .recognized .learnersection {
+    margin-top: 50px;
+  }
+  .business {
+    margin-top: -210px;
+    padding-bottom: 70px;
+  }
+  .recognized .upskillheads {
+    width: 95%;
+    line-height: 60px;
+  }
+
+  .highest .card-container .product_p {
+    font-size: 42px;
+    line-height: 56px;
+    padding-top: 0 !important;
+  }
+  .highest .card-container .relevant {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* JSixSigma for Corporates! css */
+  .corporates .heading_h {
+    width: 100% !important;
+  }
+  .Propel {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    margin-left: 4px !important;
+  }
+  .corporates .learnersection {
+    grid-template-columns: 50% auto;
+  }
+
+  .corporates .banner-wrap {
+    height: 1013px !important;
+  }
+  .corpoimg {
+    width: 398px;
+    height: 344px;
+    margin: 0 auto;
+  }
+  .corporates .caption {
+    margin-top: 40px;
+  }
+  .corporates .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .corporates .banner-wrap {
+    margin-top: -85px;
+  }
+  .corporates {
+    margin-top: 100px;
+  }
+  .buyassign {
+    margin-top: 24px;
+    width: 22px;
+  }
+  .corporates .posted h5 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .corporates .business {
+    padding-bottom: 0px;
+  }
+  .corporates .business .cardone {
+    height: 390px;
+  }
+  .corporates {
+    padding-bottom: 0;
+  }
+
+  /* Enhance Workplace Efficiency css */
+  .enhance #containers .eppimg {
+    width: 54px;
+    height: 62px;
+  }
+  .enhance .cardone .prod h6 {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .enhance #cardonestag {
+    padding: 21px;
+  }
+
+  .enhance #containers .cardscontainersset {
+    margin-top: 255px;
+  }
+
+  .enhance .learnersection {
+    margin-top: -10px;
+  }
+
+  .enhance #containers .eppimg {
+    width: 66px;
+    height: 80px;
+  }
+  .enhance .belt .cardone .prod h6 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .enhance .banner-wrap {
+    margin-top: 65px;
+  }
+  .enhance .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .enhance .belt .cardscontainersset {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .enhance .learnersection {
+    grid-template-columns: 23% auto;
+  }
+
+  .enhance .learnersection {
+    grid-template-columns: 26% auto;
+    padding: 0 30px;
+  }
+  .enhance .posted {
+    align-items: center;
+  }
+  .enhance #containers .eppimg {
+    width: 56px;
+    height: 70px;
+  }
+  .candidates .relevant {
+    width: 100%;
+  }
+  .enhance .belt .posted {
+    height: max-content !important;
+  }
+  .enhance .banner-wrap {
+    height: max-content !important;
+  }
+
+  /* Live Interactive Training Programs css */
+  .live .livetrained {
+    height: max-content !important;
+  }
+  .live .Basics {
+    height: max-content !important;
+  }
+  .live .learnersection {
+    grid-template-columns: 27% auto;
+  }
+  .livecard {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .livecard .attain {
+    padding: 25px 19px;
+  }
+  .livecard .attain p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .livecard .banner-wrap {
+    padding: 0 55px !important;
+  }
+  .livecard {
+    padding: 50px;
+  }
+  .live .learnersection {
+    padding: 0 50px;
+  }
+  .live .capone {
+    margin-top: 0;
+  }
+  .live .caption {
+    margin-top: 45px;
+  }
+
+  /* Live Chat 24x7 css */
+  .chatlive .nextlevelimg {
+    width: 470px;
+  }
+  .chatlive .nextlevelimg {
+    margin-bottom: 34px;
+  }
+  .chatlive .caption {
+    margin-top: -51px;
+    padding-bottom: 43px;
+  }
+
+  /* Know more about our Founder css */
+  .know .banner-wrap {
+    height: 593px;
+  }
+  .janamsection {
+    width: 100%;
+    height: 307px;
+    padding-right: 20px;
+  }
+  .know .caption .wastes {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .know .upskillheads {
+    margin-bottom: 40px;
+  }
+
+  /* 24x7 Virtual Assistants Available css */
+  .assistant {
+    margin-top: -40px;
+  }
+  .assistant .caption {
+    margin-top: 60px;
+  }
+  .assistant .learnersection {
+    grid-template-columns: 34% auto;
+    gap: 22px;
+  }
+  .assistant .card {
+    padding: 15px;
+  }
+  .assistant #ca2 h6 {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .assistant #containers .eppimg {
+    width: 60px;
+    height: 60px;
+  }
+  .assistant .banner-wrap {
+    height: 281px !important;
+    padding: 0 50px;
+  }
+  .assistant .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Latest Youtube Video css */
+  .latest .banner-wrap {
+    margin-top: 55px !important;
+    height: max-content !important;
+  }
+  .latest .videostream {
+    margin-top: 60px;
+    padding: 0px 20px;
+  }
+  .latest .videostream iframe {
+    height: 323px;
+  }
+  .cycle_time {
+    padding: 20px;
+  }
+  .cycle_time h3 {
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .viewvideo {
+    gap: 60px;
+    width: 100%;
+  }
+
+  .suscribe_section {
+    display: flex;
+    align-items: start;
+    gap: 29px;
+    flex-direction: column;
+  }
+  .sandhu_h {
+    font-size: 22px;
+  }
+  .pesoncommentimg {
+    width: 50px;
+    height: 50px;
+  }
+  .sharebtn button {
+    font-size: 18px;
+    padding: 10px 38px;
+  }
+  .year_heads {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .shared_p {
+    font-size: 16px;
+  }
+  .likeimg {
+    width: 22px;
+    height: 22px;
+  }
+  .subsection {
+    margin-bottom: 60px;
+  }
+  .latest .bannerbutton {
+    width: 246px;
+    height: 55px;
+    font-size: 18px;
+  }
+  .yearsection {
+    margin: 40px 0 0 0;
+    padding: 40px;
+  }
+
+  .videolive {
+    padding-bottom: 0;
+  }
+
+  .videolive .banner-wrap {
+    margin-top: 25px !important;
+  }
+
+  /* Career and Financial css */
+  .carrers .financial {
+    font-size: 24px;
+    line-height: 40px;
+    width: 85%;
+  }
+  .carrers {
+    padding-bottom: 100px;
+  }
+
+  /* Worldwide css */
+  .worldtext p {
+    font-size: 22px;
+    line-height: 55px;
+    width: 100%;
+  }
+  .worldtext .coach {
+    font-size: 38px;
+    line-height: 50px;
+    width: 100%;
+  }
+  .messageimg {
+    width: 330px;
+    height: 75px;
+    right: 16px;
+  }
+
+  .inputsearch input {
+    width: 135px;
+    height: 42px;
+}
+.inputsearch {
+  padding: 0 28px;
+}
+.jxhead .header-right .header-menu-right {
+  padding-right: 0;
+}
+.jxhead .header-right .header-menu-right a.header-login-link {
+  padding: 8px 25px;
+}
+.jxhead .nav .navbar-nav {
+  background-color: #1A1B20;
+  padding: 53px 29px;
+}
+.jxhead .nav .navbar-nav.is-active li a {
+  color: #93A1A8 !important;
+}
 }
 
 /* Small devices (landscape phones, 576px and 767px) */
@@ -5859,21 +7445,21 @@
     font-size: 38px;
     line-height: 50px;
     width: 100%;
-}
-.steps {
-  font-size: 14px;
-}
-.text_20 {
-  font-size: 18px;
-  line-height: 22px;
-}
+  }
+  .steps {
+    font-size: 14px;
+  }
+  .text_20 {
+    font-size: 18px;
+    line-height: 22px;
+  }
 
-.Choose_Brainmeasures_section {
-  padding-bottom: 80px;
-}
-.Choose_Brainmeasures_section .card-body {
-  padding: 22px;
-}
+  .Choose_Brainmeasures_section {
+    padding-bottom: 80px;
+  }
+  .Choose_Brainmeasures_section .card-body {
+    padding: 22px;
+  }
 
   .predata p {
     font-size: 18px;
@@ -6386,6 +7972,417 @@
     font-size: 20px !important;
     line-height: 24px !important;
   }
+
+  /* Globally Recognized Courses... Just A Click Away! css */
+  .recognized #containers .cardscontainersset {
+    margin-top: 0px;
+  }
+  .recognized .learnersection {
+    margin-top: 20px;
+  }
+  .business {
+    margin-top: -210px;
+    padding-bottom: 80px;
+  }
+  .recognized .upskillheads {
+    width: 95%;
+    line-height: 60px;
+  }
+  .business .card-container {
+    padding: 0 25px;
+  }
+  .recognized .learnersection {
+    grid-template-columns: 27% auto;
+  }
+  .videostream iframe {
+    height: 120px;
+  }
+  .recognized .heading_h {
+    line-height: 50px;
+  }
+  .posted h6 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .highest .card-container .product_p {
+    font-size: 36px;
+    line-height: 44px;
+    padding-top: 0 !important;
+  }
+  .highest .card-container .relevant {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .highest .card-container .card {
+    padding: 8px;
+  }
+
+  /* JSixSigma for Corporates! css */
+  .corporates .heading_h {
+    width: 100% !important;
+  }
+  .Propel {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    margin-left: 4px !important;
+  }
+  .corporates .learnersection {
+    grid-template-columns: 50% auto;
+  }
+
+  .corporates .banner-wrap {
+    height: 1161px !important;
+  }
+  .corpoimg {
+    width: 323px;
+    height: 281px;
+    margin: 0 auto;
+  }
+  .corporates .caption {
+    margin-top: 40px;
+  }
+  .corporates .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .corporates .certification .banner-wrap {
+    margin-top: -115px !important;
+  }
+  .corporates {
+    margin-top: 100px;
+  }
+  .buyassign {
+    margin-top: 24px;
+    width: 22px;
+  }
+  .corporates .posted h5 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .corporates .business {
+    padding-bottom: 0px;
+  }
+  .corporates .business .cardone {
+    height: 390px;
+  }
+
+  /* Enhance Workplace Efficiency css */
+  .enhance #containers .eppimg {
+    width: 54px;
+    height: 62px;
+  }
+  .enhance .cardone .prod h6 {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .enhance #cardonestag {
+    padding: 21px;
+  }
+
+  .enhance #containers .cardscontainersset {
+    margin-top: 255px;
+  }
+
+  .enhance .learnersection {
+    margin-top: -10px;
+  }
+
+  .enhance #containers .eppimg {
+    width: 66px;
+    height: 80px;
+  }
+  .enhance .belt .cardone .prod h6 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .enhance .banner-wrap {
+    margin-top: 65px;
+  }
+  .enhance .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .enhance .belt .cardscontainersset {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .enhance .learnersection {
+    grid-template-columns: 23% auto;
+  }
+
+  .enhance .learnersection {
+    grid-template-columns: 26% auto;
+    padding: 0 30px;
+  }
+  .enhance .posted {
+    align-items: center;
+  }
+  .enhance #containers .eppimg {
+    width: 56px;
+    height: 70px;
+  }
+  .enhance {
+    margin-top: 0;
+  }
+  .enhance .banner-wrap {
+    margin-top: 50px !important;
+  }
+  .candidates .relevant {
+    width: 100%;
+  }
+  .enhance .videostream iframe {
+    height: 116px;
+  }
+  .enhance .learnersection {
+    grid-template-columns: 33% auto;
+  }
+  .enhance .hows {
+    width: 60px;
+    height: 60px;
+  }
+  .enhance .belt .posted {
+    height: max-content !important;
+  }
+  .enhance .banner-wrap {
+    height: max-content !important;
+  }
+
+  /* Live Interactive Training Programs css */
+  .live .livetrained {
+    height: max-content !important;
+  }
+  .live .Basics {
+    height: max-content !important;
+  }
+  .livecard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .livecard .attain {
+    padding: 25px 19px;
+  }
+  .livecard .attain p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .livecard .banner-wrap {
+    padding: 0 55px !important;
+  }
+  .livecard {
+    padding: 50px;
+  }
+  .live .learnersection {
+    padding: 0 50px;
+  }
+  .live .capone {
+    margin-top: 0;
+  }
+  .live .caption {
+    margin-top: 45px;
+  }
+  /*  Industry Specific Courses css */
+  .indust .card-container {
+    grid-template-columns: repeat(2,1fr);
+}
+
+    /* Live Chat 24x7 css */
+    .chatlive .nextlevelimg {
+      width: 365px;
+  }
+  .chatlive .nextlevelimg {
+    margin-bottom: -37px;
+  }
+  .chatlive .caption {
+    margin-top: -24px;
+    padding-bottom: 44px;
+}
+.chatlive .capone {
+  margin-top: 9px;
+}
+
+  /* Know more about our Founder css */
+  .know .banner-wrap {
+    height: 593px;
+  }
+  .janamsection {
+    width: 100%;
+    height: 307px;
+    padding-right: 20px;
+  }
+  .know .caption .wastes {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .know .upskillheads{
+    margin-bottom: 40px;
+}
+  .know .Basics{
+      margin-bottom: 85px;
+}
+
+/* 24x7 Virtual Assistants Available css */
+.assistant{
+  margin-top: -40px;
+}
+.assistant .caption {
+  margin-top: 60px;
+}
+.assistant .learnersection {
+  grid-template-columns: 34% auto;
+  gap: 0px;
+}
+.assistant .learnersection {
+  padding: 0 50px;
+}
+.assistant .card {
+  padding: 15px;
+}
+.assistant #ca2 h6 {
+  font-size: 14px;
+  line-height: 26px;
+}
+.assistant #containers .eppimg {
+  width: 60px;
+  height: 60px;
+}
+.assistant .banner-wrap {
+  height: 281px !important;
+  padding: 0 50px;
+}
+.assistant .card-container {
+  grid-template-columns: repeat(3,1fr);
+}
+.assistant .card-container {
+  padding: 0 25px;
+  grid-template-columns: repeat(2,1fr);
+}
+.assistant .learnersection {
+  gap: 30px;
+}
+
+/* Latest Youtube Video css */
+.latest .banner-wrap {
+  margin-top: 55px !important;
+  height: max-content !important;
+}
+.latest .videostream {
+  margin-top: 37px;
+  padding: 0;
+  margin-bottom: 19px;
+}
+.latest .videostream iframe {
+  height: 253px;
+}
+.viewvideo {
+  gap: 49px;
+}
+.cycle_time {
+  padding: 0;
+}
+
+.cycle_time h3 {
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.suscribe_section {
+  display: flex;
+  align-items: start;
+  gap: 29px;
+  flex-direction: column;
+}
+.sandhu_h {
+  font-size: 22px;
+}
+.pesoncommentimg {
+  width: 50px;
+  height: 50px;
+}
+.sharebtn button {
+  font-size: 18px;
+  padding: 10px 38px;
+}
+.year_heads {
+  font-size: 16px;
+  line-height: 22px;
+}
+.shared_p {
+  font-size: 16px;
+}
+.likeimg {
+  width: 22px;
+  height: 22px;
+}
+.subsection {
+  margin-bottom: 60px;
+}
+.latest .bannerbutton {
+  width: 166px !important;
+  height: 50px;
+  font-size: 16px;
+}
+.yearsection {
+  margin: 40px 0 0 0;
+  padding: 40px;
+}
+
+.videolive {
+  padding-bottom: 0 !important;
+}
+
+.videolive .banner-wrap {
+  margin-top: 25px !important;
+}
+
+/* Career and Financial css */
+.carrers .financial {
+  font-size: 22px;
+  line-height: 36px;
+  width: 100%;
+}
+
+/* Worldwide css */
+.worldtext p {
+  font-size: 22px;
+  line-height: 35px;
+  width: 100%;
+}
+.worldtext .coach {
+  font-size: 34px;
+  line-height: 46px;
+  width: 100%;
+}
+.carrers{
+  padding-bottom: 70px;
+}
+.messageimg {
+  width: 270px;
+  height: 75px;
+  right: 16px;
+}
+
+
+.inputsearch input {
+  width: 101px;
+  height: 37px;
+  font-size: 12px;
+}
+.inputsearch {
+padding: 0 28px;
+}
+.jxhead .header-right .header-menu-right {
+padding-right: 0;
+}
+.jxhead .header-right .header-menu-right a.header-login-link {
+padding: 8px 25px;
+}
+.jxhead .nav .navbar-nav {
+background-color: #1A1B20;
+padding: 53px 29px;
+}
+
+.carrers {
+  padding-bottom: 80px !important;
+}
+
 }
 
 @media screen and (max-width: 767px) {
@@ -7245,6 +9242,426 @@
   .cutting_lead {
     font-size: 25px !important;
     text-align: start !important;
+  }
+
+  /* Janam Sandhu Lean Six Sigma Guru css */
+  .banner-section .banner-wrap {
+    background-image: none;
+    height: 400px;
+  }
+  .heading_h {
+    font-size: 50px;
+    line-height: 46px;
+    width: 89%;
+    margin: 0 auto;
+  }
+  .banner-section .caption span {
+    font-size: 36px;
+  }
+  .leading .caption p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 20px auto;
+  }
+  .banner-section .caption {
+    margin-top: 90px;
+    text-align: center;
+  }
+  .bannerbutton {
+    width: 265px;
+    height: 50px;
+    font-size: 16px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  .banner-section .banner-wrap {
+    background-size: 78%;
+  }
+  .banner-section {
+    padding: 0;
+  }
+
+  /* Janam Sandhu Lean Six Sigma Guru css */
+  .banner-section .banner-wrap {
+    background-image: none;
+    height: 485px;
+  }
+  .heading_h {
+    font-size: 54px;
+    line-height: 46px;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .banner-section .caption span {
+    font-size: 36px;
+    line-height: 25px;
+  }
+  .leading .caption p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 20px auto;
+  }
+  .banner-section .caption {
+    margin-top: 60px;
+    text-align: center;
+  }
+  .bannerbutton {
+    width: 265px;
+    height: 50px;
+    font-size: 16px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  .banner-section .banner-wrap {
+    background-size: 78%;
+    height: 435px;
+  }
+  .banner-section {
+    padding: 0;
+  }
+
+  /*  Up-Skill and Excel css */
+  .upskill .caption {
+    margin-top: 63px;
+  }
+  .Basics .caption .heading_h {
+    font-size: 38px;
+    width: 100%;
+  }
+  .upskill .Basics .best {
+    padding: 22px 2px 29px 17px;
+    background-position: center;
+  }
+  /* .upskill .banner-wrap {
+    height: 611px !important;
+    padding: 0 50px;
+  } */
+
+  .upskill .banner-wrap {
+    height: max-content !important;
+    padding: 0 50px;
+  }
+  .ind_best {
+    font-size: 16px !important;
+    line-height: 35px !important;
+  }
+  .views {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 50px;
+  }
+  .lingual {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .million {
+    font-size: 26px;
+    line-height: 48px;
+  }
+  .learnersection p {
+    font-size: 14px !important;
+    line-height: 27px !important;
+  }
+  .Worldwide {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .coach {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .financial {
+    font-size: 18px;
+    line-height: 31px;
+  }
+  .after-banner-section .specialities-details {
+    padding: 82px 70px 70px;
+  }
+  .spec {
+    font-size: 32px;
+    line-height: 41px;
+  }
+  .learn_exel {
+    font-size: 18px;
+  }
+  .after-banner-section .specialities-details .slider-cell {
+    padding: 16px;
+  }
+  .views {
+    margin-top: 58px;
+  }
+  .linesset {
+    margin-top: 49px;
+  }
+  .view_section {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .learnersection {
+    grid-template-columns: 30% auto;
+    gap: 12px;
+  }
+  .toolsigma {
+    text-align: center;
+  }
+  .viewbtn {
+    width: 194px !important;
+  }
+  .after-banner-section .specialities-details {
+    padding: 26px 50px 50px;
+  }
+  .after-banner-section .specialities-details .slick-list {
+    margin: 21px -15px;
+  }
+  .upskillheads {
+    font-size: 46px;
+    margin-bottom: 26px;
+  }
+  /* How lean six-sigma modules css */
+  .modulesimg {
+    width: 387px;
+    height: 274px;
+  }
+  .assist .upskillheads {
+    padding-top: 92px;
+    line-height: 62px;
+    width: 80%;
+  }
+  .assist .specialities-details {
+    padding-bottom: 50px !important;
+  }
+  .modulesimg {
+    margin: 0 auto;
+  }
+  .ascend {
+    width: 100%;
+    line-height: 50px;
+  }
+  .assist {
+    padding-bottom: 100px;
+  }
+
+  /* Enhanced Production Processes css */
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    align-items: center;
+  }
+  .eppimg {
+    width: 55px;
+    height: 64px;
+  }
+  .product_p {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .card-container {
+    margin-top: 50px;
+  }
+  .product_p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .tooltip {
+    position: absolute;
+    top: 98%;
+    width: 100%;
+    left: 47%;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .tooltip::before {
+    top: -14px;
+  }
+
+  /*  Why is Six-Sigma Certification css */
+  .cardone {
+    padding: 28px;
+  }
+  .romilsimg {
+    padding-left: 0;
+    border-left: 0;
+  }
+  .oriented h1 {
+    font-size: 32px;
+    line-height: 44px;
+    width: 100%;
+  }
+  .certificateimg {
+    height: 269px;
+  }
+  .certification .Basics .caption .heading_h {
+    width: 100%;
+  }
+
+  .cardone .prod .product_p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .cardone .prod .strengthen {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  #containers .ar {
+    font-size: 14px;
+    margin-top: 7px;
+  }
+  #containers .cardscontainersset {
+    margin-top: 223px !important;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #cardfour {
+    margin-top: 55px;
+  }
+  .certification .banner-wrap {
+    margin-top: 184px;
+    padding: 0 35px;
+  }
+
+  #containers .must {
+    flex-direction: column;
+  }
+  .certificateimg {
+    height: 257px;
+    width: 364px;
+    margin: 65px auto 0 auto;
+  }
+  .certification {
+    padding-bottom: 93px;
+  }
+
+  /* .enhance {
+    padding-bottom: 135px;
+} */
+  .enhance .candidates .card-container {
+    margin-bottom: 0px;
+  }
+  .secondcards {
+    flex-direction: column;
+    gap: 16px;
+  }
+  #containers .arone {
+    font-size: 12px;
+  }
+
+  /* Choose the appropriate css */
+  .belt h6 {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .belt {
+    gap: 10px;
+  }
+  .belt p {
+    font-size: 18px;
+    line-height: 25px;
+    width: 50px;
+    height: 46px;
+  }
+  .cardcerti {
+    height: 160px;
+  }
+  .upskillheads {
+    font-size: 46px;
+    line-height: 49px;
+    margin-bottom: -10px;
+  }
+  .choosearea .learnersection {
+    margin-top: 44px;
+  }
+  /* .multicard {
+    margin-top: -165px;
+    padding: 0 45px;
+  } */
+
+  .multicard {
+    margin-top: 17px;
+    padding: 0 45px;
+  }
+  .belt {
+    flex-direction: column;
+    align-items: center;
+  }
+  .belt h6 {
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  /* .choosearea {
+  padding-bottom: 75px;
+} */
+  .globally .banner-wrap {
+    height: 405px !important;
+  }
+
+  /* Next-level Learning With Smart Learning Options css */
+  .nextlevel .banner-wrap {
+    height: 875px !important;
+  }
+
+  .nextlevel .product_p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .nextlevel .relevant {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .nextlevel .card-container {
+    gap: 10px;
+    margin-top: -130px;
+  }
+  .nextlevelimg {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .nextlevel .caption {
+    margin-top: 0;
+  }
+  .nextlevel .capone {
+    margin-top: -50px;
+  }
+  .nextlevel .capone {
+    margin-top: -170px;
+  }
+  .nextlevel #ca1,
+  .nextlevel #ca2 {
+    padding: 26px;
+  }
+  .nextlevel {
+    padding-bottom: 70px !important;
+  }
+  /* JSixSigma for Corporates! css */
+  /* .corporates .banner-wrap {
+    height: 1050px !important;
+  } */
+  .corporates .banner-wrap {
+    height: max-content !important;
+  }
+  .Propel {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+  .corporates .banner-wrap {
+    margin-top: -127px;
+    padding: 0 35px;
+  }
+  /* Live Interactive Training Programs css */
+  .live .banner-wrap {
+    height: max-content !important;
+  }
+  .live .capone {
+    margin-top: 30px;
+  }
+  .live .learnersection {
+    grid-template-columns: 32% auto;
   }
 }
 
@@ -8171,21 +10588,21 @@
     font-size: 36px;
     line-height: 40px;
     width: 100%;
-}
-.steps {
-  font-size: 14px;
-}
-.text_20 {
-  font-size: 18px;
-  line-height: 22px;
-}
-.Choose_Brainmeasures_section .card-body {
-  padding: 22px;
-}
+  }
+  .steps {
+    font-size: 14px;
+  }
+  .text_20 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .Choose_Brainmeasures_section .card-body {
+    padding: 22px;
+  }
 
-.Choose_Brainmeasures_section {
-  padding-bottom: 80px;
-}
+  .Choose_Brainmeasures_section {
+    padding-bottom: 80px;
+  }
 
   .ethicalimg {
     height: 200px;
@@ -8908,6 +11325,1418 @@
     line-height: 24px !important;
   }
 
+  /* Janam Sandhu Lean Six Sigma Guru css */
+
+  .heading_h {
+    font-size: 46px;
+    line-height: 52px;
+    width: 89%;
+  }
+  .banner-section .caption span {
+    font-size: 28px;
+    line-height: 25px;
+  }
+  .leading .caption p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 20px auto;
+  }
+  .banner-section .caption {
+    margin-top: 45px;
+  }
+  .bannerbutton {
+    width: 238px;
+    height: 44px;
+    font-size: 14px;
+    margin: 0 auto;
+    gap: 12px;
+  }
+  .banner-section .banner-wrap {
+    background-size: 78%;
+    height: 331px;
+  }
+  .banner-section {
+    padding: 0;
+  }
+
+  .upskillheads {
+    font-size: 42px;
+    margin-bottom: 12px;
+  }
+  /* How lean six-sigma modules css */
+  .modulesimg {
+    width: 328px;
+    height: 223px;
+  }
+  .assist {
+    padding-bottom: 100px;
+  }
+  /*  Why is Six-Sigma Certification css */
+  .certification {
+    padding-bottom: 93px;
+  }
+  .multicard {
+    padding: 0 25px;
+  }
+  /* .choosearea {
+  padding-bottom: 75px;
+} */
+  .globally .banner-wrap {
+    height: 405px !important;
+  }
+
+  /* Next-level Learning With Smart Learning Options css */
+  .nextlevel .banner-wrap {
+    height: 875px !important;
+  }
+  .nextlevel .product_p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .nextlevel .relevant {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .nextlevel .card-container {
+    gap: 10px;
+    margin-top: -130px;
+  }
+  .nextlevelimg {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .nextlevel .capone {
+    margin-top: -50px;
+  }
+  .nextlevel .capone {
+    margin-top: -170px;
+  }
+  .nextlevel #ca1,
+  .nextlevel #ca2 {
+    padding: 26px;
+  }
+  .nextlevel {
+    padding-bottom: 70px !important;
+  }
+
+  /* Globally Recognized Courses... Just A Click Away! css */
+  .recognized #containers .cardscontainersset {
+    margin-top: 0px;
+  }
+  .recognized .learnersection {
+    margin-top: 50px;
+  }
+  .business {
+    margin-top: -210px;
+    padding-bottom: 60px;
+  }
+  .recognized .upskillheads {
+    width: 95%;
+    line-height: 48px;
+  }
+  .business .card-container {
+    padding: 0 25px;
+  }
+  .recognized .learnersection {
+    grid-template-columns: 27% auto;
+  }
+  .videostream iframe {
+    height: 120px;
+  }
+  .recognized .heading_h {
+    line-height: 50px;
+  }
+  .posted h6 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .highest .card-container .product_p {
+    font-size: 36px;
+    line-height: 44px;
+    padding-top: 0 !important;
+  }
+  .highest .card-container .relevant {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .highest .card-container .card {
+    padding: 8px;
+  }
+
+  /* JSixSigma for Corporates! css */
+  .corporates .heading_h {
+    width: 100% !important;
+  }
+  .corporates .learnersection {
+    grid-template-columns: 50% auto;
+  }
+
+  .corporates .banner-wrap {
+    height: 1050px !important;
+  }
+  .Propel {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+  .corpoimg {
+    width: 323px;
+    height: 281px;
+    margin: 0 auto;
+  }
+  .corporates .caption {
+    margin-top: 40px;
+  }
+  .corporates .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .corporates .certification .banner-wrap {
+    margin-top: -115px !important;
+  }
+  .corporates {
+    margin-top: 100px;
+  }
+  .buyassign {
+    margin-top: 24px;
+    width: 22px;
+  }
+  .corporates .posted h5 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .corporates .business {
+    padding-bottom: 0px;
+  }
+  .corporates .business .cardone {
+    height: 390px;
+  }
+  .corporates #containers .cardscontainersset {
+    margin-top: 63px !important;
+  }
+
+  /* Enhance Workplace Efficiency css */
+  .enhance #containers .eppimg {
+    width: 54px;
+    height: 62px;
+  }
+  .enhance .cardone .prod h6 {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .enhance #cardonestag {
+    padding: 21px;
+  }
+
+  .enhance #containers .cardscontainersset {
+    margin-top: 255px;
+  }
+
+  .enhance .learnersection {
+    margin-top: -10px;
+  }
+
+  .enhance #containers .eppimg {
+    width: 66px;
+    height: 80px;
+  }
+  .enhance .belt .cardone .prod h6 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .enhance .banner-wrap {
+    margin-top: 65px;
+  }
+  .enhance .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .enhance .belt .cardscontainersset {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .enhance .learnersection {
+    grid-template-columns: 23% auto;
+  }
+
+  .enhance .learnersection {
+    grid-template-columns: 26% auto;
+    padding: 0 30px;
+  }
+  .enhance .posted {
+    align-items: center;
+  }
+  .enhance #containers .eppimg {
+    width: 56px;
+    height: 70px;
+  }
+  .enhance {
+    margin-top: 0;
+  }
+  .enhance .videostream iframe {
+    height: 115px;
+  }
+  .enhance .banner-wrap {
+    margin-top: 50px !important;
+  }
+  .candidates .relevant {
+    width: 100%;
+  }
+  .enhance .learnersection {
+    grid-template-columns: 33% auto;
+  }
+  .enhance .hows {
+    width: 60px;
+    height: 60px;
+  }
+  .enhance .belt .posted {
+    height: max-content !important;
+  }
+  .enhance .banner-wrap {
+    height: max-content !important;
+  }
+  .enhance #containers .cardscontainersset {
+    margin-top: 283px !important;
+  }
+  .enhance {
+    padding-bottom: 23px;
+  }
+
+  /* Live Interactive Training Programs css */
+  .live .livetrained {
+    height: max-content !important;
+  }
+  .live .Basics {
+    height: max-content !important;
+  }
+  .livecard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .livecard .attain {
+    padding: 25px 19px;
+  }
+  .livecard .attain p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .livecard .banner-wrap {
+    padding: 0 55px !important;
+  }
+  .livecard {
+    padding: 50px;
+  }
+  .live .learnersection {
+    padding: 0 50px;
+  }
+  .live .capone {
+    margin-top: 0;
+  }
+  .live .caption {
+    margin-top: 45px;
+  }
+
+  .live .capone {
+    margin-top: 30px;
+  }
+  .live .learnersection {
+    grid-template-columns: 32% auto;
+  }
+
+  /*  Industry Specific Courses css */
+  .indust .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Live Chat 24x7 css */
+  .chatlive .nextlevelimg {
+    width: 365px;
+  }
+  .chatlive .nextlevelimg {
+    margin-bottom: -37px;
+  }
+  .chatlive .caption {
+    margin-top: -24px;
+    padding-bottom: 44px;
+  }
+  .chatlive .capone {
+    margin-top: 9px;
+  }
+  /* Know more about our Founder css */
+  .know .banner-wrap {
+    height: 593px;
+  }
+  .janamsection {
+    width: 100%;
+    height: 307px;
+    padding-right: 20px;
+  }
+  .know .caption .wastes {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .know .upskillheads {
+    margin-bottom: 40px;
+  }
+  .know .Basics {
+    margin-bottom: 85px;
+  }
+  .janamsection {
+    margin: 9px 0px 40px 0;
+  }
+
+  /* 24x7 Virtual Assistants Available css */
+  .assistant {
+    margin-top: -40px;
+  }
+  .assistant .caption {
+    margin-top: 60px;
+  }
+  .assistant .learnersection {
+    grid-template-columns: 34% auto;
+    gap: 0px;
+  }
+  .assistant .learnersection {
+    padding: 0 50px;
+  }
+  .assistant .card {
+    padding: 15px;
+  }
+  .assistant #ca2 h6 {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .assistant #containers .eppimg {
+    width: 60px;
+    height: 60px;
+  }
+  .assistant .banner-wrap {
+    height: 281px !important;
+    padding: 0 50px;
+  }
+  .assistant .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .assistant .card-container {
+    padding: 0 25px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .assistant .learnersection {
+    gap: 30px;
+  }
+
+  /* Latest Youtube Video css */
+  .latest .banner-wrap {
+    margin-top: 55px !important;
+    height: max-content !important;
+  }
+  .latest .videostream {
+    margin-top: 37px;
+    padding: 0;
+    margin-bottom: 19px;
+  }
+  .latest .videostream iframe {
+    height: 253px;
+  }
+  .cycle_time {
+    padding: 0;
+  }
+  .sandhu_p {
+    font-size: 14px;
+  }
+  .cycle_time h3 {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .suscribe_section {
+    display: flex;
+    align-items: start;
+    gap: 29px;
+    flex-direction: column;
+  }
+  .sandhu_h {
+    font-size: 20px;
+  }
+  .pesoncommentimg {
+    width: 50px;
+    height: 50px;
+  }
+  .year_p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .sharebtn button {
+    font-size: 18px;
+    padding: 10px 38px;
+  }
+  .year_heads {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .shared_p {
+    font-size: 16px;
+  }
+  .likeimg {
+    width: 20px;
+    height: 20px;
+  }
+  .viewvideo {
+    gap: 20px;
+  }
+  .subsection {
+    margin-bottom: 60px;
+  }
+  .latest .bannerbutton {
+    width: 246px;
+    height: 55px;
+    font-size: 18px;
+  }
+  .yearsection {
+    margin: 40px 0 0 0;
+    padding: 40px;
+  }
+
+  .videolive {
+    padding-bottom: 0 !important;
+  }
+
+  .videolive .banner-wrap {
+    margin-top: 25px !important;
+  }
+
+  /* Career and Financial css */
+  .carrers .financial {
+    font-size: 20px;
+    line-height: 32px;
+    width: 100%;
+  }
+  .ownersection {
+    margin-top: 50px;
+  }
+
+  /* Worldwide css */
+  .worldtext p {
+    font-size: 22px;
+    line-height: 35px;
+    width: 100%;
+  }
+  .worldtext .coach {
+    font-size: 34px;
+    line-height: 46px;
+    width: 100%;
+  }
+  .carrers {
+    padding-bottom: 70px;
+  }
+  .worldtext {
+    padding-top: 108px;
+  }
+
+  .messageimg {
+    width: 270px;
+    height: 75px;
+    right: 16px;
+  }
+
+  .inputsearch input {
+    width: 101px;
+    height: 37px;
+    font-size: 12px;
+  }
+  .inputsearch {
+  padding: 0 28px;
+  }
+  .jxhead .header-right .header-menu-right {
+  padding-right: 0;
+  }
+  .jxhead .header-right .header-menu-right a.header-login-link {
+  padding: 8px 25px;
+  }
+  .jxhead .nav .navbar-nav {
+  background-color: #1A1B20;
+  padding: 53px 29px;
+  }
 }
 
+
+@media screen and (max-width: 480px) {
+  .banner-section .banner-wrap {
+    height: 330px;
+  }
+  .views {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 25px;
+  }
+  .upskill .banner-wrap {
+    height: 603px !important;
+    padding: 0px 25px;
+  }
+  .Basics .caption .heading_h {
+    font-size: 34px;
+    line-height: 48px;
+  }
+  .ind_best {
+    font-size: 12px !important;
+  }
+  .upskill .Basics .best {
+    padding: 20px 0px 24px 0px;
+    background-position: center;
+  }
+  .million {
+    font-size: 22px;
+    line-height: 44px;
+  }
+  .coach {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .lingual {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .options {
+    font-size: 14px !important;
+    line-height: 28px;
+    padding-top: 15px;
+  }
+  .thoroughly {
+    font-size: 14px !important;
+    line-height: 25px !important;
+  }
+  .financial {
+    width: 90%;
+  }
+  .learnersection {
+    grid-template-columns: 47% auto;
+  }
+  .after-banner-section .specialities-details {
+    padding: 26px 25px 50px;
+  }
+  .upskillheads {
+    font-size: 38px;
+  }
+  /* How lean six-sigma modules css */
+  .modulesimg {
+    width: 285px;
+    height: 204px;
+  }
+  .assist .specialities-details {
+    padding: 25px !important;
+  }
+  .assist .upskillheads {
+    padding-top: 92px;
+    line-height: 52px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  /*  Why is Six-Sigma Certification css */
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .certification .banner-wrap {
+    margin-top: 150px;
+    padding: 0;
+  }
+
+  
+  .certificateimg {
+    height: 220px;
+    width: 303px;
+    border: 12px solid #7e4a5e;
+  }
+  .secondcards {
+    flex-direction: row;
+  }
+  /* #containers .cardscontainersset {
+    margin-top: 95px;
+  } */
+  #cardtwo {
+    margin-top: 24px;
+  }
+  #cardthree {
+    margin-top: 35px;
+  }
+  .oriented h1 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+  /* Choose the appropriate css */
+  .belt h6 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .cardcerti {
+    height: 180px;
+  }
+  .multicard {
+    padding: 0;
+  }
+  .globally .banner-wrap {
+    height: 395px !important;
+  }
+
+  /* Next-level Learning With Smart Learning Options css */
+  .nextlevel .banner-wrap {
+    height: 875px !important;
+  }
+  .nextlevel .product_p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .nextlevel .relevant {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .nextlevel .card-container {
+    gap: 10px;
+    margin-top: -222px;
+  }
+  .nextlevelimg {
+    width: 290px;
+    margin: 0 auto;
+  }
+  .nextlevel .caption {
+    margin-top: 0;
+  }
+  .nextlevel .capone {
+    margin-top: -245px;
+  }
+  .nextlevel #ca1,
+  .nextlevel #ca2 {
+    padding: 26px;
+    height: 283px;
+    width: 90%;
+  }
+  .nextlevel {
+    padding-bottom: 70px !important;
+  }
+  .nextlevel .card-container {
+    flex-direction: column;
+  }
+  /* Globally Recognized Courses... Just A Click Away! css */
+  .recognized .learnersection {
+    grid-template-columns: 34% auto;
+  }
+  .recognized .learnersection {
+    margin-top: 48px;
+  }
+  .videostream iframe {
+    height: 200px;
+  }
+  /* .videostream .streams {
+  height: 188px;
+  width: 100%;
+} */
+
+  .highest .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .cardone_customer {
+    border-right: none;
+    margin: 0;
+  }
+
+  /* JSixSigma for Corporates! css */
+  .corporates .heading_h {
+    width: 100% !important;
+  }
+  .corporates .learnersection {
+    grid-template-columns: 50% auto;
+    padding: 0 20px;
+  }
+
+  .corporates .banner-wrap {
+    height: 1050px !important;
+  }
+  .Propel {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+  .corpoimg {
+    width: 323px;
+    height: 281px;
+    margin: 0 auto;
+  }
+  .corporates .caption {
+    margin-top: 40px;
+  }
+  .corporates .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+  .corporates.certification .banner-wrap {
+    margin-top: -115px !important;
+  }
+  .corporates {
+    margin-top: 100px;
+  }
+  .buyassign {
+    margin-top: 24px;
+    width: 22px;
+  }
+  .corporates .posted h5 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .corporates .business {
+    padding-bottom: 0px;
+  }
+  .corporates .business .cardone {
+    height: 390px;
+  }
+  .corporates #containers .cardscontainersset {
+    padding-bottom: 30px;
+  }
+  .corporates #containers .cardscontainersset {
+    margin-top: 93px !important;
+}
+  /* Enhance Workplace Efficiency  css */
+  .enhance .caption {
+    margin-top: 45px;
+  }
+  .enhance {
+    margin-top: 0px;
+  }
+  .enhance .videostream iframe {
+    height: 193px;
+  }
+  .enhance #containers .eppimg {
+    width: 48px;
+    height: 59px;
+  }
+  .enhance .moderbns {
+    margin-top: 154px;
+  }
+  .enhance .business .cardone {
+    height: 309px;
+  }
+  .enhance .belt .cardscontainersset {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .enhance #containers .cardscontainersset {
+    width: 100%;
+    padding: 0 25px;
+  }
+  .enhance .candidates .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .enhance .cardone_customer {
+    border-right: none;
+  }
+  .enhance .learnersection {
+    margin-top: 47px;
+  }
+  .enhance .belt .posted {
+    height: max-content !important;
+  }
+  .enhance .banner-wrap {
+    height: max-content !important;
+  }
+  .enhance #containers .cardscontainersset {
+    margin-top: 255px !important;
+}
+
+      /* Live Interactive Training Programs css */
+      .live .livetrained {
+        height: max-content !important;
+      }
+      .live .Basics {
+        height: max-content !important;
+      }
+      .livecard {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .livecard .attain {
+        padding: 25px 19px;
+      }
+      .livecard .attain p {
+        font-size: 20px;
+        line-height: 26px;
+      }
+      .livecard .banner-wrap {
+        padding: 0 55px !important;
+      }
+      .livecard {
+        padding: 25px;
+    }
+      .live .learnersection {
+        padding: 0 25px;
+      }
+      .live .capone {
+        margin-top: 0;
+      }
+      .live .caption {
+        margin-top: 45px;
+      }
+    
+      .live .capone {
+        margin-top: 30px;
+      }
+      .live .learnersection {
+        grid-template-columns: 34% auto;
+      }
+        /* Know more about our Founder css */
+        .janamsection {
+          margin: 9px 0px 40px 0;
+        }
+        /* .upskill .banner-wrap {
+          height: 529px !important;
+          padding: 0px 25px;
+      } */
+
+    .know .Basics {
+      margin-bottom: 0;
+  }
+
+  /* 24x7 Virtual Assistants Available css */
+.assistant{
+  margin-top: -40px;
+}
+.assistant .caption {
+  margin-top: 60px;
+}
+.assistant .learnersection {
+  grid-template-columns: 34% auto;
+  gap: 0px;
+}
+.assistant .learnersection {
+  padding: 0 50px;
+}
+.assistant .card {
+  padding: 15px;
+}
+.assistant #ca2 h6 {
+  font-size: 14px;
+  line-height: 26px;
+}
+.assistant #containers .eppimg {
+  width: 60px;
+  height: 60px;
+}
+.assistant .banner-wrap {
+  height: 281px !important;
+  padding: 0 25px;
+}
+.assistant .card-container {
+  grid-template-columns: repeat(3,1fr);
+}
+.assistant .card-container {
+  padding: 0 25px;
+  grid-template-columns: repeat(2,1fr);
+}
+.assistant .learnersection {
+  gap: 30px;
+}
+
+.assistant .learnersection {
+  margin-top: 66px;
+}
+.assistant .caption {
+  margin-top: 0px;
+}
+/* Latest Youtube Video css */
+.latest .banner-wrap {
+  margin-top: 55px !important;
+  height: max-content !important;
+}
+.latest .videostream {
+  margin-top: 37px;
+  padding: 0;
+  margin-bottom: 19px;
+}
+.latest .videostream iframe {
+  height: 249px;
+}
+
+.sandhu_h {
+  font-size: 20px;
+}
+.pesoncommentimg {
+  width: 50px;
+  height: 50px;
+}
+.year_p {
+  font-size: 14px;
+  line-height: 23px;
+}
+.sharebtn button {
+  font-size: 18px;
+  padding: 10px 38px;
+}
+.viewvideo {
+ flex-direction: column;
+ /* align-items: start !important; */
+}
+.latest .bannerbutton {
+  width: 168px !important;
+  height: 44px;
+  font-size: 14px;
+}
+.sharebtn button {
+  font-size: 14px;
+  padding: 9px 30px;
+}
+.suscribe_section {
+  align-items: center;
+}
+/* Career and Financial css */
+.verticals{
+  display: none;
+}
+.ownersection {
+  flex-direction: column;
+}
+/* Worldwide css */
+.worldtext .coach {
+  font-size: 30px;
+  line-height: 42px;
+  width: 100%;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+.messageimg {
+  width: 202px;
+  height: 33px;
+  right: 16px;
+  padding-top: 10px;
+}
+.worldwide #conclution_section {
+  margin-bottom: 33px;
+}
+
+.inputsearch input {
+  width: 101px;
+  height: 37px;
+  font-size: 12px;
+}
+.inputsearch {
+  padding: 0 28px;
+  display: none;
+}
+.jxhead .c-footer{
+    width: 175px;
+}
+.jxhead {
+  padding: 10px 0;
+}
+.jxhead .header-right .header-menu-right a.header-login-link {
+    padding: 5px 17px;
+}
+.viewword{
+  margin-top: 0;
+}
+.metrics #viewword{
+  margin-top: 0;
+}
+
+
+#viewwordone {
+  margin-top: 95px !important;
+}
+}
+
+@media screen and (max-width: 440px) {
+  .banner-section .banner-wrap {
+    height: 315px;
+  }
+  .upskillheads {
+    font-size: 34px;
+  }
+  .upskill .banner-wrap {
+    height: 710px !important;
+  }
+  .Basics .caption .heading_h {
+    font-size: 26px;
+    line-height: 43px;
+  }
+  .heading_h {
+    font-size: 38px;
+    line-height: 40px;
+  }
+  .assist .upskillheads {
+    line-height: 44px;
+  }
+  .ascend {
+    width: 100%;
+    line-height: 45px;
+  }
+
+  .assist .specialities-details {
+    padding: 25px !important;
+    padding-bottom: 40px !important;
+  }
+
+  /* Enhanced Production Processes css */
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .eppimg {
+    width: 47px;
+    height: 62px;
+  }
+  .card-container {
+    margin-top: 0px;
+  }
+  /*  Why is Six-Sigma Certification css */
+  #containers .cardscontainersset {
+    margin-top: 53px;
+  }
+  .multicard {
+    margin-top: -309px;
+  }
+  .globally .banner-wrap {
+    height: 395px !important;
+  }
+
+  /* Next-level Learning With Smart Learning Options css */
+
+  .nextlevel .capone {
+    margin-top: 0;
+  }
+  .nextlevel .banner-wrap {
+    height: 1020px !important;
+  }
+  .nextlevel .banner-wrap {
+    height: 780px !important;
+  }
+  .nextlevel .capone {
+    margin-top: -232px;
+  }
+  .nextlevel .card-container {
+    gap: 10px;
+    margin-top: -193px;
+  }
+  /* Globally Recognized Courses... Just A Click Away! css */
+  .business {
+    margin-top: -316px;
+  }
+  .videostream iframe {
+    height: 203px;
+  }
+
+  .recognized #containers .cardscontainersset {
+    margin-top: -27px !important;
+}
+
+  /* JSixSigma for Corporates! css */
+  .corporates .heading_h {
+    width: 100% !important;
+  }
+
+  .corporates .posted h6 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .corporates .banner-wrap {
+    height: 1143px !important;
+  }
+  .Propel {
+    font-size: 16px !important;
+    line-height: 26px !important;
+    text-align: start;
+  }
+  .corpoimg {
+    width: 279px;
+    height: 251px;
+    margin: 0 auto;
+  }
+  .corporates .caption {
+    margin-top: 40px;
+  }
+  .corporates #cardonestag {
+    justify-content: center;
+  }
+  .learnersection p {
+    font-size: 12px !important;
+    line-height: 25px !important;
+  }
+  .corporates .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+  }
+  .corporates.certification .banner-wrap {
+    margin-top: -115px !important;
+  }
+  .corporates {
+    margin-top: 100px;
+  }
+  .buyassign {
+    margin-top: 24px;
+    width: 22px;
+  }
+  .corporates .posted h5 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .corporates .business {
+    padding-bottom: 0px;
+  }
+  .corporates .business .cardone {
+    height: 390px;
+  }
+  .corporates #containers .cardscontainersset {
+    padding-bottom: 30px;
+  }
+  .business .card-container {
+    padding: 0;
+  }
+
+  /* Enhance Workplace Efficiency  css */
+  .enhance {
+    margin-top: -10px;
+  }
+  .enhance .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+  .enhance #containers .cardscontainersset {
+    margin-top: 348px;
+  }
+  .enhance .business .cardone {
+    height: 309px;
+  }
+  .enhance .videostream iframe {
+    height: 201px;
+  }
+  .enhance .belt .cardone .prod h6 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .enhance #containers .cardscontainersset {
+    margin-top: 356px !important;
+    padding: 0;
+  }
+  .enhance .belt .posted {
+    height: max-content !important;
+  }
+  .enhance .banner-wrap {
+    height: max-content !important;
+  }
+
+  /* Live Interactive Training Programs css */
+  .live .banner-wrap {
+    height: max-content!important;
+}
+.livecard {
+  grid-template-columns: repeat(1, 1fr);
+}
+.live .capone {
+  margin-top: 18px;
+}
+.livecard .attain p {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+
+  /* 24x7 Virtual Assistants Available css */
+ 
+  .assistant .banner-wrap {
+    height: 281px !important;
+    padding: 0 25px;
+  }
+  .assistant .learnersection {
+    margin-top: 66px;
+  }
+
+  .assistant .card-container {
+    grid-template-columns: repeat(1,1fr);
+}
+
+.assistant .card{
+ justify-content: center;
+}
+.assistant {
+  margin-top: -111px;
+}
+/* Latest Youtube Video css */
+.latest .banner-wrap {
+  margin-top: 55px !important;
+  height: max-content !important;
+}
+.latest .videostream {
+  margin-top: 37px;
+  padding: 0;
+  margin-bottom: 19px;
+}
+.latest .videostream iframe {
+  height: 225px;
+}
+.yearsection {
+  padding: 25px;
+}
+.sandhu_h {
+  font-size: 18px;
+}
+.pesoncommentimg {
+  width: 50px;
+  height: 50px;
+}
+.year_p {
+  font-size: 14px;
+  line-height: 23px;
+}
+.sharebtn button {
+  font-size: 18px;
+  padding: 10px 38px;
+}
+.cycle_time h3 {
+  font-size: 24px;
+  line-height: 33px;
+}
+.viewvideo {
+ flex-direction: column;
+ /* align-items: start !important; */
+}
+.latest .bannerbutton {
+  width: 168px !important;
+  height: 44px;
+  font-size: 14px;
+}
+.sharebtn button {
+  font-size: 14px;
+  padding: 9px 30px;
+}
+/* Career and Financial css */
+.carrers{
+  padding-bottom: 60px;
+}
+.carrers .financial {
+  font-size: 18px;
+  line-height: 30px;
+}
+.worldtext .coach {
+  font-size: 27px;
+  line-height: 39px;
+}
+.carrers .ownersection{
+  display: none;
+}
+/* Worldwide css */
+.worldtext p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.jxhead .c-footer{
+    width: 175px;
+}
+}
+
+@media screen and (max-width: 375px) {
+  /* How lean six-sigma modules css */
+  .modulesimg {
+    width: 253px;
+    height: 183px;
+  }
+  /*  Why is Six-Sigma Certification css */
+  .certification .banner-wrap {
+    padding: 0 25px;
+  }
+  .certificateimg {
+    height: 182px;
+    width: 253px;
+    margin: 39px auto 0 auto;
+  }
+  #containers .cardscontainersset {
+    margin-top: 135px;
+  }
+  .oriented h1 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  #containers .cardscontainersset {
+    margin-top: -64px;
+  }
+  .certification .banner-wrap {
+    margin-top: 180px;
+    padding: 0;
+  }
+  /* Choose the appropriate css */
+  .g-4,
+  .gy-4 {
+    --bs-gutter-y: 1.1rem !important;
+  }
+  .globally .banner-wrap {
+    height: 450px !important;
+  }
+
+  /* Next-level Learning With Smart Learning Options css */
+
+  .nextlevel .capone {
+    margin-top: 0;
+  }
+  .nextlevel .banner-wrap {
+    height: 1020px !important;
+  }
+  .nextlevel .banner-wrap {
+    height: 780px !important;
+  }
+  .nextlevel .capone {
+    margin-top: -232px;
+  }
+  .nextlevel .card-container {
+    gap: 10px;
+    margin-top: -193px;
+  }
+  /* Globally Recognized Courses... Just A Click Away! css */
+  .recognized .learnersection {
+    grid-template-columns: 47% auto;
+  }
+  .videostream iframe {
+    height: 144px;
+  }
+
+  .videostream iframe {
+    height: 167px;
+  }
+
+  /* Enhance Workplace Efficiency  css */
+  .enhance .hows {
+    width: 48px;
+    height: 49px;
+  }
+  .enhance .business .cardone {
+    height: 282px;
+  }
+  .enhance .belt .cardone .prod h6 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .enhance .highest .card-container .relevant {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .enhance .videostream iframe {
+    height: 166px;
+  }
+  .enhance .cardone .prod h6 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+    /* Live Interactive Training Programs css */
+    .live .banner-wrap {
+      height: max-content!important;
+  }
+  .live .capone {
+    margin-top: 18px;
+  }
+  .live .learnersection {
+    grid-template-columns: 40% auto;
+}
+    /* Live Chat 24x7 css */
+    .chatlive .nextlevelimg {
+      width: 300px;
+  }
+
+  /* Latest Youtube Video css */
+  .latest .videostream iframe {
+    height: 188px;
+}
+
+.jxhead .c-footer{
+    width: 175px;
+}
+}
 /*--------------------------------------*/
