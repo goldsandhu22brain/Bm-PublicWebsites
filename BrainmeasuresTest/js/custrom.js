@@ -66,14 +66,14 @@ $(function () {
 // Best Courses Slider
 $(function () {
     $('.testimonials-slider').owlCarousel({
-        loop: true,
+        loop: false,
         margin: 30,
         dots: false,
         nav: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 3000,
         items: 1,
-        navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fa fa-arrow-right'></i>"]
+        navText: ["<i class='fas fa-less-than'></i>", "<i class='fa fa-greater-than'></i>"]
     })
 });
 
