@@ -78,7 +78,36 @@ $(function () {
 });
 
 
-////
+$(function () {
+    $('#list_carousal').owlCarousel({
+        loop: true,
+        margin: 30,
+        dots: true,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            768: {
+                items: 1
+            },
+
+            992: {
+                items: 1,
+                autoplay: true,
+            },
+            1200: {
+                items: 1
+            }
+        }
+    })
+})
 
 
 
@@ -450,7 +479,7 @@ $(function () {
 })(jQuery);
 /* This part is just for the demo,
 not actually part of the plugin */
-$('.listing-page-content .list-item').paginate(12);
+$('.listing-page-content .list-item').paginate(6);
 $('.details-page-list .list-item').paginate(4);
 $('.video-page-content-box-section .list-item').paginate(6);
 
@@ -471,11 +500,24 @@ $(document).ready(function () {
 
 //////////////////////////////////
 
+// $(document).ready(function () {
+//     $(".Filter-dropdown").click(function () {
+//         $(".filter-box-row-downs-total-box").slideToggle("slow");
+//     });
+// });
+
 $(document).ready(function () {
     $(".Filter-dropdown").click(function () {
+        $(".filter-box-row-downs-total-box_1").slideUp("slow");
         $(".filter-box-row-downs-total-box").slideToggle("slow");
     });
+
+    $(".Filter-dropdown_a").click(function () {
+        $(".filter-box-row-downs-total-box").slideUp("slow");
+        $(".filter-box-row-downs-total-box_1").slideToggle("slow");
+    });
 });
+
 
 // The function toggles more (hidden) text when the user clicks on "Read more". The IF ELSE statement ensures that the text 'read more' and 'read less' changes interchangeably when clicked on.
 $(document).ready(function () {
