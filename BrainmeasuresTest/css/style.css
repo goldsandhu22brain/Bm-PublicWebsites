@@ -9238,7 +9238,6 @@ header .navbar-nav .dropdown .dropdown-menu .dropdown-item {
   color: #fff;
   font-size: 16px;
   line-height: 27px;
-  margin-bottom: 25px;
 }
 
 .candidates_quote_img {
@@ -9257,8 +9256,8 @@ header .navbar-nav .dropdown .dropdown-menu .dropdown-item {
 }
 
 #first-banner .banner-img img {
-  width: 115%;
-  height: 110%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   margin-top: -40px;
 }
@@ -10405,11 +10404,15 @@ li {
   background-color: #e72b6f;
   background-image: none;
   padding-top: 87px;
-  max-height: 720px;
-  height: 679px;
+  max-height: max-content;
+  height: max-content;
   /* margin-top: 61px; */
 }
 
+#first-banner .banner-img {
+  width: 620px;
+  height: max-content;
+}
 .banner-content p {
   font-size: 20px;
   line-height: 30px;
@@ -13798,7 +13801,7 @@ img.reason3 {
   height: 45px;
 }
 
-.talent_acquisition {
+.talentd{
   background-color: #b8ffb7 !important;
   background-image: none !important;
   max-height: 720px !important;
@@ -14017,11 +14020,11 @@ img.reason3 {
 
 /* BM_ Campus Hiring page css start */
 .BM_Campus_Hiring_banner {
-  background-image: url("../images/BM-Campus-Hiring-image/campus_hiring_bg.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-  background-color: #f6f6f6;
+  background-image: url("../images/BM-Campus-Hiring-image/campus_hiring_bg.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: right !important;
+  background-size: contain !important;
+  background-color: #f6f6f6 !important;
 }
 
 .BM_Campus_Hiring_banner .content_div h6 {
@@ -14518,7 +14521,7 @@ background-color: #F7FFC5;
   width: 732px;
   height: max-content;
   position: relative;
-  bottom: -56px;
+  bottom: -81px;
 }
 .Proctored_h {
   font-weight: 800 !important;
@@ -16379,11 +16382,6 @@ background-color: #F7FFC5;
   /* end */
 
   /* BM-Awards css */
-  #first-banner .banner-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 
   .banner-content p {
     font-size: 18px;
@@ -16395,11 +16393,15 @@ background-color: #F7FFC5;
   } */
 
   #first-banner {
-    height: 490px;
+    height: max-content;
     margin-top: 0;
     padding-top: 0;
     padding-bottom: 0;
   }
+  #first-banner .banner-img {
+    width: 554px;
+    height: max-content;
+}
 
   .intuitive {
     font-size: 24px;
@@ -18454,11 +18456,7 @@ padding: 20px 0;
   /* end */
 
   /* BM-Awards css */
-  #first-banner .banner-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+
 
   .banner-content h2 {
     font-size: 42px;
@@ -18471,11 +18469,15 @@ padding: 20px 0;
   }
 
   #first-banner {
-    height: 510px;
+    height: max-content;
     margin-top: 0;
     padding-top: 0;
     padding-bottom: 0;
   }
+  #first-banner .banner-img {
+    width: 530px;
+    height: max-content;
+}
 
   .intuitive {
     font-size: 22px;
@@ -20880,11 +20882,9 @@ padding: 20px 0;
     line-height: 28px;
     text-align: center;
   }
-
-  #first-banner {
-    height: 670px;
-    margin-top: -42px;
-  }
+  #first-banner .banner-img {
+    width: 450px;
+}
 
   .intuitive {
     font-size: 20px;
@@ -22996,11 +22996,10 @@ padding: 65px 38px
     line-height: 28px;
     text-align: center;
   }
-
-  #first-banner {
-    height: 700px;
-    margin-top: -42px;
-  }
+  #first-banner .banner-img {
+    width: 360px;
+    height: max-content;
+}
 
   .intuitive {
     font-size: 20px;
@@ -27197,11 +27196,10 @@ input.form-control {
     line-height: 24px;
     text-align: center;
   }
-
-  #first-banner {
-    height: 700px;
-    margin-top: -42px;
-  }
+  #first-banner .banner-img {
+    width: 350px;
+    height: max-content;
+}
 
   .intuitive {
     font-size: 18px;
@@ -29084,6 +29082,14 @@ input.form-control {
 .preimg {
   width: 60%;
 }
+
+.mis_hire .emp-module-22-module .list ul li {
+  padding: 20px 30px;
+}
+.mis_hire  .emp-module-22-module .list ul li span.icon {
+  width: 28px;
+  height: 28px;
+}
   /* end */
 }
 
@@ -29145,10 +29151,6 @@ input.form-control {
 
   .banner-content h2 {
     font-size: 36px;
-  }
-
-  #first-banner .banner-img {
-    margin-bottom: -57px;
   }
 
   .winsimg img {
@@ -30036,6 +30038,10 @@ input.form-control {
 .lot .module-16 .module.bg-blue {
   height: 480px;
 }
+#first-banner .banner-img {
+  display: none !important;
+}
+
 }
 
 @media (max-width: 440px) {
@@ -30163,10 +30169,6 @@ input.form-control {
     line-height: 24px;
   }
 
-  #first-banner {
-    height: 720px;
-    margin-top: -100px;
-  }
 
   #fisrt-banner .banner-img {
     margin-bottom: -50px;
