@@ -76,6 +76,18 @@ $(function () {
         navText: ["<i class='fas fa-less-than'></i>", "<i class='fa fa-greater-than'></i>"]
     })
 });
+// $(function () {
+//     $('.utilizings .testimonials-slider').owlCarousel({
+//         loop: false,
+//         margin: 30,
+//         dots: false,
+//         nav: true,
+//         autoplay: false,
+//         autoplayTimeout: 3000,
+//         items: 1,
+//         navText: ["<i class='fas fa-less-than'></i>", "<i class='fa fa-greater-than'></i>"]
+//     })
+// });
 
 
 $(function () {
@@ -221,6 +233,7 @@ $(function () {
         }
     })
 })
+
 
 
 //Case Studies Slider employee page 
@@ -482,6 +495,9 @@ not actually part of the plugin */
 $('.listing-page-content .list-item').paginate(6);
 $('.details-page-list .list-item').paginate(4);
 $('.video-page-content-box-section .list-item').paginate(6);
+$('.Our_Leaderboard_table .list-itemc').paginate(11);
+$('.choose_insight_speed .list-item').paginate(1);
+
 
 
 
@@ -536,7 +552,9 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('.acc-container .acc:nth-child(1) .acc-head').addClass('active');
+    $('.acc-container .acc:nth-child(1) .acc-use').removeClass('active');
     $('.acc-container .acc:nth-child(1) .acc-content').slideDown();
+    $('.acc-container .acc:nth-child(1) .acc-contentone').slideDown();
     $('.acc-head').on('click', function () {
         if ($(this).hasClass('active')) {
             $(this).siblings('.acc-content').slideUp();
