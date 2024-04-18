@@ -508,6 +508,49 @@
     width: 120%;
     height: 110%;
   }
+
+  /* Cost-Benefit Analysis css */
+.hero_img_cost{
+  position: relative;
+}
+
+.real_defines .Objectives_div_role {
+  gap: 46px;
+}
+.real_life {
+  background-size: 77%;
+}
+
+.real_defines {
+  padding: 50px 80px 120px 80px;
+}
+
+/* Cost-Benefit Analysis */
+.Cost_Benefit_Analysis_section {
+  padding: 100px 80px 0;
+}
+
+.Cost_Benefit_Analysis_section .essence_img {
+  margin-bottom: -10px;
+}
+
+.Cost_Benefit_Analysis_section .ngt_has {
+  margin-bottom: 50px;
+}
+
+.Cost_Benefit_Analysis_section .importance_measurement {
+  padding: 0;
+}
+
+.favorable_exception {
+  background-position: 100% 108% !important;
+}
+
+
+.Implementing_B_Scorecard_section .Six-Sigma-sub_div_left h2 {
+  width: 85%;
+} 
+
 }
 
 /* X-Large devices (large desktops, 1200px and 1399px) */
@@ -2137,6 +2180,282 @@
 .traind_live .moderbns {
   margin-top: 710px;
 }
+
+  /* Cost-Benefit Analysis css */
+  .hero_img_cost{
+    position: relative;
+  }
+  .hero_section_b p,.hero_section_b h6 {
+    width: 100%;
+  }
+
+  .key_steps_analysis .FMEA_h2 {
+    font-size: 60px;
+    line-height: 80px;
+}
+
+.key_steps_analysis .sub_Effect_bottem_div p {
+  font-size: 18px;
+}
+#Reducing_Variation_section_may p {
+  width: 100%;
+}
+
+.enhance_cost .FMEA_h2 {
+  font-size: 34px;
+  line-height: 42px;
+  width: 100%;
+}
+
+.enhance_cost #Examples_Reducing_img img {
+  width: 90%;
+}
+.enhance_cost #Examples_Reducing_img {
+  margin-bottom: -130px;
+}
+
+.real_life {
+  background: url("../images/real_life.svg");
+  background-color: #8542DF;
+  background-blend-mode: initial;
+  background-repeat: no-repeat;
+  background-size: 76%;
+  background-position: center left;
+  padding: 39px;
+}
+
+.real_defines .Objectives_div_role {
+  gap: 35px;
+}
+
+.define_work .sub_Objectives_div_role {
+  padding: 34px;
+}
+.real_defines {
+  padding: 50px 80px 100px 80px;
+}
+
+.choices .importance {
+  width: 100%;
+}
+
+ /* Cost-Benefit Analysis */
+ .Cost_Benefit_Analysis_section {
+  padding: 80px 70px 0;
+}
+
+.Cost_Benefit_Analysis_section .essence_img {
+  margin-bottom: -69px;
+}
+
+.Cost_Benefit_Analysis_section .ngt_has {
+  margin-bottom: 50px;
+}
+
+.Cost_Benefit_Analysis_section .importance_measurement {
+  padding: 0;
+  gap: 10px;
+}
+
+.Cost_Benefit_Analysis_section .importance_measurement h6 {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+/*  */
+
+.following_six_steps_section .item h5 {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.following_six_steps_section .effect_top_text {
+  width: 90%;
+}
+
+.following_six_steps_section .effect_top_text .FMEA_h2 {
+  line-height: 54px;
+}
+
+.following_six_steps_section .Advantages_force_div-1 {
+  padding: 30px;
+}
+
+.Limitations_C_Benefit_section .FMEA_h2 {
+  width: 70% !important;
+}
+.Limitations_C_Benefit_section .Limitations_Cost_div {
+margin-top: 50px;
+height: 750px;
+overflow: auto;
+}
+.How_Create_div {
+padding: 30px;
+}
+.Limitations_C_Benefit_section .Limitations_nb {
+height: 45px;
+}
+.favorable {
+  font-size: 30px !important;
+  line-height: 42px !important;
+}
+.favorable_exception  #conclution {
+  padding: 50px;
+}
+.favorable_exception {
+  padding-bottom: 310px !important;
+  background-position: 100% 100% !important;
+}
+.balances_scorecard .importance_measurement {
+  padding: 70px 50px 70px 0px;
+}
+.key_solution {
+  padding: 50px 80px 80px 80px
+}
+
+.key_solution .Objectives_div_role {
+  gap: 39px;
+}
+
+.benefits_balances {
+  padding: 100px 80px 120px 80px !important;
+}
+.benefits_balances .sub_Objectives_div_role h3 {
+  font-size: 26px;
+}
+.benefits_balances .define_work .sub_Objectives_div_role p {
+  font-size: 18px;
+}
+
+.focus_vs {
+  padding: 60px !important;
+}
+#offersone , #offerstwo {
+  min-height: 430px;
+  padding: 50px;
+}
+.focus_vs .define_purpose {
+  font-size: 26px;
+}
+.vs_balance .importance h1 {
+  font-size: 36px;
+}
+.vs_circle h1 {
+  font-size: 26px;
+}
+.focus_vs{
+  padding-bottom: 280px !important;
+}
+.relation_analysis {
+  padding-bottom: 100px !important;
+}
+
+ .following_six_steps_section .item h5 {
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  .following_six_steps_section .effect_top_text {
+    width: 90%;
+  }
+
+  .following_six_steps_section .effect_top_text .FMEA_h2 {
+    line-height: 54px;
+  }
+
+  .following_six_steps_section .Advantages_force_div-1 {
+    padding: 30px;
+  }
+
+  .Limitations_C_Benefit_section .FMEA_h2 {
+    width: 70% !important;
+}
+.Limitations_C_Benefit_section .Limitations_Cost_div {
+  margin-top: 50px;
+  height: 750px;
+  overflow: auto;
+}
+.How_Create_div {
+  padding: 30px;
+}
+.Limitations_C_Benefit_section .Limitations_nb {
+  height: 45px;
+}
+
+.Balanced_Scorecard_section {
+  min-height: 660px;
+}
+.Balancing_Scorecard_section .essence {
+  padding: 80px 45px 90px;
+}
+.Balancing_Scorecard_section .importance_measurement {
+  gap: 60px;
+  margin: 0 40px;
+}
+.Balancing_Scorecard_section {
+  margin-top: -250px;
+}
+.Balancing_Scorecard_section .essence .importance p {
+  font-size: 18px;
+  line-height: 28px;
+}
+.Balanced_Scorecard_section .hero_img img {
+  width: 110%;
+  height: 110%;
+}
+
+.Implementing_B_Scorecard_section {
+  padding: 120px 70px 100px;
+}
+.Implementing_B_Scorecard_section .Six-Sigma-sub_div_left h2 {
+  width: 95%;
+}
+.Implementing_B_Scorecard_section .Strategy_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.Synergistic_Approach_txt {
+  width: 90%;
+  padding-top: 80px;
+}
+
+.Synergistic_Approach_txt h5 {
+  font-size: 28px;
+}
+
+/*  */
+.Example_a_section .importance {
+  width: 100%;
+}
+.Example_a_section .role_of h6 {
+  font-size: 22px;
+}
+.Examples_div {
+  margin-top: 40px;
+}
+.Determine_img {
+  width: 30px;
+  height: 30px;
+}
+.Example_a_section .Example_UL li {
+  margin-bottom: 30px;
+}
+.Example_a_section .Examples_div .Cost_Savings_div {
+  padding: 60px 50px;
+}
+
+.scorecard h4 {
+  font-size: 36px;
+  line-height: 48px;
+}
+.scorecard p {
+  font-size: 26px;
+  line-height: 40px;
+}
+.root_conclution .importanceimg{
+  width: 465px;
+}
 }
 
 @media screen and (max-width: 991px) {
@@ -2552,6 +2871,165 @@
   .Examples_Strategy_section .some {
     width: 100%;
   }
+
+/* Cost-Benefit Analysis css */
+  #Reducing_Variation_section_may h2 {
+    line-height: 45px;
+}
+
+
+  /* Cost-Benefit Analysis */
+  .Cost_Benefit_Analysis_section .importance_measurement {
+    padding: 0;
+  }
+
+  .Cost_Benefit_Analysis_section .importance_measurement h6 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+
+  .Cost_Benefit_Analysis_section .importance p {
+    padding-top: 0px;
+  }
+
+  .following_six_steps_section .effect_top_text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .following_six_steps_section .Advantages_force_div-1 {
+    padding: 30px;
+  }
+
+  .following_six_steps_section .item h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .following_six_steps_section .grid {
+    margin-top: 40px;
+  }
+
+  /*  */
+  .Understanding-Six-Sigma_section .FMEA_h2 {
+    padding-bottom: 20px;
+  }
+
+  .Understanding-Six-Sigma_section .Reducing_v_p {
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
+
+  .key_solution h1 {
+    width: 100%;
+    margin: 0 auto;
+}
+.overcome p {
+  width: 100%;
+}
+.key_solution .define_purpose {
+  width: 100%;
+}
+
+.focus_vs {
+  padding: 60px !important;
+}
+#offersone , #offerstwo {
+  min-height: max-content;
+  padding: 50px;
+}
+.focus_vs .define_purpose {
+  font-size: 26px;
+  text-align: center;
+}
+.vs_circle{
+  text-align: center;
+}
+.vs_balance .importance h1 {
+  font-size: 36px;
+}
+.vs_circle h1 {
+  font-size: 26px;
+}
+.vs_balance .Use_Strategy_h2 {
+  width: 100%;
+}
+.focus_vs .Objectives_div_role {
+  grid-template-columns: repeat(1,1fr);
+}
+
+.Understanding-Six-Sigma_section .FMEA_h2 {
+    padding-bottom: 20px;
+  }
+
+  .Understanding-Six-Sigma_section .Reducing_v_p {
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
+  .Balanced_Scorecard_section p {
+   
+    padding-bottom: 0px;
+}
+.Balancing_Scorecard_section .essence {
+  padding: 40px 20px 60px;
+}
+.Balancing_Scorecard_section .importance_measurement {
+  gap: 30px;
+  margin: 0px;
+}
+.Balanced_Scorecard_section {
+  padding-bottom: 200px !important;
+}
+.Balancing_Scorecard_section {
+  margin-top: -240px;
+  margin-bottom: 20px;
+}
+.Balancing_Scorecard_section .essence .importance p {
+  font-size: 16px;
+  line-height: 26px;
+}
+.Balancing_Scorecard_section .Understanding_img img {
+  margin-bottom: -130px;
+}
+
+.Implementing_B_Scorecard_section .Six-Sigma-sub_div_left h2 {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.Implementing_B_Scorecard_section .Determine_img {
+  margin-top: 4px;
+}
+.Examples_tic_img {
+  width: 20px !important;
+}
+
+.Synergistic_Approach_txt {
+  width: 95%;
+  padding-top: 40px;
+}
+
+.Example_a_section .importance {
+  width: 100%;
+}
+
+.Example_a_section .Examples_div {
+  margin-top: 0px;
+  gap: 0;
+}
+.Example_a_section .Example_UL {
+  margin-top: 50px;
+}
+.Example_a_section .Examples_div .Cost_Savings_div {
+  padding: 50px 30px;
+  margin-top: 20px;
+  min-height: max-content;
+}
+
+
 }
 
 /* @media screen and (min-width: 991px) and (max-width: 1199px) { */
@@ -4559,6 +5037,307 @@
 .jxhead .logo {
   width: 220px;
 }
+
+  /* Cost-Benefit Analysis css */
+  .hero_img_cost{
+    position: relative;
+  }
+  .hero_section_b p,.hero_section_b h6 {
+    width: 100%;
+  }
+
+  .key_steps_analysis .FMEA_h2 {
+    font-size: 55px;
+    line-height: 72px;
+}
+
+.key_steps_analysis .sub_Effect_bottem_div p {
+  font-size: 18px;
+}
+
+#Reducing_Variation_section_may p {
+  width: 100%;
+}
+#Reducing_Variation_section_may .Importance_d {
+  padding-top: 0;
+}
+
+.enhance_cost .FMEA_h2 {
+  font-size: 28px;
+  line-height: 36px;
+  width: 100%;
+}
+
+.enhance_cost #Examples_Reducing_img img {
+  width: 90%;
+}
+.enhance_cost #Examples_Reducing_img {
+  margin-bottom: -130px;
+}
+
+.real_life {
+  background-color: #8542DF;
+  padding: 40px;
+}
+.real_life img {
+  width: 5%;
+  margin-top: 25px;
+}
+
+.real_defines .Objectives_div_role {
+  gap: 28px;
+}
+.define_work .sub_Objectives_div_role {
+  padding: 30px;
+}
+
+.choices .importance {
+  width: 100%;
+}
+.data-driven .importanceimg {
+  margin-left: 0;
+}
+
+ /* Cost-Benefit Analysis */
+ .Cost_Benefit_Analysis_section {
+  padding: 50px 50px 0;
+}
+
+.Cost_Benefit_Analysis_section .essence {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+
+.Cost_Benefit_Analysis_section .essence_img {
+  margin-bottom: -102px;
+  display: block;
+}
+
+.Cost_Benefit_Analysis_section .ngt_has {
+  margin-bottom: 50px;
+}
+
+.Cost_Benefit_Analysis_section .importance_measurement {
+  padding: 0;
+  gap: 10px;
+}
+
+.Cost_Benefit_Analysis_section .importance_measurement h6 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/*  */
+
+.following_six_steps_section .item h5 {
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.following_six_steps_section .effect_top_text {
+  width: 90%;
+  margin-bottom: 40px;
+}
+
+.following_six_steps_section .effect_top_text .FMEA_h2 {
+  line-height: 54px;
+}
+
+.following_six_steps_section .Advantages_force_div-1 {
+  padding: 30px;
+}
+
+.following_six_steps_section .grid {
+  margin-top: 40px;
+}
+
+.Understanding-Six-Sigma_section .Reducing_v_p {
+  padding-bottom: 60px;
+  width: 90%;
+}
+
+.favorable_exception {
+  background-position: 100% 70% !important;
+}
+
+.favorable {
+  font-size: 30px !important;
+  line-height: 42px !important;
+}
+.favorable_exception  #conclution {
+  padding: 50px;
+}
+.favorable_exception {
+  padding-bottom: 310px !important;
+  background-position: 100% 220% !important;
+}
+
+.balances_scorecard .importance_measurement {
+  padding: 50px;
+}
+.key_solution {
+  padding: 50px 70px 70px 70px
+}
+
+.key_solution .Objectives_div_role {
+  gap: 30px;
+}
+.benefits_balances {
+  padding: 100px 80px 120px 80px !important;
+}
+.benefits_balances .sub_Objectives_div_role h3 {
+  font-size: 22px;
+}
+.benefits_balances .define_work .sub_Objectives_div_role p {
+  font-size: 16px;
+}
+.benefits_balances .sub_Objectives_imgs {
+  width: 80px;
+  height: 80px;
+}
+
+.focus_vs {
+  padding: 60px !important;
+}
+#offersone , #offerstwo {
+  min-height: 470px;
+  padding: 50px;
+}
+.focus_vs .define_purpose {
+  font-size: 26px;
+}
+.vs_balance .importance h1 {
+  font-size: 36px;
+}
+.vs_circle h1 {
+  font-size: 26px;
+}
+
+.focus_vs{
+  padding-bottom: 280px !important;
+}
+.relation_analysis {
+  padding-bottom: 100px !important;
+}
+
+.following_six_steps_section .item h5 {
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.following_six_steps_section .effect_top_text {
+  width: 90%;
+  margin-bottom: 40px;
+}
+
+.following_six_steps_section .effect_top_text .FMEA_h2 {
+  line-height: 54px;
+}
+
+.following_six_steps_section .Advantages_force_div-1 {
+  padding: 30px;
+}
+
+.following_six_steps_section .grid {
+  margin-top: 40px;
+}
+
+.Understanding-Six-Sigma_section .Reducing_v_p {
+  padding-bottom: 60px;
+  width: 90%;
+}
+
+/*  */
+
+.Balanced_Scorecard_section {
+  min-height: 600px;
+  padding-bottom: 190px !important;
+}
+
+.Balancing_Scorecard_section .essence {
+padding: 60px 25px 110px;
+}
+.Balancing_Scorecard_section .importance_measurement {
+  gap: 40px;
+  margin: 0 20px;
+}
+.Balancing_Scorecard_section {
+margin-top: -230px;
+}
+.Balancing_Scorecard_section .essence .importance p {
+  font-size: 18px;
+  line-height: 28px;
+}
+.Balancing_Scorecard_section .Understanding_img {
+  width: 100%;
+}
+
+.Implementing_B_Scorecard_section {
+padding: 120px 70px 100px;
+}
+.Implementing_B_Scorecard_section .Six-Sigma-sub_div_left h2 {
+width: 100%;
+}
+.Implementing_B_Scorecard_section .Strategy_img img {
+width: 100%;
+height: 100%;
+}
+
+.Synergistic_Approach_txt {
+width: 95%;
+padding-top: 50px;
+}
+
+.Synergistic_Approach_txt h5 {
+font-size: 26px;
+}
+
+.Example_a_section .importance {
+width: 100%;
+}
+.Example_a_section .role_of h6 {
+font-size: 22px;
+}
+.Examples_div {
+margin-top: 40px;
+}
+.Determine_img {
+width: 30px;
+height: 30px;
+}
+.Example_a_section .Example_UL li {
+margin-bottom: 30px;
+}
+
+.Example_a_section .Examples_div .Cost_Savings_div {
+padding: 60px 30px;
+margin-top: 20px;
+}
+.Example_a_section .Example_UL {
+margin-top: 90px;
+}
+.Example_a_section .Examples_div .Cost_Savings_div h5 {
+font-size: 24px;
+}
+.Example_a_section .Example_UL li h6{
+font-size: 22px;
+}
+.Example_a_section .Examples_div .Measures_h3 {
+font-size: 36px;
+line-height: 54px;
+}
+
+.scorecard h4 {
+  font-size: 34px;
+  line-height: 46px;
+}
+.scorecard p {
+  font-size: 24px;
+  line-height: 38px;
+}
+.root_conclution .importanceimg{
+  width: 390px;
+}
+
 }
 
 @media screen and (min-width: 992px) and (max-width: 1050px) {
@@ -6672,6 +7451,139 @@
 .jxhead .nav .navbar-nav.is-active li a {
   color: #93A1A8 !important;
 }
+
+ /* Cost-Benefit Analysis css */
+.hero_section_b p, .hero_section_b h6 {
+  width: 100%;
+}
+
+.key_steps_analysis .FMEA_h2 {
+  font-size: 38px;
+  line-height: 54px;
+}
+
+.key_steps_analysis .sub_Effect_bottem_div p {
+  font-size: 16px;
+}
+
+
+.key_steps_analysis h4 {
+    line-height: 35px;
+}
+
+
+#Reducing_Variation_section_may p {
+  width: 100%;
+}
+#Reducing_Variation_section_may .Importance_d {
+  padding-top: 0;
+}
+
+.enhance_cost .FMEA_h2 {
+  font-size: 28px;
+  line-height: 36px;
+  width: 100%;
+}
+
+.enhance_cost #Examples_Reducing_img img {
+  width: 50%;
+}
+.enhance_cost #Examples_Reducing_img {
+  margin-bottom: -130px;
+}
+
+.real_life {
+  background-color: #8542DF;
+  padding: 40px;
+}
+.real_life img {
+  width: 5%;
+  margin-top: 25px;
+}
+
+.real_defines .Objectives_div_role {
+  gap: 28px;
+}
+.define_work .sub_Objectives_div_role {
+  width: 47%;
+  padding: 30px;
+}
+
+.choices .importance {
+  width: 100%;
+}
+.data-driven .importanceimg {
+  margin: 0 auto;
+}
+
+.choices {
+  padding-bottom: 170px !important;
+}
+
+.favorable {
+  font-size: 26px !important;
+  line-height: 38px !important;
+}
+.favorable_exception  #conclution {
+  padding: 50px;
+  grid-template-columns: repeat(1,1fr);
+}
+.favorable_exception {
+  padding-bottom: 310px !important;
+  background-image: none !important;
+}
+.favorable_exception .importanceimg {
+  width: 70%;
+}
+.balances_scorecard .importance_measurement {
+  padding: 50px;
+}
+.balances_scorecard {
+  padding: 60px 0;
+}
+.key_solution {
+  padding: 0px 60px 60px 60px;
+}
+
+.key_solution .Objectives_div_role {
+  gap: 20px;
+}
+.benefits_balances {
+  padding: 100px 50px 120px 50px !important;
+}
+.benefits_balances .sub_Objectives_div_role h3 {
+  font-size: 20px;
+}
+.benefits_balances .define_work .sub_Objectives_div_role p {
+  font-size: 14px;
+}
+
+.key_solution {
+  padding: 60px 50px 135px 50px !important;
+}
+
+.benefits_balances .sub_Objectives_imgs {
+  width: 80px;
+  height: 80px;
+}
+
+.focus_vs{
+  padding-bottom: 280px !important;
+}
+.relation_analysis {
+  padding-bottom: 100px !important;
+}
+
+.scorecard h4 {
+  font-size: 30px;
+  line-height: 40px;
+}
+.scorecard p {
+  font-size: 20px;
+  line-height: 34px;
+}
+
+
 }
 
 /* Small devices (landscape phones, 576px and 767px) */
@@ -8383,6 +9295,154 @@ padding: 53px 29px;
   padding-bottom: 80px !important;
 }
 
+ /* Cost-Benefit Analysis css */
+ .hero_section_b p, .hero_section_b h6 {
+  width: 100%;
+}
+
+.key_steps_analysis .FMEA_h2 {
+  font-size: 38px;
+  line-height: 54px;
+}
+
+.key_steps_analysis .sub_Effect_bottem_div p {
+    font-size: 16px;
+}
+.key_steps_analysis h4 {
+  line-height: 35px;
+}
+
+#Reducing_Variation_section_may p {
+  width: 100%;
+}
+#Reducing_Variation_section_may .Importance_d {
+  padding-top: 0;
+}
+
+.enhance_cost .FMEA_h2 {
+  font-size: 28px;
+  line-height: 36px;
+  width: 100%;
+}
+
+.enhance_cost #Examples_Reducing_img img {
+  width: 50%;
+}
+.enhance_cost #Examples_Reducing_img {
+  margin-bottom: -130px;
+}
+
+.real_life {
+  background-color: #8542DF;
+  padding: 40px;
+}
+.real_life img {
+  width: 5%;
+  margin-top: 25px;
+}
+
+.real_defines .Objectives_div_role {
+  gap: 28px;
+}
+.define_work .sub_Objectives_div_role {
+  width: 47%;
+  padding: 30px;
+}
+
+.choices .importance {
+  width: 100%;
+}
+.data-driven .importanceimg {
+  margin: 0 auto;
+}
+
+/*  */
+.following_six_steps_section .grid {
+  margin-top: 40px !important;
+}
+
+.Understanding-Six-Sigma_section .FMEA_h2 {
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.Understanding-Six-Sigma_section .Reducing_v_p {
+  padding-bottom: 40px;
+}
+
+.favorable {
+  font-size: 26px !important;
+  line-height: 38px !important;
+}
+.favorable_exception  #conclution {
+  padding: 30px;
+  grid-template-columns: repeat(1,1fr);
+}
+.favorable_exception {
+  padding-bottom: 310px !important;
+  background-image: none !important;
+}
+.favorable_exception .importanceimg {
+  width: 70%;
+}
+.balances_scorecard .importance_measurement {
+  padding: 40px;
+}
+
+.balances_scorecard {
+  padding: 60px 0;
+}
+.balances_scorecard .viewpoints {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.key_solution {
+  padding: 0px 30px 60px 30px;
+}
+.key_solution {
+  padding: 60px 50px 135px 50px !important;
+} 
+
+
+.benefits_balances {
+  padding: 60px 50px 70px 50px !important;
+}
+.benefits_balances .sub_Objectives_div_role h3 {
+  font-size: 20px;
+}
+.benefits_balances .define_work .sub_Objectives_div_role p {
+  font-size: 14px;
+}
+
+.key_solution {
+  padding: 60px 50px 135px 50px !important;
+}
+
+.benefits_balances .sub_Objectives_imgs {
+  width: 80px;
+  height: 80px;
+}
+.benefits_balances .define_work .sub_Objectives_div_role {
+  width: 100%;
+}
+
+.focus_vs{
+  padding-bottom: 280px !important;
+}
+.relation_analysis {
+  padding-bottom: 100px !important;
+}
+
+.scorecard h4 {
+  font-size: 30px;
+  line-height: 40px;
+}
+.scorecard p {
+  font-size: 20px;
+  line-height: 34px;
+}
+
 }
 
 @media screen and (max-width: 767px) {
@@ -9662,6 +10722,35 @@ padding: 53px 29px;
   }
   .live .learnersection {
     grid-template-columns: 32% auto;
+  }
+
+    /*  */
+    .following_six_steps_section .grid {
+      margin-top: 40px;
+    }
+
+    .Balancing_Scorecard_section {
+      padding: 50px 30px;
+  }
+  .Balancing_Scorecard_section .Understanding_img {
+    width: 85%;
+  }
+  
+  .Synergistic_Approach_txt {
+    width: 100%;
+    padding-top: 30px;
+  }
+  
+  .Synergistic_Approach_txt h5 {
+    font-size: 22px;
+  }
+  
+  .Example_a_section .Examples_div .Measures_div .Cost_Savings_div p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .Example_a_section .Example_UL li {
+    margin-bottom: 20px;
   }
 }
 
@@ -11843,6 +12932,7 @@ padding: 53px 29px;
   }
   .inputsearch {
   padding: 0 28px;
+  display: none;
   }
   .jxhead .header-right .header-menu-right {
   padding-right: 0;
@@ -11854,6 +12944,216 @@ padding: 53px 29px;
   background-color: #1A1B20;
   padding: 53px 29px;
   }
+
+   /* Cost-Benefit Analysis css */
+.hero_section_b p, .hero_section_b h6 {
+  width: 100%;
+}
+
+.key_steps_analysis .FMEA_h2 {
+  font-size: 38px;
+  line-height: 54px;
+}
+.key_steps_analysis .sub_Effect_bottem_div p {
+  font-size: 16px;
+}
+.key_steps_analysis h4 {
+  line-height: 35px;
+}
+#Reducing_Variation_section_may p {
+  width: 100%;
+}
+#Reducing_Variation_section_may .Importance_d {
+  padding-top: 0;
+}
+#Reducing_Variation_section_may{
+  padding-top: 40px !important;
+}
+
+.enhance_cost .FMEA_h2 {
+  font-size: 22px;
+  line-height: 33px;
+  width: 100%;
+}
+
+.enhance_cost #Examples_Reducing_img img {
+  width: 50%;
+}
+.enhance_cost #Examples_Reducing_img {
+  margin-bottom: -130px;
+}
+
+.enhance_cost .contaiorX {
+  padding: 30px 0;
+}
+
+.real_life {
+  background-color: #8542DF;
+  padding: 20px;
+}
+.real_life img {
+  width: 5%;
+  margin-top: 25px;
+}
+
+.real_defines .Objectives_div_role {
+  gap: 28px;
+}
+.define_work .sub_Objectives_div_role {
+  width: 100%;
+  padding: 30px;
+}
+
+.choices .importance {
+  width: 100%;
+}
+.data-driven .importanceimg {
+  margin: 0 auto;
+}
+
+  /*  */
+  .following_six_steps_section .effect_top_text {
+    margin-bottom: 20px;
+  }
+
+  .Understanding-Six-Sigma_section .FMEA_h2 {
+    padding-bottom: 20px;
+    margin-bottom: 0;
+  }
+
+  .Understanding-Six-Sigma_section .Reducing_v_p {
+    padding-bottom: 40px;
+  }
+
+
+  .Limitations_C_Benefit_section .Limitations_nb {
+    width: 40px;
+    height: 40px;
+    
+    margin: 0 auto;
+}
+
+.favorable {
+  font-size: 18px !important;
+  line-height: 33px !important;
+}
+.favorable_exception  #conclution {
+  padding: 30px;
+  grid-template-columns: repeat(1,1fr);
+}
+.favorable_exception {
+  padding-bottom: 310px !important;
+  background-image: none !important;
+}
+.favorable_exception .importanceimg {
+  width: 100%;
+}
+
+.balances_scorecard .importance_measurement {
+  padding: 30px;
+}
+.balances_scorecard {
+  padding: 60px 0;
+}
+.balances_scorecard .viewpoints {
+  font-size: 14px;
+  line-height: 22px;
+}
+.key_solution {
+  padding: 0px 30px 60px 30px;
+}
+.key_solution {
+  padding: 60px 20px 135px 20px !important;
+}
+.benefits_balances {
+  padding: 60px 0px 70px 0px !important;
+}
+.benefits_balances .sub_Objectives_div_role h3 {
+  font-size: 20px;
+}
+.benefits_balances .define_work .sub_Objectives_div_role p {
+  font-size: 14px;
+}
+
+.key_solution {
+  padding: 60px 0px 55px 0px !important;
+}
+
+.benefits_balances .sub_Objectives_imgs {
+  width: 80px;
+  height: 80px;
+}
+.benefits_balances .define_work .sub_Objectives_div_role {
+  width: 100%;
+}
+#offersone, #offerstwo {
+  padding: 30px;
+}
+#sigma h1 {
+  font-size: 22px;
+  line-height: 20px;
+}
+.vs_balance .difine_aside {
+  gap: 20px;
+}
+.focus_vs .define_purpose {
+  font-size: 18px;
+}
+.focus_vs .sub_Objectives_div_role p {
+  font-size: 12px;
+}
+.vs_circle h1 {
+  font-size: 24px;
+}
+.vs_circle {
+  width: 60px;
+  height: 60px;
+}
+
+.focus_vs{
+  padding-bottom: 280px !important;
+}
+.relation_analysis {
+  padding: 50px 0px 100px 0px !important;
+}
+
+.Balancing_Scorecard_section .Understanding_img img {
+  margin-bottom: 0px;
+}
+.Balancing_Scorecard_section .essence {
+  padding: 40px 20px;
+}
+.Balanced_Scorecard_section .content_div {
+
+  padding: 10px 0;
+}
+
+.Implementing_B_Scorecard_section {
+  padding: 20px 40px 60px;
+}
+
+.Example_a_section .Perspective_h6 {
+  font-size: 18px;
+}
+.Example_a_section .approach {
+  font-size: 18px;
+  line-height: 30px;
+}
+.Example_a_section {
+  padding: 50px 10px 50px 10px;
+}
+
+.scorecard h4 {
+  font-size: 30px;
+  line-height: 40px;
+  padding: 0 20px;
+}
+.scorecard p {
+  font-size: 20px;
+  line-height: 34px;
+  padding: 0 20px;
+}
+
 }
 
 
@@ -12334,6 +13634,31 @@ padding: 53px 29px;
 #viewwordone {
   margin-top: 95px !important;
 }
+
+.Balancing_Scorecard_section {
+  padding: 20px 0;
+}
+.Balanced_Scorecard_section .hero_img{
+display: none;
+}
+.Balanced_Scorecard_section .hero_div {
+padding: 0;
+}
+.Balancing_Scorecard_section {
+margin-top: -180px;
+}
+.Balanced_Scorecard_section {
+
+padding-bottom: 150px !important;
+min-height: 660px;
+}
+.Balanced_Scorecard_section .content_div {
+padding: 30px 0;
+}
+
+.Synergistic_Approach_txt h5 {
+font-size: 20px;
+}
 }
 
 @media screen and (max-width: 440px) {
@@ -12620,6 +13945,10 @@ padding: 53px 29px;
 }
 .jxhead .c-footer{
     width: 175px;
+}
+
+.Implementing_B_Scorecard_section {
+  padding: 20px 20px 40px;
 }
 }
 
