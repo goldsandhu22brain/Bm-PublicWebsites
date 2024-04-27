@@ -6501,3 +6501,52 @@ margin-bottom: 40px;
 .root_conclution p{
   font-size: 16px !important;
 }
+
+footer .footer-left-column .footer-img-module .playstore-img {
+  max-width: 150px !important;
+}
+footer .footer-left-column .footer-img-module h6 {
+  font-size: 20px !important;
+  margin-bottom: 5px;
+  line-height: 25px;
+}
+footer .footer-links .footer-menu ul li a {
+  color: #fff !important;
+  opacity: 0.8 !important;
+  font-size: 13px !important;
+  padding: 3px 0;
+  display: inline-block;
+  position: relative;
+  font-weight: 300;
+  line-height: 28px !important;
+}
+footer .footer-links .footer-menu h6 {
+  color: #fff;
+  opacity: 1;
+  font-size: 16px !important;
+}
+.nav .navbar-nav .nav-item .down-arrrow {
+  font-size: 10px;
+}
+.nav .navbar-nav .nav-item .nav-link::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 0%;
+  background-color: #f33558;
+  height: 2px;
+  bottom: -10px;
+  transition: all 0.5s ease-in-out;
+}
+.fa-chevron-down:before {
+  content: "\f078" !important;
+}
+
+footer .bottom-footer {
+  padding-top: 55px;
+  max-width: 760px !important;
+  margin: 0 auto;
+}
+.header{
+  z-index: 999 !important;
+}

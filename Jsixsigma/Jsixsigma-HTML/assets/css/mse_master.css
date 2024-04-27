@@ -1374,6 +1374,27 @@ a:hover {
   font-weight: 600;
 }
 
+footer .footer-links .footer-menu ul li a {
+  color: #fff !important;
+  opacity: 0.8 !important;
+  font-size: 13px !important;
+  padding: 3px 0;
+  display: inline-block;
+  position: relative;
+  font-weight: 300;
+  line-height: 28px !important;
+}
+footer .footer-left-column .footer-img-module h6 {
+  font-size: 20px !important;
+  margin-bottom: 5px;
+  line-height: 25px;
+}
+footer .footer-links .footer-menu h6 {
+  color: #fff;
+  opacity: 1;
+  font-size: 16px !important;
+}
+
 /*--------------------------------------*/
 
 /* Responsive
