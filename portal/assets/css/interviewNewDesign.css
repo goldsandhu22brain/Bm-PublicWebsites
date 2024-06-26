@@ -1,0 +1,137 @@
+/*--------------------------------------*/
+
+/* Top Section
+/*--------------------------------------*/
+.top-section .right-wrap{
+	float: right;
+}
+/*--------------------------------------*/
+
+/* Banner Section
+/*--------------------------------------*/
+.banner-section{
+	background-color: #FFCD8D;
+	min-height: 370px;
+}
+.banner-img{
+	background-image: url('../images/banner-img.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	min-height: 370px;
+}
+/*--------------------------------------*/
+
+/* Interview Details Section
+/*--------------------------------------*/
+.interview-details-section .card{
+	background: #FFFFFF;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	--bs-card-cap-bg: none;
+	border: 0;
+}
+.interview-details-section .card-header,
+.interview-details-section .card-body{
+	padding: 30px;
+}
+.interview-details-section .card-body li{
+	padding-bottom: 12px;
+}
+.interview-details-section .card-body span{
+	font-weight: 600;
+}
+/*--------------------------------------*/
+
+/* Interview Round Section
+/*--------------------------------------*/
+.interview-round-section .title{
+	font-family: "Inter", sans-serif;
+	color: #6967FF;
+	font-weight: 700;
+}
+.interview-round-section .round-strip{
+	background: linear-gradient(270deg, rgba(129, 28, 191, 0) 0%, #6946F7 93.67%);
+	border-radius: 0px 20px;
+	padding: 12px 30px;
+	margin: 24px 0;
+}
+.interview-round-section .round-strip .btn.btn-recording{
+	font-size: 15px;
+	font-weight: 500;
+	border: 1px solid #000000;
+	border-radius: 80px;
+	padding: 8px 16px;
+}
+.interview-round-section .round-strip .btn.btn-recording:hover{
+	color: #F33558;
+	border: 1px solid #F33558;
+}
+.interview-round-section .round-strip .btn.btn-recording .icon{
+	margin-right: 6px;
+}
+.interview-round-section .form-select{
+	max-width: 673px;
+}
+
+
+.interview-round-section .table>:not(caption)>*>*{
+	background-color: transparent;
+	color: #686868;
+	font-size: 15px;
+}
+.interview-round-section .table .form-control{
+	width: 100px;
+}
+.interview-round-section .table textarea.form-control{
+	width: 325px;
+}
+.interview-round-section .table .form-check-input{
+	width: 24px;
+	height: 24px;
+	border-radius: 6px;
+}
+.interview-round-section .table .form-check-input:checked{
+	background-color: #6946F6;
+    border-color: #6946F6;
+}
+.interview-round-section .table th{
+	border-bottom: 2px solid #435A80;
+}
+.interview-round-section .table td{
+	border-color: #9A9A9A;
+    border-style: dashed;
+	padding: 1.5rem 0.5rem;
+}
+.interview-round-section .last-row td{
+	border: 0;
+}
+.interview-round-section .table td .table td{
+	padding: .5rem .5rem;
+}
+.interview-round-section .interview-details-section .btn.btn-danger{
+	padding: 16px 75px;
+}
+.interview-round-section .round-feedback{
+	margin-bottom: 100px;
+}
+.interview-round-section .round-feedback ul li{
+	padding: 12px 0;
+	padding-right: 16px;
+}
+.interview-round-section .round-feedback ul li:not(:last-child){
+	border-bottom: 1px dashed rgba(0,0,0,0.5);
+}
+.interview-round-section .round-feedback .card-header-left{
+	background-color: #6946F7;
+	color: #FFFFFF;
+	border-radius: 20px 20px 0px 0px;
+}
+.interview-round-section .round-feedback .card-header-right{
+	background-color: #4E4180;
+	color: #FFFFFF;
+	border-radius: 20px 20px 0px 0px;
+}
+.interview-round-section .round-feedback li span{
+	font-weight: 700;
+}
+/*--------------------------------------*/

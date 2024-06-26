@@ -1,0 +1,254 @@
+/*--------------------------------------*/
+
+/* Common CSS
+/*--------------------------------------*/
+
+/*--------------------------------------*/
+
+/* Fonts
+/*--------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*--------------------------------------*/
+
+/*Element Base
+/*--------------------------------------*/
+body,
+html,
+header,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+section,
+main,
+nav{
+	margin:0px;
+	padding:0px;
+	display:block;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.navbar-toggler:focus,
+button:focus,
+.btn-close:focus,
+.btn-check:focus+.btn,
+.btn:focus,
+.accordion-button:focus,
+.form-check-input:focus,
+.form-control:focus,
+.page-link:focus{
+	box-shadow: none;
+}
+body{
+	overflow-x: hidden;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+a, svg, i{
+	transition: 0.3s all ease-in-out;
+}
+img{
+	max-width: 100%;
+	height:auto;
+	object-fit: cover;
+	vertical-align: middle;
+}
+.z-index-9{
+	z-index: 9;
+}
+.aligndiv{
+	display: flex;
+	align-items: center;
+}
+.centerdiv{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@media (min-width: 1200px){
+	.container{
+		max-width: 1150px;
+	}
+}
+body{
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+	font-family: "Inter", sans-serif;
+	background-color: #F5F5F5;
+}
+
+.separator{
+	padding: 50px 0 0;
+}
+.primary-text{
+	color: #6967FF;
+}
+.danger-text{
+	color: #F33558;
+}
+/*--------------------------------------*/
+
+/*Typography
+/*--------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5{
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+}
+h2{
+	font-size: 52px;
+}
+h4{
+	font-size: 24px;
+	font-weight: 600;
+}
+h5{
+	font-size: 20px;
+	font-weight: 600;
+}
+h6{
+	font-size: 14px;
+}
+.fs-12{
+	font-size: 12px!important;
+}
+/*--------------------------------------*/
+
+/*Button
+/*--------------------------------------*/
+.btn{
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 600;
+	border: 0;
+	border-radius: 8px;
+	padding: 10px 27px;
+}
+.btn.btn-danger{
+	background-color: #F33558;
+}
+.btn.btn-warning{
+	background-color: #FFBB00;
+}
+.btn.btn-success{
+	background-color: #0AB53A;
+}
+
+.btn.btn-danger:hover,
+.btn.btn-warning:hover{
+	background-color: #000000;
+	color: #FFFFFF;
+}
+/*--------------------------------------*/
+
+/*Form Control
+/*--------------------------------------*/
+.form-control{
+	border: 1px solid #9C9C9C;
+	border-radius: 10px;
+	font-size: 15px;
+	line-height: 27px;
+	color: #686868;
+}
+.form-control::placeholder{
+	font-size: 15px;
+	line-height: 27px;
+	color: #686868;
+}
+.form .form-control{
+	height: 54px;
+}
+.form textarea.form-control{
+	height: unset;
+}
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    white-space: nowrap;
+}
+/*--------------------------------------*/
+
+/*Custom Scrollbars
+/*--------------------------------------*/
+/* width */
+::-webkit-scrollbar {
+  height: 4px;              /* height of horizontal scrollbar ← You're missing this */
+  width: 4px;               /* width of vertical scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFF; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+/*--------------------------------------*/
+
+/* Responsive
+/*--------------------------------------*/
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+	
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+	h2{
+		font-size: 42px;
+	}
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+	h2{
+		font-size: 36px;
+	}
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+	
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	
+}
+
+/* `xs` returns only a ruleset and no media query */
+@media (max-width: 480px) {
+	
+}
+/*--------------------------------------*/
