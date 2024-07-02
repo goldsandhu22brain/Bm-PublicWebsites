@@ -188,7 +188,7 @@
 
 /* Modal CSS
 /*--------------------------------------*/
-#PanelMembersModal ..input-group-text{
+#PanelMembersModal .input-group-text{
 	background: #000000;
     color: #FFFFFF;
 }
