@@ -104,6 +104,12 @@ body{
 .danger-text{
 	color: #F33558;
 }
+.success-text{
+	color: #0AB53A;
+}
+.warning-text{
+	color: #FFBB00;
+}
 /*--------------------------------------*/
 
 /*Typography
@@ -154,9 +160,11 @@ h6{
 .btn.btn-success{
 	background-color: #0AB53A;
 }
+.btn.btn-primary{
+	background-color: #6967FF;
+}
 
-.btn.btn-danger:hover,
-.btn.btn-warning:hover{
+.btn:hover{
 	background-color: #000000;
 	color: #FFFFFF;
 }
@@ -164,6 +172,9 @@ h6{
 
 /*Form Control
 /*--------------------------------------*/
+.form-control:focus{
+	border: 1px solid #9C9C9C;
+}
 .form-control{
 	border: 1px solid #9C9C9C;
 	border-radius: 10px;
@@ -179,7 +190,8 @@ h6{
 .form .form-control{
 	height: 54px;
 }
-.form textarea.form-control{
+.form textarea.form-control,
+.form-select[multiple]{
 	height: unset;
 }
 .table>tbody>tr>td,
@@ -195,23 +207,23 @@ h6{
 /*Custom Scrollbars
 /*--------------------------------------*/
 /* width */
-::-webkit-scrollbar {
+.custom-scrollbar::-webkit-scrollbar {
   height: 4px;              /* height of horizontal scrollbar ← You're missing this */
   width: 4px;               /* width of vertical scrollbar */
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+.custom-scrollbar::-webkit-scrollbar-track {
   background: #FFF; 
 }
  
 /* Handle */
-::-webkit-scrollbar-thumb {
+.custom-scrollbar::-webkit-scrollbar-thumb {
   background: #888; 
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
 /*--------------------------------------*/
