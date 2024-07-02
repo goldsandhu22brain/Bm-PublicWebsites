@@ -69,8 +69,20 @@
 .interview-round-section .round-strip .btn.btn-recording .icon{
 	margin-right: 6px;
 }
-.interview-round-section .form-select{
+.interview-round-section .datetimes{
 	max-width: 673px;
+}
+.interview-round-section .form-select[multiple]{
+	max-width: 100%;
+	height: 115px;
+}
+.interview-round-section .form-select[multiple] option{
+	
+	background-color: transparent;
+}
+.interview-round-section .input-group-text{
+	background-color: #FFFFFF;
+	border: 1px solid #9C9C9C;
 }
 
 
@@ -82,7 +94,8 @@
 .interview-round-section .table .form-control{
 	width: 100px;
 }
-.interview-round-section .table textarea.form-control{
+.interview-round-section .table textarea.form-control,
+.interview-round-section .table .form-select[multiple]{
 	width: 325px;
 }
 .interview-round-section .table .form-check-input{
