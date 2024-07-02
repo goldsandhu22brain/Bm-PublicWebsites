@@ -72,12 +72,17 @@
 .interview-round-section .datetimes{
 	max-width: 673px;
 }
+.interview-round-section .add-test .form-select{
+	max-width: max-content;
+}
+.interview-round-section .add-test .btn.btn-primary{
+	padding: 16px 27px;
+}
 .interview-round-section .form-select[multiple]{
 	max-width: 100%;
 	height: 115px;
 }
 .interview-round-section .form-select[multiple] option{
-	
 	background-color: transparent;
 }
 .interview-round-section .input-group-text{
@@ -178,5 +183,13 @@
 }
 .round-10 .interview-round-section .table .delete-icon:hover img{
 	opacity: 0.8;
+}
+/*--------------------------------------*/
+
+/* Modal CSS
+/*--------------------------------------*/
+#PanelMembersModal ..input-group-text{
+	background: #000000;
+    color: #FFFFFF;
 }
 /*--------------------------------------*/
