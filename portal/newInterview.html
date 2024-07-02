@@ -110,7 +110,7 @@
 		
 		<form class="form">
 			<div class="mb-3">
-				<label class="form-label">Select all panel members to be invited to this interview round</label>
+				<label class="form-label">Select all panel members to be invited to this interview round <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#PanelMembersModal">Click Here to Invite Panel Members</a></label>
 				<select class="form-control form-select" multiple aria-label="Multiple select example">
 					<option selected>Trusted 1 (treusted@gmaul.com</option>
 				</select>
@@ -121,6 +121,17 @@
 					<input type="text" name="datetimes" class="form-control datetimes border-end-0" />
 					<span class="input-group-text"><i class="fa-solid fa-chevron-down"></i></span>
 				</div>
+			</div>
+			<div class="add-test mb-3 aligndiv">
+				 <label class="form-label">Add a Test:</label>
+				 <select class="form-control form-select mx-2">
+					<option value="">Select Round Activity</option>
+					<option value="100">Mcq</option>
+					<option value="250">Psychometric Test</option>
+					<option value="300">Panel Round</option>
+					<option value="400">Hr Round</option>
+				 </select>
+				 <a href="#" class="btn btn-primary">Add Test</a>
 			</div>
 		</form>
 		
@@ -387,9 +398,30 @@
 			</div><!--/*row -->
 			
 		</div>
+		</div>
 		
 	</div><!--/*container -->
 </section><!--/*interview-round-section -->
+
+<!-- Modal -->
+<div class="modal fade" id="PanelMembersModal" tabindex="-1" aria-labelledby="PanelMembersModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Search Panel Members</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="#">
+			<div class="input-group mb-3">
+			  <input type="text" class="form-control" placeholder="Search By Panel Name, Email Address" />
+			  <span class="input-group-text"><i class="bi bi-search"></i></span>
+			</div>
+		</form>
+      </div>
+    </div>
+  </div>
+</div>
 
 </main>
 <!--/*main -->
