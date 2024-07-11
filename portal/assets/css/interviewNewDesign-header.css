@@ -1,0 +1,197 @@
+/*--------------------------------------*/
+
+/* Header CSS
+/*--------------------------------------*/
+header .navbar{
+	background-color: #2a3941;
+	color: #FFFFFF;
+}
+header .navbar-brand{
+	font-size: 24px;
+	font-weight: 700;
+	color: #FFFFFF;
+}
+header .navbar li a {
+    color: #fff;
+    font-size: 15px;
+}
+header .user-image{
+	width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+header .user-header{
+	background-color: #2a3941;
+	height: 175px;
+    padding: 10px;
+    text-align: center;
+}
+header .user-header img{
+	height: 90px;
+    width: 90px;
+    border: 3px solid rgba(255,255,255,.2);
+}
+header .user-menu .dropdown-menu{
+	border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    padding: 1px 0 0 0;
+    border-top-width: 0;
+    width: 280px;
+	min-width: 110px !important;
+	border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+	position: absolute;
+    right: 0;
+	top: 50px;
+    left: auto;
+	border-color: #eee;
+}
+header .user-menu .dropdown-menu li.user-header p{
+	color: rgba(255, 255, 255, .8);
+    font-size: 17px;
+    margin-top: 10px;
+}
+header a.editpftop {
+    color: #fff;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+header .user-menu .dropdown-menu li.user-header p small {
+    display: block;
+    font-size: 12px;
+}
+header .user-menu .dropdown-menu .user-footer {
+    background-color: #f9f9f9;
+    padding: 10px;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .btn.btn-flat {
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-width: 1px;
+	color: #fff;
+	padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+header .dropdown-menu{
+	min-width: 205px;
+	--bs-dropdown-color: #777;
+	font-size: 14px;
+}
+header .dropdown-menu li a {
+    color: #777;
+	font-size: 14px;
+	padding: 3px 20px!important;
+}
+header .navbar-right li a {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display: block;
+	padding: 10px 15px;
+}
+@media (min-width: 768px) {
+    header .navbar-right li a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+		display: block;
+		padding: 10px 15px;
+    }
+}
+header .navbar-right li a .label {
+    position: absolute;
+    top: 9px;
+    right: 7px;
+    text-align: center;
+    font-size: 9px;
+    padding: 2px 3px;
+    line-height: .9;
+	border-radius: .25em;
+}
+header #navbar-search-input.form-control {
+    background: rgba(255, 255, 255, .1);
+    border-color: transparent;
+    transition: .5s;
+	height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+}
+header #navbar-search-input.form-control:active,
+header #navbar-search-input.form-control:focus {
+    border-color: rgba(0, 0, 0, .1);
+    background: rgba(255, 255, 255, .9);
+    width: 320px;
+    transition: .5s;
+    border-radius: 25px;
+}
+header .bottom-nav{
+	background-color: #FFFFFF;
+	box-shadow: 1px 1px 4px #d3d3d3;
+}
+header .bottom-nav .navbar-nav li a{
+    color: #2a3941;
+    font-size: 17px;
+	line-height: 20px;
+	padding: 10px 15px!important;;
+}
+header .navbar-expand-lg.bottom-nav .navbar-nav li a{
+	padding: 10px 15px
+}
+header .bottom-nav li a:hover{
+	text-decoration: none;
+}
+header .bottom-nav .navbar-nav .dropdown-item{
+	font-size: 14px;
+	padding: 3px 20px!important;
+}
+/*--------------------------------------*/
+
+/* Responsive
+/*--------------------------------------*/
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+	
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+	header .navbar-nav .dropdown-menu{
+		border: 0;
+	}
+	header .mob-hide{
+		display: none;
+	}	
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+	
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+	header .navbar-right ul{
+		/*justify-content: space-around;*/
+	}
+	.hidden-xs {
+        display: none !important;
+    }
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	
+}
+
+/* `xs` returns only a ruleset and no media query */
+@media (max-width: 480px) {
+	
+}
+/*--------------------------------------*/
