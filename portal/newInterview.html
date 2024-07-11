@@ -18,12 +18,15 @@
 	<!--Font Awesome CSS -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" type="text/css" />
 	
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+	
 	<!-- Main CSS -->
-	<link href="assets/css/interviewNewDesign-common.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/interviewNewDesign-common.css" rel="stylesheet" type="text/css" />	
+	<link href="assets/css/interviewNewDesign-header.css" rel="stylesheet" type="text/css" />
 	<link href="assets/css/interviewNewDesign.css" rel="stylesheet" type="text/css" />
 	<link href="assets/css/interviewNewDesign-responsive.css" rel="stylesheet" type="text/css" />
 	<link href="assets/css/interviewNewDesign-footer.css" rel="stylesheet" type="text/css" />
-
+	
 	<link rel="stylesheet" href="https://mediacdn.brainmeasures.com/MvcFramework/css/GobalComponents/FooterSectionOnly.css" />
 	
 	<!--Date Range Picker css -->
@@ -31,251 +34,191 @@
 
 </head>
 
-<body class="skin-blue layout-top-nav loaded">
+<body>
 
-<header class="main-header d-none">
-	<nav id="ucTopNav" class="navbar navbar-static-top">
-
+<!-- header start -->
+<header>
+	<nav class="navbar navbar-expand-xl navbar-top py-0">
 		<div class="container">
-			<div class="navbar-header">
-				<a href="/user/dashboard" class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Brainmeasures.com (Since 2017) - An ISO Certified Company"><b style="font-size:24px !important;">Brainmeasures</b></a>
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-					<i class="fa fa-search"></i>
-				</button>
-			</div>
-			<div class="navbar-custom-menu">
-				<ul class="nav navbar-nav">
+			
+			<a href="/user/dashboard" class="navbar-brand" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Brainmeasures.com (Since 2017) - An ISO Certified Company" aria-describedby="tooltip583357">Brainmeasures</a>
+			<div class="collapse navbar-collapse d-block" id="navbarTogglerDemo031">
+				<ul class="navbar-nav me-auto mb-2 mb-xl-0">
+					<li class="nav-item">
+						<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
 
-						<li class="dropdown messages-menu mob-hide" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Your Points">
+								<input type="text" class="form-control" onkeypress="search(this);" id="navbar-search-input" placeholder="Search Course / Tests &amp; Enter" style="width:220px;">
+							</div>
+						</form>
+					</li>
+					
+				</ul>
+				<div class="navbar-right alignflex">
+					<ul class="aligndiv">
+						<li class="dropdown messages-menu mob-hide" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Your Points">
 							<a href="/user/corporate/purchasepoint" style="background: #c70000">
 								<i class="glyphicon glyphicon-usd" style="margin-right:1px;">PURCHASE POINTS</i>
 							</a>
 						</li>
-											<li class="dropdown notifications-menu" data-toggle="tooltip" data-placement="bottom" title="Ticket">
+						<li class="dropdown notifications-menu" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Ticket">
 							<a href="/support/ticket">
 								<!--class="dropdown-toggle" data-toggle="dropdown"-->
 								<i class="glyphicon glyphicon-file"></i>
-								<span class="label label-warning">
+								<span class="label bg-warning">
 									<span id="lblTicketCounter">11</span>
 								</span>
 							</a>
 						</li>
-						<li class="dropdown notifications-menu" data-toggle="tooltip" data-placement="bottom" title="Notifications">
+						<li class="dropdown notifications-menu" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Notifications">
 							<a href="/user/profile/Notification">
 								<i class="glyphicon glyphicon-bell"></i>
-								<span class="label label-warning">
+								<span class="label bg-warning">
 									<span id="lblNotifyCounter">397</span>
 								</span>
 							</a>
 
 						</li>
-						<li class="dropdown tasks-menu" data-toggle="tooltip" data-placement="bottom" title="Your Wishlist">
+						<li class="dropdown tasks-menu" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Your Wishlist">
 							<a id="wfor" href="/user/profile/mywishList">
 								<!--class="dropdown-toggle" data-toggle="dropdown"-->
 								<i class="glyphicon glyphicon-heart"></i>
-								<span id="spnShowWishListItems" class="label label-info">
+								<span id="spnShowWishListItems" class="label bg-info">
 									<span id="lblShowWishlistCountTop">10</span>
 								</span>
 							</a>
 
 						</li>
-							<li class="dropdown tasks-menu" data-toggle="tooltip" data-placement="bottom" title="Cart">
+						<li class="dropdown tasks-menu" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Cart">
 								<a href="/user/Corporate/MyCart">
 									<i class="glyphicon glyphicon-shopping-cart"></i>
-									<span id="spnShowCartIcon" class="label label-danger">
+									<span id="spnShowCartIcon" class="label bg-danger">
 										<span id="lblCartCountTopHeader">0</span>
 									</span>
 								</a>
 
 							</li>
-
-					
-
-
-	<li class="dropdown HideSwitchSection">
-		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Switch As <span class="caret"></span></a>
-		<ul class="dropdown-menu" role="menu">
-				<li class="switchView" data-type="Candidate" data-Id="00000000-0000-0000-0000-000000000000"><a>Individual User</a></li>
-								<li class="switchView" data-type="Corporate" data-Id="048eb503-8db4-4998-8514-00bb2affaa3c">
-						<a>jasdeep Company User</a>
-					</li>
-					<li class="switchView" data-type="Corporate" data-Id="6d981cd1-2809-4247-b0fe-5125ed938fbe">
-						<a>SehajOrg Company User</a>
-					</li>
+						<li class="dropdown HideSwitchSection open">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">Switch As <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li class="switchView" data-bs-type="Candidate" data-bs-id="00000000-0000-0000-0000-000000000000"><a>Individual User</a></li>
+								<li class="switchView" data-bs-type="Corporate" data-bs-id="048eb503-8db4-4998-8514-00bb2affaa3c">
+									<a>jasdeep Company User</a>
+								</li>
+								<li class="switchView" data-bs-type="Corporate" data-bs-id="6d981cd1-2809-4247-b0fe-5125ed938fbe">
+									<a>SehajOrg Company User</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown user user-menu">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+								<img src="\UserImages\Candidate\Images\2024\6\29\6\9c6216c8-a422-4ce7-b253-9b627e97437d.png" id="headerimgSmall" class="user-image" alt="User Image" onerror="this.error = null; this.src='https://mediacdn.brainmeasures.com/images/UserPicture/Candidate.png'">
+								<span class="hidden-xs">
+									<span id="lblUserName" title="jasdeep">jasdeep</span><span class="caret"></span>
+								</span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="user-header">
+									<img src="https://testbm.brainmeasures.com/UserImages/Candidate/Images/2024/6/29/6/9c6216c8-a422-4ce7-b253-9b627e97437d.png" id="headerimgLarge" class="img-circle" alt="User Image">
+									<p>
+										<span id="lblUserNameTitle">jasdeep bains</span>
+										<a href="/user/profile/index" class="editpftop" id="ahrefEditProfile" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit Profile">
+											<i class="glyphicon glyphicon-pencil"></i>
+										</a>
+										<small>
+											<span id="lblCityCountry">India</span>
+										</small>
+									</p>
+								</li>
+								<li class="user-footer">
+									<div class="">
+										<a class="btn btn-info btn-flat" href="/user/profile/index" data-bs-toggle="tooltip" data-bs-placement="left" id="lnkbtnSetting" title="" data-bs-original-title="Manage Notifications, Account Setting, Change Password, etc."><i class="glyphicon glyphicon-off"></i>Settings</a>
+									</div>
+									<div class="">
+										<a class="btn btn-danger btn-flat" href="/Logout" id="ahrefLogout" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-title="End your Current Session"><i class="glyphicon glyphicon-off"></i>Sign out</a>
+									</div>
+								</li>
+							</ul>
+						</li>
 					</ul>
-	</li>
-	<script type="text/javascript">
-		function ViewSwitcher(e) {
-			var _this = e.currentTarget;
-			var UserRole = $(_this).attr("data-type");
-			//showLoading(true);
-			var cmpId = $(_this).attr("data-Id");
-
-			var jsonData = JSON.stringify({ 'UserRole': UserRole, 'cmpId': cmpId });
-			var apiurl = '/user/base/ViewSwitch';
-			$.ajax({
-				type: 'POST',
-				cache: false,
-				async: false,
-				contentType: 'application/json',
-				url: apiurl,
-				data: jsonData,
-				dataType: 'json',
-				success: function (response) {
-					if (response) {
-						window.location.href = '/User/Dashboard';
-					}
-				},
-				error: function (XMLHttpRequest, textStatus, errorThrown) {
-					console.log(XMLHttpRequest);
-				}
-			});
-		}
-
-		$(document).ready(function () {
-			$(".switchView").click((e) => {
-				ViewSwitcher(e);
-			});
-		});
-	</script>
-
-
-					<li class="dropdown user user-menu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<img src='\UserImages\Candidate\Images\2024\6\29\6\9c6216c8-a422-4ce7-b253-9b627e97437d.png' id="headerimgSmall" class="user-image" alt="User Image"
-								 onerror="this.error = null; this.src='https://mediacdn.brainmeasures.com/images/UserPicture/Candidate.png'" />
-							<span class="hidden-xs">
-                                <span id="lblUserName" title="jasdeep">jasdeep</span><span class="caret"></span>
-							</span>
-						</a>
+				</div><!-- navbar-right-->
+			</div>
+		</div><!-- container-->
+	</nav><!-- nav-->
+	<nav class="navbar navbar-expand-xl navbar-top py-0 bg-white">
+		<div class="container">
+			<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div><!-- container-->
+	</nav><!-- nav-->
+	<nav class="navbar navbar-expand-xl bottom-nav py-0">
+		<div class="container">
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+				<ul class="navbar-nav w-100">
+					<li class="nav-item active">
+						<a class="nav-link" href="/user/dashboard">Dashboard</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle"" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Buy</a>
+						<ul class="dropdown-menu ">
+							<li><a class="dropdown-item" href="/user/corporate/VideoCourses">Video Courses <span></span></a></li>
+							<li><a class="dropdown-item" href="#">E-Book Courses <span></span></a></li>
+							<li><a class="dropdown-item" href="/user/corporate/Tests">Tests</a></li>
+							<li><a class="dropdown-item" href="/User/Corporate/Psychometric">Psychometric Test</a></li>
+							<li><a class="dropdown-item" href="/User/corporate/PremiumTest">Premium Test</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Assign</a>
 						<ul class="dropdown-menu">
-							<li class="user-header">
-								<img src='\UserImages\Candidate\Images\2024\6\29\6\9c6216c8-a422-4ce7-b253-9b627e97437d.png' id="headerimgLarge" class="img-circle" alt="User Image" />
-								<p>
-                                    <span id="lblUserNameTitle">jasdeep bains</span>
-									<a href="/user/profile/index" class="editpftop" id="ahrefEditProfile" data-toggle="tooltip" data-placement="top" title="Edit Profile">
-										<i class="glyphicon glyphicon-pencil"></i>
-									</a>
-									<small>
-										<span id="lblCityCountry">India</span>
-									</small>
-								</p>
-							</li>
-							<li class="user-footer">
-								<div class="pull-left">
-									<a class="btn btn-info btn-flat" href="/user/profile/index" data-toggle="tooltip" data-placement="left" id="lnkbtnSetting" title="Manage Notifications, Account Setting, Change Password, etc."><i class="glyphicon glyphicon-off"></i>Settings</a>
-								</div>
-								<div class="pull-right">
-									<a class="btn btn-danger btn-flat" href="/Logout" id="ahrefLogout" data-toggle="tooltip" data-placement="left" title="End your Current Session"><i class="glyphicon glyphicon-off"></i>Sign out</a>
-								</div>
-							</li>
+							<li><a class="dropdown-item" href="/User/Corporate/AssignUser?offeringType=250">Test Course</a></li>
+							<li><a class="dropdown-item" href="/User/Corporate/AssignUser?offeringType=200">Video Course</a></li>
+							<li><a class="dropdown-item" href="/User/Corporate/AssignUser?offeringType=100">E-Book Course</a></li>
+							<li><a class="dropdown-item" href="/User/Corporate/AssignUser?offeringType=300">Psychometric Test</a></li>
+							<li><a class="dropdown-item" href="/User/Corporate/AssignUser?offeringType=600">Premium Test</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Interview</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="/user/Interview/create">New Interviews</a></li>
+							<li><a class="dropdown-item" href="/user/Interview">My Interviews</a></li>
+						</ul>
+					</li>
+					<li class="nav-item active"><a class="nav-link" href="/user/corporate/Analytics">Reports & Analytics</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/user/corporate/ViewResult">Test Result</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/user/corporate/Learning">Learning</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Users</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="/user/corporate/InviteEmployer">Invite Users</a></li>
+							<li><a class="dropdown-item" href="/user/corporate/ManageUsers">Manage Users</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="/User/corporate/PurchaseCertificate">Purchase Certificates</a></li>
+							<li><a class="dropdown-item" href="/user/corporate/AccountMeter">View Reciepts</a></li>
+							<li><a class="dropdown-item" href="/TestPlatform/ViewRecording">Proctor Test Video</a></li>
+							<li><a class="dropdown-item" href="/user/corporate/AccountMeter">Account Meter</a></li>
+							<li><a class="dropdown-item" href="/user/corporate/Discount">Discounts <sup style="color:#de0000">Offers</sup></a></li>
+
+							<li><a class="dropdown-item" href="/support/ticket">Tickets</a></li>
+							<li><a class="dropdown-item" href="/user/corporate/Settings">Settings</a></li>
+
+							<li><a class="dropdown-item" href="/user/corporate/CustomTestenquiry">Custom Tests</a></li>
+
+							<li><a class="dropdown-item" href="/User/Profile/MyWishList">Wishlist</a></li>
 						</ul>
 					</li>
 				</ul>
 			</div>
-				<div class="collapse navbar-collapse" id="navbar-collapse">
-					<form class="navbar-form navbar-left" role="search">
-						<div class="form-group">
-
-							<input type="text" class="form-control" onkeypress="search(this);" id="navbar-search-input"
-								   placeholder="Search Course / Tests & Enter" style="width:220px;">
-						</div>
-					</form>
-				</div>
-				<script type="text/javascript">
-
-					function search(srch) {
-						if (event.keyCode == 13) {
-							event.preventDefault();
-							if ($("#navbar-search-input").val() != "") {
-							var	value = $("#navbar-search-input").val();
-								event.preventDefault();
-								window.location.href = '/user/Corporate/SearchTestsCourses?srchtxt=' + value;
-							}
-							else {
-								Warning("Search cannot be empty.");
-							}
-						}
-					}
-				</script>
-		</div>
-	</nav>
+		</div><!-- container-fluid-->
+	</nav><!-- nav-->
 </header>
-
-<div class="bottom-nav d-none">
-	<nav class="navbar navbar-static-top">
-		<div class="container">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-bottom">
-				<i class="fa fa-bars"></i>
-			</button>
-			<div class="collapse navbar-collapse pull-left" id="navbar-bottom">
-
-<ul class="nav navbar-nav">
-	<li class="active"><a href="/user/dashboard">Dashboard</a></li>
-
-		<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Buy<span class="caret"></span></a>
-			<ul class="dropdown-menu" role="menu">
-				<li><a class="highl" href="/user/corporate/VideoCourses">Video Courses</a></li>
-				<li><a class="highl" href="/user/corporate/Courses">E-Book Courses</a></li>
-				<li><a class="highl" href="/user/corporate/Tests">Tests</a></li>
-				<li><a class="highl" href="/User/Corporate/Psychometric">Psychometric Test</a></li>
-				<li><a class="highl" href="/User/corporate/PremiumTest">Premium Test</a></li>
-			</ul>
-		</li>
-		<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Assign <span class="caret"></span></a>
-			<ul class="dropdown-menu" role="menu">
-				<li><a href="/User/Corporate/AssignUser?offeringType=250">Test Course</a></li>
-				<li><a href="/User/Corporate/AssignUser?offeringType=200">Video Course</a></li>
-				<li><a href="/User/Corporate/AssignUser?offeringType=100">E-Book Course</a></li>
-				<li><a href="/User/Corporate/AssignUser?offeringType=300">Psychometric Test</a></li>
-				<li><a href="/User/Corporate/AssignUser?offeringType=600">Premium Test</a></li>
-			</ul>
-		</li>
-	<li class="dropdown">
-		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Interview<span class="caret"></span></a>
-		<ul class="dropdown-menu" role="menu">
-				<li><a href="/user/Interview/create">New Interviews</a></li>
-			<li><a href="/user/Interview">My Interviews</a></li>
-		</ul>
-	</li>
-
-		<li><a href="/user/corporate/Analytics">Reports &amp; Analytics</a></li>
-		<li><a href="/user/corporate/ViewResult">Test Result</a></li>
-		<li><a href="/user/corporate/Learning">Learning</a></li>
-		<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Users<span class="caret"></span></a>
-			<ul class="dropdown-menu" role="menu">
-				<li><a href="/user/corporate/InviteEmployer">Invite Users</a></li>
-				<li><a href="/user/corporate/ManageUsers">Manage Users</a></li>
-			</ul>
-		</li>
-			<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a>
-			<ul class="dropdown-menu" role="menu">
-
-				<li><a class="highl" href="/User/corporate/PurchaseCertificate">Purchase Certificates</a></li>
-				<li><a href="/user/corporate/AccountMeter">View Reciepts</a></li>
-				<li><a href="/TestPlatform/ViewRecording">Proctor Test Video</a></li>
-				<li><a href="/user/corporate/AccountMeter">Account Meter</a></li>
-				<li><a href="/user/corporate/Discount">Discounts <sup style="color: #de0000">Offers</sup></a></li>
-
-				<li><a href="/support/ticket">Tickets</a></li>
-				<li><a href="/user/corporate/Settings">Settings</a></li>
-
-				<li><a href="/user/corporate/CustomTestenquiry">Custom Tests</a></li>
-
-				<li><a class="highl" href="/User/Profile/MyWishList">Wishlist</a></li>
-
-			</ul>
-		</li>
-</ul>
-
-			</div>
-		</div>
-	</nav>
-</div>
+<!-- header end -->
 
 <main>
 
@@ -542,7 +485,7 @@
 			</table>
 		</div>
 		
-		<div class="table-responsive">
+		<div class="table-responsive round-10">
 			<table class="table table-borderless">
 				<thead>
 					<tr>
@@ -607,7 +550,7 @@
 		</div>
 
 		<div class="round-feedback interview-details-section">
-			<h5 class="mt-5 mb-4">Round 1 Feedback (s)</h5>
+			<h5 class="mt-5 mb-4 text-black">Round 1 Feedback (s)</h5>
 			
 			<div class="row g-5">
 				<div class="col-md-6">
