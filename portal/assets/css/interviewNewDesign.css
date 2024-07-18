@@ -193,3 +193,105 @@
     color: #FFFFFF;
 }
 /*--------------------------------------*/
+
+/* RunModal CSS
+/*--------------------------------------*/
+@media (min-width: 576px) {
+    .runModal .modal-dialog {
+        max-width: 836px;
+    }
+}
+.runModal .modal-content{
+	background-image: url('../images/popup-bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.35);
+	border-radius: 30px;
+}
+.runModal .modal-header{
+	padding: 20px 20px 0;
+}
+.runModal .btn-close{
+	border: 1px solid #DEDEDE;
+    font-weight: 300;
+    font-size: 12px;
+    padding: 10px;
+}
+.runModal h3{
+	font-family: "Inter", sans-serif;
+}
+.runModal .modal-body .row{
+	padding: 30px 80px 60px;
+}
+.runModal .wrap{
+	background: #FFFFFF;
+	border: 8px solid #FFBB00;
+	border-radius: 20px;
+	padding: 16px 16px 40px;
+}
+.runModal .wrap-ind{
+	border-color: #C2ACFF;
+}
+.runModal .wrap h6{
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
+	margin: 16px 0;
+	font-family: "Inter", sans-serif;
+}
+.runModal .wrap .btn.btn-danger{
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 700;
+	font-family: "Inter", sans-serif;
+	background-color: #F33558;
+	border-radius: 5px;
+	padding: 12px 40px;
+}
+.runModal .wrap .btn.btn-danger:hover{
+	text-decoration: none;
+	background-color: #000000;
+}
+/*--------------------------------------*/
+
+/*--------------------------------------*/
+
+/* Responsive
+/*--------------------------------------*/
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+	
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+		
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+	
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+	.runModal .modal-body .row{
+		padding: 30px 24px;
+	}
+	.runModal .wrap h6 {
+		font-size: 13.5px;
+	}
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	.runModal .wrap h6 {
+		font-size: 18px;
+	}
+}
+
+/* `xs` returns only a ruleset and no media query */
+@media (max-width: 480px) {
+	
+}
+/*--------------------------------------*/
