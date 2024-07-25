@@ -18,7 +18,7 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <!----OWL SLIDER  --->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link href="./Brainmeasures.com - Individual_files/nav.css" rel="stylesheet">
     <link href="./Brainmeasures.com - Individual_files/clndr.css" rel="stylesheet">
     <link href="./Brainmeasures.com - Individual_files/style(1).css" rel="stylesheet">
@@ -75,8 +75,8 @@
                 },
                 {
                     value: data[2],
-                    color: "#FFBB00",
-                    highlight: "#FFBB00",
+                    color: "#f39c12",
+                    highlight: "#f39c12",
                     label: "proficiency in Good Level"
                 },
                 {
@@ -122,8 +122,8 @@
             var PieData = [
                 {
                     value: data[0],
-                    color: "#29B2FF",
-                    highlight: "#29B2FF",
+                    color: "#00c0ef",
+                    highlight: "#00c0ef",
                     label: "Accurate"
                 },
                 {
@@ -161,21 +161,79 @@
             // You can switch between pie and douhnut using the method below.
             pieChart.Doughnut(PieData, pieOptions);
         }
+		
+		function ConstructSpeedAnalysisPieChart(data) {
+            var pieChartCanvas = $("#pieChart3").get(0).getContext("2d");
+            var pieChart = new Chart(pieChartCanvas);
+            var PieData = [
+                {
+                    value: data[0],
+                    color: "#f56954",
+                    highlight: "#f56954",
+                    label: "proficiency in Weak Level"
+                },
+                {
+                    value: data[1],
+                    color: "#00a65a",
+                    highlight: "#00a65a",
+                    label: "proficiency in Expert Level"
+                },
+                {
+                    value: data[2],
+                    color: "#f39c12",
+                    highlight: "#f39c12",
+                    label: "proficiency in Good Level"
+                },
+                {
+                    value: data[3],
+                    color: "#00c0ef",
+                    highlight: "#00c0ef",
+                    label: "proficiency in Average Level"
+                }
+            ];
+            var pieOptions = {
+                //Boolean - Whether we should show a stroke on each segment
+                segmentShowStroke: true,
+                //String - The colour of each segment stroke
+                segmentStrokeColor: "#fff",
+                //Number - The width of each segment stroke
+                segmentStrokeWidth: 1,
+                //Number - The percentage of the chart that we cut out of the middle
+                percentageInnerCutout: 50, // This is 0 for Pie charts
+                //Number - Amount of animation steps
+                animationSteps: 100,
+                //String - Animation easing effect
+                animationEasing: "easeOutBounce",
+                //Boolean - Whether we animate the rotation of the Doughnut
+                animateRotate: true,
+                //Boolean - Whether we animate scaling the Doughnut from the centre
+                animateScale: false,
+                //Boolean - whether to make the chart responsive to window resizing
+                responsive: true,
+                // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+                maintainAspectRatio: false,
+                //String - A legend template
+                legendTemplate: ""
+            };
+            //Create pie or douhnut chart
+            // You can switch between pie and douhnut using the method below.
+            pieChart.Doughnut(PieData, pieOptions);
+        }
 
         function ConstructOverAllChart(data) {
             var salesChartCanvas = $("#overall").get(0).getContext("2d");
             var salesChart = new Chart(salesChartCanvas);
-			var gradient = salesChartCanvas.createLinearGradient(0, 0, 0, 560);
-            gradient.addColorStop(1, '#5316A0');
-			gradient.addColorStop(0.1, '#D02B49');
-
+			var gradient = salesChartCanvas.createLinearGradient(0, 960, 960, 0);
+            gradient.addColorStop(0.1, '#5316A0');
+			gradient.addColorStop(1, '#D02B49');
+			
             var salesChartData = {
                 labels: ["", "Subject Analysis", "Subject Coverage", "Accuracy", "Speed Analysis"],
                 datasets: [
                     {
                         label: "Overall Performance",
                         fillColor: gradient,
-                        /*strokeColor: "rgba(60,141,188,0.8)",*/
+                        strokeColor: "rgba(60,141,188,0.8)",
                         pointColor: "#3b8bba",
                         pointStrokeColor: "rgba(60,141,188,1)",
                         pointHighlightFill: "#fff",
@@ -184,7 +242,7 @@
                     }
                 ]
             };
-
+			
             var salesChartOptions = {
                 //Boolean - If we should show the scale at all
                 showScale: true,
@@ -261,7 +319,7 @@
             <input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
         </div>
         <!-----MAIN HEADER ------>
-        <header class="header d-none">
+        <header class="header">
             <div class="wrap">
                 <div class="row align-items-center">
                     <div class="col-lg-2 col-md-6 col-6">
@@ -348,8 +406,10 @@
         </div>
 
         <div class="main-content">
-            <div class="wrap">
-                <div class="column_left">
+		<div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3">
+				<div class="column_left">
                     <div class="column_middle_grid1">
                         <div class="profile_picture">
                             <a href="#">
@@ -394,171 +454,452 @@
 
                         </div>
                     </div>
-
+					
+					<div class="summary-report">
+                        <h5>Brainmeasures Analysis and Test Summary Report</h5>
+						<p>When a candidate appears for Brainmeasures test an analysis and test summary report will be prepared and provided to you each time a test is submitted if you've opted to use one of our aptitude or skills tests as a requirement for pre-employment testing.</p>
+						<div class="summary-report-chart mt-4">
+							<img src="img/summary-report-chart.png" alt="summary-report-chart" />
+						</div>
+                    </div>
+					
+					<div class="summary-report accuracy">
+                        <h5 class="fw-semibold">Accuracy</h5>
+						<p>This section has been designed to give you a ratio of no. of questions attempted vs. No. of correct answers. 100% accuracy means all the attempted questions are right.</p>
+                    </div>
+				  </div>
                 </div>
+				
+				<div class="col-lg-9">
+					<div class="row g-4">
+						<div class="col-lg-9">
+							<div class="column_middle">
+								<div class="Testdetails">
+									<h2><b id="lblCTestName">Six Sigma Green Belt Team Management Test</b></h2>
+									<div class="D-table ">
+										<table>
+											<tbody>
+												<tr>
+													<td>Test Name</td>
+													<td>
+														Six Sigma Green Belt Team Management Test</td>
+												</tr>
+												<tr>
+													<td>Total Marks / Passing Marks</td>
+													<td>
+														100
+														/
+														60</td>
+												</tr>
+												<tr>
+													<td>Duration / Time taken</td>
+													<td>
+														40
+														mins /
+														15
+														mins</td>
+												</tr>
+												<tr>
+													<td>Test Taken on</td>
+													<td><b id="lblCTestDate">Thursday, Nov 30,2017</b></td>
+												</tr>
 
-                <div class="column_middle">
-                    <div class="Testdetails">
-                        <h2><b id="lblCTestName">Six Sigma Green Belt Team Management Test</b></h2>
-                        <div class="D-table ">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td>Test Name</td>
-                                        <td>
-                                            Six Sigma Green Belt Team Management Test</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Total Marks / Passing Marks</td>
-                                        <td>
-                                            100
-                                            /
-                                            60</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Duration / Time taken</td>
-                                        <td>
-                                            40
-                                            mins /
-                                            15
-                                            mins</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Test Taken on</td>
-                                        <td><b id="lblCTestDate">Thursday, Nov 30,2017</b></td>
-                                    </tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="chart">
+									<h3>Accuracy - Speed</h3>
+									<div class="diagram">
+										<canvas id="canvas" height="250" width="250"></canvas>
+										<h4><span>40</span><span class="que">QUE</span> </h4>
+									</div>
 
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="chart">
-                        <h3>Accuracy - Speed</h3>
-                        <div class="diagram">
-                            <canvas id="canvas" height="250" width="250"></canvas>
-                            <h4><span>40</span><span class="que">QUE</span> </h4>
-                        </div>
+									<!----		              
+									<span><img src="images/chart.png" alt="" /></span>
+									----->
+									<div class="chart_list">
+										<ul>
+											<li><a href="https://www.brainmeasures.com/Individual/Transcript.aspx?transcriptid=94153#"
+													class="purple">TRUE<p id="pc" class="percentage">
+														30</p>
+												</a></li>
+											<li><a href="https://www.brainmeasures.com/Individual/Transcript.aspx?transcriptid=94153#"
+													class="red">FALSE<p id="pi" class="percentage">
+														10</p>
+												</a></li>
+											<li><a href="https://www.brainmeasures.com/Individual/Transcript.aspx?transcriptid=94153#"
+													class="yellow">Avg Correct Speed<p id="as" class="percentage">
+														100<em>%</em></p>
+												</a></li>
+											<li><a href="https://www.brainmeasures.com/Individual/Transcript.aspx?transcriptid=94153#"
+													class="blue">Time Taken (mins)
+													<p class="percentage" id="tt">
+														15 </p>
+												</a></li>
+											<div class="clear"></div>
+										</ul>
+									</div>
 
-                        <!----		              
-						<span><img src="images/chart.png" alt="" /></span>
-						----->
-                        <div class="chart_list">
-                            <ul>
-                                <li><a href="https://www.brainmeasures.com/Individual/Transcript.aspx?transcriptid=94153#"
-                                        class="purple">TRUE<p id="pc" class="percentage">
-                                            30</p>
-                                    </a></li>
-                                <li><a href="https://www.brainmeasures.com/Individual/Transcript.aspx?transcriptid=94153#"
-                                        class="red">FALSE<p id="pi" class="percentage">
-                                            10</p>
-                                    </a></li>
-                                <li><a href="https://www.brainmeasures.com/Individual/Transcript.aspx?transcriptid=94153#"
-                                        class="yellow">Avg Correct Speed<p id="as" class="percentage">
-                                            100<em>%</em></p>
-                                    </a></li>
-                                <li><a href="https://www.brainmeasures.com/Individual/Transcript.aspx?transcriptid=94153#"
-                                        class="blue">Time Taken (mins)
-                                        <p class="percentage" id="tt">
-                                            15 </p>
-                                    </a></li>
-                                <div class="clear"></div>
-                            </ul>
-                        </div>
+								</div>
+								<div class="graph">
+									<div class="graph_list">
+										<div class="week-month-year">
+											<h2>Performance</h2>
+											<p><a id="appoor">Poor</a></p>
+											<p><a id="agood" class="active">Good</a></p>
+											<p><a id="aexc">Excellent</a></p>
+											<div class="clear"></div>
+										</div>
+										<ul>
+											<li><a
+													href="https://www.brainmeasures.com/Individual/Transcript.aspx?transcriptid=94153#"><span
+														class="day_name">CORRECT</span> + <span class="day_name">FAST</span>
 
-                    </div>
-                    <div class="graph">
-                        <div class="graph_list">
-                            <div class="week-month-year">
-                                <h2>Performance</h2>
-                                <p><a id="appoor">Poor</a></p>
-                                <p><a id="agood" class="active">Good</a></p>
-                                <p><a id="aexc">Excellent</a></p>
-                                <div class="clear"></div>
-                            </div>
-                            <ul>
-                                <li><a
-                                        href="https://www.brainmeasures.com/Individual/Transcript.aspx?transcriptid=94153#"><span
-                                            class="day_name">CORRECT</span> + <span class="day_name">FAST</span>
+													<label class="digits">23<span><em>%</em></span></label>
+													<div class="clear"></div>
+												</a></li>
+											<li><a
+													href="https://www.brainmeasures.com/Individual/Transcript.aspx?transcriptid=94153#"><span
+														class="day_name">CORRECT</span> + <span class="day_name">SLOW</span>
 
-                                        <label class="digits">23<span><em>%</em></span></label>
-                                        <div class="clear"></div>
-                                    </a></li>
-                                <li><a
-                                        href="https://www.brainmeasures.com/Individual/Transcript.aspx?transcriptid=94153#"><span
-                                            class="day_name">CORRECT</span> + <span class="day_name">SLOW</span>
+													<label class="digits">37<span><em>%</em></span></label>
+													<div class="clear"></div>
+												</a></li>
+											<li><a
+													href="https://www.brainmeasures.com/Individual/Transcript.aspx?transcriptid=94153#"><span
+														class="day_name">INCORRECT</span> + <span class="day_name">FAST</span>
 
-                                        <label class="digits">37<span><em>%</em></span></label>
-                                        <div class="clear"></div>
-                                    </a></li>
-                                <li><a
-                                        href="https://www.brainmeasures.com/Individual/Transcript.aspx?transcriptid=94153#"><span
-                                            class="day_name">INCORRECT</span> + <span class="day_name">FAST</span>
+													<label class="digits">14<span><em>%</em></span> </label>
+													<div class="clear"></div>
+												</a></li>
+											<li><a
+													href="https://www.brainmeasures.com/Individual/Transcript.aspx?transcriptid=94153#"><span
+														class="day_name">INCORRECT</span> + <span class="day_name">SLOW</span>
 
-                                        <label class="digits">14<span><em>%</em></span> </label>
-                                        <div class="clear"></div>
-                                    </a></li>
-                                <li><a
-                                        href="https://www.brainmeasures.com/Individual/Transcript.aspx?transcriptid=94153#"><span
-                                            class="day_name">INCORRECT</span> + <span class="day_name">SLOW</span>
-
-                                        <label class="digits">26<span><em>%</em></span> </label>
-                                        <div class="clear"></div>
-                                    </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column_right">
-                    <!-- <div class="ShowResult pass">
-                        <p>Marks Obtained</p>
-                        <h1>
-                            75</h1>
-                        <h2>
-                            Pass</h2>
-                    </div> -->
-
-
-
-                    <div class="column_right_grid date_events mt-0 bg-253F5F">
-                        <h3><a href="#"
-                                id="slide_prev" class="active">
-                                </a> Answers <a
-                                href="#"
-                                id="slide_next" class="active">
-                                </h3>
+													<label class="digits">26<span><em>%</em></span> </label>
+													<div class="clear"></div>
+												</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="column_right">
+								<!-- <div class="ShowResult pass">
+									<p>Marks Obtained</p>
+									<h1>
+										75</h1>
+									<h2>
+										Pass</h2>
+								</div> -->
 
 
 
-                                <div class="owl-carousel owl-theme no-slider-item">
-                                    <div class="item">
-                                        <h4>1</h4>
-                                        <p> True </p>
-                                    </div>
-                                    <div class="item">
-                                        <h4>2</h4>
-                                        <p> False </p>
-                                    </div>
-                                </div>
+								<div class="column_right_grid date_events mt-0 bg-253F5F">
+									<h3><a href="https://www.brainmeasures.com/Individual/Transcript.aspx?transcriptid=94153#"
+											id="slide_prev" class="active">
+											<img src="./Brainmeasures.com - Individual_files/arrow-left.png" alt=""></a> Answers <a
+											href="https://www.brainmeasures.com/Individual/Transcript.aspx?transcriptid=94153#"
+											id="slide_next" class="active">
+											<img src="./Brainmeasures.com - Individual_files/arrow-right.png" alt=""></a></h3>
 
 
 
-                    </div>
-                    <div class="award">
-                        <h2>YOU WON</h2>
-                        <img src="img/AwardSilver.png" id="imgTrophy" class="big">
-                        <h3>
-                            Silver Trophy
-                        </h3>
-                        <p>Congrts ! Work Hard</p>
-                        <div class="down-icon">
-                            <img src="img/AwardNo.png" class="small" title="No Trophy">
-                            <img src="img/AwardSilver.png" class="small" title="Silver Trophy">
-                            <img src="img/AwardGold.png" class="small" title="Gold Trophy">
-                        </div>
-                    </div>
-                </div>
-                <div class="clear">eee</div>
+											<div class="owl-carousel owl-theme no-slider-item">
+												<div class="item">
+													<h4>1</h4>
+													<p> True </p>
+												</div>
+												<div class="item">
+													<h4>2</h4>
+													<p> False </p>
+												</div>
+											</div>
+
+
+			<!-- 
+									<ul id="slide" class="event_dates"
+										style="list-style: none; position: relative; padding: 0px; overflow: hidden; width: 237px; height: 175px;">
+
+										<li class="slide-node slide-node-0"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: 0px; display: block;">
+											<h1> 1</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-1"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -10023px;">
+											<h1> 2</h1>
+											<p class="false"> False </p>
+										</li>
+										<li class="slide-node slide-node-2"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -9766px;">
+											<h1> 3</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-3"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -9509px;">
+											<h1> 4</h1>
+											<p class="false"> False </p>
+										</li>
+										<li class="slide-node slide-node-4"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -9252px;">
+											<h1> 5</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-5"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -8995px;">
+											<h1> 6</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-6"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -8738px;">
+											<h1> 7</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-7"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -8481px;">
+											<h1> 8</h1>
+											<p class="false"> False </p>
+										</li>
+										<li class="slide-node slide-node-8"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -8224px;">
+											<h1> 9</h1>
+											<p class="false"> False </p>
+										</li>
+										<li class="slide-node slide-node-9"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -7967px;">
+											<h1> 10</h1>
+											<p class="false"> False </p>
+										</li>
+										<li class="slide-node slide-node-10"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -7710px;">
+											<h1> 11</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-11"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -7453px;">
+											<h1> 12</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-12"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -7196px;">
+											<h1> 13</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-13"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -6939px;">
+											<h1> 14</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-14"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -6682px;">
+											<h1> 15</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-15"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -6425px;">
+											<h1> 16</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-16"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -6168px;">
+											<h1> 17</h1>
+											<p class="false"> False </p>
+										</li>
+										<li class="slide-node slide-node-17"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -5911px;">
+											<h1> 18</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-18"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -5654px;">
+											<h1> 19</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-19"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -5397px;">
+											<h1> 20</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-20"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -5140px;">
+											<h1> 21</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-21"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -4883px;">
+											<h1> 22</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-22"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -4626px;">
+											<h1> 23</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-23"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -4369px;">
+											<h1> 24</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-24"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -4112px;">
+											<h1> 25</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-25"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -3855px;">
+											<h1> 26</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-26"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -3598px;">
+											<h1> 27</h1>
+											<p class="false"> False </p>
+										</li>
+										<li class="slide-node slide-node-27"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -3341px;">
+											<h1> 28</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-28"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -3084px;">
+											<h1> 29</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-29"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -2827px;">
+											<h1> 30</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-30"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -2570px;">
+											<h1> 31</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-31"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -2313px;">
+											<h1> 32</h1>
+											<p class="false"> False </p>
+										</li>
+										<li class="slide-node slide-node-32"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -2056px;">
+											<h1> 33</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-33"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -1799px;">
+											<h1> 34</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-34"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -1542px;">
+											<h1> 35</h1>
+											<p class="false"> False </p>
+										</li>
+										<li class="slide-node slide-node-35"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -1285px;">
+											<h1> 36</h1>
+											<p class="false"> False </p>
+										</li>
+										<li class="slide-node slide-node-36"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -1028px;">
+											<h1> 37</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-37"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -771px;">
+											<h1> 38</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-38"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -514px;">
+											<h1> 39</h1>
+											<p> True </p>
+										</li>
+										<li class="slide-node slide-node-39"
+											style="position: absolute; margin: 0px; width: 237px; overflow: hidden; top: 0px; left: -257px;">
+											<h1> 40</h1>
+											<p> True </p>
+										</li>
+
+									</ul> -->
+									 <!-- <script type="text/javascript">
+										$(function () {
+											$('#slide').ulslide({
+
+												effect: {
+													type: 'carousel', // slide or fade
+													axis: 'x',        // x, y
+													showCount: 1
+												},
+												nextButton: '#slide_next',
+												prevButton: '#slide_prev',
+												duration: 800,
+												/*autoslide: 2000,*/
+												easing: 'easeOutBounce'
+											});
+										});
+									</script>  -->
+								</div>
+								<div class="award">
+									<h2>YOU WON</h2>
+									<img src="img/price.png" id="imgTrophy" class="big">
+									<h3>
+										Silver Trophy
+									</h3>
+									<p>Congrts ! Work Hard</p>
+									<div class="down-icon">
+										<img src="img/AwardNo.png" class="small" title="No Trophy">
+										<img src="img/AwardSilver.png" class="small" title="Silver Trophy">
+										<img src="img/AwardGold.png" class="small" title="Gold Trophy">
+									</div>
+								</div>
+								<div class="summary-report">
+									<h5>Subject Coverage</h5>
+									<p>This section gives you an overview of how well the candidate knows his subject, pie diagram is used to evaluate the candidate’s knowledge topic wise, if you see a large proportion of green and blue colors in this diagram this means that the candidate has good knowledge of the subject and should be hired for the job.</p>
+									<div class="summary-report-chart mt-4">
+										<img src="img/coverage-chart.png" alt="coverage-chart" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="summary-report accuracy mt-0">
+								<h5 class="fw-semibold">Speed Analysis</h5>
+								<p class="mb-3">This section has been designed to judge the speed of the test taker and it has been calculated as No of questions solved Vs the time taken to solve them.</p>
+								<h5>Ideally, 60 sec have been allotted for each question, the results for speed have been shown as</h5>
+								<div class="row chat-box-canvas-div align-items-center">
+									<div class="col-md-4">
+										<div class="chart-responsive">
+											<canvas id="pieChart3" height="249" width="291" style="width: 268px; height: 229px;"></canvas>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<ul class="chart-legend clearfix">
+											<li><i class="fas fa-square text-aqua"></i> Slow</li>
+											<li><i class="fas fa-square text-yellow"></i> Average</li>
+											<li><i class="fas fa-square text-green"></i> Fast</li>
+											<li><i class="fas fa-square text-red"></i> Very Fast</li>
+										</ul>
+									</div>
+									<div class="col-md-5">
+										<div class="summary-report range mt-0">
+											<ul>
+												<li>Above 60 Sec. per question – <span>Slow</span></li>
+												<li>About 60 Sec. per question – <span>Average</span></li>
+												<li>46 to 58 Sec. per question – <span>Fast</span></li>
+												<li>Below 45 Sec. per question - <span>Very Fast</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="clear"></div>
 
                 <div class="row" style="padding: 15px;" id="divScoreccd">
 
@@ -952,7 +1293,8 @@
                 </div>
             </div>
         </div>
-        <footer class="footer d-none">
+		</div>
+        <footer class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 footer-left-column">
@@ -1172,7 +1514,7 @@
 
         <script type="text/javascript">
             //<![CDATA[
-            ConstructSubjectCoveragePieChart([0, 80, 20, 0, 0]); ConstructAccuracyPieChart([76, 24]); ConstructOverAllChart([7.25, 10, 7.6, 8]);//]]>
+            ConstructSubjectCoveragePieChart([0, 80, 20, 0, 0]); ConstructSpeedAnalysisPieChart([0, 80, 20, 0, 0]); ConstructAccuracyPieChart([76, 24]); ConstructOverAllChart([7.25, 10, 7.6, 8]);//]]>
         </script>
     </form>
 
@@ -1226,7 +1568,7 @@
                 //String - The colour of each segment stroke
                 segmentStrokeColor: "#fff",
                 //Number - The width of each segment stroke
-                segmentStrokeWidth: 1,
+                segmentStrokeWidth: 0,
                 //Number - The percentage of the chart that we cut out of the middle
                 percentageInnerCutout: 50, // This is 0 for Pie charts
                 //Number - Amount of animation steps
@@ -1249,6 +1591,66 @@
             pieChart.Doughnut(PieData, pieOptions);
         }
 
+		function ConstructSpeedAnalysisPieChart(data) {
+            var pieChartCanvas = $("#pieChart3").get(0).getContext("2d");
+            var pieChart = new Chart(pieChartCanvas);
+            var PieData = [
+                {
+                    value: data[0],
+                    color: "#f56954",
+                    highlight: "#f56954",
+                    label: "proficiency in Weak Level"
+                },
+                {
+                    value: data[1],
+                    color: "#00a65a",
+                    highlight: "#00a65a",
+                    label: "proficiency in Expert Level"
+                },
+                {
+                    value: data[2],
+                    color: "#f39c12",
+                    highlight: "#f39c12",
+                    label: "proficiency in Good Level"
+                },
+                {
+                    value: data[3],
+                    color: "#00c0ef",
+                    highlight: "#00c0ef",
+                    label: "proficiency in Average Level"
+                }
+            ];
+            var pieOptions = {
+                //Boolean - Whether we should show a stroke on each segment
+                segmentShowStroke: true,
+                //String - The colour of each segment stroke
+                segmentStrokeColor: "#fff",
+                //Number - The width of each segment stroke
+                segmentStrokeWidth: 0,
+                //Number - The percentage of the chart that we cut out of the middle
+                percentageInnerCutout: 50, // This is 0 for Pie charts
+                //Number - Amount of animation steps
+                animationSteps: 100,
+                //String - Animation easing effect
+                animationEasing: "easeOutBounce",
+                //Boolean - Whether we animate the rotation of the Doughnut
+                animateRotate: true,
+                //Boolean - Whether we animate scaling the Doughnut from the centre
+                animateScale: false,
+                //Boolean - whether to make the chart responsive to window resizing
+                responsive: true,
+                // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+                maintainAspectRatio: false,
+                //String - A legend template
+                legendTemplate: ""
+            };
+            //Create pie or douhnut chart
+            // You can switch between pie and douhnut using the method below.
+            pieChart.Doughnut(PieData, pieOptions);
+        }
+
+
+	
         function ConstructAccuracyPieChart(data) {
             var pieChartCanvas = $("#pieChart2").get(0).getContext("2d");
             var pieChart = new Chart(pieChartCanvas);
@@ -1294,6 +1696,8 @@
             // You can switch between pie and douhnut using the method below.
             pieChart.Doughnut(PieData, pieOptions);
         }
+		
+		
 
         function ConstructOverAllChart(data) {
             var salesChartCanvas = $("#overall").get(0).getContext("2d");
@@ -1418,7 +1822,6 @@
         }
 
         var doughnutData = [
-            
             {
                 value: $("#as").text().replace("%", "").trim(),
                 color: "#6967FF"
@@ -1489,7 +1892,69 @@
 
 
     <style type="text/css">
-        
+        .graph_list {
+            color: #fff;
+        }
+
+        .chart {
+            color: #fff;
+        }
+
+        .box-title {
+            margin-bottom: 10px;
+            font-size: 18px !important;
+            text-align: center
+        }
+
+        .box-body {
+            font-size: 14px !important
+        }
+
+        .modal-lg {
+            width: 600px;
+        }
+
+        .profile_details img {
+            height: 69px !important;
+        }
+
+        .profile_details {
+            background: none !important
+        }
+
+        .description-block {
+            text-align: center;
+        }
+
+        .progress-group b {
+            color: rgba(105, 103, 255, 1);
+            font-weight: bold;
+        }
+
+        p>b {
+            color: rgba(105, 103, 255, 1);
+            font-weight: bold;
+        }
+
+        .progress-group .progress-number {
+            float: right;
+        }
+
+        .text-green {
+            color: #00a65a !important;
+        }
+
+        .text-yellow {
+            color: #f39c12 !important;
+        }
+
+        .text-aqua {
+            color: #00c0ef !important;
+        }
+
+        .text-red {
+            color: #dd4b39 !important;
+        }
     </style>
 
 
