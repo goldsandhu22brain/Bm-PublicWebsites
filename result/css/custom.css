@@ -60,7 +60,13 @@ a:focus {
     color: #fff;
     line-height: 30px;
 }
-
+.main-content .column_left,
+.main-content .column_middle,
+.main-content .column_right {
+    float: unset;
+    width: unset;
+	margin: 0;
+}
 .column_middle .Testdetails {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     background: #222530;
@@ -657,3 +663,42 @@ a:focus {
         .text-red {
             color: #F33558 !important;
         }
+/*--------------------------------------*/
+
+/*22-July-2024
+/*--------------------------------------*/
+.main-content .summary-report{
+	background: #2A3149;
+	border-radius: 20px;
+	padding: 20px 25px;
+	margin-top: 30px;
+}
+.main-content .summary-report h5{
+	font-size: 20px;
+	line-height: 27px!important;
+    font-weight: 700;
+    line-height: 35px;
+   color: #FFFFFF;
+}
+.main-content .summary-report p{
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+.main-content .accuracy{
+	background: #394262;
+}
+.main-content .range{
+	background: rgba(0,0,0,0.5);
+}
+.main-content .range li{
+	font-size: 13px;
+	line-height: 24px;
+	color: rgba(255,255,255,0.8);
+}
+.main-content .range li span{
+	font-weight: 600;
+	color: rgba(255,255,255,1);
+}
+/*--------------------------------------*/
