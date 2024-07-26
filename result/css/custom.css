@@ -64,9 +64,9 @@ a:focus {
     color: #fff;
     line-height: 30px;
 }
-.main-content .column_left,
-.main-content .column_middle,
-.main-content .column_right {
+.main-content-new .column_left,
+.main-content-new .column_middle,
+.main-content-new .column_right {
     float: unset;
     width: unset;
 	margin: 0;
