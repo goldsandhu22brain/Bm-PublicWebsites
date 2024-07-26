@@ -409,7 +409,10 @@
 
                 </div>
 
-                <div class="column_middle">
+		<div class="col-lg-9">
+		<div class="row g-4">
+		<div class="col-lg-9">
+                  <div class="column_middle">
                     <div class="Testdetails">
                         <h2><b id="lblCTestName">Six Sigma Green Belt Team Management Test</b></h2>
                         <div class="D-table ">
@@ -520,7 +523,8 @@
                         </div>
                     </div>
                 </div>
-
+		</div>
+		<div class="col-lg-3">
                 <div class="column_right">
                     <!-- <div class="ShowResult pass">
                         <p>Marks Obtained</p>
@@ -577,6 +581,41 @@
 			</div>
 		    </div>
                 </div>
+		</div>
+		<div class="col-lg-12">
+			<div class="summary-report accuracy mt-0">
+				<h5 class="fw-semibold">Speed Analysis</h5>
+				<p class="mb-3">This section has been designed to judge the speed of the test taker and it has been calculated as No of questions solved Vs the time taken to solve them.</p>
+				<h5>Ideally, 60 sec have been allotted for each question, the results for speed have been shown as</h5>
+				<div class="row chat-box-canvas-div align-items-center">
+					<div class="col-md-4">
+						<div class="chart-responsive">
+							<canvas id="pieChart3" height="249" width="291" style="width: 268px; height: 229px;"></canvas>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<ul class="chart-legend clearfix">
+							<li><i class="fas fa-square text-aqua"></i> Slow</li>
+							<li><i class="fas fa-square text-yellow"></i> Average</li>
+							<li><i class="fas fa-square text-green"></i> Fast</li>
+							<li><i class="fas fa-square text-red"></i> Very Fast</li>
+						</ul>
+					</div>
+					<div class="col-md-5">
+						<div class="summary-report range mt-0">
+							<ul>
+								<li>Above 60 Sec. per question – <span>Slow</span></li>
+								<li>About 60 Sec. per question – <span>Average</span></li>
+								<li>46 to 58 Sec. per question – <span>Fast</span></li>
+								<li>Below 45 Sec. per question - <span>Very Fast</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+		</div>
                 <div class="clear"></div>
 
                 <div class="row" style="padding: 15px;" id="divScoreccd">
