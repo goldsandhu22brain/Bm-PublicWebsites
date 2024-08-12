@@ -1,0 +1,131 @@
+/*--------------------------------------*/
+
+/* Responsive
+/*--------------------------------------*/
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+	.blog-1 .digital-transformation-section .text-wrap{
+		position: unset;
+		background: linear-gradient(94.7deg, #FF794F 28.58%, #FE007E 56.51%);
+		padding: 60px 0;
+	}
+	.blog-4 .assessments-section .overlay{
+		right: 0;
+	}
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+	.blog-2 .after-brand-value-section .after-brand-wrap p{
+		font-size: 18px;
+		line-height: 36px;
+	}
+	
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+	.blog-1 .banner-section .caption p {
+		font-size: 24px;
+		line-height: 32px;
+	}
+	.blog-1 .banner-section .wrap{
+		margin: 0px auto;
+	}
+	.blog-1 .ai-features-section p {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.blog-1 .face-recognition-section .text-heading p {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.blog-1 .voice-recognition-section{
+		background: linear-gradient(to right, #9EFFC8 100%, #FFFFFF 0%);
+	}
+	.blog-2 .banner-section .wrap{
+		margin: 0px auto 20px;
+	}
+	.blog-2 .un-complicate-section .wrap{
+		padding: 40px;
+	}
+	.blog-2 .help-section .wrap{
+		padding: 40px;
+	}
+	
+	.blog-3 .hero-section .hero-section-bottom p{
+		margin: 0px auto 30px;
+	}
+	.blog-3 .after-hero-section .wrap{
+		margin-top: 30px;
+	}
+	.blog-3 .after-hero-section .wrap p {
+		padding-top: 16px;
+	}
+	.blog-3 .artificial-ai-section .text-wrap,
+	.blog-3 .about-ai-section .text-wrap,
+	.blog-3 .generation-section .text-wrap{
+		padding: 30px 0;
+	}
+	.blog-3 .flexible-section .details{
+		min-height: auto;
+	}
+	.blog-3 .banner-section .caption,
+	.blog-3 .hero-section h4,
+	.blog-3 .after-hero-section .text-wrap,
+	.blog-3 .flexible-section .text-wrap,
+	.blog-3 .after-hero-section .wrap{
+		margin: 0px auto;
+	}
+	.blog-3 .trending-section .left-wrap{
+		margin-top: 30px;
+	}
+	.blog-3 .trending-section .right-wrap p{
+		font-size: 28px;
+		line-height: 40px;
+	}
+	.blog-4 .assessments-section .mobile-dev{
+		background: linear-gradient(to top, #3C38F9 70%, #3C38F9 30%);
+		margin-bottom: 0px;
+        margin-top: 60px;
+	}
+	.blog-4 .assessments-section .mobile-dev h5{
+		margin: 20px;
+	}
+	.blog-4 .reviews-section {
+		padding-top: 50px;
+	}
+	.blog-4 .reviews-section .key-features{
+		margin-top: 30px;
+	}
+	.blog-4 .reviews-section .key-features .wrap{
+		height: auto;
+		padding: 32px;
+		text-align: left;
+	}
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+	
+}
+
+@media (max-width: 640px) {
+  
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	
+}
+
+/* `xs` returns only a ruleset and no media query */
+@media (max-width: 480px) {
+	
+}
+
+@media (max-width: 400px) {
+	
+}
+/*--------------------------------------*/
