@@ -1,0 +1,588 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Blog 4 | Brainmeasures</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<!--Bootstrap 5 css -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- Style css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style-header.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style-footer.css">
+
+</head>
+
+<body>
+
+<header>
+	<nav class="navbar navbar-expand-lg fixed-top white-nav" id="header">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="assets/images/footer-logo.png" class="logo white-logo d-none" alt="Logo" />
+				<img src="assets/images/logo.png" class="logo active-logo d-block" alt="Logo" />
+			</a>
+
+			<button class="navbar-toggler navbar-toggler-right collapsed" id="toggleBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">			
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse flex-lg-column" id="navbarCollapse">
+				<ul class="navbar-nav ms-auto justify-content-end align-items-center d-none d-lg-flex">
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>31K+ Video Courses</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>6K+ E-Books</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>7K+ Skill Tests</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>L & D Program</span></a>
+					</li>
+					<li class="nav-item dropdown z-index-9">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="javascript:void(0);"><span>More</span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="javascript:void(0);">Employee Testing</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Our Story</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Success Story</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Reviews</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Score Board</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">FAQs</a></li>
+						</ul>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link login-link active" href="javascript:void(0);"><span>Login</span></a>
+					</li>
+					<li>
+						<a class="btn btn-default" href="contact.html">Get Started</a>
+					</li>
+				</ul>
+				
+				<div class="nav-mb d-lg-none">
+					<div class="px-3 pb-4 d-flex align-items-center justify-content-between">
+						<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="logo" alt="Logo" /></a>
+						<button class="navbar-toggler navbar-toggler-right collapsed" id="toggleBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="close"><img src="assets/images/icons/close.png" alt="Close" /></span>							
+						</button>
+					</div>
+					
+					<ul class="navbar-nav ms-auto justify-content-end px-3">
+							<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>31K+ Video Courses</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>6K+ E-Books</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>7K+ Skill Tests</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>L & D Program</span></a>
+					</li>
+					<li class="nav-item dropdown z-index-9">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="javascript:void(0);"><span>More</span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="javascript:void(0);">Employee Testing</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Our Story</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Success Story</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Reviews</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Score Board</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">FAQs</a></li>
+						</ul>
+					</li>
+					<li class="nav-item z-index-9 active">
+						<a class="nav-link login-link" href="javascript:void(0);"><span>Login</span></a>
+					</li>
+					<li>
+						<a class="btn btn-default w-100" href="contact.html">Get Started</a>
+					</li>					
+					</ul>
+				</div>
+			</div>
+		</div><!--/*container -->
+	</nav><!--/*nav -->
+	<!-- /*Main Navigation -->
+
+</header>
+<!-- /*Header -->
+
+<main class="blog-4">
+
+<section class="banner-section text-lg-start text-center pb-lg-0 pb-5">
+	<div class="container">
+		<div class="row g-3">
+			<div class="col-lg-6"> 
+				<div class="wrap">
+					<div class="img-wrap d-lg-none">
+						<img src="assets/images/blog-4/banner-bg.png" alt="Image" class="" />
+					</div>
+					<div class="caption">
+						<h1>A-Lot is Happening in Pre-Employment Assessment Space</h1>
+						<h6>The World we used to live in is altering that too at a fast pace. New technologies, social media, electric cars, economical and political changes, among others all have changed over the last decade.</h6>
+					</div>
+				</div>
+			</div><!--/*col -->
+			<div class="col-lg-6">
+				
+			</div><!--/*col -->
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Banner Section -->
+
+<section class="hero-section text-lg-start text-center pb-lg-0 pb-4">
+	<div class="container">
+		<div class="row g-4 align-items-center">
+			<div class="col-lg-5">
+				<div class="img-wrap">
+					<img src="assets/images/blog-4/hero-img.png" alt="Image" class="" />
+				</div>
+			</div><!--/*col -->
+			<div class="col-lg-7">
+				<h5>Likewise, the Pre-Employment Assessment domain has also witnessed numerous modifications during the last 10 to 12 years. Technology advancements have primarily drove these changes as hiring practices evolve and have provided opportunities for organizations to assess and select quality talent.</h5>
+			</div><!--/*col -->
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Hero Section -->
+	
+<section class="after-hero-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="row g-4 align-items-center">
+			<div class="col-lg-6">
+				<img src="assets/images/blog-4/after-hero-img.png" alt="Image" class="img-wrap" />
+			</div><!--/*col -->
+			<div class="col-lg-6">
+				<div class="text-wrap pb-lg-0 pb-4">
+					<h1>The Big Question</h1>
+					<p>The pre-employment assessment arena is surely changing but companies are still battling to hire the best candidates for their departments. A key question, therefore, arises: What these new trends are and are these trends relevant to all the organizations?</p>
+				</div>
+			</div><!--/*col -->
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*After Hero Section -->
+
+<section class="trends-section seperator pb-5 pb-lg-0 text-lg-start text-center">
+	<div class="container">
+		<div class="row g-4">
+			<div class="col-lg-6 order-lg-0 order-1">
+				<div class="text-wrap">
+					<h1>The Trends</h1>
+					<p>Experts at Brainmeasures – an ISO 9001-2015 certified online advanced training certifications, pre-employment, and skill-assessment solutions provider – have deep dived in the topic to explore and understand these trends. The Brainmeasures research team identified five prominent pre-employment assessment trends, including automated online proctoring, applicant tracking systems, Gamification, mobile-enabled assessments, and applicant reactions.</p>
+					<p>Some of these trends shall appear to be quite familiar as they have been in practice longer than this past decade; however, with the advancements in the recruiting arena, those have been improvised too.</p>
+				</div>
+			</div><!--/*col -->
+			<div class="col-lg-6 order-lg-1 order-0">
+				<img src="assets/images/blog-4/trends.png" alt="Image" />
+			</div><!--/*col -->
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*The Trends Section -->
+
+<section class="proctoring-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="text-heading text-center">
+			<h2>Automated Online Proctoring</h2>
+			<p>Automated Online Proctoring is the most acknowledged technological developments of the last decade that altered the way pre-employment tests used to administer. Automated Online Proctoring enabled organizations to test thousands of applicants simultaneously, generate detailed score cards within seconds, and provide quick result-analysis to the hiring managers.</p>
+		</div>
+		<div class="row g-4">
+			<div class="col-lg-6">
+				<img src="assets/images/blog-4/proctoring.png" alt="Image" />
+			</div><!--/*col -->
+			<div class="col-lg-6">
+				<h4>Key Features:</h4>
+				<ul class="custom-warning">
+					<li>Eliminates physical human test administrator to monitor the skill testing event</li>
+					<li>Ensures unbiased, authentic, and fair skill assessments</li>
+					<li>Facilitates skill assessment of candidates at multiple remote locations</li>
+					<li>Enables applicants to attempt the assessments anytime from any location of their ease</li>
+					<li>liminates the need to store or secure the conventional paper-and-pencil type assessments</li>
+					<li>Saves recruiter’s time, efforts, and costs for hiring candidates</li>
+					<li>Eliminates the need to arrange for skill-testing facilities</li>
+				</ul>
+			</div><!--/*col -->
+			
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Proctoring Section -->
+
+<section class="ats-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="text-wrap">
+					<h1>Applicant Tracking System (ATS)</h1>
+					<p>Applicant Tracking System (ATS) was first introduced during the 1990s and now considered as a standard feature of skill assessments that enable recruiters to collect and store huge volumes of applicant’s information, including application forms, tests, and other documents (valid Government identification proofs, family details, and others).</p>
+					<p>ATSs have evolved since their launch, especially in their capability to integrate skill assessments. Recruiters can select from a range available ATSs and settle on the system that will best fit their company’s requirements. If a company decides to go for an ATS, hiring managers can Google the varied capabilities of ATSs for easy comparison and to determine which system is best to implement for their organization.</p>
+				</div>
+			</div><!--/*col -->
+			<div class="col-lg-6">
+				<img src="assets/images/blog-4/ats.png" alt="Image" />
+			</div><!--/*col -->
+			
+			<div class="col-lg-12">
+				<h2 class="my-5">Key Features:</h2>
+				
+				<div class="row g-4">
+					<div class="col-lg-3">
+						<div class="card">
+							<div class="card-body">
+								<img src="assets/images/icons/check-4.png" class="" alt="Icons" />
+								<p>Quickly generates skill assessments’ results</p>
+							</div>
+						</div><!--/*card -->
+						<div class="card">
+							<div class="card-body">
+								<img src="assets/images/icons/check-4.png" class="" alt="Icons" />
+								<p>Facilitates dynamic reporting and analysis on candidates’ information</p>
+							</div>
+						</div><!--/*card -->
+						<div class="card">
+							<div class="card-body">
+								<img src="assets/images/icons/check-4.png" class="" alt="Icons" />
+								<p>Generates and sends automated emails (including assessment reminders) to applicants</p>
+							</div>
+						</div><!--/*card -->
+					</div><!--/*col -->
+					<div class="col-lg-3">
+						<div class="card">
+							<div class="card-body">
+								<img src="assets/images/icons/check-4.png" class="" alt="Icons" />
+								<p>Seamlessly filters the poor performers to ensure efficient recruitment</p>
+							</div>
+						</div><!--/*card -->
+						<div class="card">
+							<div class="card-body">
+								<img src="assets/images/icons/check-4.png" class="" alt="Icons" />
+								<p>Eliminates the need for paper reporting, thus lowers administrative costs</p>
+							</div>
+						</div><!--/*card -->
+						<div class="card">
+							<div class="card-body">
+								<img src="assets/images/icons/check-4.png" class="" alt="Icons" />
+								<p>Enables automated legal and compliance tracking</p>
+							</div>
+						</div><!--/*card -->
+					</div><!--/*col -->
+					<div class="col-lg-3">
+						<div class="card">
+							<div class="card-body">
+								<img src="assets/images/icons/check-4.png" class="" alt="Icons" />
+								<p>Enables organizations to save their time and efforts for hiring candidates</p>
+							</div>
+						</div><!--/*card -->
+						<div class="card">
+							<div class="card-body">
+								<img src="assets/images/icons/check-4.png" class="" alt="Icons" />
+								<p>Stores and monitors information for a large pool of candidates</p>
+							</div>
+						</div><!--/*card -->
+						<div class="card">
+							<div class="card-body">
+								<img src="assets/images/icons/check-4.png" class="" alt="Icons" />
+								<p>Unifies applications, candidate’s resumes and assessments to ensure lesser applicant dropouts</p>
+							</div>
+						</div><!--/*card -->
+					</div><!--/*col -->
+					<div class="col-lg-3">
+						<div class="card">
+							<div class="card-body">
+								<img src="assets/images/icons/check-4.png" class="" alt="Icons" />
+								<p>Smartly connects the skill testing platform for multiple or remote company locations</p>
+							</div>
+						</div><!--/*card -->
+						<div class="card">
+							<div class="card-body">
+								<img src="assets/images/icons/check-4.png" class="" alt="Icons" />
+								<p>Customizes to fit the organizations’ requirements</p>
+							</div>
+						</div><!--/*card -->
+					</div><!--/*col -->
+					
+				</div><!--/*row -->
+			</div><!--/*col -->
+		</div><!--/*row -->
+		
+		<div class="row g-4 align-items-center mt-5">	
+			<div class="col-lg-4">
+				<img src="assets/images/blog-4/ats-2.png" class="" alt="Icons" />
+			</div><!--/*col -->
+			<div class="col-lg-8">
+				<h4>ATSs can conveniently be used by all sizes of enterprises (from small to large) and configure those according to the pool of their respective applicants and the amount of information to be captured for each applicant.</h4>
+			</div><!--/*col -->	
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Applicant Tracking System (ATS) Section -->
+
+<section class="gamification-section text-lg-start text-center">
+	<div class="container">
+		<div class="row g-3">
+			<div class="col-lg-7">
+				<div class="wrap">
+					<div class="img-wrap d-lg-none">
+						<img src="assets/images/blog-4/gamification.png" alt="Image" class="" />
+					</div>
+					<div class="text-wrap">
+						<h1>Gamification</h1>
+						<p>Gamification is essentially a skill testing platform where recruiters integrate Gaming elements / features to the skill assessments for making those more engaging for participants’. Instead of just asking multiple choice questions (MCQs), coding problems, and / or aptitude or personality tests, recruiters include Gaming features like rules, scores, medals, badges, test levels, comparative scoreboards, and many more interesting Gaming elements for a more captivating candidate experience.</p>
+					</div>
+				</div>
+			</div><!--/*col -->
+			<div class="col-lg-5">
+				
+			</div><!--/*col -->
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Gamification Section -->
+
+<section class="gamification-features-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="row g-4 align-items-center">
+			<div class="col-lg-6">
+				<img src="assets/images/blog-4/gamification-features.png" alt="Image" />
+			</div><!--/*col -->
+			<div class="col-lg-6">
+				<h4>Key Features:</h4>
+				<ul class="custom-warning">
+					<li>Enables applicants to demonstrate their expertise</li>
+					<li>Enables recruiters to evaluate applicants on multiple skills, like personality, problem-solving, multi-tasking, and others</li>
+					<li>Adds Gaming elements for a more engaging experience for applicants</li>
+					<li>Facilitates a realistic preview of the job</li>
+					<li>Minimizes the time spent on skill assessments</li>
+					<li>Attracts younger talent</li>
+					<li>Encourages favorable impressions for company’s technology inclination</li>
+					<li>Relieves candidate’s concerns associated with their skill assessments and selection</li>
+				</ul>
+			</div><!--/*col -->
+			<div class="col-lg-12">
+				<h4>Gamification in skill assessments <span>has witnessed positive outcomes for varied domains (including technology, defense, healthcare, government, among others) and is fast becoming a popular among the recruiters for accomplishing their aspirations to hire best talent for their organizations.</span></h4>
+			</div><!--/*col -->
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Gamification Key Features Section -->
+
+<section class="assessments-section seperator text-lg-start text-center">
+	<div class="overlay d-none d-md-block"></div>
+	<div class="container-fluid">
+		<div class="text-heading text-center">
+			<h2>Mobile-Enabled Skill Assessments</h2>
+			<p>Mobile-Enabled Skill Assessments is a fast adapting skill testing mechanism by the organizations as the usage of mobile devices (like smart-phones, tablets, and others) has increased among the candidates. Moreover, recruiters can reach to a large pool of candidates more conveniently through mobile-enabled skill assessments than via conventional non-mobile devices, like personal computers.</p>
+			<p>Brainmeasures’ industry experts anticipate the mobile device usage will continue to increase substantially in the near term.</p>
+		</div>
+		<div class="row g-4 align-items-center">
+			<div class="col-lg-6 ps-0">
+				<img src="assets/images/blog-4/assessments.png" alt="Image" />
+			</div><!--/*col -->
+			<div class="col-lg-6">
+				<div class="key-features">
+					<h4>Key Features:</h4>
+					<ul class="custom-warning">
+						<li>Ensures wider availability of the skill assessments across multiple platforms</li>
+						<li>Enables candidates to attempt skill assessments conveniently from anywhere and at anytime</li>
+						<li>Generates positive vibes among the candidates to recognize company as a technologically upgraded enterprise</li>
+						<li>Empowers companies to reach to a larger pool of applicants</li>
+						<li>Minimizes the overall costs related to skill testing</li>
+					</ul>
+				</div>
+			</div><!--/*col -->
+		</div><!--/*row -->
+	</div><!--/*container-fluid -->
+		
+	<div class="container">
+		<div class="mobile-dev">
+			<div class="row g-4 align-items-center">
+				<div class="col-lg-7">
+					<h5>Mobile devices are capable of seamlessly processing high-end information. Recruiters are, therefore, integrating mobile device assessments into their skill assessment initiatives and candidate selection processes.</h5>
+				</div><!--/*col -->
+				<div class="col-lg-5">
+					<img src="assets/images/blog-4/mobile-dev.png" alt="Image" />
+				</div><!--/*col -->
+			</div><!--/*row -->
+		</div><!--/*mobile-dev -->
+	</div><!--/*container -->
+		
+</section>
+<!-- /*Mobile-Enabled Skill Assessments Section -->
+
+<section class="reviews-section seperator text-lg-start text-center">
+	<div class="container-fluid">
+		<div class="row g-4 align-items-center">
+			<div class="col-lg-6">
+				<div class="text-wrap">
+					<h1>Applicants’ Reviews</h1>
+					<p>Experts at Brainmeasures – an ISO 9001-2015 certified online advanced training certifications, pre-employment, and skill-assessment solutions provider – have deep dived in the topic to explore and understand these trends. The Brainmeasures research team identified five prominent pre-employment assessment trends, including automated online proctoring, applicant tracking systems, Gamification, mobile-enabled assessments, and applicant reactions.</p>
+					<p>Some of these trends shall appear to be quite familiar as they have been in practice longer than this past decade; however, with the advancements in the recruiting arena, those have been improvised too.</p>
+				</div>
+			</div><!--/*col -->
+			<div class="col-lg-6 pe-0 text-lg-end text-center">
+				<img src="assets/images/blog-4/reviews.png" alt="Image" />
+			</div><!--/*col -->
+		</div><!--/*row -->
+	</div><!--/*container-fluid -->
+	
+	<div class="key-features">
+		<div class="container">
+			<h4 class="mb-4">Key Features:</h4>
+			<div class="row g-5 align-items-center">
+				<div class="col-lg-6">
+					<div class="wrap d-flex">
+						<div class="flex-shrink-0">
+							<img src="assets/images/icons/check-white.png" alt="Icon" />
+						</div>
+						<div class="flex-grow-1 ms-4">Enables recruiters to assess the applicant’s preferences for the company, their intentions to pursue the job, and their overall experience during the skill test</div>
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-6">
+					<div class="wrap wrap-2 d-flex">
+						<div class="flex-shrink-0">
+							<img src="assets/images/icons/check-white.png" alt="Icon" />
+						</div>
+						<div class="flex-grow-1 ms-4">Enables recruiters to identify and implement relevant skill testing features to enhance their engagements with the targeted applicants</div>
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-12">
+					<h5>Moreover, attaining relevant reviews from the applicants are quite critical for the organizations, therefore, recruiters conduct surveys, typically post the skill assessments or during selection processes.</h5>
+				</div><!--/*col -->
+			</div><!--/*row -->
+		</div><!--/*container -->
+	</div><!--/*Key Features -->
+		
+</section>
+<!-- /*Applicants’ Reviews Section -->
+
+<section class="sum-up-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="row g-4 align-items-center">
+			<div class="col-lg-6">
+				<img src="assets/images/blog-4/sum-up.png" alt="Image" class="img-wrap" />
+			</div><!--/*col -->
+			<div class="col-lg-6">
+				<div class="text-wrap">
+					<h1>To Sum up</h1>
+					<p>Recruiters are consistently in search for quality talent, and these trends can enable organizations to quickly assess, shortlist, hire the most appropriate candidates that best match their job requirements, while also ensure that applicants have a positive skill assessment and selection process experience.</p>
+					<p>Experts at Brainmeasures – the leading provider of future-ready online pre-employment and skill assessment solutions – precisely understand the needs of modern recruiters and deliver the most relevant technology solutions to ensure the best talent is acquired for their organizations.</p>
+				</div>
+			</div><!--/*col -->
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*To Sum up Section -->
+
+</main>
+
+<!--Start: Footer-->
+<footer>
+	<div class="container">
+		<div class="row g-3">
+			<div class="col-lg-5 col-md-12">
+				<a href="index.html"><img src="assets/images/footer-logo.png" class="footer-logo" alt="Logo" /></a>
+				<ul class="contact">
+					<li><a href="mailto:info@brainmeasures.com">info@brainmeasures.com</a> <a href="mailto:contact@brainmeasures.com">contact@brainmeasures.com</a></li>
+					<h5><a href="tel:18885560061" class="telno">+1 888 556 0061</a> <span>TOLL FREE (USA/CANADA)</span></h5>
+				</ul>
+				<div class="row g-3 align-items-center">
+					<div class="col-6">
+						<h5>BM Mobile App</h5>
+						<a href="#"><img src="assets/images/playstore.png" class="" alt="" /></a>
+					</div>
+					<div class="col-6">
+						<div class="row">
+							<div class="col-6">
+								<a href="#"><img src="assets/images/forbes-1.jpg" class="forbes-img" alt="" /></a>
+							</div>
+							<div class="col-6">
+								<a href="#"><img src="assets/images/forbes-2.jpg" class="forbes-img" alt="" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-7 col-md-12">
+				<div class="row g-3">
+					<div class="col-lg-4 col-sm-4">
+						<h6>Important Links</h6>
+						<ul class="imp-links">
+							<li><a href="#">BM Home</a></li>
+							<li><a href="#">All Video Courses</a></li>
+							<li><a href="#">All Courses</a></li>
+							<li><a href="#">All Skill Tests</a></li>
+							<li><a href="#">Custom Tests</a></li>
+							<li><a href="#">Code Compiler</a></li>
+							<li><a href="#">Proctor Testing</a></li>
+							<li><a href="#">API Integration</a></li>
+							<li><a href="#">Psychometric Test</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-sm-4">
+						<h6>Important Links</h6>
+						<ul class="imp-links">
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Terms and Conditons</a></li>
+							<li><a href="#">Refund/Cancellation Policy</a></li>
+							<li><a href="#">Site Map</a></li>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Score Board</a></li>
+							<li><a href="#">Free Quizzes</a></li>
+							<li><a href="#">Job Search</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-sm-4">
+						<h6>Important Links</h6>
+						<ul class="imp-links">
+							<li><a href="#">Knowledgebase</a></li>
+							<li><a href="#">Report an Issue</a></li>
+							<li><a href="#">Ask Question</a></li>
+							<li><a href="#">Feedback</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Reviews</a></li>
+							<li><a href="#">Affiliate</a></li>
+							<li><a href="#">VProctor FAQs</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="footer-bottom">
+			<p>&copy; copyright 2007-2023 Brainmeasures.</p>
+			<p>Brainmeasures is one of few skill testing and online certification company which is ISO 9001-2015 certified. Brainmeasures respects the privacy of each individual who registers for our services, we uphold and comply with strict truste program requirements, putting us in league of big names such as yahoo, AOL, Facebook, PayPal, IBM when it comes to internet privacy, safety and trust</p>
+		</div>
+	</div>
+</footer>
+<!--End: Footer-->
+
+	<!-- scroll to top button 
+	<button type="button" id="scrollTop"><i class="fa fa-angle-up"></i></button>
+	-->
+	
+	<!-- jQuery 3.6.4 -->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+	
+	<!-- Bootstrap 5 js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	
+	<!-- Custom js -->
+	<script src="assets/js/custom.js"></script>
+	<script type="text/javascript"></script>
+
+</body>
+</html>
