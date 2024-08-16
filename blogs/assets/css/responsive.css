@@ -21,6 +21,19 @@
 		font-size: 18px;
 		line-height: 36px;
 	}
+	.blog-5 .hero-section h2 {
+		font-size: 32px;
+	}
+	.blog-5 .flexible-section h4,
+	.blog-5 .blog-section h4,
+	.blog-5 .smart-ways-section h4{
+		font-size: 26px;
+        line-height: 38px;
+	}
+	.blog-5 .work-ethics-section .text-wrap{
+		padding: 30px;
+	}
+	
 	
 }
 
@@ -104,11 +117,36 @@
 		padding: 32px;
 		text-align: left;
 	}
+	
+	.blog-5 .banner-section .caption,
+	.blog-5 .flexible-section .text-wrap,
+	.blog-5 .smart-ways-section .text-wrap,
+	.blog-5 .blog-section p,
+	.blog-5 .social-active-section p,
+	.blog-5 .practices-section .text-wrap,
+	.blog-5 .work-ethics-section .work-details{
+		max-width: 100%;
+	}
+	.blog-5 .key-parameters-section .parameters-details{
+		margin: 30px auto 0;
+	}
+	.blog-5 .work-ethics-section .text-wrap{
+		height: auto;
+	}
+	.blog-5 .work-ethics-section .text-wrap.text-wrap-2{
+		border-top: 0;
+		border-left: 4px solid #742BD1;
+	}
+	.blog-5 .practices-section .practices-details{
+		padding: 60px 60px;
+	}
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-	
+	.blog-5 .money-holic-section h1 {
+		font-size: 30px;
+	}
 }
 
 @media (max-width: 640px) {
