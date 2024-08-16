@@ -1,1 +1,514 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Blog 5 | Brainmeasures</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<!--Bootstrap 5 css -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- Style css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style-header.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style-footer.css">
+
+</head>
+
+<body>
+
+<header>
+	<nav class="navbar navbar-expand-lg fixed-top white-nav" id="header">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="assets/images/footer-logo.png" class="logo white-logo d-none" alt="Logo" />
+				<img src="assets/images/logo.png" class="logo active-logo d-block" alt="Logo" />
+			</a>
+
+			<button class="navbar-toggler navbar-toggler-right collapsed" id="toggleBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">			
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse flex-lg-column" id="navbarCollapse">
+				<ul class="navbar-nav ms-auto justify-content-end align-items-center d-none d-lg-flex">
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>31K+ Video Courses</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>6K+ E-Books</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>7K+ Skill Tests</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>L & D Program</span></a>
+					</li>
+					<li class="nav-item dropdown z-index-9">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="javascript:void(0);"><span>More</span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="javascript:void(0);">Employee Testing</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Our Story</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Success Story</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Reviews</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Score Board</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">FAQs</a></li>
+						</ul>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link login-link active" href="javascript:void(0);"><span>Login</span></a>
+					</li>
+					<li>
+						<a class="btn btn-default" href="contact.html">Get Started</a>
+					</li>
+				</ul>
+				
+				<div class="nav-mb d-lg-none">
+					<div class="px-3 pb-4 d-flex align-items-center justify-content-between">
+						<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="logo" alt="Logo" /></a>
+						<button class="navbar-toggler navbar-toggler-right collapsed" id="toggleBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="close"><img src="assets/images/icons/close.png" alt="Close" /></span>							
+						</button>
+					</div>
+					
+					<ul class="navbar-nav ms-auto justify-content-end px-3">
+							<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>31K+ Video Courses</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>6K+ E-Books</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>7K+ Skill Tests</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>L & D Program</span></a>
+					</li>
+					<li class="nav-item dropdown z-index-9">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="javascript:void(0);"><span>More</span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="javascript:void(0);">Employee Testing</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Our Story</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Success Story</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Reviews</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Score Board</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">FAQs</a></li>
+						</ul>
+					</li>
+					<li class="nav-item z-index-9 active">
+						<a class="nav-link login-link" href="javascript:void(0);"><span>Login</span></a>
+					</li>
+					<li>
+						<a class="btn btn-default w-100" href="contact.html">Get Started</a>
+					</li>					
+					</ul>
+				</div>
+			</div>
+		</div><!--/*container -->
+	</nav><!--/*nav -->
+	<!-- /*Main Navigation -->
+
+</header>
+<!-- /*Header -->
+
+<main class="blog-5">
+
+<section class="banner-section text-lg-start text-center pb-lg-0 pb-4">
+	<div class="container">
+		<div class="row g-4 align-items-center">
+			<div class="col-lg-6 order-lg-0 order-1">
+				<div class="caption">
+					<h1>Generation-Z at Workplace – an Insight to this Fast Evolving Workforce Class</h1>
+				</div>
+			</div><!--/*col -->
+			<div class="col-lg-6 order-lg-1 order-0">
+				<img src="assets/images/blog-5/banner.png" alt="Image" class="" />
+			</div><!--/*col -->
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Banner Section -->
+
+<section class="hero-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="row g-3 align-items-center">
+			<div class="col-lg-6">
+				<img src="assets/images/blog-5/hero-img.png" alt="Image" class="" />
+			</div><!--/*col -->
+			<div class="col-lg-6">
+				<h2>Evolved during the mid-1990s – early 2000s, the new version – Generation-Z or Gen-Z – is swiftly taking over its primitive being – Generation-Y, and has started hailing workplace arena with a storm.</h2>
+			</div><!--/*col -->
+		</div><!--/*row -->
+		
+		<div class="hero-details">
+			<div class="row g-4">
+				<div class="col-lg-4">
+					<div class="wrap">
+						<p>Gen-Z is smart and far advanced while growing as the first fully mobile and digitally connected generation that speaks its own language. They are culturally more gelled with other members of their drove than with the people in their own family. Moreover, their understanding about the world is incomparable to any of their prior counterparts.</p>
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-4">
+					<div class="wrap wrap-2">
+						<p>Considered to be the most updated and realistic being, Gen-Z is friendly with digital technologies while are passionate to innovate and are entrepreneurs by instinct. Analysts at Brainmeasures anticipate that by 2025, Gen-Z will rule nearly 44% of the total workforce. It is, therefore, critical to get familiar with Gen-Z’s advanced generational tendency and enable organizations building effective workforce engagement strategies, in line with their capabilities.</p>
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-4">
+					<div class="wrap wrap-3">
+						<p>While on Google, the search combination of ‘Generation Z’ will throw countless search results suggesting you numerous ways to appeal to these radically unique consumers. However, What about Gen-Z as workforce at office? How employers can better showcase their company to stimulate Gen-Z talent to be a part of their teams? Most importantly, what should team managers do to manage and retain Gen-Z as a team resource?</p>
+					</div>
+				</div><!--/*col -->
+			</div><!--/*row -->
+		</div>
+		
+	</div><!--/*container -->
+</section>
+<!-- /*Hero Section -->
+	
+<section class="after-hero-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="row g-4">
+			<div class="col-lg-6">
+				<h2>Recently, Brainmeasures Research Team surveyed 780 recruiters and employers across India and brings these handy insights to enable organizations well-manage their Generation-Z employees at Workplace.</h2>
+			</div><!--/*col -->
+			<div class="col-lg-6">
+				<img src="assets/images/blog-5/after-hero-img.png" alt="Image" class="" />
+			</div><!--/*col -->
+			
+			<div class="col-lg-12">
+				<p>Our research team identified these Five Key-Parameters to understand the most relevant facts about Gen-Z that is pushing Indian Human Resource (HR) Managers to alter their overall HR tactics:</p>
+			</div><!--/*col -->
+		</div><!--/*row -->
+		
+		<div class="after-hero-details">
+			<div class="row g-4">
+				
+				
+			</div><!--/*row -->
+		</div><!--/*container -->
+		
+	</div><!--/*container -->
+</section>
+<!-- /*After Hero Section -->
+
+<section class="key-parameters-section seperator pt-0 text-lg-start text-center">
+	<div class="container">
+		<div class="parameters-details">	
+			<div class="row g-4">
+				<div class="col-lg-4">
+					<div class="wrap">
+						<img src="assets/images/icons/check-5.png" alt="Icon" class="" />
+						<p>Factors to Choose an Employer</p>
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-4">
+					<div class="wrap">
+						<img src="assets/images/icons/check-5.png" alt="Icon" class="" />
+						<p>Elements to Stick to an Organization for Long</p>
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-4">
+					<div class="wrap">
+						<img src="assets/images/icons/check-5.png" alt="Icon" class="" />
+						<p>Communication Preferences</p>
+					</div>
+				</div><!--/*col -->
+				
+				<div class="col-lg-4">
+					<div class="wrap">
+						<img src="assets/images/icons/check-5.png" alt="Icon" class="" />
+						<p>Hiring Tools</p>
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-4">
+					<div class="wrap">
+						<img src="assets/images/icons/check-5.png" alt="Icon" class="" />
+						<p>Workplace Distractions</p>
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-4">
+					<div class="wrap">
+						<img src="assets/images/icons/check-5.png" alt="Icon" class="" />
+						<p>Workplace Attributes</p>
+					</div>
+				</div><!--/*col -->
+			</div><!--/*row -->
+		</div>
+	</div><!--/*container -->
+</section>
+<!-- /*Key-Parameters Section -->
+	
+<section class="flexible-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="row g-4">
+			<div class="col-lg-6 order-lg-0 order-1">
+				<div class="text-wrap">
+					<h1>They Like to be Flexible</h1>
+					<h4>Gen-Z is a hardcore follower of their own motto 'Work while Working and Party while Partying'.</h4>
+					<p>They cannot breathe in 9 to 6 working-schedules, and if they get an untroubled work-life balance, they will transition their work-assignments into their hobbies.</p>
+					<p>They are that capable.<br/> Recruiters are growingly agreeing to this fact, as more than 60% of the surveyed recruiters have already started implementing work strategies to ensure work-life balance to their Gen-Z employees, while almost 20% employers agreed that an open work-culture is critical to ensure consistent engagements with this generation.</p>
+				</div>
+			</div><!--/*col -->
+			<div class="col-lg-6 order-lg-1 order-0">
+				<div class="img-wrap d-lg-none">
+					<img src="assets/images/blog-5/flexible-img.png" alt="Image" class="" />
+				</div>
+			</div><!--/*col -->
+			
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Flexible Section -->
+
+<section class="money-holic-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="row g-4 align-items-center">
+			<div class="col-lg-6">
+				<img src="assets/images/blog-5/money-holic-img.png" alt="Image" class="" />
+			</div><!--/*col -->
+			<div class="col-lg-6">
+				<div class="text-wrap">
+					<h1>Money is not that Matters to themGen-Z is NOT ‘Money-Holic</h1>
+					<p>They are not at-all after money, as none of the recruiters could agree that lucrative salary figures can stimulate this cohort to work consistently and stay with organizations for long.</p>
+					<p>More than 45% of the respondents strongly agreed that it is primarily the learning opportunities and career growth that can keep Gen-Z engaged and retained. While over 25% of the employers affirmed that meaningful and challenging work-assignments are motivating Gen-Z employees to stay more productive for their organizations.</p>
+				</div>
+			</div><!--/*col -->
+			
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Money-Holic Section -->
+
+<section class="blog-section seperator pb-4 pb-lg-0 text-lg-start text-center">
+	<div class="container">
+		<h1 class="text-center">Blog Technology is not ‘Fully’ their Take</h1>
+		<div class="row g-4">
+			<div class="col-lg-6 order-lg-0 order-1">
+				<div class="text-wrap">
+					<h4>Gen-Z is NOT Tech-Savvy when it is about Serious Official Talks.</h4>
+					<p>This one had immensely surprised the Brainmeasures Research Team, as the survey revealed that Indian Gen-Z prefers one-on-one meeting more than replying over e-Mails or communicating over instant messaging.</p>
+					<p>About one-half (47%) of the recruiters amazed the Team Brainmeasures by revealing that Gen-Z considers face-to-face chats as the most effective way of official communication over any digital medium. Nearly 27% of the surveyed HR managers stated that Gen-Z prefers instant messaging for daily workplace communication, while over 20% of the respondents agreed that e-mail continues to be the proficient way of office communication.</p>
+				</div>
+			</div><!--/*col -->
+			<div class="col-lg-6 order-lg-1 order-0">
+				<img src="assets/images/blog-5/blog-img.png" alt="Image" class="" />
+			</div><!--/*col -->
+			
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Blog Section -->
+
+<section class="smart-ways-section pb-4 pb-lg-0 text-lg-start text-center">
+	<div class="container">
+		<div class="row g-0 gx-4 align-items-center">
+			<div class="col-lg-6">
+				<img src="assets/images/blog-5/smart-ways.png" alt="Image" class="" />
+			</div><!--/*col -->
+			<div class="col-lg-6">
+				<div class="text-wrap">
+					<h1>There are Smart Ways to Connect with Them</h1>
+					<h4>Gen-Z is Online and On-Mobile 24x7x365</h4>
+					<p>Online or On-Mobile communication platforms, including social media and instant messaging applications, are gaining fame among the Gen-Zs, empowering recruiters to conveniently access and communicate with this hyper-connected being.</p>
+					<p>Emphasizing on the online engagements, 32% recruiters preferred web-based job portal for searching and hiring Gen-Zs, while nearly 26% of HR Managers affirmed professional network websites, like LinkedIn, to be the next best place to look for all their workforce needs.</p>
+					<p>With the rising advent of smart-gadgets, 22% of the respondents confirmed that they have started reaching out to this workforce through mobile phones to close their positions at a fast pace.</p>
+				</div>
+			</div><!--/*col -->
+			
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Smart Ways Section -->
+
+<section class="social-active-section seperator text-lg-start text-center">
+	<div class="container">
+		<h1 class="text-center mb-5">Something(s) can Distract Them</h1>
+		<div class="row g-4 align-items-center">
+			<div class="col-lg-6 order-lg-0 order-1">
+				<div class="text-wrap">
+					<h4>Gen-Z is Social Active, almost always!</h4>
+					<p>They are quite watchful about their social occurrence and can easily be traced on online social channels or at social gatherings, like Cafeterias, almost every-time. </p>
+					<p>When checked about the at-office distractions, nearly half (47%) of the respondents revealed that Gen-Zs stay active on social media applications, including Facebook, Instagram, during the office hours. They were also agreed to be linger-on with messaging applications, like WhatsApp, as well as e-commerce platforms, while working, by nearly 24% and 20% organizations, respectively.</p>
+				</div>
+			</div><!--/*col -->
+			<div class="col-lg-6 order-lg-1 order-0">
+				<img src="assets/images/blog-5/social-active.png" alt="Image" class="" />
+			</div><!--/*col -->
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Social Active Section -->
+
+<section class="work-ethics-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="row g-0">
+			<div class="col-lg-6">
+				<img src="assets/images/blog-5/work-ethics-img.png" alt="Image" class="" />
+			</div><!--/*col -->
+			<div class="col-lg-6">
+				<div class="work-details">
+					<h2>These Aspects Ad-Value to their Work Ethics</h2>
+					<h4 class="my-4">Gen-Zs Prefer Smart Working</h4>
+				</div>
+			</div><!--/*col -->
+			
+			<div class="col-lg-6">
+				<div class="text-wrap">
+					<p>It’s not always about career or commercials, Gen-Zs closely consider other capabilities, and even Google the organization to look out for information like office timing, location, transportation, and others before appearing for the scheduled interview at its premise.</p>
+				</div>
+			</div><!--/*col -->
+			<div class="col-lg-6">
+				<div class="text-wrap text-wrap-2">
+					<p>While understanding about the Gen-Z’s preferences for an ideal working environment, more than 50% of recruiters agreed that this new ‘socially active’ being likes to work in flexible hours. While more that 40% respondents agreed that Gen-Z look-out for ultra-modern workplace ambience and innovative architect, where they can enjoy their on-work hours as well as break times.</p>
+				</div>
+			</div><!--/*col -->
+			
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Work Ethics Section -->
+
+<section class="practices-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="row g-4 align-items-center">
+			<div class="col-lg-6 order-lg-0 order-1">
+				<div class="text-wrap">
+					<h1>Best Practices</h1>
+					<p>Gen-Z professionals are potentially competent of adding unique values, expectations, and perspectives to the organizations. These young adults, however, need to improvise their professional capabilities and exploit their zeal to proficiently address the actual workplace situations, including formally communicating, while in official discussions.</p>
+					<p>Gen-Z is adapted to constant learning, as this modern workforce evolved during the times when technology was easily accessible to them. Though Gen-Z is capable of promptly attuning with new technology, however, has been criticized for its poor writing skills, all attributed to their innovative social media shorthand.</p>
+				</div>
+			</div><!--/*col -->
+			<div class="col-lg-6 order-lg-1 order-0">
+				<img src="assets/images/blog-5/practices.png" alt="Image" class="" />
+			</div><!--/*col -->
+			<div class="col-lg-12 order-lg-2 order-2">
+				<div class="practices-details">
+					<h5>Human Resource teams with a definite understanding about the values and preferences of this hyper-connected generation will be well-prepared to build work environments that stimulate this new-age workforce and scale-up its overall potential. Moreover, where Gen-Z professionals are considered similar to Gen-Y counterparts is the quest to make a positive impact on the overall social community.</h5>
+				</div>
+			</div><!--/*col -->
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Best Practices Section -->
+
+<section class="recruiters-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="row g-4 align-items-center">
+			<div class="col-lg-6">
+				<img src="assets/images/blog-5/recruiters-img.png" alt="Image" class="" />
+			</div><!--/*col -->
+			<div class="col-lg-6">
+				<h3>Smart recruiters rely on Brainmeasures advanced online certifications and skill-testing solutions to ensure they close the job positions with best talent acquired.</h3>
+			</div><!--/*col -->
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Recruiters Section -->
+
+</main>
+
+<!--Start: Footer-->
+<footer>
+	<div class="container">
+		<div class="row g-3">
+			<div class="col-lg-5 col-md-12">
+				<a href="index.html"><img src="assets/images/footer-logo.png" class="footer-logo" alt="Logo" /></a>
+				<ul class="contact">
+					<li><a href="mailto:info@brainmeasures.com">info@brainmeasures.com</a> <a href="mailto:contact@brainmeasures.com">contact@brainmeasures.com</a></li>
+					<h5><a href="tel:18885560061" class="telno">+1 888 556 0061</a> <span>TOLL FREE (USA/CANADA)</span></h5>
+				</ul>
+				<div class="row g-3 align-items-center">
+					<div class="col-6">
+						<h5>BM Mobile App</h5>
+						<a href="#"><img src="assets/images/playstore.png" class="" alt="" /></a>
+					</div>
+					<div class="col-6">
+						<div class="row">
+							<div class="col-6">
+								<a href="#"><img src="assets/images/forbes-1.jpg" class="forbes-img" alt="" /></a>
+							</div>
+							<div class="col-6">
+								<a href="#"><img src="assets/images/forbes-2.jpg" class="forbes-img" alt="" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-7 col-md-12">
+				<div class="row g-3">
+					<div class="col-lg-4 col-sm-4">
+						<h6>Important Links</h6>
+						<ul class="imp-links">
+							<li><a href="#">BM Home</a></li>
+							<li><a href="#">All Video Courses</a></li>
+							<li><a href="#">All Courses</a></li>
+							<li><a href="#">All Skill Tests</a></li>
+							<li><a href="#">Custom Tests</a></li>
+							<li><a href="#">Code Compiler</a></li>
+							<li><a href="#">Proctor Testing</a></li>
+							<li><a href="#">API Integration</a></li>
+							<li><a href="#">Psychometric Test</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-sm-4">
+						<h6>Important Links</h6>
+						<ul class="imp-links">
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Terms and Conditons</a></li>
+							<li><a href="#">Refund/Cancellation Policy</a></li>
+							<li><a href="#">Site Map</a></li>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Score Board</a></li>
+							<li><a href="#">Free Quizzes</a></li>
+							<li><a href="#">Job Search</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-sm-4">
+						<h6>Important Links</h6>
+						<ul class="imp-links">
+							<li><a href="#">Knowledgebase</a></li>
+							<li><a href="#">Report an Issue</a></li>
+							<li><a href="#">Ask Question</a></li>
+							<li><a href="#">Feedback</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Reviews</a></li>
+							<li><a href="#">Affiliate</a></li>
+							<li><a href="#">VProctor FAQs</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="footer-bottom">
+			<p>&copy; copyright 2007-2023 Brainmeasures.</p>
+			<p>Brainmeasures is one of few skill testing and online certification company which is ISO 9001-2015 certified. Brainmeasures respects the privacy of each individual who registers for our services, we uphold and comply with strict truste program requirements, putting us in league of big names such as yahoo, AOL, Facebook, PayPal, IBM when it comes to internet privacy, safety and trust</p>
+		</div>
+	</div>
+</footer>
+<!--End: Footer-->
+
+	<!-- scroll to top button 
+	<button type="button" id="scrollTop"><i class="fa fa-angle-up"></i></button>
+	-->
+	
+	<!-- jQuery 3.6.4 -->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+	
+	<!-- Bootstrap 5 js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	
+	<!-- Custom js -->
+	<script src="assets/js/custom.js"></script>
+	<script type="text/javascript"></script>
+
+</body>
+</html>
+
