@@ -808,3 +808,217 @@
 	background-color: #F2E2EF;
 }
 /*--------------------------------------*/
+
+/*--------------------------------------*/
+
+/* Blog 5 Page */
+/*--------------------------------------*/
+/* Banner Section */
+.blog-5 .banner-section{
+	margin-top: 110px;
+	background-color: #742BD1;
+	color: #FFFFFF;
+}
+.blog-5 .banner-section .caption{
+	max-width: 560px;
+}
+
+/* after-hero-section */
+.blog-5 .hero-section h2{
+	font-size: 40px;
+}
+.blog-5 .hero-section .hero-details .wrap{
+	position: relative;
+	padding-top: 40px;
+	margin-top: 40px;
+}
+.blog-5 .hero-section .hero-details .wrap::after{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 230px;
+	height: 30px;
+	background-color: #51BFEE;
+	border-radius: 20px;
+	content: '';
+}
+.blog-5 .hero-section .hero-details .wrap-2::after{
+	background-color: #FF794F;
+}
+.blog-5 .hero-section .hero-details .wrap-3::after{
+	background-color: #4DC0A8;
+}
+
+/* After Banner Section */
+.blog-5 .after-hero-section{
+	background-image: url('../images/blog-5/after-hero-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	color: #FFFFFF;
+	padding: 260px 0 0;
+	height: 1132px;
+}
+.blog-5 .after-hero-section p{
+	font-size: 24px;
+	line-height: 35px;
+	max-width: 865px;
+	margin: 60px 0;
+}
+
+/* key-parameters Section */
+.blog-5 .key-parameters-section .parameters-details{
+	max-width: 956px;
+	margin-top: -105px;
+}
+.blog-5 .key-parameters-section .wrap{
+	background-color: #FFFFFF;
+	padding: 20px;
+	border: 8px solid;
+	color: #000000;
+	border-image: linear-gradient(45deg, #5626D3, #12CB86) 1;
+	min-height: 175px;
+}
+.blog-5 .key-parameters-section .wrap p{
+	font-size: 20px;
+	margin-top: 12px;
+}
+
+/* Flexible Section */
+.blog-5 .flexible-section .text-wrap{
+	max-width: 570px;
+}
+.blog-5 .flexible-section h4{
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 400;
+	font-family: 'Poppins', sans-serif;
+	margin-top: 20px;
+}
+
+/* Flexible Section */
+@media (min-width: 992px) {
+	.blog-5 .flexible-section{
+		background-image: url('../images/blog-5/flexible-img.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: right;
+		margin: 70px 0;
+	}
+}
+.blog-5 .flexible-section p{
+	font-size: 18px;
+	line-height: 30px;
+}
+
+/*Money-Holic Section*/
+.blog-5 .money-holic-section{
+	background-color: #E2ED64;
+}
+.blog-5 .money-holic-section h1{
+	font-size: 49px;
+}
+.blog-5 .money-holic-section p{
+	font-size: 18px;
+	line-height: 30px;
+}
+
+/*Blog Section*/
+.blog-5 .blog-section h1{
+	max-width: 739px;
+	margin: 0px auto;
+}
+.blog-5 .blog-section h4{
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 500;
+	font-family: 'Poppins', sans-serif;
+	margin-top: 20px;
+}
+.blog-5 .blog-section p{
+	font-size: 18px;
+	line-height: 30px;
+	max-width: 545px;
+}
+
+/*Smart Ways Section*/
+.blog-5 .smart-ways-section{
+	background-color: #002FAC;
+	color: #FFFFFF;
+}
+.blog-5 .smart-ways-section .text-wrap{
+	max-width: 588px;
+	margin-left: auto;
+}
+.blog-5 .smart-ways-section h4{
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 500;
+	color: #FFBB00;
+	font-family: 'Poppins', sans-serif;
+	margin-top: 20px;
+}
+.blog-5 .smart-ways-section p{
+	line-height: 30px;
+}
+
+/*Social Active Section*/
+.blog-5 .social-active-section h4{
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+}
+.blog-5 .social-active-section p{
+	max-width: 570px;
+}
+
+/*Work Ethics Section*/
+.blog-5 .work-ethics-section{
+	background-color: #73E5D8;
+}
+.blog-5 .work-ethics-section .work-details{
+	max-width: 550px;
+	margin-left: auto;
+}
+.blog-5 .work-ethics-section h4{
+	background: #FFFFFF;
+	border-radius: 0px 20px;
+    text-align: center;
+    padding: 20px;
+}
+.blog-5 .work-ethics-section .text-wrap{
+	background: #73E5D8;
+	border: 4px solid #742BD1;
+	padding: 65px;
+	height: 310px;
+}
+.blog-5 .work-ethics-section .text-wrap.text-wrap-2{
+	border-left: 0;
+}
+.blog-5 .work-ethics-section p{
+	margin-top: 0;
+}
+
+/*Best Practices Section*/
+.blog-5 .practices-section .text-wrap{
+	max-width: 536px;
+}
+.blog-5 .practices-section .practices-details{
+	background: #F38535;
+	border-radius: 0px 110px;
+	color: #FFFFFF;
+	padding: 90px 115px;
+}
+.blog-5 .practices-section .practices-details h5{
+	font-weight: 500;
+	line-height: 40px;
+}
+
+/*Recruiters Section*/
+.blog-5 .recruiters-section h3{
+	font-weight: 500;
+	line-height: 48px;
+	font-family: 'Poppins', sans-serif;
+}
+/*--------------------------------------*/
