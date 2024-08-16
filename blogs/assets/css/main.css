@@ -706,8 +706,8 @@
 		background-image: url('../images/blog-4/gamification.png');
 		background-color: #00B78E;
 		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: right;
+		background-size: 75%;
+		background-position: right bottom;
 		height: 514px;
 		position:relative;
 		display: flex;
@@ -901,7 +901,7 @@
 	.blog-5 .flexible-section{
 		background-image: url('../images/blog-5/flexible-img.png');
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: 50%;
 		background-position: right;
 		margin: 70px 0;
 	}
