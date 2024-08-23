@@ -10,8 +10,14 @@
 		background: linear-gradient(94.7deg, #FF794F 28.58%, #FE007E 56.51%);
 		padding: 60px 0;
 	}
+	.blog-4 .banner-section h6{
+		max-width: 100%;
+	}
 	.blog-4 .assessments-section .overlay{
 		right: 0;
+	}
+	.blog-6 .unique-features-section .wrap{
+		padding: 24px;
 	}
 }
 
@@ -20,6 +26,10 @@
 	.blog-2 .after-brand-value-section .after-brand-wrap p{
 		font-size: 18px;
 		line-height: 36px;
+	}
+	.blog-4 .assessments-section .mobile-dev h5{
+		padding-left: 20px;
+		margin: 60px auto 0;
 	}
 	.blog-5 .hero-section h2 {
 		font-size: 32px;
@@ -33,7 +43,9 @@
 	.blog-5 .work-ethics-section .text-wrap{
 		padding: 30px;
 	}
-	
+	.blog-5 .smart-ways-section .text-wrap{
+		max-width: 100%;
+	}
 	
 }
 
@@ -56,6 +68,13 @@
 	}
 	.blog-1 .voice-recognition-section{
 		background: linear-gradient(to right, #9EFFC8 100%, #FFFFFF 0%);
+	}
+	.blog-1 .online-proctoring-section h1{
+		margin: 0px auto;
+	}
+	.blog-1 .ai-features-section{
+		margin: 0px auto;
+		padding-top: 0;
 	}
 	.blog-2 .banner-section .wrap{
 		margin: 0px auto 20px;
@@ -88,6 +107,10 @@
 	.blog-3 .hero-section h4,
 	.blog-3 .after-hero-section .text-wrap,
 	.blog-3 .flexible-section .text-wrap,
+	.blog-3 .diversity-section .text-wrap,
+	.blog-3 .inference-section .inference-wrap .text-wrap{
+		max-width: 100%;
+	}
 	.blog-3 .after-hero-section .wrap{
 		margin: 0px auto;
 	}
@@ -105,6 +128,7 @@
 	}
 	.blog-4 .assessments-section .mobile-dev h5{
 		margin: 20px;
+		max-width: 100%;
 	}
 	.blog-4 .reviews-section {
 		padding-top: 50px;
@@ -118,9 +142,11 @@
 		text-align: left;
 	}
 	
-	.blog-5 .banner-section .caption,
+	.blog-4 .ats-section .text-wrap,
+	.blog-4 .gamification-section p,
+	.blog-4 .assessments-section .key-features,
+	.blog-4 .reviews-section .text-wrap,
 	.blog-5 .flexible-section .text-wrap,
-	.blog-5 .smart-ways-section .text-wrap,
 	.blog-5 .blog-section p,
 	.blog-5 .social-active-section p,
 	.blog-5 .practices-section .text-wrap,
@@ -139,6 +165,53 @@
 	}
 	.blog-5 .practices-section .practices-details{
 		padding: 60px 60px;
+	}
+	
+	.blog-6 .banner-section .caption,
+	.blog-6 .hero-section p,
+	.blog-6 .proctoring-platform-section h4{
+		max-width: 100%;
+	}
+	.blog-6 .after-hero-section{
+		background-color: #A4056E;
+		color: #FFFFFF;
+	}
+	.blog-6 .online-skill-test-section .skill-test{
+		background-image: none;
+		height: auto;
+	}
+	.blog-6 .online-proctoring-section .wrap {
+		padding: 30px;
+	}
+	.blog-6 .pluses-section .pluses-details {
+		background: linear-gradient(to bottom, #FFFFFF 50%, #EEF5FF 50%);
+	}
+	
+	.blog-6 .blog-section .container{
+		height: auto;
+		padding: 50px 0;
+	}
+	
+	.blog-7 .banner-section .caption,
+	.blog-7 .after-hero-section .wrap{
+		max-width: 100%;
+	}
+	.blog-7 .ace-strategy-section .wrap{
+		margin: 0px auto 120px;
+	}
+	.blog-7 .sum-up-section .wrap{
+		margin: 30px auto;
+	}
+
+	.blog-10 .hero-section .text-wrap p,
+	.blog-10 .inference-section .wrap{
+		max-width: 100%;
+	}
+	.blog-10 .content-section .wrap{
+		margin: 0px auto;
+	}
+	.blog-10 .wrap-section{
+		margin: 50px auto 0;
 	}
 }
 
