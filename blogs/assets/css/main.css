@@ -24,6 +24,10 @@
 .blog-1 .banner-section .wrap{
 	max-width: 498px;
 }
+.blog-1 .banner-section .wrap h1{
+	font-size: 52px;
+	line-height: 62px;
+}
 .blog-1 .banner-section .wrap h1 span{
 	background: linear-gradient(91.49deg, #8EB5FF 8.26%, #E71D96 84.99%);
 	-webkit-background-clip: text;
@@ -148,6 +152,7 @@
 }
 .blog-1 .step {
 	display: flex;
+	justify-content: center;
 }
 .blog-1 .dates {
 	display: flex;
@@ -160,7 +165,7 @@
 .blog-1 .time::after {
 	content: " ";
 	position: absolute;
-	right: 0;
+	right: -49px;
 	top: 60px;
 	width: 1.5rem;
 	height: 1.5rem;
@@ -178,7 +183,7 @@
 .blog-1 .step-context {  
 	display: flex;
 	flex-direction: column;
-	padding: 0 1rem 1rem 1rem;
+	padding: 0 1rem 1rem 5rem;
 	position: relative;
 }
 .blog-1 .step-heading, .time {
@@ -197,7 +202,7 @@
 	height: 100%;
 	position: absolute;
 	top: 60px;
-	left: 0;
+	left: 48px;
 }
 .blog-1 .step:last-child .step-context::before {
 	height: 0;
@@ -330,6 +335,10 @@
 	max-width: 569px;
 	margin-left: auto;
 }
+.blog-2 .banner-section .wrap h1{
+	font-size: 52px;
+	line-height: 62px;
+}
 .blog-2 .banner-section .caption p{
 	font-size: 30px;
 	line-height: 46px;
@@ -429,6 +438,10 @@
 }
 .blog-3 .banner-section .caption{
 	max-width: 510px;
+}
+.blog-3 .banner-section .caption h1{
+	font-size: 52px;
+	line-height: 62px;
 }
 .blog-3 .banner-section p{
 	font-weight: 500;
@@ -598,13 +611,13 @@
 /* Blog 4 Page */
 /*--------------------------------------*/
 /* Banner Section */
-@media (min-width: 992px) {
+@media (min-width: 1399px) {
 	.blog-4 .banner-section{
 		background-image: url('../images/blog-4/banner-bg.png');
 		background-color: #CDF49C;
 		background-repeat: no-repeat;
 		background-size: contain;
-		background-position: right;
+		background-position: right bottom;
 		height: calc(100vh - 80px);
 		position:relative;
 		display: flex;
@@ -614,6 +627,10 @@
 .blog-4 .banner-section{
 	background-color: #CDF49C;
 	margin-top: 80px;
+}
+.blog-4 .banner-section h1{
+	font-size: 52px;
+	line-height: 62px;
 }
 .blog-4 .banner-section h6{
 	font-weight: 500;
@@ -819,8 +836,9 @@
 	background-color: #742BD1;
 	color: #FFFFFF;
 }
-.blog-5 .banner-section .caption{
-	max-width: 560px;
+.blog-5 .banner-section h1{
+	font-size: 52px;
+	line-height: 62px;
 }
 
 /* after-hero-section */
@@ -980,6 +998,7 @@
 .blog-5 .work-ethics-section .work-details{
 	max-width: 550px;
 	margin-left: auto;
+	padding-left: 16px;
 }
 .blog-5 .work-ethics-section h4{
 	background: #FFFFFF;
@@ -1020,5 +1039,534 @@
 	font-weight: 500;
 	line-height: 48px;
 	font-family: 'Poppins', sans-serif;
+}
+/*--------------------------------------*/
+
+/*--------------------------------------*/
+
+/* Blog 6 Page */
+/*--------------------------------------*/
+/* Banner Section */
+.blog-6 .banner-section{
+	margin-top: 80px;
+	background-color: #FFE247;
+}
+.blog-6 .banner-section .caption{
+	max-width: 540px;
+}
+.blog-6 .banner-section .caption h1{
+	font-size: 52px;
+	line-height: 62px;
+}
+.blog-6 .banner-section .caption h2{
+	font-weight: 400;
+}
+
+/*Hero Section*/
+.blog-6 .hero-section .text-heading{
+	text-align: center;
+	max-width: 1120px;
+	margin: 0px auto 60px;
+	line-height: 54px;
+}
+.blog-6 .hero-section p{
+	font-size: 18px;
+	line-height: 30px;
+	max-width: 519px;
+	margin-left: auto;
+}
+
+/* After Hero Section */
+@media (min-width: 992px) {
+	.blog-6 .after-hero-section{
+		background-image: url('../images/blog-6/after-hero-bg.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		position:relative;
+		display: flex;
+		align-items: center;
+		height: 992px;
+	}
+}
+.blog-6 .after-hero-section{
+	background-color1: #A4056E;
+	color: #FFFFFF;
+}
+
+/* After Familiar Section */
+.blog-6 .familiar-section .custom-warning li{
+	padding-left: 60px;
+	min-height: 36px;
+	max-width: 654px;
+    margin: 30px auto 0;
+}
+.blog-6 .familiar-section .custom-warning li::before {
+    content: url(../images/icons/check-pink.png);
+    width: 36px;
+    height: 36px;
+}
+
+/* After proctoring-tool Section */
+.blog-6 .proctoring-tool-section{
+	background-color: #F5F4FF;
+}
+.blog-6 .proctoring-tool-section .wrap{
+	border-radius: 20px;
+	padding: 60px;
+	background-color: #A267EE;
+	margin-top: 48px;
+}
+.blog-6 .proctoring-tool-section .wrap-1{
+	color: #FFFFFF;
+}
+.blog-6 .proctoring-tool-section .wrap-2{
+	background-color: #FFA1B0;
+}
+.blog-6 .proctoring-tool-section .wrap-3{
+	background-color: #4DC0A8;
+}
+.blog-6 .proctoring-tool-section .wrap-4{
+	background-color: #F9DD7A;
+}
+.blog-6 .proctoring-tool-section h5{
+	font-weight: 600;
+}
+.blog-6 .proctoring-tool-section p{
+	font-size: 18px;
+}
+
+/* After Proctoring Section */
+.blog-6 .proctoring-section{
+	background: linear-gradient(1.71deg, #241A5B 1.34%, #281B5F 46.75%, #311E69 91.93%);
+	color: #FFFFFF;
+}
+.blog-6 .proctoring-section h1 span{
+	color: #FF7845;
+}
+
+/* Online-skill-test Section */
+.blog-6 .online-skill-test-section .text-heading{
+	max-width: 850px;
+	margin: 0px auto;
+}
+.blog-6 .online-skill-test-section .skill-test{
+	background-image: url('../images/blog-6/skill-test-bg.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	position:relative;
+	display: flex;
+	align-items: center;
+	height: 1629px;
+}
+.blog-6 .online-skill-test-section .text-wrap{
+	padding-top: 60px;
+}
+.blog-6 .online-skill-test-section .text-wrap p{
+	font-size: 18px;
+}
+.blog-6 .online-skill-test-section .wrap{
+	border: 1px solid #BFCBDF;
+	border-radius: 20px;
+	padding: 24px 16px;
+	height: 100%;
+}
+.blog-6 .online-skill-test-section .wrap h5{
+	font-weight: 800;
+}
+.blog-6 .online-skill-test-section .wrap p{
+	font-size: 15px;
+}
+.blog-6 .online-skill-test-section .test-details{
+	margin: 0 0 100px;
+}
+
+/* Automated Section */
+.blog-6 .automated-section{
+	background-color: #5F0E9F;
+	color: #FFFFFF;
+}
+
+/* Pluses Section */
+.blog-6 .pluses-section .text-heading{
+	max-width: 1165px;
+	padding-bottom: 60px;
+}
+.blog-6 .pluses-section p{
+	font-size: 24px;
+	line-height: 35px;
+}
+.blog-6 .pluses-section .pluses-details{
+	background: linear-gradient(to right, #EEF5FF 50%, #FFFFFF 50%);
+}
+
+/* Pluses Section */
+.blog-6 .security-features-section .container{
+	background-color: #C8FFCD;
+	border-radius: 50px;
+	padding: 80px 40px;
+}
+.blog-6 .security-features-section .custom-warning li::before {
+    content: url(../images/icons/check-3.png);
+}
+
+/* online-proctoring Section */
+.blog-6 .online-proctoring-section .primary-wrap{
+	border: 10px solid #AE6FFE;
+	border-radius: 0px 110px;
+}
+.blog-6 .online-proctoring-section .primary-wrap{
+	border: 10px solid #AE6FFE;
+	border-radius: 0px 110px;
+}
+.blog-6 .online-proctoring-section .wrap{
+	padding: 60px;
+}
+.blog-6 .online-proctoring-section .wrap h5{
+	line-height: 40px;
+	font-weight: 500;
+	font-family: 'Poppins', sans-serif;
+}
+.blog-6 .online-proctoring-section .primary-wrap{
+	border: 10px solid #AE6FFE;
+	border-radius: 0px 110px;
+}
+.blog-6 .online-proctoring-section .warning-wrap{
+	border: 10px solid #FFBB00;
+	border-radius: 110px 0px;
+}
+.blog-6 .online-proctoring-section .success-wrap{
+	border: 10px solid #47B6A8;
+	border-radius: 0px 110px;
+}
+.blog-6 .online-proctoring-section .danger-wrap{
+	border: 10px solid #FF794F;
+	border-radius: 110px 0px;
+}
+
+/* critical-features Section */
+@media (min-width: 992px) {
+	.blog-6 .critical-features-section{
+		background-image: url('../images/blog-6/critical-features.png');
+		background-repeat: no-repeat;
+		background-position: left bottom;
+		position:relative;
+		display: flex;
+		align-items: center;
+		height: 410px;
+	}
+}
+.blog-6 .critical-features-section{
+	background-color: #003BBC;
+	color: #FFFFFF;
+}
+.blog-6 .critical-features-section h2{
+	line-height: 60px;
+}
+
+/* future-shaping Section */
+.blog-6 .future-shaping-section h2{
+	max-width: 700px;
+	margin: 0px auto 30px;
+	text-align: center;
+}
+.blog-6 .future-shaping-section p{
+	font-size: 20px;
+	line-height: 35px;
+	padding: 0 40px;
+}
+.blog-6 .future-shaping-section .wrap-left{
+	border-left: 10px solid #58D7FF;
+}
+.blog-6 .future-shaping-section .wrap-right{
+	border-left: 10px solid #AE6FFE;
+}
+
+/* unique-features Section */
+.blog-6 .unique-features-section{
+	background-color: #DE4819;
+	color: #FFFFFF;
+}
+.blog-6 .unique-features-section h4{
+	line-height: 45px;
+	font-weight: 500;
+	font-family: 'Poppins', sans-serif;
+}
+.blog-6 .unique-features-section .wrap{
+	border: 2px solid #FFFFFF;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+	padding: 24px;
+	padding-right: 83px;
+	height: 100%;
+}
+.blog-6 .unique-features-section .wrap p{
+	font-size: 20px;
+	line-height: 29px;
+	margin-top: 10px;
+}
+
+/* Proctoring Platform Section */
+.blog-6 .proctoring-platform-section{
+	background-color: #FFF3E1;
+}
+.blog-6 .proctoring-platform-container{
+	max-width: 1102px;
+	margin: 0px auto;
+}
+.blog-6 .proctoring-platform-section h4{
+	max-width: 495px;
+	margin-left: auto;
+}
+
+/* Blog Section */
+.blog-6 .blog-section{
+	background-image: url('../images/blog-6/blog-bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	position:relative;
+	display: flex;
+	align-items: center;
+}
+.blog-6 .blog-section .container{
+	border: 10px solid #C4B8F8;
+	border-radius: 30px;
+	height: 750px;
+	display: flex;
+	align-items: center;
+	z-index: -1;
+}
+.blog-6 .blog-section h2{
+	line-height: 60px;
+}
+/*--------------------------------------*/
+
+/* Blog 7 Page */
+/*--------------------------------------*/
+.blog-7 .banner-section{
+	margin-top: 80px;
+	background-color: #73E5D8;
+	padding: 60px 0;
+}
+.blog-7 .banner-section .caption{
+	max-width: 558px;
+}
+.blog-7 .banner-section .caption h1{
+	font-size: 52px;
+	line-height: 62px;
+}
+.blog-7 .banner-section .caption h5{
+	font-weight: 400;
+	margin-top: 12px;
+}
+
+.blog-7 .hero-section h2{
+	line-height: 54px;
+	text-align: center;
+	max-width: 1132px;
+	margin: 0px auto 60px;
+}
+
+.blog-7 .after-hero-section{
+	background: linear-gradient(103.09deg, #6705A4 4.65%, #AB0891 94.58%);
+	color: #FFFFFF;
+}
+.blog-7 .after-hero-section .wrap{
+	max-width: 617px;
+	margin-left: auto;
+	padding-bottom: 100px;
+}
+.blog-7 .after-hero-section h2{
+	line-height: 60px;
+}
+.blog-7 .after-hero-section p{
+	font-size: 24px;
+	line-height: 35px;
+}
+
+/*ACE Strategy Section*/
+.blog-7 .ace-strategy-section .text-heading{
+	line-height: 54px;
+	max-width: 1132px;
+	margin: 0px auto 80px;
+	text-align: center;
+}
+.blog-7 .ace-strategy-section .text-heading span{
+	color: #5626D3;
+}
+.gy-14 {
+	--bs-gutter-y: 0px;
+}
+@media (min-width: 992px) {
+	.gy-14 {
+		--bs-gutter-y: 330px;
+	}
+	.blog-7 .ace-strategy-section .ace-strategy-wrap{
+		background-image: url('../images/blog-7/ace-strategy-bg.png');
+		background-repeat: no-repeat;
+		background-position: top center;
+		position:relative;
+		height: 5980px;
+		/*max-width: 1100px;*/
+		/*margin: 0px auto;*/
+		margin-top: 400px;
+	}
+	.blog-7 .ace-strategy-section .img-wrap{
+		display: none;
+	}
+}
+.blog-7 .ace-strategy-section .wrap{
+	max-width: 520px;
+	margin: 0px auto;
+}
+
+
+.blog-7 .sum-up-section{
+	background-color: #FFF8B6;
+}
+.blog-7 .sum-up-section .wrap{
+	max-width: 550px;
+	margin: 0px auto;
+}
+.blog-7 .sum-up-section p{
+	font-size: 20px;
+	line-height: 35px;
+}
+/*--------------------------------------*/
+
+/*--------------------------------------*/
+
+/* Blog 10 Page */
+/*--------------------------------------*/
+/* Banner Section */
+@media (min-width: 992px) {
+	.blog-10 .banner-section{
+		background-image: url('../images/blog-10/banner-bg.png');
+		background-color: #011355;
+		background-repeat: no-repeat;
+		/*background-size: cover;*/
+		background-position: right;
+		height: calc(100vh - 80px);
+		position:relative;
+		display: flex;
+		align-items: center;
+	}
+}
+.blog-10 .banner-section{
+	background-color: #011355;
+	color: #FFFFFF;
+	margin-top: 80px;
+}
+.blog-10 .banner-section .caption{
+	max-width: 569px;
+	margin-left: auto;
+}
+.blog-10 .banner-section .caption h1{
+	font-size: 52px;
+	line-height: 62px;
+}
+.blog-10 .banner-section .caption h1 span{
+	color: #589BFF;
+}
+/*--------------------------------------*/
+/* hero-section */
+.blog-10 .hero-section .text-heading{
+	text-align: center;
+	max-width: 1132px;
+	margin: 0px auto 80px;
+	line-height: 54px;
+}
+.blog-10 .hero-section .text-wrap p{
+	font-size: 18px;
+	line-height: 30px;
+	margin: 0 0 30px;
+	max-width: 549px;
+	margin-left: auto;
+}
+.blog-10 .hero-section .text-wrap h5{
+	line-height: 40px;
+	font-weight: 400;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* after-hero-section */
+.blog-10 .after-hero-section{
+	background: linear-gradient(to bottom, #1647FF 90%, #FFFFFF 10%);
+	color: #FFFFFF;
+	height: 1400px;
+}
+.after-hero-wrap{
+	background: url('../images/blog-10/after-hero-bg.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 830px;
+	padding: 138px 0 0;
+}
+.blog-10 .after-hero-section .after-hero-block{
+	background-color: #30DAFF;
+	height: 990px;
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+	border-radius: 100px 0px;
+	margin-top: -120px;
+}
+/*--------------------------------------*/
+/* CONTENT MARKETING Section */
+.blog-10 .content-marketing-section{
+	background-color: #F2E2FF;
+}
+.blog-10 .content-section p{
+	font-size: 18px;
+}
+.blog-10 .content-section .wrap{
+	max-width: 609px;
+}
+.blog-10 .wrap-section{
+	border: 5px solid #FF794F;
+	border-radius: 20px;
+	padding: 40px 20px;
+	margin: 50px 0 0;
+	max-width: 610px;
+}
+.blog-10 .content-section .wrap-section p{
+	font-size: 15px;
+	line-height: 25px;
+}
+
+/*CAREER PAGE OPTIMIZATION Section */
+.blog-10 .career-page-section{
+	background-color: #F6F8C2;
+	border-radius: 50px;
+	max-width: 1280px;
+	margin: 0px auto;
+}
+.blog-10 .career-page-section .wrap{
+	max-width: 529px;
+}
+
+.blog-10 .existing-employees-section{
+	background-color: #FFE6C1;
+	border-radius: 50px;
+	max-width: 1280px;
+	margin: 0px auto;
+}
+
+.blog-10 .talent-section{
+	background-color: #E4FCE5;
+}
+
+.blog-10 .inference-section{
+	background: url('../images/blog-10/inference-bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #FFFFFF;
+}
+.blog-10 .inference-section .wrap{
+	max-width: 550px;
+	margin-left: auto;
+}
+.blog-10 .inference-section p{
+	font-size: 20px;
+	line-height: 35px;
+	font-weight: 500;
 }
 /*--------------------------------------*/
