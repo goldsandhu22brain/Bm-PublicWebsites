@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Blog 2 | Brainmeasures</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<!--Bootstrap 5 css -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- Style css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style-header.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style-footer.css">
+
+</head>
+
+<body>
+
+<header>
+	<nav class="navbar navbar-expand-lg fixed-top white-nav" id="header">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="assets/images/footer-logo.png" class="logo white-logo d-none" alt="Logo" />
+				<img src="assets/images/logo.png" class="logo active-logo d-block" alt="Logo" />
+			</a>
+
+			<button class="navbar-toggler navbar-toggler-right collapsed" id="toggleBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">			
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse flex-lg-column" id="navbarCollapse">
+				<ul class="navbar-nav ms-auto justify-content-end align-items-center d-none d-lg-flex">
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>31K+ Video Courses</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>6K+ E-Books</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>7K+ Skill Tests</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>L & D Program</span></a>
+					</li>
+					<li class="nav-item dropdown z-index-9">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="javascript:void(0);"><span>More</span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="javascript:void(0);">Employee Testing</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Our Story</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Success Story</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Reviews</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Score Board</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">FAQs</a></li>
+						</ul>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link login-link active" href="javascript:void(0);"><span>Login</span></a>
+					</li>
+					<li>
+						<a class="btn btn-default" href="contact.html">Get Started</a>
+					</li>
+				</ul>
+				
+				<div class="nav-mb d-lg-none">
+					<div class="px-3 pb-4 d-flex align-items-center justify-content-between">
+						<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="logo" alt="Logo" /></a>
+						<button class="navbar-toggler navbar-toggler-right collapsed" id="toggleBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="close"><img src="assets/images/icons/close.png" alt="Close" /></span>							
+						</button>
+					</div>
+					
+					<ul class="navbar-nav ms-auto justify-content-end px-3">
+						<li class="nav-item z-index-9">
+							<a class="nav-link" href="javascript:void(0);"><span>31K+ Video Courses</span></a>
+						</li>
+						<li class="nav-item z-index-9">
+							<a class="nav-link" href="javascript:void(0);"><span>6K+ E-Books</span></a>
+						</li>
+						<li class="nav-item z-index-9">
+							<a class="nav-link" href="javascript:void(0);"><span>7K+ Skill Tests</span></a>
+						</li>
+						<li class="nav-item z-index-9">
+							<a class="nav-link" href="javascript:void(0);"><span>L & D Program</span></a>
+						</li>
+						<li class="nav-item dropdown z-index-9">
+							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="javascript:void(0);"><span>More</span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="javascript:void(0);">Employee Testing</a></li>
+								<li><a class="dropdown-item" href="javascript:void(0);">Our Story</a></li>
+								<li><a class="dropdown-item" href="javascript:void(0);">Success Story</a></li>
+								<li><a class="dropdown-item" href="javascript:void(0);">Reviews</a></li>
+								<li><a class="dropdown-item" href="javascript:void(0);">Score Board</a></li>
+								<li><a class="dropdown-item" href="javascript:void(0);">FAQs</a></li>
+							</ul>
+						</li>
+						<li class="nav-item z-index-9 active">
+							<a class="nav-link login-link" href="javascript:void(0);"><span>Login</span></a>
+						</li>
+						<li>
+							<a class="btn btn-default w-100" href="contact.html">Get Started</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div><!--/*container -->
+	</nav><!--/*nav -->
+	<!-- /*Main Navigation -->
+
+</header>
+<!-- /*Header -->
+
+<main class="blog-10">
+
+<section class="banner-section text-lg-start text-center">
+	<div class="container">
+		<div class="row gx-0 gy-3">
+			<div class="col-lg-6">
+				<div class="caption mt-4 mt-lg-0">
+					<h1>Top Recruitment Marketing Strategies for <span>2024</span></h1>
+				</div>
+			</div><!--/*col -->
+			<div class="col-lg-6">
+				<div class="img-wrap d-lg-none">
+					<img src="assets/images/blog-10/banner-bg.png" alt="Image" class="" />
+				</div>
+			</div><!--/*col -->
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Banner Section -->
+
+<section class="hero-section seperator text-lg-start text-center">
+	<div class="container">
+		<h2 class="text-heading">Recruitment marketing is a strategic implementation that allows an organization to search and engage with the relevant job applicants and encourage the most qualified ones for the offered role.</h2>
+		<div class="row gx-0 gy-4 align-items-center">
+			<div class="col-lg-6">
+				<div class="img-wrap">
+					 <img src="assets/images/blog-10/hero-img.png" alt="Image" class="" />
+				</div>
+			</div><!--/*col -->
+			<div class="col-lg-6">
+				<div class="text-wrap">
+					<p>Recruiting is a consistent process that starts way prior when an employer releases a job position. While recruitment-marketing, which is relatively a new inclusion to the Human Resource (HR) world, is now a top priority for the recruiters and is inevitable for every successful recruiting strategy. Gradually, recruiters have started implementing recruitment marketing activities to bring the right talent into their recruiting funnel. For this, recruiters need to initiate recruitment marketing even before they align any candidate in their talent pipeline.</p>
+					<h5>Every aspect of the talent hunt and acquisition is continuously enhanced and optimized by Recruitment Marketing. Looking at the critical phases of talent acquisition, Consult & Empathize (the need), Market & Promote (the job role), Proactive & Responsive (to the submissions), and Engage & Analyze (with applicants) are all stages Recruitment Marketing improves and optimizes the selection and hiring of the desired talent.</h5>
+				</div>
+			</div><!--/*col -->
+			
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Hero Section -->
+	
+<section class="after-hero-section text-lg-start text-center">
+	<div class="after-hero-wrap">
+		<div class="container">
+			<div class="row g-0">
+				<div class="col-lg-4">
+					<div class="wrap">
+						<h1>Talent Acquisition Checklist</h1>
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-8">
+					<div class="img-wrap text-center">
+						<img src="assets/images/blog-10/after-hero-img.png" alt="Image" class="w-100 position-relative" />
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-12">
+					<div class="after-hero-block">
+					
+					</div>
+				</div>
+			</div><!--/*row -->
+		</div><!--/*container -->
+	</div>
+</section>
+<!-- /*After Hero Section -->
+	
+<section class="global-recruiters-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="row g-4 align-items-center">
+			<div class="col-lg-8 order-lg-0 order-1">
+				<div class="wrap">
+					<h1>To make the best use of the recruiting funnel, Brainmeasures experts discuss here the most relevant and result-driven recruitment marketing strategies for global recruiters.</h1>
+				</div>
+			</div><!--/*col -->
+			<div class="col-lg-4 order-lg-1 order-0">
+				<div class="img-wrap text-center">
+					<img src="assets/images/blog-10/global-recruiters.png" alt="Image" class="" />
+				</div>
+			</div><!--/*col -->
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Global Recruiters Section -->
+
+<section class="content-section content-marketing-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="after-brand-wrap">
+			<div class="row g-4">
+				<div class="col-lg-5">
+					<div class="img-wrap">
+						<img src="assets/images/blog-10/content-marketing.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-7">
+					<div class="wrap">
+						<h2>CONTENT MARKETING</h2>
+						<p>Content Marketing is a critical aspect of Recruitment Marketing. Sharing images of the workplace, fun events, team activities, and employees impress the existing and potential workforce. Also, create engaging content, like e-Books and webinars which let you engage with both the passive and active candidates. Additionally, writing informative blogs in collaboration, specifically with members of the departments that are complicated to fill job roles, to write about their job profile and recent projects.</p>
+					</div>
+					<div class="wrap-section">
+						<h5>Brainmeasures ROCKING-TIP</h5>
+						<p>Collaborate with leaders in each department to build strategies for creating relevant content that has a positive impact on their next hire.</p>
+					</div>
+					
+				</div><!--/*col -->
+			</div><!--/*row -->
+		</div>
+	</div><!--/*container -->
+</section>
+<!-- /*CONTENT MARKETING Section -->
+
+<section class="content-section email-campaigns-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="after-brand-wrap">
+			<div class="row g-4">
+				<div class="col-lg-7">
+					<div class="wrap">
+						<h2>E-MAIL CAMPAIGNS</h2>
+						<p>e-Mail Campaigns are no-longer a marketing or promotional assignment. Keep applicants and passive job seekers engaged by sending inducing e-Mails that capture their interests in your company. Your e-Mails might include facts, like what new is happening in the organization, what recently introduced job roles, or you may even share the relevant industry trends to let your candidates explore more about you.</p>
+					</div>
+					<div class="wrap-section">
+						<h5>Brainmeasures ROCKING-TIP</h5>
+						<p>Automating your e-Mail campaign with a personal ‘human’ touch will not just save time but get you an assured click from your target audiences.</p>
+					</div>
+					
+				</div><!--/*col -->
+				<div class="col-lg-5">
+					<div class="img-wrap">
+						<img src="assets/images/blog-10/email-campaigns.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+			</div><!--/*row -->
+		</div>
+	</div><!--/*container -->
+</section>
+<!-- /*E-MAIL CAMPAIGNS Section -->
+
+<section class="content-section career-page-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="after-brand-wrap">
+			<div class="row g-4">
+				<div class="col-lg-5">
+					<div class="img-wrap">
+						<img src="assets/images/blog-10/career.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-7">
+					<div class="wrap">
+						<h2>CAREER PAGE OPTIMIZATION</h2>
+						<p>Career Page of the corporate website is the best place for attracting qualified job applicants. All you need to do is make it ‘thoughtfully’ appealing. Think of strategically adding compelling call-to-action links and simplify the online application form to engage with potentially the best talent.</p>
+					</div>
+					<div class="wrap-section">
+						<h5>Brainmeasures ROCKING-TIP</h5>
+						<p>Optimization of the Career Page may include various Search Engine Optimization (SEO) strategies, like departmental blogging, employee introductions, employee experiences or testimonials, and other relevant information.</p>
+					</div>
+					
+				</div><!--/*col -->
+			</div><!--/*row -->
+		</div>
+	</div><!--/*container -->
+</section>
+<!-- /*CAREER PAGE OPTIMIZATION Section -->
+
+<section class="content-section leveraging-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="after-brand-wrap">
+			<div class="row g-4">
+				<div class="col-lg-7">
+					<div class="wrap">
+						<h2>LEVERAGING SOCIAL MEDIA</h2>
+						<p>Brainmeasures research revealed that close to 80% of job seekers use social media while searching for a job, while numerous active and passive candidates are daily adding on social media platforms. Therefore, we recommend leveraging social media for a result-driven promotion or marketing of job openings. Include relevant content pieces on your Social Media pages, like interview tips or resume writing tips. You may also add industry-specific hash-tags for desired candidates’ engagement.</p>
+					</div>
+					<div class="wrap-section">
+						<h5>Brainmeasures ROCKING-TIP</h5>
+						<p>You may join local job Groups and Communities on Social Networks, like Facebook, LinkedIn, Twitter, and others. You may start communicating or sharing new job roles with ideal candidates.</p>
+					</div>
+					
+				</div><!--/*col -->
+				<div class="col-lg-5">
+					<div class="img-wrap">
+						<img src="assets/images/blog-10/leveraging.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+			</div><!--/*row -->
+		</div>
+	</div><!--/*container -->
+</section>
+<!-- /*LEVERAGING SOCIAL MEDIA Section -->
+
+<section class="content-section existing-employees-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="after-brand-wrap">
+			<div class="row g-4">
+				<div class="col-lg-5">
+					<div class="img-wrap">
+						<img src="assets/images/blog-10/existing-employees.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-7">
+					<div class="wrap">
+						<h2>EXISTING EMPLOYEE REFERRAL INITIATIVES</h2>
+						<p>Internal Employee Referrals are the incredible source for hiring candidates for a simple reason that your existing workforce best understands the company’s culture and the ideal candidate’s profile. Encourage your employees to refer their friends which they think would best match opened job role.</p>
+					</div>
+					<div class="wrap-section">
+						<h5>Brainmeasures ROCKING-TIP</h5>
+						<p>Persuade your employees with lucrative employee referral reward ideas, like cash rewards, movie tickets, event tickets, trip, a day’s off and many more.</p>
+					</div>
+					
+				</div><!--/*col -->
+			</div><!--/*row -->
+		</div>
+	</div><!--/*container -->
+</section>
+<!-- /*CONTENT MARKETING Section -->
+
+<section class="content-section recruiting-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="after-brand-wrap">
+			<div class="row g-4">
+				<div class="col-lg-7">
+					<div class="wrap">
+						<h2>RECRUITING ANALYTICS</h2>
+						<p>Modern Recruiting is like marketing as everything here is measurable. Develop meaningful recruiting metrics and analyze those to get insights on how to improvise the hiring process. For this, team Brainmeasures recommends first to thoroughly understand and analyze every aspect and efforts involved in the company’s job-role requirements.</p>
+					</div>
+					<div class="wrap-section">
+						<h5>Brainmeasures ROCKING-TIP</h5>
+						<p>You may choose from among various critical hiring metrics, including cost-per-applicant, applicants-per-hire, cost-per-hire, hires-per-source, time-to-hire, quality-of-hire, candidate-experience, and others.</p>
+					</div>
+					
+				</div><!--/*col -->
+				<div class="col-lg-5">
+					<div class="img-wrap">
+						<img src="assets/images/blog-10/recruiting.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+			</div><!--/*row -->
+		</div>
+	</div><!--/*container -->
+</section>
+<!-- /*RECRUITING ANALYTICS Section -->
+
+<section class="content-section talent-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="after-brand-wrap">
+			<div class="row g-4">
+				<div class="col-lg-5">
+					<div class="img-wrap">
+						<img src="assets/images/blog-10/talent.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-7">
+					<div class="wrap">
+						<h2>TALENT COMMUNITIES AND GROUPS</h2>
+						<p>These Candidates’ Communities and Groups primarily include the individuals who have not got the desired job they originally applied for, and are seeking relevant job roles. Through these group or community arrangements, recruiters can engage with candidates who send open or cold job applications as well as the individuals who are not qualified for a job yet but are on the verge of becoming qualified (like college students).</p>
+					</div>
+					<div class="wrap-section">
+						<h5>Brainmeasures ROCKING-TIP</h5>
+						<p>You may form your groups or communities with the resources you have, and you may even connect with universities to make your company familiar to students and to hire potentially stronger talent.</p>
+					</div>
+					
+				</div><!--/*col -->
+			</div><!--/*row -->
+		</div>
+	</div><!--/*container -->
+</section>
+<!-- /*TALENT COMMUNITIES AND GROUPS Section -->
+
+<section class="content-section candidates-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="after-brand-wrap">
+			<div class="row g-4">
+				<div class="col-lg-7">
+					<div class="wrap">
+						<h2>DISPLAY ADVERTISING AND RETARGETING CANDIDATES</h2>
+						<p>Recruiters may also use display advertising to reach out to specific audiences or candidates. Retarget active job seekers who have recently visited your career page and showed interest in the offered job role. Encourage them to re-visit your career webpage and complete the online job application form.</p>
+					</div>
+					<div class="wrap-section">
+						<h5>Brainmeasures ROCKING-TIP</h5>
+						<p>You must make sure that your advertisement is crisp, appropriate, and appealing to generate more engagements from the targeted audiences.</p>
+					</div>
+					
+				</div><!--/*col -->
+				<div class="col-lg-5">
+					<div class="img-wrap">
+						<img src="assets/images/blog-10/candidates.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+			</div><!--/*row -->
+		</div>
+	</div><!--/*container -->
+</section>
+<!-- /*DISPLAY ADVERTISING AND RETARGETING CANDIDATES Section -->
+
+<section class="inference-section seperator text-lg-start text-center">
+	<div class="container">
+		<div class="after-brand-wrap">
+			<div class="row g-4 align-items-center">
+				<div class="col-lg-6">
+					<div class="img-wrap">
+						<img src="assets/images/blog-10/inference.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-6">
+					<div class="wrap">
+						<h2>INFERENCE</h2>
+						<p>Worrying about engaging with the candidates who have already applied for the job openings should not be the only motivation, as advanced recruitment strategies search for individuals who may get well engage with your brand and show genuine interest to the offered career prospects. These recommended recruitment marketing strategies might help!</p>
+					</div>
+				</div><!--/*col -->
+			</div><!--/*row -->
+		</div>
+	</div><!--/*container -->
+</section>
+<!-- /*INFERENCE Section -->
+
+</main>
+
+<!--Start: Footer-->
+<footer>
+	<div class="container">
+		<div class="row g-3">
+			<div class="col-lg-5 col-md-12">
+				<a href="index.html"><img src="assets/images/footer-logo.png" class="footer-logo" alt="Logo" /></a>
+				<ul class="contact">
+					<li><a href="mailto:info@brainmeasures.com">info@brainmeasures.com</a> <a href="mailto:contact@brainmeasures.com">contact@brainmeasures.com</a></li>
+					<h5><a href="tel:18885560061" class="telno">+1 888 556 0061</a> <span>TOLL FREE (USA/CANADA)</span></h5>
+				</ul>
+				<div class="row g-3 align-items-center">
+					<div class="col-6">
+						<h5>BM Mobile App</h5>
+						<a href="#"><img src="assets/images/playstore.png" class="" alt="" /></a>
+					</div>
+					<div class="col-6">
+						<div class="row">
+							<div class="col-6">
+								<a href="#"><img src="assets/images/forbes-1.jpg" class="forbes-img" alt="" /></a>
+							</div>
+							<div class="col-6">
+								<a href="#"><img src="assets/images/forbes-2.jpg" class="forbes-img" alt="" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-7 col-md-12">
+				<div class="row g-3">
+					<div class="col-lg-4 col-sm-4">
+						<h6>Important Links</h6>
+						<ul class="imp-links">
+							<li><a href="#">BM Home</a></li>
+							<li><a href="#">All Video Courses</a></li>
+							<li><a href="#">All Courses</a></li>
+							<li><a href="#">All Skill Tests</a></li>
+							<li><a href="#">Custom Tests</a></li>
+							<li><a href="#">Code Compiler</a></li>
+							<li><a href="#">Proctor Testing</a></li>
+							<li><a href="#">API Integration</a></li>
+							<li><a href="#">Psychometric Test</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-sm-4">
+						<h6>Important Links</h6>
+						<ul class="imp-links">
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Terms and Conditons</a></li>
+							<li><a href="#">Refund/Cancellation Policy</a></li>
+							<li><a href="#">Site Map</a></li>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Score Board</a></li>
+							<li><a href="#">Free Quizzes</a></li>
+							<li><a href="#">Job Search</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-sm-4">
+						<h6>Important Links</h6>
+						<ul class="imp-links">
+							<li><a href="#">Knowledgebase</a></li>
+							<li><a href="#">Report an Issue</a></li>
+							<li><a href="#">Ask Question</a></li>
+							<li><a href="#">Feedback</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Reviews</a></li>
+							<li><a href="#">Affiliate</a></li>
+							<li><a href="#">VProctor FAQs</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="footer-bottom">
+			<p>&copy; copyright 2007-2023 Brainmeasures.</p>
+			<p>Brainmeasures is one of few skill testing and online certification company which is ISO 9001-2015 certified. Brainmeasures respects the privacy of each individual who registers for our services, we uphold and comply with strict truste program requirements, putting us in league of big names such as yahoo, AOL, Facebook, PayPal, IBM when it comes to internet privacy, safety and trust</p>
+		</div>
+	</div>
+</footer>
+<!--End: Footer-->
+
+	<!-- scroll to top button 
+	<button type="button" id="scrollTop"><i class="fa fa-angle-up"></i></button>
+	-->
+	
+	<!-- jQuery 3.6.4 -->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+	
+	<!-- Bootstrap 5 js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	
+	<!-- Custom js -->
+	<script src="assets/js/custom.js"></script>
+	<script type="text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Blog 7 | Brainmeasures</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<!--Bootstrap 5 css -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- Style css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style-header.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style-footer.css">
+
+</head>
+
+<body>
+
+<header>
+	<nav class="navbar navbar-expand-lg fixed-top white-nav" id="header">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="assets/images/footer-logo.png" class="logo white-logo d-none" alt="Logo" />
+				<img src="assets/images/logo.png" class="logo active-logo d-block" alt="Logo" />
+			</a>
+
+			<button class="navbar-toggler navbar-toggler-right collapsed" id="toggleBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">			
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse flex-lg-column" id="navbarCollapse">
+				<ul class="navbar-nav ms-auto justify-content-end align-items-center d-none d-lg-flex">
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>31K+ Video Courses</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>6K+ E-Books</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>7K+ Skill Tests</span></a>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link" href="javascript:void(0);"><span>L & D Program</span></a>
+					</li>
+					<li class="nav-item dropdown z-index-9">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="javascript:void(0);"><span>More</span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="javascript:void(0);">Employee Testing</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Our Story</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Success Story</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Reviews</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">Score Board</a></li>
+							<li><a class="dropdown-item" href="javascript:void(0);">FAQs</a></li>
+						</ul>
+					</li>
+					<li class="nav-item z-index-9">
+						<a class="nav-link login-link active" href="javascript:void(0);"><span>Login</span></a>
+					</li>
+					<li>
+						<a class="btn btn-default" href="contact.html">Get Started</a>
+					</li>
+				</ul>
+				
+				<div class="nav-mb d-lg-none">
+					<div class="px-3 pb-4 d-flex align-items-center justify-content-between">
+						<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="logo" alt="Logo" /></a>
+						<button class="navbar-toggler navbar-toggler-right collapsed" id="toggleBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="close"><img src="assets/images/icons/close.png" alt="Close" /></span>							
+						</button>
+					</div>
+					
+					<ul class="navbar-nav ms-auto justify-content-end px-3">
+						<li class="nav-item z-index-9">
+							<a class="nav-link" href="javascript:void(0);"><span>31K+ Video Courses</span></a>
+						</li>
+						<li class="nav-item z-index-9">
+							<a class="nav-link" href="javascript:void(0);"><span>6K+ E-Books</span></a>
+						</li>
+						<li class="nav-item z-index-9">
+							<a class="nav-link" href="javascript:void(0);"><span>7K+ Skill Tests</span></a>
+						</li>
+						<li class="nav-item z-index-9">
+							<a class="nav-link" href="javascript:void(0);"><span>L & D Program</span></a>
+						</li>
+						<li class="nav-item dropdown z-index-9">
+							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="javascript:void(0);"><span>More</span></a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="javascript:void(0);">Employee Testing</a></li>
+								<li><a class="dropdown-item" href="javascript:void(0);">Our Story</a></li>
+								<li><a class="dropdown-item" href="javascript:void(0);">Success Story</a></li>
+								<li><a class="dropdown-item" href="javascript:void(0);">Reviews</a></li>
+								<li><a class="dropdown-item" href="javascript:void(0);">Score Board</a></li>
+								<li><a class="dropdown-item" href="javascript:void(0);">FAQs</a></li>
+							</ul>
+						</li>
+						<li class="nav-item z-index-9 active">
+							<a class="nav-link login-link" href="javascript:void(0);"><span>Login</span></a>
+						</li>
+						<li>
+							<a class="btn btn-default w-100" href="contact.html">Get Started</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div><!--/*container -->
+	</nav><!--/*nav -->
+	<!-- /*Main Navigation -->
+
+</header>
+<!-- /*Header -->
+
+<main class="blog-7">
+
+<section class="banner-section text-lg-start text-center">
+	<div class="container">
+		<div class="row g-4 align-items-center">
+			<div class="col-lg-6 order-lg-0 order-1">
+				<div class="caption">
+					<h1>BlogTop 10 Ways to Enhance Candidate Engagement</h1>
+					<h5>For being competitive, companies need to transform their recruitment strategies to seamlessly engage, identify, and appoint a record high number of appropriate candidates.</h5>
+					<p>Organization’s internal recruitment function ensures an opportunity to engage and hire the appropriate candidates. Most of the time, however, executing a perfect recruitment strategy proves to be complicated for recruiters. To un-complicate this, experts at Brainmeasures devised a comprehensive employee hiring model and named it as Appropriate Candidate Engagements (ACE).</p>
+				</div>
+			</div><!--/*col -->
+			<div class="col-lg-6 order-lg-1 order-0">
+				<div class="img-wrap">
+					<img src="assets/images/blog-7/banner.png" alt="Image" class="" />
+				</div>
+			</div><!--/*col -->
+			
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*Banner Section -->
+
+<section class="hero-section seperator pb-0 text-lg-start text-center">
+	<div class="container">
+		<h2>ACE is an intelligent candidate recruitment strategy comprises technology solutions and hiring strategies to consistently engage appropriate candidates at the right time and with the right approach.</h2>
+		<img src="assets/images/blog-7/hero-img.png" alt="Image" class="" />
+	</div><!--/*container -->
+</section>
+<!-- /*Hero Section -->
+	
+<section class="after-hero-section seperator pb-0 text-lg-start text-center">
+	<div class="container">
+		<div class="row g-4 align-items-center">
+			<div class="col-lg-5">
+				<div class="img-wrap text-center">
+					<img src="assets/images/blog-7/after-hero-img.png" alt="Image" class="" />
+				</div>
+			</div><!--/*col -->
+			<div class="col-lg-7">
+				<div class="wrap">
+					<h2>Propel the Recruitment Optimization Efforts with ACE</h2>
+					<p>Through the ACE strategy, recruiters can design efficient and streamlined recruiting processes to drive improvements in conversion rates throughout the recruitment channel.</p>
+				</div>
+			</div><!--/*col -->
+			
+		</div><!--/*row -->
+	</div><!--/*container -->
+</section>
+<!-- /*After Hero Section -->
+	
+<section class="ace-strategy-section seperator pb-0 text-lg-start text-center">
+	<div class="container">
+		<h2 class="text-heading">Discussed here below are the <span>Top 10 Ways to implement the ACE strategy for recruiting processes</span> for optimizing every stage of the hiring process:</h2>
+		
+		<div class="ace-strategy-wrap">
+			<div class="row gy-14 align-items-center">
+				<div class="col-lg-6">
+					<div class="img-wrap text-center">
+						<img src="assets/images/blog-7/ace-1.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-6">
+					<div class="wrap">
+						<h2>Candidate-Centric Recruitment Strategy:</h2>
+						<p>Recruiters have realized that employing administrator-centric strategies and just filling the job-requisitions is not doing any good to their employee hiring-projects. Recruiting managers, therefore, must opt for a candidate-centric strategy to effectively engage with appropriate caliber at the right time, with the right approach, throughout the entire recruitment process and post-appointment.</p>
+					</div>
+				</div><!--/*col -->
+				
+				<div class="col-lg-6 d-lg-none">
+					<div class="img-wrap text-center">
+						<img src="assets/images/blog-7/ace-2.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-6">
+					<div class="wrap">
+						<h2>Enhance Candidates’ Engagement Experience:</h2>
+						<p>Modern recruiting need to focus on an enhanced candidates’ engagement experience beginning from the first look at the employer’s career website to the first day at the work-site, and beyond.</p>
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-6 d-none d-lg-block">
+					<div class="img-wrap text-center">
+						<img src="assets/images/blog-7/ace-2.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				
+				<div class="col-lg-6">
+					<div class="img-wrap text-center">
+						<img src="assets/images/blog-7/ace-3.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-6">
+					<div class="wrap">
+						<h2>Promotional Career Webpage</h2>
+						<p>Correct brand-image promotion is the initial attempt to connect and interact with appropriate and competitive candidates. Employers must, therefore, strategically design their career webpage to ensure stellar engagement from the desired caliber.</p>
+					</div>
+				</div><!--/*col -->
+				
+				<div class="col-lg-6 d-lg-none">
+					<div class="img-wrap text-center">
+						<img src="assets/images/blog-7/ace-4.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-6">
+					<div class="wrap">
+						<h2>Social Recruiting</h2>
+						<p>Employers must harness the power of their existing workforce through social referral channels, like LinkedIn, and others. These referral initiatives will enable recruiters, not just post job-requirements directly on social media feeds of the current employees, but shall allow them to connect effectively with the desired candidates.</p>
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-6 d-none d-lg-block">
+					<div class="img-wrap text-center">
+						<img src="assets/images/blog-7/ace-4.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				
+				<div class="col-lg-6">
+					<div class="img-wrap text-center">
+						<img src="assets/images/blog-7/ace-5.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-6">
+					<div class="wrap">
+						<h2>Advanced Automation</h2>
+						<p>Employers must integrate ultra-modern technologies, such as Artificial Intelligence (AI) and machine learning, to automate tedious tasks throughout the recruitment process, including skill-test-proctoring. These smart technology integrations will enable recruiters to constructively spend more time on developing meaningful strategies and on-boarding appropriate candidates.</p>
+					</div>
+				</div><!--/*col -->
+				
+				<div class="col-lg-6 d-lg-none">
+					<div class="img-wrap text-center">
+						<img src="assets/images/blog-7/ace-6.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-6">
+					<div class="wrap">
+						<h2>Agile Integrations</h2>
+						<p>Employers are always hiring, and candidates are constantly searching. Recruiters, therefore, must act proactively throughout their recruitment process to ensure successful hiring of quality caliber. By embedding connected technologies, like text interviewing, chat-bots, and others, to the employee hiring protocol, recruiters can quickly engage and appoint the top talent for their organization.</p>
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-6 d-none d-lg-block">
+					<div class="img-wrap text-center">
+						<img src="assets/images/blog-7/ace-6.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				
+				<div class="col-lg-6">
+					<div class="img-wrap text-center">
+						<img src="assets/images/blog-7/ace-7.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-6">
+					<div class="wrap">
+						<h2>Digitizing On-Boarding</h2>
+						<p>Employers must focus on streamlining their employee on-boarding processes. They can plan to replace the painful administrative paper-work with digitized forms and prioritize the critical tasks that the new-hire can finish even before their first day at the work-site.</p>
+					</div>
+				</div><!--/*col -->
+				
+				<div class="col-lg-6 d-lg-none">
+					<div class="img-wrap text-center">
+						<img src="assets/images/blog-7/ace-8.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-6">
+					<div class="wrap">
+						<h2>Fine-Tune the Job-Application Process</h2>
+						<p>Brainmeasures research team revealed that nearly 55% of applicants drop a complicated online application process. Enabling fewer clicks in the online job-application interface shall ensure a large count of submissions from relevant applicants.</p>
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-6 d-none d-lg-block">
+					<div class="img-wrap text-center">
+						<img src="assets/images/blog-7/ace-8.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				
+				<div class="col-lg-6">
+					<div class="img-wrap text-center">
+						<img src="assets/images/blog-7/ace-9.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-6">
+					<div class="wrap">
+						<h2>Passive Candidates’ Pool</h2>
+						<p>Recruiters must additionally create a talent pool of passive candidates nurtured through social media and email marketing campaigns, which recruiters periodically launch for their employer’s brand promotion.</p>
+					</div>
+				</div><!--/*col -->
+				
+				<div class="col-lg-6 d-lg-none">
+					<div class="img-wrap text-center">
+						<img src="assets/images/blog-7/ace-10.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-6">
+					<div class="wrap">
+						<h2>Real-Time Communication</h2>
+						<p>Hiring teams shall closely track and monitor all their communications with the candidates to ensure a seamless flow of their recruitment program.</p>
+					</div>
+				</div><!--/*col -->
+				<div class="col-lg-6 d-none d-lg-block">
+					<div class="img-wrap text-center">
+						<img src="assets/images/blog-7/ace-10.png" alt="Image" class="" />
+					</div>
+				</div><!--/*col -->
+				
+			</div><!--/*row -->
+		</div>
+	</div><!--/*container -->
+</section>
+<!-- /*ACE Strategy Section -->
+
+<section class="sum-up-section text-lg-start text-center">
+	<div class="container-fluid">
+		<div class="row align-items-center">
+			<div class="col-lg-6 ps-0">
+				<img src="assets/images/blog-7/sum-up.png" alt="Image" class="" />
+			</div><!--/*col -->
+			<div class="col-lg-6">
+				<div class="wrap">
+					<h2>To Sum Up</h2>
+					<p>Meticulously devised by the experts at Brainmeasures (a leading online training certifications and skill-assessment solutions provider), ACE strategy enables recruiters to improve the quality, speed, and effectiveness of candidates’ engagement throughout their hiring process that starts from candidates getting familiar with the employer’s brand till they are on-board, and further ahead.</p>
+				</div>
+			</div><!--/*col -->
+		</div><!--/*row -->
+	</div><!--/*container-fluid -->
+</section>
+<!-- /*Smart online employee-testing Section -->
+
+</main>
+
+<!--Start: Footer-->
+<footer>
+	<div class="container">
+		<div class="row g-3">
+			<div class="col-lg-5 col-md-12">
+				<a href="index.html"><img src="assets/images/footer-logo.png" class="footer-logo" alt="Logo" /></a>
+				<ul class="contact">
+					<li><a href="mailto:info@brainmeasures.com">info@brainmeasures.com</a> <a href="mailto:contact@brainmeasures.com">contact@brainmeasures.com</a></li>
+					<h5><a href="tel:18885560061" class="telno">+1 888 556 0061</a> <span>TOLL FREE (USA/CANADA)</span></h5>
+				</ul>
+				<div class="row g-3 align-items-center">
+					<div class="col-6">
+						<h5>BM Mobile App</h5>
+						<a href="#"><img src="assets/images/playstore.png" class="" alt="" /></a>
+					</div>
+					<div class="col-6">
+						<div class="row">
+							<div class="col-6">
+								<a href="#"><img src="assets/images/forbes-1.jpg" class="forbes-img" alt="" /></a>
+							</div>
+							<div class="col-6">
+								<a href="#"><img src="assets/images/forbes-2.jpg" class="forbes-img" alt="" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-7 col-md-12">
+				<div class="row g-3">
+					<div class="col-lg-4 col-sm-4">
+						<h6>Important Links</h6>
+						<ul class="imp-links">
+							<li><a href="#">BM Home</a></li>
+							<li><a href="#">All Video Courses</a></li>
+							<li><a href="#">All Courses</a></li>
+							<li><a href="#">All Skill Tests</a></li>
+							<li><a href="#">Custom Tests</a></li>
+							<li><a href="#">Code Compiler</a></li>
+							<li><a href="#">Proctor Testing</a></li>
+							<li><a href="#">API Integration</a></li>
+							<li><a href="#">Psychometric Test</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-sm-4">
+						<h6>Important Links</h6>
+						<ul class="imp-links">
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Terms and Conditons</a></li>
+							<li><a href="#">Refund/Cancellation Policy</a></li>
+							<li><a href="#">Site Map</a></li>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Score Board</a></li>
+							<li><a href="#">Free Quizzes</a></li>
+							<li><a href="#">Job Search</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-sm-4">
+						<h6>Important Links</h6>
+						<ul class="imp-links">
+							<li><a href="#">Knowledgebase</a></li>
+							<li><a href="#">Report an Issue</a></li>
+							<li><a href="#">Ask Question</a></li>
+							<li><a href="#">Feedback</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Reviews</a></li>
+							<li><a href="#">Affiliate</a></li>
+							<li><a href="#">VProctor FAQs</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="footer-bottom">
+			<p>&copy; copyright 2007-2023 Brainmeasures.</p>
+			<p>Brainmeasures is one of few skill testing and online certification company which is ISO 9001-2015 certified. Brainmeasures respects the privacy of each individual who registers for our services, we uphold and comply with strict truste program requirements, putting us in league of big names such as yahoo, AOL, Facebook, PayPal, IBM when it comes to internet privacy, safety and trust</p>
+		</div>
+	</div>
+</footer>
+<!--End: Footer-->
+
+	<!-- scroll to top button 
+	<button type="button" id="scrollTop"><i class="fa fa-angle-up"></i></button>
+	-->
+	
+	<!-- jQuery 3.6.4 -->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+	
+	<!-- Bootstrap 5 js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	
+	<!-- Custom js -->
+	<script src="assets/js/custom.js"></script>
+	<script type="text/javascript"></script>
+
+</body>
+</html>
